@@ -85,7 +85,10 @@ p{
 /* Home Page Style */
 
 /* Home Page Header Section Style */
-
+header {
+    position: absolute;
+    width: 100%;
+}
 .banner-section-outer{
     background-image: url('../images/banner_section_background.jpg');
     background-size: cover;
@@ -93,7 +96,7 @@ p{
     background-position: center;
 }
 .main_header {    
-    padding: 42px 292px 0;
+    padding: 5px 292px 0;
 }
 .navbar-collapse ul{
     text-align: center;
@@ -205,6 +208,10 @@ p{
 
 /* Home Page Social Icons Style */
 
+.logo img{
+    height: 113px;
+
+}
 .left_icons {
     
     z-index: 1;
@@ -238,12 +245,13 @@ p{
 /* Home Page Banner Section Style */
 
 .banner-section-outer .banner-section{
-    padding: 50px 292px 138px;
+    padding: 171px 292px 138px;
     position: relative;
 }
 .banner-section-outer .banner-section .banner-section-content{
     padding-top: 168px;
 }
+
 .banner-section-outer .banner-section h5{
     text-transform: uppercase;
     color: var(--e-global-color-white);
@@ -1402,7 +1410,7 @@ textarea {
     background-position: center;
 }
 .sub-banner-section .banner-section {
-    padding: 110px 0 120px;
+    padding: 160px 0 120px;
     position: relative;
 }
 .sub-banner-section .banner-section .banner-section-content {

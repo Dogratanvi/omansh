@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('home', 'FrontendController@home')->name('home');
-    Route::get('privacy', 'FrontendController@privacy')->name('privacy');
-    Route::get('terms', 'FrontendController@terms')->name('terms');
+    Route::get('about', 'FrontendController@about')->name('about');
+    Route::get('contact', 'FrontendController@contact')->name('contact');
 
 });

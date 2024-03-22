@@ -1,0 +1,13 @@
+echo '/draft.yaml' >> .gitignore
+echo '/.blueprint' >> .gitignore
+vendor/
+.env
+storage/framework/
+storage/logs/
+storage/cache/
+bootstrap/cache/  # Optional (if not using Blade caching)
+public/mix-manifest.json  # Optional
+artisan.log  # Optional
+phpunit.xml  # Optional
+draft.yaml
+.blueprint

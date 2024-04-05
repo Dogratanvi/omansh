@@ -3,7 +3,7 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
                     <a class="navbar-brand" href="{{ route('frontend.index') }}">
-                        <figure class="mb-0 img-fluid logo"><img src="{{ asset('images/logo.png') }}" alt="" ></figure>
+                        <figure class="mb-0 img-fluid logo"><img src="{{ asset('img/logo.png') }}" alt="" ></figure>
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -81,7 +81,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link contact_us" href="{{ route('frontend.contact') }}">Contact Us</a>
+                                <a class=" contact_us" href="{{ route('frontend.contact') }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>

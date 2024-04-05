@@ -2,45 +2,33 @@
 
 @section('content')
 <div class="banner-section-outer">
-  
-    <!-- SOCIAL ICONS -->
-    <div class="left_icons float-left d-table" data-aos="fade-down">
-        <div class="icon_content d-table-cell align-middle">
-            <ul class="list-unstyled p-0 m-0">
-                <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+
+
     <!-- BANNER SECTION -->
     <section class="banner-section">
         <div class="container-fluid">
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-md-left text-center">
                     <div class="banner-section-content">
-                        <h5>Start a Happy Life</h5>
-                        <h1 data-aos="fade-up">Start Healing Your Mind, <span class="ityped"></span></h1>
-                        <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla
-                            pariatur nostrud exercitation.</p>
+                        <h5>WELCOME TO</h5>
+                        <h1 data-aos="fade-up">OMANSH <br> <span class="ityped"></span></h1>
+                        <p data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for
+                            Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
                         <div class="btn_wrapper" data-aos="fade-up">
-                            <a class="text-decoration-none getstarted_btn" href="./index.html">Get Started</a>
+                            <a class="text-decoration-none getstarted_btn" href="./index.html">Contact Us</a>
                         </div>
-                  
-                        <a class="top-btn"  href="{{ route('frontend.index') }}#footer_section">
+
+                        <!-- <a class="top-btn"  href="{{ route('frontend.index') }}#footer_section">
                            <i class="fa-solid fa-arrow-down-long"></i>
-                        </a>
+                        </a> -->
+                        <figure class="banner_left_top_shape_inner left_shape mb-0">
+                            <img src="{{ asset('img/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        </figure>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="banner-section-image">
-                        <figure class="mb-0">
+                        <figure class="banner_left_bottom_shape left_shape mb-0">
                             <img src="{{ asset('images/banner_right_image.png') }}" alt="">
                         </figure>
                     </div>
@@ -60,6 +48,29 @@
             </figure>
         </div>
     </section>
+    <!-- SOCIAL ICONS -->
+    <div class="left_icons float-right " data-aos="fade-down">
+        <div class="icon_content d-table-cell align-middle">
+            <ul class="list-unstyled p-0 m-0">
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 </div>
 
 <!-- OUR SERVICES SECTION -->
@@ -69,22 +80,42 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
                     <h5>Our Services</h5>
-                    <h2>Practice Whereever You Want Whenever You Need </h2>
-                    <p>Taciti fames lacinia orci finibus metus elit tempus faucibus urna nunc dui rhoncus aibendum vea
-                        porttitor volutrat felis massa feugiat</p>
+
+                    <p>Explore a spectrum of services dedicated to your health and well-being</p>
                 </div>
             </div>
         </div>
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="row pt-3" data-aos="fade-up">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="services_box_content">
                     <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('images/services_img_1.png') }}" alt=""
-                                class="img-fluid"></figure>
+                        <figure class="mb-0"><img src="{{ asset('img/women-health.png') }}" alt=""
+                                class="img-fluid w-100"></figure>
                     </div>
                     <div class="services_box_lower_portion">
-                        <h3>Prenatal Yoga</h3>
-                        <p>Finibus metus elit tempus faucibus urna nunc aui.</p>
+                        <h3>Women Health</h3>
+                        <p>Our pelvic floor therapy and pregnancy support programmes are tailored to women's health. Our
+                            specialists empower women at every step with customised therapies and caring assistance.
+                            Support your health and well-being with personalised treatment.</p>
+                        <div class="btn_wrapper">
+                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"> </i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="services_box_content">
+                    <div class="services_box_upper_portion">
+                        <figure class="mb-0"><img src="{{ asset('img/Physiotherapy.png') }}" alt=""
+                                class="img-fluid w-100"></figure>
+                    </div>
+                    <div class="services_box_lower_portion">
+                        <h3>Physiotherapy</h3>
+                        <p>Explore our experienced physiotherapy treatments to improve your health and mobility. Our
+                            staff uses evidence-based approaches to treat a variety of physical issues, providing
+                            personalised treatment. Experience the path of rehabilitation with our devoted specialists.
+                        </p>
                         <div class="btn_wrapper">
                             <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
                                     aria-hidden="true"></i></a>
@@ -92,47 +123,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="services_box_content">
                     <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('images/images/services_img_2.png') }}" alt=""
-                                class="img-fluid"></figure>
+                        <figure class="mb-0"><img src="{{ asset('img/yoga.png') }}" alt="" class="img-fluid w-100">
+                        </figure>
                     </div>
                     <div class="services_box_lower_portion">
-                        <h3>Meditation</h3>
-                        <p>Ainibus metus elit tempus faucibus urna nunc cui.</p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('images/services_img_3.png') }}" alt=""
-                                class="img-fluid"></figure>
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Nutrition Consultation</h3>
-                        <p>Binibus metus elit tempus faucibus urna nunc eui.</p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('images/images/services_img_4.png') }}" alt=""
-                                class="img-fluid"></figure>
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Hatha Yoga</h3>
-                        <p>Dinibus metus elit tempus faucibus urna nunc rui.</p>
+                        <h3>Yoga</h3>
+                        <p>Experience the transformational power of Yoga, where ancient practices meet contemporary
+                            therapies. Our workshops promote comprehensive well-being by harmonising body, mind, and
+                            spirit. Discover inner calm and physical strength in a caring and compassionate atmosphere
+                            for beginners to expert practitioners.
+                        </p>
                         <div class="btn_wrapper">
                             <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
                                     aria-hidden="true"></i></a>
@@ -142,7 +146,7 @@
             </div>
         </div>
         <figure class="services_left_shape left_shape mb-0">
-            <img src="{{ asset('images/services_left_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/services_left_shape.png') }}" alt="" class="img-fluid w-100">
         </figure>
     </div>
 </section>
@@ -150,9 +154,9 @@
 <section class="aboutus_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12">
                 <div class="aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('images/aboutus_image.png') }}" alt="" class="img-fluid">
+                    <figure class="mb-0"><img src="{{ asset('img/better-life.png') }}" alt="" class="img-fluid">
                     </figure>
                 </div>
                 <figure class="aboutus_top_shape left_shape mb-0">
@@ -162,19 +166,23 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12" data-aos="fade-right">
                 <div class="aboutus_content">
                     <h5>About us</h5>
-                    <h2>Take Your Yoga to the Next Level</h2>
-                    <p>Quis autem vel eum iure reprehenderit qui in eao voluptate velit esse quam nihil molestiae
-                        consequatur vel illum.</p>
-                    <div class="aboutus_line_wrapper">
-                        <h6>Modi tempora incidunt ut labore dolore magnam aliquam auerat volutaem.</h6>
-                        <figure class="mb-0 purple_line"><img src="{{ asset('images/aboutus_line.png') }}" alt=""
-                                class="img-fluid"></figure>
-                    </div>
+                    <h2>Better Life With Optimal Health</h2>
+                    <p>Every step towards health at Omansh Health & Fitness is based on care, knowledge, and a strong
+                        desire to make people's lives better.</p>
+                    <p>Our centre is more than just a health facility. It's a community committed to promoting health
+                        and happiness. It was started by Dr. Garima Biswas, a leader in holistic health and an expert in
+                        Pelvic Floor Rehabilitation. Through her 15+ years of deep knowledge of the human body and their
+                        desire to spread the benefits of good health, we invite you to start a personalised journey to
+                        becoming your best self.</p>
+                    <p>At Omansh, we think that the best way to get the most out of your body is to combine ancient
+                        methods with cutting-edge science.</p>
+
                     <div class="btn_wrapper">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get Started</a>
+                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get
+                            Started</a>
                     </div>
                 </div>
             </div>
@@ -187,10 +195,9 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="our_specialties_heading_content">
-                    <h5>Our Specialties</h5>
+
                     <h2>Why Choose Us</h2>
-                    <p>Quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores nostrum
-                        exercitationem ullam corporis suscipit laboriosam</p>
+                    <p>Empowering Your Health Journey with Compassion and Expertise</p>
                 </div>
             </div>
         </div>
@@ -319,186 +326,124 @@
         </figure>
     </div>
 </section>
-<!-- PRICING PLANS SECTION -->
-<section class="pricing_plans_section">
+
+<!-- Testimonial -->
+<section class="our_specialties_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="pricing_plans_content">
-                    <h5>What We Offer</h5>
-                    <h2>Our Pricing Plans</h2>
-                    <p>Molestiae non recusandae itaque earum rerum hic teneaur a sapiente delectus, rae aut reiciendis
-                        officia deserunt mollitia animi omnis dolor</p>
+                <div class="our_specialties_heading_content">
+
+                    <h2> Testimonial
+                    </h2>
+                    <p>Thank you for your trust and stories; we're truly humbled by your support</p>
                 </div>
             </div>
         </div>
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing_plans_box_content">
-                    <div class="pricing_plans_box_upper_portion">
-                        <figure class="pricing_plans_image mb-0">
-                            <img src="{{ asset('images/pricing_plan_1.png') }}" alt="" class="img-fluid">
-                        </figure>
-                        <div class="pricing_plans_box_image_content">
-                            <figure class="mb-0">
-                                <img src="{{ asset('images/pricing_plan_icon_1.png') }}" alt="" class="img-fluid">
-                            </figure>
-                        </div>
+
+        <ul class="nav nav-pills justify-content-between mb-3 pt-3 " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link custom-btn active border-0" id="pills-all-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                    aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link custom-btn border-0" id="pills-health-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-health" type="button" role="tab" aria-controls="pills-health"
+                    aria-selected="false">Women Health</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 custom-btn" id="pills-physiotherapy-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-physiotherapy" type="button" role="tab" aria-controls="pills-physiotherapy"
+                    aria-selected="false">Physiotherapy</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link border-0 custom-btn" id="pills-yoga-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-yoga" type="button" role="tab" aria-controls="pills-yoga"
+                    aria-selected="false">Yoga</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                <div class="row pt-4">
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
                     </div>
-                    <div class="pricing_plans_box_lower_portion">
-                        <h3>Standard</h3>
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>Pay as you go
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>Perfect for non-residence
-                            </li>
-                        </ul>
-                        <div class="pricing_plans_span_wrapper">
-                            <span class="price">$30</span>
-                            <span class="per_month">/per month</span>
-                        </div>
-                        <div class="btn_wrapper">
-                            <a class="enroll_now_btn text-decoration-none" href="./pricing.html">Enroll Now</a>
-                        </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
                     </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <a href="">
+                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing_plans_box_content">
-                    <div class="pricing_plans_box_upper_portion">
-                        <figure class="pricing_plans_image mb-0">
-                            <img src="{{ asset('images/pricing_plan_2.png') }}" alt="" class="img-fluid">
-                        </figure>
-                        <div class="pricing_plans_box_image_content">
-                            <figure class="mb-0">
-                                <img src="{{ asset('images/pricing_plan_icon_2.png') }}" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="pricing_plans_box_lower_portion second_lower_portion">
-                        <h3>Professional</h3>
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>Short-term comitment
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>Online training for all
-                            </li>
-                        </ul>
-                        <div class="pricing_plans_span_wrapper">
-                            <span class="price">$120</span>
-                            <span class="per_month">/per month</span>
-                        </div>
-                        <div class="btn_wrapper">
-                            <a class="enroll_now_btn text-decoration-none" href="./pricing.html">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
+
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="pricing_plans_box_content">
-                    <div class="pricing_plans_box_upper_portion">
-                        <figure class="pricing_plans_image mb-0">
-                            <img src="{{ asset('images/pricing_plan_3.png') }}" alt="" class="img-fluid">
-                        </figure>
-                        <div class="pricing_plans_box_image_content">
-                            <figure class="mb-0">
-                                <img src="{{ asset('images/pricing_plan_icon_3.png') }}" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="pricing_plans_box_lower_portion third_lower_portion">
-                        <h3>Private</h3>
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>Long-term comitment
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>24/7 Available
-                            </li>
-                        </ul>
-                        <div class="pricing_plans_span_wrapper">
-                            <span class="price">$250</span>
-                            <span class="per_month">/per month</span>
-                        </div>
-                        <div class="btn_wrapper">
-                            <a class="enroll_now_btn text-decoration-none" href="./pricing.html">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-pane fade" id="pills-physiotherapy" role="tabpanel"
+                aria-labelledby="pills-physiotherapy-tab">...
             </div>
+            <div class="tab-pane fade" id="pills-yoga" role="tabpanel" aria-labelledby="pills-yoga-tab">...</div>
         </div>
     </div>
 </section>
-<!-- TESTIMONIAL SECTION -->
-<div class="testimonial_section">
+
+
+<!-- google review section -->
+<section class="google-review-section">
     <div class="container">
-        <div class="row" data-aos="fade-up">
+        <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="testimonial_content">
-                                <i class="fa-solid fa-quote-left"></i>
-                                <p class="testimonial_paragraph">“Quisuam est, qui dolorem ipsum quia dolor sit amet,
-                                    consec velit sed ruia non nuam
-                                    eius modi tempora incidunt ut magnam aliruam auzerat voluptatem autenim rea minima
-                                    exercita ionem ullam corporis suscitnis officiis debitis aut rerum necessitatibus
-                                    saepe
-                                    evenietut aer voluptates”</p>
-                                <figure><img src="{{ asset('images/testimonial_image.png') }}" alt="" class="img-fluid">
-                                </figure>
-                                <p class="testimonial_person_name">Himala Joerge</p>
-                                <span>Happy client</span>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial_content">
-                                <i class="fa-solid fa-quote-left"></i>
-                                <p class="testimonial_paragraph">“Quisuam est, qui dolorem ipsum quia dolor sit amet,
-                                    consec velit sed ruia non nuam
-                                    eius modi tempora incidunt ut magnam aliruam auzerat voluptatem autenim rea minima
-                                    exercita ionem ullam corporis suscitnis officiis debitis aut rerum necessitatibus
-                                    saepe
-                                    evenietut aer voluptates”</p>
-                                <figure><img src="{{ asset('images/testimonial_image.png') }}" alt="" class="img-fluid">
-                                </figure>
-                                <p class="testimonial_person_name">Himala Joerge</p>
-                                <span>Happy client</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <i class="fa-solid fa-arrow-left-long"></i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
             </div>
         </div>
-        <figure class="testimonial_left_shape left_shape mb-0">
-            <img src="{{ asset('images/testimonial_left_shape.png') }}" alt="" class="img-fluid">
-        </figure>
-        <figure class="testimonial_right_shape right_shape mb-0">
-            <img src="{{ asset('testimonial_right_shape.png') }}" alt="" class="img-fluid">
-        </figure>
     </div>
-</div>
+
+</section>
+
+<!-- end google review section -->
+
 <!-- BLOG POSTS SECTION -->
 <section class="blog_posts_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog_posts_content">
-                    <h5>Blog Posts</h5>
-                    <h2>Our News Feed</h2>
-                    <p>Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-                        vel illum qui dolorem eum fugiat</p>
+         
+                    <h2>Blog & News</h2>
+                    <p>Stay Informed and Inspired - Our Latest Insights and Updates</p>
                 </div>
             </div>
         </div>
@@ -572,89 +517,7 @@
         </div>
     </div>
 </section>
-<!-- FOOTER SECTION -->
-<section class="footer-section" id="footer_section">
-    <div class="container">
-        <div class="middle-portion">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-lg-block d-none">
-                    <div class="footer_logo">
-                        <a href="./index.html" class="text-decoration-none">
-                        
-                            <figure class="mb-0 img-fluid logo"><img src="{{ asset('images/logo.png') }}" alt="" ></figure>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="about_col">
-                        <h4>About Us</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <p>Quisuam est rui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sea...
-                                </p>
-                            </li>
-                            <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                            </li>
-                            <li class="icons"><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li class="icons"><a href="#"><i class="fa-brands fa-linkedin-in mr-0"
-                                        aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
-                    <div class="links_col">
-                        <h4>Quick Links</h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="{{ route('frontend.index') }}l">Home</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('frontend.about') }}">About Us</a>
-                            </li>
-                            <li>
-                                <a href="./services.html">Services</a>
-                            </li>
-                            <li>
-                                <a href="./team.html">Team</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('frontend.contact') }}">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-sm-block d-none">
-                    <div class="contact_col">
-                        <h4>Contact Info</h4>
-                        <ul class="list-unstyled">
-                            <li class="contact_icons">
-                                <i class="fa-solid fa-phone"></i>
-                                <a href="tel:+61383766284" class="text-decoration-none">+61 3 8376 6284</a>
-                            </li>
-                            <li class="contact_icons">
-                                <i class="fa-sharp fa-solid fa-envelope"></i>
-                                <a href="mailto:Info@yogastic.om" class="text-decoration-none">Info@yogastic.om</a>
-                            </li>
-                            <li class="mb-0">
-                                <i class="fa-solid fa-location-dot location"></i>
-                                <span>21 King Street Melbourne, 3000, Australia</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-portion">
-        <div class="copyright col-xl-12">
-            <p>Copyright 2022, Yogastic.com All Rights Reserved.</p>
-        </div>
-    </div>
-    <div class="footer_shape right_shape">
-        <figure class="mb-0"><img src="{{ asset('images/footer_shape.png') }}" alt="" class="img-fluid"></figure>
-    </div>
-</section>
+
 
 
 

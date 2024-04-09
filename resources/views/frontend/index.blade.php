@@ -315,14 +315,14 @@
                         href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
                         <figure class="video_img mb-0">
                             <img class="thumb img-fluid" style="cursor: pointer"
-                                src="{{ asset('images/get_in_touch_video_icon.png') }}" alt="">
+                                src="{{ asset('img/play-icon.png') }}" alt="play-icon">
                         </figure>
                     </a>
                 </div>
             </div>
         </div>
         <figure class="get_in_touch_shape left_shape mb-0">
-            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="get-in-touch-shape" class="img-fluid">
         </figure>
     </div>
 </section>

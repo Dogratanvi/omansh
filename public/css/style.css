@@ -72,7 +72,7 @@ h5{
 }
 h6{
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 700;
 }
@@ -1373,7 +1373,7 @@ textarea {
     margin-bottom: 92px;
 }
 .middle-portion .footer_logo{
-    padding-left: 62px;
+   
     padding-top: 5px;
 }
 .middle-portion .about_col{
@@ -1403,7 +1403,7 @@ textarea {
 }
 .middle-portion ul .icons i {
     border-radius: 100%;
-    background: var(--e-global-color-desaturated-magenta);
+    background: #1212124f;
     color: var(--e-global-color-white);
     font-size: 18px;
     line-height: 48px;
@@ -1457,8 +1457,8 @@ textarea {
     color: var(--e-global-color-soft-orange);
 }
 .bottom-portion{
-    border-top: 1px solid var(--e-global-color-mostly-desaturated-magenta);
-    text-align: center;
+    border-top: 1px solid white;
+ 
 }
 .copyright {
     padding: 24px 0;
@@ -1479,15 +1479,21 @@ textarea {
 /* About Page Style */
 
 /* About Page Sub Banner Section Style */
+.image-overlay {
+    background-color: #004b2abf;
+    height: 100%;
+
+}
 
 .sub-banner-section{
-    background-image: url('../images/subbanner_section_background.jpg');
+    background-image: url('../img/about-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 600px;
 }
 .sub-banner-section .banner-section {
-    padding: 160px 0 120px;
+    padding: 240px 0 120px;
     position: relative;
 }
 .sub-banner-section .banner-section .banner-section-content {
@@ -1507,7 +1513,7 @@ textarea {
     font-weight: 400;
     padding: 14px 24px;
     text-align: center;
-    background-color: #724065;
+
     color: var(--e-global-color-white);
     display: inline-block;
     border-radius: 25px 0 25px 0;
@@ -1520,7 +1526,7 @@ textarea {
     font-size: 14px;
 }
 .sub-banner-section .banner-section .btn_wrapper .sub_span {
-    color: var(--e-global-color-soft-orange);
+    color: #CAA983;
     margin-left: 8px;
 }
 
@@ -1569,7 +1575,7 @@ textarea {
     z-index: -1;
 }
 .aboutpage_aboutus_content{
-    padding-top: 110px;
+    padding-top: 50px;
 }
 .aboutpage_aboutus_content h5{
     text-transform: uppercase;
@@ -2275,7 +2281,27 @@ textarea {
 .single-post .single-post-heading {
     font-size: 30px !important;
 }
+@media screen and (max-width: 5100px) {
+    .container{
+        max-width: 1200px !important;
+    }
+    }
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 90% !important;
+    }
+    }
 
+@media screen and (max-width: 1100px) {
+    .container{
+        max-width: 90% !important;
+    }
+    }
+@media screen and (max-width: 1024px) {
+.container{
+    max-width: 90% !important;
+}
+}
 @media screen and (max-width: 760px) {
     .our_specialties_section .nav-pills {
         width: 100%;
@@ -2284,6 +2310,9 @@ textarea {
     }
     .our_specialties_section .nav-item{
         margin: 10px 0px;
+    }
+    .container{
+        max-width: 90% !important;
     }
     
 }

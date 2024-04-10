@@ -26,3 +26,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('contact', 'FrontendController@contact')->name('contact');
 
 });
+
+Route::resource('blogs', App\Http\Controllers\BlogController::class)->only('index', 'create', 'store');
+
+Route::resource('comments', App\Http\Controllers\CommentController::class)->only('show');

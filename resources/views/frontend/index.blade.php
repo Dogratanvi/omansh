@@ -81,7 +81,7 @@
                 <div class="services_content">
                     <h5>Our Services</h5>
 
-                    <p>Explore a spectrum of services dedicated to your health and well-being</p>
+                    <p class="text-center">Explore a spectrum of services dedicated to your health and well-being</p>
                 </div>
             </div>
         </div>
@@ -197,7 +197,7 @@
                 <div class="our_specialties_heading_content">
 
                     <h2>Why Choose Us</h2>
-                    <p>Empowering Your Health Journey with Compassion and Expertise</p>
+                    <p class="text-center">Empowering Your Health Journey with Compassion and Expertise</p>
                 </div>
             </div>
         </div>
@@ -336,7 +336,7 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p>Thank you for your trust and stories; we're truly humbled by your support</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 <div class="blog_posts_content">
          
                     <h2>Blog & News</h2>
-                    <p>Stay Informed and Inspired - Our Latest Insights and Updates</p>
+                    <p class="text-center">Stay Informed and Inspired - Our Latest Insights and Updates</p>
                 </div>
             </div>
         </div>

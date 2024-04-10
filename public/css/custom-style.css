@@ -64,9 +64,7 @@ a {
 .single-post01 .post-item-description .post-meta-date,
 .single-post01 .post-item-description .post-meta-date a,
 .single-post01 .post-item-description .post-meta-category,
-.single-post01 .post-item-description .post-meta-category a,
 .single-post01 .post-item-description .post-meta-comments,
-.single-post01 .post-item-description .post-meta-comments a,
 .single-post01 .post-meta-share a,
 .single-post01 .post-navigation .post-next,
 .single-post01 .post-navigation .post-prev,
@@ -78,7 +76,8 @@ a {
 #blog .post-item .post-item-description > h2 > a,
 .breadcrumb ol li a, .breadcrumb ul li a,
 .sidebar .widget-categories ul li a, .post-meta-category a{
-	text-decoration: none; color: var(--e-global-color-soft-orange);
+	text-decoration: none;
+	 color: #fff;
 }
 .load-more a{
 	color: var(--e-global-color-accent);
@@ -268,10 +267,12 @@ a.item-link{margin-top: 20px; display: inline-block}
 	color: var(--e-global-color-primary);
 }
 .single-post01 .form-group label:not(.error) {
-	font-size: 12px;
+	font-size: 20px;
 	margin-bottom: 4px;
 	letter-spacing: .04em;
 	text-transform: uppercase;
+	font-weight: 500;
+	color: #000;
 }
 .single-post01 .form-gray-fields .form-control {
     background: transparent;
@@ -289,7 +290,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 .single-post01 .form-control{
 	box-shadow: none;
 	line-height: 18px;
-	padding:10px 16px;
+	padding:20px 16px;
 	border-radius: 5px;
 	font-size: 12px;
 	transition: all .3s ease;
@@ -579,7 +580,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 .blog-posts p {
 	font-size: 16px;
 	line-height: 24px;
-	color: var(--e-global-color-text);
+	color: #989595;
 }
 .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
 	top: 0;
@@ -611,6 +612,9 @@ a.item-link{margin-top: 20px; display: inline-block}
 }
 .load-more a:hover{
 	background: none;
+}
+.post-meta-category a i{
+	color: #000 !important;
 }
 /*************************************************************
 =-*=-*=-*=-*=-*=-*= Responsive Single Post =-*=-*=-*=-*=-*=-*=

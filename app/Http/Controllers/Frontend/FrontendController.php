@@ -32,6 +32,27 @@ class FrontendController extends Controller
  
         return view('frontend.contact');
     }
+    public function service()
+    {
+ 
+        return view('frontend.service');
+    }
+    public function servicedetail()
+    {
+ 
+        return view('frontend.servicedetail');
+    }
+    public function blog()
+    {
+ 
+        return view('frontend.blog');
+    }
+    public function blogdetail()
+    {
+ 
+        return view('frontend.blogdetail');
+    }
+
 
  
 

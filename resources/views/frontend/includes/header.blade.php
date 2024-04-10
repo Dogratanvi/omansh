@@ -21,7 +21,7 @@
                                 <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./services.html">Services</a>
+                                <a class="nav-link" href="{{ route('frontend.service') }}">Services</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
@@ -42,43 +42,7 @@
                                 <a class="nav-link" href="./team.html">Team</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
-                                    id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"> Blog </a>
-                                <div class="dropdown-menu drop-down-content">
-                                    <ul class="list-unstyled drop-down-pages">
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./single-post.html">Single Post</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./infinite-scroll.html">Infinite
-                                                Scroll</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./load-more.html">Load More</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./one-column.html">One Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./two-column.html">Two Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./three-column.html">Three
-                                                Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./three-colum-sidbar.html">Three
-                                                Column Sidebar</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./four-column.html">Four Column</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./six-column.html">Six Column</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a class="nav-link"  href="{{ route('frontend.blog') }}"> Blog </a>
                             </li>
                             <li class="nav-item">
                                 <a class=" contact_us" href="{{ route('frontend.contact') }}">Contact Us</a>

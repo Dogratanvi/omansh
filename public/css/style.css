@@ -27,14 +27,14 @@ body {
 }
 :root {
     --e-global-color-primary: #242424;
-    --e-global-color-secondary: #764979;
+    --e-global-color-secondary: #CAA983;
     --e-global-color-text: #6b6b6b;
-    --e-global-color-accent: #413625;
+    --e-global-color-accent: #fff;
 	--e-global-color-white: #ffffff;
-    --e-global-color-soft-orange: #e1ccad;
-    --e-global-color-desaturated-magenta: #543458;
-    --e-global-color-very-dark-desaturated-magenta: #5c3960;
-    --e-global-color-mostly-desaturated-magenta: #8a648d;
+    --e-global-color-soft-orange: #CAA983;
+    --e-global-color-desaturated-magenta: #004B2A ;
+    --e-global-color-very-dark-desaturated-magenta: #262f2b61;
+    --e-global-color-mostly-desaturated-magenta: #004B2A;
     --e-global-color-pale-blue: #f4f7ff;
 }
 html{
@@ -49,7 +49,7 @@ h1{
 }
 h2{
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
+    font-size: 30px;
     line-height: 55px;
     font-weight: 700;
 }
@@ -61,7 +61,7 @@ h3{
 }
 h4{
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 30px;
     font-weight: 700;
 }
@@ -77,10 +77,12 @@ h6{
     font-weight: 700;
 }
 p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 400;
     color: #989595;
+    margin-bottom: 0px;
+
 }
 
 /* Home Page Style */
@@ -312,6 +314,7 @@ button:focus {
 }
 .banner-section-outer .banner-section-content .btn_wrapper{
     margin-bottom: 100px;
+
 }
 .banner-section-outer .btn_wrapper .getstarted_btn {
     position: relative;
@@ -542,6 +545,9 @@ button.custom-btn{
     left: 0;
 }
 
+.services_box_lower_portion p{
+    height: 200px;
+}
 /* homepage google review section style */
 
 .google-review-section {
@@ -597,6 +603,7 @@ button.custom-btn{
     margin-bottom: 15px;
     font-size: 18px;
     color: var(--e-global-color-text);
+    
 }
 .aboutus_content h6{
     color: var(--e-global-color-secondary);
@@ -627,7 +634,7 @@ button.custom-btn{
 }
 .aboutus_content .btn_wrapper .get_started_btn:hover {
     color: var(--e-global-color-white);
-    background-color: var(--e-global-color-secondary);
+    background-color: var( --e-global-color-desaturated-magenta);
     transform: translateY(-10px);
 }
 .aboutus_content .btn_wrapper .get_started_btn:hover:before {
@@ -645,10 +652,39 @@ button.custom-btn{
 	z-index: -1;
 	content: '';
 	color: var(--e-global-color-white);
-	background: var(--e-global-color-secondary);
+	background: var(--e-global-color-desaturated-magenta);
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
 
+
+.instagram-overlay-box {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    background: #004b2a8a;
+    width: 92.8%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 25%;
+    transition:2s;
+    -webkit-transition:2s;
+    -moz-transition:2s;
+    -ms-transition:2s;
+    -o-transition:2s;
+}
+.instagram-overlay-box {
+    display: none;
+}
+.instagram_posts:hover .instagram-overlay-box{
+    display: block;
+}
+.instagram-overlay-box i {
+    color: #fff;
+    font-size: 25px;
+}
 /* Home Page Our Specialties Section Style */
 
 .our_specialties_section{
@@ -1284,6 +1320,7 @@ textarea {
     background-repeat: no-repeat;
     position: relative;
     padding: 118px 80px 130px;
+    border-bottom-right-radius: 50px;
 }
 .subscribe_content h5 {
     text-transform: uppercase;
@@ -1475,23 +1512,27 @@ textarea {
     bottom: 120px;
     right: 0;
 }
-
-/* About Page Style */
-
-/* About Page Sub Banner Section Style */
+/* banner css */
 .image-overlay {
-    background-color: #004b2abf;
+    background-color: #004b2ab3;
     height: 100%;
 
 }
 
 .sub-banner-section{
-    background-image: url('../img/about-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
+    height: 743px;
 }
+/* About Page Style */
+
+/* About Page Sub Banner Section Style */
+
+.about-banner{
+    background-image: url('../img/about-banner.png');
+}
+
 .sub-banner-section .banner-section {
     padding: 240px 0 120px;
     position: relative;
@@ -1513,7 +1554,7 @@ textarea {
     font-weight: 400;
     padding: 14px 24px;
     text-align: center;
-
+background-color: #004B2A;
     color: var(--e-global-color-white);
     display: inline-block;
     border-radius: 25px 0 25px 0;
@@ -1590,6 +1631,7 @@ textarea {
 .aboutpage_aboutus_content p {
     margin-bottom: 12px;
     color: var(--e-global-color-text);
+    text-align: justify;
 }
 .aboutpage_aboutus_content .margin_bottom{
     margin-bottom: 30px;
@@ -1698,7 +1740,7 @@ textarea {
 /* About Page Our Mission Section Style */
 
 .mission_section{
-    padding: 130px 0 45px;
+    padding: 0px 0 135px 45px;
     position: relative;
 }
 .mission_section .mission_box{
@@ -1708,7 +1750,7 @@ textarea {
     box-shadow: 1px 1px 50px rgb(0 0 0 / 7%);
 }
 .mission_content{
-    padding-top: 150px;
+    padding-top: 50px;
     padding-left: 96px;
 }
 .mission_content h5{
@@ -1734,7 +1776,7 @@ textarea {
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
-    background-color: var(--e-global-color-secondary);
+    background-color: #004B2A;
     border-radius: 35px 0px 35px 0px;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -1782,7 +1824,7 @@ textarea {
     box-shadow: 1px 1px 50px rgb(0 0 0 / 7%);
 }
 .vision_content{
-    padding-top: 150px;
+    padding-top: 50px;
     padding-left: 40px;
 }
 .vision_content h5{
@@ -1808,7 +1850,7 @@ textarea {
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
-    background-color: var(--e-global-color-secondary);
+    background-color: #004B2A;
     border-radius: 35px 0px 35px 0px;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -1893,13 +1935,95 @@ textarea {
 /* Services Page Style */
 
 /* Services Page Services Section Style */
+.service-banner{
+    background-image: url('../img/service.png');
+}
 
 .services_section .services_page_services_right_shape {
     position: absolute;
     top: 115px;
     right: 0;
 }
+.logo_wrapper {
+    background: #004B2A;
+    display: flex;
+    justify-content: center;
+}
+.logo-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
 
+.service_page_aboutus_content .get_started_btn {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    padding: 24px 40px;
+    text-align: center;
+    color: var(--e-global-color-white);
+    display: inline-block;
+    background-color: #004B2A;
+    border-radius: 35px 0px 35px 0px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.service_page_aboutus_content .get_started_btn:hover {
+    color: #fff;
+    background-color: var(--e-global-color-secondary);
+    transform: translateY(-10px);
+}
+.service_page_aboutus_content .get_started_btn:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.service_page_aboutus_content .get_started_btn:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+    color: #fff;
+    background-color: var(--e-global-color-secondary);
+	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+}
+.grid-box h6{
+    color: #004B2A;
+    
+}
+.card.health-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-top-left-radius: 50px;
+ 
+}
+.card-content {
+    padding: 20px 10px;
+    height: 300px;
+}
+.card-content li{
+    color: 
+    #989595;
+}
+.content{
+display: none;
+}
 /* Pricing Page Style */
 
 /* Pricing Page Pricing Plans Section Style */
@@ -2099,6 +2223,9 @@ textarea {
 /* Contact Page Style */
 
 /* Contact Page Message Section Style */
+.contact-banner{
+    background-image: url('../img/contact-banner.png');
+}
 
 .message_section{
     padding: 120px 0 130px;
@@ -2106,7 +2233,7 @@ textarea {
 }
 .message_content h5 {
     text-transform: uppercase;
-    color: var(--e-global-color-secondary);
+    color: var(--e-global-color-desaturated-magenta);
     letter-spacing: 3.1px;
     margin-bottom: 12px;
 }
@@ -2168,23 +2295,22 @@ textarea {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 40px;
+    padding: 24px 44px;
     text-align: center;
-    color: var(--e-global-color-accent);
+    color: var(--e-global-color-white);
     display: inline-block;
-    background-color: var(--e-global-color-soft-orange);
+    background-color: #004B2A;
     border-radius: 35px 0px 35px 0px;
     transition: all 0.3s ease-in-out;
-    outline: none;
-    border: none;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 .message_content button:hover {
-    color: var(--e-global-color-white);
-    background-color: var(--e-global-color-secondary);
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
     transform: translateY(-10px);
 }
+
 .message_content button:hover:before {
 	left: 0%;
 	right: auto;
@@ -2248,7 +2374,7 @@ textarea {
     width: 26%;
 }
 .message_section .box .box_image_content figure{
-    background-color: var(--e-global-color-secondary);
+    background-color: var(--e-global-color-desaturated-magenta);
     width: 90px;
     height: 90px;
     line-height: 90px;
@@ -2274,6 +2400,12 @@ textarea {
 }
 
 /* Blog Posts Page Style */
+
+.blog-banner{
+   
+        background-image: url('../img/blog.png');
+   
+}
 
 .blog-posts {
     padding: 120px 0 130px;
@@ -2313,6 +2445,16 @@ textarea {
     }
     .container{
         max-width: 90% !important;
+    }
+    .logo-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    .grid-box {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
     }
     
 }

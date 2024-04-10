@@ -24,5 +24,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('home', 'FrontendController@home')->name('home');
     Route::get('about', 'FrontendController@about')->name('about');
     Route::get('contact', 'FrontendController@contact')->name('contact');
-
+    Route::get('service', 'FrontendController@service')->name('service');
+    Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
+    Route::get('blog', 'FrontendController@blog')->name('blog');
+    Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
 });

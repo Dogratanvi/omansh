@@ -20,9 +20,7 @@
 
     <!-- Scripts -->
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Add jQuery (required for Slick Slider) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
     <script type="module" src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/countdown.js') }}"></script>
     <script src="{{ asset('js/contact.js') }}"></script>

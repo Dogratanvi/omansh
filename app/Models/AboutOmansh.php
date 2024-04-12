@@ -17,6 +17,11 @@ class AboutOmansh extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
     protected $casts = [
         'id' => 'integer',
         'deleted_at' => 'datetime',
@@ -36,7 +41,7 @@ class AboutOmansh extends Model
     public static function getForm(): array
     {
         return [
-            Section::make('About Details')
+            Section::make('About Omansh Details')
                 ->columns(2)
                 ->collapsible()
                 ->description('Provide some basic information.')
@@ -51,7 +56,12 @@ class AboutOmansh extends Model
                         ->maxLength(65535)
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')
-                        ->image(),
+                        ->image()
+                        ->imageEditor()
+                        ->disk('public')
+                        ->directory('aboutOmansh')
+                        ->visibility('public')
+                        ->preserveFilenames(),
                     TextInput::make('order')
                         ->maxLength(255),
                 ]),

@@ -12,7 +12,6 @@ use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Tables\Columns\TextColumn;
 
 class AboutMe extends Model
 {
@@ -34,10 +33,9 @@ class AboutMe extends Model
 
         static::creating(function ($about) {
             $uuid = Uuid::uuid4()->toString();
-            $about->uuid=str_replace('-', '', $uuid);
+            $about->uuid = str_replace('-', '', $uuid);
         });
     }
-
 
     public static function getForm(): array
     {
@@ -61,25 +59,23 @@ class AboutMe extends Model
                     TextInput::make('order')
                         ->maxLength(255),
                 ]),
-
             Section::make('Social Details')
                 ->columns(2)
                 ->collapsible()
-                ->description('Provide some social information.')
+                ->description('Provide some meta information.')
                 ->icon('heroicon-o-chevron-right')
                 ->schema([
                     TextInput::make('instagram_url')
-                    ->maxLength(255),
+                        ->maxLength(255),
                     TextInput::make('twitter_url')
-                    ->maxLength(255),
+                        ->maxLength(255),
                     TextInput::make('youtube_url')
-                    ->maxLength(255),
+                        ->maxLength(255),
                     TextInput::make('linkedin_url')
-                    ->maxLength(255),
+                        ->maxLength(255),
                     TextInput::make('facebook_url')
-                    ->maxLength(255),
+                        ->maxLength(255),
                 ]),
-
             Section::make('Meta Details')
                 ->columns(2)
                 ->collapsible()
@@ -100,12 +96,11 @@ class AboutMe extends Model
                 ]),
 
             Fieldset::make('Status')
-            ->schema([
-                Toggle::make('status')
-                ->required(),
-            ])
-           
+                ->schema([
+                    Toggle::make('status')
+                        ->required(),
+                ])
+
         ];
     }
-
 }

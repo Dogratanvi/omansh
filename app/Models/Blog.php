@@ -29,7 +29,7 @@ class Blog extends Model
         'deleted_at' => 'datetime',
     ];
 
-      /**
+     /**
      * Get all of the post's comments.
      */
     public function comments()

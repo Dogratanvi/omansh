@@ -11,12 +11,6 @@ class ListAboutOmanshes extends ListRecords
 {
     protected static string $resource = AboutOmanshResource::class;
 
-    public function getTabs(): array
-    {
-        return [
-            'all' => Tab::make('All Testimonials'),
-        ];
-    }
 
     protected function getHeaderActions(): array
     {

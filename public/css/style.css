@@ -2150,6 +2150,23 @@ textarea {
     border: none;
     box-shadow: 1px 1px 50px rgb(0 0 0 / 5%);
 }
+
+.message_content select {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: var(--e-global-color-white);
+    color: var(--e-global-color-text);
+    border-radius: 0;
+    padding: 18px 25px;
+    width: 90%;
+    outline: none;
+    resize: none;
+    margin-bottom: 42px;
+    border: none;
+    box-shadow: 1px 1px 50px rgb(0 0 0 / 5%);
+}
 .message_content .form-control:focus{
     box-shadow: none;
     outline: none;

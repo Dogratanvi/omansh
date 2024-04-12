@@ -46,7 +46,7 @@
                                 <a href="./team.html">Team</a>
                             </li>
                             <li>
-                                <a href="{{ route('frontend.contact') }}">Contact Us</a>
+                                <a href="{{ route('frontend.contact.create') }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>

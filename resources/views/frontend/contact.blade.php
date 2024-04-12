@@ -48,17 +48,18 @@
                     <h2>Send us a Message</h2>
                     <p>Guia voluptas sit aspernatur aut odit aut fugit, sed quia exercitationem ullam corporis
                         laboriosam</p>
-                    <form id="contactpage" method="POST" action="./contact-form.php">
+                    <form id="contactpage" method="POST" action="{{ route('frontend.contact.store') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="text" name="firstname" id="fname" class="form-control"
+                                    <input type="text" name="first_name" id="fname" class="form-control"
                                         placeholder="First Name">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="text" name="lastname" id="lname" class="form-control form_style"
+                                    <input type="text" name="last_name" id="lname" class="form-control form_style"
                                         placeholder="Last Name">
                                 </div>
                             </div>
@@ -70,21 +71,35 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="emailaddress" id="emailaddrs"
+                                    <input type="email" name="email" id="emailaddrs" value="email"
                                         class="form-control form_style" placeholder="Email">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
+                                <div class="form-group mb-0">
+                                   
+                                    <select name="service" id="service" class="form-select">
+                                        <option selected disabled>Services</option>
+                                        <option value="women_health">Women Health</option>
+                                        <option value="physiotherapy">Physiotherapy</option>
+                                        <option value="yoga">Yoga</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <div class=" form-group mb-0">
-                                    <textarea rows="3" name="msg" id="comment" class="form-control"
+                                    <textarea rows="3" name="message" id="comment" class="form-control"
                                         placeholder="Message"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="btn_wrapper">
-                            <button type="submit" name="get_started" id="started">Get Started</button>
+                            <button type="submit" id="started">Get Started</button>
                         </div>
                     </form>
                 </div>
@@ -230,7 +245,7 @@
                                 <a href="./team.html">Team</a>
                             </li>
                             <li>
-                                <a href="{{ route('frontend.contact') }}">Contact Us</a>
+                                <a href="{{ route('frontend.contact.create') }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>

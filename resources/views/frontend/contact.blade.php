@@ -47,17 +47,18 @@
                     <h2>Send us a Message</h2>
                     <p>Guia voluptas sit aspernatur aut odit aut fugit, sed quia exercitationem ullam corporis
                         laboriosam</p>
-                    <form id="contactpage" method="POST" action="./contact-form.php">
+                    <form id="contactpage" method="POST" action="{{ route('frontend.contact.store') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="text" name="firstname" id="fname" class="form-control"
+                                    <input type="text" name="first_name" id="fname" class="form-control"
                                         placeholder="First Name">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="text" name="lastname" id="lname" class="form-control form_style"
+                                    <input type="text" name="last_name" id="lname" class="form-control form_style"
                                         placeholder="Last Name">
                                 </div>
                             </div>
@@ -69,21 +70,35 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="emailaddress" id="emailaddrs"
+                                    <input type="email" name="email" id="emailaddrs" value="email"
                                         class="form-control form_style" placeholder="Email">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
+                                <div class="form-group mb-0">
+                                   
+                                    <select name="service" id="service" class="form-select">
+                                        <option selected disabled>Services</option>
+                                        <option value="women_health">Women Health</option>
+                                        <option value="physiotherapy">Physiotherapy</option>
+                                        <option value="yoga">Yoga</option>
+                                    </select>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <div class=" form-group mb-0">
-                                    <textarea rows="3" name="msg" id="comment" class="form-control"
+                                    <textarea rows="3" name="message" id="comment" class="form-control"
                                         placeholder="Message"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="btn_wrapper">
-                            <button type="submit" name="get_started" id="started">Get Started</button>
+                            <button type="submit" id="started">Get Started</button>
                         </div>
                     </form>
                 </div>
@@ -180,6 +195,90 @@
     </div>
 </section>
 <!-- FOOTER SECTION -->
+<section class="footer-section">
+    <div class="container">
+        <div class="middle-portion">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-lg-block d-none">
+                    <div class="footer_logo">
+                        <a href="./index.html" class="text-decoration-none">
+                            <figure class="mb-0"><img
+                                    src="{{ asset('images/logo.png') }}" alt=""
+                                    class="img-fluid"></figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="about_col">
+                        <h4>About Us</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Quisuam est rui dolorem ipsum quia dolor sit amet, consectetur adipisci velit sea...
+                                </p>
+                            </li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="icons"><a href="#"><i class="fa-brands fa-linkedin-in mr-0"
+                                        aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+                    <div class="links_col">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                        <li>
+                                <a href="{{ route('frontend.index') }}l">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('frontend.about') }}">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./services.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="./team.html">Team</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('frontend.contact.create') }}">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-sm-block d-none">
+                    <div class="contact_col">
+                        <h4>Contact Info</h4>
+                        <ul class="list-unstyled">
+                            <li class="contact_icons">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+61383766284" class="text-decoration-none">+61 3 8376 6284</a>
+                            </li>
+                            <li class="contact_icons">
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <a href="mailto:Info@yogastic.om" class="text-decoration-none">Info@yogastic.om</a>
+                            </li>
+                            <li class="mb-0">
+                                <i class="fa-solid fa-location-dot location"></i>
+                                <span>21 King Street Melbourne, 3000, Australia</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-portion">
+        <div class="copyright col-xl-12">
+            <p>Copyright 2022, Yogastic.com All Rights Reserved.</p>
+        </div>
+    </div>
+    <div class="footer_shape right_shape">
+        <figure class="mb-0"><img src="{{ asset('images/footer_shape.png') }}"
+                alt="" class="img-fluid"></figure>
+    </div>
+</section>
 
 
 @endsection

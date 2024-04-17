@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Support\Facades\Route;
@@ -17,8 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-// frontend routes
 
+
+
+// frontend routes
 Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('home', 'FrontendController@home')->name('home');
@@ -30,4 +33,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
     Route::get('blog', 'FrontendController@blog')->name('blog');
     Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
+
+    // contact
+
+    //  mailchimp newsletter
+    Route::get('newsletter/news', [MailChimpController::class, 'showForm'])->name('newsletter.showForm');
+    Route::post('newsletter/store', [MailChimpController::class, 'store'])->name('newsletter.store');
 });

@@ -27,7 +27,7 @@ class Comments extends Model
         'deleted_at' => 'datetime',
     ];
 
-    /*
+     /*
      * Get the owning commentable model.
      */
     public function commentable()
@@ -72,7 +72,7 @@ class Comments extends Model
     public static function getForm(): array
     {
         return [
-            Section::make('Slider Details')
+            Section::make('Comment Details')
                 ->columns(2)
                 ->collapsible()
                 ->description('Provide some basic information.')

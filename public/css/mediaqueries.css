@@ -2922,9 +2922,11 @@
         line-height: 16px;
     }
     .get_in_touch_section .get_in_touch_video .video_img {
-        left: 150px;
+        left: 46%;
     }
-
+    .services_box_lower_portion p {
+        height: 150px;
+    }
     .pricing_plans_content p {
         margin-bottom: 20px;
     }

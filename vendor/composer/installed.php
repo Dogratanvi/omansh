@@ -2,6 +2,7 @@
     'root' => array(
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+        'reference' => 'ef45716ffeb1bcbdda9dd1bc8d3bdfcde2ca7388',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -182,6 +183,15 @@
             'install_path' => __DIR__ . '/../dragonmantank/cron-expression',
             'aliases' => array(),
             'reference' => 'adfb1f505deb6384dc8b39804c5065dd3c8c8c0a',
+            'dev_requirement' => false,
+        ),
+        'drewm/mailchimp-api' => array(
+            'pretty_version' => 'v2.5.4',
+            'version' => '2.5.4.0',
+            'reference' => 'c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../drewm/mailchimp-api',
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'egulias/email-validator' => array(
@@ -715,6 +725,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+            'reference' => 'ef45716ffeb1bcbdda9dd1bc8d3bdfcde2ca7388',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1515,6 +1526,15 @@
             'install_path' => __DIR__ . '/../spatie/laravel-medialibrary',
             'aliases' => array(),
             'reference' => 'a6002b04b4a2e3227b3d5996ad78f8d73302db24',
+            'dev_requirement' => false,
+        ),
+        'spatie/laravel-newsletter' => array(
+            'pretty_version' => '5.1.1',
+            'version' => '5.1.1.0',
+            'reference' => '825fb94ded624934eaaf2a0707e4ae2417f11a6c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-newsletter',
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'spatie/laravel-package-tools' => array(

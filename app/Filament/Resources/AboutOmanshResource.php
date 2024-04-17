@@ -42,13 +42,7 @@ class AboutOmanshResource extends Resource
                 Tables\Columns\ImageColumn::make('featured_image'),
                 Tables\Columns\TextColumn::make('order')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('meta_title')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('meta_keywords')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('meta_og_image'),
-                Tables\Columns\TextColumn::make('meta_og_url')
-                    ->searchable(),
+              
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')

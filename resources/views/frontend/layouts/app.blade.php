@@ -15,7 +15,7 @@
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
-  
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -23,23 +23,24 @@
     <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- StyleSheet link CSS -->
- 
-    
-  
- 
+
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Shortcut Icon -->
     <link href="{{ asset('bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('js/bootstrap.min.js') }}">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-    <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
+
+
     <link href="{{ asset('css/custom-style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/special-classes.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <!-- CSRF Token -->
@@ -61,12 +62,13 @@
 
     @include('frontend.includes.footer')
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
+<script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<script src="{{ asset('js/video-popup.js') }}"></script>
+<!-- Add jQuery (required for Slick Slider) -->
 
-
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Add jQuery (required for Slick Slider) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src ="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -74,7 +76,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 </script>
-
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="{{ asset('js/video-section.js') }}"></script>
@@ -84,16 +86,16 @@
 
 
 <script>
-$(document).ready (function () {
-  $(".content").slice(0, 6).show();
-  $("#loadMore").on("click", function(e){
-    e.preventDefault();
-    $(".content:hidden").slice(0, 6).slideDown();
-    if ($(".content:hidden").length == 0) {
-      $("#loadMore").text("No Content").addClass("noContent");
-    }
-  });
-  })
+$(document).ready(function() {
+    $(".content").slice(0, 6).show();
+    $("#loadMore").on("click", function(e) {
+        e.preventDefault();
+        $(".content:hidden").slice(0, 6).slideDown();
+        if ($(".content:hidden").length == 0) {
+            $("#loadMore").text("No Content").addClass("noContent");
+        }
+    });
+})
 </script>
 
 

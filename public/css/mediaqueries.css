@@ -26,7 +26,7 @@
         width: 600px;
     }
     .banner-section-outer .banner-section .banner_left_bottom_shape img{
-        width: 185px;
+        width: 100%;
     }
     .banner-section-outer .banner-section .banner_right_top_shape {
         bottom: 155px;
@@ -127,6 +127,14 @@
     .contact_map_section iframe{
         width: -webkit-fill-available;
     }
+    .banner-section-outer .banner-section .banner-section-content{
+        padding-top: 306px;
+    }
+    .banner-section-outer .banner-section .banner-section-image figure {
+        position: absolute;
+        top: 183px;
+        left: -20px;
+    }
 }
 
 @media screen and (max-width: 1199px){
@@ -134,7 +142,7 @@
         padding: 30px 60px 0;
     }
     .navbar-brand img{
-        width: 190px;
+        width: 100px;
     }
     .navbar-nav {
         padding-left: 36px;
@@ -176,7 +184,7 @@
         padding: 90px 60px 100px;
     }
     .banner-section-outer .banner-section .banner-section-content {
-        padding-top: 115px;
+        padding-top: 306px;
     }
     h5 {
         font-size: 18px;
@@ -210,23 +218,24 @@
         line-height: 65px;
     }
     .banner-section-outer .banner-section .banner-section-image figure {
-        top: 0;
-        left: 0;
+        position: absolute;
+        top: 183px;
+        left: -20px;
     }
     .banner-section-outer .banner-section .banner-section-image img {
         width: 470px;
     }
     .banner-section-outer .banner-section .banner_left_top_shape {
-        top: -42px;
+        top: 192px;
     }
     .banner-section-outer .banner-section .banner_left_top_shape img{
         width: 70px;
     }
     .banner-section-outer .banner-section .banner_left_bottom_shape {
-        top: 60px;
+        top: 250px;
     }
     .banner-section-outer .banner-section .banner_left_bottom_shape img {
-        width: 160px;
+        width: 100%;
     }
     .banner-section-outer .banner-section .banner_right_top_shape {
         bottom: 120px;
@@ -1029,7 +1038,7 @@
         padding: 25px 30px 0;
     }
     .navbar-brand img {
-        width: 175px;
+        width: 100px;
     }
     .navbar-nav {
         padding-left: 0;
@@ -1142,10 +1151,15 @@
     }
 
     .banner-section-outer .banner-section {
-        padding: 65px 30px 70px;
+        padding: 200px 30px 70px;
     }
     .banner-section-outer .banner-section .banner-section-content {
-        padding-top: 50px;
+        padding-top: 100px;
+    }
+    .banner-section-outer .banner-section .banner-section-image figure {
+        position: absolute;
+        top: 95px;
+        left: 35px;
     }
     h5 {
         font-size: 16px;
@@ -1191,7 +1205,7 @@
         top: 55px;
     }
     .banner-section-outer .banner-section .banner_left_bottom_shape img {
-        width: 112px;
+        width: 100%;
     }
     .banner-section-outer .banner-section .banner_right_top_shape {
         bottom: 100px;
@@ -1374,7 +1388,7 @@
     }
     .get_in_touch_section .get_in_touch_video .video_img {
         left: -80px;
-        top: 290px;
+        top: 171px;
     }
     .get_in_touch_section .get_in_touch_video .video_img img {
         width: 115px;
@@ -1612,7 +1626,7 @@
     }
 
     .sub-banner-section .banner-section {
-        padding: 50px 0 70px;
+        padding: 250px 0 70px;
     }
     .sub-banner-section .banner-section h1 {
         margin-bottom: 8px;
@@ -1722,7 +1736,7 @@
         border-radius: 140px 0 140px 0;
     }
     .mission_content {
-        padding-top: 70px;
+        padding-top: 20px;
         padding-left: 45px;
     }
     .mission_content h5 {
@@ -1748,7 +1762,7 @@
         border-radius: 120px 0 120px 0;
     }
     .vision_content {
-        padding-top: 40px;
+        padding-top: 20px;
         padding-left: 0px;
     }
     .vision_content h5 {
@@ -1926,14 +1940,14 @@
         padding: 20px 30px 0;
     }
     .navbar-brand img {
-        width: 170px;
+        width: 99px;
     }
     .navbar-collapse{
         width: 45%;
     }
 
     .banner-section-outer .banner-section {
-        padding: 55px 30px 60px;
+        padding: 300px 30px 60px;
     }
     .banner-section-outer .banner-section .banner-section-content {
         padding-top: 0;
@@ -1974,6 +1988,11 @@
     .banner-section-outer .banner-section .banner-section-image figure {
         position: relative;
     }
+    .banner-section-outer .banner-section .banner-section-image figure {
+        position: absolute;
+        top: 266px;
+        left: 35px;
+    }
     .banner-section-outer .banner-section .banner-section-image img {
         width: 100%;
     }
@@ -1987,7 +2006,7 @@
         top: 65px;
     }
     .banner-section-outer .banner-section .banner_left_bottom_shape img {
-        width: 100px;
+        width: 100%;
     }
     .banner-section-outer .banner-section .banner_right_top_shape {
         bottom: 95px;
@@ -2206,13 +2225,22 @@
         font-size: 14px;
         line-height: 20px;
     }
+    .get_in_touch_section::after {
+        background: url(../img/Get_in_touch.png);
+        content: "";
+        width: 55%;
+        height: 472px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;}
     .get_in_touch_content button {
         padding: 18px 30px;
     }
     .get_in_touch_section .get_in_touch_video .video_img {
-        left: 185px;
-        top: 370px;
-    }
+        left: 46%;
+        margin: auto;
+        top: 180px;
+        text-align: center;}
     .get_in_touch_section .get_in_touch_video .video_img img {
         width: 110px;
     }
@@ -2738,14 +2766,14 @@
         padding: 20px 15px 0;
     }
     .navbar-brand img {
-        width: 150px;
+        width: 99px;
     }
     .navbar-collapse {
         width: 65%;
     }
 
     .banner-section-outer .banner-section {
-        padding: 55px 15px 60px;
+        padding: 300px 15px 60px;
     }
     .banner-section-outer .banner-section h1 {
         padding: 0;
@@ -2894,7 +2922,7 @@
         line-height: 16px;
     }
     .get_in_touch_section .get_in_touch_video .video_img {
-        left: 95px;
+        left: 150px;
     }
 
     .pricing_plans_content p {

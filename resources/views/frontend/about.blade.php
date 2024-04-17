@@ -66,7 +66,7 @@
                         <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-4" data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " data-aos="fade-right">
                     <div class="aboutpage_aboutus_content ps-4 ">
                         <h5>About us</h5>
                         <h2>Better Life With Optimal Health</h2>

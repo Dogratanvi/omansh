@@ -24,17 +24,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('home', 'FrontendController@home')->name('home');
     Route::get('about', 'FrontendController@about')->name('about');
     Route::get('contact', 'FrontendController@contact')->name('contact');
-<<<<<<< HEAD
+    Route::get('doctorworkshop', 'FrontendController@doctorworkshop')->name('doctorworkshop');
+    Route::get('yogatraining', 'FrontendController@yogatraining')->name('yogatraining');
     Route::get('service', 'FrontendController@service')->name('service');
     Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
     Route::get('blog', 'FrontendController@blog')->name('blog');
     Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
 });
-=======
-
-});
-
-Route::resource('blogs', App\Http\Controllers\BlogController::class)->only('index', 'create', 'store');
-
-Route::resource('comments', App\Http\Controllers\CommentController::class)->only('show');
->>>>>>> ef45716ffeb1bcbdda9dd1bc8d3bdfcde2ca7388

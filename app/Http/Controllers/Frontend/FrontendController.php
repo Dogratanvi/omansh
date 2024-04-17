@@ -52,8 +52,20 @@ class FrontendController extends Controller
  
         return view('frontend.blogdetail');
     }
+   
+
+    public function doctorworkshop()
+    {
+ 
+        return view('frontend.doctorworkshop');
+    }
 
 
+    public function yogatraning()
+    {
+ 
+        return view('frontend.yogatraining');
+    }
  
 
 }

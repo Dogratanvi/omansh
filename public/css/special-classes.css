@@ -29,10 +29,14 @@
 .pagination .page-item:not(.disabled):active > .page-link,
 .pagination .page-item:not(.disabled):focus > .page-link,
 .pagination .page-item:not(.disabled):hover > .page-link,
-.pagination .page-item:not(.disabled) > .page-link,
-#blog .post-item.border .post-item-wrap .post-item-description a{
-    color: var(--e-global-color-accent);
+.pagination .page-item:not(.disabled) > .page-link
+{
+    color: #989595;
 }
+#blog .post-item.border .post-item-wrap .post-item-description a{
+    color: #000;
+}
+
 .single-post01 .post-tags a {
     display: inline-block;
     background-color: var(--e-global-color-soft-orange);
@@ -47,20 +51,15 @@
     border-bottom: 1px solid var(--e-global-color-mostly-desaturated-magenta);
 }
 .single-post01 .comment .comment_date {
-    color: var(--e-global-color-secondary);
+    color: #004B2A;
 }
-.single-post01 .text .comment-reply-link,
+ .single-post01 .text .comment-reply-link,
 .respond-comment span,
 .single-post01 .comment_number span,
 .sidebar .nav-tabs .nav-link.active,
 .sidebar .widget-tweeter li a,
 .sidebar .widget-twitter li a,
 .sidebar .cat-count-span,
-.single-post01 .post-item-description .post-meta-date:hover,
-.single-post01 .post-item-description .post-meta-date a:hover,
-.single-post01 .post-item-description .post-meta-category:hover,
-.single-post01 .post-item-description .post-meta-category a:hover, .single-post01 .post-item-description .post-meta-comments:hover, .single-post01 .post-item-description .post-meta-comments a:hover,
-.single-post01 .post-tags a:hover,
 .post-navigation .post-prev-title:hover span,
 .post-navigation .post-next-title:hover span,
 .post-navigation .post-prev:hover,
@@ -71,12 +70,11 @@
 .post-navigation .post-prev:hover span,
 .sidebar .post-thumbnail-list a:hover,
 .sidebar .widget-categories ul li a:hover,
-#blog .post-item .post-item-description .post-meta-comments a:hover,
 #blog .post-item .post-item-description > h2 > a:hover,
 .load-more a:hover,
 #blog .post-item.border .post-item-wrap .post-item-description a:hover{
     color: var(--e-global-color-soft-orange);
-}
+} 
 .sidebar .widget-tweeter li a{
     color: var(--e-global-color-secondary);
 }
@@ -122,7 +120,7 @@
 }
 .sidebar .post-thumbnail-entry .post-category,
 .sidebar .post-thumbnail-entry .post-date {
-    color: var(--e-global-color-secondary);
+    color:#004B2A;
 }
 .sidebar .widget-tweeter small,
 .sidebar .widget-twitter small {
@@ -130,16 +128,19 @@
 }
 .sidebar .tags a {
     color: var(--e-global-color-accent);
-    background-color: var(--e-global-color-soft-orange);
-    border: 2px solid var(--e-global-color-soft-orange);
+    background-color: var( --e-global-color-desaturated-magenta);
+    border: 2px solid var( --e-global-color-desaturated-magenta);
 }
 .sidebar .tags a.active,
 .sidebar .tags a:active,
 .sidebar .tags a:focus,
-.sidebar .tags a:hover,
-.form-gray-fields .btn,
-.widget-newsletter .btn{
+.sidebar .tags a:hover
+{
     background-color: var(--e-global-color-soft-orange);
+}
+.widget-newsletter .btn{
+    background-color: #004B2A;
+    color: #fff !important;
 }
 .single-post01 .form-gray-fields .form-control:focus{
     border-color: #66afe9;
@@ -148,10 +149,12 @@
 }
 .post-item.border .post-meta-category,
 .load-more a{
-    background-color:var(--e-global-color-accent);
+    background-color:var(--e-global-color-desaturated-magenta);
+    
 }
 .load-more a {
     background-color: var(--e-global-color-soft-orange);
+
 }
 .post-item.border .post-meta-category:hover{
     background-color: var(--e-global-color-secondary);
@@ -171,23 +174,20 @@
 .sidebar .tags a:active,
 .sidebar .tags a:focus,
 .sidebar .tags a:hover,
-.form-gray-fields .btn,
-.widget-newsletter .btn,
 #blog .post-item.border .post-meta-category a:hover{
-    color: var(--e-global-color-accent);
+    color: var( --e-global-color-mostly-desaturated-magenta);
 }
 #blog .post-item.border .post-meta-category a:hover{
     color: var(--e-global-color-white);
 }
 .border {
     border: none !important;
-    box-shadow: 1px 1px 50px rgb(0 0 0 / 5%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 50px;
 }
 #blog .post-item .post-meta-category,
 #blog .post-item .post-meta-comments,
 .single-post01 .post-item-description .post-meta-category a,
-#blog .post-item.border .post-item-wrap .post-item-description .post-meta-comments a,
-#blog .post-item .post-item-description .post-meta-date,
 #blog .post-item-description .post-meta-comments a{
     color: var(--e-global-color-secondary);
 }
@@ -208,3 +208,64 @@
     color: var(--e-global-color-white);
     border: 2px solid var(--e-global-color-secondary);
 }
+.post-meta-date{
+    color: 
+    #004B2A !important;
+    }
+    .post-meta-comments a{
+        color: 
+        #004B2A !important;
+    }
+    .post-image img{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    
+    .post-meta-category a i{
+        color: #000 !important;
+    }
+    .single-post .post-meta-category a{
+        color: 
+        #004B2A !important;
+    }
+    .post-item li{
+        color: #989595;
+    }
+    .comment-btn{
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        padding: 24px 36px;
+        text-align: center;
+        color: #ffffff;
+        display: inline-block;
+        background-color: #004B2A;
+        border-radius: 35px 0px 35px 0px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+    }
+    .comment-btn:hover {
+        color: var(--e-global-color-white);
+        
+        background-color:  #CAA983;
+        transform: translateY(-10px);
+    }
+    .comment-btn:hover:before {
+        left: 0%;
+        right: auto;
+        width: 100%;
+    }
+    .comment-btn:before {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 0px;
+        z-index: -1;
+        content: '';
+        color: var(--e-global-color-white);
+        background-color:  #CAA983;
+        transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+    }

@@ -26,12 +26,35 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('home', 'FrontendController@home')->name('home');
     Route::get('about', 'FrontendController@about')->name('about');
+    Route::get('contact', 'FrontendController@contact')->name('contact');
+    Route::get('doctorworkshop', 'FrontendController@doctorworkshop')->name('doctorworkshop');
+    Route::get('yogatraining', 'FrontendController@yogatraining')->name('yogatraining');
+    Route::get('service', 'FrontendController@service')->name('service');
+    Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
+    Route::get('blog', 'FrontendController@blog')->name('blog');
+    Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
+
+    //workshop
+    $module_name = 'workshop';
+    $controller_name = 'WorkshopController';
+    Route::get('workshop/doctortraining', 'WorkshopController@doctortraining')->name('workshop.doctortraining');
+    Route::get('workshop/yogatraining', 'WorkshopController@yogatraining')->name('workshop.yogatraining');
+    Route::get('workshop/corporatetraining', 'WorkshopController@corporatetraining')->name('workshop.corporatetraining');
+
+    //feedback
+     $module_name = 'feedbackform';
+     $controller_name = 'FeedbackController';
+     Route::get('feedback/form', 'FeedbackController@form')->name('feedback.form');
+
+    //Events
+     $module_name = 'events';
+     $controller_name = 'EventController';
+     Route::get('events/upcoming', 'EventController@form')->name('events.upcoming');
+     Route::get('events/past', 'EventController@form')->name('events.past');
+ 
+   
 
     // contact
-    Route::get('/', 'FrontendController@index')->name('index');
-    Route::post('/', 'FrontendController@store')->name('index.store');
-    Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');
-    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
     //  mailchimp newsletter
     Route::get('newsletter/news', [MailChimpController::class, 'showForm'])->name('newsletter.showForm');

@@ -6,30 +6,37 @@
 
     <!-- BANNER SECTION -->
     <section class="banner-section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row" data-aos="fade-up">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-md-left text-center">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-md-left text-center">
                     <div class="banner-section-content">
-                        <h5>WELCOME TO</h5>
-                        <h1 data-aos="fade-up">OMANSH <br> <span class="ityped"></span></h1>
-                        <p data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for
+                        <h5
+                            class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
+                            WELCOME TO</h5>
+                        <h1 class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                            data-aos="fade-up">OMANSH <br> <span class="ityped"></span></h1>
+                        <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                            data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for
                             Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
-                        <div class="btn_wrapper" data-aos="fade-up">
-                            <a class="text-decoration-none getstarted_btn" href="./index.html">Contact Us</a>
+                        <div class="btn_wrapper home-btn text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                            data-aos="fade-up">
+                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"> </i></a>
                         </div>
 
                         <!-- <a class="top-btn"  href="{{ route('frontend.index') }}#footer_section">
                            <i class="fa-solid fa-arrow-down-long"></i>
                         </a> -->
-                        <figure class="banner_left_top_shape_inner left_shape mb-0">
+                        <figure
+                            class="banner_left_top_shape_inner left_shape mb-0 text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start">
                             <img src="{{ asset('img/aboutus_top_shape.png') }}" alt="" class="img-fluid">
                         </figure>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <div class="banner-section-image">
-                        <figure class="banner_left_bottom_shape left_shape mb-0">
-                            <img src="{{ asset('images/banner_right_image.png') }}" alt="">
+                        <figure class="banner_left_bottom_shape left_shape mb-0 text-end">
+                            <img class="w-100" src="{{ asset('images/banner_right_image.png') }}" alt="">
                         </figure>
                     </div>
                 </div>
@@ -77,73 +84,54 @@
 <section class="services_section">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
                     <h5>Our Services</h5>
 
-                    <p>Explore a spectrum of services dedicated to your health and well-being</p>
-                </div>
-            </div>
-        </div>
-        <div class="row pt-3" data-aos="fade-up">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('img/women-health.png') }}" alt=""
-                                class="img-fluid w-100"></figure>
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Women Health</h3>
-                        <p>Our pelvic floor therapy and pregnancy support programmes are tailored to women's health. Our
-                            specialists empower women at every step with customised therapies and caring assistance.
-                            Support your health and well-being with personalised treatment.</p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"> </i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('img/Physiotherapy.png') }}" alt=""
-                                class="img-fluid w-100"></figure>
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Physiotherapy</h3>
-                        <p>Explore our experienced physiotherapy treatments to improve your health and mobility. Our
-                            staff uses evidence-based approaches to treat a variety of physical issues, providing
-                            personalised treatment. Experience the path of rehabilitation with our devoted specialists.
-                        </p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+
+                    <p class="text-center">Explore a spectrum of services dedicated to your health and well-being</p>
                 </div>
             </div>
 
+        </div>
+        <div class="row pt-3" data-aos="fade-up">
+            @foreach ($services as $service)
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="services_box_content">
                     <div class="services_box_upper_portion">
-                        <figure class="mb-0"><img src="{{ asset('img/yoga.png') }}" alt="" class="img-fluid w-100">
-                        </figure>
+
+                        <figure class="mb-0"><img src="{{asset($service->featured_image)}}" alt=""
+                                class="img-fluid w-100"></figure>
                     </div>
                     <div class="services_box_lower_portion">
-                        <h3>Yoga</h3>
-                        <p>Experience the transformational power of Yoga, where ancient practices meet contemporary
-                            therapies. Our workshops promote comprehensive well-being by harmonising body, mind, and
-                            spirit. Discover inner calm and physical strength in a caring and compassionate atmosphere
-                            for beginners to expert practitioners.
-                        </p>
-                        <div class="btn_wrapper">
+                        <h3> {{ $service->name}}</h3>
+
+                        <p>{!! $service->content!!}</p>
+
+
+                   
+                        <!-- <div class="btn_wrapper">
                             <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"> </i></a>
+                        </div> -->
+                        <div
+                            class=" text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
+                            <a href="#">
+                                <div class="btn btns">
+                                    <span>Read More</span>
+
+                                    <i class="fa-solid fa-arrow-right ico" aria-hidden="true"> </i>
+
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
+            @endforeach
+
         </div>
         <figure class="services_left_shape left_shape mb-0">
             <img src="{{ asset('images/services_left_shape.png') }}" alt="" class="img-fluid w-100">
@@ -197,7 +185,7 @@
                 <div class="our_specialties_heading_content">
 
                     <h2>Why Choose Us</h2>
-                    <p>Empowering Your Health Journey with Compassion and Expertise</p>
+                    <p class="text-center">Empowering Your Health Journey with Compassion and Expertise</p>
                 </div>
             </div>
         </div>
@@ -314,15 +302,15 @@
                     <a class="popup-vimeo"
                         href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
                         <figure class="video_img mb-0">
-                            <img class="thumb img-fluid" style="cursor: pointer"
-                                src="{{ asset('images/get_in_touch_video_icon.png') }}" alt="">
+                            <img class="thumb img-fluid" style="cursor: pointer" src="{{ asset('img/play-icon.png') }}"
+                                alt="play-icon">
                         </figure>
                     </a>
                 </div>
             </div>
         </div>
         <figure class="get_in_touch_shape left_shape mb-0">
-            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="get-in-touch-shape" class="img-fluid">
         </figure>
     </div>
 </section>
@@ -336,7 +324,7 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p>Thank you for your trust and stories; we're truly humbled by your support</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
                 </div>
             </div>
         </div>
@@ -441,9 +429,9 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog_posts_content">
-         
+
                     <h2>Blog & News</h2>
-                    <p>Stay Informed and Inspired - Our Latest Insights and Updates</p>
+                    <p class="text-center">Stay Informed and Inspired - Our Latest Insights and Updates</p>
                 </div>
             </div>
         </div>

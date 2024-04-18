@@ -3,9 +3,10 @@
     <div class="container">
         <div class="middle-portion">
             <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-lg-block d-none">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 d-lg-block">
                     <div class="footer_logo">
-                        <a href="./index.html" class="text-decoration-none">
+                        <a href="#"
+                            class="text-decoration-none  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
 
                             <figure class="mb-0 img-fluid logo"><img src="{{ asset('img/footer-logo.png') }}"
                                     alt="logo">
@@ -13,10 +14,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="about_col">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div
+                        class="about_col  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                         <h4>About Us</h4>
-                        <ul class="list-unstyled">
+                        <ul
+                            class="list-unstyled  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                             <li>
                                 <p>Omansh Health & Fitness: Empowering your journey towards optimal health with
                                     expertise and compassion. Discover wellness through our dedicated care - Yoga,
@@ -42,10 +45,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
-                    <div class="links_col">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 d-md-block ">
+                    <div
+                        class="links_col  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                         <h4>Quick Links</h4>
-                        <ul class="list-unstyled">
+                        <ul
+                            class="list-unstyled text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                             <li>
                                 <a href="{{ route('frontend.index') }}l">Home</a>
                             </li>
@@ -61,13 +66,18 @@
                             <li>
                                 <a href="{{ route('frontend.contact') }}">Contact Us</a>
                             </li>
+                            <li>
+                                <a href="{{ route('frontend.feedback.form') }}">Feedback Form</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-sm-block d-none">
-                    <div class="contact_col">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 d-sm-block ">
+                    <div
+                        class="contact_col  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                         <h4>Contact Info</h4>
-                        <ul class="list-unstyled">
+                        <ul
+                            class="list-unstyled text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                             <li class="contact_icons">
                                 <i class="fa-solid fa-phone"></i>
                                 <a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270 45759</a>
@@ -90,16 +100,22 @@
     </div>
     <div class="bottom-portion ">
         <div class="container">
-        <div class="row">
-        <div class="col-md-6 copyright">
-            <p class="text-start text-xl-start text-md-start  text-lg-start">Copyright 2024 | Omansh.org
-            </p>
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    <p
+                        class=" text-white text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
+                        Copyright 2024 | Omansh.org
+                    </p>
+                </div>
+                <div class="col-md-6  copyright">
+                    <p class="footer-text text-white text-lg-end text-sm-start text-start text-md-end text-xl-end text-xs-start"
+                        href=""> Website designed and developed by<a href=""> PulsePlay Digital</a></p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-end align-items-center copyright">
-            <p class="footer-text text-white" href=""> Website designed and developed by<a href=""> PulsePlay Digital</a></p>
-        </div>
-    </div> </div></div>
-    <div class="footer_shape right_shape">
-        <figure class="mb-0"><img src="{{ asset('images/footer_shape.png') }}" alt="footer-shape" class="img-fluid"></figure>
     </div>
-</section>  
+    <div class="footer_shape right_shape">
+        <figure class="mb-0"><img src="{{ asset('images/footer_shape.png') }}" alt="footer-shape" class="img-fluid">
+        </figure>
+    </div>
+</section>

@@ -224,7 +224,7 @@
     .post-meta-category a i{
         color: #000 !important;
     }
-    .post-meta-category a{
+    .single-post .post-meta-category a{
         color: 
         #004B2A !important;
     }

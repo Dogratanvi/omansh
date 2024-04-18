@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Frontend;
 
 use  App\Http\Controllers\Controller;
+use App\Models\Service;
+
 class FrontendController extends Controller
 {
 
@@ -19,7 +21,11 @@ class FrontendController extends Controller
     public function index()
     {
  
-        return view('frontend.index');
+        $services = Service::all();
+        
+
+
+        return view('frontend.index', compact('services'));
     }
 
     public function about()

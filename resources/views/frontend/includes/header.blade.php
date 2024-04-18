@@ -28,15 +28,15 @@
                             <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="{{ route('frontend.yogatraining') }}">
+                                        <a class="dropdown-item nav-link" href="{{ route('frontend.workshop.yogatraining') }}">
                                             Yoga TRAININGg</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="{{ route('frontend.doctorworkshop') }}">
+                                        <a class="dropdown-item nav-link" href="{{ route('frontend.workshop.doctortraining') }}">
                                             DOCTOR TRAINING</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./faq.html">CORPORATE TRAINING</a>
+                                        <a class="dropdown-item nav-link" href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE TRAINING</a>
                                     </li>
                                 </ul>
                             </div>
@@ -48,10 +48,10 @@
                             <div class="dropdown-menu drop-down-content">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./pricing.html">UPCOMING EVENTS</a>
+                                        <a class="dropdown-item nav-link" href="{{ route('frontend.events.upcoming') }}">UPCOMING EVENTS</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="./faq.html">PAST EVENTS</a>
+                                        <a class="dropdown-item nav-link" href="{{ route('frontend.events.upcoming') }}">PAST EVENTS</a>
                                     </li>
                                 </ul>
                             </div>

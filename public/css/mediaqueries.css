@@ -661,7 +661,7 @@
         margin-top: -135px;
     }
     .middle-portion .footer_logo {
-        padding-left: 20px;
+        padding-left: 0px;
         padding-top: 0px;
     }
     .middle-portion .about_col {
@@ -1598,7 +1598,7 @@
         width: 40px;
     }
     .middle-portion .links_col {
-        padding-left: 40px;
+        padding-left: 0px;
     }
     .middle-portion h4 {
         margin-bottom: 12px;
@@ -1617,7 +1617,7 @@
     }
     .copyright p {
         line-height: 18px;
-    }
+        padding: 0 15px;}
     .footer_shape figure {
         bottom: 55px;
     }
@@ -1932,6 +1932,9 @@
 
     .blog-posts {
         padding: 70px 0 45px;
+    }
+    .feedback-form {
+        padding: 60px 10px;
     }
 }
 
@@ -2435,11 +2438,11 @@
         line-height: 20px;
     }
     .copyright {
-        padding: 14px 0;
+        padding: 0px 0;
     }
     .copyright p {
-        line-height: 14px;
-    }
+        line-height: 18px;
+        padding: 0 15px;}
     .footer_shape figure {
         bottom: 50px;
     }
@@ -2759,6 +2762,9 @@
     .blog-posts {
         padding: 60px 0 35px;
     }
+    .feedback-form {
+        padding: 60px 10px;
+    }
 }
 
  @media screen and (max-width: 575px){
@@ -3062,6 +3068,9 @@
         padding: 100px 0 0;
         margin-top: -45px;
     }
+    .bottom-portion{
+padding: 10px 0px;
+    }
     .middle-portion {
         text-align: center;
     }
@@ -3069,7 +3078,7 @@
         margin-bottom: 10px;
     }
     .middle-portion .about_col ul li p {
-        padding: 0 20px;
+        padding: 0 0px;
     }
     .middle-portion ul .icons i {
         font-size: 12px;
@@ -3080,7 +3089,22 @@
     .copyright p {
         line-height: 12px;
         font-size: 12px;
-    }
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+    
+.contact_col{
+    padding-top: 20px;
+}
+.about_col{
+    padding-top: 20px;
+}
+
+.links_col{
+    padding-top: 20px;
+}
+
     .footer_shape figure{
         display: none;
     }
@@ -3271,5 +3295,8 @@
 
     .contact_subscribe_section {
         margin-top: -395px;
+    }
+    .container{
+        padding: 0px 15px !important;
     }
 }

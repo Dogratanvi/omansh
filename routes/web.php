@@ -34,6 +34,26 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('blog', 'FrontendController@blog')->name('blog');
     Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
 
+    //workshop
+    $module_name = 'workshop';
+    $controller_name = 'WorkshopController';
+    Route::get('workshop/doctortraining', 'WorkshopController@doctortraining')->name('workshop.doctortraining');
+    Route::get('workshop/yogatraining', 'WorkshopController@yogatraining')->name('workshop.yogatraining');
+    Route::get('workshop/corporatetraining', 'WorkshopController@corporatetraining')->name('workshop.corporatetraining');
+
+    //feedback
+     $module_name = 'feedbackform';
+     $controller_name = 'FeedbackController';
+     Route::get('feedback/form', 'FeedbackController@form')->name('feedback.form');
+
+    //Events
+     $module_name = 'events';
+     $controller_name = 'EventController';
+     Route::get('events/upcoming', 'EventController@form')->name('events.upcoming');
+     Route::get('events/past', 'EventController@form')->name('events.past');
+ 
+   
+
     // contact
 
     //  mailchimp newsletter

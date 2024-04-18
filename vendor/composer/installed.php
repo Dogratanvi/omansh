@@ -2,11 +2,10 @@
     'root' => array(
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ef45716ffeb1bcbdda9dd1bc8d3bdfcde2ca7388',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'acb7c965c6d8f8ee390e3d6a779d6d1a03513d16',
+        'reference' => 'f31327652e8f3f007cfa6ed5786f3d9c0fb1dfbe',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -188,10 +187,10 @@
         'drewm/mailchimp-api' => array(
             'pretty_version' => 'v2.5.4',
             'version' => '2.5.4.0',
-            'reference' => 'c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../drewm/mailchimp-api',
             'aliases' => array(),
+            'reference' => 'c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a',
             'dev_requirement' => false,
         ),
         'egulias/email-validator' => array(
@@ -725,11 +724,10 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ef45716ffeb1bcbdda9dd1bc8d3bdfcde2ca7388',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'acb7c965c6d8f8ee390e3d6a779d6d1a03513d16',
+            'reference' => 'f31327652e8f3f007cfa6ed5786f3d9c0fb1dfbe',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -1531,10 +1529,10 @@
         'spatie/laravel-newsletter' => array(
             'pretty_version' => '5.1.1',
             'version' => '5.1.1.0',
-            'reference' => '825fb94ded624934eaaf2a0707e4ae2417f11a6c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/laravel-newsletter',
             'aliases' => array(),
+            'reference' => '825fb94ded624934eaaf2a0707e4ae2417f11a6c',
             'dev_requirement' => false,
         ),
         'spatie/laravel-package-tools' => array(

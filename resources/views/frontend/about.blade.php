@@ -1,8 +1,6 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-
-
     <div class="sub-banner-section about-banner">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
@@ -67,7 +65,7 @@
                     </figure>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " data-aos="fade-right">
-                    <div class="aboutpage_aboutus_content ps-4 ">
+                    <div class="aboutpage_aboutus_content  ">
                         <h5>About us</h5>
                         <h2>Better Life With Optimal Health</h2>
                         <p>We're not just a team at OMANSH; we're a family whose only goal is to help people live better

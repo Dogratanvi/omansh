@@ -616,9 +616,6 @@ button.custom-btn{
     left: 0;
 }
 
-.services_box_lower_portion p{
-    height: 200px;
-}
 
 .btn_wrapper.home-btn i{
     color: #fff;
@@ -1491,6 +1488,54 @@ textarea {
     bottom: -125px;
     right: -66px;
 }
+/* feedback form */
+.feedback-form-box {
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    margin: 80px 10px;
+}
+.feedback-heading{
+    padding: 50px 120px;
+    background-color: #004B2A; 
+    border-top-left-radius: 120px;
+}
+.feedback-form {
+    padding: 60px 120px;
+}
+.form-check {
+    padding: 30px 0px 30px 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.form-check-input{
+border: 2px solid #000;
+}
+.table{
+    margin-top: 40px;
+}
+.table .form-check-input{
+    margin-left: 0px !important;
+
+}
+label.form-check-label {
+    color: #000;
+    font-weight: 600;
+}
+.feedback-form th{
+    font-size: 20px;
+    font-weight: 400;
+}
+#text-box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none !important;
+    margin-top: 15px;
+    width: 100%;
+ 
+}
+#text-box::placeholder {
+    font-size: 15px;
+    padding-left: 10px;
+}
 
 /* Home Page Footer Section Style */
 
@@ -1499,6 +1544,9 @@ textarea {
     background-color: #004B2A;
     padding: 308px 0 0px;
     margin-top: -218px;
+}
+.footer-text a{
+    color: #CAA983;
 }
 .middle-portion {
     margin-bottom: 92px;
@@ -2619,5 +2667,28 @@ textarea {
 h1{
     font-size: 48px !important;
     line-height: 60px !important;
+}
+.feedback-form {
+    padding: 60px 10px;
+}
+.feedback-form h3 {
+    font-size: 25px;
+    width: 200px;
+}
+.feedback-form h4 {
+    font-size: 20px;
+    width: 150px;
+    padding-top: 6px;
+}
+.feedback-form tbody  {
+    display: block;
+    overflow-x: auto;
+    width: 300px;
+}
+tbody .form-check-input {
+    position: relative !important;
+}
+.feedback-heading img{
+    display: none;
 }
 }

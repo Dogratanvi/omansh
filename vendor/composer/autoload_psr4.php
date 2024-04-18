@@ -74,6 +74,7 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Psr\\Clock\\' => array($vendorDir . '/psr/clock/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'Phpfastcache\\' => array($vendorDir . '/phpfastcache/phpfastcache/lib/Phpfastcache'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'PhpMyAdmin\\SqlParser\\' => array($vendorDir . '/phpmyadmin/sql-parser/src'),

@@ -19,22 +19,22 @@ class ListTestimonials extends ListRecords
         ];
     }
 
-    // public function getTabs(): array
-    // {
-    //     return [
-    //         'all' => Tab::make('All Testimonials'),
-    //         'women_health' => Tab::make('Approved')
-    //             ->modifyQueryUsing(function ($query) {
-    //                 return $query->where('category', Testimonial::women_health'));
-    //             }),
-    //         // 'physiotherapy' => Tab::make('Submitted')
-    //         //     ->modifyQueryUsing(function ($query) {
-    //         //         return $query->where('category', TalkStatus::SUBMITTED);
-    //         //     }),
-    //         // 'yoga' => Tab::make('Rejected')
-    //         //     ->modifyQueryUsing(function ($query) {
-    //         //         return $query->where('category', TalkStatus::REJECTED);
-    //         //     }),
-    //     ];
-    // }
+    public function getTabs(): array
+    {
+        return [
+            'all' => Tab::make('All Testimonials'),
+            'women-health' => Tab::make('Women Health')
+                ->modifyQueryUsing(function ($query){
+                    return $query->where('category', 'women-health');
+                }),
+            'physiotherapy' => Tab::make('Physiotherapy')
+                ->modifyQueryUsing(function ($query) {
+                    return $query->where('category','physiotherapy');
+                }),
+            'yoga' => Tab::make('Yoga')
+                ->modifyQueryUsing(function ($query) {
+                    return $query->where('category', 'yoga');
+                }),
+         ];
+    }
 }

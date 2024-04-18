@@ -62,6 +62,8 @@ class Events extends Model
                         ->columnSpanFull(),
                     DateTimePicker::make('date_from'),
                     DateTimePicker::make('date_to'),
+                    TextInput::make('location')
+                    ->maxLength(255),
                     TextInput::make('order')
                         ->maxLength(255),
                 ]),

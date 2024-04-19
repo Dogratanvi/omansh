@@ -305,4 +305,4 @@
 </section>
 
 
-@endsection
+@endsectiongi

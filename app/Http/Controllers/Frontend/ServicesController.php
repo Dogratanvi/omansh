@@ -10,9 +10,6 @@ class ServicesController extends Controller
 {
     public function index(Request $request): View
     {
-        $services = Service::all();
-        dd($services);
-
-        return view('frontend.index', compact('services'));
+       
     }
 }

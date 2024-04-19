@@ -28,6 +28,18 @@ class Workshop extends Model
         'deleted_at' => 'datetime',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($gallery) {
+            $uuid = Uuid::uuid4()->toString();
+            $gallery->uuid=str_replace('-', '', $uuid);
+
+        });
+
+    }
+
     public static function getForm(): array
     {
         return [

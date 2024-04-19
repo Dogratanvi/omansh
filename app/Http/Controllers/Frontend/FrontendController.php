@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Frontend;
 
 use  App\Http\Controllers\Controller;
+use App\Models\Service;
+
 class FrontendController extends Controller
 {
 
@@ -19,7 +21,11 @@ class FrontendController extends Controller
     public function index()
     {
  
-        return view('frontend.index');
+        $services = Service::all();
+        
+
+
+        return view('frontend.index', compact('services'));
     }
 
     public function about()
@@ -32,7 +38,40 @@ class FrontendController extends Controller
  
         return view('frontend.contact');
     }
+    public function service()
+    {
+ 
+        return view('frontend.service');
+    }
+    public function servicedetail()
+    {
+ 
+        return view('frontend.servicedetail');
+    }
+    public function blog()
+    {
+ 
+        return view('frontend.blog');
+    }
+    public function blogdetail()
+    {
+ 
+        return view('frontend.blogdetail');
+    }
+   
 
+    public function doctorworkshop()
+    {
+ 
+        return view('frontend.doctorworkshop');
+    }
+
+
+    public function yogatraning()
+    {
+ 
+        return view('frontend.yogatraining');
+    }
  
 
 }

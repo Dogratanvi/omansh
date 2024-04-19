@@ -8,8 +8,17 @@ use Illuminate\Http\Request;
 
 class ServicesController extends Controller
 {
-    public function index(Request $request): View
+    public function physiotherapy()
     {
-       
+     return view('frontend.services.physiotherapy');
     }
+    public function womenhealth()
+    {
+     return view('frontend.services.womenhealth');
+    }
+    public function yoga()
+    {
+     return view('frontend.services.yoga');
+    }
+    
 }

@@ -52,6 +52,13 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
      Route::get('events/upcoming', 'EventController@upcoming')->name('events.upcoming');
      Route::get('events/past', 'EventController@past')->name('events.past');
  
+    //  services
+
+    $module_name = 'services';
+    $controller_name = 'ServicesController';
+    Route::get('services/physiotherapy', 'ServicesController@physiotherapy')->name('services.physiotherapy');
+    Route::get('services/womenhealth', 'ServicesController@womenhealth')->name('services.womenhealth');
+    Route::get('services/yoga', 'ServicesController@yoga')->name('services.yoga');
    
 
     // contact

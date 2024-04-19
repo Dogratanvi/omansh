@@ -56,7 +56,7 @@ h2{
 h3{
     font-family: 'Playfair Display', serif;
     font-size: 22px;
-    line-height: 55px;
+    line-height: 33px;
     font-weight: 700;
 }
 h4{
@@ -2609,6 +2609,28 @@ textarea {
 }
 .single-post .single-post-heading {
     font-size: 30px !important;
+}
+/* events */
+.card.upcoming-card {
+    border-top-left-radius: 80px;
+}
+
+.upcoming-card img {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.event-content {
+    padding: 20px 15px;
+}
+.date {
+    position: absolute;
+    top: 27px;
+    background-color: #fff;
+    margin-left: 40px;
+    width: 61px;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 @media screen and (max-width: 5100px) {
     .container{

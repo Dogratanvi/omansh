@@ -2765,6 +2765,11 @@
     .feedback-form {
         padding: 60px 10px;
     }
+    .banner-section-outer .banner-section .banner-section-image figure {
+        position: relative !important;
+        top: 0px;
+        left: 0px;
+    }
 }
 
  @media screen and (max-width: 575px){
@@ -3298,5 +3303,13 @@ padding: 10px 0px;
     }
     .container{
         padding: 0px 15px !important;
+    }
+    .banner-section-outer .banner-section .banner-section-image figure {
+        position: relative !important;
+        top: 0px;
+        left: 0px;
+    }
+    .service-text {
+        height:auto;
     }
 }

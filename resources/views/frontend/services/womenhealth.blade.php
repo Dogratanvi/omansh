@@ -41,7 +41,7 @@
 <section class="aboutpage_aboutus_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                 <div class="servicepage_aboutus_image">
                     <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
                             alt="service_women_health.png" class="img-fluid">
@@ -55,22 +55,23 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                 <div class="service_page_aboutus_content  ps-4 ">
 
-                    <h2>Yoga</h2>
-
-                    <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
+                    <h2>Women Health</h2>
+                    @foreach ($services as $service)
+                    <div>{!! $services[1]->content!!}</div>
+                    <!-- <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
                         body and spirit through the practice of asana, pranayama, mudra, bandha, shat-karma and
                         meditation to achieve a reach a stage of enlightenment or self-realization
 
                         We offer Physio-Yoga Therapy which is an innovative approach to physical rehabilitation which
                         combines Physiotherapy and Medical Therapeutic Yoga (MTY). What results is a healing experience
                         that blends the latest in medical science and the time-tested traditions of Yoga.</p>
+                     @endforeach  -->
 
                     <div class="btn_wrapper mt-3">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get
-                            Started</a>
+                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Contact Us</a>
                     </div>
 
                 </div>
@@ -202,14 +203,18 @@
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Pregnancy & Postpartum</h4>
-                        <li>Vulvodynia </li>
-                        <li>Vaginismus</li>
-                        <li>Dyspareunia</li>
-                        <li>Pudendal Neuralgia</li>
-                        <li>Endometriosis</li>
-                        <li>Fibromyalgia</li>
-                        <li>Persistent Genital Arousal Disorder (PGAD)</li>
-                        <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
+                        <li>Rib pain </li>
+                        <li>Carpal tunnel syndrome</li>
+                        <li>Hip /Groin /Pubic pain</li>
+                        <li>Urinary Incontinence</li>
+                        <li>Prolapse</li>
+                        <li>Postnatal pelvic floor check</li>
+                        <li>Blocked milk ducts</li>
+                        <li>Return to sport check
+</li>
+                        <li>Diastasis Recti</li>
+                        <li>Pelvic girdle pain/Sacroiliac joint pain</li>
+                        <li>Perineal tears, Episiotomies, C-section scar management</li>
                         </ul>
                     </div>
                 </div>

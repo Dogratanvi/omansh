@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up"> Women Healths</h1>
+                            <h1 data-aos="fade-up"> Yoga Trainig</h1>
                             <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
                                 nulla pariatur nostrud exercitation</p>
                             <div class="btn_wrapper">
@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="servicepage_aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
+                    <figure class="mb-0"><img src="{{ asset('img/services/yoga-inner-page-image.png') }}"
                             alt="service_women_health.png" class="img-fluid">
                     </figure>
 
@@ -55,22 +55,30 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
                 <div class="service_page_aboutus_content  ps-4 ">
 
-                    <h2>Yoga</h2>
 
-                    <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
+
+                    <h2>Yoga Training</h2>
+                    @foreach ($services as $service)
+                    <div class="margin_bottom">{!! $services[2]->content!!}</div>
+                    <!-- <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
                         body and spirit through the practice of asana, pranayama, mudra, bandha, shat-karma and
                         meditation to achieve a reach a stage of enlightenment or self-realization
 
                         We offer Physio-Yoga Therapy which is an innovative approach to physical rehabilitation which
                         combines Physiotherapy and Medical Therapeutic Yoga (MTY). What results is a healing experience
                         that blends the latest in medical science and the time-tested traditions of Yoga.</p>
-
+                      @endforeach
                     <div class="btn_wrapper mt-3">
                         <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get
                             Started</a>
+                    </div> -->
+                    <div class="btn_wrapper mt-3">
+                        <a href="{{ route('frontend.contact') }}" class="text-decoration-none get_started_btn">Contact
+                            Us
+                        </a>
                     </div>
 
                 </div>
@@ -81,80 +89,27 @@
     </div>
 </section>
 
-<section class="pb-5 mb-5">
-    <div class="container">
-        <h2> You are Not Alone</h2>
-        <div class="grid-box mt-4">
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-        </div>
-
-    </div>
-</section>
 
 <!-- women-health-issue -->
 <section class="pb-5 mb-5">
     <div class="container">
-        <h2 class="text-center"> Type of Women health Issues</h2>
-        <p class="text-center">Women's health issues encompass a wide range of conditions and concerns that specifically
-            affect women, from reproductive health to hormonal imbalances and beyond</p>
+        <h2 class="text-center"> Types of Yoga</h2>
+        <p class="text-center">Explore the diverse world of yoga, where each style offers a unique path to balance,
+            strength, and inner peace.</p>
 
         <div class="row pt-5">
             <div class="col-md-4 mt-4">
                 <div class="card health-card border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/yoga/corporate-yoga.png') }}" alt="corporate-yoga">
                     <div class="card-content">
-                        <h4>Bladder Dysfunctions</h4>
+                        <h4>Corporate Yoga</h4>
                         <ul>
-                            <li>Urinary Incontinence </li>
-                            <li>Mixed Incontinence</li>
-                            <li>Interstitial Cystitiss (IC)/Bladder Pain Syndrome</li>
-                            <li>Urgency,Frequency,Nocturia</li>
+                            <li>Stress Management </li>
+                            <li>Meditation</li>
+                            <li>Chair Yoga</li>
+                            <li>Posture Analysis</li>
                             <li>Muscle Strengthening</li>
-                            <li>Pre & Post gynecological surgery rehabilitation</li>
+                            <li>Ergonomics</li>
 
                         </ul>
                     </div>
@@ -162,19 +117,14 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/yoga/pregnency-yoga.png') }}" alt="pregnency-yoga">
                     <div class="card-content">
-                        <h4>Bowel Issues & Prolapse</h4>
+                        <h4>Pregnancy Yoga</h4>
                         <ul>
-                            <li>Imflammatory Bowel Disease (IBD) </li>
-                            <li>Crohn's disease</li>
-                            <li>Ulcerative Colitis</li>
-                            <li>Constipation</li>
-                            <li>Irritable Bowel Syndrome (IBS)</li>
-                            <li>Fecal Incontinence</li>
-                            <li>Hemorrhoid Plain</li>
-                            <li>Vaginal Prolapse(Bladder,Bowel,Uterus)</li>
-                            <li>Rectal Prolapse</li>
+                            <li>Pre Pregnancy Sessions </li>
+                            <li>During Pregnancy Session</li>
+                            <li>Post Pregnancy Session</li>
+                         
 
                         </ul>
                     </div>
@@ -182,49 +132,35 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/yoga/medical-yoga.png') }}" alt="medical-yoga">
                     <div class="card-content">
-                        <h4>Pelvic Pain Dysfunctions</h4>
-                        <li>Vulvodynia </li>
-                        <li>Vaginismus</li>
-                        <li>Dyspareunia</li>
-                        <li>Pudendal Neuralgia</li>
-                        <li>Endometriosis</li>
-                        <li>Fibromyalgia</li>
-                        <li>Persistent Genital Arousal Disorder (PGAD)</li>
-                        <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
+                    <h4>Medical Yoga</h4>
+                 
+                    <li>Hormonal Imbalance</li>
+                        <li>Infertility </li>
+                        <li>Thyroid</li>
+                        <li>Weight Loss</li>
+                        <li> Disease Specific</li>
+                       
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/yoga/general-yoga.png') }}" alt="general-yoga">
                     <div class="card-content">
-                        <h4>Pregnancy & Postpartum</h4>
-                        <li>Vulvodynia </li>
-                        <li>Vaginismus</li>
-                        <li>Dyspareunia</li>
-                        <li>Pudendal Neuralgia</li>
-                        <li>Endometriosis</li>
-                        <li>Fibromyalgia</li>
-                        <li>Persistent Genital Arousal Disorder (PGAD)</li>
-                        <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
+                        <h4>General Yoga & Pilates</h4>
+                        <li>Body Toning </li>
+                        <li>Ergonomics</li>
+                        <li>Face Yoga</li>
+                        <li>Posture Analysis</li>
+                    
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-4">
-                <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
-                    <div class="card-content">
-                        <h4>Excercise Programs & Pilates</h4>
-                        <li>At World of Women, we offer Pilates Personalised Exercise Programs Prenatal & Postnatal
-                            Pilates Physio Led Pregnancy Class Mums and Bubs </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+         
         </div>
     </div>
 </section>
@@ -271,8 +207,9 @@
             </div>
         </div>
         <div class="btn_wrapper d-flex justify-content-center mt-5">
-        <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
-    </div></div>
+            <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+        </div>
+    </div>
 </section>
 <!-- SUBSCRIBE SECTION -->
 <section class="subscribe_section">
@@ -305,4 +242,4 @@
 </section>
 
 
-@endsectiongi
+@endsection

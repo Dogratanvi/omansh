@@ -15,10 +15,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-                                href="{{ route('frontend.service') }}" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a href="{{ route('frontend.service') }}" class="nav-link  dropdown-color navbar-text-color"
+                                role="button" >Services </a><a href="#" class="ps-2 dropdown-toggle dropdown-color" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"
+                                id="navbarDropdown"></a>
 
                             <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
                                 <ul class="list-unstyled drop-down-pages">
@@ -49,7 +50,8 @@
                             <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="{{ route('frontend.workshop.yogatraining') }}">
+                                        <a class="dropdown-item nav-link"
+                                            href="{{ route('frontend.workshop.yogatraining') }}">
                                             YOGA TRAINING</a>
                                     </li>
                                     <li class="nav-item">
@@ -136,28 +138,29 @@
                                 <a class="nav-link" href="{{ route('frontend.blog') }}"> Blog </a>
                             </li>
                             <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
-                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> WORKSHOP </a>
-                            <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
-                                <ul class="list-unstyled drop-down-pages">
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" href="{{ route('frontend.workshop.yogatraining') }}">
-                                            Yoga TRAINING</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.workshop.doctortraining') }}">
-                                            DOCTOR TRAINING</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE
-                                            TRAINING</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> WORKSHOP </a>
+                                <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
+                                    <ul class="list-unstyled drop-down-pages">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-link"
+                                                href="{{ route('frontend.workshop.yogatraining') }}">
+                                                Yoga TRAINING</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-link"
+                                                href="{{ route('frontend.workshop.doctortraining') }}">
+                                                DOCTOR TRAINING</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item nav-link"
+                                                href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE
+                                                TRAINING</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
                                     id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"

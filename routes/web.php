@@ -29,7 +29,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('contact', 'FrontendController@contact')->name('contact');
     Route::get('doctorworkshop', 'FrontendController@doctorworkshop')->name('doctorworkshop');
     Route::get('yogatraining', 'FrontendController@yogatraining')->name('yogatraining');
-    Route::get('service', 'FrontendController@service')->name('service');
+    
     Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
     Route::get('blog', 'FrontendController@blog')->name('blog');
     Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
@@ -56,6 +56,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
 
     $module_name = 'services';
     $controller_name = 'ServicesController';
+    Route::get('service', 'ServicesController@service')->name('service');
     Route::get('services/physiotherapy', 'ServicesController@physiotherapy')->name('services.physiotherapy');
     Route::get('services/womenhealth', 'ServicesController@womenhealth')->name('services.womenhealth');
     Route::get('services/yoga', 'ServicesController@yoga')->name('services.yoga');

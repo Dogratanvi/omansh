@@ -37,6 +37,11 @@ class Service extends Model
         });
     }
 
+    public function setFeaturedImageAttribute($value)
+    {
+        $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+    }
+
     public static function getForm(): array
     {
         return [
@@ -51,11 +56,16 @@ class Service extends Model
                         ->maxLength(255),
                     TextInput::make('slug')
                         ->maxLength(255),
+                    RichEditor::make('intro')
+                        ->maxLength(65535)
+                        ->columnSpanFull(),
                     RichEditor::make('content')
                         ->maxLength(65535)
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')
                         ->image(),
+                    TextInput::make('url')
+                        ->maxLength(255),
                     TextInput::make('order')
                         ->maxLength(255),
                 ]),

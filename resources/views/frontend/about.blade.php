@@ -287,83 +287,14 @@
                     </div>
                 </div>
             </div>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-af74a9e2-7ad5-4fe5-b3bb-147a7376bd59" data-elfsight-app-lazy></div>
             <div class="row" data-aos="fade-up">
-                <div class="mt-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 instagram_posts">
-                    <div class="instagram_posts_image position-relative">
-                        <img src="{{ asset('img/instagram-post_1.png') }}" alt="" class=" w-100 img-fluid">
-
-
-                    </div>
-                    <div class="instagram-overlay-box">
-                    <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                </div>
-                <div class="mt-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 instagram_posts">
-                    <div class="instagram_posts_image position-relative">
-                        <img src="{{ asset('img/instagram-post_2.png') }}" alt="" class=" w-100 img-fluid">
-
-
-                    </div>
-                    <div class="instagram-overlay-box">
-                    <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                </div>
-
-                <div class=" mt-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 instagram_posts">
-                    <div class="instagram_posts_image position-relative">
-                        <img src="{{ asset('img/instagram-post_3.png') }}" alt="" class=" w-100 img-fluid">
-
-
-                    </div>
-                    <div class="instagram-overlay-box">
-                    <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                </div>
-                <div class=" mt-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 instagram_posts">
-                    <div class="instagram_posts_image position-relative">
-                        <img src="{{ asset('img/instagram-post_4.png') }}" alt="" class=" w-100 img-fluid">
-
-
-                    </div>
-                    <div class="instagram-overlay-box">
-                    <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                </div>
-                
-                <div class=" mt-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 instagram_posts">
-                    <div class="instagram_posts_image position-relative">
-                        <img src="{{ asset('img/instagram-post_1.png') }}" alt="" class=" w-100 img-fluid">
-
-
-                    </div>
-                    <div class="instagram-overlay-box">
-                    <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                </div>
-                
-                <div class=" mt-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 instagram_posts">
-                    <div class="instagram_posts_image position-relative">
-                        <img src="{{ asset('img/instagram-post_1.png') }}" alt="" class=" w-100 img-fluid">
-
-
-                    </div>
-                    <div class="instagram-overlay-box">
-                    <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                </div>
-                
+              
                 
 
             </div>
-            <div class="btn_wrapper mt-5">
-                <a href="./single-post.html" class="text-decoration-none view_blog">View More</a>
-            </div>
+     
             <figure class="blog_posts_left_shape left_shape mb-0">
                 <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
             </figure>
@@ -372,6 +303,7 @@
             </figure>
         </div>
     </section>
+    
     <!-- SUBSCRIBE SECTION -->
     <section class="subscribe_section">
         <div class="container">

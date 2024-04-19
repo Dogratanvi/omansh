@@ -91,6 +91,9 @@ p{
     color: #CAA983;
     font-size: 30px;
 }
+.navbar .dropdown-toggle{
+color: #fff;
+}
 /* Home Page Header Section Style */
 header {
     position: absolute;
@@ -110,6 +113,9 @@ button:focus {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
+}
+.service-text{
+    height: 220px;
 }
 /* service-btn */
 
@@ -1815,6 +1821,28 @@ background-color: #004B2A;
 .aboutpage_aboutus_content .box:hover{
     transform: translateY(-10px);
 }
+.eapps-instagram-feed-posts-grid-load-more {
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    border-bottom-left-radius: 0px !important;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 153px !important;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.eapps-instagram-feed-posts-grid-load-more:hover{
+background-color: #004B2A !important;
+}
 
 /* About Page Discount Section Style */
 
@@ -1878,7 +1906,9 @@ background-color: #004B2A;
     background-color: var(--e-global-color-secondary);
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
-
+.service-page-about{
+    padding: 0px 0px;
+}
 /* About Page Our Mission Section Style */
 
 .mission_section{
@@ -2155,9 +2185,12 @@ background-color: #004B2A;
     border-top-left-radius: 50px;
  
 }
+.health-card{
+    height: 100% !important;
+}
 .card-content {
     padding: 20px 10px;
-    height: 300px;
+ 
 }
 .card-content li{
     color: 
@@ -2653,7 +2686,7 @@ textarea {
     max-width: 100% !important;
 }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 764px) {
     .our_specialties_section .nav-pills {
         width: 100%;
         margin: auto;

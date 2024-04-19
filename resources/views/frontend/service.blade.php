@@ -13,7 +13,7 @@
                             <p data-aos="fade-right">Ruis aute irure dolor in reprehenderit in volurate velit cillum
                                 nulla pariatur nostrud exercitation.</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="">Home </a></span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Services</span>
                             </div>
                         </div>
@@ -36,82 +36,67 @@
     </div>
 </div>
 <!-- OUR SERVICES SECTION -->
+
 <section class="services_section">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
-                    <h5>Our Services</h5>
-                    <h2>Practice Whereever You Want Whenever You Need </h2>
-                    <p>Taciti fames lacinia orci finibus metus elit tempus faucibus urna nunc dui rhoncus aibendum vea
-                        porttitor volutrat felis massa feugiat</p>
-                </div>
-            </div>
-        </div>
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <img src="{{ asset('images/services_img_1.png') }}" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Women Health</h3>
-                        <p>Our pelvic floor therapy and pregnancy support programmes are tailored to women's health. Our
-                            specialists empower women at every step with customised therapies and caring assistance.
-                            Support your health and well-being with personalised treatment.</p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <img src="{{ asset('images/services_img_2.png') }}" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Physiotherapy</h3>
-                        <p>Explore our experienced physiotherapy treatments to improve your health and mobility. Our
-                            staff uses evidence-based approaches to treat a variety of physical issues, providing
-                            personalised treatment. Experience the path of rehabilitation with our devoted specialists.
-                        </p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="services_box_content">
-                    <div class="services_box_upper_portion">
-                        <img src="{{ asset('images/services_img_3.png') }}" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="services_box_lower_portion">
-                        <h3>Yoga</h3>
-                        <p>Experience the transformational power of Yoga, where ancient practices meet contemporary
-                            therapies. Our workshops promote comprehensive well-being by harmonising body, mind, and
-                            spirit. Discover inner calm and physical strength in a caring and compassionate atmosphere
-                            for beginners to expert practitioners.</p>
-                        <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+                    <h2>Our Services</h2>
+
+
+                    <p class="text-center">Explore a spectrum of services dedicated to your health and well-being</p>
                 </div>
             </div>
 
         </div>
-        <figure class="services_page_services_right_shape right_shape mb-0">
-            <img src="{{ asset('images/servicespage_services_right_shape.png') }}" alt="" class="img-fluid">
+        <div class="row pt-3" data-aos="fade-up">
+            @foreach ($services as $service)
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="services_box_content">
+                    <div class="services_box_upper_portion">
+
+                        <figure class="mb-0"><img src="{{asset($service->featured_image)}}" alt=""
+                                class="img-fluid w-100"></figure>
+                    </div>
+                    <div class="services_box_lower_portion pt-2">
+                        <h3> {{ $service->name}}</h3>
+
+                        <div class="service-text">{!! $service->intro!!}</div>
+
+
+                   
+                        <!-- <div class="btn_wrapper">
+                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"> </i></a>
+                        </div> -->
+                        <div
+                            class=" text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
+                            <a href="{{$service->url}}">
+                                <div class="btn btns">
+                                    <span>Read More</span>
+
+                                    <i class="fa-solid fa-arrow-right ico" aria-hidden="true"> </i>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            @endforeach
+
+        </div>
+        <figure class="services_left_shape left_shape mb-0">
+            <img src="{{ asset('images/services_left_shape.png') }}" alt="" class="img-fluid w-100">
         </figure>
     </div>
 </section>
 
 <!-- ABOUT US SECTION -->
-<section class="aboutpage_aboutus_section">
+<section class="aboutpage_aboutus_section service-page-about">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -280,7 +265,7 @@
                         href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
                         <figure class="video_img mb-0">
                             <img class="thumb img-fluid" style="cursor: pointer"
-                                src="{{ asset('images/get_in_touch_video_icon.png') }}" alt="">
+                                src="{{ asset('img/play-icon.png') }}" alt="">
                         </figure>
                     </a>
                 </div>

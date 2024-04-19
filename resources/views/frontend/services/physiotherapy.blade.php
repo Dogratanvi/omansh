@@ -9,12 +9,14 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up"> Women Healths</h1>
-                            <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
-                                nulla pariatur nostrud exercitation</p>
+                            <h1 data-aos="fade-up"> Physiotherapy</h1>
+                            <p data-aos="fade-right">Revitalizing movement and enhancing well-being through personalized
+                                physiotherapy that restores, heals, and transforms.</p>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i><span class="sub_span"> Services</span>
+                                    aria-hidden="true"></i> <span class="sub_home_span"><a href="">Services
+                                    </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
+                                    class="sub_span">physiotherapy </span>
                             </div>
                         </div>
                     </div>
@@ -41,10 +43,10 @@
 <section class="aboutpage_aboutus_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                 <div class="servicepage_aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                            alt="service_women_health.png" class="img-fluid">
+                    <figure class="mb-0"><img src="{{ asset('img/services/physoitheraphy/left-image.png') }}"
+                            alt="physoitheraphy" class="img-fluid h-100">
                     </figure>
 
                 </div>
@@ -55,82 +57,54 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
                 <div class="service_page_aboutus_content  ps-4 ">
 
-                    <h2>Yoga</h2>
-
-                    <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
+                    <h2>What Is Physiotheraphy</h2>
+                    @foreach ($services as $service)
+                    <div>{!! $services[0]->content!!}</div>
+                    <!-- <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
                         body and spirit through the practice of asana, pranayama, mudra, bandha, shat-karma and
                         meditation to achieve a reach a stage of enlightenment or self-realization
 
                         We offer Physio-Yoga Therapy which is an innovative approach to physical rehabilitation which
                         combines Physiotherapy and Medical Therapeutic Yoga (MTY). What results is a healing experience
                         that blends the latest in medical science and the time-tested traditions of Yoga.</p>
+                     @endforeach  -->
 
+                    <h3> We work on multiple treatment services like :</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                    Spine Rehabilitation/ Back Pain
+                                </li>
+                                <li>
+                                    Antenatal & Post Natal Sessions
+                                </li>
+                                <li>
+                                    Arthritis, Joint Pain & Knee Rehabilitation
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <li>
+                                Post-Surgery Rehabilitation
+                            </li>
+                            <li>
+                                Paralysis
+                            </li>
+                        </div>
+                    </div>
                     <div class="btn_wrapper mt-3">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get
-                            Started</a>
+                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Contact
+                            Us</a>
                     </div>
 
                 </div>
             </div>
         </div>
 
-
-    </div>
-</section>
-
-<section class="pb-5 mb-5">
-    <div class="container">
-        <h2> You are Not Alone</h2>
-        <div class="grid-box mt-4">
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-            <div class="main-section-box">
-                <div class="women-suffer">
-                    <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
-            </div>
-        </div>
 
     </div>
 </section>
@@ -138,23 +112,47 @@
 <!-- women-health-issue -->
 <section class="pb-5 mb-5">
     <div class="container">
-        <h2 class="text-center"> Type of Women health Issues</h2>
-        <p class="text-center">Women's health issues encompass a wide range of conditions and concerns that specifically
-            affect women, from reproductive health to hormonal imbalances and beyond</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center"> Type of Women health Issues</h2>
+                <p class="text-center">Physiotherapy encompasses a wide range of specialized services tailored to meet
+                    the
+                    unique needs of each patient, focusing on the restoration, maintenance, and maximization of physical
+                    strength, function, motion, and overall well-being. 
+                </p>
+            </div>
+        </div>
 
         <div class="row pt-5">
             <div class="col-md-4 mt-4">
                 <div class="card health-card border-0">
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                     <div class="card-content">
-                        <h4>Bladder Dysfunctions</h4>
+                        <h4>Orthopedic Physiotheraphy</h4>
                         <ul>
-                            <li>Urinary Incontinence </li>
-                            <li>Mixed Incontinence</li>
-                            <li>Interstitial Cystitiss (IC)/Bladder Pain Syndrome</li>
-                            <li>Urgency,Frequency,Nocturia</li>
-                            <li>Muscle Strengthening</li>
-                            <li>Pre & Post gynecological surgery rehabilitation</li>
+                            <li>Arthritis (OA, RA) </li>
+                            <li>Frozen Shoulder</li>
+                            <li>Sprain, Strain(Tendon and Ligament Injury)/li>
+                            <li>Shoulder Pain
+                            </li>
+                            <li>Back Pain
+                            </li>
+                            <li>Neck Pain
+                            </li>
+                            <li> Spinal Condition
+                            </li>
+                            <li>Cervical Spondylitis, Cervical Radiculopathy
+                            </li>
+                            <li>Portural Deformity
+                            </li>
+                            <li>Lumbar Spondylitis, Sciatica, PIVD
+                            </li>
+                            <li>Amputation
+                            </li>
+                            <li> Total Knee Replacement Rehab
+                            </li>
+                            <li> Musculoskeletal Pain
+                            </li>
 
                         </ul>
                     </div>
@@ -164,17 +162,17 @@
                 <div class="card health-card  border-0">
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                     <div class="card-content">
-                        <h4>Bowel Issues & Prolapse</h4>
+                        <h4>Neuro Physiotheraphy</h4>
                         <ul>
-                            <li>Imflammatory Bowel Disease (IBD) </li>
-                            <li>Crohn's disease</li>
-                            <li>Ulcerative Colitis</li>
-                            <li>Constipation</li>
-                            <li>Irritable Bowel Syndrome (IBS)</li>
-                            <li>Fecal Incontinence</li>
-                            <li>Hemorrhoid Plain</li>
-                            <li>Vaginal Prolapse(Bladder,Bowel,Uterus)</li>
-                            <li>Rectal Prolapse</li>
+                            <li>Stroke </li>
+                            <li>Cerebral Palsy</li>
+                            <li>Parkinson's Disease</li>
+                            <li>Head Injury</li>
+                            <li>Spinal Cord Injury</li>
+                            <li>Muscular Dystrophy</li>
+                            <li>Fascial Palsy</li>
+                            <li>Balance and Coordination Training</li>
+
 
                         </ul>
                     </div>
@@ -184,15 +182,22 @@
                 <div class="card health-card  border-0">
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                     <div class="card-content">
-                        <h4>Pelvic Pain Dysfunctions</h4>
-                        <li>Vulvodynia </li>
-                        <li>Vaginismus</li>
-                        <li>Dyspareunia</li>
-                        <li>Pudendal Neuralgia</li>
-                        <li>Endometriosis</li>
-                        <li>Fibromyalgia</li>
-                        <li>Persistent Genital Arousal Disorder (PGAD)</li>
-                        <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
+                        <h4>Sports Physiotheraphy</h4>
+                        <li>Ankle Pain </li>
+                        <li>Shin Splint</li>
+                        <li>Achilles Tendinopathy
+                        </li>
+                        <li>Jumpers Knee
+                        </li>
+                        <li>Meniscus Tear</li>
+                        <li>MCL | LCL Tear</li>
+                        <li> ACL Tear</li>
+                        <li> Ac Joint Injury</li>
+                        <li> Rotator Cuff Injury</li>
+                        <li> Tennis elbow</li>
+                        <li> Bursitis</li>
+                        <li> Wrist Fracture</li>
+
                         </ul>
                     </div>
                 </div>
@@ -201,15 +206,14 @@
                 <div class="card health-card  border-0">
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                     <div class="card-content">
-                        <h4>Pregnancy & Postpartum</h4>
-                        <li>Vulvodynia </li>
-                        <li>Vaginismus</li>
-                        <li>Dyspareunia</li>
-                        <li>Pudendal Neuralgia</li>
-                        <li>Endometriosis</li>
-                        <li>Fibromyalgia</li>
-                        <li>Persistent Genital Arousal Disorder (PGAD)</li>
-                        <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
+                        <h4>Geriatric Physiotheraphy</h4>
+                        <li>Arthritis </li>
+                        <li>Osteoporosis</li>
+                        <li>Pegenrative Disorder</li>
+                        <li>Balance Disorder</li>
+                        <li>Pain Management</li>
+                        <li>Restore Mobility</li>
+                        <li>Prevention Of Bed Rest</li>
                         </ul>
                     </div>
                 </div>
@@ -218,9 +222,12 @@
                 <div class="card health-card  border-0">
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                     <div class="card-content">
-                        <h4>Excercise Programs & Pilates</h4>
-                        <li>At World of Women, we offer Pilates Personalised Exercise Programs Prenatal & Postnatal
-                            Pilates Physio Led Pregnancy Class Mums and Bubs </li>
+                        <h4>Pediatric Physiotheraphy</h4>
+                        <li>Celebral Palsy</li>
+                        <li>Muscular Dystrophy
+                        </li>
+                        <li>Torticolis
+                        </li>
                         </ul>
                     </div>
                 </div>
@@ -271,8 +278,9 @@
             </div>
         </div>
         <div class="btn_wrapper d-flex justify-content-center mt-5">
-        <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
-    </div></div>
+            <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+        </div>
+    </div>
 </section>
 <!-- SUBSCRIBE SECTION -->
 <section class="subscribe_section">

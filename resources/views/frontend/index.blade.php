@@ -87,7 +87,7 @@
 
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
-                    <h5>Our Services</h5>
+                    <h2>Our Services</h2>
 
 
                     <p class="text-center">Explore a spectrum of services dedicated to your health and well-being</p>
@@ -104,10 +104,10 @@
                         <figure class="mb-0"><img src="{{asset($service->featured_image)}}" alt=""
                                 class="img-fluid w-100"></figure>
                     </div>
-                    <div class="services_box_lower_portion">
+                    <div class="services_box_lower_portion pt-2">
                         <h3> {{ $service->name}}</h3>
 
-                        <p>{!! $service->content!!}</p>
+                        <div class="service-text">{!! $service->intro!!}</div>
 
 
                    
@@ -117,7 +117,7 @@
                         </div> -->
                         <div
                             class=" text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
-                            <a href="#">
+                            <a href="{{$service->url}}">
                                 <div class="btn btns">
                                     <span>Read More</span>
 

@@ -16,8 +16,10 @@ return new class extends Migration
             $table->uuid('uuid');
             $table->string('name');
             $table->string('slug')->nullable();
+            $table->text('intro')->nullable();
             $table->text('content')->nullable();
             $table->string('featured_image')->nullable();
+            $table->string('url')->nullable();
             $table->string('order')->nullable();
             $table->string('meta_title')->nullable();
             $table->string('meta_keywords')->nullable();

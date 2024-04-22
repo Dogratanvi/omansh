@@ -12,10 +12,11 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Doctor Training</h1>
-                            <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in
-                                volurate velit cillum nulla pariatur nostrud exercitation</p>
+                            <p class="text-center" data-aos="fade-right">Elevate your team's performance and well-being
+                                with our bespoke corporate training programs, designed to inspire, engage, and
+                                transform.</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> doctortraining</span>
                             </div>
                         </div>
@@ -42,7 +43,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="aboutpage_aboutus_image">
+                <div class="aboutpage_aboutus_image workshop">
                     <figure class="mb-0"><img src="{{ asset('img/better-life-yoga-traning.png') }}" alt=""
                             class="img-fluid">
                     </figure>
@@ -201,7 +202,8 @@
         <div class="discount-box">
             <h2 class="text-center">Get 10% Discount For Yoga Training
             </h2>
-            <p class="margin_bottom text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur
+            <p class="margin_bottom text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla
+                pariatur
                 nostrud exercitation</p>
             <div class="btn_wrapper main-btn text-center">
                 <a href="./pricing.html" class="text-decoration-none read_more_btn">Contact Us</a>

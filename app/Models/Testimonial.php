@@ -38,7 +38,10 @@ class Testimonial extends Model
             $testimonial->uuid = str_replace('-', '', $uuid);
         });
     }
-
+    public function setFeaturedImageAttribute($value)
+    {
+        $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+    }
     public static function getForm(): array
     {
         return [
@@ -69,6 +72,8 @@ class Testimonial extends Model
                         ->columnSpanFull(),
                     TextInput::make('featured_image')
                         ->label('Image Thumbnail Link'),
+                    TextInput::make('featured_video')
+                        ->label('Video Link'),
                     TextInput::make('order')
                         ->numeric(),
                 ]),

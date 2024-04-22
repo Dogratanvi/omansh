@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Support\Facades\Route;
+use  App\Http\Controllers\Frontend\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('home', 'FrontendController@home')->name('home');
     Route::get('about', 'FrontendController@about')->name('about');
-    Route::get('contact', 'FrontendController@contact')->name('contact');
+  
     Route::get('doctorworkshop', 'FrontendController@doctorworkshop')->name('doctorworkshop');
     Route::get('yogatraining', 'FrontendController@yogatraining')->name('yogatraining');
     
@@ -61,8 +62,13 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/womenhealth', 'ServicesController@womenhealth')->name('services.womenhealth');
     Route::get('services/yoga', 'ServicesController@yoga')->name('services.yoga');
    
-
+   // footer
+    Route::get('includes/footer', 'FrontendController@service')->name('includes.footer');
     // contact
+   
+    $controller_name = 'ServicesController';
+    Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');
+    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
     //  mailchimp newsletter
     Route::get('newsletter/news', [MailChimpController::class, 'showForm'])->name('newsletter.showForm');

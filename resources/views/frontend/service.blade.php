@@ -13,7 +13,7 @@
                             <p data-aos="fade-right">Ruis aute irure dolor in reprehenderit in volurate velit cillum
                                 nulla pariatur nostrud exercitation.</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span"><a href="">Home </a></span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Services</span>
                             </div>
                         </div>

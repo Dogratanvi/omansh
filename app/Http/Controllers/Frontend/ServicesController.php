@@ -5,33 +5,34 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Service;
-
+use App\Models\Setting;
 
 class ServicesController extends Controller
 {
     public function service()
     {
         $services = Service::all();
-
-        return view('frontend.service', compact('services'));
+        $settings = Setting::all();
+        return view('frontend.service', compact('services', 'settings'));
     }
     public function physiotherapy()
     {
         $services = Service::all();
-     return view('frontend.services.physiotherapy', compact('services'));
+        $settings = Setting::all();
+     return view('frontend.services.physiotherapy', compact('services', 'settings'));
     }
     public function womenhealth()
     {
         $services = Service::all();
-    
-     return view('frontend.services.womenhealth', compact('services'));
+        $settings = Setting::all();
+     return view('frontend.services.womenhealth', compact('services', 'settings'));
     
     }
     public function yoga()
     {
         $services = Service::all();
-    
-     return view('frontend.services.yoga', compact('services'));
+        $settings = Setting::all();
+     return view('frontend.services.yoga', compact('services', 'settings'));
     }
     
 }

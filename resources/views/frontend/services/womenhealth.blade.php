@@ -13,8 +13,10 @@
                             <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
                                 nulla pariatur nostrud exercitation</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i><span class="sub_span"> Services</span>
+                                    <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
+                                    aria-hidden="true"></i> <span class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                                    </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
+                                    class="sub_span">Womenhealth</span>
                             </div>
                         </div>
                     </div>
@@ -237,7 +239,7 @@
 <!-- gallary -->
 <section class="pb-5 mb-5 aboutus_content">
     <div class="container">
-        <h2 class="text-center"> Gallary</h2>
+        <h2 class="text-center"> Gallery</h2>
         <div class="row pt-5">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">

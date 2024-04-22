@@ -18,10 +18,10 @@
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for
                             Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
-                        <div class="btn_wrapper home-btn text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                        <div class="btn_wrapper home-btn text-white  text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"> </i></a>
+                            Connect with us<a href="./contact" class="text-decoration-none me-2"><i
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"> </i></a>
                         </div>
 
                         <!-- <a class="top-btn"  href="{{ route('frontend.index') }}#footer_section">
@@ -110,7 +110,7 @@
                         <div class="service-text">{!! $service->intro!!}</div>
 
 
-                   
+
                         <!-- <div class="btn_wrapper">
                             <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
                                     aria-hidden="true"> </i></a>
@@ -354,46 +354,40 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                 <div class="row pt-4">
+                    @foreach ($testimonials as $testimonial)
                     <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="testimonial-thumb border-0 bg-transparent" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <img src="{{asset($testimonial->featured_image)}}" alt="testimonials"
+                                class="img-fluid w-100">
+                                
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-transparent border-0">
+                                    <div class="modal-header border-0">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe width="100%" height="515" src="{{$testimonial->featured_video}}">
+                                        </iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-3 pt-3">
-                        <a href="">
-                            <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                        </a>
-                    </div>
+                    @endforeach
+
+
 
 
                 </div>
@@ -401,6 +395,7 @@
             <div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
 
             </div>
+
             <div class="tab-pane fade" id="pills-physiotherapy" role="tabpanel"
                 aria-labelledby="pills-physiotherapy-tab">...
             </div>
@@ -411,7 +406,7 @@
 
 
 <!-- google review section -->
-<section class="google-review-section">
+<!-- <section class="google-review-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -419,7 +414,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
 <!-- end google review section -->
 

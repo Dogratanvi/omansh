@@ -28,6 +28,22 @@ class Workshop extends Model
         'deleted_at' => 'datetime',
     ];
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($testimonial) {
+            $uuid = Uuid::uuid4()->toString();
+            $testimonial->uuid = str_replace('-', '', $uuid);
+        });
+    }
+
+    public function setFeaturedImageAttribute($value)
+    {
+        $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+    }
+
+
     public static function getForm(): array
     {
         return [
@@ -47,6 +63,8 @@ class Workshop extends Model
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')
                         ->image(),
+                    TextInput::make('url')
+                        ->maxLength(255),
                     TextInput::make('order')
                         ->maxLength(255),
                 ]),

@@ -1,4 +1,34 @@
 <!-- FOOTER SECTION -->
+<!-- SUBSCRIBE SECTION -->
+<section class="subscribe_section contact_subscribe_section">
+    <div class="container">
+        <div class="subscribe_background_image">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" data-aos="fade-right">
+                    <div class="subscribe_content">
+                        <h5>Subscribe now</h5>
+                        <h2>Get the Latest Updates With Our Newletter</h2>
+                        <form method="POST">
+                            <div class="form-row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" id="emailadd" class="form-control"
+                                        placeholder="Enter You Email">
+                                    <button type="submit" name="btnsubmit" id="submitbutton">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                    <figure class="subscribe_image mb-0">
+                        <img src="{{ asset('images/subscribe_image.png') }}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="footer-section" id="footer_section">
     <div class="container">
         <div class="middle-portion">
@@ -14,6 +44,7 @@
                         </a>
                     </div>
                 </div>
+           
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div
                         class="about_col  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
@@ -28,19 +59,19 @@
                             </li>
 
                             <li class="icons">
-                                <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="{{$settings[2]->value}}" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                                <a href="{{$settings[9]->value}}" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                                <a href="{{$settings[4]->value}}" target="_blank"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="#"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+                                <a href="{{$settings[10]->value}}" target="_blank"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                                <a href="{{$settings[5]->value}}" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -64,7 +95,7 @@
                                 <a href="./team.html">Blog<a>
                             </li>
                             <li>
-                                <a href="{{ route('frontend.contact') }}">Contact Us</a>
+                                <a href="{{ route('frontend.contact.create') }}">Contact Us</a>
                             </li>
                             <li>
                                 <a href="{{ route('frontend.feedback.form') }}">Feedback Form</a>
@@ -109,7 +140,7 @@
                 </div>
                 <div class="col-md-6  copyright">
                     <p class="footer-text text-white text-lg-end text-sm-start text-start text-md-end text-xl-end text-xs-start"
-                        href=""> Website designed and developed by<a href=""> PulsePlay Digital</a></p>
+                        > Website designed and developed by<a href="https://pulseplaydigital.com/" target="_blank"> PulsePlay Digital</a></p>
                 </div>
             </div>
         </div>

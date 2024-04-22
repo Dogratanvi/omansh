@@ -15,7 +15,7 @@
                             <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in
                                 volurate velit cillum nulla pariatur nostrud exercitation</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> doctortraining</span>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="aboutpage_aboutus_image">
+                <div class="aboutpage_aboutus_image workshop">
                     <figure class="mb-0"><img src="{{ asset('img/better-life-yoga-traning.png') }}" alt=""
                             class="img-fluid">
                     </figure>

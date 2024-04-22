@@ -85,7 +85,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class=" contact_us" href="{{ route('frontend.contact') }}">Contact Us</a>
+                            <a class=" contact_us" href="{{ route('frontend.contact.create') }}">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -177,7 +177,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class=" contact_us" href="{{ route('frontend.contact') }}">Contact Us</a>
+                                <a class=" contact_us" href="{{ route('frontend.contact.create') }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>

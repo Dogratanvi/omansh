@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Frontend;
 
 use  App\Http\Controllers\Controller;
 use App\Models\Service;
+use App\Models\AboutOmansh;
+use App\Models\Setting;
+use App\Models\Testimonial;
 
 class FrontendController extends Controller
 {
@@ -22,51 +25,53 @@ class FrontendController extends Controller
     {
  
         $services = Service::all();
-        
+        $settings = Setting::all();
+        $testimonials = Testimonial::all();
 
 
-        return view('frontend.index', compact('services'));
+        return view('frontend.index', compact('services', 'settings', 'testimonials'));
     }
 
     public function about()
     {
- 
-        return view('frontend.about');
+        $about_omanshes = AboutOmansh::all();
+        $settings = Setting::all();
+             return view('frontend.about', compact('about_omanshes', 'settings'));
     }
     public function contact()
     {
- 
-        return view('frontend.contact');
+   $settings = Setting::all();
+        return view('frontend.contact.create', compact('settings'));
     }
 
     public function servicedetail()
     {
- 
-        return view('frontend.servicedetail');
+   $settings = Setting::all();
+        return view('frontend.servicedetail', compact('settings'));
     }
     public function blog()
     {
- 
-        return view('frontend.blog');
+        $settings = Setting::all();
+        return view('frontend.blog', compact('settings'));
     }
     public function blogdetail()
     {
- 
-        return view('frontend.blogdetail');
+        $settings = Setting::all();
+        return view('frontend.blogdetail', compact('settings'));
     }
    
 
     public function doctorworkshop()
     {
- 
-        return view('frontend.doctorworkshop');
+        $settings = Setting::all();
+        return view('frontend.doctorworkshop', compact('settings'));
     }
 
 
     public function yogatraning()
     {
- 
-        return view('frontend.yogatraining');
+        $settings = Setting::all();
+        return view('frontend.yogatraining', compact('settings'));
     }
  
 

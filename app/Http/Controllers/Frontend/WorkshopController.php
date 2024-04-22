@@ -6,7 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-
+use App\Models\Setting;
+use App\Models\Workshop;
 class WorkshopController extends Controller
 {
     // Page Title
@@ -47,14 +48,15 @@ class WorkshopController extends Controller
           $module_workshop = $this->module_workshop;
           $module_name_workshop = $this->module_name_workshop;
           $module_path_workshop = $this->module_path_workshop;
-        
+          $settings = Setting::all();
+          $workshops = Workshop::all();
 
           return view(
             "frontend.{$module_path_workshop}.doctortraining",
             compact(
                 'module_workshop', 
                 'module_name_workshop', 
-                'module_path_workshop'
+                'module_path_workshop','settings', 'workshops'
             
             )
         );
@@ -63,14 +65,15 @@ class WorkshopController extends Controller
  
      public function yogatraining()
      {
-  
-         return view('frontend.workshop.yogatraining');
+        $settings = Setting::all();
+         return view('frontend.workshop.yogatraining', compact('settings'));
      }
   
      public function corporatetraining()
-     {
-  
-         return view('frontend.workshop.corporatetraining');
+     { $workshops = Workshop::all();
+
+        $settings = Setting::all();
+         return view('frontend.workshop.corporatetraining', compact('settings', 'workshops'));
      }
   
 }

@@ -3312,4 +3312,10 @@ padding: 10px 0px;
     .service-text {
         height:auto;
     }
+    .workshop img {
+        border-top-left-radius: 180px;
+        border-bottom-right-radius: 180px;
+        height: auto;
+        object-fit: cover;
+    }
 }

@@ -79,8 +79,10 @@ h6{
 p{
     font-size: 16px;
     line-height: 28px;
-    font-weight: 400;
     color: #989595;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
    
 
 }
@@ -300,7 +302,20 @@ button:focus {
     color: var(--e-global-color-primary) !important;
     background-color: var(--e-global-color-white);
 }
+.home-btn a{
+    margin-left: 10px !important;
+}
+.our_specialties_section .nav-link:hover{
+    color: #fff !important;
+}
 
+.testimonial-thumb img{
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    height: 350px;
+    object-fit: cover;
+
+}
 /* Home Page Social Icons Style */
 
 
@@ -1835,10 +1850,7 @@ background-color: #004B2A;
     font-size: 20px !important;
     line-height: 20px !important;
     font-weight: 500 !important;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+ 
 }
 .eapps-instagram-feed-posts-grid-load-more:hover{
 background-color: #004B2A !important;
@@ -1922,7 +1934,7 @@ background-color: #004B2A !important;
     box-shadow: 1px 1px 50px rgb(0 0 0 / 7%);
 }
 .mission_content{
-    padding-top: 50px;
+  
     padding-left: 96px;
 }
 .mission_content h5{
@@ -1996,7 +2008,7 @@ background-color: #004B2A !important;
     box-shadow: 1px 1px 50px rgb(0 0 0 / 7%);
 }
 .vision_content{
-    padding-top: 50px;
+   
     padding-left: 40px;
 }
 .vision_content h5{
@@ -2616,6 +2628,21 @@ textarea {
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
 
+.workshop img {
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    height: auto;
+    height: 687px;
+    object-fit: cover;
+}
+.corporate-box {
+    background-color: #F6F6F6;
+    padding: 20px 15px;
+    height: 100%;
+}
+.corporate-box h3{
+    font-size: 18px;
+}
 /* Contact Page Contact Map Section Style */
 
 .contact_map_section {

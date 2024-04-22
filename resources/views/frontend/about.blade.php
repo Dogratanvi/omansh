@@ -13,7 +13,7 @@
                                 <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
                                     nulla pariatur nostrud exercitation.</p>
                                 <div class="btn_wrapper">
-                                    <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                    <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
                                         aria-hidden="true"></i><span class="sub_span"> About</span>
                                 </div>
                             </div>
@@ -41,7 +41,9 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="aboutpage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/optimal-health.png') }}" alt="" class="img-fluid">
+                        <figure class="mb-0">
+                        <img src="{{asset($about_omanshes[0]->featured_image)}}" alt="optimal-health"
+                                class="img-fluid">
                         </figure>
                         <div class="row pt-3">
                             <div class="col-md-6">
@@ -67,22 +69,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " data-aos="fade-right">
                     <div class="aboutpage_aboutus_content  ">
                         <h5>About us</h5>
-                        <h2>Better Life With Optimal Health</h2>
-                        <p>We're not just a team at OMANSH; we're a family whose only goal is to help people live better
-                            and happier lives. Dr. Garima Biswas founded OMANSH, a pioneer with more than 15 years of
-                            experience researching the human body. It has become a light for people who are trying to
-                            balance their health and well-being with the needs of a busy work and family life.
-                        </p>
-                        <p>Our company is based on a strong belief in the transformative power of physiotherapy and
-                            yoga. These are the fields of study that we think hold the answers to the living problems we
-                            face today. These techniques don't just heal the body; they also heal the soul and help
-                            people grow in their personal and work lives.</p>
-                        <p class="margin_bottom">Dr. Biswas is a leader in her field and brings a unique combination of
-                            knowledge and compassion to her work. Some of her impressive qualifications are that she is
-                            an Internationally Certified Pilates and Yoga Therapist and that she specialises in Women's
-                            Health Physiotherapy, Pelvic Floor Rehabilitation, Antenatal and Postnatal Therapy, and
-                            Women's Health Physiotherapy. Her goal with OMANSH is clear: to make as many lives better
-                            through health and fitness as possible.</p>
+                        
+                        <h2>   {!! $about_omanshes[0]->name!!}</h2>
+                        <div> {!! $about_omanshes[0]->content!!} </div>
 
                     </div>
                 </div>
@@ -90,37 +79,14 @@
 
             <div class="row pt-5">
                 <div class="col-md-6">
-                    <h2>What We Offer</h2>
-                    <p>We are experts in women's health physiotherapy and offer methods that have been shown to work for
-                        a wide range of conditions, from pelvic floor problems to care for women who have gone through
-                        menopause. As part of our overall approach, we offer a wide range of services in General Yoga
-                        and Pilates, each one customised to meet the specific needs of each person of any age.
-
-                    </p>
-                    <p>OMANSH isn't just about helping one person; it's also about teaching and building communities. We
-                        help people with a wide range of problems, from stress management to specific health issues,
-                        through Corporate and Medical Yoga classes. By combining Physiotherapy and Yoga, we can create a
-                        unique healing path for each client.
-
-                    </p>
+                    <h2>   {!! $about_omanshes[2]->name!!}</h2>
+                    <div> {!! $about_omanshes[2]->content!!} </div>
+             
                 </div>
                 <div class="col-md-6">
-                    <h2>What We Promise</h2>
-                    <p>We're proud that we've made Pelvic Floor Physiotherapy a well-known and good experience for
-                        people who are suffering in silence and need help. Our team of all-women physiotherapists has
-                        been carefully trained to provide caring and individualised care. They make sure that each
-                        patient gets a full evaluation to find out what caused their condition and create a treatment
-                        plan that is just right for them.
-
-                    </p>
-                    <p>The most important thing we do at OMANSH is teach. Our team gets regular, intense training in the
-                        anatomy and physiology of humans. This makes sure that our practices are based in medical
-                        science while still enjoying the many benefits of Yoga for the whole person.
-                    </p>
-                    <p>We do more than just one-on-one lessons; we've worked with big names in the industry, like
-                        DECATHLON, on Yoga and Physical Health projects, and our work has been recognised with a lot of
-                        workshops, seminars, and media interviews. 
-                    </p>
+                    <h2>   {!! $about_omanshes[1]->name!!}</h2>
+                    <div> {!! $about_omanshes[1]->content!!} </div>
+           
                 </div>
             </div>
         </div>
@@ -132,24 +98,19 @@
         <div class="container">
             <div class="mission_box">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-up">
                         <div class="mission_content">
-
-                            <h2>Our Mission</h2>
-                            <p>Our centre is more than just a health facility. It's a community committed to promoting
-                                health and happiness. It was started by Dr. Garima Biswas, a leader in holistic health
-                                and an expert in Pelvic Floor Rehabilitation. Through her 15+ years of deep knowledge of
-                                the human body and their desire to spread the benefits of good health, we invite you to
-                                start a personalised journey to becoming your best self.</p>
+                        <h2>   {!! $about_omanshes[3]->name!!}</h2>
+                        <div> {!! $about_omanshes[3]->content!!} </div>
                             <div class="btn_wrapper">
-                                <a href="./pricing.html" class="text-decoration-none read_more_btn">Contact Us</a>
+                                <a href="contact" class="text-decoration-none read_more_btn">Contact Us</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="mission_image">
-                            <figure class="mb-0"><img src="{{ asset('images/our_mission_image.png') }}" alt=""
-                                    class="img-fluid"></figure>
+                        <div class="mission_image text-center text-xs-center text-sm-center text-md-end text-lg-end text-xl-end">
+                                    <img src="{{asset($about_omanshes[3]->featured_image)}}" alt="our-mission"
+                                class="img-fluid"></figure>
                         </div>
                     </div>
                 </div>
@@ -166,19 +127,15 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="vision_image">
-                            <figure class="mb-0"><img src="{{ asset('images/our_vision_image.png') }}" alt=""
-                                    class="img-fluid"></figure>
+                                    <img src="{{asset($about_omanshes[4]->featured_image)}}" alt="our-vission"
+                                class="img-fluid"></figure></figure>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-up">
                         <div class="vision_content">
-
-                            <h2>Our Vision</h2>
-                            <p>Our centre is more than just a health facility. It's a community committed to promoting
-                                health and happiness. It was started by Dr. Garima Biswas, a leader in holistic health
-                                and an expert in Pelvic Floor Rehabilitation. Through her 15+ years of deep knowledge of
-                                the human body and their desire to spread the benefits of good health, we invite you to
-                                start a personalised journey to becoming your best self.</p>
+                        <h2>   {!! $about_omanshes[4]->name!!}</h2>
+                        <div> {!! $about_omanshes[4]->content!!} </div>
+                    
                             <div class="btn_wrapper">
                                 <a href="" class="text-decoration-none read_more_btn">Contact Us</a>
                             </div>

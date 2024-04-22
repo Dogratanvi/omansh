@@ -6,13 +6,15 @@ use  App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use App\Models\Setting;
 use App\Rules\Recaptcha;
 
 class ContactController extends Controller
 {
     public function create()
     {
-        return view('frontend.contact');
+        $settings = Setting::all();
+        return view('frontend.contact',compact( 'settings'));
     }
 
     public function store(Request $request)

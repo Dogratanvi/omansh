@@ -21,12 +21,17 @@
         "filament/spatie-laravel-media-library-plugin": "3.2",
         "filament/tables": "3.2",
         "filament/widgets": "3.2",
+        "flowframe/laravel-trend": "^0.2.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+<<<<<<< HEAD
+        "leandrocfe/filament-apex-charts": "^3.1",
+=======
         "phpfastcache/phpfastcache": "^9.2",
         "raiym/instagram-php-scraper": "^0.5.0",
+>>>>>>> 6fe5b1d58ea5f99b23e8d9374895e653a182206b
         "ramsey/uuid": "^4.7",
         "revolution/laravel-google-sheets": "^6.3",
         "spatie/laravel-newsletter": "^5.1"

@@ -439,7 +439,7 @@
                         <span>YOGA</span>
                         <h4>Yoga Effects on Brain Health: A Systematic Review of the Current Literature</h4>
                         <div class="icon_wrapper">
-                            <a href="./single-post.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -453,7 +453,7 @@
                         <span>FITNESS</span>
                         <h4>Maintaining a regular yoga practice can provide physical health</h4>
                         <div class="icon_wrapper">
-                            <a href="./single-post.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -461,7 +461,7 @@
             </div>
         </div>
         <div class="btn_wrapper">
-            <a href="./single-post.html" class="text-decoration-none view_blog">View All Blogs</a>
+            <a href="" class="text-decoration-none view_blog">View All Blogs</a>
         </div>
         <figure class="blog_posts_left_shape left_shape mb-0">
             <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
@@ -471,35 +471,8 @@
         </figure>
     </div>
 </section>
-<!-- SUBSCRIBE SECTION -->
-<section class="subscribe_section">
-    <div class="container">
-        <div class="subscribe_background_image">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" data-aos="fade-right">
-                    <div class="subscribe_content">
-                        <h5>Subscribe now</h5>
-                        <h2>Get the Latest Updates With Our Newletter</h2>
-                        <form method="POST">
-                            <div class="form-row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input type="email" name="email" id="emailadd" class="form-control"
-                                        placeholder="Enter You Email">
-                                    <button type="submit" name="btnsubmit" id="submitbutton">Subscribe</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                    <figure class="subscribe_image mb-0">
-                        <img src="{{ asset('images/subscribe_image.png') }}" alt="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 
 
 

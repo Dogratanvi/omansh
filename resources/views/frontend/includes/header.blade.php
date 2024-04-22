@@ -16,7 +16,7 @@
                             <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                         </li>
                         <li class="nav-item dropdown d-flex align-items-center">
-                            <a href="{{ route('frontend.service') }}" class="nav-link  dropdown-color navbar-text-color"
+                            <a href="{{ route('frontend.services') }}" class="nav-link  dropdown-color navbar-text-color"
                                 role="button" >Services </a><a href="#" class="ps-2 dropdown-toggle dropdown-color" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
                                 id="navbarDropdown"></a>
@@ -112,7 +112,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-                                    href="{{ route('frontend.service') }}" id="navbarDropdown" role="button"
+                                    href="{{ route('frontend.services') }}" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
 
                                 <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">

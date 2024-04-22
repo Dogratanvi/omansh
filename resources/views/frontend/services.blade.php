@@ -340,10 +340,9 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog_posts_content">
-                    <h5>Blog Posts</h5>
-                    <h2>Our News Feed</h2>
-                    <p>Autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-                        vel illum qui dolorem eum fugiat</p>
+                  
+                    <h2>Blog & News</h2>
+                    <p>Stay Informed and Inspired - Our Latest Insights and Updates</p>
                 </div>
             </div>
         </div>

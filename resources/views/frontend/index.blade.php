@@ -60,19 +60,24 @@
         <div class="icon_content d-table-cell align-middle">
             <ul class="list-unstyled p-0 m-0">
                 <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="{{$settings[2]->value}}" target="_blank"><i class="fa-brands fa-facebook-f"
+                            aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="{{$settings[9]->value}}" target="_blank"><i class="fa-brands fa-instagram"
+                            aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="{{$settings[4]->value}}" target="_blank"><i class="fa-brands fa-linkedin-in"
+                            aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+                    <a href="{{$settings[10]->value}}" target="_blank"><i class="fa-brands fa-google"
+                            aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                    <a href="{{$settings[5]->value}}" target="_blank"><i class="fa-brands fa-youtube"
+                            aria-hidden="true"></i></a>
                 </li>
 
             </ul>
@@ -353,38 +358,43 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-                <div class="row pt-4">
+                <div class="row pt-4" id="data">
+                    @csrf
                     @foreach ($testimonials as $testimonial)
                     <div class="col-md-3 pt-3">
 
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
 
-                    <!-- Button trigger modal -->
-                    <button type="button" class="testimonial-thumb border-0 bg-transparent" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            <img src="{{asset($testimonial->featured_image)}}" alt="testimonials"
-                                class="img-fluid w-100">
-                                
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content bg-transparent border-0">
-                                    <div class="modal-header border-0">
-
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <iframe width="100%" height="515" src="{{$testimonial->featured_video}}">
-                                        </iframe>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
+                    @endforeach
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
+                <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "women-health")
+                    <div class="col-md-3 pt-3">
+
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
+
+                        </div>
+                    </div>
+                    @endif
                     @endforeach
 
 
@@ -392,14 +402,50 @@
 
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
-
-            </div>
 
             <div class="tab-pane fade" id="pills-physiotherapy" role="tabpanel"
-                aria-labelledby="pills-physiotherapy-tab">...
+                aria-labelledby="pills-physiotherapy-tab">
+                <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "physiotherapy")
+                    <div class="col-md-3 pt-3">
+
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
+
+                        </div>
+                    </div>
+
+                    @endif
+                    @endforeach
+                </div>
             </div>
-            <div class="tab-pane fade" id="pills-yoga" role="tabpanel" aria-labelledby="pills-yoga-tab">...</div>
+            <div class="tab-pane fade" id="pills-yoga" role="tabpanel" aria-labelledby="pills-yoga-tab">
+                <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "yoga")
+                    <div class="col-md-3 pt-3">
+
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
+
+                        </div>
+                    </div>
+
+                    @endif
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -471,11 +517,23 @@
         </figure>
     </div>
 </section>
-
-
-
-
-
+<div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
+    aria-labelledby="deleteLineItemModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content mt-4 bg-transparent border-0">
+            <div class="modal-header bg-transparent border-0">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body edit-content pt-2">
+                <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 @endsection

@@ -44,6 +44,14 @@ class Comments extends Model
         return [];
     }
 
+    public function setFeaturedImageAttribute($value)
+    {
+        if( $this->attributes['featured_image'] == null)
+        {
+            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+        }
+    }
+
     public function getModuleNameAttribute()
     {
         if ($this->commentable_type === 'App\Models\Blog') {

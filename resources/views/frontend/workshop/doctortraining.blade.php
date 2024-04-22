@@ -73,7 +73,7 @@
                         standard dummy text ever since the 1500s</p>
 
                     <div class="btn_wrapper main-btn">
-                        <a href="./pricing.html" class="text-decoration-none read_more_btn">Contact Us</a>
+                        <a href="/contact" class="text-decoration-none read_more_btn">Contact Us</a>
                     </div>
 
                 </div>
@@ -204,7 +204,7 @@
             <p class="margin_bottom text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur
                 nostrud exercitation</p>
             <div class="btn_wrapper main-btn text-center">
-                <a href="./pricing.html" class="text-decoration-none read_more_btn">Contact Us</a>
+                <a href="/contact" class="text-decoration-none read_more_btn">Contact Us</a>
             </div>
         </div>
     </div>

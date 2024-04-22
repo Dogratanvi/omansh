@@ -29,6 +29,14 @@ class Blog extends Model
         'deleted_at' => 'datetime',
     ];
 
+    public function setFeaturedImageAttribute($value)
+    {
+        if( $this->attributes['featured_image'] == null)
+        {
+            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+        }
+    }
+
      /**
      * Get all of the post's comments.
      */

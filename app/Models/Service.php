@@ -36,12 +36,13 @@ class Service extends Model
             $service->uuid=str_replace('-', '', $uuid);
         });
     }
-
     public function setFeaturedImageAttribute($value)
     {
-        $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+        if( $this->attributes['featured_image'] == null)
+        {
+            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+        }
     }
-
     public static function getForm(): array
     {
         return [

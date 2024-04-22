@@ -8,7 +8,8 @@
                     <div class="subscribe_content">
                         <h5>Subscribe now</h5>
                         <h2>Get the Latest Updates With Our Newletter</h2>
-                        <form method="POST">
+                        <form action="{{ url('newsletter')  }}" method="POST"  enctype="multipart/form-data"  id="newsletter_form">
+                        @csrf
                             <div class="form-row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="email" name="email" id="emailadd" class="form-control"
@@ -17,6 +18,9 @@
                                 </div>
                             </div>
                         </form>
+                        @if(session()->has('message'))
+                    <p class="alert alert-success py-1 rounded-0 mt-1"> {{ session()->get('message') }}</p>
+                @endif
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
@@ -35,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 d-lg-block">
                     <div class="footer_logo">
-                        <a href="#"
+                        <a href="{{ route('frontend.index') }}"
                             class="text-decoration-none  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
 
                             <figure class="mb-0 img-fluid logo"><img src="{{ asset('img/footer-logo.png') }}"
@@ -89,10 +93,10 @@
                                 <a href="{{ route('frontend.about') }}">About Us</a>
                             </li>
                             <li>
-                                <a href="./services.html">Services</a>
+                                <a href="{{ route('frontend.services') }}">Services</a>
                             </li>
                             <li>
-                                <a href="./team.html">Blog<a>
+                                <a href="{{ route('frontend.blog') }}">Blog<a>
                             </li>
                             <li>
                                 <a href="{{ route('frontend.contact.create') }}">Contact Us</a>

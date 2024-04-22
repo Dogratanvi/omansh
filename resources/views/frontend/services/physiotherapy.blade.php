@@ -237,7 +237,7 @@
 </section>
 
 <!-- gallary -->
-<section class="pb-5 mb-5 aboutus_content">
+<section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
         <h2 class="text-center"> Gallery</h2>
         <div class="row pt-5">

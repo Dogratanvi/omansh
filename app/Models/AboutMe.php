@@ -37,6 +37,14 @@ class AboutMe extends Model
         });
     }
 
+    public function setFeaturedImageAttribute($value)
+    {
+        if( $this->attributes['featured_image'] == null)
+        {
+            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+        }
+    }
+
     public static function getForm(): array
     {
         return [

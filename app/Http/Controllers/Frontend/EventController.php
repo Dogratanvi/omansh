@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
-
+use App\Models\Setting;
 use  App\Http\Controllers\Controller;
 
 
@@ -21,7 +21,15 @@ class EventController extends Controller
 
     public function upcoming()
     {
-        return view('frontend.events.upcoming');
+        $settings = Setting::all();
+        
+        return view('frontend.events.upcoming', compact('settings'));
+    }
+   
+    public function past()
+    {
+        $settings = Setting::all();
+        return view('frontend.events.past', compact('settings'));
     }
    
  

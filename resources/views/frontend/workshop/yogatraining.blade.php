@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up">Doctor Training</h1>
+                            <h1 data-aos="fade-up">Yoga Training</h1>
                             <p class="text-center" data-aos="fade-right">Elevate your team's performance and well-being
                                 with our bespoke corporate training programs, designed to inspire, engage, and
                                 transform.</p>
@@ -74,7 +74,7 @@
                         standard dummy text ever since the 1500s</p>
 
                     <div class="btn_wrapper main-btn">
-                        <a href="./pricing.html" class="text-decoration-none read_more_btn">Contact Us</a>
+                        <a href="/contact" class="text-decoration-none read_more_btn">Contact Us</a>
                     </div>
 
                 </div>
@@ -206,7 +206,7 @@
                 pariatur
                 nostrud exercitation</p>
             <div class="btn_wrapper main-btn text-center">
-                <a href="./pricing.html" class="text-decoration-none read_more_btn">Contact Us</a>
+                <a href="/contact" class="text-decoration-none read_more_btn">Contact Us</a>
             </div>
         </div>
     </div>

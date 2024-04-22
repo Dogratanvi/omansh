@@ -13,7 +13,7 @@ class ServicesController extends Controller
     {
         $services = Service::all();
         $settings = Setting::all();
-        return view('frontend.service', compact('services', 'settings'));
+        return view('frontend.services', compact('services', 'settings'));
     }
     public function physiotherapy()
     {

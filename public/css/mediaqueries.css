@@ -1504,7 +1504,7 @@
     }
 
     .blog_posts_section {
-        padding: 65px 0 70px;
+        padding: 55px 0 380px;
     }
     .blog_posts_content h2 {
         margin-bottom: 12px;
@@ -2331,7 +2331,7 @@
     }
 
     .blog_posts_section {
-        padding: 55px 0 60px;
+        padding: 55px 0 460px;
     }
     .blog_posts_content h2 {
         margin-bottom: 8px;
@@ -2813,9 +2813,9 @@
     .banner-section-outer .banner-section .banner_left_top_shape{
         display: none;
     }
-    .banner-section-outer .banner-section .banner_left_bottom_shape{
+    /* .banner-section-outer .banner-section .banner_left_bottom_shape{
         display: none;
-    }
+    } */
     .banner-section-outer .banner-section .banner_right_top_shape{
         display: none;
     }

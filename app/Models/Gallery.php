@@ -28,6 +28,8 @@ class Gallery extends Model
         'deleted_at' => 'datetime',
     ];
 
+ 
+
     protected static function boot()
     {
         parent::boot();
@@ -58,8 +60,9 @@ class Gallery extends Model
                         ->image()
                         ->imageEditor()
                         ->disk('public')
-                        ->directory('gallery')
+                        ->directory('uploads')
                         ->visibility('public')
+                        ->fetchFileInformation(false)
                         ->preserveFilenames()
                         ->imageEditorAspectRatios([
                             null,

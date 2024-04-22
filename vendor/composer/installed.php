@@ -2,6 +2,7 @@
     'root' => array(
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+        'reference' => '9499f580343aa8e0b17dd0a6f539925d7b6bb538',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -733,6 +734,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+            'reference' => 'ef45716ffeb1bcbdda9dd1bc8d3bdfcde2ca7388',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -892,6 +894,15 @@
             'reference' => 'b8174494eda667f7d13876b4a7bfef0f62a7c0d1',
             'dev_requirement' => false,
         ),
+        'mashape/unirest-php' => array(
+            'pretty_version' => 'v3.0.4',
+            'version' => '3.0.4.0',
+            'reference' => '842c0f242dfaaf85f16b72e217bf7f7c19ab12cb',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../mashape/unirest-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'masterminds/html5' => array(
             'pretty_version' => '2.9.0',
             'version' => '2.9.0.0',
@@ -1032,6 +1043,15 @@
             'aliases' => array(),
             'reference' => '4f7fd7836c6f332bb2933569e566a0d6c4cbed74',
             'dev_requirement' => true,
+        ),
+        'phpfastcache/phpfastcache' => array(
+            'pretty_version' => '9.2.3',
+            'version' => '9.2.3.0',
+            'reference' => '372d62e0bbab5bcfac6404dc912040b038a3afb7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpfastcache/phpfastcache',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'phpmyadmin/sql-parser' => array(
             'pretty_version' => '5.9.0',
@@ -1257,6 +1277,7 @@
             'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0|2.0|3.0',
+                1 => '2.0|3.0',
             ),
         ),
         'psy/psysh' => array(
@@ -1266,6 +1287,15 @@
             'install_path' => __DIR__ . '/../psy/psysh',
             'aliases' => array(),
             'reference' => '9185c66c2165bbf4d71de78a69dccf4974f9538d',
+            'dev_requirement' => false,
+        ),
+        'raiym/instagram-php-scraper' => array(
+            'pretty_version' => 'v0.5.0',
+            'version' => '0.5.0.0',
+            'reference' => 'cb3b3e14dcb02738a5f4e7fcf178fad1b160db88',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../raiym/instagram-php-scraper',
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'ralouphie/getallheaders' => array(

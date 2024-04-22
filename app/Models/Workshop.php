@@ -32,9 +32,9 @@ class Workshop extends Model
     {
         parent::boot();
 
-        static::creating(function ($testimonial) {
+        static::creating(function ($workshop) {
             $uuid = Uuid::uuid4()->toString();
-            $testimonial->uuid = str_replace('-', '', $uuid);
+            $workshop->uuid = str_replace('-', '', $uuid);
         });
     }
 

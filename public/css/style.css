@@ -120,9 +120,7 @@ button:focus {
     box-shadow: none !important;
     border: none !important;
 }
-.service-text{
-    height: 220px;
-}
+
 /* service-btn */
 
 
@@ -2860,17 +2858,20 @@ tbody .form-check-input {
 .message_content select {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 25px;
     background-color: var(--e-global-color-white);
     color: var(--e-global-color-text);
     border-radius: 0;
-    padding: 18px 25px;
+    padding: 18px 10px;
     width: 100%;
     outline: none;
     resize: none;
-    margin-bottom: 42px;
+    margin-bottom: 20px;
     border: none;
     box-shadow: 1px 1px 50px rgb(0 0 0 / 5%);
+}
+.btn{
+    margin-top: 15px;
 }
 }

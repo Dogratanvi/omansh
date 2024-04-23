@@ -288,7 +288,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="email" id="emailaddrs" value="email"
+                                    <input type="email" name="Email" id="emailaddrs" value="Email"
                                         class="form-control form_style" placeholder="Email">
                                 </div>
                             </div>

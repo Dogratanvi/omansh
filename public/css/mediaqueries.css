@@ -2773,6 +2773,13 @@
         top: 0px;
         left: 0px;
     }
+    h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .aboutus_content h2{
+        font-size: 32px;
+    }
 }
 
  @media screen and (max-width: 575px){
@@ -2830,8 +2837,15 @@
         padding: 0;
     }
     h2 {
-        font-size: 22px;
+        font-size: 32px;
         line-height: 32px;
+        padding-bottom: 15px !important;
+    }
+    .aboutus_content p {
+        font-size: 16px;
+    }
+    .aboutus_content h2{
+        font-size: 32px;
     }
     .services_content p {
         margin-bottom: 20px;
@@ -2840,7 +2854,7 @@
         text-align: center;
     }
     .services_box_content .services_box_lower_portion p {
-        padding: 0 55px;
+        padding: 0 20px;
     }
     .services_box_content .services_box_lower_portion .btn_wrapper i {
         padding: 12px 15px;

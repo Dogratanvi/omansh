@@ -1692,6 +1692,9 @@ label.form-check-label {
     background-position: center;
     height: 743px;
 }
+.physiotherapy{
+    background-image: url('../img/physiotherapybanner.png');
+}
 /* About Page Style */
 
 /* About Page Sub Banner Section Style */
@@ -2126,7 +2129,12 @@ background-color: #004B2A !important;
 .service-banner{
     background-image: url('../img/service.png');
 }
-
+.women-banner{
+    background-image: url('../img/services/women_banner.png');
+}
+.yoga-banner{
+    background-image: url('../img/services/yoga-banner.png');
+}
 .services_section .services_page_services_right_shape {
     position: absolute;
     top: 115px;
@@ -2594,6 +2602,21 @@ textarea {
     background-color: var(--e-global-color-soft-orange);
 }
 /* workshop traning page */
+.aboutpage_aboutus_section h5{
+    color: #004B2A;
+}
+.event-banner{
+    background-image: url('../img/events/events-banner.png'); 
+}
+.yogatraning-banner{
+    background-image: url('../img/workshop/yoga-workshop-banner.png'); 
+}
+.doctortraning-banner{
+    background-image: url('../img/workshop/doctor_banner.png'); 
+}
+.corporatetraning-banner{
+    background-image: url('../img/workshop/corporate-banner.png'); 
+}
  .btn_wrapper.main-btn .read_more_btn{
     font-size: 18px;
     line-height: 22px;
@@ -2635,9 +2658,26 @@ textarea {
 .workshop img {
     border-top-left-radius: 180px;
     border-bottom-right-radius: 180px;
-    height: auto;
-    height: 687px;
+    height: 100%;   
     object-fit: cover;
+}
+.servicepage_aboutus_image img{
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    height: 100%;   
+    object-fit: cover;
+}
+.servicepage_aboutus_image figure{
+    height: 100% !important;
+}
+.workshop{
+    height: 100% !important;
+}
+.workshop figure{ 
+    height: 100% !important;
+}
+.servicepage_aboutus_image {
+    height: 100%;
 }
 .corporate-box {
     background-color: #F6F6F6;

@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<div class="sub-banner-section about-banner">
+<div class="sub-banner-section event-banner">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
         <section class="banner-section">

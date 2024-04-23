@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<div class="sub-banner-section service-banner">
+<div class="sub-banner-section yoga-banner">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
         <section class="banner-section">
@@ -9,13 +9,16 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up"> Yoga Trainig</h1>
-                            <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
-                                nulla pariatur nostrud exercitation</p>
-                            <div class="btn_wrapper">
+                            <h1 data-aos="fade-up"> Yoga Training</h1>
+                            <div class="row justify-content-center ">
                               
-                                    <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i> <span class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                            <p data-aos="fade-right">A journey of transformation and harmony, connecting body, mind, and
+                                spirit for holistic well-being.</p></div>
+                            <div class="btn_wrapper">
+
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
+                                    class="fa-solid fa-angles-right" aria-hidden="true"></i> <span
+                                    class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Yoga</span>
                             </div>
@@ -79,7 +82,8 @@
                             Started</a>
                     </div> -->
                     <div class="btn_wrapper mt-3">
-                        <a href="{{ route('frontend.contact') }}" class="text-decoration-none get_started_btn">Contact
+                        <a href="{{ route('frontend.contact.create') }}"
+                            class="text-decoration-none get_started_btn">Contact
                             Us
                         </a>
                     </div>
@@ -127,7 +131,7 @@
                             <li>Pre Pregnancy Sessions </li>
                             <li>During Pregnancy Session</li>
                             <li>Post Pregnancy Session</li>
-                         
+
 
                         </ul>
                     </div>
@@ -137,14 +141,14 @@
                 <div class="card health-card  border-0">
                     <img src="{{ asset('img/services/yoga/medical-yoga.png') }}" alt="medical-yoga">
                     <div class="card-content">
-                    <h4>Medical Yoga</h4>
-                 
-                    <li>Hormonal Imbalance</li>
+                        <h4>Medical Yoga</h4>
+
+                        <li>Hormonal Imbalance</li>
                         <li>Infertility </li>
                         <li>Thyroid</li>
                         <li>Weight Loss</li>
                         <li> Disease Specific</li>
-                       
+
                         </ul>
                     </div>
                 </div>
@@ -158,12 +162,12 @@
                         <li>Ergonomics</li>
                         <li>Face Yoga</li>
                         <li>Posture Analysis</li>
-                    
+
                         </ul>
                     </div>
                 </div>
             </div>
-         
+
         </div>
     </div>
 </section>

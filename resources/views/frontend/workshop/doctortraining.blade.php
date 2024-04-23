@@ -73,7 +73,7 @@
                         standard dummy text ever since the 1500s</p>
 
                     <div class="btn_wrapper main-btn">
-                        <a href="/contact" class="text-decoration-none read_more_btn">Contact Us</a>
+                        <a href="/contact" class="text-decoration-none read_more_btn">Enroll Now</a>
                     </div>
 
                 </div>
@@ -149,50 +149,25 @@
             </div>
         </div>
 
-        <div class="row pt-4">
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
+        <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "physiotherapy")
+                    <div class="col-md-3 pt-3">
 
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
 
-        </div>
+                        </div>
+                    </div>
+
+                    @endif
+                    @endforeach
+                </div>
     </div>
 </section>
 <!-- discount-section -->

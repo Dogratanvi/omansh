@@ -257,48 +257,65 @@
     <div class="container">
         <div class="row" data-aos="fade-up">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="get_in_touch_content">
+         
+                    <div class="get_in_touch_content message_content">
                     <h5>Get in touch</h5>
-                    <h2>Get a Free Consultation Now</h2>
-                    <form>
+                    <h2>Get a Consultation Now</h2>
+                    <form id="contactpage" method="POST" action="{{ url('contact') }}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="text" name="fname" id="fname" class="form-control"
-                                        placeholder="First Name">
+                                    <input type="text" name="first_name" id="fname" class="form-control"
+                                        placeholder="First Name" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="text" name="lname" id="lname" class="form-control form_style"
-                                        placeholder="Last Name">
+                                    <input type="text" name="last_name" id="lname" class="form-control form_style"
+                                        placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="tel" name="phonenum" id="phonenum" class="form-control"
-                                        placeholder="Phone">
+                                    <input type="tel" name="phone" id="phonenum" class="form-control"
+                                        placeholder="Phone" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="emailaddrs" id="emailaddrs"
+                                    <input type="email" name="email" id="emailaddrs" value="email"
                                         class="form-control form_style" placeholder="Email">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
+                                <div class="form-group mb-0">
+
+                                    <select name="service" id="service" class="form-select">
+                                        <option selected disabled>Services</option>
+                                        <option value="women_health">Women Health</option>
+                                        <option value="physiotherapy">Physiotherapy</option>
+                                        <option value="yoga">Yoga</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <div class=" form-group mb-0">
-                                    <textarea rows="3" name="comment" id="msg" class="form-control"
+                                    <textarea rows="3" name="message" id="comment" class="form-control"
                                         placeholder="Message"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="btn_wrapper">
-                            <button type="submit" name="get_started" id="started">Get Started</button>
+                            <button type="submit" class="border-0" id="started">Submit</button>
                         </div>
                     </form>
+                </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"></div>

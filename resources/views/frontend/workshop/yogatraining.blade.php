@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="sub-banner-section doctortraning-banner">
+<div class="sub-banner-section yogatraning-banner">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
         <section class="banner-section">
@@ -12,12 +12,12 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Yoga Training</h1>
-                            <p class="text-center" data-aos="fade-right">Elevate your team's performance and well-being
-                                with our bespoke corporate training programs, designed to inspire, engage, and
-                                transform.</p>
+                            <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in
+                                volurate velit cillum nulla pariatur nostrud exercitation</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i><span class="sub_span"> doctortraining</span>
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i
+                                    class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
+                                    doctortraining</span>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                         standard dummy text ever since the 1500s</p>
 
                     <div class="btn_wrapper main-btn">
-                        <a href="/contact" class="text-decoration-none read_more_btn">Contact Us</a>
+                        <a href="/contact" class="text-decoration-none read_more_btn">Enroll Now</a>
                     </div>
 
                 </div>
@@ -149,51 +149,26 @@
                 </div>
             </div>
         </div>
+        <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "yoga")
+                    <div class="col-md-3 pt-3">
 
-        <div class="row pt-4">
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-3 pt-3">
-                <a href="">
-                    <img src="{{ asset('img/testimonial.png') }}" alt="" class="img-fluid">
-                </a>
-            </div>
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
 
+                        </div>
+                    </div>
 
-        </div>
+                    @endif
+                    @endforeach
+                </div>
+    
     </div>
 </section>
 <!-- discount-section -->

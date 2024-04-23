@@ -19,7 +19,7 @@
                             </div>
                         </form>
                         @if(session()->has('message'))
-                    <p class="alert alert-success py-1 rounded-0 mt-1"> {{ session()->get('message') }}</p>
+                    <p class="alert alert-success py-3 rounded-0 mt-1"> {{ session()->get('message') }}</p>
                 @endif
                     </div>
                 </div>

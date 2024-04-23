@@ -11,9 +11,11 @@
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up"> Yoga Training</h1>
                             <div class="row justify-content-center ">
-                              
+                        
+                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                             <p data-aos="fade-right">A journey of transformation and harmony, connecting body, mind, and
-                                spirit for holistic well-being.</p></div>
+                                spirit for holistic well-being.</p>  </div>
+                        </div>
                             <div class="btn_wrapper">
 
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i

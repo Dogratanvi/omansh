@@ -12,8 +12,11 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Blog</h1>
+                            <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                             <p class="text-center" data-aos="fade-right">Dive into our treasure trove of wellness
-                                wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>
+                                wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>    </div>
+                        </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span">Blog</span>

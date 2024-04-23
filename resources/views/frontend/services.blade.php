@@ -10,8 +10,11 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Services</h1>
+                            <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                             <p data-aos="fade-right">Ruis aute irure dolor in reprehenderit in volurate velit cillum
-                                nulla pariatur nostrud exercitation.</p>
+                                nulla pariatur nostrud exercitation.</p>  </div>
+                        </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Services</span>
@@ -192,51 +195,55 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
                 <div class="specialties_content_wrapper">
                     <div class="specialties_content s1">
                         <p class="specialties_name">Expert Leadership</p>
-                        <p class="specialties_paragraph">Dolor reaellendus temorius maiores alia</p>
+                        <p class="specialties_paragraph">Led by Dr. Garima Biswas, 15+ years of experience, ensuring
+                            you're in safe hands</p>
                     </div>
                     <div class="specialties_content s2">
-                        <p class="specialties_name">Slow Yoga</p>
-                        <p class="specialties_paragraph">Rabore et dolore maga eiusmo rute aliua</p>
+                        <p class="specialties_name">Holistic Approach</p>
+                        <p class="specialties_paragraph"> Traditional practices with modern science for a wellness journey.</p>
                     </div>
                     <div class="specialties_content s3">
-                        <p class="specialties_name">Intuitive Yoga</p>
-                        <p class="specialties_paragraph">Earum rerum hic tene sapiente delectus</p>
+                        <p class="specialties_name">Specialized Women's Health Care</p>
+                        <p class="specialties_paragraph">Solutions for women's health issues, such as pelvic floor rehab & pregnancy care.</p>
                     </div>
                     <div class="specialties_content s4">
-                        <p class="specialties_name">Aroma Yoga</p>
-                        <p class="specialties_paragraph">Neque orro quisquam est raui dolorem</p>
+                        <p class="specialties_name">Innovative Physio-Yoga Therapy</p>
+                        <p class="specialties_paragraph">Blend of physiotherapy and medical therapeutic yoga to enhance your healing experience.</p>
                     </div>
                     <figure class="specialties_left_line mb-0">
                         <img src="{{ asset('images/specialties_left_line.png') }}" alt="" class="img-fluid">
                     </figure>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
                 <figure class="specialties_image mb-0">
                     <img src="{{ asset('images/specialties_image.png') }}" alt="" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
                 <div class="specialties_content_wrapper">
                     <div class="specialties_content specialties_content2 s5">
-                        <p class="specialties_name">Kundalini Yoga</p>
-                        <p class="specialties_paragraph">Dolor reaellendus temorius maiores alia</p>
+                        <p class="specialties_name">Personalized Care Plans</p>
+                        <p class="specialties_paragraph">Every treatment is customized to meet your individual health
+                            goals and needs.</p>
                     </div>
                     <div class="specialties_content specialties_content2 s6">
-                        <p class="specialties_name">Bikram Yoga</p>
-                        <p class="specialties_paragraph">Rabore et dolore mae eiusmo rute aliua</p>
+                        <p class="specialties_name">Evidence-Based Practices</p>
+                        <p class="specialties_paragraph">Utilizing proven methods for effective and safe treatment
+                            outcomes.</p>
                     </div>
                     <div class="specialties_content specialties_content2 s7">
-                        <p class="specialties_name">Mindfulness Training</p>
-                        <p class="specialties_paragraph">Earum rerum hic tene sapiente delectus</p>
+                        <p class="specialties_name">Wide Range of Services</p>
+                        <p class="specialties_paragraph">Physiotherapy to yoga, we cover all aspects of health and fitness</p>
                     </div>
                     <div class="specialties_content specialties_content2 s8">
-                        <p class="specialties_name">Workout Routines</p>
-                        <p class="specialties_paragraph">Neque orro quisquam est raui dolorem</p>
+                        <p class="specialties_name">Compassionate Support</p>
+                        <p class="specialties_paragraph">A nurturing environment where every client is seen, heard, and
+                            valued.</p>
                     </div>
                     <figure class="specialties_right_line mb-0">
                         <img src="{{ asset('images/specialties_right_line.png') }}" alt="" class="img-fluid">

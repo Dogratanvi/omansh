@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<div class="sub-banner-section service-banner">
+<div class="sub-banner-section  physiotherapy">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
         <section class="banner-section">
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="btn_wrapper mt-3">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Contact
+                        <a href="{{ route('frontend.contact.create') }}" class="text-decoration-none get_started_btn">Contact
                             Us</a>
                     </div>
 
@@ -126,7 +126,7 @@
         <div class="row pt-5">
             <div class="col-md-4 mt-4">
                 <div class="card health-card border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/physoitheraphy/Orthopedic.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Orthopedic Physiotheraphy</h4>
                         <ul>
@@ -160,7 +160,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/physoitheraphy/Neuro_Physiotheraphy.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Neuro Physiotheraphy</h4>
                         <ul>
@@ -180,7 +180,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/physoitheraphy/Sports_Physiotheraphy.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Sports Physiotheraphy</h4>
                         <li>Ankle Pain </li>
@@ -204,7 +204,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/physoitheraphy/Geriatric_Physiotheraphy.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Geriatric Physiotheraphy</h4>
                         <li>Arthritis </li>
@@ -220,7 +220,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/physoitheraphy/Pediatric_Physiotheraphy.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Pediatric Physiotheraphy</h4>
                         <li>Celebral Palsy</li>

@@ -95,48 +95,88 @@
     </div>
 </section>
 
-<!-- ABOUT US SECTION -->
-<section class="aboutpage_aboutus_section service-page-about">
+
+
+<!-- GET IN TOUCH SECTION -->
+<section class="get_in_touch_section">
     <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="aboutpage_aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('img/optimal-health.png') }}" alt="" class="img-fluid">
-                    </figure>
+                <div class="get_in_touch_content message_content">
+                    <h5>Get in touch</h5>
+                    <h2>Get a Free Consultation Now</h2>
+                    <form id="contactpage" method="POST" action="{{ url('contact') }}">
+                        @csrf
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="first_name" id="fname" class="form-control"
+                                        placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="last_name" id="lname" class="form-control form_style"
+                                        placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="tel" name="phone" id="phonenum" class="form-control"
+                                        placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="email" name="email" id="emailaddrs" value="email"
+                                        class="form-control form_style" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mb-0">
 
+                                    <select name="service" id="service" class="form-select">
+                                        <option selected disabled>Services</option>
+                                        <option value="women_health">Women Health</option>
+                                        <option value="physiotherapy">Physiotherapy</option>
+                                        <option value="yoga">Yoga</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class=" form-group mb-0">
+                                    <textarea rows="3" name="message" id="comment" class="form-control"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_wrapper">
+                            <button type="submit" class="border-0" id="started">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <figure class="aboutus_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
-                </figure>
-                <figure class="aboutus_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
-                </figure>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-4" data-aos="fade-right">
-                <div class="aboutpage_aboutus_content aboutus_content ps-4 ">
-                    <h5>About us</h5>
-                    <h2>Better Life With Optimal Health</h2>
-                    <p>Every step towards health at Omansh Health & Fitness is based on care, knowledge, and a strong
-                        desire to make people's lives better.
-                    </p>
-                    <p>Our centre is more than just a health facility. It's a community committed to promoting health
-                        and happiness. It was started by Dr. Garima Biswas, a leader in holistic health and an expert in
-                        Pelvic Floor Rehabilitation. Through her 15+ years of deep knowledge of the human body and their
-                        desire to spread the benefits of good health, we invite you to start a personalised journey to
-                        becoming your best self.</p>
-                    <p class="margin_bottom">At Omansh, we think that the best way to get the most out of your body is
-                        to combine ancient methods with cutting-edge science.</p>
-
-                    <div class="btn_wrapper">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get
-                            Started</a>
-                    </div>
-
+            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"></div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="get_in_touch_video position-relative">
+                    <a class="popup-vimeo"
+                        href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
+                        <figure class="video_img mb-0">
+                            <img class="thumb img-fluid" style="cursor: pointer"
+                                src="{{ asset('img/play-icon.png') }}" alt="">
+                        </figure>
+                    </a>
                 </div>
             </div>
         </div>
-
-
+        <figure class="get_in_touch_shape left_shape mb-0">
+            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="" class="img-fluid">
+        </figure>
     </div>
 </section>
 <!-- OUR SPECIALTIES SECTION -->
@@ -155,7 +195,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
                 <div class="specialties_content_wrapper">
                     <div class="specialties_content s1">
-                        <p class="specialties_name">Vinyasa Yoga</p>
+                        <p class="specialties_name">Expert Leadership</p>
                         <p class="specialties_paragraph">Dolor reaellendus temorius maiores alia</p>
                     </div>
                     <div class="specialties_content s2">
@@ -209,74 +249,6 @@
         </figure>
     </div>
 </section>
-<!-- GET IN TOUCH SECTION -->
-<section class="get_in_touch_section">
-    <div class="container">
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="get_in_touch_content">
-                    <h5>Get in touch</h5>
-                    <h2>Get a Free Consultation Now</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="text" name="fname" id="fname" class="form-control"
-                                        placeholder="First Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="text" name="lname" id="lname" class="form-control form_style"
-                                        placeholder="Last Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="tel" name="phonenum" id="phonenum" class="form-control"
-                                        placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="email" name="emailaddrs" id="emailaddrs"
-                                        class="form-control form_style" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class=" form-group mb-0">
-                                    <textarea rows="3" name="comment" id="msg" class="form-control"
-                                        placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn_wrapper">
-                            <button type="submit" name="get_started" id="started">Get Started</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"></div>
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="get_in_touch_video position-relative">
-                    <a class="popup-vimeo"
-                        href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
-                        <figure class="video_img mb-0">
-                            <img class="thumb img-fluid" style="cursor: pointer"
-                                src="{{ asset('img/play-icon.png') }}" alt="">
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <figure class="get_in_touch_shape left_shape mb-0">
-            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="" class="img-fluid">
-        </figure>
-    </div>
-</section>
-
 <!-- TESTIMONIAL SECTION -->
 <div class="testimonial_section">
     <div class="container">

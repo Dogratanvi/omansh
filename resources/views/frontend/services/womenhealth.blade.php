@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<div class="sub-banner-section service-banner">
+<div class="sub-banner-section women-banner">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
         <section class="banner-section">
@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up"> Women Healths</h1>
+                            <h1 data-aos="fade-up"> Women Health</h1>
                             <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
                                 nulla pariatur nostrud exercitation</p>
                             <div class="btn_wrapper">
@@ -73,7 +73,7 @@
                      @endforeach  -->
 
                     <div class="btn_wrapper mt-3">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Contact Us</a>
+                        <a href="{{ route('frontend.contact.create') }}" class="text-decoration-none get_started_btn">Contact Us</a>
                     </div>
 
                 </div>
@@ -142,8 +142,10 @@
 <section class="pb-5 mb-5">
     <div class="container">
         <h2 class="text-center"> Type of Women health Issues</h2>
+        <div class="row justify-content-center">
+        <div class="col-md-10 col-xs-12 col-lg-8 col-xl-8 col-sm-12 col-12 ">
         <p class="text-center">Women's health issues encompass a wide range of conditions and concerns that specifically
-            affect women, from reproductive health to hormonal imbalances and beyond</p>
+            affect women, from reproductive health to hormonal imbalances and beyond</p></div>
 
         <div class="row pt-5">
             <div class="col-md-4 mt-4">
@@ -165,7 +167,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/Bowel_Issues.png') }}" alt="bowel">
                     <div class="card-content">
                         <h4>Bowel Issues & Prolapse</h4>
                         <ul>
@@ -185,7 +187,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/Pain_Dysfunctions.png') }}" alt="Pain Dysfunctions">
                     <div class="card-content">
                         <h4>Pelvic Pain Dysfunctions</h4>
                         <li>Vulvodynia </li>
@@ -202,7 +204,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/Postpartum.png') }}" alt="Postpartum">
                     <div class="card-content">
                         <h4>Pregnancy & Postpartum</h4>
                         <li>Rib pain </li>
@@ -223,7 +225,7 @@
             </div>
             <div class="col-md-4 mt-4">
                 <div class="card health-card  border-0">
-                    <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                    <img src="{{ asset('img/services/Excercise_Programs.png') }}" alt="Excercise Programs">
                     <div class="card-content">
                         <h4>Excercise Programs & Pilates</h4>
                         <li>At World of Women, we offer Pilates Personalised Exercise Programs Prenatal & Postnatal

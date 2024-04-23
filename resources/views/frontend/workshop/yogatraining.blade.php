@@ -187,5 +187,21 @@
     </div>
 </section>
 
-
+<div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
+    aria-labelledby="deleteLineItemModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content mt-4 bg-transparent border-0">
+            <div class="modal-header bg-transparent border-0">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body edit-content pt-2">
+                <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

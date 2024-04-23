@@ -10,8 +10,11 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up"> Women Health</h1>
+                            <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                             <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
-                                nulla pariatur nostrud exercitation</p>
+                                nulla pariatur nostrud exercitation</p>  </div>
+                        </div>
                             <div class="btn_wrapper">
                                     <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i> <span class="sub_home_span"><a href="{{ route('frontend.services') }}">Services

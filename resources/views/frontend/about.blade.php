@@ -10,8 +10,10 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content">
                                 <h1 data-aos="fade-up">About Us</h1>
-                                <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit cillum
-                                    nulla pariatur nostrud exercitation.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
+                                <p class="text-center" data-aos="fade-right">At Omansh, we're dedicated to nurturing holistic well-being through personalised Women's Health, Yog, and Physiotherapy services, empowering you to lead a balanced and healthy life.</p>
+                                </div></div>
                                 <div class="btn_wrapper">
                                     <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
                                         aria-hidden="true"></i><span class="sub_span"> About</span>

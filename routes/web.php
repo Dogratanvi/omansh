@@ -21,10 +21,7 @@ Route::get('/', function () {
 });
 
 
-    //  mailchimp newsletter
-    Route::get('newsletter/news', [MailChimpController::class, 'showForm'])->name('newsletter.showForm');
-    Route::post('newsletter/store', [MailChimpController::class, 'store'])->name('newsletter.store');
-
+  
 // frontend routes
 Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
@@ -72,5 +69,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     $controller_name = 'ServicesController';
     Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');
     Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+    //  mailchimp newsletter
+     Route::get('newsletter', [MailChimpController::class, 'showForm']);
+     Route::post('newsletter', [MailChimpController::class, 'store'])->name('newsletter.store');
+  
 
 });

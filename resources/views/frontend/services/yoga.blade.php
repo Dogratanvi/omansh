@@ -20,7 +20,7 @@
 
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i> <span
-                                    class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                                    class="sub_home_span"><a>Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Yoga</span>
                             </div>

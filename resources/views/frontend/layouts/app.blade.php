@@ -115,10 +115,10 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
-    $(".content").slice(0, 6).show();
+    $(".content").slice(0, 8).show();
     $("#loadMoree").on("click", function(e) {
         e.preventDefault();
-        $(".content:hidden").slice(0, 6).slideDown();
+        $(".content:hidden").slice(0, 8).slideDown();
         if ($(".content:hidden").length == 0) {
             $("#loadMoree").text("No Content").addClass("noContent");
         }

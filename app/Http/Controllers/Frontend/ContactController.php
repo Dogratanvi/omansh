@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Models\Setting;
 use App\Rules\Recaptcha;
+use Exception;
+use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
@@ -29,7 +31,8 @@ class ContactController extends Controller
             'phone' => 'min:8|max:11|regex:/^([0-9\s\-\+\(\)]*)$/',
             'service' => 'required|string|max:255',
             'message' => 'required|string',
-            '_token' => 'required|string'
+            '_token' => 'required|string',
+            'g-recaptcha-response' => 'required|string',
 
         ],[
             'first_name.required' => 'We need to know your first name!',
@@ -42,18 +45,38 @@ class ContactController extends Controller
 
         ]);
 
+        try {
+            
         if ($validator->fails()) {
-            return redirect('contact')
-                ->withErrors($validator)
-                ->withInput();
+            return redirect()->back()->with([
+                'message' => 'Contact form submit unsuccessfully!', 
+                 'status' => 'danger',
+            ]);
         }
 
-dd('1');
+            $input = $request->except(['_token','g-recaptcha-response','g-token']);
+       
+      
+            Contact::create($input);
+
+            return redirect()->back()->with([
+                'message' => 'Contact form form submitted successfully', 
+                 'status' => 'success',
+            ]);
+
+
+        }catch (Exception $e) {
+
+            return redirect()->back()->with([
+                'message' => 'Contact form submit unsuccessfully!', 
+                 'status' => 'danger',
+            ]);
+        }
+
+
 
         // Store the contact data in the database
-        $input = $request->except('_token');
       
-        Contact::create($input);
         
         // // Send mail to admin
         // Mail::send('contactMail', [
@@ -72,7 +95,11 @@ dd('1');
 
 
         // Optionally, you can also send a notification or perform other actions here
+        // $recipient = auth()->user();
+        // Notification::make()
+        // ->title('Contact Notification')
+        // ->sendToDatabase($recipient);
 
-        return redirect()->route('frontend.contact.create')->with('success', 'Contact information saved successfully.');
+      
     }
 }

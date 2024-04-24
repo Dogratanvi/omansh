@@ -82,7 +82,7 @@
                             <div class="col-lg-12">
                                 <div class="form-group mb-0">
 
-                                    <select name="service" id="service" class="form-select">
+                                    <select name="service" id="service" class="form-select" required>
                                         <option selected disabled>Services</option>
                                         <option value="women_health">Women Health</option>
                                         <option value="physiotherapy">Physiotherapy</option>
@@ -96,7 +96,7 @@
                             <div class="col-lg-12">
                                 <div class=" form-group mb-0">
                                     <textarea rows="3" name="message" id="comment" class="form-control"
-                                        placeholder="Message"></textarea>
+                                        placeholder="Message" required></textarea>
                                 </div>
                             </div>
                         </div>

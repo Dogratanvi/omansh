@@ -17,7 +17,7 @@
                         </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i> <span class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                                    aria-hidden="true"></i> <span class="sub_home_span"><a>Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Physiotherapy </span>
                             </div>

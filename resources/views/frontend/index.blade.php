@@ -359,22 +359,22 @@
         </div>
 
         <ul class="nav nav-pills justify-content-between mb-3 pt-3 " id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mt-2" role="presentation">
                 <button class="nav-link custom-btn active border-0" id="pills-all-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
                     aria-selected="true">All</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mt-2" role="presentation">
                 <button class="nav-link custom-btn border-0" id="pills-health-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-health" type="button" role="tab" aria-controls="pills-health"
                     aria-selected="false">Women Health</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mt-2" role="presentation">
                 <button class="nav-link border-0 custom-btn" id="pills-physiotherapy-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-physiotherapy" type="button" role="tab" aria-controls="pills-physiotherapy"
                     aria-selected="false">Physiotherapy</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item mt-2" role="presentation">
                 <button class="nav-link border-0 custom-btn" id="pills-yoga-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-yoga" type="button" role="tab" aria-controls="pills-yoga"
                     aria-selected="false">Yoga</button>

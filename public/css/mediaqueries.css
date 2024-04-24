@@ -1195,15 +1195,16 @@
     .banner-section-outer .banner-section .banner-section-image img {
         width: 360px;
     }
+    .banner-section-outer .banner-section .banner_left_bottom_shape {
+        top: 186px;
+    }
     .banner-section-outer .banner-section .banner_left_top_shape {
-        top: -10px;
+        top: 171px;
     }
     .banner-section-outer .banner-section .banner_left_top_shape img {
         width: 50px;
     }
-    .banner-section-outer .banner-section .banner_left_bottom_shape {
-        top: 55px;
-    }
+  
     .banner-section-outer .banner-section .banner_left_bottom_shape img {
         width: 100%;
     }
@@ -2420,6 +2421,12 @@
     }
     .subscribe_content button {
         padding: 24px 44px;
+    }
+    .banner-section-outer .banner-section .banner_left_bottom_shape {
+        top: 186px;
+    }
+    .banner-section-outer .banner-section .banner_left_top_shape {
+        top: 171px;
     }
     .subscribe_background_image .subscribe_image {
         bottom: -60px;

@@ -18,7 +18,7 @@
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for
                             Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
-                        <div class="btn_wrapper home-btn text-white  text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                        <div class="btn_wrapper home-btn text-white fw-bolder text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">
                             Connect with us<a href="./contact" class="text-decoration-none me-2"><i
                                     class="fa-solid fa-arrow-right" aria-hidden="true"> </i></a>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <div class="banner-section-image">
-                        <figure class="banner_left_bottom_shape left_shape mb-0 text-end">
+                        <figure class=" mb-0 text-end">
                             <img class="w-100" src="{{ asset('images/banner_right_image.png') }}" alt="">
                         </figure>
                     </div>
@@ -149,7 +149,7 @@
         <div class="row">
             <div class="col-lg-5 col-md-7 col-sm-12 col-xs-12">
                 <div class="aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('img/better-life.png') }}" alt="" class="img-fluid">
+                    <figure class="mb-0 text-sm-center text-xs-center text-lg-start text-xl-start text-md-start text-center"><img src="{{ asset('img/better-life.png') }}" alt="" class="img-fluid">
                     </figure>
                 </div>
                 <figure class="aboutus_top_shape left_shape mb-0">
@@ -174,8 +174,7 @@
                         methods with cutting-edge science.</p>
 
                     <div class="btn_wrapper">
-                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Get
-                            Started</a>
+                        <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -204,15 +203,18 @@
                     </div>
                     <div class="specialties_content s2">
                         <p class="specialties_name">Holistic Approach</p>
-                        <p class="specialties_paragraph"> Traditional practices with modern science for a wellness journey.</p>
+                        <p class="specialties_paragraph"> Traditional practices with modern science for a wellness
+                            journey.</p>
                     </div>
                     <div class="specialties_content s3">
                         <p class="specialties_name">Specialized Women's Health Care</p>
-                        <p class="specialties_paragraph">Solutions for women's health issues, such as pelvic floor rehab & pregnancy care.</p>
+                        <p class="specialties_paragraph">Solutions for women's health issues, such as pelvic floor rehab
+                            & pregnancy care.</p>
                     </div>
                     <div class="specialties_content s4">
                         <p class="specialties_name">Innovative Physio-Yoga Therapy</p>
-                        <p class="specialties_paragraph">Blend of physiotherapy and medical therapeutic yoga to enhance your healing experience.</p>
+                        <p class="specialties_paragraph">Blend of physiotherapy and medical therapeutic yoga to enhance
+                            your healing experience.</p>
                     </div>
                     <figure class="specialties_left_line mb-0">
                         <img src="{{ asset('images/specialties_left_line.png') }}" alt="" class="img-fluid">
@@ -238,7 +240,8 @@
                     </div>
                     <div class="specialties_content specialties_content2 s7">
                         <p class="specialties_name">Wide Range of Services</p>
-                        <p class="specialties_paragraph">Physiotherapy to yoga, we cover all aspects of health and fitness</p>
+                        <p class="specialties_paragraph">Physiotherapy to yoga, we cover all aspects of health and
+                            fitness</p>
                     </div>
                     <div class="specialties_content specialties_content2 s8">
                         <p class="specialties_name">Compassionate Support</p>
@@ -342,7 +345,7 @@
 </section>
 
 <!-- Testimonial -->
-<section class="our_specialties_section">
+<section class="our_specialties_section  aboutus_content">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -382,7 +385,7 @@
                 <div class="row pt-4" id="data">
                     @csrf
                     @foreach ($testimonials as $testimonial)
-                    <div class="col-md-3 pt-3">
+                    <div class="col-md-3 pt-3 content">
 
                         <div class="card border-0 videoCard">
                             <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
@@ -396,6 +399,9 @@
                     </div>
                     @endforeach
 
+                </div>
+                <div class="btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" id="loadMoree" class="text-decoration-none get_started_btn"> Load More </a>
                 </div>
             </div>
 
@@ -450,7 +456,7 @@
                 <div class="row pt-4" id="data">
                     @foreach ($testimonials as $testimonial)
                     @if($testimonial->category == "yoga")
-                    <div class="col-md-3 pt-3">
+                    <div class="col-md-3 pt-3 ">
 
                         <div class="card border-0 videoCard">
                             <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
@@ -466,6 +472,7 @@
                     @endif
                     @endforeach
                 </div>
+              
             </div>
         </div>
     </div>

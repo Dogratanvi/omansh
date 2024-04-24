@@ -100,6 +100,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
                         <div class="btn_wrapper">
                             <button type="submit" class="border-0" id="started">Submit</button>
                         </div>

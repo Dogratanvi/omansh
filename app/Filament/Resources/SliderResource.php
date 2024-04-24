@@ -25,6 +25,7 @@ class SliderResource extends Resource
             ->schema(Slider::getForm());
     }
 
+
     public static function table(Table $table): Table
     {
         return $table

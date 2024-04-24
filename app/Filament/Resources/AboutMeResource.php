@@ -20,10 +20,23 @@ class AboutMeResource extends Resource
     // protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationGroup = 'About';
 
+    // protected static ?string $recordTitleAttribute = 'name';
+    protected static ?string $navigationLabel = 'About Me';
+
     public static function form(Form $form): Form
     {
         return $form
-        ->schema(AboutMe::getForm());
+            ->schema(AboutMe::getForm());
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('About Me');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('About Me');
     }
 
     public static function table(Table $table): Table

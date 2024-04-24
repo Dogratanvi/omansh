@@ -47,6 +47,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9VT5D5K2V4');
+</script>
 
 
 
@@ -98,6 +106,18 @@ $(document).ready(function() {
         }
     });
 })
+
+$(document).ready(function() {
+    $(".content").slice(0, 6).show();
+    $("#loadMoree").on("click", function(e) {
+        e.preventDefault();
+        $(".content:hidden").slice(0, 6).slideDown();
+        if ($(".content:hidden").length == 0) {
+            $("#loadMoree").text("No Content").addClass("noContent");
+        }
+    });
+})
+
 </script>
 
 

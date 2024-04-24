@@ -53,7 +53,7 @@
                                     Dr. GARIMA BISWAS (PT)<br> Founder Director - OMANSH</h6>
                             </div>
                             <div class="col-md-6 ">
-                                <div class="social-icons d-flex justify-content-center align-items-center h-100 w-100">
+                                <div class="social-icons d-flex justify-content-start justify-content-xs-start justify-content-sm-start justify-content-xl-center justify-content-md-center justify-content-lg-center align-items-center h-100 w-100">
                                     <a href=""> <img src="{{ asset('img/facebook.png') }}"></a>
                                     <a href=""> <img class="ps-3" src="{{ asset('img/instagram.png') }}"></a>
                                     <a href=""> <img class="ps-3" src="{{ asset('img/linkedin.png') }}"></a>
@@ -79,13 +79,13 @@
                 </div>
             </div>
 
-            <div class="row pt-5">
-                <div class="col-md-6">
+            <div class="row pt-3">
+                <div class="col-md-6 pt-3">
                     <h2>   {!! $about_omanshes[2]->name!!}</h2>
                     <div> {!! $about_omanshes[2]->content!!} </div>
              
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 pt-3">
                     <h2>   {!! $about_omanshes[1]->name!!}</h2>
                     <div> {!! $about_omanshes[1]->content!!} </div>
            
@@ -233,8 +233,8 @@
             </div>
         </div>
     </section>
-    <!-- BLOG POSTS SECTION -->
-    <section class="blog_posts_section">
+    <!-- Instagram SECTION -->
+    <section class="insta_posts_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

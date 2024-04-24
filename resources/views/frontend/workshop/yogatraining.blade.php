@@ -61,7 +61,7 @@
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
-                <div class="ps-4 ">
+                <div class="para">
                     <h5>YOGA TRAINING</h5>
                     <h2>Better Life With Yoga Trainig</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
@@ -91,13 +91,13 @@
 
 
 <!-- gallary -->
-<section class="pb-3 aboutus_content">
+<section class="pb-3 aboutus_content ">
     <div class="container">
-        <h2 class="text-center">Yoga Training Gallery</h2>
-        <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training Gallery</h2>
+        <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
             exercitation
         </p>
-        <div class="row pt-5">
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">

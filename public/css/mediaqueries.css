@@ -269,7 +269,7 @@
     }
     h3 {
         font-size: 18px;
-        line-height: 45px;
+        line-height: 25px;
     }
     .services_box_content .services_box_lower_portion p {
         font-size: 16px;
@@ -744,13 +744,13 @@
         margin-left: 5px;
     }
     .sub-banner-section .banner-section .banner_left_top_shape {
-        top: -20px;
+        top: 191px;
     }
     .sub-banner-section .banner-section .banner_left_top_shape img{
         width: 80px;
     }
     .sub-banner-section .banner-section .banner_left_bottom_shape {
-        top: 85px;
+        top: 238px;
     }
     .sub-banner-section .banner-section .banner_left_bottom_shape img{
         width: 200px;
@@ -1564,9 +1564,9 @@
         margin-bottom: 20px;
     }
     .subscribe_content button {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 16px;
-        padding: 16px 32px;
+        padding: 24px 40px;
     }
     .subscribe_background_image .subscribe_image {
         bottom: -70px;
@@ -1628,6 +1628,12 @@
     .sub-banner-section .banner-section {
         padding: 250px 0 70px;
     }
+    .sub-banner-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 568px;
+    }
     .sub-banner-section .banner-section h1 {
         margin-bottom: 8px;
     }
@@ -1640,14 +1646,23 @@
         line-height: 16px;
         padding: 12px 18px;
     }
+    .service-gallary{
+        padding-top: 0px !important;
+    }
+    .service-gallary {
+        margin-bottom: 337px !important;
+    }
+    .service_page_aboutus_content h2{
+        padding-top: 30px;
+    }
     .sub-banner-section .banner-section .banner_left_top_shape {
-        top: 30px;
+        top: 191px;
     }
     .sub-banner-section .banner-section .banner_left_top_shape img {
         width: 60px;
     }
     .sub-banner-section .banner-section .banner_left_bottom_shape {
-        top: 120px;
+        top: 238px;
     }
     .sub-banner-section .banner-section .banner_left_bottom_shape img {
         width: 135px;
@@ -1736,7 +1751,7 @@
         border-radius: 140px 0 140px 0;
     }
     .mission_content {
-        padding-top: 20px;
+        padding-top: 40px;
         padding-left: 45px;
     }
     .mission_content h5 {
@@ -1939,6 +1954,15 @@
     .get_in_touch_content textarea{
         width: 88%;
     }
+    .insta_posts_section{
+        padding-top: 50px;
+    }
+    .blog_posts_left_shape img{
+        width: 45%;
+    }
+    figure.blog_posts_left_shape.left_shape {
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -2116,11 +2140,13 @@
         left: 80px;
     }
     .aboutus_content .btn_wrapper .get_started_btn {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 16px;
-        padding: 18px 28px;
+        padding: 24px 40px;
     }
-    
+    .gallery-section{
+        padding-top: 40px;
+    }
     .our_specialties_section {
         padding: 55px 0 30px;
     }
@@ -2393,7 +2419,7 @@
         margin-bottom: 15px;
     }
     .subscribe_content button {
-        padding: 14px 28px;
+        padding: 24px 44px;
     }
     .subscribe_background_image .subscribe_image {
         bottom: -60px;
@@ -2779,7 +2805,33 @@
     }
     .aboutus_content h2{
         font-size: 32px;
+        padding-bottom: 20px;
     }
+    .aboutus_content .btn_wrapper{
+        margin-top: 20px;
+    }
+    .specialties_content_wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .blog_posts_left_shape img{
+        width: 50%;
+    }
+    .sub-banner-section .banner-section .banner_left_top_shape {
+        top: 152px;
+    }
+    .mission_content {
+        padding-top: 40px;
+    }
+    .insta_posts_section{
+        padding-top: 50px;
+    }
+    .women-health h2{
+        text-align: left !important;
+            }
+            .women-health p{
+                text-align: left !important;
+                    }
 }
 
  @media screen and (max-width: 575px){
@@ -2840,12 +2892,45 @@
         font-size: 32px;
         line-height: 32px;
         padding-bottom: 15px !important;
+       
+    }
+    .aboutpage_aboutus_section h5{
+        text-align: left;
+    }
+    .mission_section {
+        padding: 20px 0 30px;
+    }
+    .aboutpage_aboutus_section h2{
+        text-align: left;
+    }
+    .aboutpage_aboutus_section p{
+        text-align: left;
     }
     .aboutus_content p {
         font-size: 16px;
     }
+    .mission_content{
+        padding: 10px 10px;
+    }
+    .vission_content{
+        padding: 10px 10px;
+    }
+.discount-section{
+    margin-top: 40px;
+}
     .aboutus_content h2{
         font-size: 32px;
+        padding-bottom: 20px;
+      
+        margin-bottom: 8px;
+    
+    }
+    .specialties_content_wrapper{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .aboutus_content .btn_wrapper{
+        margin-top: 20px;
     }
     .services_content p {
         margin-bottom: 20px;
@@ -2869,10 +2954,7 @@
     .aboutus_section .aboutus_bottom_shape{
         display: none;
     }
-    .aboutus_content h2 {
-        margin-bottom: 8px;
-        padding: 0 35px;
-    }
+
     .aboutus_content h6 {
         margin-bottom: 15px;
         padding: 0 20px;
@@ -2881,9 +2963,12 @@
         left: 25px;
     }
     .aboutus_content .btn_wrapper .get_started_btn {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 14px;
-        padding: 16px 26px;
+        padding: 24px 40px;
+    }
+    .gallery-section{
+        padding-top: 40px;
     }
 
     .our_specialties_section {
@@ -3076,9 +3161,9 @@
         padding-left: 12px;
     }
     .subscribe_content button {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 14px;
-        padding: 14px 30px;
+        padding: 24px 30px;
     }
     .subscribe_background_image .subscribe_image {
         bottom: 0px;
@@ -3333,9 +3418,42 @@ padding: 10px 0px;
         height:auto;
     }
     .workshop img {
-        border-top-left-radius: 180px;
-        border-bottom-right-radius: 180px;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
         height: auto;
         object-fit: cover;
     }
+    .blog_posts_left_shape img{
+        width: 30%;
+    }
+    .sub-banner-section .banner-section .banner_left_top_shape {
+        top: 152px;
+    }
+    .insta_posts_section {
+        padding-top: 60px;
+    }
+    .achievement_section {
+        padding: 55px 0 60px;
+    }
+    .banner-section-content {
+        padding-top: 53%;
+    }
+    .women-health h2{
+text-align: left !important;
+    }
+    .women-health p{
+        text-align: left !important;
+            }
+            .service-gallary {
+                margin-bottom: 413px !important;
+            }
+            .servicepage_aboutus_image img {
+                border-top-left-radius: 80px;
+                border-bottom-right-radius: 80px;
+                height: 100%;
+                object-fit: cover;
+            }
+            section.women-health {
+                padding-bottom: 60px;
+            }
 }

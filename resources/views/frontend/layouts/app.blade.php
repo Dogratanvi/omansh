@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="{{ asset('favicon.ico') }}"  type='image/x-icon'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>omansh</title>
+    <title>Omansh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 

@@ -42,13 +42,6 @@ class BlogResource extends Resource
                 Tables\Columns\TextColumn::make('intro')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('featured_image'),
-                Tables\Columns\TextColumn::make('meta_title')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('meta_keywords')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('meta_og_image'),
-                Tables\Columns\TextColumn::make('meta_og_url')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('published_at')
                     ->dateTime()
                     ->sortable(),

@@ -34,6 +34,10 @@ class AdminPanelProvider extends PanelProvider
             ->passwordReset()
             ->emailVerification()
             ->profile()
+            ->brandLogo(asset('img/logo.svg'))
+            ->darkModeBrandLogo(asset('img/logo_dark.svg'))
+            ->brandLogoHeight('3.5rem')
+            ->sidebarFullyCollapsibleOnDesktop()
             ->colors([
                 'primary' => Color::hex('#caac86'),
             ])

@@ -20,12 +20,24 @@ class AboutOmanshResource extends Resource
     // protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationGroup = 'About';
 
+    protected static ?string $navigationLabel = 'About Omansh';
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema(
-               AboutOmansh::getForm()
+                AboutOmansh::getForm()
             );
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('About Omansh');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('About Omansh');
     }
 
     public static function table(Table $table): Table
@@ -42,7 +54,7 @@ class AboutOmanshResource extends Resource
                 Tables\Columns\ImageColumn::make('featured_image'),
                 Tables\Columns\TextColumn::make('order')
                     ->searchable(),
-              
+
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')

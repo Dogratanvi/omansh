@@ -94,7 +94,7 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/neck-pain.png') }}" alt="neck-pain" class="img-fluid">
                     </div>
                 </div>
                 <p class="fw-bold pt-3 text-dark text-center">1 in 2</p>
@@ -103,38 +103,38 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/women-suffer.png') }}" alt="women-suffer" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 3</p>
+                <h6 class="fw-normal text-center">Women suffer with urinary incontinence</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/pelvic_organ.png') }}" alt="pelvic organ" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 4</p>
+                <h6 class="fw-normal text-center">Women suffer with symptoms of pelvic organ prolapse</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/Women_experience.png') }}" alt="Women experience" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 5</p>
+                <h6 class="fw-normal text-center">Women experience chronic pelvic or sexual pain</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/women_suffer.png') }}" alt="Women suffer" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 9</p>
+                <h6 class="fw-normal text-center">Women suffer with faecal incontinence</h6>
             </div>
         </div>
 

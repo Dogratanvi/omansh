@@ -401,7 +401,7 @@
 
                 </div>
                 <div class="btn_wrapper d-flex justify-content-center mt-5">
-                    <a href="#" id="loadMoree" class="text-decoration-none get_started_btn"> Load More </a>
+                    <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
                 </div>
             </div>
 
@@ -456,7 +456,7 @@
                 <div class="row pt-4" id="data">
                     @foreach ($testimonials as $testimonial)
                     @if($testimonial->category == "yoga")
-                    <div class="col-md-3 pt-3 ">
+                    <div class="col-md-3 pt-3 contents ">
 
                         <div class="card border-0 videoCard">
                             <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
@@ -471,6 +471,9 @@
 
                     @endif
                     @endforeach
+                </div>
+                <div class="btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" id="loadMoree" class="text-decoration-none get_started_btn"> Load More </a>
                 </div>
               
             </div>

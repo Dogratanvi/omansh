@@ -1569,6 +1569,10 @@ section.women-health {
     width: 100%;
  
 }
+.women-health .logo-box img {
+    height: 105px;
+    object-fit: cover;
+}
 #text-box::placeholder {
     font-size: 15px;
     padding-left: 10px;
@@ -1591,6 +1595,9 @@ section.women-health {
 .middle-portion .footer_logo{
    
     padding-top: 5px;
+}
+.blog_posts_right_shape{
+    position: absolute;
 }
 .middle-portion .about_col{
     margin-left: -8px;
@@ -2237,6 +2244,12 @@ background-color: #004B2A !important;
 .content{
 display: none;
 }
+.contents{
+    display: none;
+    }
+    .innertext{
+        display: none; 
+    }
 /* Pricing Page Style */
 
 /* Pricing Page Pricing Plans Section Style */

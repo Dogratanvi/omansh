@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Models\Setting;
 use App\Rules\Recaptcha;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
@@ -20,8 +21,8 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         
-       
-        $data = $request->validate([
+      
+        $validator = Validator::make($request->all(), [
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -30,7 +31,24 @@ class ContactController extends Controller
             'message' => 'required|string',
             '_token' => 'required|string'
 
+        ],[
+            'first_name.required' => 'We need to know your first name!',
+            'last_name.required' => 'We need to know your first name!',
+            'email.required' => 'Without an email, how can we reach you?',
+            'email.email' => 'Your email does not appear to be valid.',
+            'phone.required' => 'Your phone number is not valid.',
+            'service.required' => 'Service is required',
+            'message.required' => 'Message is required'
+
         ]);
+
+        if ($validator->fails()) {
+            return redirect('contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+dd('1');
 
         // Store the contact data in the database
         $input = $request->except('_token');

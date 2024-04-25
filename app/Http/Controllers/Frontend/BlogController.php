@@ -23,6 +23,14 @@ class BlogController extends Controller
         return view('blog.create');
     }
 
+    public function blogPost($id)
+    {
+        $id =1;
+        $blogs = Blog::find($id);
+        dd($blogs->featured_image);
+        return view('frontend.blogPost', compact('blogs'));
+    }
+
     public function store(BlogStoreRequest $request): RedirectResponse
     {
         $blog = Blog::create($request->validated());

@@ -61,6 +61,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/physiotherapy', 'ServicesController@physiotherapy')->name('services.physiotherapy');
     Route::get('services/womenhealth', 'ServicesController@womenhealth')->name('services.womenhealth');
     Route::get('services/yoga', 'ServicesController@yoga')->name('services.yoga');
+
+    Route::get('blogPost/{id}', 'BlogController@blogPost')->name('blogPost');
    
    // footer
     Route::get('includes/footer', 'FrontendController@service')->name('includes.footer');

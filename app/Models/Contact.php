@@ -35,7 +35,7 @@ class Contact extends Model
 
     public function setFeaturedImageAttribute($value)
     {
-        if( $this->attributes['featured_image'] == null)
+        if( $value != null)
         {
             $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
         }

@@ -78,7 +78,7 @@ h6{
     font-weight: 700;
 }
 p{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
     color: #989595;
     font-family: "Poppins", sans-serif;
@@ -88,7 +88,7 @@ p{
 
 }
 li{
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
         color: #989595;
         font-family: "Poppins", sans-serif;
@@ -135,7 +135,9 @@ button:focus {
 /* service-btn */
 
 
-
+.program strong{
+    color: #004B2A;
+}
 .btn.btns {
     font-size: 1.1em;
     padding: 15px 20px;
@@ -476,6 +478,9 @@ button:focus {
     top: 61px;
     left: -20px;
 }
+section.feedback-section {
+    margin-bottom: 479px;
+}
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -506,8 +511,8 @@ button:focus {
     bottom: -24px;
 }
 .left_shape img {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    -webkit-animation: mover 3s infinite  alternate;
+    animation: mover 3s infinite  alternate;
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -524,8 +529,8 @@ button:focus {
     right: 0;
 }
 .right_shape img {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    -webkit-animation: mover 3s infinite  alternate;
+    animation: mover 3s infinite  alternate;
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -727,7 +732,7 @@ button.custom-btn{
 .aboutus_content p {
     margin-bottom: 15px;
     font-size: 18px;
-    color: var(--e-global-color-text);
+    color: #989595;;
     
 }
 .aboutus_content h6{
@@ -1241,7 +1246,32 @@ textarea {
     background-color: var(--e-global-color-secondary);
     transform: translateY(-10px);
 }
-
+/* events */
+.single-event img {
+    border-top-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+}
+.event-para span{
+    font-size: 16px;
+}
+a.all-event {
+    font-size: 24px;
+    font-weight: 700;
+    color: #004B2A;
+}
+.past-events {
+    margin-bottom: 400px;
+}
+.single-post .btn_wrapper a {
+    color: #000;
+}
+.single-post .btn_wrapper span {
+    color: #004B2A;
+}
+.post-image img {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 /* Home Page Testimonial Section Style */
 
 .testimonial_section{
@@ -1829,7 +1859,7 @@ button.close {
 /* About Page About Us Section Style */
 
 .aboutpage_aboutus_section{
-    padding: 132px 0;
+    padding: 100px 0;
 }
 .aboutpage_aboutus_image{
     position: relative;
@@ -2915,7 +2945,14 @@ h1{
 }
 .feedback-form h3 {
     font-size: 25px;
-    width: 200px;
+    width: 100%;
+}
+.feedback-form table h3 {
+    font-size: 25px;
+    width: 300px;
+}
+section.feedback-section {
+    margin-bottom: 431px;
 }
 .feedback-form h4 {
     font-size: 20px;

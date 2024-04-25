@@ -12,14 +12,18 @@
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Contact Us</h1>
                             <div class="row justify-content-center">
-                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Suis aute irure dolor in reprehenderit in
-                                volurate velit cillum
-                                nulla
-                                pariatur nostrud exercitation.</p> </div> </div>
+                                <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
+                                    <p class="text-center" data-aos="fade-right">Suis aute irure dolor in reprehenderit
+                                        in
+                                        volurate velit cillum
+                                        nulla
+                                        pariatur nostrud exercitation.</p>
+                                </div>
+                            </div>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a> </span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i><span class="sub_span"> Contact</span>
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a> </span><i
+                                    class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
+                                    Contact</span>
                             </div>
                         </div>
                     </div>
@@ -117,8 +121,10 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Location</h3>
-                                <p class="mb-0">Plot No-290, in front of ramprastha green gate No.1, sector-4, vaishali,
-                                    ghaziabad, 201 019</p>
+                                <p class="mb-0">Plot No-290, Gate No.1
+                                    Sector-4, Vaishali
+                                    (Landmark: In front of Ramprastha Green)
+                                    Ghaziabad, 201 019, Delhi NCR, India</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +138,7 @@
                             <div class="box_wrapper">
                                 <h3>Phone</h3>
                                 <p><a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270 45759</a></p>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -145,9 +151,10 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Email</h3>
-                                <p><a href="mailto:garimabiswas09@gmail.com" class="text-decoration-none">garimabiswas09@gmail.com</a>
+                                <p><a href="mailto:garimabiswas09@gmail.com"
+                                        class="text-decoration-none">garimabiswas09@gmail.com</a>
                                 </p>
-                              
+
                             </div>
                         </div>
                     </div>

@@ -25,6 +25,11 @@ class EventController extends Controller
         
         return view('frontend.events.upcoming', compact('settings'));
     }
+    public function single()
+    {
+        $settings = Setting::all();
+        return view('frontend.events.single', compact('settings'));
+    }
    
     public function past()
     {

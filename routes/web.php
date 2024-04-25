@@ -32,8 +32,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('yogatraining', 'FrontendController@yogatraining')->name('yogatraining');
     
     Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
-    Route::get('blog', 'FrontendController@blog')->name('blog');
-    Route::get('blogdetail', 'FrontendController@blogdetail')->name('blogdetail');
 
     //workshop
     $module_name = 'workshop';
@@ -52,6 +50,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
      $controller_name = 'EventController';
      Route::get('events/upcoming', 'EventController@upcoming')->name('events.upcoming');
      Route::get('events/past', 'EventController@past')->name('events.past');
+     Route::get('events/single', 'EventController@single')->name('events.single');
  
     //  services
 
@@ -73,6 +72,12 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     //  mailchimp newsletter
      Route::get('newsletter', [MailChimpController::class, 'showForm']);
      Route::post('newsletter', [MailChimpController::class, 'store'])->name('newsletter.store');
+
+     //  blog
+     Route::get('blog', 'BlogController@index')->name('blog.index');
+     Route::get('blog/{id}', 'BlogController@show')->name('blog.show');
+
+
   
 
 });

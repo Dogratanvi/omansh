@@ -189,7 +189,7 @@
                 <div class="our_specialties_heading_content">
 
                     <h2>Why Choose Us</h2>
-                    <p class="text-center">Empowering Your Health Journey with Compassion and Expertise</p>
+                    <p class="text-center">Empowering your health journey with compassion and expertise</p>
                 </div>
             </div>
         </div>
@@ -291,7 +291,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="Email" id="emailaddrs" value="Email"
+                                    <input type="email" name="Email" id="emailaddrs" 
                                         class="form-control form_style" placeholder="Email">
                                 </div>
                             </div>
@@ -503,7 +503,7 @@
                 <div class="blog_posts_content">
 
                     <h2>Blog & News</h2>
-                    <p class="text-center">Stay Informed and Inspired - Our Latest Insights and Updates</p>
+                    <p class="text-center">Stay informed and inspired - our latest insights and updates</p>
                 </div>
             </div>
         </div>

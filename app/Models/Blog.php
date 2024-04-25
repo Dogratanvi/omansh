@@ -10,6 +10,7 @@ use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -31,9 +32,10 @@ class Blog extends Model
 
     public function setFeaturedImageAttribute($value)
     {
-        if( $this->attributes['featured_image'] == null)
+        
+        if( $value != null)
         {
-            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+            $this->attributes['featured_image'] = env('APP_URL') . '/' ."uploads/" . $value; // Store the URL
         }
     }
 
@@ -42,16 +44,10 @@ class Blog extends Model
      */
     public function comments()
     {
-        return $this->morphMany('Modules\Comment\Models\Comment', 'commentable')->where('status', '=', 1);
+        return $this->hasMany(Comments::class)->whereNull('parent_id')->where('status',1);
     }
 
-    /**
-     * All the Published and Unpublished Comments.
-     */
-    public function comments_all()
-    {
-        return $this->hasMany('Modules\Article\Models\Comment');
-    }
+  
 
     protected static function boot()
     {
@@ -79,7 +75,15 @@ class Blog extends Model
                         ->maxLength(255),
                     TextInput::make('author')
                         ->maxLength(255),
+                    Select::make('category')
+                        ->options([
+                            'WOMEN HEALTH' => 'WOMEN HEALTH',
+                            'PHYSIOTHERAPY' => 'PHYSIOTHERAPY',
+                            'YOGA' => 'YOGA',
+                        ])
+                        ->required(),
                     TextInput::make('intro')
+                        ->columnSpanFull()
                         ->maxLength(255),
                     RichEditor::make('content')
                         ->maxLength(65535)

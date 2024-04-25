@@ -16,11 +16,8 @@
                             <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                         </li>
                         <li class="nav-item dropdown d-flex align-items-center">
-                            <!-- <a href="#" class="nav-link  dropdown-color navbar-text-color"
-                                role="button" >Services </a><a href="#" class="ps-2 dropdown-toggle dropdown-color" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"
-                                id="navbarDropdown"></a> -->
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                         
+                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" 
                                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> Services </a>
 
@@ -45,10 +42,10 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{ route('frontend.blog') }}"> Blog </a>
+                            <a class="nav-link" href="{{ route('frontend.blog.index') }}"> Blog </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" 
                                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> WORKSHOP </a>
                             <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
@@ -68,7 +65,7 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color"
                                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> Events </a>
                             <div class="dropdown-menu drop-down-content">
@@ -111,7 +108,7 @@
                                 <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                             </li>
                             <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" 
                                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"> Services </a>
 
@@ -136,10 +133,10 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="{{ route('frontend.blog') }}"> Blog </a>
+                                <a class="nav-link" href="{{ route('frontend.blog.index') }}"> Blog </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color"
                                     id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false"> WORKSHOP </a>
                                 <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
@@ -159,7 +156,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" 
                                     id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false"> Events </a>
                                 <div class="dropdown-menu drop-down-content">

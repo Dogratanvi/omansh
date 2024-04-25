@@ -8,8 +8,9 @@
                     <div class="subscribe_content">
                         <h5>Subscribe now</h5>
                         <h2>Get the Latest Updates With Our Newletter</h2>
-                        <form action="{{ url('newsletter')  }}" method="POST"  enctype="multipart/form-data"  id="newsletter_form">
-                        @csrf
+                        <form action="{{ url('newsletter')  }}" method="POST" enctype="multipart/form-data"
+                            id="newsletter_form">
+                            @csrf
                             <div class="form-row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="email" name="email" id="emailadd" class="form-control"
@@ -19,8 +20,8 @@
                             </div>
                         </form>
                         @if(session()->has('message'))
-                    <p class="alert alert-success py-3 rounded-0 mt-1"> {{ session()->get('message') }}</p>
-                @endif
+                        <p class="alert alert-success py-3 rounded-0 mt-1"> {{ session()->get('message') }}</p>
+                        @endif
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
@@ -48,7 +49,7 @@
                         </a>
                     </div>
                 </div>
-           
+
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div
                         class="about_col  text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
@@ -63,19 +64,24 @@
                             </li>
 
                             <li class="icons">
-                                <a href="{{$settings[2]->value}}" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="{{$settings[2]->value}}" target="_blank"><i class="fa-brands fa-facebook-f"
+                                        aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="{{$settings[9]->value}}" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                                <a href="{{$settings[9]->value}}" target="_blank"><i class="fa-brands fa-instagram"
+                                        aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="{{$settings[4]->value}}" target="_blank"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                                <a href="{{$settings[4]->value}}" target="_blank"><i class="fa-brands fa-linkedin-in"
+                                        aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="{{$settings[10]->value}}" target="_blank"><i class="fa-brands fa-google" aria-hidden="true"></i></a>
+                                <a href="{{$settings[10]->value}}" target="_blank"><i class="fa-brands fa-google"
+                                        aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="{{$settings[5]->value}}" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                                <a href="{{$settings[5]->value}}" target="_blank"><i class="fa-brands fa-youtube"
+                                        aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -86,17 +92,21 @@
                         <h4>Quick Links</h4>
                         <ul
                             class="list-unstyled text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
-                            <li>
-                                <a href="{{ route('frontend.index') }}l">Home</a>
-                            </li>
+                      
                             <li>
                                 <a href="{{ route('frontend.about') }}">About Us</a>
                             </li>
                             <li>
-                                <a href="{{ route('frontend.services') }}">Services</a>
+                                <a href="{{ route('frontend.services.womenhealth') }}">Women Health</a>
                             </li>
                             <li>
-                                <a href="{{ route('frontend.blog') }}">Blog<a>
+                                <a href="{{ route('frontend.services.physiotherapy') }}">Physiotherapy</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('frontend.services.yoga') }}">Yoga</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('frontend.blog.index') }}">Blog<a>
                             </li>
                             <li>
                                 <a href="{{ route('frontend.contact.create') }}">Contact Us</a>
@@ -115,17 +125,17 @@
                             class="list-unstyled text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                             <li class="contact_icons">
                                 <i class="fa-solid fa-phone"></i>
-                                <a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270 45759</a>
+                                <a href="tel:{{$settings[12]->value}}" class="text-decoration-none">{{$settings[12]->value}}</a>
                             </li>
                             <li class="contact_icons">
                                 <i class="fa-sharp fa-solid fa-envelope"></i>
-                                <a href="mailto:garimabiswas09@gmail.com"
-                                    class="text-decoration-none">garimabiswas09@gmail.com</a>
+                                <a href="mailto:{{$settings[1]->value}}"
+                                    class="text-decoration-none"> {{$settings[1]->value}}</a>
                             </li>
                             <li class="mb-0">
                                 <i class="fa-solid fa-location-dot location"></i>
-                                <span>Plot No-290, in front of ramprastha green gate No.1, sector-4, vaishali,
-                                    ghaziabad, 201 019</span>
+                                <span>
+                                    {{$settings[11]->value}}</span>
                             </li>
                         </ul>
                     </div>
@@ -143,8 +153,10 @@
                     </p>
                 </div>
                 <div class="col-md-6  copyright">
-                    <p class="footer-text text-white text-lg-end text-sm-start text-start text-md-end text-xl-end text-xs-start"
-                        > Website designed and developed by<a href="https://pulseplaydigital.com/" target="_blank"> PulsePlay Digital</a></p>
+                    <p
+                        class="footer-text text-white text-lg-end text-sm-start text-start text-md-end text-xl-end text-xs-start">
+                        Website designed and developed by<a href="https://pulseplaydigital.com/"
+                            target="_blank"> PulsePlay Digital</a></p>
                 </div>
             </div>
         </div>

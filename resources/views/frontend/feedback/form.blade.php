@@ -90,11 +90,7 @@
 
 
                         </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                            <h3>Please rate these:</h3>
-                            </div>
-                        </div>
+                   
                         <table class="table table-borderless ">
                             <tr>
                                 <th>

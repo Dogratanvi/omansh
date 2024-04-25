@@ -117,7 +117,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <h2 class="text-center"> Type of Women health Issues</h2>
+                <h2 class="text-center"> Type of Physiotherapy</h2>
                 <p class="text-center">Physiotherapy encompasses a wide range of specialized services tailored to meet
                     the
                     unique needs of each patient, focusing on the restoration, maintenance, and maximization of physical
@@ -243,45 +243,45 @@
 <section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
         <h2 class="text-center"> Gallery</h2>
-        <div class="row pt-sm-2 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-2">
-            <div class="col-md-4 mt-3 content">
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_2.png') }}" alt="gallary2">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_3.png') }}" alt="gallary3">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_4.png') }}" alt="gallary4">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_5.png') }}" alt="gallary5">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
                 </div>
             </div>
         </div>
         <div class="btn_wrapper d-flex justify-content-center mt-5">
-            <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+            <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
         </div>
     </div>
 </section>

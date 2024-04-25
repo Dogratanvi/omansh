@@ -987,7 +987,7 @@ button.custom-btn{
     background: var(--e-global-color-soft-orange);
     content: "";
     width: 50%;
-    height: 806px;
+    height: 100%;
     top: 0;
     left: 0;
     position: absolute;
@@ -996,9 +996,12 @@ button.custom-btn{
     background: url(../img/Get_in_touch.png);
     content: "";
     width: 55%;
-    height: 806px;
+    height: 100%;
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
     right: 0;
+    background-position: center;
     top: 0;
     z-index: -1;
 }

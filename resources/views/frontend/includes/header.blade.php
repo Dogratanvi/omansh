@@ -58,11 +58,7 @@
                                             href="{{ route('frontend.workshop.yogatraining') }}">
                                             YOGA TRAINING</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.workshop.doctortraining') }}">
-                                            DOCTOR TRAINING</a>
-                                    </li>
+                             
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link"
                                             href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE
@@ -153,11 +149,7 @@
                                                 href="{{ route('frontend.workshop.yogatraining') }}">
                                                 Yoga TRAINING</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link"
-                                                href="{{ route('frontend.workshop.doctortraining') }}">
-                                                DOCTOR TRAINING</a>
-                                        </li>
+                                
                                         <li class="nav-item">
                                             <a class="dropdown-item nav-link"
                                                 href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE

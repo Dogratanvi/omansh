@@ -122,14 +122,13 @@
                         </div> -->
                         <div
                             class=" text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
-                            <a href="{{$service->url}}">
-                                <div class="btn btns">
+                        
+                          
+                                <a href="{{$service->url}}" class="home-btns btn--hover-icon">
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"> </i>
                                     <span>Read More</span>
-
-                                    <i class="fa-solid fa-arrow-right ico" aria-hidden="true"> </i>
-
-                                </div>
-                            </a>
+                                </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -176,6 +175,7 @@
                     <div class="btn_wrapper">
                         <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Read More</a>
                     </div>
+                 
                 </div>
             </div>
         </div>

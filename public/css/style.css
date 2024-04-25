@@ -1783,7 +1783,49 @@ background-color: #004B2A;
     bottom: 98px;
     right: 0;
 }
+button.close {
+    font-size: 42px;
+    color: #000 !important;
+}
 
+.home-btns {
+    align-items: center;
+    background-color: #CAA983;
+    border: 0 solid #fff;
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 17px 17px;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  .home-btns:hover{
+    background-color: #004B2A;
+    text-decoration: none;
+  }
+  .home-btns:hover span {
+    transform: translateX(4px);
+    opacity: 1;
+    position: relative;
+  }
+  .home-btns span {
+    color: #fff;
+    transform: translateX(320px);
+    transition: all 0.3s ease;
+    opacity: 0;
+    position: absolute;
+  }
+  .home-btns i {
+    color: #fff;
+  }
+  .home-btns + .home-btns {
+    background-color: #000080;
+    margin-left: 8px;
+  }
 /* About Page About Us Section Style */
 
 .aboutpage_aboutus_section{

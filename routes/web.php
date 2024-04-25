@@ -38,7 +38,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     //workshop
     $module_name = 'workshop';
     $controller_name = 'WorkshopController';
-    Route::get('workshop/doctortraining', 'WorkshopController@doctortraining')->name('workshop.doctortraining');
+    // Route::get('workshop/doctortraining', 'WorkshopController@doctortraining')->name('workshop.doctortraining');
     Route::get('workshop/yogatraining', 'WorkshopController@yogatraining')->name('workshop.yogatraining');
     Route::get('workshop/corporatetraining', 'WorkshopController@corporatetraining')->name('workshop.corporatetraining');
 

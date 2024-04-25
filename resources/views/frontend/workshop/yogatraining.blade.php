@@ -14,8 +14,7 @@
                             <h1 data-aos="fade-up">Yoga Training</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in
-                                volurate velit cillum nulla pariatur nostrud exercitation</p>
+                            <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, Elevate Your Practice with Our Yoga Training Program</p>
                                 </div>
                         </div>
                             <div class="btn_wrapper">
@@ -63,7 +62,8 @@
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
                 <div class="para">
                     <h5>YOGA TRAINING</h5>
-                    <h2>Better Life With Yoga Trainig</h2>
+                    <h2> {!! $workshops[0]->name!!}</h2>
+                    <div> {!! $workshops[0]->content!!} </div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the

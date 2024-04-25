@@ -363,219 +363,225 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="our_specialties_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="our_specialties_heading_content">
+<section class="our_specialties_section  aboutus_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="our_specialties_heading_content">
 
-                        <h2> Testimonial
-                        </h2>
-                        <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <ul class="nav nav-pills justify-content-between mb-3 pt-3 " id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link custom-btn active border-0" id="pills-all-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
-                        aria-selected="true">All</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link custom-btn border-0" id="pills-health-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-health" type="button" role="tab" aria-controls="pills-health"
-                        aria-selected="false">Women Health</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link border-0 custom-btn" id="pills-physiotherapy-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-physiotherapy" type="button" role="tab"
-                        aria-controls="pills-physiotherapy" aria-selected="false">Physiotherapy</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link border-0 custom-btn" id="pills-yoga-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-yoga" type="button" role="tab" aria-controls="pills-yoga"
-                        aria-selected="false">Yoga</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-                    <div class="row pt-4" id="data">
-                        @csrf
-                        @foreach ($testimonials as $testimonial)
-                            <div class="col-md-3 pt-3">
-
-                                <div class="card border-0 videoCard">
-                                    <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video }}"
-                                        data-toggle="modal" data-target="#deleteLineItemModal">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </a>
-                                    <img class="loads" src="{{ $testimonial->featured_image }}"
-                                        class="play-btn btn-watch-video w-100" alt="thumbnail" />
-
-                                </div>
-                            </div>
-                        @endforeach
-
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
-                    <div class="row pt-4" id="data">
-                        @foreach ($testimonials as $testimonial)
-                            @if ($testimonial->category == 'women-health')
-                                <div class="col-md-3 pt-3">
-
-                                    <div class="card border-0 videoCard">
-                                        <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video }}"
-                                            data-toggle="modal" data-target="#deleteLineItemModal">
-                                            <i class="fa-brands fa-youtube"></i>
-                                        </a>
-                                        <img class="loads" src="{{ $testimonial->featured_image }}"
-                                            class="play-btn btn-watch-video w-100" alt="thumbnail" />
-
-                                    </div>
-                                </div>
-                            @endif
-                        @endforeach
-
-
-
-
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="pills-physiotherapy" role="tabpanel"
-                    aria-labelledby="pills-physiotherapy-tab">
-                    <div class="row pt-4" id="data">
-                        @foreach ($testimonials as $testimonial)
-                            @if ($testimonial->category == 'physiotherapy')
-                                <div class="col-md-3 pt-3">
-
-                                    <div class="card border-0 videoCard">
-                                        <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video }}"
-                                            data-toggle="modal" data-target="#deleteLineItemModal">
-                                            <i class="fa-brands fa-youtube"></i>
-                                        </a>
-                                        <img class="loads" src="{{ $testimonial->featured_image }}"
-                                            class="play-btn btn-watch-video w-100" alt="thumbnail" />
-
-                                    </div>
-                                </div>
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="pills-yoga" role="tabpanel" aria-labelledby="pills-yoga-tab">
-                    <div class="row pt-4" id="data">
-                        @foreach ($testimonials as $testimonial)
-                            @if ($testimonial->category == 'yoga')
-                                <div class="col-md-3 pt-3">
-
-                                    <div class="card border-0 videoCard">
-                                        <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video }}"
-                                            data-toggle="modal" data-target="#deleteLineItemModal">
-                                            <i class="fa-brands fa-youtube"></i>
-                                        </a>
-                                        <img class="loads" src="{{ $testimonial->featured_image }}"
-                                            class="play-btn btn-watch-video w-100" alt="thumbnail" />
-
-                                    </div>
-                                </div>
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- google review section -->
-    <!-- <section class="google-review-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2> Testimonial
+                    </h2>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
                 </div>
             </div>
         </div>
 
-    </section> -->
+        <ul class="nav nav-pills justify-content-between mb-3 pt-3 " id="pills-tab" role="tablist">
+            <li class="nav-item mt-2" role="presentation">
+                <button class="nav-link custom-btn active border-0" id="pills-all-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                    aria-selected="true">All</button>
+            </li>
+            <li class="nav-item mt-2" role="presentation">
+                <button class="nav-link custom-btn border-0" id="pills-health-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-health" type="button" role="tab" aria-controls="pills-health"
+                    aria-selected="false">Women Health</button>
+            </li>
+            <li class="nav-item mt-2" role="presentation">
+                <button class="nav-link border-0 custom-btn" id="pills-physiotherapy-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-physiotherapy" type="button" role="tab" aria-controls="pills-physiotherapy"
+                    aria-selected="false">Physiotherapy</button>
+            </li>
+            <li class="nav-item mt-2" role="presentation">
+                <button class="nav-link border-0 custom-btn" id="pills-yoga-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-yoga" type="button" role="tab" aria-controls="pills-yoga"
+                    aria-selected="false">Yoga</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                <div class="row pt-4" id="data">
+                    @csrf
+                    @foreach ($testimonials as $testimonial)
+                    <div class="col-md-3 pt-3 content">
 
-    <!-- end google review section -->
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
 
-    <!-- BLOG POSTS SECTION -->
-    <section class="blog_posts_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="blog_posts_content">
-
-                        <h2>Blog & News</h2>
-                        <p class="text-center">Stay Informed and Inspired - Our Latest Insights and Updates</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="blog_posts_image position-relative">
-                        <figure class="mb-0"><img src="{{ asset('images/blog_posts_1.png') }}" alt=""
-                                class="img-fluid">
-                        </figure>
-                        <div class="blog_posts_image_content">
-                            <span>YOGA</span>
-                            <h4>Yoga Effects on Brain Health: A Systematic Review of the Current Literature</h4>
-                            <div class="icon_wrapper">
-                                <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                        aria-hidden="true"></i></a>
-                            </div>
                         </div>
                     </div>
+                    @endforeach
+
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="blog_posts_image position-relative">
-                        <figure class="mb-0"><img src="{{ asset('images/blog_posts_2.png') }}" alt=""
-                                class="img-fluid">
-                        </figure>
-                        <div class="blog_posts_image_content">
-                            <span>FITNESS</span>
-                            <h4>Maintaining a regular yoga practice can provide physical health</h4>
-                            <div class="icon_wrapper">
-                                <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                        aria-hidden="true"></i></a>
-                            </div>
+                <div class="btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
+                <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "women-health")
+                    <div class="col-md-3 pt-3">
+
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
+
                         </div>
                     </div>
+                    @endif
+                    @endforeach
+
+
+
+
                 </div>
             </div>
-            <div class="btn_wrapper">
-                <a href="" class="text-decoration-none view_blog">View All Blogs</a>
+
+            <div class="tab-pane fade" id="pills-physiotherapy" role="tabpanel"
+                aria-labelledby="pills-physiotherapy-tab">
+                <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "physiotherapy")
+                    <div class="col-md-3 pt-3">
+
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
+
+                        </div>
+                    </div>
+
+                    @endif
+                    @endforeach
+                </div>
             </div>
-            <figure class="blog_posts_left_shape left_shape mb-0">
-                <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
-            </figure>
-            <figure class="blog_posts_right_shape right_shape mb-0">
-                <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
-            </figure>
-        </div>
-    </section>
-    <div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
-        aria-labelledby="deleteLineItemModal" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content mt-4 bg-transparent border-0">
-                <div class="modal-header bg-transparent border-0">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
-                        aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+            <div class="tab-pane fade" id="pills-yoga" role="tabpanel" aria-labelledby="pills-yoga-tab">
+                <div class="row pt-4" id="data">
+                    @foreach ($testimonials as $testimonial)
+                    @if($testimonial->category == "yoga")
+                    <div class="col-md-3 pt-3 contents ">
+
+                        <div class="card border-0 videoCard">
+                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
+                                data-toggle="modal" data-target="#deleteLineItemModal">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <img class="loads" src="{{$testimonial->featured_image }}"
+                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
+
+                        </div>
+                    </div>
+
+                    @endif
+                    @endforeach
                 </div>
-                <div class="modal-body edit-content pt-2">
-                    <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                <div class="btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" id="loadMoree" class="text-decoration-none get_started_btn"> Load More </a>
                 </div>
+              
             </div>
         </div>
     </div>
+</section>
+
+
+<!-- google review section -->
+<!-- <section class="google-review-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+</section> -->
+
+<!-- end google review section -->
+
+<!-- BLOG POSTS SECTION -->
+<section class="blog_posts_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog_posts_content">
+
+                    <h2>Blog & News</h2>
+                    <p class="text-center">Stay Informed and Inspired - Our Latest Insights and Updates</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="blog_posts_image position-relative">
+                    <figure class="mb-0"><img src="{{ asset('images/blog_posts_1.png') }}" alt="" class="img-fluid">
+                    </figure>
+                    <div class="blog_posts_image_content">
+                        <span>YOGA</span>
+                        <h4>Yoga Effects on Brain Health: A Systematic Review of the Current Literature</h4>
+                        <div class="icon_wrapper">
+                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="blog_posts_image position-relative">
+                    <figure class="mb-0"><img src="{{ asset('images/blog_posts_2.png') }}" alt="" class="img-fluid">
+                    </figure>
+                    <div class="blog_posts_image_content">
+                        <span>FITNESS</span>
+                        <h4>Maintaining a regular yoga practice can provide physical health</h4>
+                        <div class="icon_wrapper">
+                            <a href="#" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn_wrapper">
+            <a href="" class="text-decoration-none view_blog">View All Blogs</a>
+        </div>
+        <figure class="blog_posts_left_shape left_shape mb-0">
+            <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
+        </figure>
+        <figure class="blog_posts_right_shape right_shape mb-0">
+            <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
+        </figure>
+    </div>
+</section>
+<div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
+    aria-labelledby="deleteLineItemModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content mt-4 bg-transparent border-0">
+            <div class="modal-header bg-transparent border-0">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body edit-content pt-2">
+                <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
     <script async src="https://www.google.com/recaptcha/api.js"></script>
 @endsection

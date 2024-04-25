@@ -1968,6 +1968,10 @@
   figure.blog_posts_left_shape.left_shape {
     position: absolute;
   }
+  .insta_posts_section {
+    padding-top: 50px;
+    margin-bottom: 319px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -1980,7 +1984,10 @@
   .navbar-collapse {
     width: 45%;
   }
-
+  .insta_posts_section {
+    padding-top: 50px;
+    margin-bottom: 319px;
+}
   .banner-section-outer .banner-section {
     padding: 300px 30px 60px;
   }
@@ -2852,6 +2859,12 @@
   .achievement_content p {
     text-align: left;
   }
+  .blog_posts_content h2{
+    text-align: left;
+  }
+  .blog_posts_content p{
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3449,6 +3462,7 @@
   }
   .insta_posts_section {
     padding-top: 60px;
+    margin-bottom: 420px;
   }
   .achievement_section {
     padding: 55px 0 60px;
@@ -3478,6 +3492,12 @@
     text-align: left;
   }
   .achievement_content p {
+    text-align: left;
+  }
+  .blog_posts_content h2{
+    text-align: left;
+  }
+  .blog_posts_content p{
     text-align: left;
   }
 }

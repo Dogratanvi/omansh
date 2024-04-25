@@ -1795,6 +1795,10 @@ background-color: #004B2A;
 .aboutpage_aboutus_image figure{
     margin-top: -12px;
 }
+.insta_posts_section {
+  
+    margin-bottom: 100px;
+}
 .aboutpage_aboutus_section .aboutus_top_shape {
     position: absolute;
     top: 6px;

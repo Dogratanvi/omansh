@@ -91,7 +91,7 @@
 <!-- gallary -->
 <section class="pb-3 aboutus_content">
     <div class="container">
-        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training Gallery</h2>
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Doctor Training Gallery</h2>
         <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
             exercitation
         </p>

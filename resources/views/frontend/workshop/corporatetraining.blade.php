@@ -227,7 +227,7 @@
 <!-- gallary -->
 <section class="pb-3 aboutus_content gallery-section">
     <div class="container">
-        <h2 class="text-center">Gallery</h2>
+        <h2 class="text-center">Corporate Training Gallery</h2>
         <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">

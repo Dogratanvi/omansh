@@ -117,7 +117,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <h2 class="text-center"> Type of Women health Issues</h2>
+                <h2 class="text-center"> Type of Physiotherapy</h2>
                 <p class="text-center">Physiotherapy encompasses a wide range of specialized services tailored to meet
                     the
                     unique needs of each patient, focusing on the restoration, maintenance, and maximization of physical

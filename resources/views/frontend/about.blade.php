@@ -132,14 +132,14 @@
     <div class="container">
         <div class="vision_box">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-2 order-sm-2 order-xs-2 order-lg-1 order-md-1 order-xl-1 order-xxl-1">
                     <div class="vision_image">
                         <img src="{{asset($about_omanshes[4]->featured_image)}}" alt="our-vission" class="img-fluid">
                         </figure>
                         </figure>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-up">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center order-1 order-sm-1 order-xs-1 order-lg-2 order-md-2 order-xl-2 order-xxl-2" data-aos="fade-up">
                     <div class="vision_content">
                         <h2> {!! $about_omanshes[4]->name!!}</h2>
                         <div> {!! $about_omanshes[4]->content!!} </div>
@@ -259,8 +259,10 @@
                 <div class="blog_posts_content">
 
                     <h2>Instagram Feeds</h2>
+                    <div class="row justify-content-sm-start justify-content-xs-start justify-content-start justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
+                        <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
                     <p>Discover daily doses of wellness inspiration, transformative health tips, and
-                        behind-the-scenes glimpses.</p>
+                        behind-the-scenes glimpses.</p> </div> </div>
                 </div>
             </div>
         </div>

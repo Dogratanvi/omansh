@@ -17,7 +17,7 @@
                         </div>
                             <div class="btn_wrapper">
                                     <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i> <span class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                                    aria-hidden="true"></i> <span class="sub_home_span"><a >Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Womenhealth</span>
                             </div>
@@ -61,7 +61,7 @@
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
-                <div class="service_page_aboutus_content  ps-4 ">
+                <div class="service_page_aboutus_content">
 
                     <h2>Women Health</h2>
                     @foreach ($services as $service)
@@ -87,14 +87,14 @@
     </div>
 </section>
 
-<section class="pb-5 mb-5">
+<section class=" women-health">
     <div class="container">
         <h2> You are Not Alone</h2>
         <div class="grid-box mt-4">
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/neck-pain.png') }}" alt="neck-pain" class="img-fluid">
                     </div>
                 </div>
                 <p class="fw-bold pt-3 text-dark text-center">1 in 2</p>
@@ -103,38 +103,38 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/women-suffer.png') }}" alt="women-suffer" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 3</p>
+                <h6 class="fw-normal text-center">Women suffer with urinary incontinence</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/pelvic_organ.png') }}" alt="pelvic organ" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 4</p>
+                <h6 class="fw-normal text-center">Women suffer with symptoms of pelvic organ prolapse</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/Women_experience.png') }}" alt="Women experience" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 5</p>
+                <h6 class="fw-normal text-center">Women experience chronic pelvic or sexual pain</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/neck-pain.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/services/women_suffer.png') }}" alt="Women suffer" class="img-fluid">
                     </div>
                 </div>
-                <p class="fw-bold  pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <p class="fw-bold  pt-3 text-dark text-center">1 in 9</p>
+                <h6 class="fw-normal text-center">Women suffer with faecal incontinence</h6>
             </div>
         </div>
 
@@ -142,7 +142,7 @@
 </section>
 
 <!-- women-health-issue -->
-<section class="pb-5 mb-5">
+<section class="women-health">
     <div class="container">
         <h2 class="text-center"> Type of Women health Issues</h2>
         <div class="row justify-content-center">
@@ -150,7 +150,7 @@
         <p class="text-center">Women's health issues encompass a wide range of conditions and concerns that specifically
             affect women, from reproductive health to hormonal imbalances and beyond</p></div>
 
-        <div class="row pt-5">
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
             <div class="col-md-4 mt-4">
                 <div class="card health-card border-0">
                     <img src="{{ asset('img/bladder.png') }}" alt="bladder">
@@ -245,7 +245,7 @@
 <section class="pb-5 mb-5 aboutus_content service-gallary">
     <div class="container">
         <h2 class="text-center"> Gallery</h2>
-        <div class="row pt-5">
+        <div class="row pt-sm-2 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-2">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">

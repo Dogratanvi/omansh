@@ -20,7 +20,7 @@
 
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i> <span
-                                    class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                                    class="sub_home_span"><a>Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Yoga</span>
                             </div>
@@ -64,7 +64,7 @@
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
-                <div class="service_page_aboutus_content  ps-4 ">
+                <div class="service_page_aboutus_content ">
 
 
 
@@ -100,13 +100,13 @@
 
 
 <!-- women-health-issue -->
-<section class="pb-5 mb-5">
+<section class="women-health">
     <div class="container">
         <h2 class="text-center"> Types of Yoga</h2>
         <p class="text-center">Explore the diverse world of yoga, where each style offers a unique path to balance,
             strength, and inner peace.</p>
 
-        <div class="row pt-5">
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
             <div class="col-md-4 mt-4">
                 <div class="card health-card border-0">
                     <img src="{{ asset('img/services/yoga/corporate-yoga.png') }}" alt="corporate-yoga">
@@ -178,7 +178,7 @@
 <section class="pb-5 mb-5 aboutus_content service-gallary">
     <div class="container">
         <h2 class="text-center"> Gallery</h2>
-        <div class="row pt-5">
+        <div class="row pt-sm-2 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-2">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">

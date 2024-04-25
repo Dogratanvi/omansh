@@ -16,22 +16,26 @@
                             <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                         </li>
                         <li class="nav-item dropdown d-flex align-items-center">
-                            <a href="{{ route('frontend.services') }}" class="nav-link  dropdown-color navbar-text-color"
+                            <!-- <a href="#" class="nav-link  dropdown-color navbar-text-color"
                                 role="button" >Services </a><a href="#" class="ps-2 dropdown-toggle dropdown-color" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                id="navbarDropdown"></a>
+                                id="navbarDropdown"></a> -->
+                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"> Services </a>
 
                             <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
                                 <ul class="list-unstyled drop-down-pages">
+                                <li class="nav-item">
+                                        <a class="dropdown-item nav-link"
+                                            href="{{ route('frontend.services.womenhealth') }}">
+                                            Women Health</a>
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link"
                                             href="{{ route('frontend.services.physiotherapy') }}">
                                             Physiotherapy</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.services.womenhealth') }}">
-                                            Women Health</a>
+                              
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link"
@@ -111,22 +115,23 @@
                                 <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle dropdown-color navbar-text-color"
-                                    href="{{ route('frontend.services') }}" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <a class="nav-link dropdown-toggle dropdown-color navbar-text-color" href="#"
+                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false"> Services </a>
 
                                 <div class="dropdown-menu drop-down-content" aria-labelledby="navbarDropdown">
                                     <ul class="list-unstyled drop-down-pages">
+                                    <li class="nav-item">
+                                            <a class="dropdown-item nav-link"
+                                                href="{{ route('frontend.services.womenhealth') }}">
+                                                Women Health</a>
+                                        </li>
                                         <li class="nav-item">
                                             <a class="dropdown-item nav-link"
                                                 href="{{ route('frontend.services.physiotherapy') }}">
                                                 Physiotherapy</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="dropdown-item nav-link"
-                                                href="{{ route('frontend.services.womenhealth') }}">
-                                                Women Health</a>
-                                        </li>
+                              =
                                         <li class="nav-item">
                                             <a class="dropdown-item nav-link"
                                                 href="{{ route('frontend.services.yoga') }}">Yoga</a>

@@ -53,6 +53,14 @@
       gtag('config', 'G-9VT5D5K2V4');
     </script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9VT5D5K2V4');
+</script>
 
 
 
@@ -91,23 +99,6 @@
 <script src="{{ asset('js/animation.js')}}"></script>
 <script src="https://unpkg.com/ityped@0.0.10"></script>
 <script src="{{ asset('js/type.js') }}"></script>
-
-
-<script>
-$(document).ready(function() {
-    $(".content").slice(0, 6).show();
-    $("#loadMore").on("click", function(e) {
-        e.preventDefault();
-        $(".content:hidden").slice(0, 6).slideDown();
-        if ($(".content:hidden").length == 0) {
-            $("#loadMore").text("No Content").addClass("noContent");
-        }
-    });
-})
-</script>
-
-
-
 <script>
 $(document).on("click", ".btn-block", function() {
     var itemid = $(this).attr('data-item');
@@ -126,6 +117,50 @@ $(document).on('click', '.page-link', function(event) {
 });
 
 </script>
+
+<script>
+$(document).ready(function() {
+    $(".content").slice(0, 8).show();
+    $("#loadMore").on("click", function(e) {
+        e.preventDefault();
+        $(".content:hidden").slice(0, 8).slideDown();
+        if ($(".content:hidden").length == 0) {
+            $("#loadMore").text("No Content").addClass("noContent");
+        }
+    });
+})
+
+</script>
+<script>
+$(document).ready(function() {
+    $(".contents").slice(0, 8).show();
+    $("#loadMoree").on("click", function(e) {
+        e.preventDefault();
+        $(".contents:hidden").slice(0, 8).slideDown();
+        if ($(".contents:hidden").length == 0) {
+            $("#loadMoree").text("No Content").addClass("noContent");
+        }
+    });
+})
+
+</script>
+<script>
+$(document).ready(function() {
+    $(".innertext").slice(0, 6).show();
+    $("#loadMor").on("click", function(e) {
+        e.preventDefault();
+        $(".innertext:hidden").slice(0, 6).slideDown();
+        if ($(".innertext:hidden").length == 0) {
+            $("#loadMor").text("No Content").addClass("noContent");
+        }
+    });
+})
+
+</script>
+
+
+
+
 
 
 

@@ -87,6 +87,17 @@ p{
    
 
 }
+li{
+        font-size: 16px;
+        line-height: 28px;
+        color: #989595;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+       
+    
+ 
+}
 #blog{
     padding-bottom: 324px;
 }
@@ -127,7 +138,7 @@ button:focus {
 
 .btn.btns {
     font-size: 1.1em;
-    padding: 13px 0;
+    padding: 15px 20px;
     background-color: #CAA983;
     color: #fff !important;
     border-radius: 0px;
@@ -139,7 +150,7 @@ button:focus {
   .btn.btns span {
     color:white;
     font-size:0;
-    padding:10px 30px;
+    padding:10px 8px;
   }
   
   .btn.btns:hover {
@@ -163,7 +174,7 @@ button:focus {
     width: 40px;
     border-radius: 20px;
     position: absolute;
-    margin-left: -50px;
+    margin-left: -25px;
     margin-top: 2px;
     font-size: 22px;
   }
@@ -802,7 +813,7 @@ button.custom-btn{
 /* Home Page Our Specialties Section Style */
 
 .our_specialties_section{
-    padding: 120px 0 108px;
+    padding: 110px 0 108px;
     position: relative;
 }
 .our_specialties_heading_content{
@@ -968,7 +979,7 @@ button.custom-btn{
 /* Home Page Get In Touch Section Style */
 
 .get_in_touch_section{
-    padding: 120px 0 130px;
+    padding: 120px 0 80px;
     position: relative;
     overflow: hidden;
 }
@@ -1314,7 +1325,7 @@ textarea {
 /* Home Page Blog Posts Section Style */
 
 .blog_posts_section{
-    padding: 120px 0 480px;
+    padding: 0px 0 480px;
     position: relative;
 }
 .blog_posts_content{
@@ -1548,12 +1559,19 @@ label.form-check-label {
     font-size: 20px;
     font-weight: 400;
 }
+section.women-health {
+    padding-bottom: 80px;
+}
 #text-box{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: none !important;
     margin-top: 15px;
     width: 100%;
  
+}
+.women-health .logo-box img {
+    height: 105px;
+    object-fit: cover;
 }
 #text-box::placeholder {
     font-size: 15px;
@@ -1577,6 +1595,9 @@ label.form-check-label {
 .middle-portion .footer_logo{
    
     padding-top: 5px;
+}
+.blog_posts_right_shape{
+    position: absolute;
 }
 .middle-portion .about_col{
     margin-left: -8px;
@@ -1860,7 +1881,9 @@ background-color: #004B2A;
 .eapps-instagram-feed-posts-grid-load-more:hover{
 background-color: #004B2A !important;
 }
-
+.insta_posts_section{
+    padding-top: 100px;
+}
 /* About Page Discount Section Style */
 
 .discount_section{
@@ -2221,6 +2244,12 @@ background-color: #004B2A !important;
 .content{
 display: none;
 }
+.contents{
+    display: none;
+    }
+    .innertext{
+        display: none; 
+    }
 /* Pricing Page Style */
 
 /* Pricing Page Pricing Plans Section Style */
@@ -2520,8 +2549,8 @@ textarea {
     overflow: hidden;
 }
 .message_content button:hover {
-    color: var(--e-global-color-accent);
-    background-color: var(--e-global-color-soft-orange);
+    color: #CAA983;
+    background-color: #fff;
     transform: translateY(-10px);
 }
 
@@ -2539,8 +2568,8 @@ textarea {
 	width: 0px;
 	z-index: -1;
 	content: '';
-    color: var(--e-global-color-white);
-    background-color: var(--e-global-color-secondary);
+    color: #CAA983;
+    background-color: #fff;
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
 
@@ -2826,7 +2855,7 @@ text-decoration: none;
     height: 600px;
 }
 .banner-section-content {
-    padding-top: 50%;
+    padding-top: 30%;
 }
 h1{
     font-size: 48px !important;

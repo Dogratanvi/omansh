@@ -17,9 +17,9 @@
                         </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i> <span class="sub_home_span"><a href="{{ route('frontend.services') }}">Services
+                                    aria-hidden="true"></i> <span class="sub_home_span"><a>Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
-                                    class="sub_span">physiotherapy </span>
+                                    class="sub_span">Physiotherapy </span>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
-                <div class="service_page_aboutus_content  ps-4 ">
+                <div class="service_page_aboutus_content ">
 
                     <h2>What Is Physiotheraphy</h2>
                     @foreach ($services as $service)
@@ -78,7 +78,7 @@
                     <h3> We work on multiple treatment services like :</h3>
                     <div class="row">
                         <div class="col-md-6">
-                            <ul>
+                        
                                 <li>
                                     Spine Rehabilitation/ Back Pain
                                 </li>
@@ -88,7 +88,7 @@
                                 <li>
                                     Arthritis, Joint Pain & Knee Rehabilitation
                                 </li>
-                            </ul>
+                            
                         </div>
                         <div class="col-md-6">
                             <li>
@@ -113,7 +113,7 @@
 </section>
 
 <!-- women-health-issue -->
-<section class="pb-5 mb-5">
+<section class="women-health">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -126,7 +126,7 @@
             </div>
         </div>
 
-        <div class="row pt-5">
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
             <div class="col-md-4 mt-4">
                 <div class="card health-card border-0">
                     <img src="{{ asset('img/services/physoitheraphy/Orthopedic.png') }}" alt="bladder">
@@ -243,7 +243,7 @@
 <section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
         <h2 class="text-center"> Gallery</h2>
-        <div class="row pt-5">
+        <div class="row pt-sm-2 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-2">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">

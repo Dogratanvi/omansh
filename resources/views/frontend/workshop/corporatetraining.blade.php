@@ -21,7 +21,7 @@
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    doctortraining</span>
+                                    Corporatetraining</span>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
-                <div class="ps-4 ">
+                <div class="para ">
 
 
                     <h5>Omansh’s Corporate Training</h5>
@@ -82,10 +82,10 @@
 <!-- why it is important -->
 <section class="why-it-is-important py-4">
     <div class="container">
-        <h2 class="text-center">Why it is Important?</h2>
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Why it is Important?</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-8 col-md-10 col-sm-12 col-xs-12 col-12  ">
-                <p class="text-center">Corporate yoga, the practice of offering yoga sessions within a workplace
+                <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Corporate yoga, the practice of offering yoga sessions within a workplace
                     environment, has gained popularity due to several reasons:
                 </p>
             </div>
@@ -225,10 +225,10 @@
     </div>
 </section>
 <!-- gallary -->
-<section class="pb-3 aboutus_content">
+<section class="pb-3 aboutus_content gallery-section">
     <div class="container">
         <h2 class="text-center">Gallery</h2>
-        <div class="row pt-5">
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
             <div class="col-md-4 mt-3 content">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">

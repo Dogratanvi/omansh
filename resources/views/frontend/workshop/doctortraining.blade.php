@@ -96,44 +96,44 @@
             exercitation
         </p>
         <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_2.png') }}" alt="gallary2">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_3.png') }}" alt="gallary3">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_4.png') }}" alt="gallary4">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_5.png') }}" alt="gallary5">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
                 </div>
             </div>
-            <div class="col-md-4 mt-3 content">
+            <div class="col-md-4 mt-3 innertext">
                 <div class="card border-0">
                     <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
                 </div>
             </div>
         </div>
         <div class="btn_wrapper d-flex justify-content-center mt-5">
-            <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+            <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
         </div>
     </div>
 </section>

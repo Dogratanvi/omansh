@@ -163,81 +163,93 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="achievement_content">
                     <h2>Achievements</h2>
-
-                    <p class="pb-3">Pioneering wellness and holistic health innovations through prestigious
-                        partnerships,
-                        widespread media recognition, and impactful community engagements.</p>
+                    <div class="row justify-content-sm-start justify-content-xs-start justify-content-start justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
+                        <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
+                            <p class="pb-3">Pioneering wellness and holistic health innovations through prestigious
+                                partnerships,
+                                widespread media recognition, and impactful community engagements.</p>
+                        </div></div>
+                    </div>
                 </div>
+            </div>
+            <div class="logo-container" data-aos="fade-up">
+                <div class="logo-box">
+                    <div class="logo_wrapper craft">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_1.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_2.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper q-power">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_3.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper logo">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_4.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper minimum">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_5.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="logo-container mt-3" data-aos="fade-up">
+                <div class="logo-box">
+                    <div class="logo_wrapper craft">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_1.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_2.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper q-power">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_3.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper logo">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_4.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="logo-box">
+                    <div class="logo_wrapper minimum">
+                        <figure class="mb-0"><img src="{{ asset('images/achievement_5.png') }}" alt=""
+                                class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="logo-container" data-aos="fade-up">
-            <div class="logo-box">
-                <div class="logo_wrapper craft">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_1.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_2.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper q-power">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_3.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper logo">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_4.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper minimum">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_5.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="logo-container mt-3" data-aos="fade-up">
-            <div class="logo-box">
-                <div class="logo_wrapper craft">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_1.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_2.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper q-power">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_3.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper logo">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_4.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper minimum">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_5.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-
-        </div>
-    </div>
 </section>
 <!-- Instagram SECTION -->
 <section class="insta_posts_section">

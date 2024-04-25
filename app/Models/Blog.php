@@ -34,7 +34,7 @@ class Blog extends Model
         
         if( $value != null)
         {
-            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
+            $this->attributes['featured_image'] = env('APP_URL') . '/' ."uploads/" . $value; // Store the URL
         }
     }
 

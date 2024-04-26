@@ -19,7 +19,7 @@
                                 wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>    </div>
                         </div>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span">Blog</span>
                             </div>
                         </div>

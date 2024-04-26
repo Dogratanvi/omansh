@@ -13,11 +13,7 @@
                             <h1 data-aos="fade-up">Contact Us</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                    <p class="text-center" data-aos="fade-right">Suis aute irure dolor in reprehenderit
-                                        in
-                                        volurate velit cillum
-                                        nulla
-                                        pariatur nostrud exercitation.</p>
+                                    <p class="text-center" data-aos="fade-right">Your health is our priority. Don't hesitate to contact us.</p>
                                 </div>
                             </div>
                             <div class="btn_wrapper">
@@ -45,15 +41,14 @@
     </div>
 </div>
     <!-- MESSAGE SECTION -->
-    <section class="message_section">
+    <section class="message_section contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
                     <div class="message_content">
                         <h5>Get in Touch.</h5>
                         <h2>Send us a Message</h2>
-                        <p>Guia voluptas sit aspernatur aut odit aut fugit, sed quia exercitationem ullam corporis
-                            laboriosam</p>
+                        <p>Your health is our priority. Don't hesitate to contact us.</p>
 
                             @if(session('message'))
                             <div class="alert alert-{{ session('status') }} alert-dismissible fade show w-75 mt-3" role="alert">
@@ -121,15 +116,15 @@
                             <div class="g-recaptcha mt-4 mb-4" data-sitekey={{ config('services.recaptcha.key') }}></div>
                             <span class="text-danger">{{ $errors->first('Click to verify') }}</span>
 
-                            <div class="btn_wrapper">
+                            <div class="btn_wrapper mb-3">
                                 <button type="submit" class="border-0" id="started">Submit</button>
                             </div>
-                            <h5 style="color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h5>
+                            <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6>
                         </form>
 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
-                <div class="row" data-aos="fade-up">
+                <div class="row pt-5" data-aos="fade-up">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="box box_padding d-flex align-items-center">
                             <div class="box_image_content">
@@ -142,7 +137,7 @@
                                 <p class="mb-0">Plot No-290, Gate No.1
                                     Sector-4, Vaishali
                                     (Landmark: In front of Ramprastha Green)
-                                    Ghaziabad, 201 019, Delhi NCR, India</p>
+                                    Ghaziabad, 201010, Uttar Pradesh, India</p>
                             </div>
                         </div>
                     </div>

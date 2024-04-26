@@ -41,7 +41,7 @@
 </div>
 <!-- upcoming events -->
 <section class="upcoming-events py-5">
-    <div class="container">
+    <!-- <div class="container">
         <h2 class="text-center">Upcoming Events</h2>
         <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
             exercitation</p>
@@ -63,7 +63,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <h2 class="text-center">No Events </h2>
 </section>
 
 <!-- 

@@ -63,10 +63,10 @@
                                 </div>
                                 <div class="post-item-description">
                                     <span class="post-meta-date">
-                                        <i class="fa fa-calendar-o"></i>{{ $blog->created_at}}</span>
-                                    <span class="post-meta-comments">
+                                        <i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blog->created_at)) }}</span>
+                                    <!-- <span class="post-meta-comments">
                                         <a href="{{ route('frontend.blog.show', $blog->id) }}"><i class="fa fa-comments-o"></i>33 Comments</a>
-                                    </span>
+                                    </span> -->
                                     <h2>
                                         <a href="{{ route('frontend.blog.show', $blog->id) }}">{{ $blog->title}}
                                         </a>

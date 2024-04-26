@@ -20,7 +20,7 @@
                             Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
                         <div class="btn_wrapper home-btn text-white fw-bolder text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">
-                            <a href="./contact" class="text-decoration-none"><i
+                            Connect with us<a href="./contact" class="text-decoration-none me-2"><i
                                     class="fa-solid fa-arrow-right" aria-hidden="true"> </i></a>
                         </div>
 
@@ -89,12 +89,9 @@
 <section class="services_section">
     <div class="container">
         <div class="row">
-
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
                     <h2>Our Services</h2>
-
-
                     <p class="text-center">Explore a spectrum of services dedicated to your health and well-being</p>
                 </div>
             </div>
@@ -102,7 +99,7 @@
         </div>
         <div class="row pt-3" data-aos="fade-up">
             @foreach ($services as $service)
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-12 col-xl-4 col-md-6 col-sm-12 col-xs-12">
                 <div class="services_box_content">
                     <div class="services_box_upper_portion">
 
@@ -114,14 +111,7 @@
 
                         <div class="service-text">{!! $service->intro!!}</div>
 
-
-
-                        <!-- <div class="btn_wrapper">
-                            <a href="./services.html" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
-                                    aria-hidden="true"> </i></a>
-                        </div> -->
-                        <div
-                            class=" text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
+                        <div class="text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
 
 
                             <a href="{{$service->url}}" class="home-btns btn--hover-icon">
@@ -529,13 +519,13 @@
             </div>
         </div>
         <div class="row" data-aos="fade-up">
-         
+
             @foreach ($blogs as $blog)
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="blog_posts_image position-relative">
-                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" alt="" class="img-fluid w-100">
-                    <div class="blog-overlay"></div>
-                </figure>
+                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" alt="" class="img-fluid">
+                        <div class="blog-overlay">
+                    </figure>
                     <div class="blog_posts_image_content">
                         <span>{{$blog->category}}</span>
                         <h4>{{ $blog->title}}</h4>

@@ -3002,7 +3002,7 @@ text-decoration: none;
     padding-top: 30%;
 }
 h1{
-    font-size: 48px !important;
+    font-size: 44px !important;
     line-height: 60px !important;
 }
 .feedback-form {
@@ -3075,5 +3075,8 @@ tbody .form-check-input {
 .contact .message_content input{
     width: 100% !important;
   
+}
+.services_section{
+    overflow: hidden;
 }
 }

@@ -60,9 +60,9 @@
                                 </span>
                             </div>
                             <div class="post-meta pt-3">
-                                    <span class="post-meta-date color01"><i class="fa fa-calendar-o"></i>{{ $blogs->created_at}}</span>
-                                    <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
-                                            Comments</a></span>
+                                    <span class="post-meta-date color01"><i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blogs->created_at)) }}</span>
+                                    <!-- <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
+                                            Comments</a></span> -->
                                     <span class="post-meta-category"><i class="fa fa-tag"></i>Yoga</span>
                                             <span class="post-meta-category"><i class="fa-solid fa-eye"></i>343</span>
                                     <div class="post-meta-share float-right">

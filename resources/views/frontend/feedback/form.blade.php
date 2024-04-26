@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+a@extends('frontend.layouts.app')
 
 @section('content')
 <div class="sub-banner-section about-banner">
@@ -13,7 +13,7 @@
                             <p class="text-center" data-aos="fade-right">We value your feedback. It will help us to
                                 improve our services.</p>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="href={{ route('frontend.index') }}">Home</a> </span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Feedback form</span>
                             </div>
                         </div>

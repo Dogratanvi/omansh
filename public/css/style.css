@@ -98,10 +98,12 @@ li{
     
  
 }
-#blog{
-    padding-bottom: 324px;
+.main-blog{
+    margin-bottom: 324px;
 }
-
+.single-post{
+    margin-bottom: 324px;
+}
 /* Home Page Style */
 /* mobule hameburger color */
 .custom-close i{
@@ -1247,6 +1249,10 @@ textarea {
     transform: translateY(-10px);
 }
 /* events */
+.single-blog-page.sub-banner-section .banner-section {
+    padding: 150px 0 120px !important;
+    position: relative;
+}
 .single-event img {
     border-top-left-radius: 180px;
     border-bottom-right-radius: 180px;
@@ -2995,5 +3001,23 @@ tbody .form-check-input {
 }
 .btn{
     margin-top: 15px;
+}
+
+.single-blog-page .banner-section-content p {
+    padding-left: 10px !important;
+}
+#blog .post-item .post-item-description h2{
+    line-height: 40px !important;
+}
+.main-blog {
+    margin-bottom: 360px;
+}
+.single-post{
+    margin-bottom: 420px;
+}
+
+.single-blog-page.sub-banner-section .banner-section {
+    padding: 10px 0 120px !important;
+    position: relative;
 }
 }

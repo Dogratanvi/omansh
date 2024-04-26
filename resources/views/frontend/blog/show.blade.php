@@ -10,34 +10,33 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up">Blog</h1>
-                            <div class="row justify-content-center">
-                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Dive into our treasure trove of wellness
-                                wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>    </div>
-                        </div>
-                            <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i><span class="sub_span">Blog</span>
+                            <h1 data-aos="fade-up" class="text-start"> {{ $blogs->title }}</h1>
+                            <div class="row">
+
+                                <p class="text-start" data-aos="fade-right">Dive into our treasure trove of wellness
+                                    wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
-                <figure class="banner_left_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
-                </figure>
-                <figure class="banner_left_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
-                </figure>
-                <figure class="banner_right_top_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
-                </figure>
-                <figure class="banner_right_bottom_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
-                </figure>
             </div>
+            <figure class="banner_left_top_shape left_shape mb-0">
+                <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+            </figure>
+            <figure class="banner_left_bottom_shape left_shape mb-0">
+                <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+            </figure>
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+            </figure>
+            <figure class="banner_right_bottom_shape right_shape mb-0">
+                <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+            </figure>
     </div>
-    </section>
+</div>
+</section>
 </div>
 <!-- MAIN SECTION -->
 <section class="blog-posts single-post">
@@ -48,20 +47,25 @@
                     <div class="post-item">
                         <div class="post-item-wrap">
                             <div class="post-image" data-aos="fade-up">
-                                <a href="#">
-                                    <img alt="pregency-affect.png" src="{{ asset('img/pregnency-affect.webp') }}">
-                                </a>
+                                
+                                    <img alt="pregency-affect.png" src="{{asset($blogs->featured_image)}}">
+                               
                                 <!--post-image-->
                             </div>
-                            <div class="post-item-description">
-                                <h2 class="single-post-heading font_weight_600">Standard post with a single image</h2>
-                                <div class="post-meta">
-                                    <span class="post-meta-date color01"><i class="fa fa-calendar-o"></i>Jan 21,
-                                        2017</span>
+                            <div class="btn_wrapper pt-4">
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i
+                                    class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span"><a
+                                        class="ps-2 pe-2" href="{{ route('frontend.blog.index') }}">Blog</a></span><i
+                                    class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
+                                    {{ $blogs->title }}
+                                </span>
+                            </div>
+                            <div class="post-meta pt-3">
+                                    <span class="post-meta-date color01"><i class="fa fa-calendar-o"></i>{{ $blogs->created_at}}</span>
                                     <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
                                             Comments</a></span>
-                                    <span class="post-meta-category"><a href=""><i class="fa fa-tag"></i>Lifestyle,
-                                            Magazine</a></span>
+                                    <span class="post-meta-category"><i class="fa fa-tag"></i>Yoga</span>
+                                            <span class="post-meta-category"><i class="fa-solid fa-eye"></i>343</span>
                                     <div class="post-meta-share float-right">
                                         <ul class="list-unstyled m-0">
                                             <li class="d-inline-block align-top"><a href="#">
@@ -79,52 +83,18 @@
                                         </ul>
                                         <!--post-meta-share-->
                                     </div>
+                            <div class="post-item-description">
+                                <h2 class="single-post-heading font_weight_600">{{ $blogs->title}}</h2>
+                                <div>{!!$blogs->content!!}
+                              
+
+                                </div>
                                     <!--post-meta-->
                                 </div>
-                                <p>
-                                    Yoga is a holistic practice that originated in ancient India and has evolved over
-                                    thousands of years. It encompasses physical postures (asanas), breath control
-                                    (pranayama), meditation, and ethical principles. The word "yoga" itself means
-                                    "union" or
-                                    "to join," signifying the integration of mind, body, and spirit.
-                                    There are various forms and styles of yoga, each with its own emphasis and approach.
-                                    Some popular types include:</p>
-
-                                <ul>
-                                    <li>Hatha Yoga: Focuses on physical postures and breathing exercises to align and
-                                        calm the
-                                        body, mind, and spirit.</li>
-                                    <li> Vinyasa Yoga: A dynamic style of yoga that synchronizes movement with breath,
-                                        often
-                                        flowing from one pose to another.</li>
-                                    <li> Ashtanga Yoga: A rigorous style of yoga characterized by a specific sequence of
-                                        poses
-                                        performed in a continuous flow, combined with breath control.</li>
-                                    <li> Kundalini Yoga: Focuses on awakening the dormant energy at the base of the
-                                        spine through
-                                        a combination of physical postures, breathing exercises, chanting, and
-                                        meditation.</li>
-                                    <li> Bikram Yoga: Consists of a series of 26 poses performed in a heated room to
-                                        promote
-                                        flexibility, detoxification, and endurance.</li>
-                                    <li> Iyengar Yoga: Emphasizes alignment and precision in poses, often using props
-                                        such as
-                                        blocks, belts, and blankets to assist practitioners in achieving correct
-                                        alignment.</li>
-                                    <li> Yin Yoga: Involves holding passive poses for extended periods to target the
-                                        connective
-                                        tissues and promote relaxation and flexibility.</li>
-                                    <p>
-                                        Yoga is not just a physical practice but also a philosophy that promotes
-                                        self-awareness,
-                                        mindfulness, and compassion. Many people practice yoga for its physical
-                                        benefits, such
-                                        as increased strength, flexibility, and balance, as well as its potential to
-                                        reduce
-                                        stress and improve mental well-being.</p>
+                         
                                     <!--post-item-description-->
                             </div>
-                       
+
                             <div class="post-navigation">
                                 <a href="#" class="post-prev">
                                     <div class="post-prev-title"><span>Previous Post</span></div>
@@ -252,10 +222,10 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="form-group">
-                                                <label class="upper font_weight_600" for="website">Website</label>
+                                                <label class="upper font_weight_600" for="website">Phone</label>
                                                 <input class="form-control website" name="senderWebsite"
-                                                    placeholder="Enter Website" id="website" aria-required="false"
-                                                    type="text">
+                                                    placeholder="Enter Phone" id="phone" aria-required="false"
+                                                    type="Number">
                                                 <!--form-group-->
                                             </div>
                                             <!--col-->
@@ -460,7 +430,7 @@
                         </div>
                         <!--widget-->
                     </div>
-                    <div class="widget widget-categories">
+                    <!-- <div class="widget widget-categories">
                         <div class="widget-title font_weight_600">Categories</div>
                         <ul>
                             <li class="cat-item">
@@ -504,26 +474,8 @@
                                 <span class="cat-count-span">(9)</span>
                             </li>
                         </ul>
-                    </div>
-                    <div class="widget widget-tweeter">
-                        <h4 class="widget-title font_weight_600">Recent Tweets</h4>
-                        <div id="twitter-cnt">
-                            <ul>
-                                <li>Rule number 1: Don't overthink it
-                                    <a href="#" target="_blank" title="Visit this link">https://t.co/T9Vg7b9XuI</a>
-                                    <small>Sep/12/2019</small>
-                                </li>
-                                <li>Smart OR Stylish? How do you balance design principles with design trends? <a
-                                        href="#" target="_blank" title="Visit this link">https://t.co/yBb0HKiksq</a>
-                                    <a href="https://t.co/kR5EhraUuK" target="_blank"
-                                        title="Visit this link">https://t.co/kR5EhraUuK</a>
-                                    <small>Sep/10/2019</small>
-                                </li>
-                            </ul>
-                            <!--twitter-cnt-->
-                        </div>
-                        <!--widget-->
-                    </div>
+                    </div> -->
+
                     <div class="widget widget-tags">
                         <h4 class="widget-title font_weight_600">Tags</h4>
                         <div class="tags">

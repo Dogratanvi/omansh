@@ -163,7 +163,7 @@
                         <img src="{{ asset('img/bladder.png') }}" alt="bladder">
                         <div class="card-content">
                             <h4>Bladder Dysfunctions</h4>
-                            <ul>
+                    
                                 <li>Urinary Incontinence </li>
                                 <li>Mixed Incontinence</li>
                                 <li>Interstitial Cystitiss (IC)/Bladder Pain Syndrome</li>
@@ -171,7 +171,6 @@
                                 <li>Muscle Strengthening</li>
                                 <li>Pre & Post gynecological surgery rehabilitation</li>
 
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -180,7 +179,7 @@
                         <img src="{{ asset('img/services/Bowel_Issues.png') }}" alt="bowel">
                         <div class="card-content">
                             <h4>Bowel Issues & Prolapse</h4>
-                            <ul>
+                        
                                 <li>Imflammatory Bowel Disease (IBD) </li>
                                 <li>Crohn's disease</li>
                                 <li>Ulcerative Colitis</li>
@@ -191,7 +190,6 @@
                                 <li>Vaginal Prolapse(Bladder,Bowel,Uterus)</li>
                                 <li>Rectal Prolapse</li>
 
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -208,7 +206,7 @@
                             <li>Fibromyalgia</li>
                             <li>Persistent Genital Arousal Disorder (PGAD)</li>
                             <li>Interstitial Cystitis/Painful Bladder Syndrome</li>
-                            </ul>
+                          
                         </div>
                     </div>
                 </div>
@@ -229,7 +227,7 @@
                             <li>Diastasis Recti</li>
                             <li>Pelvic girdle pain/Sacroiliac joint pain</li>
                             <li>Perineal tears, Episiotomies, C-section scar management</li>
-                            </ul>
+                          
                         </div>
                     </div>
                 </div>
@@ -240,7 +238,7 @@
                             <h4>Excercise Programs & Pilates</h4>
                             <li>At World of Women, we offer Pilates Personalised Exercise Programs Prenatal & Postnatal
                                 Pilates Physio Led Pregnancy Class Mums and Bubs </li>
-                            </ul>
+                           
                         </div>
                     </div>
                 </div>

@@ -67,9 +67,10 @@ class WorkshopController extends Controller
  
      public function yogatraining()
      {
+        $workshops = Workshop::all();
         $testimonials = Testimonial::all();
         $settings = Setting::all();
-         return view('frontend.workshop.yogatraining', compact('settings', 'testimonials'));
+         return view('frontend.workshop.yogatraining', compact('settings','workshops', 'testimonials'));
      }
   
      public function corporatetraining()

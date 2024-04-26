@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-
+use App\Models\Setting;
 class FeedbackController extends Controller
 {
     // Page Title
@@ -47,13 +47,14 @@ class FeedbackController extends Controller
           $module_feedback = $this->module_feedback;
           $module_name_feedback = $this->module_name_feedback;
           $module_path_feedback = $this->module_path_feedback;
-        
+          $settings = Setting::all();
 
           return view(
             "frontend.{$module_path_feedback}.form",
             compact(
                 'module_feedback', 
                 'module_name_feedback', 
+                'settings',
                 'module_path_feedback'
             
             )

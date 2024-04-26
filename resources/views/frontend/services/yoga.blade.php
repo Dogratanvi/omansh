@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up"> Yoga Training</h1>
+                            <h1 data-aos="fade-up"> Yoga</h1>
                             <div class="row justify-content-center ">
                         
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -112,7 +112,7 @@
                     <img src="{{ asset('img/services/yoga/corporate-yoga.png') }}" alt="corporate-yoga">
                     <div class="card-content">
                         <h4>Corporate Yoga</h4>
-                        <ul>
+                       
                             <li>Stress Management </li>
                             <li>Meditation</li>
                             <li>Chair Yoga</li>
@@ -120,7 +120,7 @@
                             <li>Muscle Strengthening</li>
                             <li>Ergonomics</li>
 
-                        </ul>
+                      
                     </div>
                 </div>
             </div>
@@ -129,13 +129,13 @@
                     <img src="{{ asset('img/services/yoga/pregnency-yoga.png') }}" alt="pregnency-yoga">
                     <div class="card-content">
                         <h4>Pregnancy Yoga</h4>
-                        <ul>
+                      
                             <li>Pre Pregnancy Sessions </li>
                             <li>During Pregnancy Session</li>
                             <li>Post Pregnancy Session</li>
 
 
-                        </ul>
+                       
                     </div>
                 </div>
             </div>

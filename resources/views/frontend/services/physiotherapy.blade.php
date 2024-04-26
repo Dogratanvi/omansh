@@ -132,7 +132,7 @@
                     <img src="{{ asset('img/services/physoitheraphy/Orthopedic.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Orthopedic Physiotheraphy</h4>
-                        <ul>
+                   
                             <li>Arthritis (OA, RA) </li>
                             <li>Frozen Shoulder</li>
                             <li>Sprain, Strain(Tendon and Ligament Injury)/li>
@@ -157,7 +157,7 @@
                             <li> Musculoskeletal Pain
                             </li>
 
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                     <img src="{{ asset('img/services/physoitheraphy/Neuro_Physiotheraphy.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Neuro Physiotheraphy</h4>
-                        <ul>
+                      
                             <li>Stroke </li>
                             <li>Cerebral Palsy</li>
                             <li>Parkinson's Disease</li>
@@ -177,7 +177,7 @@
                             <li>Balance and Coordination Training</li>
 
 
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                         <li> Bursitis</li>
                         <li> Wrist Fracture</li>
 
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
@@ -217,7 +217,7 @@
                         <li>Pain Management</li>
                         <li>Restore Mobility</li>
                         <li>Prevention Of Bed Rest</li>
-                        </ul>
+                     
                     </div>
                 </div>
             </div>
@@ -231,7 +231,7 @@
                         </li>
                         <li>Torticolis
                         </li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>

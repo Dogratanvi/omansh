@@ -122,14 +122,13 @@
                         </div> -->
                         <div
                             class=" text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
-                            <a href="{{$service->url}}">
-                                <div class="btn btns">
+                        
+                          
+                                <a href="{{$service->url}}" class="home-btns btn--hover-icon">
+                                    <i class="fa-solid fa-arrow-right" aria-hidden="true"> </i>
                                     <span>Read More</span>
-
-                                    <i class="fa-solid fa-arrow-right ico" aria-hidden="true"> </i>
-
-                                </div>
-                            </a>
+                                </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -176,90 +175,91 @@
                     <div class="btn_wrapper">
                         <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Read More</a>
                     </div>
+                 
                 </div>
             </div>
         </div>
     </div>
 </section>
-    <!-- OUR SPECIALTIES SECTION -->
-    <section class="our_specialties_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="our_specialties_heading_content">
+   <!-- OUR SPECIALTIES SECTION -->
+<section class="our_specialties_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="our_specialties_heading_content">
 
-                        <h2>Why Choose Us</h2>
-                        <p class="text-center">Empowering Your Health Journey with Compassion and Expertise</p>
-                    </div>
+                    <h2>Why Choose Us</h2>
+                    <p class="text-center">Empowering your health journey with compassion and expertise</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
-                    <div class="specialties_content_wrapper">
-                        <div class="specialties_content s1">
-                            <p class="specialties_name">Expert Leadership</p>
-                            <p class="specialties_paragraph">Led by Dr. Garima Biswas, 15+ years of experience, ensuring
-                                you're in safe hands</p>
-                        </div>
-                        <div class="specialties_content s2">
-                            <p class="specialties_name">Holistic Approach</p>
-                            <p class="specialties_paragraph"> Traditional practices with modern science for a wellness
-                                journey.</p>
-                        </div>
-                        <div class="specialties_content s3">
-                            <p class="specialties_name">Specialized Women's Health Care</p>
-                            <p class="specialties_paragraph">Solutions for women's health issues, such as pelvic floor
-                                rehab & pregnancy care.</p>
-                        </div>
-                        <div class="specialties_content s4">
-                            <p class="specialties_name">Innovative Physio-Yoga Therapy</p>
-                            <p class="specialties_paragraph">Blend of physiotherapy and medical therapeutic yoga to enhance
-                                your healing experience.</p>
-                        </div>
-                        <figure class="specialties_left_line mb-0">
-                            <img src="{{ asset('images/specialties_left_line.png') }}" alt="" class="img-fluid">
-                        </figure>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
+                <div class="specialties_content_wrapper">
+                    <div class="specialties_content s1">
+                        <p class="specialties_name">Expert Leadership</p>
+                        <p class="specialties_paragraph">Led by Dr. Garima Biswas, 15+ years of experience, ensuring
+                            you're in safe hands</p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
-                    <figure class="specialties_image mb-0">
-                        <img src="{{ asset('images/specialties_image.png') }}" alt="" class="img-fluid">
+                    <div class="specialties_content s2">
+                        <p class="specialties_name">Holistic Approach</p>
+                        <p class="specialties_paragraph"> Traditional practices with modern science for a wellness
+                            journey.</p>
+                    </div>
+                    <div class="specialties_content s3">
+                        <p class="specialties_name">Specialized Women's Health Care</p>
+                        <p class="specialties_paragraph">Solutions for women's health issues, such as pelvic floor rehab
+                            & pregnancy care.</p>
+                    </div>
+                    <div class="specialties_content s4">
+                        <p class="specialties_name">Innovative Physio-Yoga Therapy</p>
+                        <p class="specialties_paragraph">Blend of physiotherapy and medical therapeutic yoga to enhance
+                            your healing experience.</p>
+                    </div>
+                    <figure class="specialties_left_line mb-0">
+                        <img src="{{ asset('images/specialties_left_line.png') }}" alt="" class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
-                    <div class="specialties_content_wrapper">
-                        <div class="specialties_content specialties_content2 s5">
-                            <p class="specialties_name">Personalized Care Plans</p>
-                            <p class="specialties_paragraph">Every treatment is customized to meet your individual health
-                                goals and needs.</p>
-                        </div>
-                        <div class="specialties_content specialties_content2 s6">
-                            <p class="specialties_name">Evidence-Based Practices</p>
-                            <p class="specialties_paragraph">Utilizing proven methods for effective and safe treatment
-                                outcomes.</p>
-                        </div>
-                        <div class="specialties_content specialties_content2 s7">
-                            <p class="specialties_name">Wide Range of Services</p>
-                            <p class="specialties_paragraph">Physiotherapy to yoga, we cover all aspects of health and
-                                fitness</p>
-                        </div>
-                        <div class="specialties_content specialties_content2 s8">
-                            <p class="specialties_name">Compassionate Support</p>
-                            <p class="specialties_paragraph">A nurturing environment where every client is seen, heard, and
-                                valued.</p>
-                        </div>
-                        <figure class="specialties_right_line mb-0">
-                            <img src="{{ asset('images/specialties_right_line.png') }}" alt=""
-                                class="img-fluid">
-                        </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+                <figure class="specialties_image mb-0">
+                    <img src="{{ asset('images/specialties_image.png') }}" alt="" class="img-fluid">
+                </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
+                <div class="specialties_content_wrapper">
+                    <div class="specialties_content specialties_content2 s5">
+                        <p class="specialties_name">Personalized Care Plans</p>
+                        <p class="specialties_paragraph">Every treatment is customized to meet your individual health
+                            goals and needs.</p>
                     </div>
+                    <div class="specialties_content specialties_content2 s6">
+                        <p class="specialties_name">Evidence-Based Practices</p>
+                        <p class="specialties_paragraph">Utilizing proven methods for effective and safe treatment
+                            outcomes.</p>
+                    </div>
+                    <div class="specialties_content specialties_content2 s7">
+                        <p class="specialties_name">Wide Range of Services</p>
+                        <p class="specialties_paragraph">Physiotherapy to yoga, we cover all aspects of health and
+                            fitness</p>
+                    </div>
+                    <div class="specialties_content specialties_content2 s8">
+                        <p class="specialties_name">Compassionate Support</p>
+                        <p class="specialties_paragraph">A nurturing environment where every client is seen, heard, and
+                            valued.</p>
+                    </div>
+                    <figure class="specialties_right_line mb-0">
+                        <img src="{{ asset('images/specialties_right_line.png') }}" alt="" class="img-fluid">
+                    </figure>
                 </div>
             </div>
-            <figure class="our_specialties_right_shape right_shape mb-0">
-                <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="" class="img-fluid">
-            </figure>
         </div>
-    </section>
+        <figure class="our_specialties_right_shape right_shape mb-0">
+            <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="" class="img-fluid">
+        </figure>
+    </div>
+</section>
+
     <!-- GET IN TOUCH SECTION -->
     <section class="get_in_touch_section">
         <div class="container">
@@ -305,6 +305,7 @@
                                     </div>
                                 </div>
                             </div>
+                         
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group mb-0">
@@ -317,6 +318,7 @@
                                         </select>
 
                                     </div>
+
                                 </div>
                             </div>
                             <div class="row">
@@ -520,7 +522,7 @@
                 <div class="blog_posts_content">
 
                     <h2>Blog & News</h2>
-                    <p class="text-center">Stay Informed and Inspired - Our Latest Insights and Updates</p>
+                    <p class="text-center">Stay informed and inspired - our latest insights and updates</p>
                 </div>
             </div>
         </div>

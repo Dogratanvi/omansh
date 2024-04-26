@@ -14,8 +14,7 @@
                             <h1 data-aos="fade-up">Yoga Training</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in
-                                volurate velit cillum nulla pariatur nostrud exercitation</p>
+                            <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, Elevate Your Practice with Our Yoga Training Program</p>
                                 </div>
                         </div>
                             <div class="btn_wrapper">
@@ -63,19 +62,9 @@
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
                 <div class="para">
                     <h5>YOGA TRAINING</h5>
-                    <h2>Better Life With Yoga Trainig</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s
-                    </p>
-                    <p class="margin_bottom">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is
-                        simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s</p>
+                    <h2> {!! $workshops[1]->name!!}</h2>
+                    <div> {!! $workshops[1]->content!!} </div>
+               
 
                     <div class="btn_wrapper main-btn">
                         <a href="/contact" class="text-decoration-none read_more_btn">Enroll Now</a>
@@ -89,9 +78,22 @@
     </div>
 </section>
 
+<!-- program -->
 
+<section class="pb-3  program ">
+    <div class="container">
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start"> {!! $workshops[2]->name!!}</h2>
+        <div class="row justify-content-sm-start justify-content-xs-start justify-content-start justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
+                        <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
+        <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Embark on a Journey of self-discovery, yogaguru's yoga teacher training program welcomes seekers of transformation
+        </p>     </div>
+            </div>
+        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
+        <div> {!! $workshops[2]->content!!} </div>
+    </div>
+</section>
 <!-- gallary -->
-<section class="pb-3 aboutus_content ">
+<section class="pb-3 pt-sm-3 pt-xs-3 pt-3 pt-md-4 pt-xl-5 pt-lg-5 pt-xxl-5 aboutus_content ">
     <div class="container">
         <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training Gallery</h2>
         <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
@@ -141,7 +143,7 @@
 </section>
 
 <!-- Testimonial -->
-<section class="our_specialties_section">
+<section class="our_specialties_section ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -156,7 +158,7 @@
         <div class="row pt-4" id="data">
                     @foreach ($testimonials as $testimonial)
                     @if($testimonial->category == "yoga")
-                    <div class="col-md-3 pt-3">
+                    <div class="col-md-3 pt-3 content">
 
                         <div class="card border-0 videoCard">
                             <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
@@ -174,6 +176,9 @@
                 </div>
     
     </div>
+    <div class="btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+                </div>
 </section>
 <!-- discount-section -->
 <section class="aboutus_section discount-section">

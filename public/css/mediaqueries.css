@@ -2865,6 +2865,12 @@
   .blog_posts_content p{
     text-align: left;
   }
+  .program p{
+    text-align: left;
+  }
+  .program li{
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -3498,6 +3504,12 @@
     text-align: left;
   }
   .blog_posts_content p{
+    text-align: left;
+  }
+  .program p{
+    text-align: left;
+  }
+  .program li{
     text-align: left;
   }
 }

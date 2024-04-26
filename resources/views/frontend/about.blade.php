@@ -20,7 +20,7 @@
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    About</span>
+                                    About Us</span>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
         <div class="vision_box">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-2 order-sm-2 order-xs-2 order-lg-1 order-md-1 order-xl-1 order-xxl-1">
-                    <div class="vision_image">
+                    <div class="vision_image  text-center text-xs-center text-sm-center text-md-start text-lg-start text-xl-start">
                         <img src="{{asset($about_omanshes[4]->featured_image)}}" alt="our-vission" class="img-fluid">
                         </figure>
                         </figure>

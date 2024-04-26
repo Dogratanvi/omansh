@@ -20,7 +20,7 @@
                             Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
                         <div class="btn_wrapper home-btn text-white fw-bolder text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">
-                            Connect with us<a href="./contact" class="text-decoration-none me-2"><i
+                            <a href="./contact" class="text-decoration-none"><i
                                     class="fa-solid fa-arrow-right" aria-hidden="true"> </i></a>
                         </div>
 
@@ -533,8 +533,9 @@
             @foreach ($blogs as $blog)
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="blog_posts_image position-relative">
-                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" alt="" class="img-fluid">
-                    </figure>
+                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" alt="" class="img-fluid w-100">
+                    <div class="blog-overlay"></div>
+                </figure>
                     <div class="blog_posts_image_content">
                         <span>{{$blog->category}}</span>
                         <h4>{{ $blog->title}}</h4>

@@ -26,17 +26,13 @@ class BlogController extends Controller
 
     public function blogPost($id)
     {
-        $id =1;
         $blogs = Blog::find($id);
         $settings = Setting::all();
         
         return view('frontend.blogPost', compact('blogs','settings'));
     }
 
-    public function store(BlogStoreRequest $request): RedirectResponse
-    {
-        $blog = Blog::create($request->validated());
 
-        return redirect()->route('blog.index');
-    }
+
+
 }

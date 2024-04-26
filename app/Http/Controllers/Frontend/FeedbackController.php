@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -47,6 +48,7 @@ class FeedbackController extends Controller
           $module_feedback = $this->module_feedback;
           $module_name_feedback = $this->module_name_feedback;
           $module_path_feedback = $this->module_path_feedback;
+          $settings = Setting::all();
         
 
           return view(
@@ -54,7 +56,8 @@ class FeedbackController extends Controller
             compact(
                 'module_feedback', 
                 'module_name_feedback', 
-                'module_path_feedback'
+                'module_path_feedback',
+                'settings'
             
             )
         );

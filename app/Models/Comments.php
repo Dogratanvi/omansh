@@ -27,22 +27,7 @@ class Comments extends Model
         'deleted_at' => 'datetime',
     ];
 
-     /*
-     * Get the owning commentable model.
-     */
-    public function commentable()
-    {
-        return $this->morphTo();
-    }
-
-    public function getPostAttribute()
-    {
-        if ($this->commentable_type === 'App\Models\Blog') {
-            return $this->commentable;
-        }
-
-        return [];
-    }
+   
 
     public function setFeaturedImageAttribute($value)
     {
@@ -52,20 +37,17 @@ class Comments extends Model
         }
     }
 
-    public function getModuleNameAttribute()
-    {
-        if ($this->commentable_type === 'App\Models\Blog') {
-            return 'posts';
-        }
+  
 
-        return '';
+    public function replies()
+    {
+        return $this->hasMany('App\Models\Comments', 'parent_id')->where('status',1);
     }
 
-    public function parent()
+    public function user()
     {
-        return $this->belongsTo('App\Models\Comment', 'parent_id');
+        return $this->belongsTo(User::class);
     }
-
 
     protected static function boot()
     {

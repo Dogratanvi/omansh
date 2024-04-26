@@ -48,6 +48,11 @@ class Events extends Model
         }
     }
 
+    public function setSlugAttribute($title)
+    {
+        dd('1');
+    }
+
     public static function getForm(): array
     {
         return [

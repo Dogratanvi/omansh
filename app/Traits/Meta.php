@@ -31,9 +31,6 @@ trait Meta
     {
         $this->attributes['meta_description'] = $value;
 
-        if (empty($value)) {
-            $this->attributes['meta_description'] = setting('meta_description');
-        }
     }
 
     /**

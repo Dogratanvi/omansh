@@ -43,12 +43,8 @@ class AboutMeResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('uuid')
-                    ->label('UUID')
-                    ->searchable(),
+
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('featured_image'),
                 Tables\Columns\TextColumn::make('order')

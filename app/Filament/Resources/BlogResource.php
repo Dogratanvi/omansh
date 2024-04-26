@@ -30,16 +30,9 @@ class BlogResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')
-                    ->label('ID')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('author')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('intro')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('featured_image'),
                 Tables\Columns\TextColumn::make('published_at')

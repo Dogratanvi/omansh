@@ -43,10 +43,10 @@
 </div>
 <!-- MAIN SECTION -->
 <!--End Slider Section-->
-<section class="blog-posts">
+<section class="blog-posts main-blog">
     <div class="container">
         <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div id="blog" class="three-column col-xl-12">
+            <div id="blog" class="blogs three-column col-xl-12">
                 <div class="row">
                 @foreach ($blogs as $blog)
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-xs-12">
@@ -68,7 +68,7 @@
                                         <a href="{{ route('frontend.blog.show', $blog->id) }}"><i class="fa fa-comments-o"></i>33 Comments</a>
                                     </span>
                                     <h2>
-                                        <a href="#">{{ $blog->title}}
+                                        <a href="{{ route('frontend.blog.show', $blog->id) }}">{{ $blog->title}}
                                         </a>
                                     </h2>
                                     <p>{{ $blog->intro}}</p>

@@ -2,19 +2,18 @@
 
 @section('content')
 <!-- banner-section -->
-<div class="sub-banner-section blog-banner">
+<div class="single-blog-page sub-banner-section blog-banner">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
-        <section class="banner-section">
+        <section class="banner-section d-flex align-items-center h-100">
             <div class="container">
-                <div class="row">
+                <div class="row d-flex align-items-center h-100">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up" class="text-start"> {{ $blogs->title }}</h1>
                             <div class="row">
 
-                                <p class="text-start" data-aos="fade-right">Dive into our treasure trove of wellness
-                                    wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>
+                               
                             </div>
                         </div>
 
@@ -479,16 +478,10 @@
                     <div class="widget widget-tags">
                         <h4 class="widget-title font_weight_600">Tags</h4>
                         <div class="tags">
-                            <a href="#">Design</a>
-                            <a href="#">Portfolio</a>
-                            <a href="#">Digital</a>
-                            <a href="#">Branding</a>
-                            <a href="#">HTML</a>
-                            <a href="#">Clean</a>
-                            <a href="#">Peace</a>
-                            <a href="#">Love</a>
-                            <a href="#">CSS3</a>
-                            <a href="#">jQuery</a>
+                            <a href="#">WOMEN HEALTH</a>
+                            <a href="#">YOGA</a>
+                            <a href="#">PHYSIOTHERAPY</a>
+                            
                             <!--tags-->
                         </div>
                         <!--widget-->

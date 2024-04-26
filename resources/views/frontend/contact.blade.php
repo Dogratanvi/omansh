@@ -120,6 +120,8 @@
                                 <button type="submit" class="border-0" id="started">Submit</button>
                             </div>
                             <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6>
+
+                           
                         </form>
 </div>
             </div>

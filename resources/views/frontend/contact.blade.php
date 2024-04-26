@@ -124,7 +124,7 @@
                             <div class="btn_wrapper">
                                 <button type="submit" class="border-0" id="started">Submit</button>
                             </div>
-                            <h5 style="color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h5>
+                            <h5 style="color:var(--primary-green);">All the fields are required.</h5>
                         </form>
 </div>
             </div>

@@ -686,7 +686,10 @@ button.custom-btn{
 .blog_posts_image img {
     height: 300px;
     object-fit: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
+
 .google-review-section {
     background-image: url('../images/aboutus_background.png');
     background-size: cover;
@@ -2705,7 +2708,15 @@ textarea {
     background-color: #fff;
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
-
+.contact .message_content button:hover {
+    color: #fff;
+    background-color: #CAA983;
+    transform: translateY(-10px);
+}
+.contact .message_content button:before {
+    color: #fff;
+    background-color: #CAA983;
+}
 .message_section .box_padding{
     margin-top: 10px;
 }

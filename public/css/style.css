@@ -1580,7 +1580,7 @@ a.all-event {
     border-top-left-radius: 120px;
 }
 .feedback-form {
-    padding: 60px 120px;
+    padding: 60px 60px;
 }
 .form-check {
     padding: 30px 0px 30px 50px;
@@ -1625,7 +1625,33 @@ section.women-health {
 }
 
 /* Home Page Footer Section Style */
+.whtsapp {
+    position: fixed;
+    top: 417px;
+    right: 0;
+    z-index: 99999;
+}
+.arrow-top {
+    background: #CAA983;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-top i {
+    color: #fff;
 
+}
+.arrow-top:hover{
+    background-color: #ffffff;
+}
+.arrow-top:hover i{
+color: #CAA983;
+}
 .footer-section{
     position: relative;
     background-color: #004B2A;

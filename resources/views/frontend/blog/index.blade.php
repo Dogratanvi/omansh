@@ -68,7 +68,7 @@
                                         <a href="{{ route('frontend.blog.show', $blog->id) }}"><i class="fa fa-comments-o"></i>33 Comments</a>
                                     </span>
                                     <h2>
-                                        <a href="#">{{ $blog->title}}
+                                        <a href="{{ route('frontend.blog.show', $blog->id) }}">{{ $blog->title}}
                                         </a>
                                     </h2>
                                     <p>{{ $blog->intro}}</p>

@@ -60,14 +60,12 @@
                                     {{ $blogs->title }}
                                 </span>
                             </div>
-                            <div class="post-meta">
+                            <div class="post-meta pt-3">
                                     <span class="post-meta-date color01"><i class="fa fa-calendar-o"></i>{{ $blogs->created_at}}</span>
                                     <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
                                             Comments</a></span>
-                                    <span class="post-meta-category"><a href=""><i class="fa fa-tag"></i>Lifestyle,
-                                            Magazine</a></span>
-                                            <span class="post-meta-category"><a href=""><i class="fa fa-tag"></i>Lifestyle,
-                                            Magazine</a></span>
+                                    <span class="post-meta-category"><i class="fa fa-tag"></i>Yoga</span>
+                                            <span class="post-meta-category"><i class="fa-solid fa-eye"></i>343</span>
                                     <div class="post-meta-share float-right">
                                         <ul class="list-unstyled m-0">
                                             <li class="d-inline-block align-top"><a href="#">
@@ -87,7 +85,10 @@
                                     </div>
                             <div class="post-item-description">
                                 <h2 class="single-post-heading font_weight_600">{{ $blogs->title}}</h2>
-                                <div>{!! $blogs->content!!}</div>
+                                <div>{!!$blogs->content!!}
+                              
+
+                                </div>
                                     <!--post-meta-->
                                 </div>
                          

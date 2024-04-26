@@ -1272,6 +1272,13 @@ a.all-event {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+.blog-posts img{
+    height: 300px;
+    object-fit: cover;
+}
+.post-item span.post-meta-category {
+    color: #000 !important;
+}
 /* Home Page Testimonial Section Style */
 
 .testimonial_section{

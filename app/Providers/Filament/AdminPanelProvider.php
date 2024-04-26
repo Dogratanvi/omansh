@@ -19,6 +19,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\HtmlString;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Leandrocfe\FilamentApexCharts\FilamentApexChartsPlugin;
 
@@ -37,6 +38,7 @@ class AdminPanelProvider extends PanelProvider
             ->brandLogo(asset('img/logo.svg'))
             ->darkModeBrandLogo(asset('img/logo_dark.svg'))
             ->brandLogoHeight('3.5rem')
+        
             ->sidebarFullyCollapsibleOnDesktop()
             ->colors([
                 'primary' => Color::hex('#caac86'),
@@ -46,15 +48,13 @@ class AdminPanelProvider extends PanelProvider
             ->navigationGroups([
                 NavigationGroup::make()->label('About')->icon('heroicon-o-cake')->collapsed(),
                 NavigationGroup::make('Blogs')->icon('heroicon-o-document-text'),
-                
+
             ])
             ->pages([
                 Pages\Dashboard::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
-            ->widgets([
-             
-            ])->plugins([
+            ->widgets([])->plugins([
                 FilamentApexChartsPlugin::make(),
             ])
             ->middleware([
@@ -76,6 +76,9 @@ class AdminPanelProvider extends PanelProvider
     public function register(): void
     {
         parent::register();
-        FilamentView::registerRenderHook('panel::body.end', fn(): string => Blade::render("@vite('resources/js/app.js')"));
+        FilamentView::registerRenderHook('panel::body.end', fn (): string => Blade::render("@vite('resources/js/app.js')"));
     }
+
+
+    
 }

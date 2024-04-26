@@ -30,16 +30,9 @@ class CommentsResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')
-                ->label('ID')
+            Tables\Columns\TextColumn::make('user_name')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('name')
-                ->searchable(),
-            Tables\Columns\TextColumn::make('slug')
-                ->searchable(),
-            Tables\Columns\TextColumn::make('comment'),
-            Tables\Columns\TextColumn::make('order')
-                ->searchable(),
+            Tables\Columns\TextColumn::make('body'),
             Tables\Columns\TextColumn::make('status')
                 ->searchable(),
             Tables\Columns\TextColumn::make('created_at')

@@ -13,7 +13,9 @@ class ListAboutMes extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+            ->label('Add About Me')
+            ->icon('heroicon-s-plus'),
         ];
     }
 }

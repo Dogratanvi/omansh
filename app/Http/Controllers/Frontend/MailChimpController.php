@@ -32,10 +32,10 @@ class MailChimpController extends Controller
 
         if ($result['status'] == 'subscribed') {
             \Log::info('Setting success message');
-            return back()->with(['message' => ' Thank you, your sign-up request was successful!']);
+            return back()->with(['message' => ' Thank you, your sign-up request for newsletter was successful!']);
         } else {
             \Log::info('Setting error message');
-            return back()->with(['message' => 'You Are Already Subscribed']);
+            return back()->with(['message' => 'You Are already subscribed for newsletter']);
         }
     }
 }

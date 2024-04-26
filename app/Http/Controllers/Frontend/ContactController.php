@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Models\Setting;
 use App\Rules\Recaptcha;
+use Exception;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
@@ -20,22 +23,60 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         
-       
-        $data = $request->validate([
+      
+        $validator = Validator::make($request->all(), [
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'min:8|max:11|regex:/^([0-9\s\-\+\(\)]*)$/',
             'service' => 'required|string|max:255',
             'message' => 'required|string',
-            '_token' => 'required|string'
+            '_token' => 'required|string',
+            'g-recaptcha-response' => 'required|string',
+
+        ],[
+            'first_name.required' => 'We need to know your first name!',
+            'last_name.required' => 'We need to know your first name!',
+            'email.required' => 'Without an email, how can we reach you?',
+            'email.email' => 'Your email does not appear to be valid.',
+            'phone.required' => 'Your phone number is not valid.',
+            'service.required' => 'Service is required',
+            'message.required' => 'Message is required'
 
         ]);
 
-        // Store the contact data in the database
-        $input = $request->except('_token');
+        try {
+            
+        if ($validator->fails()) {
+            return redirect()->back()->with([
+                'message' => 'Contact form submit unsuccessfully!', 
+                 'status' => 'danger',
+            ]);
+        }
+
+            $input = $request->except(['_token','g-recaptcha-response','g-token']);
+       
       
-        Contact::create($input);
+            Contact::create($input);
+
+            return redirect()->back()->with([
+                'message' => 'Contact form form submitted successfully', 
+                 'status' => 'success',
+            ]);
+
+
+        }catch (Exception $e) {
+
+            return redirect()->back()->with([
+                'message' => 'Contact form submit unsuccessfully!', 
+                 'status' => 'danger',
+            ]);
+        }
+
+
+
+        // Store the contact data in the database
+      
         
         // // Send mail to admin
         // Mail::send('contactMail', [
@@ -54,7 +95,11 @@ class ContactController extends Controller
 
 
         // Optionally, you can also send a notification or perform other actions here
+        // $recipient = auth()->user();
+        // Notification::make()
+        // ->title('Contact Notification')
+        // ->sendToDatabase($recipient);
 
-        return redirect()->route('frontend.contact.create')->with('success', 'Contact information saved successfully.');
+      
     }
 }

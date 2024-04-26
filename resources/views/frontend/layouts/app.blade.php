@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/favicon.png')}}">
-    <link rel="icon" type="image/png" href="{{asset('img/favicon.png')}}">
+    <link rel="icon" href="{{ asset('favicon.ico') }}"  type='image/x-icon'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>omansh</title>
+    <title>Omansh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
@@ -45,7 +44,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9VT5D5K2V4');
+    </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>

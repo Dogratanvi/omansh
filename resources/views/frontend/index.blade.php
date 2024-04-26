@@ -181,7 +181,7 @@
         </div>
     </div>
 </section>
-<!-- OUR SPECIALTIES SECTION -->
+   <!-- OUR SPECIALTIES SECTION -->
 <section class="our_specialties_section">
     <div class="container">
         <div class="row">
@@ -259,92 +259,111 @@
         </figure>
     </div>
 </section>
-<!-- GET IN TOUCH SECTION -->
-<section class="get_in_touch_section">
-    <div class="container">
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                <div class="get_in_touch_content message_content">
-                    <h5>Get in touch</h5>
-                    <h2>Get a Consultation Now</h2>
-                    <form id="contactpage" method="POST" action="{{ url('contact') }}">
-                        @csrf
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="text" name="first_name" id="fname" class="form-control"
-                                        placeholder="First Name" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="text" name="last_name" id="lname" class="form-control form_style"
-                                        placeholder="Last Name" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="tel" name="phone" id="phonenum" class="form-control"
-                                        placeholder="Phone" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group mb-0">
-                                    <input type="email" name="Email" id="emailaddrs" 
-                                        class="form-control form_style" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group mb-0">
+    <!-- GET IN TOUCH SECTION -->
+    <section class="get_in_touch_section">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                                    <select name="service" id="service" class="form-select">
-                                        <option selected disabled>Services</option>
-                                        <option value="women_health">Women Health</option>
-                                        <option value="physiotherapy">Physiotherapy</option>
-                                        <option value="yoga">Yoga</option>
-                                    </select>
+                    <div class="get_in_touch_content message_content">
+                        <h5>Get in touch</h5>
+                        <h2>Get a Consultation Now</h2>
+                        @if (session('message'))
+                            <div class="alert alert-{{ session('status') }} alert-dismissible fade show w-75 mt-3"
+                                role="alert">
+                                <strong>{{ session('message') }}</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        @endif
+                        <form id="contactpage" method="POST" action="{{ url('contact') }}"  enctype="multipart/form-data">
+                            @csrf
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="text" name="first_name" id="fname" class="form-control"
+                                            placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="text" name="last_name" id="lname"
+                                            class="form-control form_style" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="tel" name="phone" id="phonenum" class="form-control"
+                                            placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="email" name="email" id="emailaddrs" value="Email"
+                                            class="form-control form_style" placeholder="Email" required>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-0">
+
+                                        <select name="service" id="service" class="form-select" required>
+                                            <option selected disabled>Services</option>
+                                            <option value="women_health">Women Health</option>
+                                            <option value="physiotherapy">Physiotherapy</option>
+                                            <option value="yoga">Yoga</option>
+                                        </select>
+
+                                    </div>
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class=" form-group mb-0">
-                                    <textarea rows="3" name="message" id="comment" class="form-control"
-                                        placeholder="Message"></textarea>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class=" form-group mb-0">
+                                        <textarea rows="3" name="message" id="comment" class="form-control" placeholder="Message" required></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="btn_wrapper">
-                            <button type="submit" class="border-0" id="started">Submit</button>
-                        </div>
-                    </form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input type="hidden" name="g-token" id="recaptchaToken" required>
+                                    <div class="g-recaptcha mt-4 mb-4" data-sitekey={{ config('services.recaptcha.key') }}>
+                                    </div>
+                                    <span class="text-danger">{{ $errors->first('Click to verify') }}</span>
+                                </div>
+                            </div>
+                            <div class="btn_wrapper">
+                                <button type="submit" class="border-0" id="started">Submit</button>
+                            </div>
+                         
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"></div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="get_in_touch_video position-relative">
+                    <a class="popup-vimeo"
+                        href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
+                        <figure class="video_img mb-0">
+                            <img class="thumb img-fluid" style="cursor: pointer" src="{{ asset('img/play-icon.png') }}"
+                                alt="play-icon">
+                        </figure>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 d-md-block d-none"></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <div class="get_in_touch_video position-relative">
-                <a class="popup-vimeo"
-                    href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
-                    <figure class="video_img mb-0">
-                        <img class="thumb img-fluid" style="cursor: pointer" src="{{ asset('img/play-icon.png') }}"
-                            alt="play-icon">
-                    </figure>
-                </a>
-            </div>
+        <figure class="get_in_touch_shape left_shape mb-0">
+            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="get-in-touch-shape" class="img-fluid">
+        </figure>
         </div>
-    </div>
-    <figure class="get_in_touch_shape left_shape mb-0">
-        <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="get-in-touch-shape" class="img-fluid">
-    </figure>
-    </div>
-</section>
+    </section>
 
-<!-- Testimonial -->
+    <!-- Testimonial -->
 <section class="our_specialties_section  aboutus_content">
     <div class="container">
         <div class="row">
@@ -565,6 +584,5 @@
         </div>
     </div>
 </div>
-
-
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
 @endsection

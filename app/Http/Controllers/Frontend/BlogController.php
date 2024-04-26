@@ -24,10 +24,12 @@ class BlogController extends Controller
         return view('blog.create');
     }
 
+
     public function show($id)
     {
-        $blogs= Blog::find($id);
+        $blogs = Blog::find($id);
         $settings = Setting::all();
+       
         
         return view('frontend.blog.show', compact('blogs','settings'));
     }

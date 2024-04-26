@@ -20,10 +20,23 @@ class AboutMeResource extends Resource
     // protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationGroup = 'About';
 
+    // protected static ?string $recordTitleAttribute = 'name';
+    protected static ?string $navigationLabel = 'About Me';
+
     public static function form(Form $form): Form
     {
         return $form
-        ->schema(AboutMe::getForm());
+            ->schema(AboutMe::getForm());
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('About Me');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('About Me');
     }
 
     public static function table(Table $table): Table
@@ -49,13 +62,6 @@ class AboutMeResource extends Resource
                 Tables\Columns\TextColumn::make('linkedin_url')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('facebook_url')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('meta_title')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('meta_keywords')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('meta_og_image'),
-                Tables\Columns\TextColumn::make('meta_og_url')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),

@@ -25,6 +25,7 @@ class SliderResource extends Resource
             ->schema(Slider::getForm());
     }
 
+
     public static function table(Table $table): Table
     {
         return $table
@@ -40,13 +41,6 @@ class SliderResource extends Resource
                 Tables\Columns\TextColumn::make('order')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('meta_title')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('meta_keywords')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('meta_og_image'),
-                Tables\Columns\TextColumn::make('meta_og_url')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')

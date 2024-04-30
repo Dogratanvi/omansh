@@ -45,9 +45,7 @@ class Blog extends Model
     public function comments()
     {
         return $this->hasMany(Comments::class)->whereNull('parent_id')->where('status',1);
-    }
-
-  
+    }  
 
     protected static function boot()
     {

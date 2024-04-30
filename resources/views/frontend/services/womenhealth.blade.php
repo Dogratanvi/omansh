@@ -98,7 +98,7 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/services/women_1.png') }}" alt="neck-pain" class="img-fluid">
+                        <img src="{{ asset('img/services/womens_1.png') }}" alt="neck-pain" class="img-fluid">
                     </div>
                 </div>
                 <p class="fw-bold pt-3 text-dark text-center">1 in 2</p>
@@ -107,7 +107,7 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/services/women_2.png') }}" alt="women-suffer" class="img-fluid">
+                        <img src="{{ asset('img/services/womens_2.png') }}" alt="women-suffer" class="img-fluid">
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 3</p>
@@ -116,7 +116,7 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/services/women_3.png') }}" alt="pelvic organ" class="img-fluid">
+                        <img src="{{ asset('img/services/womens_3.png') }}" alt="pelvic organ" class="img-fluid">
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 4</p>
@@ -125,7 +125,7 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/services/women_4.png') }}" alt="Women experience"
+                        <img src="{{ asset('img/services/womens_4.png') }}" alt="Women experience"
                             class="img-fluid">
                     </div>
                 </div>
@@ -135,7 +135,7 @@
             <div class="main-section-box">
                 <div class="women-suffer">
                     <div class="logo-box">
-                        <img src="{{ asset('img/services/women_5.png') }}" alt="Women suffer" class="img-fluid">
+                        <img src="{{ asset('img/services/womens_5.png') }}" alt="Women suffer" class="img-fluid">
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 9</p>

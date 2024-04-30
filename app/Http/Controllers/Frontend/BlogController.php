@@ -24,17 +24,36 @@ class BlogController extends Controller
         return view('blog.create');
     }
 
-
-    
-    public function show($id)
+    public function show(BLog $id)
     {
-        $blogs = Blog::find($id);
+     
+        $blogs = $id;
         $settings = Setting::all();
-       
-      
-         return view('frontend.blog.show', compact('blogs','settings'));
+        return view('frontend.blog.show', compact('blogs', 'settings'));
     }
 
+    public function next(Blog $blogs)
+    {
+        $blogs = Blog::where('id', '>', $blogs->id)->orderBy('id')->first();
+        if($blogs != null)
+        {
+            return redirect()->route('frontend.blog.show', $blogs);
+        }else{
+           return redirect()->back();
+        }
+      
+     
+    }
 
-
+    public function previous(Blog $blogs)
+    {
+       
+        $blogs = Blog::where('id', '<', $blogs->id)->orderBy('id', 'desc')->first();
+        if($blogs != null)
+        {
+            return redirect()->route('frontend.blog.show', $blogs);
+        }else{
+           return redirect()->back();
+        }
+    }
 }

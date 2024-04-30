@@ -1914,8 +1914,8 @@ button.close {
   }
   .home-btns + .home-btns {
     background-color: #000080;
-    margin-left: 8px;
-  }
+    margin-left: 8px;}
+
 /* About Page About Us Section Style */
 
 .aboutpage_aboutus_section{
@@ -2119,6 +2119,58 @@ background-color: #004B2A !important;
     color: var(--e-global-color-text);
     padding-right: 25px;
 }
+.comment-btn{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 16px 35px;
+    text-align: center;
+    color: var(--e-global-color-white);
+    display: inline-block;
+    background-color: #004B2A;
+    border-radius: 35px 0px 35px 0px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.comment-btn{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 16px 35px;
+    text-align: center;
+    color: var(--e-global-color-white);
+    display: inline-block;
+    background-color: #004B2A;
+    border-radius: 35px 0px 35px 0px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.comment-btn:hover {
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
+    transform: translateY(-10px);
+}
+.comment-btn:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.comment-btn:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
+	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+}
 .mission_content .btn_wrapper .read_more_btn{
     font-size: 18px;
     line-height: 22px;
@@ -2133,6 +2185,8 @@ background-color: #004B2A !important;
     position: relative;
     overflow: hidden;
 }
+
+
 .mission_content .btn_wrapper .read_more_btn:hover {
     color: var(--e-global-color-accent);
     background-color: var(--e-global-color-soft-orange);

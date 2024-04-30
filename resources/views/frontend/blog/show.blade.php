@@ -95,10 +95,10 @@
                             </div>
 
                             <div class="post-navigation">
-                                <a href="{{ route('frontend.blogs.previous', $blogs) }}" class="post-prev">
+                                <a href="{{ route('frontend.blogs.previous', ['id' => $blogs->id, 'slug' => $blogs->slug]) }}" class="post-prev">
                                     <div class="post-prev-title"><span>Previous Post</span></div>
                                 </a>
-                                <a href="{{ route('frontend.blogs.next', $blogs) }}" class="post-next">
+                                <a href="{{ route('frontend.blogs.next', ['id' => $blogs->id, 'slug' => $blogs->slug]) }}" class="post-next">
                                     <div class="post-next-title"><span>Next Post</span></div>
                                 </a>
                                 <!--post-navigation-->

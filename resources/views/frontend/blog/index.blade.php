@@ -53,7 +53,7 @@
                         <div class="float-left w-100 post-item border mb-4">
                             <div class="post-item-wrap position-relative">
                                 <div class="post-image">
-                                    <a href="{{ route('frontend.blog.show', $blog->id) }}">
+                                    <a href="{{ route('frontend.blog.show',  ['id' => $blog->id, 'slug' => $blog->slug]) }}">
                                         <img alt="pregency-affect.png" src=" {{asset($blog->featured_image)}}">
                                     </a>
                                     <span class="post-meta-category">
@@ -64,15 +64,13 @@
                                 <div class="post-item-description">
                                     <span class="post-meta-date">
                                         <i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blog->created_at)) }}</span>
-                                    <!-- <span class="post-meta-comments">
-                                        <a href="{{ route('frontend.blog.show', $blog->id) }}"><i class="fa fa-comments-o"></i>33 Comments</a>
-                                    </span> -->
+                                 
                                     <h2>
-                                        <a href="{{ route('frontend.blog.show', $blog->id) }}">{{ $blog->title}}
+                                        <a href="{{ route('frontend.blog.show',  ['id' => $blog->id, 'slug' => $blog->slug]) }}">{{ $blog->title}}
                                         </a>
                                     </h2>
                                     <p>{{ $blog->intro}}</p>
-                                    <a href="{{ route('frontend.blog.show', $blog->id) }}" class="item-link">Read More <i
+                                    <a href="{{ route('frontend.blog.show',  ['id' => $blog->id, 'slug' => $blog->slug]) }}" class="item-link">Read More <i
                                             class="fa fa-arrow-right"></i></a>
                                     <!--post-item-description-->
                                 </div>

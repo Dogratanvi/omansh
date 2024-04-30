@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\SlugTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
@@ -17,7 +18,7 @@ use Filament\Forms\Components\Toggle;
 
 class Blog extends Model
 {
-    use HasFactory;
+    use HasFactory, SlugTrait;
 
     /**
      * The attributes that should be cast to native types.
@@ -54,7 +55,12 @@ class Blog extends Model
         static::creating(function ($blog) {
             $uuid = Uuid::uuid4()->toString();
             $blog->uuid=str_replace('-', '', $uuid);
+            $blog->slug = $blog->generateSlug($blog->title);
         });
+
+        // static::creating(function ($blog) {
+        //     $blog->slug = $blog->generateSlug($blog->title);
+        // });
     }
 
     public static function getForm(): array

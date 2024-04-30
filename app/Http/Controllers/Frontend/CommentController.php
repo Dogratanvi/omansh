@@ -28,14 +28,17 @@ class CommentController extends Controller
         $request->validate([
             'body'=>'required',
         ]);
+        
+     
 
     $name = "Guest" . rand(2,100);
     $comment = Comments::where('user_ip',$request->ip())->first();
+    
     if($comment !== null)
     {
         $input['user_ip'] = $request->ip();
+         $input['user_name'] = $name;
     }
-      $input['user_name'] = $comment->user_name;
       $input['status'] = 0;
         // $input['user_id'] = auth()->user()->id;
 

@@ -24,20 +24,22 @@ class BlogController extends Controller
         return view('blog.create');
     }
 
-    public function show(BLog $id)
+    public function show($id,$slug)
     {
      
-        $blogs = $id;
+        $blogs = Blog::find($id);
+      
+        $slug = $blogs->slug;
         $settings = Setting::all();
         return view('frontend.blog.show', compact('blogs', 'settings'));
     }
 
-    public function next(Blog $blogs)
+    public function next($id, $slug)
     {
-        $blogs = Blog::where('id', '>', $blogs->id)->orderBy('id')->first();
+        $blogs = Blog::where('id', '>', $id)->orderBy('id')->first();
         if($blogs != null)
         {
-            return redirect()->route('frontend.blog.show', $blogs);
+            return redirect()->route('frontend.blog.show', ['id' => $blogs->id, 'slug' => $blogs->slug]);
         }else{
            return redirect()->back();
         }
@@ -45,13 +47,13 @@ class BlogController extends Controller
      
     }
 
-    public function previous(Blog $blogs)
+    public function previous($id, $slug)
     {
        
-        $blogs = Blog::where('id', '<', $blogs->id)->orderBy('id', 'desc')->first();
+        $blogs = Blog::where('id', '<', $id)->orderBy('id', 'desc')->first();
         if($blogs != null)
         {
-            return redirect()->route('frontend.blog.show', $blogs);
+            return redirect()->route('frontend.blog.show', ['id' => $blogs->id, 'slug' => $blogs->slug]);
         }else{
            return redirect()->back();
         }

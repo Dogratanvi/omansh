@@ -14,7 +14,7 @@
                             <h1 data-aos="fade-up">Yoga Training</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, Elevate Your Practice with Our Yoga Training Program</p>
+                            <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, and Elevate Your Practice with Our Yoga Training Program</p>
                                 </div>
                         </div>
                             <div class="btn_wrapper">
@@ -143,7 +143,6 @@
 </section>
 
 <!-- Testimonial -->
-<section class="our_specialties_section ">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -181,7 +180,7 @@
                 </div>
 </section>
 <!-- discount-section -->
-<section class="aboutus_section discount-section">
+<!-- <section class="aboutus_section discount-section">
     <div class="container d-flex align-items-center justify-content-center">
         <div class="discount-box">
             <h2 class="text-center">Get 10% Discount For Yoga Training
@@ -194,7 +193,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
     aria-labelledby="deleteLineItemModal" aria-hidden="true">

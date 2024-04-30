@@ -29,7 +29,7 @@ class FrontendController extends Controller
         $settings = Setting::all();
         $testimonials = Testimonial::all();
         $blogs = Blog::where('status',1)->get()->take(2);
-      
+        $services = Service::orderBy('order')->get();
 
 
         return view('frontend.index', compact('services', 'settings', 'testimonials','blogs'));

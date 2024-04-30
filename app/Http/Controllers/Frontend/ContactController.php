@@ -49,7 +49,7 @@ class ContactController extends Controller
             
         if ($validator->fails()) {
             return redirect()->back()->with([
-                'message' => 'Contact form submit unsuccessfully!', 
+                'message' => 'Thank you for contacting us. We will get back to you within 24 hours.', 
                  'status' => 'danger',
             ]);
         }
@@ -60,7 +60,7 @@ class ContactController extends Controller
             Contact::create($input);
 
             return redirect()->back()->with([
-                'message' => 'Contact form form submitted successfully', 
+                'message' => 'Thank you for contacting us. We will get back to you within 24 hours.', 
                  'status' => 'success',
             ]);
 
@@ -68,7 +68,7 @@ class ContactController extends Controller
         }catch (Exception $e) {
 
             return redirect()->back()->with([
-                'message' => 'Contact form submit unsuccessfully!', 
+                'message' => 'Thank you for contacting us. We will get back to you within 24 hours.', 
                  'status' => 'danger',
             ]);
         }

@@ -14,7 +14,7 @@
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                                     <p data-aos="fade-right">Duis aute irure dolor in reprehenderit in volurate velit
                                         cillum
-                                        nulla pariatur nostrud exercitation</p>
+                                        nulla pariatur nostrud exercitation.</p>
                                 </div>
                             </div>
                             <div class="btn_wrapper">
@@ -22,7 +22,7 @@
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i> <span
                                     class="sub_home_span"><a>Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
-                                    class="sub_span">Womenhealth</span>
+                                    class="sub_span">Women Health</span>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <p class="fw-bold pt-3 text-dark text-center">1 in 2</p>
-                <h6 class="fw-normal text-center">Pregnant women have neck pain</h6>
+                <h6 class="fw-normal text-start text-lg-center text-md-center text-xl-center text-sm-start text-xs-start">Pregnant women have neck pain</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 3</p>
-                <h6 class="fw-normal text-center">Women suffer with urinary incontinence</h6>
+                <h6 class="fw-normal text-start text-lg-center text-md-center text-xl-center text-sm-start text-xs-start">Women suffer with urinary incontinence</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 4</p>
-                <h6 class="fw-normal text-center">Women suffer with symptoms of pelvic organ prolapse</h6>
+                <h6 class="fw-normal text-start text-lg-center text-md-center text-xl-center text-sm-start text-xs-start">Women suffer with symptoms of pelvic organ prolapse</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 5</p>
-                <h6 class="fw-normal text-center">Women experience chronic pelvic or sexual pain</h6>
+                <h6 class="fw-normal text-start text-lg-center text-md-center text-xl-center text-sm-start text-xs-start">Women experience chronic pelvic or sexual pain</h6>
             </div>
             <div class="main-section-box">
                 <div class="women-suffer">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <p class="fw-bold  pt-3 text-dark text-center">1 in 9</p>
-                <h6 class="fw-normal text-center">Women suffer with faecal incontinence</h6>
+                <h6 class="fw-normal text-start text-lg-center text-md-center text-xl-center text-sm-start text-xs-start">Women suffer with faecal incontinence</h6>
             </div>
         </div>
 

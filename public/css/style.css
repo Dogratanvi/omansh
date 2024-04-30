@@ -309,7 +309,7 @@ button:focus {
 .navbar-nav .nav-item .contact_us{
     background-color:  #CAA983;
     color: var(--e-global-color-accent) !important;
-    padding: 20px 50px;
+    padding: 16px 35px;
     text-align: center;
     font-size: 16px;
     text-transform: capitalize;
@@ -325,9 +325,7 @@ button:focus {
     color: var(--e-global-color-primary) !important;
     background-color: var(--e-global-color-white);
 }
-.home-btn a{
-    margin-left: 10px !important;
-}
+
 .our_specialties_section .nav-link:hover{
     color: #fff !important;
 }
@@ -338,6 +336,9 @@ button:focus {
     height: 350px;
     object-fit: cover;
 
+}
+.main-testimonial{
+    margin-bottom: 400px;
 }
 /* Home Page Social Icons Style */
 
@@ -767,7 +768,7 @@ button.custom-btn{
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 40px;
+    padding: 16px 35px;
     text-align: center;
     color: #fff;
     display: inline-block;
@@ -1247,7 +1248,7 @@ textarea {
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
-    padding: 20px 35px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-accent);
     display: inline-block;
@@ -1446,7 +1447,7 @@ a.all-event {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 36px;
+    padding: 16px 35px;
     text-align: center;
     color: #fff;
     display: inline-block;
@@ -1532,10 +1533,10 @@ a.all-event {
     border: none;
 }
 .subscribe_content button {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
     font-weight: 500;
-    padding: 20px 39px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
@@ -1619,6 +1620,11 @@ label.form-check-label {
 }
 section.women-health {
     padding-bottom: 80px;
+}
+.women-health .logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #text-box{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -2043,7 +2049,7 @@ background-color: #004B2A !important;
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 50px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-accent);
     display: inline-block;
@@ -2114,7 +2120,7 @@ background-color: #004B2A !important;
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 44px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
@@ -2188,7 +2194,7 @@ background-color: #004B2A !important;
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 44px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
@@ -2306,7 +2312,7 @@ background-color: #004B2A !important;
     font-size: 18px;
     line-height: 18px;
     font-weight: 500;
-    padding: 24px 40px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
@@ -2670,11 +2676,14 @@ display: none;
 textarea {
     overflow: auto;
 }
+a.contact_us:hover {
+    text-decoration: none;
+}
 .message_content button {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 44px;
+    padding: 18px 35px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
@@ -2792,7 +2801,7 @@ textarea {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 24px 44px;
+    padding: 16px 35px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
@@ -3078,5 +3087,9 @@ tbody .form-check-input {
 }
 .services_section{
     overflow: hidden;
+}
+.banner-section-content h1 span{
+    font-size: 40px;
+    text-align: center;
 }
 }

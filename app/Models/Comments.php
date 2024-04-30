@@ -26,44 +26,20 @@ class Comments extends Model
         'id' => 'integer',
         'deleted_at' => 'datetime',
     ];
-
-     /*
-     * Get the owning commentable model.
-     */
-    public function commentable()
-    {
-        return $this->morphTo();
-    }
-
-    public function getPostAttribute()
-    {
-        if ($this->commentable_type === 'App\Models\Blog') {
-            return $this->commentable;
-        }
-
-        return [];
-    }
+   
 
     public function setFeaturedImageAttribute($value)
     {
-        if( $this->attributes['featured_image'] == null)
+        if( $value != null)
         {
             $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
         }
     }
 
-    public function getModuleNameAttribute()
-    {
-        if ($this->commentable_type === 'App\Models\Blog') {
-            return 'posts';
-        }
 
-        return '';
-    }
-
-    public function parent()
+    public function replies()
     {
-        return $this->belongsTo('App\Models\Comment', 'parent_id');
+        return $this->hasMany('App\Models\Comments', 'parent_id')->where('status',1);
     }
 
 

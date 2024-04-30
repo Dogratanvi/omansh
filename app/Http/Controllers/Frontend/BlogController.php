@@ -24,6 +24,7 @@ class BlogController extends Controller
         return view('blog.create');
     }
 
+   
 
     public function show($id)
     {

@@ -31,10 +31,11 @@ class MailChimpController extends Controller
         \Log::info('MailChimp API Response: ' . json_encode($result));
 
         if ($result['status'] == 'subscribed') {
-            \Log::info('Setting success message');
+            \Log::info('Newsletter success message');
+
             return back()->with(['message' => ' Thank you, your sign-up request for newsletter was successful!']);
         } else {
-            \Log::info('Setting error message');
+            \Log::info('Newsletter error message');
             return back()->with(['message' => 'You Are already subscribed for newsletter']);
         }
     }

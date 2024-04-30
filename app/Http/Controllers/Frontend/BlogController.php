@@ -31,7 +31,8 @@ class BlogController extends Controller
       
         $slug = $blogs->slug;
         $settings = Setting::all();
-        return view('frontend.blog.show', compact('blogs', 'settings'));
+        $recents = Blog::where('status',1)->orderBy('created_at', 'desc')->get();
+        return view('frontend.blog.show', compact('blogs', 'settings','recents'));
     }
 
     public function next($id, $slug)

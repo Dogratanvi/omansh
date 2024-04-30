@@ -49,7 +49,7 @@
             <div id="blog" class="blogs three-column col-xl-12">
                 <div class="row">
                 @foreach ($blogs as $blog)
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-xs-12">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-xs-12 mt-3">
                         <div class="float-left w-100 post-item border mb-4">
                             <div class="post-item-wrap position-relative">
                                 <div class="post-image">

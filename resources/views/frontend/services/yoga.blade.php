@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="servicepage_aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('img/services/yoga-inner-page-image.png') }}"
+                    <figure class="mb-0"><img src="{{ asset('img/services/yoga-left.png') }}"
                             alt="service_women_health.png" class="img-fluid">
                     </figure>
 

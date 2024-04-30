@@ -120,7 +120,7 @@
                                         <input type="hidden" name="blog_id" value="{{ $blogs->id }}" />
                                     </div>
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-success" value="Add Comment" />
+                                        <input type="submit" class="btn comment-btn mt-3" value="Add Comment" />
                                     </div>
                                 </form>
                                 <!--comments-->
@@ -133,7 +133,7 @@
                     <!--single-post01-->
                 </div>
                 <!--col-->
-            </div>
+              
             <div class="sidebar sticky-sidebar col-lg-3">
                 <div class="theiaStickySidebar">
                     <div class="widget widget-newsletter">
@@ -157,14 +157,7 @@
                     <div class="widget">
                         <div class="tabs">
                             <ul class="nav nav-tabs" id="tabs-posts" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#popular"
-                                        role="tab" aria-controls="popular" aria-selected="true">Popular</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#featured" role="tab"
-                                        aria-controls="featured" aria-selected="false">Featured</a>
-                                </li>
+                         
                                 <li class="nav-item">
                                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#recent" role="tab"
                                         aria-controls="recent" aria-selected="false">Recent</a>
@@ -175,39 +168,20 @@
                                 <div class="tab-pane fade show active" id="popular" role="tabpanel">
                                     <div class="post-thumbnail-list">
                                         <div class="post-thumbnail-entry">
-
+                                            @foreach($recents as $recent)
                                             <img data-aos="fade-up" alt="pregency-affect.png"
-                                                src="{{ asset('img/pregnency-affect.webp') }}">
+                                                src="{{asset($recent->featured_image)}}">
                                             <div class="post-thumbnail-content">
-                                                <a href="#">A true story, that never been told!</a>
-                                                <span class="post-date"><i class="far fa-clock"></i> 6m ago</span>
-                                                <span class="post-category"><i class="fa fa-tag"></i> Technology</span>
+                                                <a href="{{ route('frontend.blog.show',  ['id' => $recent->id, 'slug' => $recent->slug]) }}">{{$recent->title}}</a>
+                                                <span class="post-date"><i class="fa fa-tag"></i>{{$recent->category}}</span>
+                                                <span class="post-category mb-3"><i class="far fa-clock"></i>{{ date('M d, Y', strtotime($recent->created_at)) }}</span>
                                                 <!--post-thumbnail-content-->
                                             </div>
                                             <!--post-thumbnail-entry-->
+                                            @endforeach
                                         </div>
-                                        <div class="post-thumbnail-entry">
-                                            <img data-aos="fade-up" alt="pregency-affect.png"
-                                                src="{{ asset('img/pregnency-affect.webp') }}">
-                                            <div class="post-thumbnail-content">
-                                                <a href="#">Beautiful nature, and rare feathers!</a>
-                                                <span class="post-date"><i class="far fa-clock"></i> 24h ago</span>
-                                                <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
-                                                <!--post-thumbnail-content-->
-                                            </div>
-                                            <!--post-thumbnail-entry-->
-                                        </div>
-                                        <div class="post-thumbnail-entry">
-                                            <img data-aos="fade-up" alt="pregency-affect.png"
-                                                src="{{ asset('img/pregnency-affect.webp') }}">
-                                            <div class="post-thumbnail-content">
-                                                <a href="#">The most happiest time of the day!</a>
-                                                <span class="post-date"><i class="far fa-clock"></i> 11h ago</span>
-                                                <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
-                                                <!--post-thumbnail-content-->
-                                            </div>
-                                            <!--post-thumbnail-entry-->
-                                        </div>
+                                
+                             
                                         <!--post-thumbnail-list-->
                                     </div>
                                     <!--tab-pane-->
@@ -345,9 +319,9 @@
                     <div class="widget widget-tags">
                         <h4 class="widget-title font_weight_600">Tags</h4>
                         <div class="tags">
-                            <a href="#">WOMEN HEALTH</a>
-                            <a href="#">YOGA</a>
-                            <a href="#">PHYSIOTHERAPY</a>
+                            <a >WOMEN HEALTH</a>
+                            <a>YOGA</a>
+                            <a>PHYSIOTHERAPY</a>
                             
                             <!--tags-->
                         </div>

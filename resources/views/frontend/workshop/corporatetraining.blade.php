@@ -21,7 +21,7 @@
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    Corporatetraining</span>
+                                    Corporate Training</span>
                             </div>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
     </div>
 </section>
 <!-- gallary -->
-<section class="pb-3 aboutus_content gallery-section">
+<section class="pb-3 pt-4 aboutus_content gallery-section">
     <div class="container">
         <h2 class="text-center">Corporate Training Gallery</h2>
         <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
@@ -272,7 +272,7 @@
 </section>
 
 <!-- Testimonial -->
-<section class="our_specialties_section">
+<section class="our_specialties_section main-testimonial">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -280,7 +280,7 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.</p>
                 </div>
             </div>
         </div>
@@ -310,7 +310,7 @@
     </div>
 </section>
 <!-- discount-section -->
-<section class="aboutus_section discount-section">
+<!-- <section class="aboutus_section discount-section">
     <div class="container d-flex align-items-center justify-content-center">
         <div class="discount-box">
             <h2 class="text-center">Get 10% Discount For Yoga Training
@@ -323,7 +323,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
     aria-labelledby="deleteLineItemModal" aria-hidden="true">

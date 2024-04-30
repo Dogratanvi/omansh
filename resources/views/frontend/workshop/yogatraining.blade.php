@@ -13,14 +13,15 @@
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Yoga Training</h1>
                             <div class="row justify-content-center">
-                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, Elevate Your Practice with Our Yoga Training Program</p>
+                                <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
+                                    <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, and
+                                        Elevate Your Practice with Our Yoga Training Program.</p>
                                 </div>
-                        </div>
+                            </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    Yogatraining</span>
+                                    Yoga Training</span>
                             </div>
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                     <h5>YOGA TRAINING</h5>
                     <h2> {!! $workshops[1]->name!!}</h2>
                     <div> {!! $workshops[1]->content!!} </div>
-               
+
 
                     <div class="btn_wrapper main-btn">
                         <a href="/contact" class="text-decoration-none read_more_btn">Enroll Now</a>
@@ -82,21 +83,28 @@
 
 <section class="pb-3  program ">
     <div class="container">
-        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start"> {!! $workshops[2]->name!!}</h2>
-        <div class="row justify-content-sm-start justify-content-xs-start justify-content-start justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
-                        <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
-        <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Embark on a Journey of self-discovery, yogaguru's yoga teacher training program welcomes seekers of transformation
-        </p>     </div>
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start"> {!!
+            $workshops[2]->name!!}</h2>
+        <div
+            class="row justify-content-sm-start justify-content-xs-start justify-content-start justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
+            <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
+                <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Embark on
+                    a Journey of self-discovery, yogaguru's yoga teacher training program welcomes seekers of
+                    transformation.
+                </p>
             </div>
+        </div>
         <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
-        <div> {!! $workshops[2]->content!!} </div>
-    </div>
+            <div> {!! $workshops[2]->content!!} </div>
+        </div>
 </section>
 <!-- gallary -->
 <section class="pb-3 pt-sm-3 pt-xs-3 pt-3 pt-md-4 pt-xl-5 pt-lg-5 pt-xxl-5 aboutus_content ">
     <div class="container">
-        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training Gallery</h2>
-        <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training
+            Gallery</h2>
+        <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Duis aute irure
+            dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
             exercitation
         </p>
         <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
@@ -143,45 +151,44 @@
 </section>
 
 <!-- Testimonial -->
-<section class="our_specialties_section ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="our_specialties_heading_content">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="our_specialties_heading_content">
 
-                    <h2> Testimonial
-                    </h2>
-                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
-                </div>
+                <h2> Testimonial
+                </h2>
+                <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.</p>
             </div>
         </div>
-        <div class="row pt-4" id="data">
-                    @foreach ($testimonials as $testimonial)
-                    @if($testimonial->category == "yoga")
-                    <div class="col-md-3 pt-3 content">
-
-                        <div class="card border-0 videoCard">
-                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
-                                data-toggle="modal" data-target="#deleteLineItemModal">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <img class="loads" src="{{$testimonial->featured_image }}"
-                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
-
-                        </div>
-                    </div>
-
-                    @endif
-                    @endforeach
-                </div>
-    
     </div>
-    <div class="btn_wrapper d-flex justify-content-center mt-5">
-                    <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
-                </div>
+    <div class="row pt-4" id="data">
+        @foreach ($testimonials as $testimonial)
+        @if($testimonial->category == "yoga")
+        <div class="col-md-3 pt-3 content">
+
+            <div class="card border-0 videoCard">
+                <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}" data-toggle="modal"
+                    data-target="#deleteLineItemModal">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <img class="loads" src="{{$testimonial->featured_image }}" class="play-btn btn-watch-video w-100"
+                    alt="thumbnail" />
+
+            </div>
+        </div>
+
+        @endif
+        @endforeach
+    </div>
+
+</div>
+<div class="btn_wrapper d-flex justify-content-center mt-5">
+    <a href="#" id="loadMore" class="text-decoration-none get_started_btn"> Load More </a>
+</div>
 </section>
 <!-- discount-section -->
-<section class="aboutus_section discount-section">
+<!-- <section class="aboutus_section discount-section">
     <div class="container d-flex align-items-center justify-content-center">
         <div class="discount-box">
             <h2 class="text-center">Get 10% Discount For Yoga Training
@@ -194,7 +201,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
     aria-labelledby="deleteLineItemModal" aria-hidden="true">

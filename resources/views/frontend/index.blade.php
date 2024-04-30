@@ -16,11 +16,11 @@
                         <h1 class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">OMANSH <br> <span class="ityped"></span></h1>
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for
-                            Personalized Physiotherapy, Yoga, and Women's Health Care! </p>
+                            data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's Health Care,
+                            Personalized Physiotherapy, and Yoga ! </p>
                         <div class="btn_wrapper home-btn text-white fw-bolder text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">
-                            Connect with us<a href="./contact" class="text-decoration-none me-2"><i
+                           <a href="./contact" class="text-decoration-none"><i
                                     class="fa-solid fa-arrow-right" aria-hidden="true"> </i></a>
                         </div>
 
@@ -92,7 +92,7 @@
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
                     <h2>Our Services</h2>
-                    <p class="text-center">Explore a spectrum of services dedicated to your health and well-being</p>
+                    <p class="text-center">Explore a spectrum of services dedicated to your health and well-being.</p>
                 </div>
             </div>
 
@@ -182,7 +182,7 @@
                 <div class="our_specialties_heading_content">
 
                     <h2>Why Choose Us</h2>
-                    <p class="text-center">Empowering your health journey with compassion and expertise</p>
+                    <p class="text-center">Empowering your health journey with compassion and expertise.</p>
                 </div>
             </div>
         </div>
@@ -306,6 +306,8 @@
                                         <option value="women_health">Women Health</option>
                                         <option value="physiotherapy">Physiotherapy</option>
                                         <option value="yoga">Yoga</option>
+                                        <option value="yoga">Corporate Training</option>
+                                            <option value="yoga">Yoga Training</option>
                                     </select>
 
                                 </div>
@@ -364,7 +366,7 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.</p>
                 </div>
             </div>
         </div>
@@ -514,7 +516,7 @@
                 <div class="blog_posts_content">
 
                     <h2>Blog & News</h2>
-                    <p class="text-center">Stay informed and inspired - our latest insights and updates</p>
+                    <p class="text-center">Stay informed and inspired - our latest insights and updates.</p>
                 </div>
             </div>
         </div>
@@ -530,7 +532,7 @@
                         <span>{{$blog->category}}</span>
                         <h4>{{ $blog->title}}</h4>
                         <div class="icon_wrapper">
-                            
+                           
                             <a href="{{ route('frontend.blog.show', ['id' => $blog->id, 'slug' => $blog->slug]) }}" class="text-decoration-none"><i
                                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>

@@ -80,6 +80,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
      //  blog
      Route::get('blog', 'BlogController@index')->name('blog.index');
      Route::get('blog/{id}', 'BlogController@show')->name('blog.show');
+     Route::get('blog/{blogs}/next', 'BlogController@next')->name('blogs.next');
+    Route::get('blog/{blogs}/previous', 'BlogController@previous')->name('blogs.previous');
 
 
   

@@ -64,7 +64,7 @@
                                     <!-- <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
                                             Comments</a></span> -->
                                     <span class="post-meta-category"><i class="fa fa-tag"></i>Yoga</span>
-                                            <span class="post-meta-category"><i class="fa-solid fa-eye"></i>343</span>
+                                            <span class="post-meta-category"><i class="fa-solid fa-eye"></i>{{ $blogs->page_views }}</span>
                                     <div class="post-meta-share float-right">
                                         <ul class="list-unstyled m-0">
                                             <li class="d-inline-block align-top"><a href="#">
@@ -95,17 +95,17 @@
                             </div>
 
                             <div class="post-navigation">
-                                <a href="#" class="post-prev">
+                                <a href="{{ route('frontend.blogs.previous', $blogs) }}" class="post-prev">
                                     <div class="post-prev-title"><span>Previous Post</span></div>
                                 </a>
-                                <a href="#" class="post-next">
+                                <a href="{{ route('frontend.blogs.next', $blogs) }}" class="post-next">
                                     <div class="post-next-title"><span>Next Post</span></div>
                                 </a>
                                 <!--post-navigation-->
                             </div>
                             <div class="comments" id="comments">
                                 <div class="comment_number text-uppercase font_weight_600">
-                                    Comments <span>(2)</span>
+                                    Comments <span>({{ $blogs->comments->count()}})</span>
                                     <!--comment_number-->
                                 </div>
                                 <div class="comment-list">

@@ -61,7 +61,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/womenhealth', 'ServicesController@womenhealth')->name('services.womenhealth');
     Route::get('services/yoga', 'ServicesController@yoga')->name('services.yoga');
 
-    Route::get('blogPost/{id}', 'BlogController@blogPost')->name('blogPost');
 
     Route::post('comments', 'CommentController@store')->name('comments');
     Route::get('comments/{id}', 'CommentController@index');

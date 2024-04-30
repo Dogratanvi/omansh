@@ -7,6 +7,7 @@ use App\Models\Service;
 use App\Models\AboutOmansh;
 use App\Models\Setting;
 use App\Models\Testimonial;
+use App\Models\Blog;
 
 class FrontendController extends Controller
 {
@@ -27,9 +28,11 @@ class FrontendController extends Controller
         $services = Service::all();
         $settings = Setting::all();
         $testimonials = Testimonial::all();
+        $blogs = Blog::where('status',1)->get()->take(2);
+      
 
 
-        return view('frontend.index', compact('services', 'settings', 'testimonials'));
+        return view('frontend.index', compact('services', 'settings', 'testimonials','blogs'));
     }
 
     public function about()
@@ -52,6 +55,7 @@ class FrontendController extends Controller
     public function blog()
     {
         $settings = Setting::all();
+       
         return view('frontend.blog', compact('settings'));
     }
     public function blogdetail()

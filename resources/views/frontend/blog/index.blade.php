@@ -19,7 +19,7 @@
                                 wisdom, where each post illuminates pathways to a healthier, more vibrant life.</p>    </div>
                         </div>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span">Blog</span>
                             </div>
                         </div>
@@ -43,10 +43,10 @@
 </div>
 <!-- MAIN SECTION -->
 <!--End Slider Section-->
-<section class="blog-posts">
+<section class="blog-posts main-blog">
     <div class="container">
         <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div id="blog" class="three-column col-xl-12">
+            <div id="blog" class="blogs three-column col-xl-12">
                 <div class="row">
                 @foreach ($blogs as $blog)
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-xs-12">
@@ -63,12 +63,12 @@
                                 </div>
                                 <div class="post-item-description">
                                     <span class="post-meta-date">
-                                        <i class="fa fa-calendar-o"></i>{{ $blog->created_at}}</span>
-                                    <span class="post-meta-comments">
+                                        <i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blog->created_at)) }}</span>
+                                    <!-- <span class="post-meta-comments">
                                         <a href="{{ route('frontend.blog.show', $blog->id) }}"><i class="fa fa-comments-o"></i>33 Comments</a>
-                                    </span>
+                                    </span> -->
                                     <h2>
-                                        <a href="#">{{ $blog->title}}
+                                        <a href="{{ route('frontend.blog.show', $blog->id) }}">{{ $blog->title}}
                                         </a>
                                     </h2>
                                     <p>{{ $blog->intro}}</p>

@@ -66,7 +66,7 @@
             </div>
 
             <div class="py-5">
-                {{-- @include('frontend.blocks.comments') --}}
+                @include('frontend.block.comments',['comments' => $blogs->comments, 'blog_id' => $blogs->id])
             </div>
         </div>
     </div>

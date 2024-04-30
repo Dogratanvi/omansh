@@ -12,9 +12,7 @@
                             <h1 data-aos="fade-up">Events</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit in
-                                volurate velit cillum
-                                nulla pariatur nostrud exercitation.</p>   </div>
+                            <p class="text-center" data-aos="fade-right">Transform Your Body and Mind: Attend Our Health and Fitness Events.</p>   </div>
                         </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"

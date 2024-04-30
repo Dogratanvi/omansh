@@ -306,6 +306,8 @@
                                         <option value="women_health">Women Health</option>
                                         <option value="physiotherapy">Physiotherapy</option>
                                         <option value="yoga">Yoga</option>
+                                        <option value="yoga">Corporate Training</option>
+                                            <option value="yoga">Yoga Training</option>
                                     </select>
 
                                 </div>

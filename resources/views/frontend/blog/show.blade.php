@@ -13,7 +13,7 @@
                             <h1 data-aos="fade-up" class="text-start"> {{ $blogs->title }}</h1>
                             <div class="row">
 
-                               
+
                             </div>
                         </div>
 
@@ -46,9 +46,9 @@
                     <div class="post-item">
                         <div class="post-item-wrap">
                             <div class="post-image" data-aos="fade-up">
-                                
-                                    <img alt="pregency-affect.png" src="{{asset($blogs->featured_image)}}">
-                               
+
+                                <img alt="pregency-affect.png" src="{{asset($blogs->featured_image)}}">
+
                                 <!--post-image-->
                             </div>
                             <div class="btn_wrapper pt-4">
@@ -60,38 +60,40 @@
                                 </span>
                             </div>
                             <div class="post-meta pt-3">
-                                    <span class="post-meta-date color01"><i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blogs->created_at)) }}</span>
-                                    <!-- <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
+                                <span class="post-meta-date color01"><i
+                                        class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blogs->created_at)) }}</span>
+                                <!-- <span class="post-meta-comments "><a href=""><i class="fa fa-comments-o"></i>33
                                             Comments</a></span> -->
-                                    <span class="post-meta-category"><i class="fa fa-tag"></i>Yoga</span>
-                                            <span class="post-meta-category"><i class="fa-solid fa-eye"></i>343</span>
-                                    <div class="post-meta-share float-right">
-                                        <ul class="list-unstyled m-0">
-                                            <li class="d-inline-block align-top"><a href="#">
-                                                    <i class="fab fa-facebook-square"></i>
-                                                </a></li>
-                                            <li class="d-inline-block align-top"><a href="#">
-                                                    <i class="fab fa-twitter-square"></i>
-                                                </a></li>
-                                            <li class="d-inline-block align-top"><a href="#">
-                                                    <i class="fab fa-instagram"></i>
-                                                </a></li>
-                                            <li class="d-inline-block align-top"><a href="#">
-                                                    <i class="fas fa-envelope-square"></i>
-                                                </a></li>
-                                        </ul>
-                                        <!--post-meta-share-->
-                                    </div>
-                            <div class="post-item-description">
-                                <h2 class="single-post-heading font_weight_600">{{ $blogs->title}}</h2>
-                                <div>{!!$blogs->content!!}
-                              
-
+                                <span class="post-meta-category"><i class="fa fa-tag"></i>Yoga</span>
+                                <span class="post-meta-category"><i
+                                        class="fa-solid fa-eye"></i>{{$blogs->page_views}}</span>
+                                <div class="post-meta-share float-right">
+                                    <ul class="list-unstyled m-0">
+                                        <li class="d-inline-block align-top"><a href="#">
+                                                <i class="fab fa-facebook-square"></i>
+                                            </a></li>
+                                        <li class="d-inline-block align-top"><a href="#">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </a></li>
+                                        <li class="d-inline-block align-top"><a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a></li>
+                                        <li class="d-inline-block align-top"><a href="#">
+                                                <i class="fas fa-envelope-square"></i>
+                                            </a></li>
+                                    </ul>
+                                    <!--post-meta-share-->
                                 </div>
+                                <div class="post-item-description">
+                                    <h2 class="single-post-heading font_weight_600">{{ $blogs->title}}</h2>
+                                    <div>{!!$blogs->content!!}
+
+
+                                    </div>
                                     <!--post-meta-->
                                 </div>
-                         
-                                    <!--post-item-description-->
+
+                                <!--post-item-description-->
                             </div>
 
                             <div class="post-navigation">
@@ -109,23 +111,156 @@
                                     <!--comment_number-->
                                 </div>
                                 <div class="comment-list">
-                                    @include('frontend.block.comments', ['comments' => $blogs->comments, 'blog_id' => $blogs->id])
+                                    <div class="comment" id="comment-1">
+                                        <div class="image" data-aos="flip-left"><img alt=""
+                                                src="{{ asset('img/comment.png') }}" class="avatar"></div>
+                                        <div class="text">
+                                            <h5 class="name font_weight_700">John Doe</h5>
+                                            <span class="comment_date">Posted at 15:32h, 06 December</span>
+                                            <a class="comment-reply-link" href="#">Reply</a>
+                                            <div class="text_holder">
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text
+                                                    ever since the 1500s, when an unknown printer took a galley of type
+                                                    and scrambled it to make a type specimen book. It has survived not
+                                                    only five centuries, but also the leap into electronic typesetting,
+                                                    remaining essentially unchanged. It was popularised in the 1960s
+                                                    with the release of Letraset sheets containing Lorem Ipsum passages,
+                                                    and more recently with desktop publishing software like Aldus
+                                                    PageMaker including versions of Lorem Ipsum.</p>
+                                                <!--text_holder-->
+                                            </div>
+                                            <!--text-->
+                                        </div>
+                                        <div class="comment" id="comment-1-1">
+                                            <div class="image" data-aos="flip-left"><img alt=""
+                                                    src="{{ asset('img/comment.png') }}" class="avatar"></div>
+                                            <div class="text">
+                                                <h5 class="name font_weight_700">John Doe</h5>
+                                                <span class="comment_date">Posted at 15:32h, 06 December</span>
+                                                <a class="comment-reply-link" href="#">Reply</a>
+                                                <div class="text_holder">
+                                                    <p>It is a long established fact that a reader will be distracted by
+                                                        the readable content of a page when looking at its layout. The
+                                                        point of using Lorem Ipsum is that it has a more-or-less normal
+                                                    </p>
+                                                    <!--text_holder-->
+                                                </div>
+                                                <!--text-->
+                                            </div>
+                                            <!--comment-->
+                                        </div>
+                                        <div class="comment" id="comment-1-2">
+                                            <div class="image" data-aos="flip-left"><img alt=""
+                                                    src="{{ asset('img/comment.png') }}" class="avatar"></div>
+                                            <div class="text">
+                                                <h5 class="name font_weight_700">John Doe</h5>
+                                                <span class="comment_date">Posted at 15:32h, 06 December</span>
+                                                <a class="comment-reply-link" href="#">Reply</a>
+                                                <div class="text_holder">
+                                                    <p>There are many variations of passages of Lorem Ipsum available,
+                                                        but the majority have suffered alteration in some form, by
+                                                        injected humour, or randomised words which don't look even
+                                                        slightly believable. If you are going to use a passage of Lorem
+                                                        Ipsum, you need to be sure there isn't anything embarrassing
+                                                        hidden in the middle of text. </p>
+                                                    <!--text_holder-->
+                                                </div>
+                                                <!--text-->
+                                            </div>
+                                            <!--comment-->
+                                        </div>
+                                        <!--comment-->
+                                    </div>
+                                    <div class="comment" id="comment-2">
+                                        <div class="image" data-aos="flip-left"><img alt=""
+                                                src="{{ asset('img/comment.png') }}" class="avatar"></div>
+                                        <div class="text">
+                                            <h5 class="name font_weight_700">John Doe</h5>
+                                            <span class="comment_date">Posted at 15:32h, 06 December</span>
+                                            <a class="comment-reply-link" href="#">Reply</a>
+                                            <div class="text_holder">
+                                                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                                                    below for those interested. Sections 1.10.32 and 1.10.33 from "de
+                                                    Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+                                                    exact original form, accompanied by English versions from the 1914
+                                                    translation by H. Rackham.</p>
+                                                <!--text_holder-->
+                                            </div>
+                                            <!--text-->
+                                        </div>
+                                        <!--comment-->
+                                    </div>
+                                    <!--comment-list-->
                                 </div>
-                                <hr />
-                                <h4>Add comment</h4>
-                                <form method="post" action="{{ url('comments') }}">
-                                    @csrf
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="body"></textarea>
-                                        <input type="hidden" name="blog_id" value="{{ $blogs->id }}" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" class="btn btn-success" value="Add Comment" />
-                                    </div>
-                                </form>
                                 <!--comments-->
                             </div>
-                          
+                            <div class="respond-form" id="respond">
+                                <div class="respond-comment text-uppercase font_weight_600">
+                                    Leave a <span>Comment</span>
+                                    <!--respond-comment-->
+                                </div>
+                                <form class="form-gray-fields">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="upper font_weight_600" for="name">Name</label>
+                                                <input class="form-control required" name="senderName"
+                                                    placeholder="Enter name" id="name" aria-required="true" type="text">
+                                                <!--form-group-->
+                                            </div>
+                                            <!--col-->
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="upper font_weight_600" for="email">Email</label>
+                                                <input class="form-control required email" name="senderEmail"
+                                                    placeholder="Enter email" id="email" aria-required="true"
+                                                    type="email">
+                                                <!--form-group-->
+                                            </div>
+                                            <!--col-->
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="upper font_weight_600" for="website">Phone</label>
+                                                <input class="form-control website" name="senderWebsite"
+                                                    placeholder="Enter Phone" id="phone" aria-required="false"
+                                                    type="Number">
+                                                <!--form-group-->
+                                            </div>
+                                            <!--col-->
+                                        </div>
+                                        <!--row-->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label class="upper font_weight_600" for="comment">Your comment</label>
+                                                <textarea class="form-control required" name="comment" rows="9"
+                                                    placeholder="Enter comment" id="comment"
+                                                    aria-required="true"></textarea>
+                                                <!--form-group-->
+                                            </div>
+                                            <!--col-->
+                                        </div>
+                                        <!--row-->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group text-center">
+                                                <button class="comment-btn mt-5 border-0" type="submit">Submit
+                                                    Comment</button>
+                                                <!--form-group-->
+                                            </div>
+                                            <!--col-->
+                                        </div>
+                                        <!--row-->
+                                    </div>
+                                    <!--form-gray-fields-->
+                                </form>
+                                <!--respond-form-->
+                            </div>
                             <!--post-item-wrap-->
                         </div>
                         <!--post-item-->
@@ -348,7 +483,7 @@
                             <a href="#">WOMEN HEALTH</a>
                             <a href="#">YOGA</a>
                             <a href="#">PHYSIOTHERAPY</a>
-                            
+
                             <!--tags-->
                         </div>
                         <!--widget-->

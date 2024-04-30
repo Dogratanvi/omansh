@@ -53,12 +53,16 @@
                     <div class="row pt-3">
                         <div class="col-md-6">
                             <h6>
-                                Dr. GARIMA BISWAS (PT)<br> Founder Director - OMANSH</h6>
+                                Dr. GARIMA BISWAS (PT)</h6>
+                            <h6>
+                                Consultant Physiotherapist Founder of Omansh Health and Fitness Obstetrics and Pelvic
+                                Floor Rehab Therapist Labor and Child Birth Educator
+                            </h6>
                         </div>
                         <div class="col-md-6 ">
                             <div
                                 class="social-icons d-flex justify-content-start justify-content-xs-start justify-content-sm-start justify-content-xl-center justify-content-md-center justify-content-lg-center align-items-center h-100 w-100">
-                                <a href=""> <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                <a href="https://www.facebook.com/profile.php?id=100018350377507" target="_blank"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_804_2)">
                                             <path
@@ -75,8 +79,8 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <a href="">  <img class="ps-3  pe-3"  src="{{ asset('img/instagram.png') }}"></a> 
-                                <a href=""> <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                <a href="https://www.instagram.com/dr_garima_biswas?igsh=MmdtemZta29vMHZp" target="_blank"> <img class="ps-3  pe-3" src="{{ asset('img/instagram.png') }}"></a>
+                                <a href="https://www.linkedin.com/in/dr-garima-biswas-aa415b235/" target="_blank"> <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_804_5)">
                                             <path

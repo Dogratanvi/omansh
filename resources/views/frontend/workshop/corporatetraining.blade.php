@@ -21,7 +21,7 @@
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    Corporatetraining</span>
+                                    Corporate Training</span>
                             </div>
                         </div>
                     </div>
@@ -280,7 +280,7 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.</p>
                 </div>
             </div>
         </div>

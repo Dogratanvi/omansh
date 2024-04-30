@@ -1626,6 +1626,9 @@ section.women-health {
     align-items: center;
     justify-content: center;
 }
+.logo-box img{
+    text-align: center;
+}
 #text-box{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: none !important;

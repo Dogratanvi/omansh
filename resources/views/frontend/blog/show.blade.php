@@ -113,7 +113,7 @@
                                 </div>
                                 <hr />
                                 <h4>Add comment</h4>
-                                <form method="post" action="{{ url('store'SS) }}">
+                                <form method="post" action="{{ url('store') }}">
                                     @csrf
                                     <div class="form-group">
                                         <textarea class="form-control" name="body"></textarea>

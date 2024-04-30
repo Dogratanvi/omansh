@@ -1949,7 +1949,9 @@
   .contact_subscribe_section {
     margin-top: -272px;
   }
-
+  .post-item-description p {
+    height: auto;
+}
   .blog-posts {
     padding: 70px 0 45px;
   }

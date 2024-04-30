@@ -532,7 +532,7 @@
                         <span>{{$blog->category}}</span>
                         <h4>{{ $blog->title}}</h4>
                         <div class="icon_wrapper">
-                            
+                           
                             <a href="{{ route('frontend.blog.show', ['id' => $blog->id, 'slug' => $blog->slug]) }}" class="text-decoration-none"><i
                                     class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>

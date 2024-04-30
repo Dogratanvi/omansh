@@ -133,7 +133,7 @@
                     <!--single-post01-->
                 </div>
                 <!--col-->
-            </div>      </div> </div>
+              
             <div class="sidebar sticky-sidebar col-lg-3">
                 <div class="theiaStickySidebar">
                     <div class="widget widget-newsletter">
@@ -168,16 +168,17 @@
                                 <div class="tab-pane fade show active" id="popular" role="tabpanel">
                                     <div class="post-thumbnail-list">
                                         <div class="post-thumbnail-entry">
-
+                                            @foreach($recents as $recent)
                                             <img data-aos="fade-up" alt="pregency-affect.png"
-                                                src="{{ asset('img/pregnency-affect.webp') }}">
+                                                src="{{asset($recent->featured_image)}}">
                                             <div class="post-thumbnail-content">
-                                                <a href="#">A true story, that never been told!</a>
-                                                <span class="post-date"><i class="far fa-clock"></i> 6m ago</span>
-                                                <span class="post-category"><i class="fa fa-tag"></i> Technology</span>
+                                                <a href="{{ route('frontend.blog.show',  ['id' => $recent->id, 'slug' => $recent->slug]) }}">{{$recent->title}}</a>
+                                                <span class="post-date"><i class="fa fa-tag"></i>{{$recent->category}}</span>
+                                                <span class="post-category mb-3"><i class="far fa-clock"></i>{{ date('M d, Y', strtotime($recent->created_at)) }}</span>
                                                 <!--post-thumbnail-content-->
                                             </div>
                                             <!--post-thumbnail-entry-->
+                                            @endforeach
                                         </div>
                                 
                              

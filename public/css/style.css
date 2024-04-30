@@ -2944,7 +2944,9 @@ a.contact_us:hover {
         background-image: url('../img/blog.png');
    
 }
-
+.post-item-description p {
+    height: 141px;
+}
 .blog-posts {
     padding: 120px 0 130px;
 }

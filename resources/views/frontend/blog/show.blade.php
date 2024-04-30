@@ -112,6 +112,18 @@
                                 <div class="comment-list">
                                     @include('frontend.block.comments', ['comments' => $blogs->comments, 'blog_id' => $blogs->id])
                                 </div>
+                                <hr />
+                                <h4>Add comment</h4>
+                                <form method="post" action="{{ url('store'SS) }}">
+                                    @csrf
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="body"></textarea>
+                                        <input type="hidden" name="post_id" value="{{ $blog->id }}" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-success" value="Add Comment" />
+                                    </div>
+                                </form>
                                 <!--comments-->
                             </div>
                           

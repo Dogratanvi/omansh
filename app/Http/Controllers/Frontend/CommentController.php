@@ -34,12 +34,26 @@ class CommentController extends Controller
     $name = "Guest" . rand(2,100);
     $comment = Comments::where('user_ip',$request->ip())->first();
     
-    if($comment !== null)
+    if($comment == null)
     {
         $input['user_ip'] = $request->ip();
          $input['user_name'] = $name;
-    }
+         
       $input['status'] = 0;
+       Comments::create($input);
+
+        return back();
+    }else{
+        
+         $input['user_ip'] = $comment->user_ip;
+         $input['user_name'] = $comment->user_name;
+         
+      $input['status'] = 0;
+         Comments::create($input);
+
+        return back();
+    }
+    
         // $input['user_id'] = auth()->user()->id;
 
 

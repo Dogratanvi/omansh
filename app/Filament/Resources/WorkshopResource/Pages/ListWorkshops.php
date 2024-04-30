@@ -13,7 +13,9 @@ class ListWorkshops extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+            ->label('Add Workshop')
+            ->icon('heroicon-s-plus'),
         ];
     }
 }

@@ -29,9 +29,6 @@ class ContactResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('uuid')
-                    ->label('UUID')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('first_name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('last_name')
@@ -42,8 +39,6 @@ class ContactResource extends Resource
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('service')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('message')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),

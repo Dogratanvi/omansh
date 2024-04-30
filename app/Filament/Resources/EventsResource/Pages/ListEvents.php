@@ -13,7 +13,9 @@ class ListEvents extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+            ->label('Add Event')
+            ->icon('heroicon-s-plus'),
         ];
     }
 }

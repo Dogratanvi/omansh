@@ -13,7 +13,9 @@ class ListSliders extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+            ->label('Add Slider')
+            ->icon('heroicon-s-plus'),
         ];
     }
 }

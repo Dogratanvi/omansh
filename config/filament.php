@@ -70,5 +70,12 @@ return [
     */
 
     'livewire_loading_delay' => 'default',
+    'layout' => [
+        'notifications' => [
+            'vertical_alignment' => 'top',
+            'alignment' => 'center',
+        ],
+    ],
+
 
 ];

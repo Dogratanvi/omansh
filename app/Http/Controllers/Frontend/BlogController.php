@@ -9,11 +9,24 @@ use App\Models\Setting;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+use Artesaos\SEOTools\Facades\JsonLdMulti;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 class BlogController extends Controller
 {
     public function index(Request $request): View
     {
+        SEOTools::setTitle("OMANSH Health & Fitness - Women's Health, Physiotherapy, Yoga");
+        SEOTools::setDescription("Specialized women's health services, physiotherapy, & rejuvenating yoga sessions at Omansh Health & Fitness.");
+        SEOTools::opengraph()->setUrl('https://omansh.org/');
+        SEOTools::setCanonical('https://omansh.org/');
+        SEOTools::opengraph()->addProperty('type', 'home');
+        SEOTools::jsonLd()->addImage('https://omansh.org/img/logo.png');
+
         $blogs = Blog::all();
         $settings = Setting::all();
         return view('frontend.blog.index', compact('blogs', 'settings'));

@@ -8,6 +8,12 @@ use App\Models\AboutOmansh;
 use App\Models\Setting;
 use App\Models\Testimonial;
 use App\Models\Blog;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+use Artesaos\SEOTools\Facades\JsonLdMulti;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 class FrontendController extends Controller
 {
@@ -24,6 +30,12 @@ class FrontendController extends Controller
      */
     public function index()
     {
+        SEOTools::setTitle("OMANSH Health & Fitness - Women's Health, Physiotherapy, Yoga");
+        SEOTools::setDescription("Specialized women's health services, physiotherapy, & rejuvenating yoga sessions at Omansh Health & Fitness.");
+        SEOTools::opengraph()->setUrl('https://omansh.org/');
+        SEOTools::setCanonical('https://omansh.org/');
+        SEOTools::opengraph()->addProperty('type', 'home');
+        SEOTools::jsonLd()->addImage('https://omansh.org/img/logo.png');
  
         $services = Service::all();
         $settings = Setting::all();

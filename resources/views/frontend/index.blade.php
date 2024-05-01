@@ -1,5 +1,9 @@
 @extends('frontend.layouts.app')
 
+@section('head')
+{!! SEO::generate() !!}
+@endsection
+
 @section('content')
 
 <div class="banner-section-outer">

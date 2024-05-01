@@ -47,45 +47,51 @@ class FrontendController extends Controller
 
     public function about()
     {
+        $meta_page_type = 'about';
         $about_omanshes = AboutOmansh::all();
         $settings = Setting::all();
-             return view('frontend.about', compact('about_omanshes', 'settings'));
+             return view('frontend.about', compact('about_omanshes', 'settings','meta_page_type'));
     }
     public function contact()
     {
-   $settings = Setting::all();
-        return view('frontend.contact.create', compact('settings'));
+        $meta_page_type = 'contact';
+        $settings = Setting::all();
+        return view('frontend.contact.create', compact('settings','meta_page_type'));
     }
 
     public function servicedetail()
     {
-   $settings = Setting::all();
-        return view('frontend.servicedetail', compact('settings'));
+        $meta_page_type = 'service';
+        $settings = Setting::all();
+        return view('frontend.servicedetail', compact('settings','meta_page_type'));
     }
     public function blog()
     {
+        $meta_page_type = 'blog';
         $settings = Setting::all();
        
-        return view('frontend.blog', compact('settings'));
+        return view('frontend.blog', compact('settings','meta_page_type'));
     }
     public function blogdetail()
     {
+        $meta_page_type = 'blog';
         $settings = Setting::all();
-        return view('frontend.blogdetail', compact('settings'));
+        return view('frontend.blogdetail', compact('settings','meta_page_type'));
     }
    
 
     public function doctorworkshop()
     {
         $settings = Setting::all();
-        return view('frontend.doctorworkshop', compact('settings'));
+        $meta_page_type = '';
+        return view('frontend.doctorworkshop', compact('settings','meta_page_type'));
     }
 
 
     public function yogatraning()
     {
         $settings = Setting::all();
-        return view('frontend.yogatraining', compact('settings'));
+        return view('frontend.yogatraining', compact('settings','meta_page_type'));
     }
  
 

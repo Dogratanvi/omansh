@@ -13,7 +13,8 @@ class ServicesController extends Controller
     {
         $services = Service::all();
         $settings = Setting::all();
-        return view('frontend.services', compact('services', 'settings'));
+        $meta_page_type = 'service';
+        return view('frontend.services', compact('services', 'settings', 'meta_page_type'));
     }
     public function physiotherapy()
     {

@@ -14,7 +14,18 @@
     <!-- /SEO Ultimate -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
+    {!! SEOMeta::generate() !!}
+    {!! OpenGraph::generate() !!}
+    {!! Twitter::generate() !!}
+    {!! JsonLd::generate() !!}
+    // OR with multi
+    {!! JsonLdMulti::generate() !!}
 
+    <!-- OR -->
+    {!! SEO::generate() !!}
+
+    <!-- MINIFIED -->
+    {!! SEO::generate(true) !!}
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">

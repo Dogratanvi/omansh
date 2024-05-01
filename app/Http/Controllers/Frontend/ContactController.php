@@ -16,8 +16,9 @@ class ContactController extends Controller
 {
     public function create()
     {
+        $meta_page_type = 'contact';
         $settings = Setting::all();
-        return view('frontend.contact',compact( 'settings'));
+        return view('frontend.contact',compact( 'settings','meta_page_type'));
     }
 
     public function store(Request $request)

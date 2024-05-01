@@ -10,7 +10,7 @@
 
 
     <title>OMANSH Health & Fitness - Women's Health, Physiotherapy, Yoga</title>
-   
+    @include('frontend.includes.meta')
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
    

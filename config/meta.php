@@ -29,10 +29,28 @@ return
         'title' => "Empowering Women's Health | Physiotherapy | Yoga | OMANSH",
         'description' => "Elevate women's health with OMANSH-personalized physiotherapy and transformative yoga for holistic well-being and vitality. Discover empowerment today.",
         'keywords' => '',
+        'facebook' => [
+            'title' => "Empowering Women's Health | Physiotherapy | Yoga | OMANSH",
+            'description' =>"Elevate women's health with OMANSH-personalized physiotherapy and transformative yoga for holistic well-being and vitality. Discover empowerment today.",
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+
     ],
     'blog' => [
         'title' => 'Latest Blog | Wellness During Pregnancy | Yoga and Fitness',
         'description' => 'Dive into our latest blog, where we explore yoga, fitness, and best pregnancy wellness. Gain expert insights and valuable tips to enrich your journey.',
+        'keywords' => '',
+    ],
+    'contact' => [
+        'title' => 'Contact | Wellness During Pregnancy | Yoga and Fitness',
+        'description' =>"Specialized women's health services, physiotherapy, & rejuvenating yoga sessions at Omansh Health & Fitness.",
+        'keywords' => '',
+    ],
+    'workshop' => [
+        'title' => 'Workshop | Wellness During Pregnancy | Yoga and Fitness',
+        'description' =>"Specialized women's health services, physiotherapy, & rejuvenating yoga sessions at Omansh Health & Fitness.",
         'keywords' => '',
     ],
 

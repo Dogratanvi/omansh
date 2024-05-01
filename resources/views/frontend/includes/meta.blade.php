@@ -37,33 +37,84 @@ $meta_page_type = 'home';
 
 @case('about_us')
 {{-- Facebook Meta --}}
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="{{$$module_name_singular->published_at}}" />
-<meta property="article:modified_time" content="{{$$module_name_singular->updated_at}}" />
-<meta property="article:author" content="{{isset($$module_name_singular->created_by_alias)? $$module_name_singular->created_by_alias : $$module_name_singular->created_by_name}}" />
-<meta property="article:section" content="{{$$module_name_singular->category_name}}" />
-@foreach ($$module_name_singular->tags as $tag)
-<meta property="article:tag" content="{{$tag->name}}" />
-@endforeach
+<meta name="title" content="{{ config('meta.about.title') }}">
+<meta name="description" content="{{ config('meta.about.description')  }}">
+<meta name="keyword" content="{{config('meta.about.keywords')  }}">
+
+<!-- Facebook Meta -->
+<meta property="og:url" content="{{url()->full()}}" />
+<meta property="og:title" content="{{ config('meta.about.facebook.title') }}" />
+<meta property="og:site_name" content="{{ config('meta.about.facebook.site_name')  }}" />
+<meta property="og:description" content="{{  config('meta.about.facebook.description') }}" />
+<meta property="og:image" content="{{  config('meta.about.facebook.image_name') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 
 @break
 
 @case('service')
-<meta property="og:type" content="profile" />
-<meta property="profile:first_name" content="{{$$module_name_singular->first_name}}" />
-<meta property="profile:last_name" content="{{$$module_name_singular->last_name}}" />
-<meta property="profile:username" content="{{$$module_name_singular->email}}" />
-<meta property="profile:gender" content="{{$$module_name_singular->gender}}" />
+{{-- Facebook Meta --}}
+<meta name="title" content="{{ config('meta.service.title') }}">
+<meta name="description" content="{{ config('meta.service.description')  }}">
+<meta name="keyword" content="{{config('meta.service.keywords')  }}">
+
+<!-- Facebook Meta -->
+<meta property="og:url" content="{{url()->full()}}" />
+<meta property="og:title" content="{{ config('meta.service.facebook.title') }}" />
+<meta property="og:site_name" content="{{ config('meta.service.facebook.site_name')  }}" />
+<meta property="og:description" content="{{  config('meta.service.facebook.description') }}" />
+<meta property="og:image" content="{{  config('meta.service.facebook.image_name') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 @break
 
 @case('blog')
-<meta property="og:type" content="profile" />
-<meta property="profile:first_name" content="{{$$module_name_singular->first_name}}" />
-<meta property="profile:last_name" content="{{$$module_name_singular->last_name}}" />
-<meta property="profile:username" content="{{$$module_name_singular->email}}" />
-<meta property="profile:gender" content="{{$$module_name_singular->gender}}" />
+{{-- Facebook Meta --}}
+<meta name="title" content="{{ config('meta.blog.title') }}">
+<meta name="description" content="{{ config('meta.blog.description')  }}">
+<meta name="keyword" content="{{config('meta.blog.keywords')  }}">
+
+<!-- Facebook Meta -->
+<meta property="og:url" content="{{url()->full()}}" />
+<meta property="og:title" content="{{ config('meta.blog.facebook.title') }}" />
+<meta property="og:site_name" content="{{ config('meta.blog.facebook.site_name')  }}" />
+<meta property="og:description" content="{{  config('meta.blog.facebook.description') }}" />
+<meta property="og:image" content="{{  config('meta.blog.facebook.image_name') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 @break
 
+@case('contact')
+{{-- Facebook Meta --}}
+<meta name="title" content="{{ config('meta.contact.title') }}">
+<meta name="description" content="{{ config('meta.contact.description')  }}">
+<meta name="keyword" content="{{config('meta.contact.keywords')  }}">
+
+<!-- Facebook Meta -->
+<meta property="og:url" content="{{url()->full()}}" />
+<meta property="og:title" content="{{ config('meta.contact.facebook.title') }}" />
+<meta property="og:site_name" content="{{ config('meta.contact.facebook.site_name')  }}" />
+<meta property="og:description" content="{{  config('meta.contact.facebook.description') }}" />
+<meta property="og:image" content="{{  config('meta.contact.facebook.image_name') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+@break
+
+@case('workshop')
+{{-- Facebook Meta --}}
+<meta name="title" content="{{ config('meta.workshop.title') }}">
+<meta name="description" content="{{ config('meta.workshop.description')  }}">
+<meta name="keyword" content="{{config('meta.workshop.keywords')  }}">
+
+<!-- Facebook Meta -->
+<meta property="og:url" content="{{url()->full()}}" />
+<meta property="og:title" content="{{ config('meta.workshop.facebook.title') }}" />
+<meta property="og:site_name" content="{{ config('meta.workshop.facebook.site_name')  }}" />
+<meta property="og:description" content="{{  config('meta.workshop.facebook.description') }}" />
+<meta property="og:image" content="{{  config('meta.workshop.facebook.image_name') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+@break
 
 @default
 

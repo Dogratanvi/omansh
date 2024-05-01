@@ -30,12 +30,7 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        SEOTools::setTitle("OMANSH Health & Fitness - Women's Health, Physiotherapy, Yoga");
-        SEOTools::setDescription("Specialized women's health services, physiotherapy, & rejuvenating yoga sessions at Omansh Health & Fitness.");
-        SEOTools::opengraph()->setUrl('https://omansh.org/');
-        SEOTools::setCanonical('https://omansh.org/');
-        SEOTools::opengraph()->addProperty('type', 'home');
-        SEOTools::jsonLd()->addImage('https://omansh.org/img/logo.png');
+        $meta_page_type = 'home';
  
         $services = Service::all();
         $settings = Setting::all();
@@ -46,8 +41,8 @@ class FrontendController extends Controller
         $recents = Blog::where('status',1)->orderBy('created_at', 'desc')->get();
        
 
+        return view('frontend.index', compact('services', 'settings', 'testimonials','blogs','meta_page_type'));
 
-        return view('frontend.index', compact('services', 'settings', 'testimonials','blogs','recents'));
     }
 
     public function about()

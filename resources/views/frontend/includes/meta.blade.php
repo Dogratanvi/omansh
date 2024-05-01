@@ -5,11 +5,11 @@ $meta_page_type = 'website';
 @endphp
 
 @switch($meta_page_type)
-@case('website')
+@case('home')
 <meta property="og:type" content="website" />
 @break
 
-@case('article')
+@case('about_us')
 {{-- Facebook Meta --}}
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="{{$$module_name_singular->published_at}}" />
@@ -22,13 +22,22 @@ $meta_page_type = 'website';
 
 @break
 
-@case('profile')
+@case('service')
 <meta property="og:type" content="profile" />
 <meta property="profile:first_name" content="{{$$module_name_singular->first_name}}" />
 <meta property="profile:last_name" content="{{$$module_name_singular->last_name}}" />
 <meta property="profile:username" content="{{$$module_name_singular->email}}" />
 <meta property="profile:gender" content="{{$$module_name_singular->gender}}" />
 @break
+
+@case('blog')
+<meta property="og:type" content="profile" />
+<meta property="profile:first_name" content="{{$$module_name_singular->first_name}}" />
+<meta property="profile:last_name" content="{{$$module_name_singular->last_name}}" />
+<meta property="profile:username" content="{{$$module_name_singular->email}}" />
+<meta property="profile:gender" content="{{$$module_name_singular->gender}}" />
+@break
+
 
 @default
 
@@ -54,5 +63,5 @@ $meta_page_type = 'website';
 
 <!--canonical link-->
 <link type="text/plain" rel="author" href="{{asset('humans.txt')}}" />
-<meta name="generator" content="Avaso Tech - A CMS like modular Avaso Tech project." />
+<meta name="generator" content="Laravel Starter - A CMS like modular Laravel starter project." />
 <link rel="canonical" href="{{url()->full()}}">

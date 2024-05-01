@@ -1,8 +1,5 @@
 @extends('frontend.layouts.app')
 
-@section('head')
-{!! SEO::generate() !!}
-@endsection
 
 @section('content')
 

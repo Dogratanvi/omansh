@@ -12,10 +12,7 @@
                             <h1 data-aos="fade-up text-center">How does pregnancy affect my pelvic floor</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-12 col-lg-12 col-xl-12 col-xs-12 col-sm-12 col-12">
-                                    <p class="text-center" data-aos="fade-right">Duis aute irure dolor in reprehenderit
-                                        in
-                                        volurate velit cillum
-                                        nulla pariatur nostrud exercitation.</p>
+                                    <p class="text-center" data-aos="fade-right">Explore the highlights from our past events and see the difference we're making</p>
                                 </div>
                             </div>
                             <div class="btn_wrapper">

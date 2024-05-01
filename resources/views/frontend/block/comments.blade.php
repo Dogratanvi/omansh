@@ -21,3 +21,4 @@
         @include('frontend.block.comments', ['comments' => $comment->replies])
     @endif
     @endforeach
+</div>

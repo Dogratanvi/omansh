@@ -36,10 +36,13 @@ class FrontendController extends Controller
         $settings = Setting::all();
         $testimonials = Testimonial::all();
         $blogs = Blog::where('status',1)->get()->take(2);
-      
+        $services = Service::orderBy('order')->take(3)->get();
 
+        $recents = Blog::where('status',1)->orderBy('created_at', 'desc')->get();
+       
 
         return view('frontend.index', compact('services', 'settings', 'testimonials','blogs','meta_page_type'));
+
     }
 
     public function about()

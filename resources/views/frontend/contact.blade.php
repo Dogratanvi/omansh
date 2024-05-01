@@ -99,6 +99,8 @@
                                             <option value="women_health">Women Health</option>
                                             <option value="physiotherapy">Physiotherapy</option>
                                             <option value="yoga">Yoga</option>
+                                            <option value="yoga">Corporate Training</option>
+                                            <option value="yoga">Yoga Training</option>
                                         </select>
 
                                     </div>
@@ -119,7 +121,7 @@
                             <div class="btn_wrapper mb-3">
                                 <button type="submit" class="border-0" id="started">Submit</button>
                             </div>
-                            <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6>
+                            <!-- <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6> -->
 
                            
                         </form>
@@ -136,7 +138,7 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Location</h3>
-                                <p class="mb-0">Plot No-290, Gate No.1
+                                <p class="mb-0 pt-2">Plot No-290, Gate No.1
                                     Sector-4, Vaishali
                                     (Landmark: In front of Ramprastha Green)
                                     Ghaziabad, 201010, Uttar Pradesh, India</p>
@@ -152,7 +154,7 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Phone</h3>
-                                <p><a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270 45759</a></p>
+                                <p class="pt-2"><a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270 45759</a></p>
 
                             </div>
                         </div>
@@ -166,7 +168,7 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Email</h3>
-                                <p><a href="mailto:garimabiswas09@gmail.com"
+                                <p class="pt-2"><a href="mailto:garimabiswas09@gmail.com"
                                         class="text-decoration-none">garimabiswas09@gmail.com</a>
                                 </p>
 

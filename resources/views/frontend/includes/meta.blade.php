@@ -35,7 +35,7 @@ $meta_page_type = 'home';
 <link rel="canonical" href="{{url()->full()}}">
 @break
 
-@case('about_us')
+@case('about')
 {{-- Facebook Meta --}}
 <meta name="title" content="{{ config('meta.about.title') }}">
 <meta name="description" content="{{ config('meta.about.description')  }}">

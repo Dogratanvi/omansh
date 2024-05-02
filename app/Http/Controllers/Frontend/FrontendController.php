@@ -79,7 +79,4 @@ class FrontendController extends Controller
         $settings = Setting::all();
         return view('frontend.terms&condition', compact('settings'));
     }
-
-
-
 }

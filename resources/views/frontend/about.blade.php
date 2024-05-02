@@ -193,6 +193,7 @@
     </div>
 </section>
 <!-- ACHIEVEMENTS SECTION -->
+
 <section class="achievement_section">
     <div class="container">
         <div class="row">
@@ -210,73 +211,19 @@
                 </div>
             </div>
         </div>
-        <div class="logo-container" data-aos="fade-up">
-            <div class="logo-box">
-                <div class="logo_wrapper craft">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_1.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_2.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper q-power">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_3.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper logo">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_4.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper minimum">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_5.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
+        <div class="logo" data-aos="fade-up">
+        <div class="owl-carousel autoplay owl-theme">
+    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
+    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
+    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
+    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
+    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
+   
+</div>
 
         </div>
 
-        <div class="logo-container mt-3" data-aos="fade-up">
-            <div class="logo-box">
-                <div class="logo_wrapper craft">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_1.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_2.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper q-power">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_3.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper logo">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_4.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-            <div class="logo-box">
-                <div class="logo_wrapper minimum">
-                    <figure class="mb-0"><img src="{{ asset('images/achievement_5.png') }}" alt="" class="img-fluid">
-                    </figure>
-                </div>
-            </div>
-
-        </div>
+     
     </div>
 </section>
 <!-- Instagram SECTION -->

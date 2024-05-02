@@ -27,6 +27,7 @@ class Gallery extends Model
         'id' => 'integer',
         'order' => 'integer',
         'deleted_at' => 'datetime',
+        
     ];
 
  
@@ -79,6 +80,7 @@ class Gallery extends Model
                     FileUpload::make('featured_image')
                         ->image()
                         ->imageEditor()
+                        ->multiple()
                         ->disk('public')
                         ->directory('uploads')
                         ->visibility('public')

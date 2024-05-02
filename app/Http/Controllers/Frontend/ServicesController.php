@@ -24,9 +24,10 @@ class ServicesController extends Controller
     }
     public function womenhealth()
     {
+        $galleries = Gallery::all();
         $services = Service::all();
         $settings = Setting::all();
-     return view('frontend.services.womenhealth', compact('services', 'settings'));
+     return view('frontend.services.womenhealth', compact('services', 'settings', 'galleries'));
     
     }
     public function yoga()

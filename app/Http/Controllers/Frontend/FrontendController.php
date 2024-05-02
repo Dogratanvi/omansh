@@ -45,16 +45,6 @@ class FrontendController extends Controller
 
     }
 
-    public function privacyPolicy()
-    {
-        $settings = Setting::all();
-        return view('frontend.privacy-policy', compact('settings'));
-    }
-    public function termsCondition()
-    {
-        $settings = Setting::all();
-        return view('frontend.terms&condition', compact('settings'));
-    }
 
     public function about()
     {
@@ -77,7 +67,19 @@ class FrontendController extends Controller
        
         return view('frontend.blog', compact('settings','meta_page_type'));
     }
+  
+      public function privacyPolicy()
+    {
+        $settings = Setting::all();
+        return view('frontend.privacy-policy', compact('settings'));
+    }
+  
+      public function termsCondition()
+    {
+        $settings = Setting::all();
+        return view('frontend.terms&condition', compact('settings'));
+    }
 
- 
+
 
 }

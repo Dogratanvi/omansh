@@ -69,6 +69,7 @@ class Testimonial extends Model
                             'women-health' => 'Women Health',
                             'physiotherapy' => 'physiotherapy',
                             'yoga' => 'Yoga',
+                            'corporate-training' => 'Corporate Training',
                         ])
                         ->required(),
 

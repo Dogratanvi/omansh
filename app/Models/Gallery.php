@@ -27,6 +27,7 @@ class Gallery extends Model
         'id' => 'integer',
         'order' => 'integer',
         'deleted_at' => 'datetime',
+        'featured_image' => 'json',
     ];
 
  
@@ -79,11 +80,11 @@ class Gallery extends Model
                     FileUpload::make('featured_image')
                         ->image()
                         ->imageEditor()
-                        ->disk('public')
-                        ->directory('uploads')
+                        ->multiple()
                         ->visibility('public')
                         ->fetchFileInformation(false)
                         ->preserveFilenames()
+                        ->columnSpanFull()
                         ->imageEditorAspectRatios([
                             null,
                             '16:9',

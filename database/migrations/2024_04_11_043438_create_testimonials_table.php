@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->nullable();
             $table->string('type')->nullable();;
-            $table->string('category')->nullable();;
+            $table->string('category')->nullable();
             $table->text('content')->nullable();
             $table->string('featured_image')->nullable();
             $table->string('featured_video')->nullable();

@@ -8,6 +8,7 @@ use Ramsey\Uuid\Uuid;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -66,6 +67,15 @@ class Gallery extends Model
                         ->maxLength(255),
                     TextInput::make('slug')
                         ->maxLength(255),
+                    Select::make('category')
+                        ->options([
+                            'women-health' => 'Women Health',
+                            'physiotherapy' => 'physiotherapy',
+                            'yoga' => 'Yoga',
+                            'corporate-training' => 'Corporate Training',
+                            'yoga-training' => 'Yoga Training',
+                        ])
+                        ->required(),
                     FileUpload::make('featured_image')
                         ->image()
                         ->imageEditor()

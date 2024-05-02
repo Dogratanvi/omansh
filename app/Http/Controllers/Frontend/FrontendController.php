@@ -86,12 +86,6 @@ class FrontendController extends Controller
         return view('frontend.terms&condition', compact('settings'));
     }
 
-  
-    public function contact()
-    {
-        $settings = Setting::all();
-        return view('frontend.yogatraining', compact('settings','meta_page_type'));
-    }
 
 
 }

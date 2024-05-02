@@ -26,7 +26,7 @@ class Slider extends Model
         'id' => 'integer',
         'order' => 'integer',
         'deleted_at' => 'datetime',
-        'featured_image' => 'json',
+        'featured_image' => 'array',
     ];
 
     protected static function boot()
@@ -41,10 +41,11 @@ class Slider extends Model
 
     public function setFeaturedImageAttribute($value)
     {
-        if( $value != null)
-        {
-            $this->attributes['featured_image'] = env('APP_URL') . '/' ."uploads/" . $value; // Store the URL
-        }
+        foreach ($value as $key=>$val) {
+            $image[] = env('APP_URL') . '/' . "uploads/" . $val; // Store the URL
+          }
+  
+          $this->attributes['featured_image'] = json_encode($image);
     }
 
     public static function getForm(): array

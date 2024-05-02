@@ -27,7 +27,7 @@ class Gallery extends Model
         'id' => 'integer',
         'order' => 'integer',
         'deleted_at' => 'datetime',
-        'featured_image' => 'json',
+        'featured_image' => 'array',
     ];
 
 
@@ -44,12 +44,12 @@ class Gallery extends Model
 
     public function setFeaturedImageAttribute($value)
     {
-        if ($value != null) {
-            foreach ($value as $key=>$val) {
-        
-            }
-            $this->attributes['featured_image'] = env('APP_URL') . '/' . "uploads/" . $value; // Store the URL
-        }
+        foreach ($value as $key=>$val) {
+            $image[] = env('APP_URL') . '/' . "uploads/" . $val; // Store the URL
+          }
+  
+          $this->attributes['featured_image'] = json_encode($image);
+          
     }
 
 

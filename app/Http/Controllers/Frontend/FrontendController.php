@@ -86,14 +86,6 @@ class FrontendController extends Controller
         return view('frontend.terms&condition', compact('settings'));
     }
 
-    public function about()
-    {
-        $about_omanshes = AboutOmansh::all();
-        $settings = Setting::all();
-
-        $meta_page_type = '';
-        return view('frontend.doctorworkshop', compact('settings','meta_page_type'));
-    }
   
     public function contact()
     {

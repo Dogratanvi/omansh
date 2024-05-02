@@ -51,9 +51,9 @@
                         <p>Your health is our priority. Don't hesitate to contact us.</p>
 
                             @if(session('message'))
-                            <div class="alert alert-{{ session('status') }} alert-dismissible fade show w-75 mt-3" role="alert">
+                            <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex" role="alert">
                                 <strong>{{ session('message') }}</strong>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert" ><i class="fas fa-times"></i></button>
                             </div>
                         @endif
                         <form id="contactpage" name="contactpage"  method="POST" action="{{ url('contact') }}"
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="form-group mb-0">
-                                        <input type="email" name="email" id="email" value="Email"
+                                        <input type="email" name="email" id="email" 
                                             class="form-control form_style" placeholder="Email">
                                     </div>
                                 </div>

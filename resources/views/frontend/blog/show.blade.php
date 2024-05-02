@@ -233,7 +233,6 @@
                                             <div class="post-thumbnail-content">
                                                 <a href="#">The most happiest time of the day!</a>
                                                 <span class="post-date"><i class="far fa-clock"></i> 11h ago</span>
-                                                <span class="post-category"><i class="fa fa-tag"></i> Lifestyle</span>
                                                 <!--post-thumbnail-content-->
                                             </div>
                                             <!--post-thumbnail-entry-->

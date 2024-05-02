@@ -38,6 +38,17 @@ class FrontendController extends Controller
         return view('frontend.index', compact('services', 'settings', 'testimonials','blogs','recents'));
     }
 
+    public function privacyPolicy()
+    {
+        $settings = Setting::all();
+        return view('frontend.privacy-policy', compact('settings'));
+    }
+    public function termsCondition()
+    {
+        $settings = Setting::all();
+        return view('frontend.terms&condition', compact('settings'));
+    }
+
     public function about()
     {
         $about_omanshes = AboutOmansh::all();
@@ -46,40 +57,9 @@ class FrontendController extends Controller
     }
     public function contact()
     {
-   $settings = Setting::all();
+       $settings = Setting::all();
         return view('frontend.contact.create', compact('settings'));
     }
 
-    public function servicedetail()
-    {
-   $settings = Setting::all();
-        return view('frontend.servicedetail', compact('settings'));
-    }
-    public function blog()
-    {
-        $settings = Setting::all();
-       
-        return view('frontend.blog', compact('settings'));
-    }
-    public function blogdetail()
-    {
-        $settings = Setting::all();
-        return view('frontend.blogdetail', compact('settings'));
-    }
-   
-
-    public function doctorworkshop()
-    {
-        $settings = Setting::all();
-        return view('frontend.doctorworkshop', compact('settings'));
-    }
-
-
-    public function yogatraning()
-    {
-        $settings = Setting::all();
-        return view('frontend.yogatraining', compact('settings'));
-    }
- 
 
 }

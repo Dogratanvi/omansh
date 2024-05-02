@@ -28,10 +28,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('home', 'FrontendController@home')->name('home');
     Route::get('about', 'FrontendController@about')->name('about');
   
-    Route::get('doctorworkshop', 'FrontendController@doctorworkshop')->name('doctorworkshop');
-    Route::get('yogatraining', 'FrontendController@yogatraining')->name('yogatraining');
-    
-    Route::get('servicedetail', 'FrontendController@servicedetail')->name('servicedetail');
+
+  
 
     //workshop
     $module_name = 'workshop';
@@ -83,6 +81,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
      Route::get('blog/{id}/{slug}/next', 'BlogController@next')->name('blogs.next');
     Route::get('blog/{id}/{slug}/previous', 'BlogController@previous')->name('blogs.previous');
 
+   
+
+    Route::get('privacy-policy', 'FrontendController@privacyPolicy')->name('privacy-policy');
+    Route::get('terms&condition', 'FrontendController@termsCondition')->name('terms&condition');
 
   
 

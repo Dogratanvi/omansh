@@ -44,8 +44,8 @@ return
         'keywords' => '',
     ],
     'contact' => [
-        'title' => 'Contact | Wellness During Pregnancy | Yoga and Fitness',
-        'description' =>"Specialized women's health services, physiotherapy, & rejuvenating yoga sessions at Omansh Health & Fitness.",
+        'title' => 'Contact Us for Your Health Needs | Omansh',
+        'description' =>"Your health is our priority. Reach out to us without hesitation for any inquiries or assistance. Our dedicated team is here to support you on journey to wellness",
         'keywords' => '',
     ],
     'workshop' => [

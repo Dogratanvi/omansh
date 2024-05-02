@@ -37,6 +37,10 @@ class ListTestimonials extends ListRecords
                 ->modifyQueryUsing(function ($query) {
                     return $query->where('category', 'yoga');
                 }),
+            'corporate-training' => Tab::make('Corporate Training')
+                ->modifyQueryUsing(function ($query) {
+                    return $query->where('category', 'corporate-training');
+                }),
          ];
     }
 }

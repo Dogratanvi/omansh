@@ -27,10 +27,10 @@ class Gallery extends Model
         'id' => 'integer',
         'order' => 'integer',
         'deleted_at' => 'datetime',
-        
+        'featured_image' => 'array',
     ];
 
- 
+
 
     protected static function boot()
     {
@@ -38,21 +38,21 @@ class Gallery extends Model
 
         static::creating(function ($gallery) {
             $uuid = Uuid::uuid4()->toString();
-            $gallery->uuid=str_replace('-', '', $uuid);
-
+            $gallery->uuid = str_replace('-', '', $uuid);
         });
-
     }
 
     public function setFeaturedImageAttribute($value)
     {
-        if( $value != null)
-        {
-            $this->attributes['featured_image'] = env('APP_URL') . '/' ."uploads/" . $value; // Store the URL
-        }
+        foreach ($value as $key=>$val) {
+            $image[] = env('APP_URL') . '/' . "uploads/" . $val; // Store the URL
+          }
+  
+          $this->attributes['featured_image'] = json_encode($image);
+          
     }
 
-    
+
 
     public static function getForm(): array
     {
@@ -77,23 +77,24 @@ class Gallery extends Model
                             'yoga-training' => 'Yoga Training',
                         ])
                         ->required(),
+                    TextInput::make('order')
+                        ->numeric(),
                     FileUpload::make('featured_image')
                         ->image()
                         ->imageEditor()
-                        ->multiple()
                         ->disk('public')
                         ->directory('uploads')
                         ->visibility('public')
                         ->fetchFileInformation(false)
                         ->preserveFilenames()
+                        ->columnSpanFull()
                         ->imageEditorAspectRatios([
                             null,
                             '16:9',
                             '4:3',
                             '1:1',
                         ]),
-                    TextInput::make('order')
-                        ->numeric(),
+
                 ]),
             Section::make('Meta Details')
                 ->columns(2)
@@ -122,5 +123,4 @@ class Gallery extends Model
 
         ];
     }
-
 }

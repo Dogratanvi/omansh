@@ -8,6 +8,12 @@ use App\Models\AboutOmansh;
 use App\Models\Setting;
 use App\Models\Testimonial;
 use App\Models\Blog;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+use Artesaos\SEOTools\Facades\JsonLdMulti;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 class FrontendController extends Controller
 {
@@ -24,6 +30,7 @@ class FrontendController extends Controller
      */
     public function index()
     {
+        $meta_page_type = 'home';
  
         $services = Service::all();
         $settings = Setting::all();
@@ -34,8 +41,8 @@ class FrontendController extends Controller
         $recents = Blog::where('status',1)->orderBy('created_at', 'desc')->get();
        
 
+        return view('frontend.index', compact('services', 'settings', 'testimonials','blogs','meta_page_type'));
 
-        return view('frontend.index', compact('services', 'settings', 'testimonials','blogs','recents'));
     }
 
     public function privacyPolicy()
@@ -51,15 +58,26 @@ class FrontendController extends Controller
 
     public function about()
     {
+        $meta_page_type = 'about';
         $about_omanshes = AboutOmansh::all();
         $settings = Setting::all();
-             return view('frontend.about', compact('about_omanshes', 'settings'));
+             return view('frontend.about', compact('about_omanshes', 'settings','meta_page_type'));
     }
     public function contact()
     {
-       $settings = Setting::all();
-        return view('frontend.contact.create', compact('settings'));
+        $meta_page_type = 'contact';
+        $settings = Setting::all();
+        return view('frontend.contact.create', compact('settings','meta_page_type'));
     }
 
+    public function blog()
+    {
+        $meta_page_type = 'blog';
+        $settings = Setting::all();
+       
+        return view('frontend.blog', compact('settings','meta_page_type'));
+    }
+
+ 
 
 }

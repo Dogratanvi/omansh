@@ -89,7 +89,7 @@
 
 <!-- OUR SERVICES SECTION -->
 <section class="services_section">
-    <div class="container">
+    <div class="container aboutus_content">
         <div class="row">
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
@@ -116,10 +116,12 @@
                         <div class="text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
 
 
-                            <a href="{{$service->url}}" class="home-btns btn--hover-icon">
-                                <i class="fa-solid fa-arrow-right" aria-hidden="true"> </i>
-                                <span>Read More</span>
-                            </a>
+                          
+                            <div class="btn_wrapper">
+                        <a href="{{$service->url}}" class="text-decoration-none get_started_btn">Read
+                            More</a>
+                            
+                    </div>
 
                         </div>
                     </div>
@@ -169,6 +171,7 @@
                     <div class="btn_wrapper">
                         <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Read
                             More</a>
+                            
                     </div>
 
                 </div>
@@ -265,10 +268,10 @@
                     <h5>Get in touch</h5>
                     <h2>Get a Consultation Now</h2>
                     @if (session('message'))
-                    <div class="alert alert-{{ session('status') }} alert-dismissible fade show w-75 mt-3" role="alert">
-                        <strong>{{ session('message') }}</strong>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex" role="alert">
+                                <strong>{{ session('message') }}</strong>
+                                <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert" ><i class="fas fa-times"></i></button>
+                            </div>
                     @endif
                     <form id="contactpage" method="POST" action="{{ url('contact') }}" enctype="multipart/form-data">
                         @csrf
@@ -293,7 +296,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="email" id="emailaddrs" value="Email"
+                                    <input type="email" name="email" id="emailaddrs" 
                                         class="form-control form_style" placeholder="Email" required>
                                 </div>
                             </div>

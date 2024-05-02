@@ -45,6 +45,7 @@ class FrontendController extends Controller
 
     }
 
+
     public function about()
     {
         $meta_page_type = 'about';
@@ -72,27 +73,33 @@ class FrontendController extends Controller
        
         return view('frontend.blog', compact('settings','meta_page_type'));
     }
-    public function blogdetail()
+  
+      public function privacyPolicy()
     {
-        $meta_page_type = 'blog';
         $settings = Setting::all();
-        return view('frontend.blogdetail', compact('settings','meta_page_type'));
+        return view('frontend.privacy-policy', compact('settings'));
     }
-   
-
-    public function doctorworkshop()
+  
+      public function termsCondition()
     {
         $settings = Setting::all();
+        return view('frontend.terms&condition', compact('settings'));
+    }
+
+    public function about()
+    {
+        $about_omanshes = AboutOmansh::all();
+        $settings = Setting::all();
+
         $meta_page_type = '';
         return view('frontend.doctorworkshop', compact('settings','meta_page_type'));
     }
-
-
-    public function yogatraning()
+  
+    public function contact()
     {
         $settings = Setting::all();
         return view('frontend.yogatraining', compact('settings','meta_page_type'));
     }
- 
+
 
 }

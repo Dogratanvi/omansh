@@ -146,17 +146,22 @@
     <div class="bottom-portion ">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 copyright">
+                <div class="col-md-4 copyright">
                     <p
                         class=" text-white text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
                         Copyright 2024 | Omansh.org
                     </p>
                 </div>
-                <div class="col-md-6  copyright">
+                <div class="col-md-4  copyright">
                     <p
-                        class="footer-text text-white text-lg-end text-sm-start text-start text-md-end text-xl-end text-xs-start">
+                        class="footer-text text-white text-lg-center text-sm-start text-start text-md-center text-xl-center text-xs-start">
                         Website designed and developed by<a href="https://pulseplaydigital.com/"
                             target="_blank"> PulsePlay Digital</a></p>
+                </div>
+                <div class="col-md-4  copyright">
+                    <p
+                        class="footer-text text-white text-lg-end text-sm-start text-start text-md-end text-xl-end text-xs-start">
+                        <a class="pe-2" href="{{ route('frontend.privacy-policy') }}">Privacy Policy</a>|<a class="ps-2" href="{{ route('frontend.terms&condition') }}">Terms & Condition</a></p>
                 </div>
             </div>
         </div>

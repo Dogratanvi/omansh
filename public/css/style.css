@@ -51,7 +51,7 @@ h1{
 h2{
     font-family: 'Playfair Display', serif;
     font-size: 30px;
-    line-height: 55px;
+    line-height: 41px;
     font-weight: 700;
 }
 h3{
@@ -1491,6 +1491,17 @@ a.all-event {
     bottom: 302px;
 }
 
+/* privacy */
+.privacy-content{
+    padding-top: 80px;
+    padding-bottom: 450px;
+}
+.privacy-content p a{
+    color: #004B2A;
+}
+.privacy-content p  strong{
+    color: #000;
+}
 /* Home Page Subscribe Section Style */
 
 .subscribe_section{
@@ -1648,7 +1659,7 @@ section.women-health {
 /* Home Page Footer Section Style */
 .whtsapp {
     position: fixed;
-    top: 780px;
+    top: 730px;
     right: 0;
     z-index: 99999;
 }
@@ -1681,6 +1692,11 @@ color: #CAA983;
 }
 .footer-text a{
     color: #CAA983;
+    text-decoration: none;
+}
+.footer-text a:hover{
+    color: #fff;
+    text-decoration: none;
 }
 .middle-portion {
     margin-bottom: 92px;
@@ -2215,9 +2231,13 @@ background-color: #004B2A !important;
     top: 210px;
     right: 0;
 }
-
+.mission_image img {
+    border-radius: 200px 0 200px 0;
+}
 /* About Page Our Vision Section Style */
-
+.vision_image img{
+    border-radius: 200px 0 200px 0;
+}
 .vision_section{
     padding: 45px 0 130px;
     position: relative;
@@ -2730,6 +2750,13 @@ display: none;
     width: 92% !important;
   
 }
+.alert-message{
+    width: 75%;
+}
+.alert-message strong{
+    text-align: left;
+    padding-left: 10px;
+}
 textarea {
     overflow: auto;
 }
@@ -2740,12 +2767,12 @@ a.contact_us:hover {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
-    padding: 18px 35px;
+    padding: 13px 16px;
     text-align: center;
     color: var(--e-global-color-white);
     display: inline-block;
     background-color: #004B2A;
-    border-radius: 35px 0px 35px 0px;
+    border-radius: 20px 0px 20px 0px;
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -2944,7 +2971,7 @@ a.contact_us:hover {
         background-image: url('../img/blog.png');
    
 }
-.post-item-description p {
+.main-blog .post-item-description p {
     height: 141px;
 }
 .blog-posts {
@@ -3150,5 +3177,11 @@ tbody .form-check-input {
 .banner-section-content h1 span{
     font-size: 40px;
     text-align: center;
+}
+.main-blog .post-item-description p {
+    height: auto;
+}
+.alert-message{
+    width: 75%;
 }
 }

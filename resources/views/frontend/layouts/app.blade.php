@@ -5,16 +5,15 @@
     <meta charset="utf-8" />
     <link rel="icon" href="{{ asset('favicon.ico') }}"  type='image/x-icon'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Omansh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 
-    <title>Home | Omansh</title>
-    <!-- /SEO Ultimate -->
+    <title>OMANSH Health & Fitness - Women's Health, Physiotherapy, Yoga</title>
+    @include('frontend.includes.meta')
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8">
-
+   
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">

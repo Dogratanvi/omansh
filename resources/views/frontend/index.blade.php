@@ -1,6 +1,8 @@
 @extends('frontend.layouts.app')
 
+
 @section('content')
+
 <div class="banner-section-outer">
 
 

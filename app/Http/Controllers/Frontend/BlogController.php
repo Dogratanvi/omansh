@@ -9,14 +9,22 @@ use App\Models\Setting;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\OpenGraph;
+use Artesaos\SEOTools\Facades\TwitterCard;
+use Artesaos\SEOTools\Facades\JsonLd;
+use Artesaos\SEOTools\Facades\JsonLdMulti;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 class BlogController extends Controller
 {
     public function index(Request $request): View
     {
+       
+        $meta_page_type = 'blog';
         $blogs = Blog::all();
         $settings = Setting::all();
-        return view('frontend.blog.index', compact('blogs', 'settings'));
+        return view('frontend.blog.index', compact('blogs', 'settings','meta_page_type'));
     }
 
     public function create(Request $request): View

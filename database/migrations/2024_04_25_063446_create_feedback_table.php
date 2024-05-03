@@ -16,9 +16,9 @@ return new class extends Migration
             $table->uuid('uuid');
             $table->string('like_most_about_class');
             $table->string('teacher_knowledge')->nullable();
-            $table->string('instruction_given')->nullable();
-            $table->string('yoga_sequence')->nullable();
             $table->boolean('instruction_given')->nullable();
+            $table->string('yoga_sequence')->nullable();
+            $table->string('meet_your_exceptations')->nullable();
             $table->text('like_about_class')->nullable();
             $table->text('help_us_improve')->nullable();
             $table->string('hear_about_omansh')->nullable();

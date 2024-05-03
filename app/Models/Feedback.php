@@ -46,34 +46,34 @@ class Feedback extends Model
             ->description('Provide some basic information.')
             ->icon('heroicon-o-chevron-right')
             ->schema([
-                Forms\Components\TextInput::make('uuid')
+                TextInput::make('uuid')
                     ->label('UUID')
                     ->required()
                     ->maxLength(36),
-                Forms\Components\TextInput::make('like_most_about_class')
+                TextInput::make('like_most_about_class')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('teacher_knowledge')
+                TextInput::make('teacher_knowledge')
                     ->maxLength(255),
-                Forms\Components\Toggle::make('instruction_given'),
-                Forms\Components\TextInput::make('yoga_sequence')
+                Toggle::make('instruction_given'),
+                TextInput::make('yoga_sequence')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('meet_your_exceptations')
+                TextInput::make('meet_your_exceptations')
                     ->maxLength(255),
-                Forms\Components\Textarea::make('like_about_class')
+                Textarea::make('like_about_class')
                     ->maxLength(65535)
                     ->columnSpanFull(),
-                Forms\Components\Textarea::make('help_us_improve')
+                Textarea::make('help_us_improve')
                     ->maxLength(65535)
                     ->columnSpanFull(),
-                Forms\Components\TextInput::make('hear_about_omansh')
+                TextInput::make('hear_about_omansh')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('order')
+                TextInput::make('order')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('status')
+                TextInput::make('status')
                     ->required()
                     ->maxLength(255),
-            ]);
+            ])
 
         ];
 

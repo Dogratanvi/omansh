@@ -126,6 +126,7 @@ $(document).on('click', '.page-link', function(event) {
 
 </script>
 
+
 <script>
 $(document).ready(function() {
     $(".content").slice(0, 8).show();

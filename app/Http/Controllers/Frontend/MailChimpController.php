@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use DrewM\MailChimp\MailChimp;
 use Illuminate\Support\Str;
 
+
 class MailChimpController extends Controller
 {
     public function showForm()

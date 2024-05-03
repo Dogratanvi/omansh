@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DrewM\MailChimp\MailChimp;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Session;
 
 class MailChimpController extends Controller
 {
@@ -33,10 +34,26 @@ class MailChimpController extends Controller
         if ($result['status'] == 'subscribed') {
             \Log::info('Newsletter success message');
 
-            return back()->with(['message' => ' Thank you, your sign-up request for newsletter was successful!']);
+            Session::flash('success', 'Newsletter submitted successfully');
+            return response()->json([
+                'message' => 'Newsletter submitted successfully',
+                'result' => $result,
+                'flash_message' => Session::get('success')
+            ]);
+            
+
+            // return back()->with(['message' => ' Thank you, your sign-up request for newsletter was successful!']);
         } else {
             \Log::info('Newsletter error message');
-            return back()->with(['message' => 'You Are already subscribed for newsletter']);
+
+            Session::flash('success', 'Newsletter already submitted');
+            return response()->json([
+                'message' => 'Newsletter already submitted',
+                'result' => $result,
+                'flash_message' => Session::get('success')
+            ]);
+
+            // return back()->with(['message' => 'You Are already subscribed for newsletter']);
         }
     }
 }

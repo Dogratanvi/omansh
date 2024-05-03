@@ -117,6 +117,56 @@ $(document).on('click', '.page-link', function(event) {
 
 </script>
 
+
+<script type="text/javascript">
+    $('#newsletter_form').on('submit', function(e) {
+
+        e.preventDefault();
+        var email = $("#email").val();
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('input[name="_token"]').val()
+            }
+        });
+
+        $.ajax({
+            type: "POST",
+            url: "{{ url('newsletter') }}",
+            data: {
+                'email': email
+            },
+            success: function(response) {
+
+                $('.flash-message').html("Newsletter Submit Successfully");
+                alert(response.flash_message);
+                $('.flash-message').fadeOut(5000);
+              
+                setTimeout(() => {
+                    var element = document.getElementById("newsletter_form");
+                    location.reload();
+                    element.reset();
+                    $('.flash-message').html("Newsletter Submit Successfully");
+                
+                }, 500);
+            },
+            error: function() {
+
+                
+                $('.flash-message').html("Newsletter Not Submitted Successfully");
+
+                $('.flash-message').fadeOut(5000);
+                setTimeout(() => {
+                    var element = document.getElementById("newsletter_form");
+                    element.reset();
+                }, 500);
+            }
+        });
+
+    });
+</script>
+
+
 <script>
 $(document).ready(function() {
     $(".content").slice(0, 8).show();

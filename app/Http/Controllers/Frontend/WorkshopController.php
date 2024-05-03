@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Models\Setting;
 use App\Models\Workshop;
+use App\Models\Gallery;
 use App\Models\Testimonial;
 class WorkshopController extends Controller
 {
@@ -71,7 +72,10 @@ class WorkshopController extends Controller
         $workshops = Workshop::all();
         $testimonials = Testimonial::all();
         $settings = Setting::all();
-         return view('frontend.workshop.yogatraining', compact('settings','workshops', 'testimonials','meta_page_type'));
+        $galleries = Gallery::where('category','yoga-training')->first();
+        $galleryImages = $galleries->featured_image;
+         return view('frontend.workshop.yogatraining', compact('settings','workshops', 'testimonials', 'galleryImages','meta_page_type'));
+
      }
   
      public function corporatetraining()
@@ -79,9 +83,12 @@ class WorkshopController extends Controller
         $meta_page_type = 'corporateTraining';
         $workshops = Workshop::all();
         $testimonials = Testimonial::all();
-
+        $galleries = Gallery::where('category','corporate-training')->first();
+        $galleryImages = $galleries->featured_image;
         $settings = Setting::all();
-         return view('frontend.workshop.corporatetraining', compact('settings', 'workshops', 'testimonials','meta_page_type'));
+
+         return view('frontend.workshop.corporatetraining', compact('settings', 'workshops', 'testimonials', 'galleryImages','meta_page_type'));
+
      }
   
 }

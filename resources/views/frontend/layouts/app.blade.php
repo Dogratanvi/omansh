@@ -216,7 +216,7 @@ $(document)
          */
 
         function loadGallery(setIDs, setClickAttr) {
-            console.log(setIDs, setClickAttr, 'partner gallery');
+            console.log(setIDs, setClickAttr, 'image gallery');
             let current_image,
                 selector,
                 counter = 0;

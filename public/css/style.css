@@ -73,12 +73,12 @@ h5{
 }
 h6{
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     font-weight: 700;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     color: #989595;
     font-family: "Poppins", sans-serif;
@@ -88,7 +88,7 @@ p{
 
 }
 li{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
         color: #989595;
         font-family: "Poppins", sans-serif;
@@ -181,7 +181,7 @@ button:focus {
     visibility:visible;
   }
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-    background: #CAA983 !important;
+    background: #004B2A !important;
   }
   .ico {
     transition: all 0.5s;
@@ -639,7 +639,7 @@ button.custom-btn{
 }
 .services_box_content .services_box_lower_portion p{
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
@@ -750,7 +750,7 @@ button.custom-btn{
 }
 .aboutus_content p {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
     color: #989595;;
     
 }
@@ -881,14 +881,14 @@ button.custom-btn{
 }
 .specialties_content .specialties_name {
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     color: var(--e-global-color-primary);
     margin-bottom: 6px;
 }
 .specialties_content .specialties_paragraph {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: var(--e-global-color-text);
@@ -1043,7 +1043,7 @@ button.custom-btn{
 .get_in_touch_content input {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     background-color: var(--e-global-color-white);
     color: var(--e-global-color-text);
@@ -1214,7 +1214,7 @@ textarea {
     margin-bottom: 16px;
 }
 .pricing_plans_box_lower_portion ul li {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
     color: var(--e-global-color-text);
     font-weight: 400;
@@ -1341,7 +1341,7 @@ a.all-event {
     margin-bottom: 5px;
 }
 .testimonial_content span{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: var(--e-global-color-text);
@@ -1420,7 +1420,7 @@ a.all-event {
     left: 40px;
 }
 .blog_posts_image_content span{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     color: var(--e-global-color-white);
@@ -1727,7 +1727,7 @@ color: #CAA983;
     margin-bottom: 0;
 }
 .middle-portion .about_col ul li p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 400;
     color: var(--e-global-color-white);
@@ -1758,7 +1758,7 @@ color: #CAA983;
     text-decoration: none;
     color: var(--e-global-color-white);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
     transition: all 0.3s ease-in-out;
 }
@@ -1979,7 +1979,7 @@ button.close {
 .aboutpage_aboutus_content p {
     margin-bottom: 12px;
     color: var(--e-global-color-text);
-    text-align: justify;
+    text-align: left;
 }
 .aboutpage_aboutus_content .margin_bottom{
     margin-bottom: 30px;

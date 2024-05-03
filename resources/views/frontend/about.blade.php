@@ -51,7 +51,7 @@
                         <img src="{{asset($about_omanshes[0]->featured_image)}}" alt="optimal-health" class="img-fluid">
                     </figure>
                     <div class="row pt-3">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <h6>
                                 Dr. GARIMA BISWAS (PT)</h6>
                             <h6>
@@ -59,10 +59,11 @@
                                 Floor Rehab Therapist Labor and Child Birth Educator
                             </h6>
                         </div>
-                        <div class="col-md-6 ">
+                        <div class="col-md-4">
                             <div
                                 class="social-icons d-flex justify-content-start justify-content-xs-start justify-content-sm-start justify-content-xl-center justify-content-md-center justify-content-lg-center align-items-center h-100 w-100">
-                                <a href="https://www.facebook.com/profile.php?id=100018350377507" target="_blank"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                <a href="https://www.facebook.com/profile.php?id=100018350377507" target="_blank"> <svg
+                                        width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_804_2)">
                                             <path
@@ -79,8 +80,10 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <a href="https://www.instagram.com/dr_garima_biswas?igsh=MmdtemZta29vMHZp" target="_blank"> <img class="ps-3  pe-3" src="{{ asset('img/instagram.png') }}"></a>
-                                <a href="https://www.linkedin.com/in/dr-garima-biswas-aa415b235/" target="_blank"> <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                <a href="https://www.instagram.com/dr_garima_biswas?igsh=MmdtemZta29vMHZp"
+                                    target="_blank"> <img class="ps-3  pe-3" src="{{ asset('img/instagram.png') }}"></a>
+                                <a href="https://www.linkedin.com/in/dr-garima-biswas-aa415b235/" target="_blank"> <svg
+                                        width="21" height="21" viewBox="0 0 21 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_804_5)">
                                             <path
@@ -211,19 +214,16 @@
                 </div>
             </div>
         </div>
+
         <div class="logo" data-aos="fade-up">
-        <div class="owl-carousel autoplay owl-theme">
-    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
-    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
-    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
-    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
-    <div class="item"><img src="{{ asset('img/bladder.png') }}"></div>
-   
-</div>
+            <div class="owl-carousel autoplay owl-theme">
+                @foreach ($sliderImages as $key=>$value )
+                <div class="item">
+                    <img src="{{ $value }}" alt="achievements">
+                </div> @endforeach
 
+            </div>
         </div>
-
-     
     </div>
 </section>
 <!-- Instagram SECTION -->

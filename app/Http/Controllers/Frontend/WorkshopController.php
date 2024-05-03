@@ -67,18 +67,21 @@ class WorkshopController extends Controller
  
      public function yogatraining()
      {
+        $meta_page_type = 'yogaTraining';
         $workshops = Workshop::all();
         $testimonials = Testimonial::all();
         $settings = Setting::all();
-         return view('frontend.workshop.yogatraining', compact('settings','workshops', 'testimonials'));
+         return view('frontend.workshop.yogatraining', compact('settings','workshops', 'testimonials','meta_page_type'));
      }
   
      public function corporatetraining()
-     { $workshops = Workshop::all();
+     {
+        $meta_page_type = 'corporateTraining';
+        $workshops = Workshop::all();
         $testimonials = Testimonial::all();
 
         $settings = Setting::all();
-         return view('frontend.workshop.corporatetraining', compact('settings', 'workshops', 'testimonials'));
+         return view('frontend.workshop.corporatetraining', compact('settings', 'workshops', 'testimonials','meta_page_type'));
      }
   
 }

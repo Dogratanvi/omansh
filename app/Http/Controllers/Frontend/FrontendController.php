@@ -8,6 +8,7 @@ use App\Models\AboutOmansh;
 use App\Models\Setting;
 use App\Models\Testimonial;
 use App\Models\Blog;
+use App\Models\Slider;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
@@ -50,8 +51,10 @@ class FrontendController extends Controller
     {
         $meta_page_type = 'about';
         $about_omanshes = AboutOmansh::all();
+        $sliders = Slider::find(1);
+        $sliderImages = $sliders->featured_image;
         $settings = Setting::all();
-             return view('frontend.about', compact('about_omanshes', 'settings','meta_page_type'));
+             return view('frontend.about', compact('about_omanshes', 'settings','meta_page_type', 'sliderImages'));
     }
     public function contact()
     {

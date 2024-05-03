@@ -287,22 +287,19 @@ $(document)
 
 <script>
      $(document).ready(function(){
-    $('.autoplay').owlCarousel({
-        loop:true,
-        rtl:true,
-        margin:10,
+    $('.owl-carousel').owlCarousel({
+         margin:10,
         nav:false,
        dots:true,
-        items:4, // Remove stagePadding
-        loop:true,
-        autoplay:true,
-        autoplaySpeed:2500,
+       autoplay:true,
+        items:4, 
+       loop:true,
         responsive:{
             0:{
                 items:1
             },
             600:{
-                items:4
+                items:3
             },
             700:{
                 items:4

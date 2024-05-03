@@ -12,6 +12,10 @@
 #image-gallery .modal-content .btn i{
     color: #000;
 }
+.eapps-instagram-feed-posts-item{
+    border-top-left-radius: 80px !important;
+    border-bottom-right-radius: 80px !important;
+}
 .close i{
     color: #000 !important;
     font-size: 21px;
@@ -20,7 +24,7 @@
 .women-health .women_box img{
 border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
-    height: 311px;
+    height: 300px;
     width: 100%;
     object-fit: cover;}
 

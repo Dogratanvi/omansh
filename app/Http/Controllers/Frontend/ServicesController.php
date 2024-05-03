@@ -19,28 +19,31 @@ class ServicesController extends Controller
     }
     public function physiotherapy()
     {
+        $meta_page_type = 'physiotherapy';
+        $services = Service::all();
+        $settings = Setting::all();
+     return view('frontend.services.physiotherapy', compact('services', 'settings', 'meta_page_type'));
+    }
+    public function womenhealth()
+    {
+        $meta_page_type = 'womenHealth';
         $galleries = Gallery::where('category','physiotherapy')->first();
         $galleryImages = $galleries->featured_image;
         $services = Service::all();
         $settings = Setting::all();
-     return view('frontend.services.physiotherapy', compact('services', 'settings', 'galleryImages'));
+     return view('frontend.services.physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
     }
-    public function womenhealth()
-    {
-        $galleries = Gallery::where('category','women-health')->first();
-        $galleryImages = $galleries->featured_image;
-        $services = Service::all();
-        $settings = Setting::all();
-     return view('frontend.services.womenhealth', compact('services', 'settings', 'galleryImages'));
-    
-    }
+ 
     public function yoga()
     {
+
+        $meta_page_type = 'yoga';
         $galleries = Gallery::where('category','yoga')->first();
         $galleryImages = $galleries->featured_image;
         $services = Service::all();
         $settings = Setting::all();
-     return view('frontend.services.yoga', compact('services', 'settings', 'galleryImages'));
+     return view('frontend.services.yoga', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
     }
     
 }

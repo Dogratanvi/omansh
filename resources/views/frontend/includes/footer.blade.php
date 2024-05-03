@@ -8,8 +8,7 @@
                     <div class="subscribe_content">
                         <h5>Subscribe now</h5>
                         <h2>Get the Latest<br> Updates With Our Newsletter</h2>
-                        <form action="{{ url('newsletter')  }}" method="POST" enctype="multipart/form-data"
-                            id="newsletter_form">
+                        <form id="newsletter_form">
                             @csrf
                             <div class="form-row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

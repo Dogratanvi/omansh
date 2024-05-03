@@ -25,9 +25,7 @@
 
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
     <!-- Shortcut Icon -->
     <link href="{{ asset('bootstrap/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -38,12 +36,19 @@
     <link href="{{ asset('css/custom-style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/special-classes.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/gallary.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Google tag (gtag.js) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -81,6 +86,8 @@
 <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/video-popup.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 <!-- Add jQuery (required for Slick Slider) -->
 
 
@@ -91,7 +98,9 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 </script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="{{ asset('js/video-section.js') }}"></script>
@@ -179,9 +188,133 @@ function topFunction() {
 }
 </script>
 
+<script>
+let modalId = $('#image-gallery');
 
+$(document)
+    .ready(function() {
 
+        loadGallery(true, 'a.thumbnail');
 
+        //This function disables buttons when needed
+        function disableButtons(counter_max, counter_current) {
+            $('#show-previous-image, #show-next-image')
+                .show();
+            if (counter_max === counter_current) {
+                $('#show-next-image')
+                    .hide();
+            } else if (counter_current === 1) {
+                $('#show-previous-image')
+                    .hide();
+            }
+        }
+
+        /**
+         *
+         * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+         * @param setClickAttr  Sets the attribute for the click handler.
+         */
+
+        function loadGallery(setIDs, setClickAttr) {
+            console.log(setIDs, setClickAttr, 'image gallery');
+            let current_image,
+                selector,
+                counter = 0;
+
+            $('#show-next-image, #show-previous-image')
+                .click(function() {
+                    if ($(this)
+                        .attr('id') === 'show-previous-image') {
+                        current_image--;
+                    } else {
+                        current_image++;
+                    }
+
+                    selector = $('[data-image-id="' + current_image + '"]');
+                    updateGallery(selector);
+                });
+
+            function updateGallery(selector) {
+                let $sel = selector;
+                current_image = $sel.data('image-id');
+                $('#image-gallery-title')
+                    .text($sel.data('title'));
+                $('#image-gallery-image')
+                    .attr('src', $sel.data('image'));
+                disableButtons(counter, $sel.data('image-id'));
+            }
+
+            if (setIDs == true) {
+                $('[data-image-id]')
+                    .each(function() {
+                        counter++;
+                        $(this)
+                            .attr('data-image-id', counter);
+                    });
+            }
+            $(setClickAttr)
+                .on('click', function() {
+                    updateGallery($(this));
+                });
+        }
+    });
+
+// build key actions
+$(document)
+    .keydown(function(e) {
+        e.preventDefault();
+        switch (e.which) {
+            case 37: // left
+                if ((modalId.data('bs.modal') || {})) {
+                    $('#show-previous-image')
+                        .click();
+                }
+                break;
+
+            case 39: // right
+                if ((modalId.data('bs.modal') || {})) {
+                    $('#show-next-image')
+                        .click();
+                }
+                break;
+
+            default:
+                return;
+        }
+        e.preventDefault();
+    });
+</script>
+
+<script>
+     $(document).ready(function(){
+    $('.autoplay').owlCarousel({
+        loop:true,
+        rtl:true,
+        margin:10,
+        nav:false,
+       dots:true,
+        items:4, // Remove stagePadding
+        loop:true,
+        autoplay:true,
+        autoplaySpeed:2500,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:4
+            },
+            700:{
+                items:4
+            },
+            1000:{
+                items:4
+            }
+        },
+  
+    });
+});
+    </script>
 
 
 </html>

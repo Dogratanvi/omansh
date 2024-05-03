@@ -242,50 +242,55 @@
 <!-- gallary -->
 <section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
-        <h2 class="text-center"> Gallery</h2>
-        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">
+    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
+            Gallery</h2>
+        <div class="women-health">
+            <div class="row">
+                @csrf
+                @foreach ($galleryImages as $gallery )
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2 innertext">
+                    <div class="women_box border-0 rounded-0">
+                        <a class="thumbnail border-0 " href="#" data-image-id="" data-toggle="modal" data-title=""
+                            data-image="{{ $gallery }}" data-target="#image-gallery">
+                            <img class="img-thumbnail px-0 border-0" class="card-img-top rounded-top myImg px-0"
+                                src="{{$gallery }}" alt="gallery">
+                        </a>
+                    </div>
                 </div>
+                @endforeach
             </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_2.png') }}" alt="gallary2">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_3.png') }}" alt="gallary3">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_4.png') }}" alt="gallary4">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_5.png') }}" alt="gallary5">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
-                </div>
-            </div>
-        </div>
-        <div class="btn_wrapper d-flex justify-content-center mt-5">
+            <div class="btn_wrapper d-flex justify-content-center mt-5">
             <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
         </div>
     </div>
 </section>
 
+<div class="modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog galleryDialog">
+        <div class="modal-content galleryModal-content">
+            <div class="modal-header p-0">
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+                <button type="button" class="close m-0 pb-0 pt-0 pe-0 border-0 bg-transparent"
+                    data-dismiss="modal"><span aria-hidden="true" class="text-dark"><i class="fas fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <img id="image-gallery-image" class="img-responsive border-0 rounded-0" src="">
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <button type="button" class="btn btn-secondary float-left bg-transparent border-0 py-0 shadow-none"
+                    id="show-previous-image"><i class="fas fa-caret-left"></i>
+                </button>
+                <button type="button" id="show-next-image"
+                    class="btn btn-secondary float-right bg-transparent border-0 py-0 shadow-none"><i
+                        class="fas fa-caret-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 @endsection

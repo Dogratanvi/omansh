@@ -13,11 +13,13 @@
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up">Corporate Training</h1>
                             <div class="row justify-content-center">
-                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p class="text-center" data-aos="fade-right">Elevate your team's performance and well-being
-                                with our bespoke corporate training programs, designed to inspire, engage, and
-                                transform.</p>  </div>
-                        </div>
+                                <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
+                                    <p class="text-center" data-aos="fade-right">Elevate your team's performance and
+                                        well-being
+                                        with our bespoke corporate training programs, designed to inspire, engage, and
+                                        transform.</p>
+                                </div>
+                            </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
@@ -82,10 +84,12 @@
 <!-- why it is important -->
 <section class="why-it-is-important py-4">
     <div class="container">
-        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Why it is Important?</h2>
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Why it is
+            Important?</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8 col-xl-8 col-md-10 col-sm-12 col-xs-12 col-12  ">
-                <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Corporate yoga, the practice of offering yoga sessions within a workplace
+                <p class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Corporate
+                    yoga, the practice of offering yoga sessions within a workplace
                     environment, has gained popularity due to several reasons:
                 </p>
             </div>
@@ -225,54 +229,36 @@
     </div>
 </section>
 <!-- gallary -->
-<section class="pb-3 pt-4 aboutus_content gallery-section">
+<section class="pb-3  aboutus_content gallery-section">
+
     <div class="container">
-        <h2 class="text-center">Corporate Training Gallery</h2>
-        <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_1.png') }}" alt="gallary1">
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Corporate Training
+            Gallery</h2>
+        <div class="women-health">
+            <div class="row">
+                @csrf
+                @foreach ($galleryImages as $gallery )
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 my-xl-3 my-lg-3 my-md-3 my-sm-3 my-2 innertext">
+                    <div class="women_box border-0 rounded-0">
+                        <a class="thumbnail border-0 " href="#" data-image-id="" data-toggle="modal" data-title=""
+                            data-image="{{ $gallery }}" data-target="#image-gallery">
+                            <img class="img-thumbnail px-0 border-0" class="card-img-top rounded-top myImg px-0"
+                                src="{{$gallery }}" alt="gallery">
+                        </a>
+                    </div>
                 </div>
+                @endforeach
             </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_2.png') }}" alt="gallary2">
-                </div>
+            <div class="btn_wrapper d-flex justify-content-center mt-5">
+                <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
             </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_3.png') }}" alt="gallary3">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_4.png') }}" alt="gallary4">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_5.png') }}" alt="gallary5">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 innertext">
-                <div class="card border-0">
-                    <img src="{{ asset('img/gallary_6.png') }}" alt="gallary6">
-                </div>
-            </div>
-        </div>
-        <div class="btn_wrapper d-flex justify-content-center mt-5">
-            <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
         </div>
     </div>
 </section>
 
 <!-- Testimonial -->
-<section class="our_specialties_section main-testimonial">
+<section class="our_specialties_section main-testimonial aboutus_content">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -280,33 +266,34 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="row pt-4" id="data">
-                    @foreach ($testimonials as $testimonial)
-                    @if($testimonial->category == "women-health")
-                    <div class="col-md-3 pt-3">
+            @foreach ($testimonials as $testimonial)
+            @if($testimonial->category == "women-health")
+            <div class="col-md-3 pt-3">
 
-                        <div class="card border-0 videoCard">
-                            <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}"
-                                data-toggle="modal" data-target="#deleteLineItemModal">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <img class="loads" src="{{$testimonial->featured_image }}"
-                                class="play-btn btn-watch-video w-100" alt="thumbnail" />
-
-                        </div>
-                    </div>
-                    @endif
-                    @endforeach
-
-
-
+                <div class="card border-0 videoCard">
+                    <a class="btn btn-block videoLink" data-item="{{ $testimonial->featured_video}}" data-toggle="modal"
+                        data-target="#deleteLineItemModal">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <img class="loads" src="{{$testimonial->featured_image }}" class="play-btn btn-watch-video w-100"
+                        alt="thumbnail" />
 
                 </div>
+            </div>
+            @endif
+            @endforeach
+
+
+
+
+        </div>
     </div>
 </section>
 <!-- discount-section -->
@@ -338,6 +325,31 @@
             </div>
             <div class="modal-body edit-content pt-2">
                 <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog galleryDialog">
+        <div class="modal-content galleryModal-content">
+            <div class="modal-header p-0">
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+                <button type="button" class="close m-0 pb-0 pt-0 pe-0 border-0 bg-transparent"
+                    data-dismiss="modal"><span aria-hidden="true" class="text-dark"><i class="fas fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <img id="image-gallery-image" class="img-responsive border-0 rounded-0" src="">
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <button type="button" class="btn btn-secondary float-left bg-transparent border-0 py-0 shadow-none"
+                    id="show-previous-image"><i class="fas fa-caret-left"></i>
+                </button>
+                <button type="button" id="show-next-image"
+                    class="btn btn-secondary float-right bg-transparent border-0 py-0 shadow-none"><i
+                        class="fas fa-caret-right"></i>
+                </button>
             </div>
         </div>
     </div>

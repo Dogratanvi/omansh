@@ -60,12 +60,6 @@ class FrontendController extends Controller
         return view('frontend.contact.create', compact('settings','meta_page_type'));
     }
 
-    public function servicedetail()
-    {
-        $meta_page_type = 'service';
-        $settings = Setting::all();
-        return view('frontend.servicedetail', compact('settings','meta_page_type'));
-    }
     public function blog()
     {
         $meta_page_type = 'blog';
@@ -85,7 +79,4 @@ class FrontendController extends Controller
         $settings = Setting::all();
         return view('frontend.terms&condition', compact('settings'));
     }
-
-
-
 }

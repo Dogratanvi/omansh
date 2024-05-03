@@ -98,6 +98,7 @@ li{
     
  
 }
+
 .main-blog{
     margin-bottom: 324px;
 }
@@ -178,6 +179,9 @@ button:focus {
   }
   .btn.btns:hover .span {
     visibility:visible;
+  }
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #CAA983 !important;
   }
   .ico {
     transition: all 0.5s;
@@ -833,7 +837,7 @@ button.custom-btn{
 /* Home Page Our Specialties Section Style */
 
 .our_specialties_section{
-    padding: 110px 0 108px;
+    padding: 80px 0 108px;
     position: relative;
 }
 .our_specialties_heading_content{
@@ -1647,10 +1651,10 @@ section.women-health {
     width: 100%;
  
 }
-.women-health .logo-box img {
+/* .women-health .logo-box img {
     height: 105px;
     object-fit: cover;
-}
+} */
 #text-box::placeholder {
     font-size: 15px;
     padding-left: 10px;
@@ -2430,9 +2434,13 @@ background-color: #004B2A !important;
 }
 
 .grid-box {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+  
+    width: 100%;
     gap: 20px;
+    display: flex;
+}
+.main-section-box{
+    width: 20%;
 }
 .grid-box h6{
     color: #004B2A;
@@ -3079,6 +3087,9 @@ text-decoration: none;
         display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
+    }
+    .main-section-box {
+width: 100%;
     }
     .grid-box {
         display: grid;

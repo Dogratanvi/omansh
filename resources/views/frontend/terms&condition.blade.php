@@ -44,7 +44,7 @@
     <div class="container">
         <h2>Terms of Use </h2>
 <p>
-        Welcome to YogaDura! These Terms of Use (“Terms”) govern your access to and use of the website YogaDura.com
+        Welcome to omansh.org These Terms of Use (“Terms”) govern your access to and use of the website omansh.org
         (referred to as “the Website” or “our Website”). By accessing or using our Website, you agree to be bound by
         these Terms. If you do not agree with these Terms, please do not use our Website.</p>
         <ol>
@@ -53,11 +53,11 @@
                 of a parent or legal guardian.<br>b) User Responsibilities: You are responsible for your use of the
                 Website, including any content you post or share. You agree to use the Website in compliance with
                 applicable laws, regulations, and these Terms.</li>
-            <li><strong>Intellectual Property Rights</strong><br>a) All content on YogaDura.com, including text,
+            <li><strong>Intellectual Property Rights</strong><br>a) All content on omansh.org, including text,
                 graphics, logos, images, and audiovisual material, is protected by copyright, trademark, and other
                 intellectual property laws. You may not use, modify, distribute, reproduce, or create derivative works
                 based on our content without our explicit permission.<br>b) User Contributions: By submitting or posting
-                content on our Website, you grant YogaDura a non-exclusive, worldwide, royalty-free, perpetual, and
+                content on our Website, you grant omansh.org a non-exclusive, worldwide, royalty-free, perpetual, and
                 transferable license to use, reproduce, distribute, prepare derivative works of, display, and perform
                 that content in connection with the Website’s services.</li><span id="ezoic-pub-ad-placeholder-107">
   
@@ -70,18 +70,18 @@
                 id="ezoic-pub-ad-placeholder-111" data-ezoic-video-excluded="1">
      
             </span>
-            <li><strong>Disclaimer of Warranties</strong><br>a) YogaDura strives to provide accurate and up-to-date
+            <li><strong>Disclaimer of Warranties</strong><br>a) omansh.org strives to provide accurate and up-to-date
                 information on the Website, but we make no warranties or representations regarding the completeness,
                 accuracy, or reliability of the content.<br>b) You acknowledge that the use of our Website is at your
                 own risk. We disclaim any warranties, whether express or implied, including but not limited to
                 warranties of merchantability, fitness for a particular purpose, and non-infringement.</li>
-            <li><strong>Limitation of Liability</strong><br>a) YogaDura and its affiliates, employees, or agents shall
+            <li><strong>Limitation of Liability</strong><br>a) omansh.org and its affiliates, employees, or agents shall
                 not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of
                 your use of the Website or any content on it.<br>b) This limitation of liability applies even if
-                YogaDura has been advised of the possibility of such damages.</li>
+               omansh.org has been advised of the possibility of such damages.</li>
  
             <li><strong>Links to Third-Party Websites</strong><br>Our Website may contain links to third-party websites
-                that are not owned or controlled by YogaDura. We are not responsible for the content, policies, or
+                that are not owned or controlled by omansh.org. We are not responsible for the content, policies, or
                 practices of these third-party websites. Your use of linked websites is subject to their terms and
                 conditions.</li>
             <li><strong>Modifications and Termination</strong><br>YogaDura reserves the right to modify or terminate the
@@ -94,7 +94,7 @@
             <li><strong>Contact Information</strong><br>If you have any questions, concerns, or suggestions regarding
                 these Terms, please contact us at contact@yogadura.com.</li>
         </ol>
-        <p>By using YogaDura.com, you signify your consent to these Terms of Use. If you do not agree with these Terms,
+        <p>By using omansh.org, you signify your consent to these Terms of Use. If you do not agree with these Terms,
         please do not use our Website.</p>
 
 

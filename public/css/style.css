@@ -594,6 +594,9 @@ button.custom-btn{
     padding: 120px 0 130px;
     position: relative;
 }
+.service-text p {
+    height: 167px;
+}
 .services_section .services_content{
     text-align: center;
 }
@@ -1663,7 +1666,7 @@ section.women-health {
 /* Home Page Footer Section Style */
 .whtsapp {
     position: fixed;
-    top: 730px;
+    top: 622px;
     right: 0;
     z-index: 99999;
 }
@@ -3194,5 +3197,8 @@ tbody .form-check-input {
 }
 .alert-message{
     width: 75%;
+}
+.service-text p {
+    height: auto;
 }
 }

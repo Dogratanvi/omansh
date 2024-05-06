@@ -111,7 +111,7 @@
                     <div class="services_box_lower_portion pt-2">
                         <h3> {{ $service->name}}</h3>
 
-                        <div class="service-text">{!! $service->intro!!}</div>
+                        <div class="service-text h-100">{!! $service->intro!!}</div>
 
                         <div class="text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
 

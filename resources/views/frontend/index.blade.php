@@ -155,7 +155,7 @@
                 </figure>
             </div>
             <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12" data-aos="fade-right">
-                <div class="aboutus_content">
+                <div class="aboutus_content pt-lg-5 pt-xl-5 pt-md-4 pt-sm-2 pt-xs-2 pt-2">
                     <h5>About us</h5>
                     <h2>Better Life With Optimal Health</h2>
                     <p>Every step towards health at Omansh Health & Fitness is based on care, knowledge, and a strong

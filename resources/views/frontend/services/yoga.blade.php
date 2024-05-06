@@ -178,7 +178,7 @@
 
 <section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
-    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training
+    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
             Gallery</h2>
         <div class="women-health">
             <div class="row">

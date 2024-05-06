@@ -254,7 +254,7 @@
 </section>
 <section id="gallery " class="pb-5 mb-5 aboutus_content service-gallary">
     <div class="container">
-    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Yoga Training
+    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
             Gallery</h2>
         <div class="women-health">
             <div class="row">

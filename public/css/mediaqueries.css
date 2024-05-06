@@ -1249,9 +1249,9 @@
   .services_section .services_box_content .services_box_upper_portion img {
     width: 100%;
   }
-  .services_box_content .services_box_lower_portion p {
+  /* .services_box_content .services_box_lower_portion p {
     padding-right: 70px;
-  }
+  } */
   .services_box_content .services_box_lower_portion .btn_wrapper i {
     font-size: 20px;
     line-height: 20px;
@@ -2120,7 +2120,7 @@
   .services_box_content .services_box_lower_portion p {
     font-size: 14px;
     line-height: 20px;
-    padding-right: 50px;
+
     margin-bottom: 10px;
   }
   .services_box_content .services_box_lower_portion .btn_wrapper i {

@@ -52,14 +52,14 @@
                                 <ul class="list-unstyled drop-down-pages">
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.workshop.yogatraining') }}">
-                                            YOGA TRAINING</a>
+                                            href="{{ route('frontend.workshop.yoga-teacher-training') }}">
+                                            YOGA TEACHER TRAINING</a>
                                     </li>
                              
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE
-                                            TRAINING</a>
+                                            href="{{ route('frontend.workshop.corporatesessions') }}">CORPORATE
+                                            SESSIONS</a>
                                     </li>
                                 </ul>
                             </div>
@@ -124,7 +124,7 @@
                                                 href="{{ route('frontend.services.physiotherapy') }}">
                                                 Physiotherapy</a>
                                         </li>
-                              =
+                         
                                         <li class="nav-item">
                                             <a class="dropdown-item nav-link"
                                                 href="{{ route('frontend.services.yoga') }}">Yoga</a>
@@ -143,14 +143,14 @@
                                     <ul class="list-unstyled drop-down-pages">
                                         <li class="nav-item">
                                             <a class="dropdown-item nav-link"
-                                                href="{{ route('frontend.workshop.yogatraining') }}">
+                                                href="{{ route('frontend.workshop.yoga-teacher-training') }}">
                                                 Yoga TRAINING</a>
                                         </li>
                                 
                                         <li class="nav-item">
                                             <a class="dropdown-item nav-link"
-                                                href="{{ route('frontend.workshop.corporatetraining') }}">CORPORATE
-                                                TRAINING</a>
+                                                href="{{ route('frontend.workshop.corporatesessions') }}">CORPORATE
+                                                SESSIONS</a>
                                         </li>
                                     </ul>
                                 </div>

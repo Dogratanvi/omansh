@@ -250,11 +250,18 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
+                <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
+
+                    @include("frontend.bookingform")
+
+                </div>
+            </div>
         </div>
 </section>
 <section id="gallery " class="pb-5 mb-5 aboutus_content service-gallary">
     <div class="container">
-    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
             Gallery</h2>
         <div class="women-health">
             <div class="row">
@@ -273,8 +280,8 @@
                 @endforeach
             </div>
             <div class="btn_wrapper d-flex justify-content-center mt-5">
-            <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
-        </div>
+                <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
+            </div>
 
 
             <!-- End row -->

@@ -11,19 +11,19 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up">Corporate Training</h1>
+                            <h1 data-aos="fade-up">Corporate Sessions</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                                     <p class="text-center" data-aos="fade-right">Elevate your team's performance and
                                         well-being
-                                        with our bespoke corporate training programs, designed to inspire, engage, and
+                                        with our bespoke corporate sessions programs, designed to inspire, engage, and
                                         transform.</p>
                                 </div>
                             </div>
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    Corporate Training</span>
+                                    Corporate Sessions</span>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                 <div class="para ">
 
 
-                    <h5>Omansh’s Corporate Training</h5>
+                    <h5>Omansh’s Corporate Sessions</h5>
                     <h2> {!! $workshops[0]->name!!}</h2>
                     <div> {!! $workshops[0]->content!!} </div>
                     <div class="btn_wrapper main-btn">
@@ -232,7 +232,7 @@
 <section class="pb-3  aboutus_content gallery-section">
 
     <div class="container">
-        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Corporate Training
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">Corporate Session
             Gallery</h2>
         <div class="women-health">
             <div class="row">

@@ -36,6 +36,7 @@
     <link href="{{ asset('css/custom-style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/special-classes.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/booking.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/gallary.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

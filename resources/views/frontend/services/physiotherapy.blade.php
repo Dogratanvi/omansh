@@ -11,13 +11,16 @@
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up"> Physiotherapy</h1>
                             <div class="row justify-content-center">
-                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p data-aos="fade-right">Revitalizing movement and enhancing well-being through personalized
-                                physiotherapy that restores, heals, and transforms.</p>  </div>
-                        </div>
+                                <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
+                                    <p data-aos="fade-right">Revitalizing movement and enhancing well-being through
+                                        personalized
+                                        physiotherapy that restores, heals, and transforms.</p>
+                                </div>
+                            </div>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i> <span class="sub_home_span"><a>Services
+                                <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
+                                    class="fa-solid fa-angles-right" aria-hidden="true"></i> <span
+                                    class="sub_home_span"><a>Services
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Physiotherapy </span>
                             </div>
@@ -78,17 +81,17 @@
                     <h3> We work on multiple treatment services like :</h3>
                     <div class="row">
                         <div class="col-md-6">
-                        
-                                <li>
-                                    Spine Rehabilitation/ Back Pain
-                                </li>
-                                <li>
-                                    Antenatal & Post Natal Sessions
-                                </li>
-                                <li>
-                                    Arthritis, Joint Pain & Knee Rehabilitation
-                                </li>
-                            
+
+                            <li>
+                                Spine Rehabilitation/ Back Pain
+                            </li>
+                            <li>
+                                Antenatal & Post Natal Sessions
+                            </li>
+                            <li>
+                                Arthritis, Joint Pain & Knee Rehabilitation
+                            </li>
+
                         </div>
                         <div class="col-md-6">
                             <li>
@@ -100,7 +103,8 @@
                         </div>
                     </div>
                     <div class="btn_wrapper mt-3">
-                        <a href="{{ route('frontend.contact.create') }}" class="text-decoration-none get_started_btn">Contact
+                        <a href="{{ route('frontend.contact.create') }}"
+                            class="text-decoration-none get_started_btn">Contact
                             Us</a>
                     </div>
 
@@ -132,32 +136,32 @@
                     <img src="{{ asset('img/services/physoitheraphy/Orthopedic.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Orthopedic Physiotheraphy</h4>
-                   
-                            <li>Arthritis (OA, RA) </li>
-                            <li>Frozen Shoulder</li>
-                            <li>Sprain, Strain(Tendon and Ligament Injury)</li>
-                            <li>Shoulder Pain
-                            </li>
-                            <li>Back Pain
-                            </li>
-                            <li>Neck Pain
-                            </li>
-                            <li> Spinal Condition
-                            </li>
-                            <li>Cervical Spondylitis, Cervical Radiculopathy
-                            </li>
-                            <li>Portural Deformity
-                            </li>
-                            <li>Lumbar Spondylitis, Sciatica, PIVD
-                            </li>
-                            <li>Amputation
-                            </li>
-                            <li> Total Knee Replacement Rehab
-                            </li>
-                            <li> Musculoskeletal Pain
-                            </li>
 
-                        
+                        <li>Arthritis (OA, RA) </li>
+                        <li>Frozen Shoulder</li>
+                        <li>Sprain, Strain(Tendon and Ligament Injury)</li>
+                        <li>Shoulder Pain
+                        </li>
+                        <li>Back Pain
+                        </li>
+                        <li>Neck Pain
+                        </li>
+                        <li> Spinal Condition
+                        </li>
+                        <li>Cervical Spondylitis, Cervical Radiculopathy
+                        </li>
+                        <li>Portural Deformity
+                        </li>
+                        <li>Lumbar Spondylitis, Sciatica, PIVD
+                        </li>
+                        <li>Amputation
+                        </li>
+                        <li> Total Knee Replacement Rehab
+                        </li>
+                        <li> Musculoskeletal Pain
+                        </li>
+
+
                     </div>
                 </div>
             </div>
@@ -166,18 +170,18 @@
                     <img src="{{ asset('img/services/physoitheraphy/Neuro_Physiotheraphy.png') }}" alt="bladder">
                     <div class="card-content">
                         <h4>Neuro Physiotheraphy</h4>
-                      
-                            <li>Stroke </li>
-                            <li>Cerebral Palsy</li>
-                            <li>Parkinson's Disease</li>
-                            <li>Head Injury</li>
-                            <li>Spinal Cord Injury</li>
-                            <li>Muscular Dystrophy</li>
-                            <li>Fascial Palsy</li>
-                            <li>Balance and Coordination Training</li>
+
+                        <li>Stroke </li>
+                        <li>Cerebral Palsy</li>
+                        <li>Parkinson's Disease</li>
+                        <li>Head Injury</li>
+                        <li>Spinal Cord Injury</li>
+                        <li>Muscular Dystrophy</li>
+                        <li>Fascial Palsy</li>
+                        <li>Balance and Coordination Training</li>
 
 
-                       
+
                     </div>
                 </div>
             </div>
@@ -201,7 +205,7 @@
                         <li> Bursitis</li>
                         <li> Wrist Fracture</li>
 
-                       
+
                     </div>
                 </div>
             </div>
@@ -217,7 +221,7 @@
                         <li>Pain Management</li>
                         <li>Restore Mobility</li>
                         <li>Prevention Of Bed Rest</li>
-                     
+
                     </div>
                 </div>
             </div>
@@ -231,18 +235,26 @@
                         </li>
                         <li>Torticolis
                         </li>
-                       
+
                     </div>
                 </div>
             </div>
         </div>
+        <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
+           
+                    @include("frontend.bookingform")
+           
+        </div>
     </div>
+
+
+
 </section>
 
 <!-- gallary -->
 <section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
-    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
             Gallery</h2>
         <div class="women-health">
             <div class="row">
@@ -261,9 +273,9 @@
                 @endforeach
             </div>
             <div class="btn_wrapper d-flex justify-content-center mt-5">
-            <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
+                <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
+            </div>
         </div>
-    </div>
 </section>
 
 <div class="modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"

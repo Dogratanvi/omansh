@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up">Yoga Training</h1>
+                            <h1 data-aos="fade-up">Yoga Teacher Training</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                                     <p class="text-center" data-aos="fade-right">Align Your Body, Awaken Your Mind, and
@@ -21,7 +21,7 @@
                             <div class="btn_wrapper">
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home</a> </span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
-                                    Yoga Training</span>
+                                    Yoga Teacher Training</span>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
                 <div class="para">
-                    <h5>YOGA TRAINING</h5>
+                    <h5>YOGA TEACHER TRAINING</h5>
                     <h2> {!! $workshops[1]->name!!}</h2>
                     <div> {!! $workshops[1]->content!!} </div>
 

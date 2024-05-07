@@ -1,0 +1,81 @@
+/* appointment css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap');
+
+.inner-appointment-box{
+    background-color: #F4F7FF;
+}
+
+.booking-form label {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.cancel-box{
+    background-color: #004B2A;
+    padding: 20px 20px;
+}
+.inner-appointment-box .form-group{
+    margin-right: 0px;
+}
+.inner-appointment-box h6{
+    font-family: "Poppins", sans-serif;
+}
+.cancel-btn{
+    background-color: #fff;
+    color:#004B2A ;
+    padding: 20px 24px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.close-btn{
+    background-color: #000000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 14px 44px;
+    font-size: 16px;
+   
+    font-weight: 600;
+    color: #fff;
+}
+.appointment-btn{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 16px 35px;
+    text-align: center;
+    color: var(--e-global-color-white);
+    display: inline-block;
+    background-color: #004B2A;
+    border-radius: 35px 0px 35px 0px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.appointment-btn:hover {
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
+    transform: translateY(-10px);
+}
+.appointment-btn:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.appointment-btn:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
+	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+}

@@ -46,21 +46,7 @@
                                         type="datetime-local" id="ends_at" value="2016-05-13T20:00:00">
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
-                                <div class="cancel-box d-flex justify-content-between align-items-center w-100">
-                                    <div class="select-date">
-                                        <h6 class="text-white">
-                                            Selected Time & Date<br>
-                                            <span>11:00 Tuesday, May 07, 2024</span>
-                                        </h6>
-                                    </div>
-                                    <div class="cancel-box">
-                                        <button class="cancel-btn border-0">Cancel Selection
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </div>
+                        
 
                             <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
                                 <div class="form-group mb-0">

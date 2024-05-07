@@ -557,36 +557,36 @@ section.feedback-section {
 }
 button.custom-btn.active {
     background: #004B2A !important;
-    width: 180px;
+    width: 165px;
     border-radius: 0px !important;
     border-top-left-radius: 40px !important;
     border-bottom-right-radius: 40px !important;
     color: #ffffff;
-    font-size: 18px;
-    height: 60px;
+    font-size: 16px;
+    height: 55px;
     font-weight: 500;
 }
-button.custom-btn.hover {
+button.custom-btn:hover {
     background: #004B2A !important;
-    width: 180px;
+    width: 165px;
     border-radius: 0px !important;
     border-top-left-radius: 40px !important;
     border-bottom-right-radius: 40px !important;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    height: 60px;
+    height: 55px;
 }
 button.custom-btn{
     background: #CAA983 !important;
-    width: 180px;
+    width: 165px;
     border-radius: 0px !important;
     border-top-left-radius: 40px !important;
     border-bottom-right-radius: 40px !important;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    height: 60px;
+    height: 55px;
 }
 /* Home Page Our Services Section Style */
 
@@ -2444,7 +2444,7 @@ background-color: #004B2A !important;
 }
 
 .service_page_aboutus_content .get_started_btn {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     padding: 16px 35px;

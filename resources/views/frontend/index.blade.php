@@ -16,7 +16,9 @@
                             class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
                             WELCOME TO</h5>
                         <h1 class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-up">OMANSH <br> <span class="ityped"></span></h1>
+                            data-aos="fade-up">OMANSH <br></h1>
+                            <h2 class="inner-text text-center text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">Women Health, Physiotherapy & Yoga</h2>
+                            <!-- <span class="ityped"></span> -->
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's Health Care,
                             Personalized Physiotherapy, and Yoga ! </p>
@@ -62,24 +64,24 @@
         <div class="icon_content d-table-cell align-middle">
             <ul class="list-unstyled p-0 m-0">
                 <li>
-                    <a href="{{$settings[2]->value}}" target="_blank"><i class="fa-brands fa-facebook-f"
-                            aria-hidden="true"></i></a>
+                    <a href="{{$settings[2]->value}}" target="_blank"> <img src="{{ asset('img/social/facebook.png') }}" loading="lazy" alt=""
+                                class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[9]->value}}" target="_blank"><i class="fa-brands fa-instagram"
-                            aria-hidden="true"></i></a>
+                    <a href="{{$settings[9]->value}}" target="_blank"><img src="{{ asset('img/social/instagram.png') }}" loading="lazy" alt=""
+                                class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[4]->value}}" target="_blank"><i class="fa-brands fa-linkedin-in"
-                            aria-hidden="true"></i></a>
+                    <a href="{{$settings[4]->value}}" target="_blank"><img src="{{ asset('img/social/linkedin.png') }}" loading="lazy" alt=""
+                                class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[10]->value}}" target="_blank"><i class="fa-brands fa-google"
-                            aria-hidden="true"></i></a>
+                    <a href="{{$settings[10]->value}}" target="_blank"><img src="{{ asset('img/social/google.png') }}" loading="lazy" alt=""
+                                class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[5]->value}}" target="_blank"><i class="fa-brands fa-youtube"
-                            aria-hidden="true"></i></a>
+                    <a href="{{$settings[5]->value}}" target="_blank"><img src="{{ asset('img/social/youtube.png') }}" loading="lazy" alt=""
+                                class="img-fluid w-75"></a>
                 </li>
 
             </ul>
@@ -220,8 +222,8 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
-                <figure class="specialties_image mb-0">
-                    <img src="{{ asset('images/specialties_image.png') }}" loading="lazy" alt="" class="img-fluid">
+                <figure class=" mt-lg-5 mt-xl-5 mt-md-3 mt-3 mb-0">
+                    <img src="{{ asset('img/why-choose.webp') }}" loading="lazy" alt="" class="img-fluid">
                 </figure>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
@@ -520,7 +522,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog_posts_content">
 
-                    <h2>Blog & News</h2>
+                    <h2 class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">Blog & News</h2>
                     <p class="text-center">Stay informed and inspired - our latest insights and updates.</p>
                 </div>
             </div>
@@ -528,7 +530,7 @@
         <div class="row" data-aos="fade-up">
 
             @foreach ($blogs as $blog)
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
                 <div class="blog_posts_image position-relative">
                     <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" loading="lazy" alt="" class="img-fluid">
                         <div class="blog-overlay">
@@ -558,6 +560,36 @@
         </figure>
     </div>
 </section>
+<!-- instagram section -->
+<section class="home-insta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="blog_posts_content">
+
+                    <h2 class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">Instagram Feed</h2>
+                    <div
+                        class="row justify-content-sm-center justify-content-xs-center justify-content-center justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
+                        <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
+                            <p class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">Discover daily doses of wellness inspiration, transformative health tips, and
+                                behind-the-scenes glimpses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-af74a9e2-7ad5-4fe5-b3bb-147a7376bd59" data-elfsight-app-lazy></div>
+        <div class="row" data-aos="fade-up">
+
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- modal for testimonal -->
 <div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
     aria-labelledby="deleteLineItemModal" aria-hidden="true">
     <div class="modal-dialog" role="document">

@@ -11,11 +11,13 @@
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up"> Yoga</h1>
                             <div class="row justify-content-center ">
-                        
-                                    <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                            <p data-aos="fade-right">A journey of transformation and harmony, connecting body, mind, and
-                                spirit for holistic well-being.</p>  </div>
-                        </div>
+
+                                <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
+                                    <p data-aos="fade-right">A journey of transformation and harmony, connecting body,
+                                        mind, and
+                                        spirit for holistic well-being.</p>
+                                </div>
+                            </div>
                             <div class="btn_wrapper">
 
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
@@ -112,15 +114,15 @@
                     <img src="{{ asset('img/services/yoga/corporate-yoga.png') }}" alt="corporate-yoga">
                     <div class="card-content">
                         <h4>Corporate Yoga</h4>
-                       
-                            <li>Stress Management </li>
-                            <li>Meditation</li>
-                            <li>Chair Yoga</li>
-                            <li>Posture Analysis</li>
-                            <li>Muscle Strengthening</li>
-                            <li>Ergonomics</li>
 
-                      
+                        <li>Stress Management </li>
+                        <li>Meditation</li>
+                        <li>Chair Yoga</li>
+                        <li>Posture Analysis</li>
+                        <li>Muscle Strengthening</li>
+                        <li>Ergonomics</li>
+
+
                     </div>
                 </div>
             </div>
@@ -129,13 +131,13 @@
                     <img src="{{ asset('img/services/yoga/pregnency-yoga.png') }}" alt="pregnency-yoga">
                     <div class="card-content">
                         <h4>Pregnancy Yoga</h4>
-                      
-                            <li>Pre Pregnancy Sessions </li>
-                            <li>During Pregnancy Session</li>
-                            <li>Post Pregnancy Session</li>
+
+                        <li>Pre Pregnancy Sessions </li>
+                        <li>During Pregnancy Session</li>
+                        <li>Post Pregnancy Session</li>
 
 
-                       
+
                     </div>
                 </div>
             </div>
@@ -171,6 +173,11 @@
             </div>
 
         </div>
+        <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
+
+            @include("frontend.bookingform")
+
+        </div>
     </div>
 </section>
 
@@ -178,7 +185,7 @@
 
 <section class="pb-5 mb-5 service-gallary aboutus_content">
     <div class="container">
-    <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
+        <h2 class="text-start text-lg-center text-xl-center text-md-center text-xs-start text-sm-start">
             Gallery</h2>
         <div class="women-health">
             <div class="row">
@@ -197,9 +204,9 @@
                 @endforeach
             </div>
             <div class="btn_wrapper d-flex justify-content-center mt-5">
-            <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
+                <a href="#" id="loadMor" class="text-decoration-none get_started_btn"> Load More </a>
+            </div>
         </div>
-    </div>
 </section>
 
 <div class="modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"

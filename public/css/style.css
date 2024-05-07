@@ -719,6 +719,10 @@ button.custom-btn{
     padding: 100px 0 130px;
     background-position: 100% 100%;
 }
+.item img {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
 .aboutus_image{
     position: relative;
     z-index: 1;
@@ -772,7 +776,7 @@ button.custom-btn{
 }
 .aboutus_content .btn_wrapper .get_started_btn {
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     padding: 16px 35px;
@@ -1087,7 +1091,7 @@ textarea {
     overflow: auto;
 }
 .get_in_touch_content button {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     padding: 24px 40px;
@@ -1391,8 +1395,14 @@ a.all-event {
 /* Home Page Blog Posts Section Style */
 
 .blog_posts_section{
-    padding: 0px 0 480px;
+    padding: 0px 0 80px;
     position: relative;
+}
+.home-insta-section{
+    padding: 0px 0 480px;
+}
+.eapps-instagram-feed-posts-grid-load-more-text{
+    font-size: 16px !important;
 }
 .blog_posts_content{
     text-align: center;
@@ -1551,7 +1561,7 @@ a.all-event {
     border: none;
 }
 .subscribe_content button {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 500;
     padding: 16px 35px;
@@ -1878,12 +1888,12 @@ background-color: #004B2A;
 
 .sub-banner-section .banner-section .banner_left_top_shape {
     position: absolute;
-    top: -8px;
+    top: 129px;
     left: 0;
 }
 .sub-banner-section .banner-section .banner_left_bottom_shape{
     position: absolute;
-    top: 112px;
+    top: 185px;
     left: 0;
 }
 .sub-banner-section .banner-section .banner_right_top_shape {
@@ -2029,7 +2039,7 @@ button.close {
     border-top-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
     border-bottom-left-radius: 0px !important;
-    padding: 30px 10px;
+    padding: 25px 10px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -2038,7 +2048,13 @@ button.close {
     font-size: 20px !important;
     line-height: 20px !important;
     font-weight: 500 !important;
+    margin-top: 50px !important;
  
+}
+#eapps-instagram-feed-1 {
+    width: 100%;
+    margin-top: -36px !important;
+    padding: 0px !important;
 }
 .eapps-instagram-feed-posts-grid-load-more:hover{
 background-color: #004B2A !important;
@@ -2194,8 +2210,45 @@ background-color: #004B2A !important;
     background-color: var(--e-global-color-soft-orange);
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
+.appointment-btn{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 16px 35px;
+    text-align: center;
+    color: var(--e-global-color-white);
+    display: inline-block;
+    background-color: #004B2A;
+    border-radius: 35px 0px 35px 0px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.appointment-btn:hover {
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
+    transform: translateY(-10px);
+}
+.appointment-btn:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.appointment-btn:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+    color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-soft-orange);
+	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+}
 .mission_content .btn_wrapper .read_more_btn{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     padding: 16px 35px;
@@ -2275,7 +2328,7 @@ background-color: #004B2A !important;
     padding-right: 60px;
 }
 .vision_content .btn_wrapper .read_more_btn{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     padding: 16px 35px;
@@ -2354,9 +2407,7 @@ background-color: #004B2A !important;
 .achievement_section .q-power{
     margin-left: -2px;
 }
-.achievement_section .logo{
-    padding-left: 20px;
-}
+
 .achievement_section .minimum{
     padding-left: 8px;
 }
@@ -2893,7 +2944,7 @@ a.contact_us:hover {
     background-image: url('../img/workshop/corporate-banner.png'); 
 }
  .btn_wrapper.main-btn .read_more_btn{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     padding: 16px 35px;
@@ -3053,6 +3104,28 @@ text-decoration: none;
 .specialties_paragraph{
     font-size: 16px !important;
 }
+.inner-text{
+    font-size: 35px;
+    line-height: 50px !important;
+    color: #CAA983;
+    font-weight: 900;
+
+}
+.left_icons ul li a img {
+    transition: transform .2s !important;
+    -webkit-transition: transform .2s !important;
+    -moz-transition: transform .2s !important;
+    -ms-transition: transform .2s !important;
+    -o-transition: transform .2s !important;
+}
+
+.left_icons ul li a img:hover {
+    transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+}
 @media screen and (max-width: 5100px) {
     .container{
         max-width: 1200px !important;
@@ -3200,5 +3273,14 @@ tbody .form-check-input {
 }
 .service-text p {
     height: auto;
+}
+.mission_image img {
+    border-radius: 80px 0 80px 0;
+}
+.vision_image img {
+    border-radius: 80px 0 80px 0;
+}
+.vision_content{
+    padding-top: 30px;
 }
 }

@@ -35,8 +35,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     $module_name = 'workshop';
     $controller_name = 'WorkshopController';
     // Route::get('workshop/doctortraining', 'WorkshopController@doctortraining')->name('workshop.doctortraining');
-    Route::get('workshop/yogatraining', 'WorkshopController@yogatraining')->name('workshop.yogatraining');
-    Route::get('workshop/corporatetraining', 'WorkshopController@corporatetraining')->name('workshop.corporatetraining');
+    Route::get('workshop/yoga-teacher-training', 'WorkshopController@yogateacherTraining')->name('workshop.yoga-teacher-training');
+    Route::get('workshop/corporatesessions', 'WorkshopController@corporatesessions')->name('workshop.corporatesessions');
 
     //feedback
      $module_name = 'feedbackform';
@@ -85,7 +85,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
 
     Route::get('privacy-policy', 'FrontendController@privacyPolicy')->name('privacy-policy');
     Route::get('terms&condition', 'FrontendController@termsCondition')->name('terms&condition');
+    // booking form
+    Route::get('bookingform', 'FrontendController@bookingform')->name('bookingform');
 
-  
 
 });

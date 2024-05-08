@@ -62,20 +62,18 @@ class Comments extends Model
                 ->description('Provide some basic information.')
                 ->icon('heroicon-o-chevron-right')
                 ->schema([
-                    TextInput::make('name')
-                        ->label('Name')
-                        ->required()
+                    TextInput::make('user_name')
                         ->maxLength(255),
-                    TextInput::make('slug')
+                    TextInput::make('body')
                         ->maxLength(255),
-                    RichEditor::make('content')
-                        ->maxLength(65535)
-                        ->columnSpanFull(),
-                    FileUpload::make('featured_image')
-                        ->multiple()
-                        ->image(),
+                    TextInput::make('parent_id')
+                        ->maxLength(255),
+                    TextInput::make('blog_id')
+                        ->maxLength(255),
+                    TextInput::make('user_ip')
+                        ->maxLength(255),
                     TextInput::make('order')
-                        ->numeric(),
+                        ->maxLength(255),
                 ]),
     
             Fieldset::make('Status')

@@ -2,23 +2,26 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Events;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
 
-class Blogs extends ApexChartWidget
+class EventsChart extends ApexChartWidget
 {
     /**
      * Chart Id
      *
      * @var string
      */
-    protected static ?string $chartId = 'blogs';
+    protected static ?string $chartId = 'events';
 
     /**
      * Widget Title
      *
      * @var string|null
      */
-    protected static ?string $heading = 'Blogs';
+    protected static ?string $heading = 'Events';
 
     /**
      * Chart options (series, labels, types, size, animations...)
@@ -28,6 +31,15 @@ class Blogs extends ApexChartWidget
      */
     protected function getOptions(): array
     {
+
+        $currentDate = Carbon::now();
+
+        // Get upcoming events count
+        $upcomingEventsCount = Events::where('date_from', '>=', $currentDate)->count();
+
+        // Get past events count
+        $pastEventsCount = Events::where('date_from', '<', $currentDate)->count();
+
         return [
             'chart' => [
                 'type' => 'bar',
@@ -36,11 +48,11 @@ class Blogs extends ApexChartWidget
             'series' => [
                 [
                     'name' => 'BasicBarChart',
-                    'data' => [7, 10, 13, 15, 18],
+                    'data' =>  [$upcomingEventsCount, $pastEventsCount],
                 ],
             ],
             'xaxis' => [
-                'categories' => ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                'categories' =>['Upcoming Events', 'Past Events'],
                 'labels' => [
                     'style' => [
                         'fontFamily' => 'inherit',

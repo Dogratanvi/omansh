@@ -2,6 +2,9 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Blog;
+use App\Models\Contact;
+use Illuminate\Support\Facades\DB;
 use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
 
 class TasksChart extends ApexChartWidget
@@ -11,14 +14,14 @@ class TasksChart extends ApexChartWidget
      *
      * @var string
      */
-    protected static ?string $chartId = 'tasksChart';
+    protected static ?string $chartId = 'contactEnquiry';
 
     /**
      * Widget Title
      *
      * @var string|null
      */
-    protected static ?string $heading = 'TasksChart';
+    protected static ?string $heading = 'Contact Enquiry';
 
     /**
      * Chart options (series, labels, types, size, animations...)
@@ -28,19 +31,37 @@ class TasksChart extends ApexChartWidget
      */
     protected function getOptions(): array
     {
+
+        $contacts = Contact::select('service', DB::raw('COUNT(*) as count'))
+            ->groupBy('service')
+            ->get();
+
+        $data = [];
+
+        foreach ($contacts as $contact) {
+           $value = str_replace('_',' ',$contact->service);
+           $data['service'][] = ucwords($value);
+            $data['counts'][] = $contact->count;
+        }
+     
+        $count = array_map('strval', $data['counts']);
+        $service = array_map('strval', $data['service']);
+      
+      
+
         return [
             'chart' => [
-                'type' => 'line',
+                'type' => 'bar',
                 'height' => 300,
             ],
             'series' => [
                 [
-                    'name' => 'TasksChart',
-                    'data' => [2, 4, 6, 10, 14, 7, 2, 9, 10, 15, 13, 18],
+                    'name' => 'Contact Enquiry',
+                    'data' => $count,
                 ],
             ],
             'xaxis' => [
-                'categories' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                'categories' => $service,
                 'labels' => [
                     'style' => [
                         'fontFamily' => 'inherit',

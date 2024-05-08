@@ -22,29 +22,7 @@ class BookingResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                Forms\Components\TextInput::make('uuid')
-                    ->label('UUID')
-                    ->required()
-                    ->maxLength(36),
-                Forms\Components\TextInput::make('name')
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('phone')
-                    ->tel()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('email')
-                    ->email()
-                    ->maxLength(255),
-                Forms\Components\DateTimePicker::make('date_time'),
-                Forms\Components\TextInput::make('service')
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('message')
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('status')
-                    ->required()
-                    ->maxLength(255)
-                    ->default(1),
-            ]);
+        ->schema(Booking::getForm());
     }
 
     public static function table(Table $table): Table

@@ -37,10 +37,6 @@ class GalleryResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('featured_image'),
-                Tables\Columns\TextColumn::make('order')
-                    ->numeric()
-                    ->searchable()
-                    ->sortable(),
                 Tables\Columns\ToggleColumn::make('status')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')

@@ -13,11 +13,11 @@ class GalleryStat extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('Gallery Count', Gallery::count())
+            Stat::make('Galleries Count', Gallery::count())
                 ->color('success'),
-            Stat::make('Active Gallery', Gallery::where('status', 1)->count())
+            Stat::make('Active Galleries', Gallery::where('status', 1)->count())
                 ->color('success'),
-            Stat::make('Gallery Created Today', Gallery::whereDate('created_at', today())->count())
+            Stat::make('Galleries Created Today', Gallery::whereDate('created_at', today())->count())
                 ->color('success'),
                 
         ];

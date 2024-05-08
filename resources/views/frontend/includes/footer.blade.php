@@ -133,7 +133,7 @@
                                 <a href="mailto:{{$settings[1]->value}}" class="text-decoration-none">
                                     {{$settings[1]->value}}</a>
                             </li>
-                            <li class="mb-0">
+                            <li class="mb-0 about-addrsss">
                                 <i class="fa-solid fa-location-dot location"></i>
                                 <span>
                                     {{$settings[11]->value}}</span>

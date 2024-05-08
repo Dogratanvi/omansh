@@ -1796,8 +1796,11 @@ color: #CAA983;
 .middle-portion .contact_col li span {
     color: var(--e-global-color-white);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
+}
+.about-addrsss{
+    text-align: justify;
 }
 .middle-portion li a:hover{
     color: var(--e-global-color-soft-orange);
@@ -3125,6 +3128,10 @@ text-decoration: none;
     -moz-transform: scale(1.2) !important;
     -ms-transform: scale(1.2) !important;
     -o-transform: scale(1.2) !important;
+}
+.left_icons img{
+    width: 35px !important;
+
 }
 @media screen and (max-width: 5100px) {
     .container{

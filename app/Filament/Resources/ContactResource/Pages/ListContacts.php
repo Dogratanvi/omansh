@@ -22,8 +22,7 @@ class ListContacts extends ListRecords
     protected function getHeaderWidgets(): array
     {
         return [
-            ContactStat::class,
-            ContactChart::class,
+            ContactStat::class
         ];
     }
 }

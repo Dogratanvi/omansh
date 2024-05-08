@@ -15,8 +15,7 @@ class ListGalleries extends ListRecords
     protected function getHeaderWidgets(): array
     {
         return [
-            GalleryStat::class,
-            GalleryLine::class,
+            GalleryStat::class
         ];
     }
 

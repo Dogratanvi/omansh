@@ -21,16 +21,21 @@
 
                                 <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-xs-12 col-sm-12 pt-2">
                                     <div class="form-group mb-0">
-                                        <label for="name">First Name</label><br>
-                                        <input type="text" name="first name" class="form-control border-0 py-4"
-                                            placeholder="first name" required>
+                                        <label for="name"> Name</label><br>
+                                        <input type="text" name="name" class="form-control border-0 py-4"
+                                            placeholder="name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-xs-12 col-sm-12 pt-2">
                                     <div class="form-group mb-0">
-                                        <label for="name">Last Name</label><br>
-                                        <input type="text" name="last name" class="form-control border-0 py-4"
-                                            placeholder="last name" required>
+                                        <label for="name">Service Name</label><br>
+                                        <select name="service" id="service" class="form-select border-0" required>
+                                            <option selected disabled>Services</option>
+                                            <option value="women_health">Women Health</option>
+                                            <option value="physiotherapy">Physiotherapy</option>
+                                            <option value="yoga">Yoga</option>
+                                          
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-xs-12 col-sm-12 pt-2">

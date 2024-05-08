@@ -85,7 +85,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('privacy-policy', 'FrontendController@privacyPolicy')->name('privacy-policy');
     Route::get('terms&condition', 'FrontendController@termsCondition')->name('terms&condition');
     // booking form
-    Route::get('bookingform', 'FrontendController@bookingform')->name('bookingform');
+    Route::get('bookingform', 'BookingsController@index')->name('bookingform');
+    Route::get('bookingform', 'BookingsController@store')->name('booking.store');
 
 
 });

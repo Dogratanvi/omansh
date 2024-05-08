@@ -25,7 +25,6 @@ Route::get('/', function () {
 // frontend routes
 Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
-    Route::get('home', 'FrontendController@home')->name('home');
     Route::get('about', 'FrontendController@about')->name('about');
   
 

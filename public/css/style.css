@@ -3178,9 +3178,7 @@ width: 100%;
         display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
-    }
-
-   
+    }  
 .sub-banner-section{
     background-size: cover;
     background-repeat: no-repeat;

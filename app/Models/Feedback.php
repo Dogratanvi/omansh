@@ -65,11 +65,11 @@ class Feedback extends Model
                     ->columnSpanFull(),
                 TextInput::make('hear_about_omansh')
                     ->maxLength(255),
-                TextInput::make('order')
-                    ->maxLength(255),
-                TextInput::make('status')
-                    ->required()
-                    ->maxLength(255),
+            ]),
+            Fieldset::make('Status')
+            ->schema([
+                Toggle::make('status')
+                ->required(),
             ])
 
         ];

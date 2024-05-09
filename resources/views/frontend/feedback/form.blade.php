@@ -218,7 +218,7 @@
                                 </div>
 
                             </div>
-                            <div id="teacher_knowledge_error" class="text-danger"></div>
+                            <div id="teacher_knowledge_errors" class="text-danger"></div>
                             <h3 class="pt-3">Verification
                                 <input type="hidden" name="g-token" id="recaptchaToken" required>
                                 <div class="g-recaptcha mt-4 mb-4" data-sitekey={{ config('services.recaptcha.key') }}>
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var checkboxes = document.querySelectorAll('.hear');
-    var errorMessageElement = document.getElementById('teacher_knowledge_error');
+    var errorMessageElement = document.getElementById('teacher_knowledge_errors');
 
     checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('change', function() {

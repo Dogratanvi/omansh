@@ -140,6 +140,9 @@
 @media screen and (max-width: 1199px) {
 
   .message_content select{
+    width: 91%;
+  }
+  .home-form select{
     width: 94%;
   }
   .main_header {

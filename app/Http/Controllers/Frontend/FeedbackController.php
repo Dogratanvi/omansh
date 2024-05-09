@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Models\Setting;
+use Exception;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Validator;
 
 class FeedbackController extends Controller
 {
@@ -65,7 +68,7 @@ class FeedbackController extends Controller
     public function store(Request $request)
     {
 
-        $validatedData = $request->validate([
+        $validator = Validator::make($request->all(), [
             'like_about_class' => 'required|string',
             'help_us_improve' => 'required',
             'like_most_about_class' => 'required',
@@ -73,18 +76,42 @@ class FeedbackController extends Controller
             // Add more validation rules for other form fields
         ]);
 
-
-        $feedback = new Feedback;
-        $feedback->like_most_about_class = $request->like_most_about_class;
-        $feedback->teacher_knowledge = $request->teacher_knowledge;
-        $feedback->instruction_given = $request->instruction_given;
-        $feedback->yoga_sequence = $request->yoga_sequence;
-        $feedback->meet_your_expectations = $request->meet_your_expectations;
-        $feedback->like_about_class = $request->like_about_class;
-        $feedback->help_us_improve = $request->help_us_improve;
-        $feedback->hear_about_omansh = $request->hear_about_omansh;
-        $feedback->save();
-
-        return redirect()->route('frontend.feedback.create')->with('success', 'Booking created successfully!');
+        try {
+            
+            if ($validator->fails()) {
+                return redirect()->back()->with([
+                    'message' => 'Thank you for contacting us. We will get back to you within 24 hours.', 
+                     'status' => 'danger',
+                ]);
+            }
+    
+                $input = $request->except(['_token','g-recaptcha-response','g-token']);
+           
+          
+                $feedback = new Feedback;
+                $feedback->like_most_about_class = $request->like_most_about_class;
+                $feedback->teacher_knowledge = $request->teacher_knowledge;
+                $feedback->instruction_given = $request->instruction_given;
+                $feedback->yoga_sequence = $request->yoga_sequence;
+                $feedback->meet_your_expectations = $request->meet_your_expectations;
+                $feedback->like_about_class = $request->like_about_class;
+                $feedback->help_us_improve = $request->help_us_improve;
+                $feedback->hear_about_omansh = $request->hear_about_omansh;
+                $feedback->save();
+        
+    
+                return redirect()->back()->with([
+                    'message' => 'Thank you for feedback!', 
+                     'status' => 'success',
+                ]);
+    
+    
+            }catch (Exception $e) {
+    
+                return redirect()->back()->with([
+                    'message' => 'Thank you for feedback!',  
+                     'status' => 'danger',
+                ]);
+            }
     }
 }

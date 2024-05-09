@@ -44,6 +44,14 @@
                 <img src="{{ asset('img/aboutus_top_shape 2.png') }}">
             </div>
             <div class="feedback-form">
+                @if(session('message'))
+                <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex"
+                    role="alert">
+                    <strong>{{ session('message') }}</strong>
+                    <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert"><i
+                            class="fas fa-times"></i></button>
+                </div>
+                @endif
                 <form id="feedbackForm" name="feedbackForm"  method="POST" action="{{ route('frontend.feedback.store') }}"
                 enctype="multipart/form-data">
                 @csrf

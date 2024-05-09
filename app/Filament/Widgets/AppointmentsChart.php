@@ -2,6 +2,8 @@
 
 namespace App\Filament\Widgets;
 
+use App\Models\Booking;
+use Illuminate\Support\Facades\DB;
 use Leandrocfe\FilamentApexCharts\Widgets\ApexChartWidget;
 
 class AppointmentsChart extends ApexChartWidget
@@ -18,7 +20,7 @@ class AppointmentsChart extends ApexChartWidget
      *
      * @var string|null
      */
-    protected static ?string $heading = 'AppointmentsChart';
+    protected static ?string $heading = 'Appointments';
 
     /**
      * Chart options (series, labels, types, size, animations...)
@@ -28,13 +30,32 @@ class AppointmentsChart extends ApexChartWidget
      */
     protected function getOptions(): array
     {
+
+        $bookings = Booking::selectRaw('MONTHNAME(created_at) as month, count(*) as count')
+            ->groupBy('month')
+        ->get();
+
+        $data =[];
+      
+
+        foreach ($bookings as $booking) {
+        
+            $value = str_replace('_',' ',$booking->month);
+            $data['month'][] = ucwords($value);
+             $data['counts'][] = $booking->count;
+         }
+      
+         $count = array_map('strval', $data['counts']);
+         $month = array_map('strval', $data['month']);
+
+
         return [
             'chart' => [
                 'type' => 'pie',
                 'height' => 300,
             ],
-            'series' => [2, 4, 6, 10, 14],
-            'labels' => ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            'series' =>$count,
+            'labels' =>$month,
             'legend' => [
                 'labels' => [
                     'fontFamily' => 'inherit',

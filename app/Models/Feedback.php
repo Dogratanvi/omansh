@@ -55,7 +55,7 @@ class Feedback extends Model
                 Toggle::make('instruction_given'),
                 TextInput::make('yoga_sequence')
                     ->maxLength(255),
-                TextInput::make('meet_your_exceptations')
+                TextInput::make('meet_your_expectations')
                     ->maxLength(255),
                 Textarea::make('like_about_class')
                     ->maxLength(65535)

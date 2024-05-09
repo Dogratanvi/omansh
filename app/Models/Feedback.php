@@ -25,6 +25,7 @@ class Feedback extends Model
     protected $casts = [
         'id' => 'integer',
         'deleted_at' => 'datetime',
+        'like_most_about_class' => 'array',
     ];
 
     protected static function boot()
@@ -46,10 +47,6 @@ class Feedback extends Model
             ->description('Provide some basic information.')
             ->icon('heroicon-o-chevron-right')
             ->schema([
-                TextInput::make('uuid')
-                    ->label('UUID')
-                    ->required()
-                    ->maxLength(36),
                 TextInput::make('like_most_about_class')
                     ->required()
                     ->maxLength(255),

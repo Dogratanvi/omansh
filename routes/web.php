@@ -41,6 +41,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
      $module_name = 'feedbackform';
      $controller_name = 'FeedbackController';
      Route::get('feedback/form', 'FeedbackController@form')->name('feedback.form');
+     Route::post('feedback/store', 'FeedbackController@store')->name('feedback.store');
 
     //Events
      $module_name = 'events';

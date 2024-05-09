@@ -13,7 +13,8 @@
                             <h1 data-aos="fade-up">Contact Us</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                    <p class="text-center" data-aos="fade-right">Your health is our priority. Don't hesitate to contact us.</p>
+                                    <p class="text-center" data-aos="fade-right">Your health is our priority. Don't
+                                        hesitate to contact us.</p>
                                 </div>
                             </div>
                             <div class="btn_wrapper">
@@ -40,92 +41,96 @@
         </section>
     </div>
 </div>
-    <!-- MESSAGE SECTION -->
-    <section class="message_section contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
-                    <div class="message_content">
-                        <h5>Get in Touch.</h5>
-                        <h2>Send us a Message</h2>
-                        <p>Your health is our priority. Don't hesitate to contact us.</p>
+<!-- MESSAGE SECTION -->
+<section class="message_section contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
+                <div class="message_content">
+                    <h5>Get in Touch.</h5>
+                    <h2>Send us a Message</h2>
+                    <p>Your health is our priority. Don't hesitate to contact us.</p>
 
-                            @if(session('message'))
-                            <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex" role="alert">
-                                <strong>{{ session('message') }}</strong>
-                                <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert" ><i class="fas fa-times"></i></button>
-                            </div>
-                        @endif
-                        <form id="contactpage" name="contactpage"  method="POST" action="{{ url('contact') }}"
-                            enctype="multipart/form-data">
-                            @csrf
-                            <div class="row">
-                             
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="form-group mb-0">
-                                        <input type="text" name="first_name" id="first_name"
-                                            class="@error('first_name') is-invalid @enderror form-control"
-                                            placeholder="First Name" required>
-                                        @error('first_name')
-                                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                                        @enderror
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="form-group mb-0">
-                                        <input type="text" name="last_name" id="last_name"
-                                            class="form-control form_style" placeholder="Last Name" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="form-group mb-0">
-                                        <input type="tel" name="phone" id="phone" class="form-control"
-                                            placeholder="Phone" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="form-group mb-0">
-                                        <input type="email" name="email" id="email" 
-                                            class="form-control form_style" placeholder="Email">
-                                    </div>
+                    @if(session('message'))
+                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex"
+                        role="alert">
+                        <strong>{{ session('message') }}</strong>
+                        <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                    @endif
+                    <form id="contactpage" name="contactpage" method="POST" action="{{ url('contact') }}"
+                        enctype="multipart/form-data">
+                        @csrf
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="first_name" id="first_name"
+                                        class="@error('first_name') is-invalid @enderror form-control"
+                                        placeholder="First Name" required>
+                                    @error('first_name')
+                                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group mb-0">
-
-                                        <select name="service" id="service" class="form-select" required>
-                                            <option selected disabled>Services</option>
-                                            <option value="women_health">Women Health</option>
-                                            <option value="physiotherapy">Physiotherapy</option>
-                                            <option value="yoga">Yoga</option>
-                                            <option value="yoga">Corporate Training</option>
-                                            <option value="yoga">Yoga Training</option>
-                                        </select>
-
-                                    </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="last_name" id="last_name" class="form-control form_style"
+                                        placeholder="Last Name" required>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class=" form-group mb-0">
-                                        <textarea rows="3" name="message" id="message" class="form-control" placeholder="Message" required></textarea>
-                                    </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone"
+                                        required>
                                 </div>
                             </div>
-
-                            <input type="hidden" name="g-token" id="recaptchaToken" required>
-                            <div class="g-recaptcha mt-4 mb-4" data-sitekey={{ config('services.recaptcha.key') }}></div>
-                            <span class="text-danger">{{ $errors->first('Click to verify') }}</span>
-
-                            <div class="btn_wrapper mb-3">
-                                <button type="submit" class="border-0" id="started">Submit</button>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="email" name="email" id="email" class="form-control form_style"
+                                        placeholder="Email">
+                                </div>
                             </div>
-                            <!-- <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mb-0">
 
-                           
-                        </form>
-</div>
+                                    <select name="service" id="service" class="form-select" required>
+                                        <option selected disabled>Services</option>
+                                        <option value="women_health">Women Health</option>
+                                        <option value="physiotherapy">Physiotherapy</option>
+                                        <option value="yoga">Yoga</option>
+                                        <option value="yoga">Corporate Training</option>
+                                        <option value="yoga">Yoga Training</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class=" form-group mb-0">
+                                    <textarea rows="3" name="message" id="message" class="form-control"
+                                        placeholder="Message" required></textarea>
+                               
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="g-token" id="recaptchaToken" required>
+                        <div class="g-recaptcha mt-4 mb-4" data-sitekey={{ config('services.recaptcha.key') }}></div>
+                        <span class="text-danger">{{ $errors->first('Click to verify') }}</span>
+
+                        <div class="btn_wrapper mb-3">
+                            <button type="submit" class="border-0" id="started">Submit</button>
+                        </div>
+                        <!-- <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6> -->
+
+
+                    </form>
+                </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
                 <div class="row pt-5" data-aos="fade-up">
@@ -154,7 +159,8 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Phone</h3>
-                                <p class="pt-2"><a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270 45759</a></p>
+                                <p class="pt-2"><a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270
+                                        45759</a></p>
 
                             </div>
                         </div>
@@ -193,8 +199,8 @@
 </div>
 
 
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
-    {{-- @push ('after-scripts')
+<script async src="https://www.google.com/recaptcha/api.js"></script>
+{{-- @push ('after-scripts')
     <script type="text/javascript">
    
     $('#contactpage').on('submit', function(e) {
@@ -213,36 +219,36 @@
     $.ajax({
      type: "POST",
      url: "{{url('contact')}}",
-     data: { 
-        'email': email,
-        'first_name':first_name,
-        "last_name":last_name,
-        "phone":phone,
-        "service":service,
-        "message":message,
-        "g-recaptcha-response":g-recaptcha-response
-     },
-     success: function()
-                {
-                    console.log(data);
-                    $('.flash-message-mba').html("Contact Submit Successfully");
-                    $('.flash-message-mba').fadeOut(5000);
-                    setTimeout(() => {
-                    element.reset();
-                    }, 5500);
-                },
-      error:function(){
-        console.log(data);
-        $('.flash-message-mba').html("Contact Not Submit Successfully");
-                    $('.flash-message-mba').fadeOut(5000);
-                     setTimeout(() => {
-                        grecaptcha.reset();
-                   
-                    element.reset();
-                    }, 5500);
-        }
-      });
-     
+data: {
+'email': email,
+'first_name':first_name,
+"last_name":last_name,
+"phone":phone,
+"service":service,
+"message":message,
+"g-recaptcha-response":g-recaptcha-response
+},
+success: function()
+{
+console.log(data);
+$('.flash-message-mba').html("Contact Submit Successfully");
+$('.flash-message-mba').fadeOut(5000);
+setTimeout(() => {
+element.reset();
+}, 5500);
+},
+error:function(){
+console.log(data);
+$('.flash-message-mba').html("Contact Not Submit Successfully");
+$('.flash-message-mba').fadeOut(5000);
+setTimeout(() => {
+grecaptcha.reset();
+
+element.reset();
+}, 5500);
+}
+});
+
 
 });
 </script>

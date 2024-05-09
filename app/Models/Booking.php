@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Filament\Forms\Components\DateTimePicker;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
@@ -13,7 +14,8 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 
-class Comments extends Model
+
+class Booking extends Model
 {
     use HasFactory;
 
@@ -24,63 +26,51 @@ class Comments extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'published_at' => 'timestamp',
         'deleted_at' => 'datetime',
     ];
-   
-
-    public function setFeaturedImageAttribute($value)
-    {
-        if( $value != null)
-        {
-            $this->attributes['featured_image'] = "uploads/" . $value; // Store the URL
-        }
-    }
-
-
-    public function replies()
-    {
-        return $this->hasMany('App\Models\Comments', 'parent_id')->where('status',1);
-    }
 
 
     protected static function boot()
     {
         parent::boot();
 
-        static::creating(function ($slider) {
+        static::creating(function ($blog) {
             $uuid = Uuid::uuid4()->toString();
-            $slider->uuid=str_replace('-', '', $uuid);
+            $blog->uuid = str_replace('-', '', $uuid);
         });
     }
 
     public static function getForm(): array
     {
         return [
-            Section::make('Comment Details')
+            Section::make('Booking Details')
                 ->columns(2)
                 ->collapsible()
                 ->description('Provide some basic information.')
                 ->icon('heroicon-o-chevron-right')
                 ->schema([
-                    TextInput::make('user_name')
+                    TextInput::make('name')
                         ->maxLength(255),
-                    TextInput::make('body')
+                    TextInput::make('phone')
+                        ->tel()
                         ->maxLength(255),
-                    TextInput::make('parent_id')
+                    TextInput::make('email')
+                        ->email()
                         ->maxLength(255),
-                    TextInput::make('blog_id')
+                    DateTimePicker::make('date_time'),
+                    TextInput::make('service')
                         ->maxLength(255),
-                    TextInput::make('user_ip')
-                        ->maxLength(255),
-                    TextInput::make('order')
+                    TextInput::make('message')
                         ->maxLength(255),
                 ]),
-    
+
             Fieldset::make('Status')
                 ->schema([
                     Toggle::make('status')
                         ->required(),
                 ])
+
         ];
     }
 }

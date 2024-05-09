@@ -190,7 +190,7 @@ function topFunction() {
 }
 </script>
 
-<script>
+{{-- <script>
 let modalId = $('#image-gallery');
 
 $(document)
@@ -285,7 +285,7 @@ $(document)
         }
         e.preventDefault();
     });
-</script>
+</script> --}}
 
 <script>
      $(document).ready(function(){

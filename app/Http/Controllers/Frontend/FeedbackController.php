@@ -80,7 +80,7 @@ class FeedbackController extends Controller
             
             if ($validator->fails()) {
                 return redirect()->back()->with([
-                    'message' => 'Thank you for contacting us. We will get back to you within 24 hours.', 
+                    'message' => 'Some unknown error occurred', 
                      'status' => 'danger',
                 ]);
             }

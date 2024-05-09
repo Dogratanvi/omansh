@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use  App\Http\Controllers\Controller;
+use App\Mail\ContactMail;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
@@ -59,6 +60,21 @@ class ContactController extends Controller
        
       
             Contact::create($input);
+            $name = $request->first_name.''.$request->last_name;
+            $email = $request->email;
+            $phone = $request->phone;
+            $body = $request->message;
+            $service = $request->service;
+        
+           
+           
+            $omanshEmail = 'omansh.health@gmail.com'; // Update with your email
+             // Send email to user
+    
+            
+            Mail::to($email)
+            ->cc($omanshEmail)
+            ->send(new ContactMail($name,$email,$phone, $service, $body));
 
             return redirect()->back()->with([
                 'message' => 'Thank you for contacting us. We will get back to you within 24 hours.', 

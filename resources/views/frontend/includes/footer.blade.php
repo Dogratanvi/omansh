@@ -14,7 +14,7 @@
                             <div class="form-row">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="email" name="email" id="emailadd" class="form-control"
-                                        placeholder="Enter You Email">
+                                        placeholder="Enter You Email" required>
                                     <button type="submit" name="btnsubmit" id="submitbutton">Subscribe</button>
                                 </div>
                             </div>

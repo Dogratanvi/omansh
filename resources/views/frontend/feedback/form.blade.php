@@ -39,7 +39,7 @@
 <section class="feedback-section">
     <div class="container ">
         <div class="feedback-form-box shadow">
-            <div class="feedback-heading d-flex justify-content-center">
+            <div class="feedback-heading d-flex justify-content-center align-items-center">
                 <img src="{{ asset('img/aboutus_top_shape 2.png') }}">
                 <h2 class="text-white px-3 text-center">Omansh Feedback Form</h2>
                 <img src="{{ asset('img/aboutus_top_shape 2.png') }}">
@@ -63,7 +63,7 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="breathing">
+                                        name="like_most_about_class[]" value="breathing" required>
                                     <label for="breathing" class="form-check-label"
                                         for="exampleCheck1">Breathing</label>
                                 </div>
@@ -71,14 +71,14 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="postures">
+                                        name="like_most_about_class[]" value="postures" required>
                                     <label class="form-check-label" for="exampleCheck1">Postures</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check ">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="social">
+                                        name="like_most_about_class[]" value="social" required>
                                     <label class="form-check-label" for="exampleCheck1">Social</label>
                                 </div>
                             </div>
@@ -86,21 +86,21 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="philsophy">
+                                        name="like_most_about_class[]" value="philsophy" required>
                                     <label class="form-check-label" for="exampleCheck1">Philosophy</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="relaxation">
+                                        name="like_most_about_class[]" value="relaxation" required>
                                     <label class="form-check-label" for="exampleCheck1">Relaxation</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="meditation">
+                                        name="like_most_about_class[]" value="meditation" required>
                                     <label class="form-check-label" for="exampleCheck1">Meditation</label>
                                 </div>
                             </div>
@@ -133,31 +133,33 @@
                             <tr>
                                 <th class="fw-bolder">Teacher knowledge</th>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="teacher_knowledge" value="very satisfied"></td>
+                                        id="exampleCheck1" name="teacher_knowledge" value="very satisfied" required>
+                                </td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="teacher_knowledge" value="satisfied"></td>
+                                        id="exampleCheck1" name="teacher_knowledge" value="satisfied" required></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="teacher_knowledge" value="unsatisfied"></td>
+                                        id="exampleCheck1" name="teacher_knowledge" value="unsatisfied" required></td>
                             </tr>
 
                             <tr>
                                 <th class="fw-bolder">The amount of instruction given</th>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="instruction_given" value="very satisfied"></td>
+                                        id="exampleCheck1" name="instruction_given" value="very satisfied" required>
+                                </td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="instruction_given" value="satisfied"></td>
+                                        id="exampleCheck1" name="instruction_given" value="satisfied" required></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="instruction_given" value="unsatisfied"></td>
+                                        id="exampleCheck1" name="instruction_given" value="unsatisfied" required></td>
                             </tr>
 
                             <tr>
                                 <th class="fw-bolder">Yoga sequence restorative</th>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="yoga_sequence" value="very satisfied"></td>
+                                        id="exampleCheck1" name="yoga_sequence" value="very satisfied" required></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="yoga_sequence" value="satisfied"></td>
+                                        id="exampleCheck1" name="yoga_sequence" value="satisfied" required></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="yoga_sequence" value="unsatisfied"></td>
+                                        id="exampleCheck1" name="yoga_sequence" value="unsatisfied" required></td>
                             </tr>
                         </table>
 
@@ -167,14 +169,14 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input expect" id="expect_yes"
-                                        name="meet_your_expectations" value="yes">
+                                        name="meet_your_expectations" value="yes" required>
                                     <label class="form-check-label" for="expect_yes">Yes</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input expect" id="expect_no"
-                                        name="meet_your_expectations" value="no">
+                                        name="meet_your_expectations" value="no" required>
                                     <label class="form-check-label" for="expect_no">No</label>
                                 </div>
                             </div>
@@ -228,11 +230,20 @@
 
 
                             <div class="btn_wrapper main-btn mt-4 text-center">
-                                <button href="./pricing.html" class="text-decoration-none read_more_btn border-0"
+                                <button href="#" class="text-decoration-none read_more_btn border-0"
                                     type="submit">Submit</button>
                             </div>
                     </fieldset>
                 </form>
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
             </div>
         </div>
     </div>
@@ -284,16 +295,18 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     var checkboxes = document.querySelectorAll('.expect');
     var errorMessageElement = document.getElementById('meet_your_expectations_error');
 
     checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('change', function() {
-            var checkedCount = document.querySelectorAll('input[name="' + this.name + '"]:checked').length;
+            var checkedCount = document.querySelectorAll('input[name="' + this.name +
+                '"]:checked').length;
 
             if (checkedCount > 1) {
-                errorMessageElement.textContent = 'Please select only one option for "Did the class meet your expectations?"';
+                errorMessageElement.textContent =
+                    'Please select only one option for "Did the class meet your expectations?"';
                 this.checked = false;
             } else {
                 errorMessageElement.textContent = '';
@@ -331,7 +344,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script>
+function validateForm() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var isValid = true;
 
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.hasAttribute('required') && !checkbox.checked) {
+            checkbox.setCustomValidity("Please check this box to proceed.");
+            isValid = false;
+        } else {
+            checkbox.setCustomValidity('');
+        }
+    });
+
+    if (isValid) {
+        document.getElementById('feedbackForm').submit();
+    }
+}
+</script>
 
 
 @endsection

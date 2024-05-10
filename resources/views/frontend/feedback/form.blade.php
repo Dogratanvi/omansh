@@ -45,10 +45,10 @@
                 <img src="{{ asset('img/aboutus_top_shape 2.png') }}">
             </div>
             <div class="feedback-form">
-                @if(session('message'))
+                @if(session('data'))
                 <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex"
                     role="alert">
-                    <strong>{{ session('message') }}</strong>
+                    <strong>{{ session('data') }}</strong>
                     <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert"><i
                             class="fas fa-times"></i></button>
                 </div>

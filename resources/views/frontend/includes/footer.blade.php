@@ -176,7 +176,7 @@
 
     <button class="arrow-top border-0" onclick="topFunction()" id="myBtn" title="Go to top"><i
             class="fas fa-chevron-up"></i></button>
-    <a href="{{$settings[7]->value}}" target="_blank" class="whtsapp"><svg width="60" height="60"
+    <a href="{{$settings[6]->value}}" target="_blank" class="whtsapp"><svg width="60" height="60"
             viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_138_756)">
                 <path

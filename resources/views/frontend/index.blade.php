@@ -269,13 +269,13 @@
                 <div class="get_in_touch_content message_content home-form">
                     <h5>Get in touch</h5>
                     <h2>Get a Consultation Now</h2>
-                    @if (session('message'))
+                    @if (session('data'))
                     <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex" role="alert">
-                                <strong>{{ session('message') }}</strong>
+                                <strong>{{ session('data') }}</strong>
                                 <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert" ><i class="fas fa-times"></i></button>
                             </div>
                     @endif
-                    <form id="contactpage" method="POST" action="{{ url('contact') }}" enctype="multipart/form-data">
+                    <form id="contactPage" method="POST" action="{{ url('contact') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -608,4 +608,5 @@
     </div>
 </div>
 <script async src="https://www.google.com/recaptcha/api.js"></script>
+
 @endsection

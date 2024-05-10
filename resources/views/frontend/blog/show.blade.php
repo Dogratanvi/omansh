@@ -117,7 +117,7 @@
                                     @csrf
                                     <div class="form-group">
                                         <textarea class="form-control" name="body"></textarea>
-                                        <input type="hidden" name="blog_id" value="{{ $blogs->id }}" />
+                                        <input type="hidden" name="blog_id" value="{{ $blogs->id }}"  required/>
                                     </div>
                                     <div class="form-group">
                                         <input type="submit" class="btn comment-btn mt-3" value="Add Comment" />

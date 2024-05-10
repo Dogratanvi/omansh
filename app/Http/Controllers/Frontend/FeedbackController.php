@@ -69,13 +69,16 @@ class FeedbackController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
-            'like_about_class' => 'required|string',
+            'like_about_class' => 'required|string|',
             'help_us_improve' => 'required',
             'like_most_about_class' => 'required',
             'instruction_given' => 'required',
             // Add more validation rules for other form fields
         ]);
-
+        $request->validate([
+            'like_most_about_class' => 'required|array|size:3',
+            'like_most_about_class.*' => 'in:breathing,postures,social,philosophy,relaxation,meditation',
+        ]);
         try {
             
             if ($validator->fails()) {

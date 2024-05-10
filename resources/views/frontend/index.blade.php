@@ -266,7 +266,7 @@
         <div class="row" data-aos="fade-up">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                <div class="get_in_touch_content message_content">
+                <div class="get_in_touch_content message_content home-form">
                     <h5>Get in touch</h5>
                     <h2>Get a Consultation Now</h2>
                     @if (session('message'))

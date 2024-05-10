@@ -254,6 +254,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var checkboxes = document.querySelectorAll('input[name="like_most_about_class[]"]');
+    var minChecked = 3;
     var maxChecked = 3;
     var errorMessage = document.getElementById('error-message');
 
@@ -265,7 +266,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (checkedCount > maxChecked) {
                 this.checked = false;
                 errorMessage.style.display = 'block';
-            } else {
+            }else if (checkedCount < minChecked) {
+                errorMessage.style.display = 'block';
+
+            }
+             else {
                 errorMessage.style.display = 'none';
             }
         });

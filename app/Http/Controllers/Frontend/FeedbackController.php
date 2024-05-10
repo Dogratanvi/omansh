@@ -77,41 +77,39 @@ class FeedbackController extends Controller
         ]);
 
         try {
-            
+
             if ($validator->fails()) {
                 return redirect()->back()->with([
-                    'message' => 'Some unknown error occurred', 
-                     'status' => 'danger',
+                    'data' => 'Some unknown error occurred',
+                    'status' => 'danger',
                 ]);
             }
-    
-                $input = $request->except(['_token','g-recaptcha-response','g-token']);
-           
-          
-                $feedback = new Feedback;
-                $feedback->like_most_about_class = $request->like_most_about_class;
-                $feedback->teacher_knowledge = $request->teacher_knowledge;
-                $feedback->instruction_given = $request->instruction_given;
-                $feedback->yoga_sequence = $request->yoga_sequence;
-                $feedback->meet_your_expectations = $request->meet_your_expectations;
-                $feedback->like_about_class = $request->like_about_class;
-                $feedback->help_us_improve = $request->help_us_improve;
-                $feedback->hear_about_omansh = $request->hear_about_omansh;
-                $feedback->save();
-        
-    
-                return redirect()->back()->with([
-                    'message' => 'Thank you for feedback!', 
-                     'status' => 'success',
-                ]);
-    
-    
-            }catch (Exception $e) {
-    
-                return redirect()->back()->with([
-                    'message' => 'Thank you for feedback!',  
-                     'status' => 'danger',
-                ]);
-            }
+
+            $input = $request->except(['_token', 'g-recaptcha-response', 'g-token']);
+
+
+            $feedback = new Feedback;
+            $feedback->like_most_about_class = $request->like_most_about_class;
+            $feedback->teacher_knowledge = $request->teacher_knowledge;
+            $feedback->instruction_given = $request->instruction_given;
+            $feedback->yoga_sequence = $request->yoga_sequence;
+            $feedback->meet_your_expectations = $request->meet_your_expectations;
+            $feedback->like_about_class = $request->like_about_class;
+            $feedback->help_us_improve = $request->help_us_improve;
+            $feedback->hear_about_omansh = $request->hear_about_omansh;
+            $feedback->save();
+
+
+            return redirect()->back()->with([
+                'data' => 'Thank you for feedback!',
+                'status' => 'success',
+            ]);
+        } catch (Exception $e) {
+
+            return redirect()->back()->with([
+                'data' => 'There is some unknown error!',
+                'status' => 'danger',
+            ]);
+        }
     }
 }

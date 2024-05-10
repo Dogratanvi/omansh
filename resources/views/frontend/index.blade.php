@@ -270,7 +270,7 @@
                     <h5>Get in touch</h5>
                     <h2>Get a Consultation Now</h2>
                     @if (session('message'))
-                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex" role="alert">
+                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex justify-content-between" role="alert">
                                 <strong>{{ session('message') }}</strong>
                                 <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert" ><i class="fas fa-times"></i></button>
                             </div>

@@ -88,8 +88,11 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="email" id="email" class="form-control form_style"
+                                    <input type="email" name="email" id="email" class="@error('email') is-invalid @enderror form-control form_style"
                                         placeholder="Email">
+                                        @error('email')
+                                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>

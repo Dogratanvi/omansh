@@ -35,13 +35,13 @@ class AdminPanelProvider extends PanelProvider
             ->passwordReset()
             ->emailVerification()
             ->profile()
-            ->brandLogo(asset('img/logo.svg'))
+            ->brandLogo(asset('img/logo_dark.svg'))
             ->darkModeBrandLogo(asset('img/logo_dark.svg'))
             ->brandLogoHeight('3.5rem')
         
             ->sidebarFullyCollapsibleOnDesktop()
             ->colors([
-                'primary' => Color::hex('#caac86'),
+                'primary' => Color::hex('#274C2A'),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')

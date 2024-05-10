@@ -59,7 +59,7 @@
                                 class="fas fa-times"></i></button>
                     </div>
                     @endif
-                    <form id="contactpage" name="contactpage" method="POST" action="{{ url('contact') }}"
+                    <form id="contactPage" name="contactpage" method="POST" action="{{ url('contact') }}"
                         enctype="multipart/form-data">
                         @csrf
                         <div class="row">

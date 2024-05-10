@@ -81,8 +81,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
      Route::get('blog/{id}/{slug}/next', 'BlogController@next')->name('blogs.next');
     Route::get('blog/{id}/{slug}/previous', 'BlogController@previous')->name('blogs.previous');
 
-   
-
     Route::get('privacy-policy', 'FrontendController@privacyPolicy')->name('privacy-policy');
     Route::get('terms&condition', 'FrontendController@termsCondition')->name('terms&condition');
     // booking form

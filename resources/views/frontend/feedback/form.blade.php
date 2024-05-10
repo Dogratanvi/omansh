@@ -63,7 +63,7 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="breathing" required>
+                                        name="like_most_about_class[]" value="breathing" >
                                     <label for="breathing" class="form-check-label"
                                         for="exampleCheck1">Breathing</label>
                                 </div>
@@ -71,14 +71,14 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="postures" required>
+                                        name="like_most_about_class[]" value="postures" >
                                     <label class="form-check-label" for="exampleCheck1">Postures</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check ">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="social" required>
+                                        name="like_most_about_class[]" value="social" >
                                     <label class="form-check-label" for="exampleCheck1">Social</label>
                                 </div>
                             </div>
@@ -86,21 +86,21 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="philsophy" required>
+                                        name="like_most_about_class[]" value="philsophy" >
                                     <label class="form-check-label" for="exampleCheck1">Philosophy</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="relaxation" required>
+                                        name="like_most_about_class[]" value="relaxation" >
                                     <label class="form-check-label" for="exampleCheck1">Relaxation</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                        name="like_most_about_class[]" value="meditation" required>
+                                        name="like_most_about_class[]" value="meditation" >
                                     <label class="form-check-label" for="exampleCheck1">Meditation</label>
                                 </div>
                             </div>

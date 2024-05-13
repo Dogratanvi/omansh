@@ -133,33 +133,33 @@
                             <tr>
                                 <th class="fw-bolder">Teacher knowledge</th>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="teacher_knowledge" value="very satisfied" required>
+                                        id="exampleCheck1" name="teacher_knowledge" value="very satisfied" >
                                 </td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="teacher_knowledge" value="satisfied" required></td>
+                                        id="exampleCheck1" name="teacher_knowledge" value="satisfied" ></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="teacher_knowledge" value="unsatisfied" required></td>
+                                        id="exampleCheck1" name="teacher_knowledge" value="unsatisfied" ></td>
                             </tr>
 
                             <tr>
                                 <th class="fw-bolder">The amount of instruction given</th>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="instruction_given" value="very satisfied" required>
+                                        id="exampleCheck1" name="instruction_given" value="very satisfied" >
                                 </td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="instruction_given" value="satisfied" required></td>
+                                        id="exampleCheck1" name="instruction_given" value="satisfied" ></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="instruction_given" value="unsatisfied" required></td>
+                                        id="exampleCheck1" name="instruction_given" value="unsatisfied" ></td>
                             </tr>
 
                             <tr>
                                 <th class="fw-bolder">Yoga sequence restorative</th>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="yoga_sequence" value="very satisfied" required></td>
+                                        id="exampleCheck1" name="yoga_sequence" value="very satisfied" ></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="yoga_sequence" value="satisfied" required></td>
+                                        id="exampleCheck1" name="yoga_sequence" value="satisfied" ></td>
                                 <td class="text-center"><input type="checkbox" class="form-check-input rate-this"
-                                        id="exampleCheck1" name="yoga_sequence" value="unsatisfied" required></td>
+                                        id="exampleCheck1" name="yoga_sequence" value="unsatisfied" ></td>
                             </tr>
                         </table>
 
@@ -169,14 +169,14 @@
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input expect" id="expect_yes"
-                                        name="meet_your_expectations" value="yes" required>
+                                        name="meet_your_expectations" value="yes" >
                                     <label class="form-check-label" for="expect_yes">Yes</label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input expect" id="expect_no"
-                                        name="meet_your_expectations" value="no" required>
+                                        name="meet_your_expectations" value="no" >
                                     <label class="form-check-label" for="expect_no">No</label>
                                 </div>
                             </div>

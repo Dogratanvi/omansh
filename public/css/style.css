@@ -2821,6 +2821,7 @@ display: none;
 .alert-message strong{
     text-align: left;
     padding-left: 10px;
+    padding-right: 10px;
 }
 textarea {
     overflow: auto;
@@ -2920,15 +2921,34 @@ a.contact_us:hover {
 }
 .message_section .box .box_image_content figure{
     background-color: var(--e-global-color-desaturated-magenta);
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100px;
     transition: all 0.3s ease-in-out;
 }
 .message_section .box:hover .box_image_content figure{
     background-color: var(--e-global-color-soft-orange);
+}
+.box_image_content img {
+    width: 25px;
+}
+/* error */
+#notfound {
+    position: relative;
+    height: 100vh;
+  background-image: url(./../img/about-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 /* workshop traning page */
 .aboutpage_aboutus_section h5{
@@ -3072,6 +3092,14 @@ a.contact_us:hover {
 }
 .contact_map_section{
     margin-bottom: 474px;
+}
+img#image-gallery-image {
+    height: 350px;
+    object-fit: cover;
+}
+.main-image img#image-gallery-image {
+    height: auto;
+   
 }
 .service-gallary{
     margin-bottom: 474px !important;

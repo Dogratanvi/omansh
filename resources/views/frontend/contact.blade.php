@@ -88,8 +88,12 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="email" id="email" class="form-control form_style"
+                                    <input type="email" name="email" id="email"
+                                        class="@error('email') is-invalid @enderror form-control form_style"
                                         placeholder="Email">
+                                    @error('email')
+                                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -114,7 +118,7 @@
                                 <div class=" form-group mb-0">
                                     <textarea rows="3" name="message" id="message" class="form-control"
                                         placeholder="Message" required></textarea>
-                               
+
                                 </div>
                             </div>
                         </div>
@@ -186,7 +190,21 @@
         </div>
     </div>
 </section>
+<!-- booking section -->
+<section class="booking-section  py-5">
+    <div class="container">
+        <h2 class="text-center" >Book your time, make it yours</h2>
+        <div class="d-flex justify-content-center mt-lg-2 mt-xl-2 mt-md-2 mt-sm-2 mt-xs-2 mt-3 mt-xxl-2">
+                <div class="d-flex justify-content-center mt-lg-2 mt-xl-2 mt-md-2 mt-sm-0 mt-xs-0 mt-0 mt-xxl-2">
+
+                    @include("frontend.bookingform")
+
+                </div>
+            </div>
+    </div>
+</section>
 <!-- CONTACT MAP SECTION -->
+
 <div class="contact_map_section">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

@@ -34,7 +34,6 @@
                                     <div class="form-group mb-0">
                                         <label for="service">Service Name</label><br>
                                         <select name="service" id="service" class="form-select border-0" required>
-                                            <option selected disabled>Services</option>
                                             <option value="women_health">Women Health</option>
                                             <option value="physiotherapy">Physiotherapy</option>
                                             <option value="yoga">Yoga</option>

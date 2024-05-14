@@ -2,7 +2,7 @@
 @section('content')
 <div class="sub-banner-section about-banner">
     <div class="image-overlay">
-        <!-- SUB BANNER SECTION -->
+       
         <section class="banner-section">
             <div class="container">
                 <div class="row">
@@ -11,9 +11,6 @@
                             <h1 data-aos="fade-up">Privacy Policy</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                    <!-- <p class="text-center" data-aos="fade-right">At Omansh, we're dedicated to nurturing
-                                        holistic well-being through personalised Women's Health, Yog, and Physiotherapy
-                                        services, empowering you to lead a balanced and healthy life.</p> -->
                                 </div>
                             </div>
                             <div class="btn_wrapper">
@@ -81,12 +78,14 @@
             allow us to improve the effectiveness of omansh.org website and our marketing activities.</p>
         <p>We also collect information provided by you from our contact us form and/or Get on Board form (including but
             not limited to name, mobile number, email address, address, country) and our careers portal (e.g., name,
-            mobile number) on our website. By using omansh.org website, associated microsites, and mobile applications, you
+            mobile number) on our website. By using omansh.org website, associated microsites, and mobile applications,
+            you
             agree to the processing of your information as explained in this Policy.<br><br>
 
-           omansh.org website may contain links to other sites which are outside our control and are not covered by this
+            omansh.org website may contain links to other sites which are outside our control and are not covered by
+            this
             Policy. We encourage you to review the privacy statement/Policy of each website you visit provided on
-           omansh.org Website and satisfy the need for providing personal information of any kind.</p>
+            omansh.org Website and satisfy the need for providing personal information of any kind.</p>
 
         <p><strong>2. Engage with omansh.org through social media</strong></p>
         <p>You can engage with us through social media websites or through features on omansh.org website that integrate
@@ -472,11 +471,13 @@
 
         </ul>
         <h2>Contact Us:
-</h2>
-<p>If you have any questions or complaints about this Policy, our privacy and information handling practices, you can contact our Data Protection Officer through the following details:
-</p>
-<p><strong> Email ID:  garimabiswas09@gmail.com</strong></p>
-<p><strong> Address: Plot No-290, Gate No.1 Sector-4, Vaishali (Landmark: In front of Ramprastha Green) Ghaziabad, 201010, Uttar Pradesh , India</strong></p>
+        </h2>
+        <p>If you have any questions or complaints about this Policy, our privacy and information handling practices,
+            you can contact our Data Protection Officer through the following details:
+        </p>
+        <p><strong> Email ID: garimabiswas09@gmail.com</strong></p>
+        <p><strong> Address: Plot No-290, Gate No.1 Sector-4, Vaishali (Landmark: In front of Ramprastha Green)
+                Ghaziabad, 201010, Uttar Pradesh , India</strong></p>
     </div>
 </section>
 

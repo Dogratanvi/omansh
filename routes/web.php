@@ -85,7 +85,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('terms&condition', 'FrontendController@termsCondition')->name('terms&condition');
     // booking form
     Route::get('bookingform', 'BookingsController@index')->name('bookingform');
-    Route::get('bookingform', 'BookingsController@store')->name('bookingform.store');
+    Route::post('bookingform', 'BookingsController@store')->name('bookingform.store');
 
 
 });

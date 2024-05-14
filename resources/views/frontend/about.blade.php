@@ -231,9 +231,18 @@
         <div class="logo" data-aos="fade-up">
             <div class="owl-carousel autoplay owl-theme">
                 @foreach ($sliderImages as $key=>$value )
+         
                 <div class="item">
-                    <img src="{{ $value }}" alt="achievements">
-                </div> @endforeach
+                    <div class="women_box border-0 rounded-0">
+                        <a class="thumbnail border-0 " href="#" data-image-id="" data-toggle="modal" data-title=""
+                            data-image="{{ $value }}" data-target="#image-gallery">
+                            <img class="img-thumbnail px-0 border-0" class="card-img-top w-100 rounded-top myImg px-0"
+                                src="{{ $value }}" alt="gallery">
+                        </a>
+                    </div>
+                </div>
+
+                @endforeach
 
             </div>
         </div>
@@ -275,6 +284,31 @@
     <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
 </figure>
 
-
+<!-- modal -->
+<div class="main-image modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog galleryDialog">
+        <div class="modal-content galleryModal-content">
+            <div class="modal-header p-0">
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+                <button type="button" class="close m-0 pb-0 pt-0 pe-0 border-0 bg-transparent"
+                    data-dismiss="modal"><span aria-hidden="true" class="text-dark"><i class="fas fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <img id="image-gallery-image" class="img-responsive border-0 rounded-0" src="">
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <button type="button" class="btn btn-secondary float-left bg-transparent border-0 py-0 shadow-none"
+                    id="show-previous-image"><i class="fas fa-caret-left"></i>
+                </button>
+                <button type="button" id="show-next-image"
+                    class="btn btn-secondary float-right bg-transparent border-0 py-0 shadow-none"><i
+                        class="fas fa-caret-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 @endsection

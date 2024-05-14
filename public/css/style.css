@@ -3093,6 +3093,14 @@ a.contact_us:hover {
 .contact_map_section{
     margin-bottom: 474px;
 }
+img#image-gallery-image {
+    height: 350px;
+    object-fit: cover;
+}
+.main-image img#image-gallery-image {
+    height: auto;
+   
+}
 .service-gallary{
     margin-bottom: 474px !important;
 }

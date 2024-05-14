@@ -103,7 +103,39 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('contactPage');
+        form.addEventListener('submit', function() {
+            // Save the current scroll position
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        });
+        
+        // Check if there's a stored scroll position and scroll to it
+        var scrollPosition = sessionStorage.getItem('scrollPosition');
+        if (scrollPosition) {
+            window.scrollTo(0, scrollPosition);
+            sessionStorage.removeItem('scrollPosition'); // Clear the stored position
+        }
+    });
+    </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('newsletter_form');
+        form.addEventListener('submit', function() {
+            // Save the current scroll position
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        });
+        
+        // Check if there's a stored scroll position and scroll to it
+        var scrollPosition = sessionStorage.getItem('scrollPosition');
+        if (scrollPosition) {
+            window.scrollTo(0, scrollPosition);
+            sessionStorage.removeItem('scrollPosition'); // Clear the stored position
+        }
+    });
+    </script> 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 

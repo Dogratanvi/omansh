@@ -91,6 +91,7 @@
 <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
 <script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/video-popup.js') }}"></script>
+<script src="{{ asset('js/close.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
 <!-- Add jQuery (required for Slick Slider) -->

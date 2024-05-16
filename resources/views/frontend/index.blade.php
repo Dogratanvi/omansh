@@ -17,15 +17,18 @@
                             WELCOME TO</h5>
                         <h1 class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">OMANSH <br></h1>
-                            <h2 class="inner-text text-center text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">Women Health, Physiotherapy & Yoga</h2>
-                            <!-- <span class="ityped"></span> -->
+                        <h2
+                            class="inner-text text-center text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">
+                            Women Health, Physiotherapy & Yoga</h2>
+                        <!-- <span class="ityped"></span> -->
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's Health Care,
+                            data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's
+                            Health Care,
                             Personalized Physiotherapy, and Yoga ! </p>
                         <div class="btn_wrapper home-btn text-white fw-bolder text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-up">
-                           <a href="./contact" class="text-decoration-none"><i
-                                    class="fa-solid fa-arrow-right" aria-hidden="true"> </i></a>
+                            <a href="./contact" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"> </i></a>
                         </div>
 
                         <!-- <a class="top-btn"  href="{{ route('frontend.index') }}#footer_section">
@@ -64,24 +67,24 @@
         <div class="icon_content d-table-cell align-middle">
             <ul class="list-unstyled p-0 m-0">
                 <li>
-                    <a href="{{$settings[2]->value}}" target="_blank"> <img src="{{ asset('img/social/facebook.png') }}" loading="lazy" alt=""
-                                class="img-fluid w-75"></a>
+                    <a href="{{$settings[2]->value}}" target="_blank"> <img src="{{ asset('img/social/facebook.png') }}"
+                            loading="lazy" alt="" class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[9]->value}}" target="_blank"><img src="{{ asset('img/social/instagram.png') }}" loading="lazy" alt=""
-                                class="img-fluid w-75"></a>
+                    <a href="{{$settings[9]->value}}" target="_blank"><img src="{{ asset('img/social/instagram.png') }}"
+                            loading="lazy" alt="" class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[4]->value}}" target="_blank"><img src="{{ asset('img/social/linkedin.png') }}" loading="lazy" alt=""
-                                class="img-fluid w-75"></a>
+                    <a href="{{$settings[4]->value}}" target="_blank"><img src="{{ asset('img/social/linkedin.png') }}"
+                            loading="lazy" alt="" class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[10]->value}}" target="_blank"><img src="{{ asset('img/social/google.png') }}" loading="lazy" alt=""
-                                class="img-fluid w-75"></a>
+                    <a href="{{$settings[10]->value}}" target="_blank"><img src="{{ asset('img/social/google.png') }}"
+                            loading="lazy" alt="" class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[5]->value}}" target="_blank"><img src="{{ asset('img/social/youtube.png') }}" loading="lazy" alt=""
-                                class="img-fluid w-75"></a>
+                    <a href="{{$settings[5]->value}}" target="_blank"><img src="{{ asset('img/social/youtube.png') }}"
+                            loading="lazy" alt="" class="img-fluid w-75"></a>
                 </li>
 
             </ul>
@@ -93,7 +96,7 @@
 <section class="services_section">
     <div class="container aboutus_content">
         <div class="row">
-             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="services_content">
                     <h2>Our Services</h2>
                     <p class="text-center">Explore a spectrum of services dedicated to your health and well-being.</p>
@@ -115,15 +118,16 @@
 
                         <div class="service-text h-100">{!! $service->intro!!}</div>
 
-                        <div class="text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
+                        <div
+                            class="text-center text-sm-center text-xs-center text-md-start text-lg-start text-xl-start">
 
 
-                          
+
                             <div class="btn_wrapper">
-                        <a href="{{$service->url}}" class="text-decoration-none get_started_btn">Read
-                            More</a>
-                            
-                    </div>
+                                <a href="{{$service->url}}" class="text-decoration-none get_started_btn">Read
+                                    More</a>
+
+                            </div>
 
                         </div>
                     </div>
@@ -173,7 +177,7 @@
                     <div class="btn_wrapper">
                         <a href="{{ route('frontend.about') }}" class="text-decoration-none get_started_btn">Read
                             More</a>
-                            
+
                     </div>
 
                 </div>
@@ -217,7 +221,8 @@
                             your healing experience.</p>
                     </div>
                     <figure class="specialties_left_line mb-0">
-                        <img src="{{ asset('images/specialties_left_line.png') }}" loading="lazy" alt="" class="img-fluid">
+                        <img src="{{ asset('images/specialties_left_line.png') }}" loading="lazy" alt=""
+                            class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -249,7 +254,8 @@
                             valued.</p>
                     </div>
                     <figure class="specialties_right_line mb-0">
-                        <img src="{{ asset('images/specialties_right_line.png') }}" loading="lazy" alt="" class="img-fluid">
+                        <img src="{{ asset('images/specialties_right_line.png') }}" loading="lazy" alt=""
+                            class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -270,10 +276,12 @@
                     <h5>Get in touch</h5>
                     <h2>Get a Consultation Now</h2>
                     @if (session('data'))
-                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex" role="alert">
-                                <strong>{{ session('data') }}</strong>
-                                <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert" ><i class="fas fa-times"></i></button>
-                            </div>
+                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex"
+                        role="alert">
+                        <strong>{{ session('data') }}</strong>
+                        <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert"><i
+                                class="fas fa-times"></i></button>
+                    </div>
                     @endif
                     <form id="contactPage" method="POST" action="{{ url('contact') }}" enctype="multipart/form-data">
                         @csrf
@@ -298,8 +306,8 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group mb-0">
-                                    <input type="email" name="email" id="emailaddrs" 
-                                        class="form-control form_style" placeholder="Email" required>
+                                    <input type="email" name="email" id="emailaddrs" class="form-control form_style"
+                                        placeholder="Email" required>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +322,7 @@
                                         <option value="physiotherapy">Physiotherapy</option>
                                         <option value="yoga">Yoga</option>
                                         <option value="yoga">Corporate Training</option>
-                                            <option value="yoga">Yoga Training</option>
+                                        <option value="yoga">Yoga Training</option>
                                     </select>
 
                                 </div>
@@ -359,7 +367,8 @@
         </div>
     </div>
     <figure class="get_in_touch_shape left_shape mb-0">
-        <img src="{{ asset('images/get_in_touch_shape.png') }}" loading="lazy" alt="get-in-touch-shape" class="img-fluid">
+        <img src="{{ asset('images/get_in_touch_shape.png') }}" loading="lazy" alt="get-in-touch-shape"
+            class="img-fluid">
     </figure>
     </div>
 </section>
@@ -373,7 +382,8 @@
 
                     <h2> Testimonial
                     </h2>
-                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.</p>
+                    <p class="text-center">Thank you for your trust and stories; we're truly humbled by your support.
+                    </p>
                 </div>
             </div>
         </div>
@@ -443,10 +453,6 @@
                     </div>
                     @endif
                     @endforeach
-
-
-
-
                 </div>
             </div>
 
@@ -488,7 +494,6 @@
 
                         </div>
                     </div>
-
                     @endif
                     @endforeach
                 </div>
@@ -522,7 +527,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog_posts_content">
 
-                    <h2 class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">Blog & News</h2>
+                    <h2 class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">
+                        Blog & News</h2>
                     <p class="text-center">Stay informed and inspired - our latest insights and updates.</p>
                 </div>
             </div>
@@ -532,16 +538,18 @@
             @foreach ($blogs as $blog)
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
                 <div class="blog_posts_image position-relative">
-                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" loading="lazy" alt="" class="img-fluid">
+                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" loading="lazy" alt=""
+                            class="img-fluid">
                         <div class="blog-overlay">
                     </figure>
                     <div class="blog_posts_image_content">
                         <span>{{$blog->category}}</span>
                         <h4>{{ $blog->title}}</h4>
                         <div class="icon_wrapper">
-                           
-                            <a href="{{ route('frontend.blog.show', ['id' => $blog->id, 'slug' => $blog->slug]) }}" class="text-decoration-none"><i
-                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+
+                            <a href="{{ route('frontend.blog.show', ['id' => $blog->id, 'slug' => $blog->slug]) }}"
+                                class="text-decoration-none"><i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -567,11 +575,14 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="blog_posts_content">
 
-                    <h2 class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">Instagram Feed</h2>
+                    <h2 class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">
+                        Instagram Feed</h2>
                     <div
                         class="row justify-content-sm-center justify-content-xs-center justify-content-center justify-content-md-center justify-content-lg-center justify-content-xxl-center justify-content-xl-center">
                         <div class="col-md-10 col-lg-8 col-xl-8 col-sm-12 col-xs-12 col-12">
-                            <p class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">Discover daily doses of wellness inspiration, transformative health tips, and
+                            <p
+                                class="text-center text-sm-center text-xs-center text-lg-center text-md-center text=xl-center">
+                                Discover daily doses of wellness inspiration, transformative health tips, and
                                 behind-the-scenes glimpses.</p>
                         </div>
                     </div>
@@ -608,5 +619,7 @@
     </div>
 </div>
 <script async src="https://www.google.com/recaptcha/api.js"></script>
+
+
 
 @endsection

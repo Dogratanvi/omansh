@@ -1677,14 +1677,14 @@ section.women-health {
 .whtsapp {
     position: fixed;
     top: 622px;
-    right: 0;
+    right: 16px;
     z-index: 99999;
 }
 .arrow-top {
     background: #CAA983;
     position: fixed;
     bottom: 0px;
-    right: 0;
+    right: 16px;
     width: 35px;
     height: 35px;
     display: flex;

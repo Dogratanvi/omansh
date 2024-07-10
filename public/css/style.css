@@ -3316,4 +3316,11 @@ tbody .form-check-input {
 .vision_content{
     padding-top: 30px;
 }
+.upcoming-events {
+    margin-bottom: 450px !important;
+}
+.single-event img {
+    border-top-left-radius: 156px;
+    border-bottom-right-radius: 120px;
+}
 }

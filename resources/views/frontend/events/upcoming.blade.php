@@ -38,8 +38,8 @@
     </section>
 </div>
 <!-- upcoming events -->
-<section class="upcoming-events py-5">
-    <!-- <div class="container">
+<section class="upcoming-events  py-5">
+    <div class="container">
         <h2 class="text-center">Upcoming Events</h2>
         <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
             exercitation</p>
@@ -61,36 +61,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
-    <h2 class="text-center">No Events </h2>
+    </div>
+
 </section>
 
-<!-- 
- <section class="upcoming-events py-5">
-    <div class="container pb-4">
-        <h2 class="text-center">Past Events</h2>
-        <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
-            exercitation</p>
-        <div class="row pt-3">
-            <div class="col-md-4">
-                <div class="card upcoming-card border-0 shadow">
-                    <img src="{{ asset('img/events.png') }}">
-                    <div class="date">
-                        <h4>01<br><span class="fw-normal">Apr</span></h4>
-
-                    </div>
-                    <div class="event-content">
-                        <h3>How does pregnancy affect my pelvic floor
-                        </h3>
-                        <p><i class="fa-regular fa-clock pe-2"></i> 2024-04-01 09:00 AM - 2024-04-01 12:00 PM</p>
-                        <p><i class="fa-solid fa-location-dot pe-2"></i>Plot No-290, in front of ramprastha green gate
-                            No.1, sector-4, vaishali, ghaziabad, 201 019</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 
 

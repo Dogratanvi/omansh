@@ -377,7 +377,9 @@ button:focus {
     background-color: var(--e-global-color-white);
     color:  #004B2A;
 }
-
+.attachment__caption{
+    display: none !important;
+}
 /* Home Page Banner Section Style */
 
 .banner-section-outer .banner-section{

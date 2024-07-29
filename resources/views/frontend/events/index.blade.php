@@ -42,8 +42,7 @@
 <section class="py-5">
     <div class="container">
         <h2 class="text-center">Upcoming Events</h2>
-        <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
-            exercitation</p>
+        <p class="text-center">Align body, mind, and spirit, join us for serenity in motion!</p>
         <div class="row pt-3">
             <div class="col-md-4">
                 <div class="card upcoming-card border-0 shadow">
@@ -73,8 +72,7 @@
 <section class="upcoming-events  pt-5">
     <div class="container">
         <h2 class="text-center">Past Events</h2>
-        <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
-            exercitation</p>
+        <p class="text-center">Relive the serenity, dive into past yoga events</p>
         <div class="row pt-3">
             <div class="col-md-4">
                 <div class="card upcoming-card border-0 shadow">
@@ -93,7 +91,9 @@
             </div>
         </div>
     </div>
-
+    div class="btn_wrapper d-flex justify-content-center mt-5">
+                <a href="/events/past"  class="text-decoration-none border-0 appointment-btn"> Know More </a>
+            </div>
 </section>
 
 @endsection

@@ -16,7 +16,7 @@
                                 </div>
                             </div>
                             <div class="btn_wrapper">
-                                <span class="sub_home_span">Home </span><i class="fa-solid fa-angles-right"
+                                <a href="/"><span class="sub_home_span">Home </span></a><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Events</span>
                             </div>
                         </div>

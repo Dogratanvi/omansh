@@ -18,7 +18,12 @@ class EventController extends Controller
      *
      * @return Response
      */
-
+    public function index()
+    {
+        $settings = Setting::all();
+        
+        return view('frontend.events.index', compact('settings'));
+    }
     public function upcoming()
     {
         $settings = Setting::all();

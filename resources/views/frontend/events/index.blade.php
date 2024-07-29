@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
+
 <div class="sub-banner-section event-banner">
     <div class="image-overlay">
         <!-- SUB BANNER SECTION -->
@@ -38,7 +39,7 @@
     </section>
 </div>
 <!-- upcoming events -->
-<section class="upcoming-events  py-5">
+<section class="py-5">
     <div class="container">
         <h2 class="text-center">Upcoming Events</h2>
         <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
@@ -62,10 +63,38 @@
             </div>
         </div>
     </div>
-
+    <div class="btn_wrapper d-flex justify-content-center mt-5">
+                <a href="/events/upcoming"  class="text-decoration-none border-0 appointment-btn"> Know More </a>
+            </div>
 </section>
 
 
+<!-- past events -->
+<section class="upcoming-events  pt-5">
+    <div class="container">
+        <h2 class="text-center">Past Events</h2>
+        <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
+            exercitation</p>
+        <div class="row pt-3">
+            <div class="col-md-4">
+                <div class="card upcoming-card border-0 shadow">
+                    <img src="{{ asset('img/events.png') }}">
+                    <div class="date">
+                        <h4>01<br><span class="fw-normal">Apr</span></h4>
+                    </div>
+                    <div class="event-content">
+                        <h3>How does pregnancy affect my pelvic floor
+                        </h3>
+                        <p><i class="fa-regular fa-clock pe-2"></i> 2024-04-01 09:00 AM - 2024-04-01 12:00 PM</p>
+                        <p><i class="fa-solid fa-location-dot pe-2"></i>Plot No-290, in front of ramprastha green gate
+                            No.1, sector-4, vaishali, ghaziabad, 201 019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</section>
 
 @endsection
+

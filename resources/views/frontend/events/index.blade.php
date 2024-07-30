@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-    div class="btn_wrapper d-flex justify-content-center mt-5">
+    <div class="btn_wrapper d-flex justify-content-center mt-5">
                 <a href="/events/past"  class="text-decoration-none border-0 appointment-btn"> Know More </a>
             </div>
 </section>

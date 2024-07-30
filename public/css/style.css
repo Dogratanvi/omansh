@@ -377,7 +377,9 @@ button:focus {
     background-color: var(--e-global-color-white);
     color:  #004B2A;
 }
-
+.attachment__caption{
+    display: none !important;
+}
 /* Home Page Banner Section Style */
 
 .banner-section-outer .banner-section{
@@ -3109,7 +3111,7 @@ color: #CAA983 !important;
 text-decoration: none;
 }
 .upcoming-events {
-    margin-bottom: 474px !important;
+    margin-bottom: 410px !important;
 }
 .videoCard img {
     border-top-left-radius: 80px !important;
@@ -3315,5 +3317,12 @@ tbody .form-check-input {
 }
 .vision_content{
     padding-top: 30px;
+}
+.upcoming-events {
+    margin-bottom: 450px !important;
+}
+.single-event img {
+    border-top-left-radius: 156px;
+    border-bottom-right-radius: 120px;
 }
 }

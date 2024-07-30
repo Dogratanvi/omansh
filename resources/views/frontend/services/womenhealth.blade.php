@@ -250,12 +250,12 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
+           
                 <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
 
                     @include("frontend.bookingform")
 
-                </div>
+            
             </div>
         </div>
 </section>

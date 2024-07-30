@@ -106,7 +106,17 @@
                                 <a href="{{ route('frontend.services.yoga') }}">Yoga</a>
                             </li>
                             <li>
+                                <a href="{{ route('frontend.workshop.yoga-teacher-training') }}">Yoga Teacher Training</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('frontend.workshop.corporatesessions') }}">Corporate Sessions
+                                </a>
+                            </li>
+                            <li>
                                 <a href="{{ route('frontend.blog.index') }}">Blog<a>
+                            </li>
+                            <li>
+                                <a href="{{ route('frontend.events.index') }}">Events</a>
                             </li>
                             <li>
                                 <a href="{{ route('frontend.contact.create') }}">Contact Us</a>

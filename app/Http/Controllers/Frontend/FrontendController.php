@@ -88,9 +88,5 @@ class FrontendController extends Controller
         return view('frontend.bookingform', compact('settings'));
     }
 
-    public function webinar()
-    {
-        $settings = Setting::all();
-        return view('frontend.webinar', compact('settings'));
-    }
+  
 }

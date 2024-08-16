@@ -629,11 +629,13 @@ document.addEventListener('DOMContentLoaded', function() {
                                 .then(response => response.json())
                                 .then(data => {
                                     if (data.success) {
-                                        window.location.href =
-                                            "{{ route('frontend.payment.success') }}";
+                                        alert(
+                                                'Payment successful'
+                                                );
                                     } else {
-                                        window.location.href =
-                                            "{{ route('frontend.payment.failure') }}";
+                                        alert(
+                                                'Payment unsuccessful'
+                                                );
                                     }
                                 });
                         },

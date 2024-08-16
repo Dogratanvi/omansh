@@ -22,9 +22,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- StyleSheet link CSS -->
 
-
+  <!-- Google Fonts link for Poppins and Mulish -->
+  <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Shortcut Icon -->
-    <link href="{{ asset('bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+   
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -35,6 +38,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/booking.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/gallary.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/webinar.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
@@ -57,39 +61,29 @@
     gtag('js', new Date());
     gtag('config', 'G-9VT5D5K2V4');
     </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-9VT5D5K2V4');
-    </script>
-
-
-
 </head>
 
 
 <body>
-    @include('frontend.includes.header')
 
+@if (request()->is('webinar'))
+        <!-- No header for the webinar page -->
+    @else
+        @include('frontend.includes.header')
+    @endif
     <main>
         @yield('content')
     </main>
 
-
+    @if (request()->is('webinar'))
+        <!-- No header for the webinar page -->
+    @else
     @include('frontend.includes.footer')
+    @endif
+   
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
-
-<script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-<script src="{{ asset('js/popper.min.js') }}"></script>
 <script src="{{ asset('js/video-popup.js') }}"></script>
 <script src="{{ asset('js/close.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
@@ -104,41 +98,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 </script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var form = document.getElementById('contactPage');
-        form.addEventListener('submit', function() {
-            // Save the current scroll position
-            sessionStorage.setItem('scrollPosition', window.scrollY);
-        });
-        
-        // Check if there's a stored scroll position and scroll to it
-        var scrollPosition = sessionStorage.getItem('scrollPosition');
-        if (scrollPosition) {
-            window.scrollTo(0, scrollPosition);
-            sessionStorage.removeItem('scrollPosition'); // Clear the stored position
-        }
-    });
-    </script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var form = document.getElementById('newsletter_form');
-        form.addEventListener('submit', function() {
-            // Save the current scroll position
-            sessionStorage.setItem('scrollPosition', window.scrollY);
-        });
-        
-        // Check if there's a stored scroll position and scroll to it
-        var scrollPosition = sessionStorage.getItem('scrollPosition');
-        if (scrollPosition) {
-            window.scrollTo(0, scrollPosition);
-            sessionStorage.removeItem('scrollPosition'); // Clear the stored position
-        }
-    });
-    </script> 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -148,9 +107,42 @@
 <script src="{{ asset('js/thumb.js')}}"></script>
 <script src="{{ asset('js/top.js')}}"></script>
 <script src="{{ asset('js/pages.js')}}"></script>
+<script src="{{ asset('js/webinar.js')}}"></script>
 <script src="{{ asset('js/type.js')}}"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('contactPage');
+    form.addEventListener('submit', function() {
+        // Save the current scroll position
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+    });
 
+    // Check if there's a stored scroll position and scroll to it
+    var scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, scrollPosition);
+        sessionStorage.removeItem('scrollPosition'); // Clear the stored position
+    }
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('newsletter_form');
+    form.addEventListener('submit', function() {
+        // Save the current scroll position
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+    });
+
+    // Check if there's a stored scroll position and scroll to it
+    var scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, scrollPosition);
+        sessionStorage.removeItem('scrollPosition'); // Clear the stored position
+    }
+});
+</script>
 
 <!-- loadmore button -->
 <script>

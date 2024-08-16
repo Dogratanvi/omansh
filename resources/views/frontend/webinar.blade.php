@@ -142,10 +142,9 @@
                 <div class="item">
                     <div class="bg-white rounded review-card">
                         <div class="review-header">
-                            <img src="{{ asset('img/webinar/testimonials.png ') }}" alt="User Image"
-                                class="review-avatar">
+                            <img src="{{ asset('img/webinar/latika.png ') }}" alt="User Image" class="review-avatar">
                             <div class="review-details">
-                                <h4>Asees Kaur</h4>
+                                <h4>latika tyagi</h4>
                                 <span class="review-time">2 months ago</span>
                             </div>
                         </div>
@@ -154,19 +153,11 @@
                                 <span>⭐⭐⭐⭐⭐</span>
                             </div>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                took a
-                                galley of type and scrambled it to make a type specimen book. It has survived not only
-                                five
-                                centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                Ipsum
-                                passages, and more recently with desktop publishing software like Aldus PageMaker
-                                including
-                                versions of Lorem Ipsum.
+                                Coming to prenatal yoga has been one of the best things I've done through my pregnancy
+                                so far! I've gained respect and love for my body and confidence in all that I'm capable
+                                of as a mother. I always leave class with my body feeling stronger, more comfortable,
+                                and relaxed.
+                                Thankyou Dr. Garima for understanding all my health issues and guiding me accordingly.
                             </p>
                         </div>
                     </div>
@@ -174,8 +165,7 @@
                 <div class="item">
                     <div class="review-card bg-white rounded ">
                         <div class="review-header">
-                            <img src="{{ asset('img/webinar/testimonials.png ') }}" alt="User Image"
-                                class="review-avatar">
+                            <img src="{{ asset('img/webinar/asees.png ') }}" alt="User Image" class="review-avatar">
                             <div class="review-details">
                                 <h4>Asees Kaur</h4>
                                 <span class="review-time">2 months ago</span>
@@ -186,19 +176,13 @@
                                 <span>⭐⭐⭐⭐⭐</span>
                             </div>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                took a
-                                galley of type and scrambled it to make a type specimen book. It has survived not only
-                                five
-                                centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                Ipsum
-                                passages, and more recently with desktop publishing software like Aldus PageMaker
-                                including
-                                versions of Lorem Ipsum.
+                                100% recommendation for this class for all the pregnant moms. I delivered my second baby
+                                normal without epidural. I mean that’s a big achievement for me and all thanks to Dr.
+                                Garima. Her voice was echoing throughout delivery time. Where to focus, what to meditate
+                                at what time. Trust me we need to work out during pregnancy for not just the sake of
+                                normal delivery but for fitness and our mental health.
+                                Dr. Garima was always there whenever I needed guidance throughout my pregnancy. Mostly
+                                near my delivery time. Thank you so much for your abundant support.
                             </p>
                         </div>
                     </div>
@@ -206,11 +190,10 @@
                 <div class="item">
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="{{ asset('img/webinar/testimonials.png ') }}" alt="User Image"
-                                class="review-avatar">
+                            <img src="{{ asset('img/webinar/jyoti.png ') }}" alt="User Image" class="review-avatar">
                             <div class="review-details">
-                                <h4>Asees Kaur</h4>
-                                <span class="review-time">2 months ago</span>
+                                <h4>Jyoti Mishra</h4>
+                                <span class="review-time">4 months ago</span>
                             </div>
                         </div>
                         <div class="review-content">
@@ -218,19 +201,10 @@
                                 <span>⭐⭐⭐⭐⭐</span>
                             </div>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                took a
-                                galley of type and scrambled it to make a type specimen book. It has survived not only
-                                five
-                                centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                Ipsum
-                                passages, and more recently with desktop publishing software like Aldus PageMaker
-                                including
-                                versions of Lorem Ipsum.
+                                I had joined Omansh physiotherapy and yoga centre,Vaishali two and a half months back
+                                and can already feel the positive changes in me.Special thanks to Sumit Sir for his
+                                motivation, enthusiasm and dedication that he put on each of us. Thank you for being
+                                such an inspirational teacher. I have really enjoyed learning yoga with you.
                             </p>
                         </div>
                     </div>
@@ -238,11 +212,10 @@
                 <div class="item">
                     <div class="review-card">
                         <div class="review-header">
-                            <img src="{{ asset('img/webinar/testimonials.png ') }}" alt="User Image"
-                                class="review-avatar">
+                            <img src="{{ asset('img/webinar/nupur.png ') }}" alt="User Image" class="review-avatar">
                             <div class="review-details">
-                                <h4>Asees Kaur</h4>
-                                <span class="review-time">2 months ago</span>
+                                <h4>Nupur gupta</h4>
+                                <span class="review-time">4 months ago</span>
                             </div>
                         </div>
                         <div class="review-content">
@@ -250,24 +223,41 @@
                                 <span>⭐⭐⭐⭐⭐</span>
                             </div>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has
-                                been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                took a
-                                galley of type and scrambled it to make a type specimen book. It has survived not only
-                                five
-                                centuries, but also the leap into electronic typesetting, remaining essentially
-                                unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                                Ipsum
-                                passages, and more recently with desktop publishing software like Aldus PageMaker
-                                including
-                                versions of Lorem Ipsum.
+                                A very comfortable and informative journey with the team. Garima mam is the go to person
+                                for all prenatal health related discussion. Best part is your sessions are well
+                                supported with lots of positivity and motivation
+                                I would strongly recommend all 'momies to be ' to take her support for best experience
+                                💗
                             </p>
                         </div>
                     </div>
                 </div>
-
+                <div class="item">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="{{ asset('img/webinar/aanchal.png ') }}" alt="User Image" class="review-avatar">
+                            <div class="review-details">
+                                <h4>Anchal Wadhawan</h4>
+                                <span class="review-time">5 months ago</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <div class="review-stars">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p>
+                                I would like to take this platform to invite all the pregnant women reading this to join
+                                Yoga sessions at Omansh. I took my prenatal sessions from Garima Mam and she was the
+                                best decision I made. The entire journey was phenomenal. Can't say enough of the care
+                                she took for each session and her determination for our classes. Not only she helped me
+                                with the exercises but also she acquainted me with so many other things like lactation
+                                practices, labour room challenges, pelvic exercise etc as well. During the pains I was
+                                facing during my labour I was recalling all the breathing techniques she taught making
+                                my labour bearable for me. Must recommended. Thankyou so much again Garima Mam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="text-center">
@@ -457,14 +447,14 @@
     <div class="modal booking-form fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            
+
             <div class="modal-content webinar-modal inner-appointment-box ">
-            <div class="feedback-heading px-3 d-flex justify-content-center align-items-center">
-                        <img src="/img/aboutus_top_shape 2.png">
-                        <h2 class="text-white px-3 text-center">Registration Form</h2>
-                        <img src="/img/aboutus_top_shape 2.png">
-                    </div>
-             
+                <div class="feedback-heading px-3 d-flex justify-content-center align-items-center">
+                    <img src="/img/aboutus_top_shape 2.png">
+                    <h2 class="text-white px-3 text-center">Registration Form</h2>
+                    <img src="/img/aboutus_top_shape 2.png">
+                </div>
+
                 <div class="modal-body p-5">
                     <form id="signupForm">
                         @csrf

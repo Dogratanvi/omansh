@@ -721,7 +721,7 @@ button.custom-btn{
     padding: 100px 0 130px;
     background-position: 100% 100%;
 }
-.item img {
+.aboutus_section .item img {
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
 }

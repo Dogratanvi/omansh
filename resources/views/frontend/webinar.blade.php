@@ -6,9 +6,7 @@
             <!-- desktop header -->
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <h5 class="top-heading m-0 py-4 text-white text-center fw-bolder">Empower Your Birth Journey with
-                        Expert
-                        Guidance</h5>
+                    <h5 class="top-heading m-0 py-4 text-white text-center fw-bolder">Empower Your Labor Experience with Expert Guidance</h5>
                 </div>
             </div>
         </div>
@@ -138,123 +136,84 @@
     </div>
     <div class="container my-5">
         <div class="review-slider">
-            <div class="owl-carousel testimonial-carousel owl-theme">
-                <div class="item">
-                    <div class="bg-white rounded review-card">
-                        <div class="review-header">
-                            <img src="{{ asset('img/webinar/latika.png ') }}" alt="User Image" class="review-avatar">
-                            <div class="review-details">
-                                <h4>latika tyagi</h4>
-                                <span class="review-time">2 months ago</span>
+            <div class="row">
+                <div class=" col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="item">
+                        <div class="bg-white rounded review-card">
+                            <div class="review-header">
+                                <img src="{{ asset('img/webinar/akriti.png ') }}" alt="User Image"
+                                    class="review-avatar">
+                                <div class="review-details">
+                                    <h4>Akriti Jain</h4>
+                                    <span class="review-time">2 month ago</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="review-content">
-                            <div class="review-stars">
-                                <span>⭐⭐⭐⭐⭐</span>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div><p>
+                                Yoga during pregnancy helped me in many ways. I joined Omansh after my 6th month. Dr.
+                                Garima kept me motivated, gave suggestions/guidance at every step of my pregnancy. The
+                                theory class on labour helped us a lot, specially in understanding what exactly labour
+                                is and what we should do at the time of contractions. Exercises during the classes
+                                helped in improving leg and arm strength. It has also helped me in normal delivery of my
+                                baby. Contractions during the labour time were unbearable and exercises taught by Dr.
+                                Garima helped me relax. I would like to thank Omansh team and specially Dr. Garima for
+                                all the support and help.<p>
+                                </p>
                             </div>
-                            <p>
-                                Coming to prenatal yoga has been one of the best things I've done through my pregnancy
-                                so far! I've gained respect and love for my body and confidence in all that I'm capable
-                                of as a mother. I always leave class with my body feeling stronger, more comfortable,
-                                and relaxed.
-                                Thankyou Dr. Garima for understanding all my health issues and guiding me accordingly.
-                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="review-card bg-white rounded ">
-                        <div class="review-header">
-                            <img src="{{ asset('img/webinar/asees.png ') }}" alt="User Image" class="review-avatar">
-                            <div class="review-details">
-                                <h4>Asees Kaur</h4>
-                                <span class="review-time">2 months ago</span>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="item">
+                        <div class="review-card bg-white rounded ">
+                            <div class="review-header">
+                                <img src="{{ asset('img/webinar/asees.png ') }}" alt="User Image" class="review-avatar">
+                                <div class="review-details">
+                                    <h4>Asees Kaur</h4>
+                                    <span class="review-time">2 months ago</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="review-content">
-                            <div class="review-stars">
-                                <span>⭐⭐⭐⭐⭐</span>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <p>
+                                    100% recommendation for this class for all the pregnant moms. I delivered my second
+                                    baby
+                                    normal without epidural. I mean that’s a big achievement for me and all thanks to
+                                    Dr.
+                                    Garima. Her voice was echoing throughout delivery time. Where to focus, what to
+                                    meditate
+                                    at what time. Trust me we need to work out during pregnancy for not just the sake of
+                                    normal delivery but for fitness and our mental health.
+                                    Dr. Garima was always there whenever I needed guidance throughout my pregnancy.
+                                    Mostly
+                                    near my delivery time. Thank you so much for your abundant support.
+                                </p>
                             </div>
-                            <p>
-                                100% recommendation for this class for all the pregnant moms. I delivered my second baby
-                                normal without epidural. I mean that’s a big achievement for me and all thanks to Dr.
-                                Garima. Her voice was echoing throughout delivery time. Where to focus, what to meditate
-                                at what time. Trust me we need to work out during pregnancy for not just the sake of
-                                normal delivery but for fitness and our mental health.
-                                Dr. Garima was always there whenever I needed guidance throughout my pregnancy. Mostly
-                                near my delivery time. Thank you so much for your abundant support.
-                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="{{ asset('img/webinar/jyoti.png ') }}" alt="User Image" class="review-avatar">
-                            <div class="review-details">
-                                <h4>Jyoti Mishra</h4>
-                                <span class="review-time">4 months ago</span>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="{{ asset('img/webinar/gopika-vyas.png') }}" alt="User Image" class="review-avatar">
+                                <div class="review-details">
+                                    <h4>Gopika Vyas</h4>
+                                    <span class="review-time">4 months ago</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="review-content">
-                            <div class="review-stars">
-                                <span>⭐⭐⭐⭐⭐</span>
+                            <div class="review-content">
+                                <div class="review-stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <p>
+                                She has been a great support and guided me throughout my pregnancy. My labour was short and I had a very smooth normal delivery. I would strongly recommend Dr. Garima and Omansh for prenatal yoga. Just join her and you will get a feeling that it was the “Best decision ever”! Good luck Garima, I shall see you soon for post-natal training ! Love and Light !❤️✨
+                                </p>
                             </div>
-                            <p>
-                                I had joined Omansh physiotherapy and yoga centre,Vaishali two and a half months back
-                                and can already feel the positive changes in me.Special thanks to Sumit Sir for his
-                                motivation, enthusiasm and dedication that he put on each of us. Thank you for being
-                                such an inspirational teacher. I have really enjoyed learning yoga with you.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="{{ asset('img/webinar/nupur.png ') }}" alt="User Image" class="review-avatar">
-                            <div class="review-details">
-                                <h4>Nupur gupta</h4>
-                                <span class="review-time">4 months ago</span>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <div class="review-stars">
-                                <span>⭐⭐⭐⭐⭐</span>
-                            </div>
-                            <p>
-                                A very comfortable and informative journey with the team. Garima mam is the go to person
-                                for all prenatal health related discussion. Best part is your sessions are well
-                                supported with lots of positivity and motivation
-                                I would strongly recommend all 'momies to be ' to take her support for best experience
-                                💗
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="{{ asset('img/webinar/aanchal.png ') }}" alt="User Image" class="review-avatar">
-                            <div class="review-details">
-                                <h4>Anchal Wadhawan</h4>
-                                <span class="review-time">5 months ago</span>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <div class="review-stars">
-                                <span>⭐⭐⭐⭐⭐</span>
-                            </div>
-                            <p>
-                                I would like to take this platform to invite all the pregnant women reading this to join
-                                Yoga sessions at Omansh. I took my prenatal sessions from Garima Mam and she was the
-                                best decision I made. The entire journey was phenomenal. Can't say enough of the care
-                                she took for each session and her determination for our classes. Not only she helped me
-                                with the exercises but also she acquainted me with so many other things like lactation
-                                practices, labour room challenges, pelvic exercise etc as well. During the pains I was
-                                facing during my labour I was recalling all the breathing techniques she taught making
-                                my labour bearable for me. Must recommended. Thankyou so much again Garima Mam.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -265,7 +224,7 @@
                 NOW ₹199</button>
         </div>
     </div>
-    </div>
+
     <div class="main-header section-bg">
         <div class="container">
             <div class="row">
@@ -620,12 +579,12 @@ document.addEventListener('DOMContentLoaded', function() {
                                 .then(data => {
                                     if (data.success) {
                                         alert(
-                                                'Payment successful'
-                                                );
+                                            'Payment successful'
+                                        );
                                     } else {
                                         alert(
-                                                'Payment unsuccessful'
-                                                );
+                                            'Payment unsuccessful'
+                                        );
                                     }
                                 });
                         },

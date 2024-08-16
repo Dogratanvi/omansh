@@ -32,7 +32,7 @@ class WebnairController extends Controller
         $whatsapp_number = $request->whatsapp_number;
         $email = $request->email;
 
-        $api = new Api('rzp_test_uBoIKL7RIyQ2Fv', 'Ix1AfYrk225kqy1zMaqVRMud');
+        $api = new Api('rzp_live_cKTuo7fj9oQFjL', '6SUWepgqpDUQRU0HxXx5OoJH');
 
         $totalAmount = 199;
 
@@ -59,7 +59,7 @@ class WebnairController extends Controller
             //
             return response()->json([
                 'order_id' => $order['id'],
-                'razorpay_key' => 'rzp_test_uBoIKL7RIyQ2Fv',
+                'razorpay_key' => 'rzp_live_cKTuo7fj9oQFjL',
                 'amount' => 19900
             ]);
         } catch (Exception $e) {
@@ -74,7 +74,7 @@ class WebnairController extends Controller
     {
 
 
-        $api = new Api('rzp_test_uBoIKL7RIyQ2Fv', 'Ix1AfYrk225kqy1zMaqVRMud');
+        $api = new Api('rzp_live_cKTuo7fj9oQFjL', '6SUWepgqpDUQRU0HxXx5OoJH');
 
         try {
 

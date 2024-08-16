@@ -16,7 +16,7 @@ class WebnairController extends Controller
     public function index()
     {
         $settings = Setting::all();
-        return view('frontend.webnair', compact('settings'));
+        return view('frontend.webinar', compact('settings'));
     }
 
     public function store(Request $request)

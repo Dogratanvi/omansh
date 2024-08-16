@@ -4,14 +4,14 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Campaign;
+use App\Models\Webinar;
 use App\Models\Setting;
 use Exception;
 use Illuminate\Support\Facades\Mail;
 use Razorpay\Api\Api;
 use Session;
 
-class WebnairController extends Controller
+class WebinarController extends Controller
 {
     public function index()
     {
@@ -48,7 +48,7 @@ class WebnairController extends Controller
         try {
 
             // Store the user details and order information in your database
-            Campaign::create([
+            Webinar::create([
                 'name' => $validated['name'],
                 'email' => $validated['email'],
                 'whatsapp_number' => $validated['whatsapp_number'],
@@ -87,7 +87,7 @@ class WebnairController extends Controller
             $api->utility->verifyPaymentSignature($attributes);
 
             // Payment successful, update the database
-            $registration = Campaign::where('order_id', $request->razorpay_order_id)->first();
+            $registration = Webinar::where('order_id', $request->razorpay_order_id)->first();
             if ($registration) {
                 $registration->status = 'paid';
                 $registration->r_payment_id = $request->razorpay_payment_id;
@@ -107,13 +107,4 @@ class WebnairController extends Controller
         }
     }
 
-    public function success()
-    {
-        return view('frontend.payment.success');
-    }
-
-    public function failure()
-    {
-        return view('frontend.payment.failure');
-    }
 }

@@ -1,0 +1,299 @@
+:root {
+    --color-green: #004B2A;
+    --color-light-gray:#CAA983;
+    --color-black: #000;
+    --color-gray-transparent:#caa98359;
+    --font-weight-100: 100;
+    --font-weight-300: 300;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --font-size-32: 32px;
+    --font-size-34: 34px;
+    --font-size-36: 36px;
+    --font-size-40: 40px;
+    --font-size-48: 48px;
+    --font-size-30: 30px;
+    --font-size-24: 24px;
+    --font-size-28: 28px;
+    --font-size-65: 65px;
+    --font-size-20: 20px;
+}
+
+.landing-page{
+    h1,h2,h3,h4,h5,h6,p,span,a,li,ul,button,a{
+        font-family: 'Poppins', sans-serif;
+    }
+.section-bg {
+    background-color: var(--color-green);
+}
+.bottom-sec{
+        background-image: url(./../img/webinar/Preparing-Banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 840px;
+    
+}
+h5.top-heading{
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-500);
+    font-family: 'Poppins';
+    line-height: 48px;
+}
+section.banner-section {
+    padding: 150px 0;
+}
+section.bottom-banner-section {
+    padding-bottom: 80px;
+
+}
+.bottom-header{
+    background-color: var(--color-light-gray);
+}
+h1.heading-text{
+    font-size: var(--font-size-48) !important;;
+    font-weight: var(--font-weight-800) !important;;
+    font-family: 'Poppins' !important;;
+    background-color: var(--color-gray-transparent) !important;;
+    border: 2px solid #fff !important;
+    border-radius: 10px !important;
+}
+h2.sub-heading-text{
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-800);
+    color: #00000038;
+    line-height: 51px;
+}
+h2.sub-heading{
+    font-size: var(--font-size-65);
+    font-weight: var(--font-weight-700);
+    color: #0000001f;
+}
+p.desc-sec{
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-400);
+    line-height: 38px;
+}
+span.zoom-webinar {
+    background-color: var(--color-light-gray);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-600);
+}
+button.webinar-btn{
+    background-color: var(--color-light-gray);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-600);
+}
+p.health-des{
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-600);
+    line-height: 50px;
+}
+p.date-sec{
+font-size: var(--font-size-20);
+font-weight: var(--font-weight-600);
+background-color: var(--color-green);
+}
+.Omansh-Health-sec {
+    position: relative;
+    background-image: url(../img/webinar/Omansh-Health.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.counters-text{
+    background-color: var(--color-green);
+}
+.section-sub-bg{
+    background-color: var( --color-light-gray);
+}
+
+.Omansh-Health-sec * {
+    position: relative;
+    z-index: 2;
+}
+.omansh-listing .list-group-item {
+    font-size: var(--font-size-28);
+    line-height: 50px;
+}
+
+p.webinar-des{
+    color: var(--color-green);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-600);
+    line-height: 50px;
+}
+/*reviw-slider*/
+.review-slider .item {
+padding: 15px;
+}
+
+.review-card {
+    border: 1px solid #CAA983;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.review-slider .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #004B2A;
+}
+.review-header {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+.review-avatar {
+width: 50px !important;
+height: 50px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.review-details h4 {
+margin: 0;
+font-size: 1.2em;
+}
+
+.review-time {
+color: #888;
+font-size: 0.9em;
+}
+
+.review-stars {
+margin-bottom: 10px;
+}
+
+.review-stars span {
+color: #FFD700; /* Gold color for stars */
+font-size: 1.2em;
+}
+
+.review-content p {
+color: #333;
+font-size: 1em;
+line-height: 1.5;
+}
+
+.banner-sec-two {
+    position: relative;
+    background-image: url(../img/webinar/Empowering.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 548px;
+}
+.banner-sec-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad; /* Green color with 30% opacity */
+    z-index: 1;
+}
+.banner-sec-two * {
+    position: relative;
+    z-index: 2;
+}
+.banner-text-two {
+    padding: 130px 0;
+}
+.timer-box-custom {
+    border: 1px solid white;
+    border-radius: 13px;
+    padding: 10px 30px;
+    margin: 5px;
+}
+.timer-title-custom {
+    font-size: 1.5rem;
+}
+.timer-section-custom {
+    display: inline-block;
+    text-align: center;
+}
+.timer-section-custom div {
+    font-size: 2rem;
+}
+.timer-section-custom span {
+    font-size: 1rem;
+}
+}
+/*media-query*/
+@media (min-width: 300px) and (max-width: 786px) { 
+    .landing-page{
+    .bottom-sec{
+        background-image: url(../img/webinar/Preparing-Banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+    
+}
+.banner-sec-two {
+height: auto !important;
+}
+section.banner-section {
+    padding: 50px 0;
+}
+.time-box{
+    flex-direction: column;
+}
+.banner-text-two {
+    padding: 50px 0 50px 0;
+}
+.Omansh-Health-sec{
+    display: flex;
+    height: auto !important;
+    padding: 20px 15px;
+}
+h5.top-heading{
+    line-height: 40px;
+    font-size: 24px;
+}
+h2.sub-heading {
+    line-height: 48px;
+    font-size: 50px;
+}p.health-des{
+    font-size: 20px;
+        line-height: 30px;
+    
+}
+h1.heading-text{
+    font-size: 38px !important;
+    line-height: 45px !important;
+}
+h2.sub-heading-text{
+    font-size: 38px !important;
+    line-height: 45px !important;
+}
+.omansh-listing .list-group-item{
+    font-size: 20px;
+    line-height: 38px;
+}
+section.bottom-banner-section {
+    padding-bottom: 60px;
+}
+.span.zoom-webinar{
+    font-size: 25px;
+}
+}
+}
+@media (min-width: 300px) and (max-width: 350px) { 
+    .landing-page{
+        h2.sub-heading-text {
+            font-size: 28px !important;
+            line-height: 39px !important;
+        }
+    }
+}

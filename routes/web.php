@@ -88,5 +88,6 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('bookingform', 'BookingsController@index')->name('bookingform');
     Route::post('bookingform', 'BookingsController@store')->name('bookingform.store');
 
-
+    // landing page
+    Route::get('webinar', 'FrontendController@webinar')->name('/webinar');
 });

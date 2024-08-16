@@ -89,7 +89,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::post('bookingform', 'BookingsController@store')->name('bookingform.store');
 
     // landing page
-    Route::get('webinar', 'WebnairController@webinar')->name('/webinar');
+    Route::get('webinar', 'WebnairController@index')->name('/webinar');
     Route::post('payment/store','WebnairController@store')->name('payment.store');
     Route::post('/payment/verify', 'WebnairController@verify')->name('payment.verify');
     Route::get('/payment/success', 'WebnairController@success')->name('payment.success');

@@ -228,6 +228,10 @@ line-height: 1.5;
 .timer-section-custom span {
     font-size: 1rem;
 }
+.webinar-modal.inner-appointment-box{
+    border-top-left-radius: 122px;
+    border-bottom-right-radius: 122px;
+}
 }
 /*media-query*/
 @media (min-width: 300px) and (max-width: 786px) { 

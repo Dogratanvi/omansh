@@ -224,7 +224,28 @@
                 NOW ₹199</button>
         </div>
     </div>
-
+  
+    <div class="container">
+        <div class="video-webinar-section pb-5">
+            <div class="row">
+         <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0"> <a href="https://www.youtube.com/embed/aPtzvIxzgdU" data-toggle="lightbox" data-type="iframe" class=" h-100 position-relative">
+                    <img src="{{ asset('img/webinar/istimage.png') }}" class="img-fluid">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+</div>
+         <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0"> <a href="https://youtube.com/embed/wus_-JT68Kg" data-toggle="lightbox"  data-type="iframe" class="position-relative" >
+		<img src="{{ asset('img/webinar/secondimage.png') }}" class="img-fluid">
+        <i class="fa-brands fa-youtube"></i>
+	</a></div>
+         <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0">
+         <a href="https://www.youtube.com/watch?v=bb7phQ6CjkA" data-toggle="lightbox"  data-type="iframe" class="position-relative">
+		<img src="{{ asset('img/webinar/third.png') }}" class="img-fluid">
+        <i class="fa-brands fa-youtube"></i>
+	</a>
+         </div>
+            </div>
+</div>
+</div>
     <div class="main-header section-bg">
         <div class="container">
             <div class="row">
@@ -358,6 +379,7 @@
             </div>
         </div>
     </section>
+
     <div class="bottom-footer section-sub-bg">
         <div class="container">
             <div class="row">
@@ -436,6 +458,26 @@
             </div>
         </div>
     </div>
+
+    <!-- video -->
+     <!-- modal for testimonal -->
+<div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
+    aria-labelledby="deleteLineItemModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content mt-4 bg-transparent border-0">
+            <div class="modal-header bg-transparent border-0">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body edit-content pt-2">
+                <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 </main>
 <script>
 function countdownTimerCustom() {
@@ -612,4 +654,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script>
+    document.addEventListener("click", function(event) {
+        if (event.target.closest('[data-bs-toggle="lightbox"]')) {
+            event.preventDefault();
+            bs5Lightbox.show(event.target.closest('[data-bs-toggle="lightbox"]').href);
+        }
+    });
+    </script>
 @endsection

@@ -34,14 +34,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
        
     <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.css" rel="stylesheet">
-    <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
+    
     <link href="{{ asset('css/custom-style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/special-classes.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/booking.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/gallary.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webinar.css') }}" rel="stylesheet" type="text/css">
-  
+    <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 

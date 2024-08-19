@@ -88,11 +88,11 @@
                 </div>
 
                 <button
-                    class=" nav-btn d-block d-lg-none bg-transparent border-0 d-xl-none d-md-block d-sm-block d-xs-block"
+                    class=" nav-btn  bg-transparent border-0 d-block d-lg-none d-xl-none d-md-block d-sm-block d-xs-block"
                     type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"><i class="mobile fa-solid fa-bars"></i></button>
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                <div class="offcanvas offcanvas-end d-block d-lg-none d-xl-none d-md-block d-sm-block d-xs-block" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
 

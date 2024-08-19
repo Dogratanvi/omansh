@@ -462,15 +462,15 @@
                         <form id="signupForm">
                             @csrf
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
+                                <label for="name" class="form-label">Full Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
+                                <label for="email" class="form-label">Email Address</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="whatsappNumber" class="form-label">Whatsapp Number</label>
+                                <label for="whatsappNumber" class="form-label">Phone Number</label>
                                 <input type="tel" class="form-control" id="whatsappNumber" name="whatsapp_number"
                                     required>
                             </div>
@@ -695,9 +695,9 @@
                                 </div>
                             </div>
 
-
-                            <button type="submit" class="btn mt-3 btn-primary border-0 appointment-btn">Submit And
-                                Pay</button>
+<div class="text-center">
+                            <button type="submit" class="mt-3 border-0 get_started_btn appointment-btn">Submit And
+                                Pay</button></div>
                         </form>
                     </div>
                 </div>

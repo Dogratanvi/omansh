@@ -20,6 +20,7 @@
 
     <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
     <!-- StyleSheet link CSS -->
 
   <!-- Google Fonts link for Poppins and Mulish -->
@@ -32,7 +33,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+        <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.css" rel="stylesheet">
     <link href="{{ asset('css/custom-style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/special-classes.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
@@ -49,7 +50,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Google tag (gtag.js) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+  
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VT5D5K2V4"></script>
     <script>
@@ -86,7 +87,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
 <script src="{{ asset('js/video-popup.js') }}"></script>
 <script src="{{ asset('js/close.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 
 <!-- Add jQuery (required for Slick Slider) -->
 
@@ -98,7 +99,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="{{ asset('js/video-section.js') }}"></script>
@@ -209,6 +212,5 @@ $(document).ready(function() {
     });
 });
 </script>
-
 
 </html>

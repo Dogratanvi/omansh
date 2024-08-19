@@ -656,8 +656,8 @@
     padding: 18px 35px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: -100px;
-    right: -50px;
+    bottom: 2px;
+    right: 1px;
   }
   .subscribe_background_image .subscribe_image img {
     width: 780px;
@@ -1582,12 +1582,16 @@
     padding: 24px 40px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: -70px;
-    right: -12px;
+    bottom: 2px;
+    right: 1px;
   }
   .subscribe_background_image .subscribe_image img {
     width: 575px;
   }
+  .services_box_upper_portion img {
+    width: 50% !important;
+}
+
 
   .footer-section {
     padding: 200px 0 0;
@@ -2298,7 +2302,7 @@ h1{
   }
   .get_in_touch_section:before {
     width: 100%;
-    height: 600px;
+    height: 64%;
   }
   .get_in_touch_content {
     text-align: center;
@@ -2494,12 +2498,16 @@ h1{
     top: 171px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: -60px;
-    right: -16px;
+    bottom: 2px;
+    right: 1px;
   }
   .subscribe_background_image .subscribe_image img {
     width: 460px;
   }
+  .services_box_upper_portion img {
+    width: 80% !important;
+}
+
 
   .footer-section {
     padding: 145px 0 0;
@@ -3130,7 +3138,7 @@ figure.video_img {
   }
 
   .get_in_touch_section:before {
-    height: 695px;
+    height: 64%;
   }
   .video_img {
     display: none;
@@ -3272,8 +3280,8 @@ figure.video_img {
     padding: 24px 30px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: 0px;
-    right: 30px;
+    bottom: 2px;
+    right: 1px;
     position: relative;
   }
   .subscribe_background_image .subscribe_image img {

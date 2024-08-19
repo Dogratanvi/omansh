@@ -132,9 +132,6 @@ p.webinar-des{
     font-weight: var(--font-weight-600);
     line-height: 50px;
 }
-.review-card p {
-    height: 245px;
-}
 
 
 /*reviw-slider*/
@@ -146,6 +143,7 @@ padding: 15px;
     border: 1px solid #CAA983;
 padding: 20px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+height: 565px;
 
 }
 .review-slider .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
@@ -296,11 +294,9 @@ section.bottom-banner-section {
 .span.zoom-webinar{
     font-size: 25px;
 }
-.review-card p {
+.review-card  {
     height: auto;
 }
-
-
 }
 }
 @media (min-width: 300px) and (max-width: 350px) { 

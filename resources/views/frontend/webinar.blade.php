@@ -443,40 +443,302 @@
         </div>
     </div>
 
-    <!-- Signup Modal -->
-    <div class="modal booking-form fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+  <!-- Signup Modal -->
+  <div class="modal booking-form fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
 
-            <div class="modal-content webinar-modal inner-appointment-box ">
-                <div class="feedback-heading px-3 d-flex justify-content-center align-items-center">
-                    <img src="/img/aboutus_top_shape 2.png">
-                    <h2 class="text-white px-3 text-center">Registration Form</h2>
-                    <img src="/img/aboutus_top_shape 2.png">
-                </div>
+      <div class="modal-content webinar-modal inner-appointment-box ">
+          <div class="feedback-heading px-3 d-flex justify-content-center align-items-center">
+              <img src="/img/aboutus_top_shape 2.png">
+              <h2 class="text-white px-3 text-center">Registration Form</h2>
+              <img src="/img/aboutus_top_shape 2.png">
+          </div>
 
-                <div class="modal-body p-5">
-                    <form id="signupForm">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="whatsappNumber" class="form-label">Whatsapp Number</label>
-                            <input type="tel" class="form-control" id="whatsappNumber" name="whatsapp_number" required>
-                        </div>
+          <div class="modal-body p-5">
+              <form id="signupForm">
+                  @csrf
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="whatsappNumber" class="form-label">Whatsapp Number</label>
+                      <input type="tel" class="form-control" id="whatsappNumber" name="whatsapp_number"
+                          required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="age" class="form-label">Age</label>
+                      <input type="text" class="form-control" id="age" name="age" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="emergencyContactNumber" class="form-label">Emergency Contact Number</label>
+                      <input type="text" class="form-control" id="emergencyContactNumber"
+                          name="emergency_contact_number" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="pregnancyInformation" class="form-label">Pregnancy Information</label>
+                      <textarea rows="3" name="pregnancy_information" id="pregnancyInformation" class="form-control" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="estimatedDueDate" class="form-label">Estimated Due Date (EDD)</label>
+                      <input type="text" class="form-control datepicker" name="estimated_due_date"
+                          id="estimatedDueDate" autocomplete="off" required />
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Current trimester</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="current_trimester"
+                                  id="trimesterOne" value="First Trimester"
+                                  {{ old('current_trimester') == 'First Trimester' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="trimester1">
+                                  First Trimester (0-13 Weeks)
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="current_trimester"
+                                  id="trimesterSecond" value="Second Trimester"
+                                  {{ old('current_trimester') == 'Second Trimester' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="trimester2">
+                                  Second Trimester (14-27 Weeks)
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="current_trimester"
+                                  id="trimesterThird" value="Third Trimester"
+                                  {{ old('current_trimester') == 'Third Trimester' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="trimester3">
+                                  Third Trimester (27+ Weeks)
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Is This your first pregnancy</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="first_pregnancy"
+                                  id="yes" value="Yes"
+                                  {{ old('current_trimester') == 'Yes' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="yes">
+                                  Yes
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="first_pregnancy"
+                                  id="no" value="No"
+                                  {{ old('current_trimester') == 'No' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="no">
+                                  No
+                              </label>
+                          </div>
 
-                        <button type="submit" class="btn mt-3 btn-primary border-0 appointment-btn">Submit</button>
-                    </form>
-                </div>
-            </div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="previousPregnancies" class="form-label">If no, how many previous pregnancies
+                          have you had?</label>
+                      <textarea rows="3" name="previous_pregancy" id="previous_pregancy" class="form-control" ></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="pregnancyComplications" class="form-label">Have you experienced any pregnancy
+                          complications so far?</label>
+                      <textarea rows="3" name="experience_pregnancy_complications" id="pregnancyComplications" class="form-control" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="typeOfDelivery" class="form-label">Are you planning a specific type of
+                          delivery ( e.g., natural birth, water birth, C-section)?</label>
+                      <textarea rows="3" name="type_of_delivery" id="typeOfDelivery" class="form-control" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="specialMedicalConditions" class="form-label">Are you receiving any special
+                          care or have any medical conditions we should be aware of?</label>
+                      <textarea rows="3" name="medical_conditions" id="specialMedicalConditions" class="form-control"
+                          required></textarea>
+                  </div>
+                  <h5>Your Birth Preferences</h5>
+                  <div class="mb-3">
+                      <label class="form-label">What are your primary goal for this class?</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio"
+                                  name="primary_goal"
+                                  id="learningPainManagementTechniques"
+                                  value="Learning pain management techniques"
+                                  {{ old('current_trimester') == 'Learning pain management techniques' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="learningPainManagementTechniques">
+                                  Learning pain management techniques
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="primary_goal"
+                                  id="understandingLaborStages" value="Understanding labor stages"
+                                  {{ old('current_trimester') == 'Understanding labor stages' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="understandingLaborStages">
+                                  Understanding labor stages
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="primary_goal"
+                                  id="preparingForNaturalBirth" value="Preparing for natural birth"
+                                  {{ old('current_trimester') == 'Preparing for natural birth' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="preparingForNaturalBirth">
+                                  Preparing for natural birth
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio"
+                                  name="primary_goal" id="partnerInvolvementAndSupport"
+                                  value="partnerInvolvementAndSupport"
+                                  {{ old('current_trimester') == 'Partner involvement and support' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="partnerInvolvementAndSupport">
+                                  Partner involvement and support
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="primary_goal"
+                                  id="postpartrumRecovery" value="Postpartrum recovery"
+                                  {{ old('current_trimester') == 'Postpartrum recovery' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="postpartrumRecovery">
+                                  Postpartrum recovery
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="primary_goal" id="other"
+                                  value="Other" {{ old('current_trimester') == 'Other' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="other">
+                                  Other
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="questionsAboutChildBirth" class="form-label">Do you have any specific concerns
+                          or questions about childbirth ?</label>
+                      <textarea rows="3" name="concerns_about_childbirth" id="questionsAboutChildBirth" class="form-control"
+                          required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">How did you hear about this class?</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us"
+                                  id="socialMedia" value="Social media ( Instagram, Facebook, etc.)"
+                                  {{ old('current_trimester') == 'Social media ( Instagram, Facebook, etc.)' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="socialMedia">
+                                  Social media ( Instagram, Facebook, etc.)
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="Website"
+                                  value="Website" {{ old('current_trimester') == 'Website' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="Website">
+                                  Website
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="referral"
+                                  value="Friend/Referral"
+                                  {{ old('current_trimester') == 'Friend/Referral' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="preparingForNaturalBirth">
+                                  Friend/Referral
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="doctor"
+                                  value="Doctor" {{ old('current_trimester') == 'Doctor' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="doctor">
+                                  Doctor/Midwife
+                              </label>
+                          </div>
+
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="other"
+                                  value="Other" {{ old('current_trimester') == 'Other' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="other">
+                                  Other
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Would you like to receive updates and tips about pregnancy and
+                          childbirth?</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="like_receive_updates"
+                                  id="yes" value="Yes"
+                                  {{ old('current_trimester') == 'Yes' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="updates_regarding_childbirth">
+                                  Yes
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="like_receive_updates"
+                                  id="no" value="No"
+                                  {{ old('current_trimester') == 'No' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="updates_regarding_childbirth">
+                                  No
+                              </label>
+                          </div>
+
+                      </div>
+                  </div>
+
+
+                  <button type="submit" class="btn mt-3 btn-primary border-0 appointment-btn">Submit And
+                      Pay</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Payment Successful</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Your payment was successful. Thank you for registering for the webinar!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
     </div>
+</div>
+</div>
+
+<!-- Unsuccessful Modal -->
+<div class="modal fade" id="unsuccessfulModal" tabindex="-1" aria-labelledby="unsuccessfulModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="unsuccessfulModalLabel">Payment Unsuccessful</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>We're sorry, but your payment was unsuccessful. Please try again or contact support if the issue
+                persists.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="retryPayment()">Try Again</button>
+        </div>
+    </div>
+</div>
+</div>
+
 </main>
 <script>
 function countdownTimerCustom() {
@@ -568,6 +830,29 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get form data
         var formData = new FormData(this);
 
+          // Get form data
+          var formData = new FormData(this);
+                if (!validateForm()) {
+                    alert(
+                        "Please ensure all required fields are filled and at least one option is selected where applicable."
+                    );
+                    return;
+                }
+
+                function validateForm() {
+                    // Check radio button groups
+                    var radioGroups = ['current_trimester', 'first_pregnancy','primary_goal','hear_about_us','like_receive_updates'
+                    ];
+                    for (var group of radioGroups) {
+                        if (!document.querySelector(`input[name="${group}"]:checked`)) {
+                            return false;
+                        }
+                    }
+                    return true;
+
+                }
+
+
         // Send POST request to the route
         fetch("{{ route('frontend.payment.store') }}", {
                 method: 'POST',
@@ -653,4 +938,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+<script>
+    $(document).ready(function() {
+        $('#estimatedDueDate').datepicker({
+            format: 'dd/mm/yyyy',
+            autoclose: true,
+            todayHighlight: true,
+            startDate: '+0d',
+        });
+    });
+</script>
+
 @endsection

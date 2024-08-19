@@ -656,8 +656,9 @@
     padding: 18px 35px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: -100px;
-    right: -50px;
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
   }
   .subscribe_background_image .subscribe_image img {
     width: 780px;
@@ -1582,8 +1583,8 @@
     padding: 24px 40px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: -70px;
-    right: -12px;
+    bottom: 2px;
+    right: 0px;
   }
   .subscribe_background_image .subscribe_image img {
     width: 575px;
@@ -2498,8 +2499,8 @@ h1{
     top: 171px;
   }
   .subscribe_background_image .subscribe_image {
-    bottom: -60px;
-    right: -16px;
+    bottom: 2px;
+    right: 0px;
   }
   .subscribe_background_image .subscribe_image img {
     width: 460px;

@@ -1608,8 +1608,8 @@ a.all-event {
 }
 .subscribe_background_image .subscribe_image {
     position: absolute;
-    bottom: -125px;
-    right: -66px;
+    bottom: 2px;
+    right: 0px;
 }
 
 /* feedback form */

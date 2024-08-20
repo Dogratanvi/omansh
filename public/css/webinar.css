@@ -138,7 +138,10 @@ p.webinar-des{
 .review-slider .item {
 padding: 15px;
 }
-
+.form-control{
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+}
 .review-card {
     border: 1px solid #CAA983;
 padding: 20px;
@@ -277,7 +280,7 @@ line-height: 1.5;
 }
 .webinar-modal.inner-appointment-box{
     border-top-left-radius: 122px;
-    border-bottom-right-radius: 122px;
+    border-bottom-right-radius: 10px;
 }
 }
 /*media-query*/

@@ -15,8 +15,8 @@
                             <p class="text-center" data-aos="fade-right">Transform Your Body and Mind: Attend Our Health and Fitness Events.</p>   </div>
                         </div>
                             <div class="btn_wrapper">
-                               <a href="/"> <span class="sub_home_span">Home </span></a><i class="fa-solid fa-angles-right"
-                                    aria-hidden="true"></i><span class="sub_span"> About</span>
+                                <a href="/"><span class="sub_home_span">Home </span></a><i class="fa-solid fa-angles-right"
+                                    aria-hidden="true"></i><span class="sub_span"> Events</span>
                             </div>
                         </div>
                     </div>
@@ -38,32 +38,36 @@
     </section>
 </div>
 <!-- upcoming events -->
-<section class="upcoming-events  py-5">
+<section class="upcoming-events py-5">
     <div class="container">
         <h2 class="text-center">Upcoming Events</h2>
-        <p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud
-            exercitation</p>
+        <!--<p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud-->
+        <!--    exercitation</p>-->
         <div class="row pt-3">
+             @foreach ($upcomingEvents as $event)
             <div class="col-md-4">
                 <div class="card upcoming-card border-0 shadow">
-                    <img src="{{ asset('img/events.png') }}">
+                    <img src="{{ secure_asset($event->featured_image) }}">
                     <div class="date">
-                        <h4>01<br><span class="fw-normal">Apr</span></h4>
+                        <h4>14<br><span class="fw-normal">July</span></h4>
 
                     </div>
                     <div class="event-content">
-                        <h3>How does pregnancy affect my pelvic floor
-                        </h3>
-                        <p><i class="fa-regular fa-clock pe-2"></i> 2024-04-01 09:00 AM - 2024-04-01 12:00 PM</p>
-                        <p><i class="fa-solid fa-location-dot pe-2"></i>Plot No-290, in front of ramprastha green gate
-                            No.1, sector-4, vaishali, ghaziabad, 201 019</p>
+                        
+                        <h3>{{$event->name}}</h3>
+                        <p><i class="fa-regular fa-clock pe-2"></i>{{ date('M d, Y', strtotime($event->date_from)) }}</p>
+                          <a href="{{ route('frontend.events.single',  ['id' => $event->id, 'slug' => $event->slug]) }}" class="item-link appointment-btn">Read More <i
+                                            class="fa fa-arrow-right"></i></a>
+                      
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
-
+ 
 </section>
+
 
 
 

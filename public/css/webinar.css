@@ -30,7 +30,7 @@
     background-color: var(--color-green);
 }
 .bottom-sec{
-        background-image: url(./../img/webinar/Preparing-Banner.png);
+        background-image: url(./../img/webinar/Preparing-Banner.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -78,14 +78,21 @@ p.desc-sec{
     line-height: 38px;
 }
 span.zoom-webinar {
-    background-color: var(--color-light-gray);
+    background-color: var(--color-green);
     font-size: var(--font-size-36);
     font-weight: var(--font-weight-600);
 }
 button.webinar-btn{
-    background-color: var(--color-light-gray);
+    background-color: var(--color-green);
     font-size: var(--font-size-24);
     font-weight: var(--font-weight-600);
+}
+.iti.iti--allow-dropdown{
+    width: 100% !important;
+
+}
+button.webinar-btn2 {
+    background-color:var(--color-light-gray);
 }
 p.health-des{
     font-size: var(--font-size-36);
@@ -95,7 +102,7 @@ p.health-des{
 p.date-sec{
 font-size: var(--font-size-20);
 font-weight: var(--font-weight-600);
-background-color: var(--color-green);
+background-color: var(--color-light-gray);
 }
 .Omansh-Health-sec {
     position: relative;
@@ -138,7 +145,10 @@ p.webinar-des{
 .review-slider .item {
 padding: 15px;
 }
-
+.form-control{
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+}
 .review-card {
     border: 1px solid #CAA983;
 padding: 20px;
@@ -238,14 +248,13 @@ line-height: 1.5;
 }
 .webinar-modal.inner-appointment-box{
     border-top-left-radius: 122px;
-    border-bottom-right-radius: 122px;
+    border-bottom-right-radius: 10px;
 }
 }
 /*media-query*/
 @media (min-width: 300px) and (max-width: 786px) { 
     .landing-page{
     .bottom-sec{
-        background-image: url(../img/webinar/Preparing-Banner.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

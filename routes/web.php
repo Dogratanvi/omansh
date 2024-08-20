@@ -46,10 +46,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     //Events
      $module_name = 'events';
      $controller_name = 'EventController';
-     Route::get('events', 'EventController@index')->name('events.index');
      Route::get('events/upcoming', 'EventController@upcoming')->name('events.upcoming');
+     Route::get('events', 'EventController@index')->name('events.index');
      Route::get('events/past', 'EventController@past')->name('events.past');
-     Route::get('events/single', 'EventController@single')->name('events.single');
+     Route::get('events/{id}/{slug}', 'EventController@single')->name('events.single');
  
     //  services
 

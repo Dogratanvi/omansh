@@ -76,7 +76,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="dropdown-item nav-link"
-                                            href="{{ route('frontend.events.upcoming') }}">PAST EVENTS</a>
+                                            href="{{ route('frontend.events.past') }}">PAST EVENTS</a>
                                     </li>
                                 </ul>
                             </div>
@@ -162,10 +162,10 @@
                                 <div class="dropdown-menu drop-down-content">
                                     <ul class="list-unstyled drop-down-pages">
                                         <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./pricing.html">UPCOMING EVENTS</a>
+                                            <a class="dropdown-item nav-link" href="{{ route('frontend.events.upcoming') }}">UPCOMING EVENTS</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="dropdown-item nav-link" href="./faq.html">PAST EVENTS</a>
+                                            <a class="dropdown-item nav-link" href="{{ route('frontend.events.past') }}">PAST EVENTS</a>
                                         </li>
                                     </ul>
                                 </div>

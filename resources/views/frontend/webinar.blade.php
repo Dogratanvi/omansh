@@ -23,9 +23,7 @@
                     <div class="col-12 text-center py-5">
                         <h2 class="sub-heading-text text-uppercase text-white"> Worried about Labor pain and
                             complications?</h2>
-                        <p class="desc-sec text-white pb-4">(Join our child birth Education class to Prepare for your
-                            big day
-                            with confidence)</p>
+                        <p class="desc-sec text-white pb-4">(Join our child birth education class to prepare for your big day with confidence)</p>
                         <span class="zoom-webinar text-center text-white text-uppercase px-3 py-2 rounded">Zoom
                             webinar</span>
                     </div>
@@ -303,8 +301,8 @@
     <section class="why-choose-us-sec py-5">
         <div class="container">
             <div class="why-choose-us-sec">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <h2
                             class="sub-heading  text-center mb-0 mb-xs-0 pt-0 pt-sm-0 pt-xs-0 pt-md-2 pt-xl-5 pt-lg-5 mb-sm-0 mb-md-3 mb-xl-4 mb-lg-4">
                             Meet Our Expert</h2>

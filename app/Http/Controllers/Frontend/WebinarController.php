@@ -102,7 +102,7 @@ class WebinarController extends Controller
     {
 
 
-        $api = new Api('rzp_live_cKTuo7fj9oQFjL', '6SUWepgqpDUQRU0HxXx5OoJH');
+        $api = new Api(config('razorpay.key'), config('razorpay.secret'));
 
         try {
 

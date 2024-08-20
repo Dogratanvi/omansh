@@ -25,7 +25,7 @@
                             complications?</h2>
                         <p class="desc-sec text-white pb-4">(Join our child birth Education class to Prepare for your
                             big day
-                            with confidence)</p>
+                            with confidence)</p>
                         <span class="zoom-webinar text-center text-white text-uppercase px-3 py-2 rounded">Zoom
                             webinar</span>
                     </div>
@@ -67,10 +67,10 @@
                             <h2 class="sub-heading-text text-white pt-0 pt-sm-0 pt-xs-0 pt-md-4 pt-xl-5 pt-lg-5"> Omansh
                                 Health & Fitness</h2>
                             <p class="health-des text-white">Discover essential tips to make your delivery smoother and
-                                less stressful.</p>
+                                less stressful.</p>
                             <button
-                                class="webinar-btn webinar-btn2 shadow-none border-0 rounded text-white py-2 px-3 mb-3 mb-sm-3 mb-xs-3 mb-md-3 mb-lg-0 mb-xl-0 mt-4">SIGNUP
-                                NOW ₹199</button>
+                                class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mb-3 mb-sm-3 mb-xs-3 mb-md-3 mb-lg-0 mb-xl-0 mt-4">Sign up
+                                now at ₹199</button>
                         </div>
                     </div>
                 </div>
@@ -82,22 +82,7 @@
     <section class="why-choose-us-sec py-5">
         <div class="container">
             <div class="why-choose-us-sec">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="row d-flex justify-content-between">
-                            <div
-                                class="col-md-5 text-center timer-box counters-text text-center text-white text-uppercase p-3 rounded">
-                                <div id="minutes" class="display-4">05</div>
-                                <div>Minutes</div>
-                            </div>
-                            <div
-                                class="col-md-5 text-center timer-box counters-text text-center text-white text-uppercase p-3 rounded">
-                                <div id="seconds" class="display-4">00</div>
-                                <div>Seconds</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  pt-0 pt-sm-0  pt-xs-0 pt-md-3 pt-lg-5 pt-xl-5">
                 <h2 class="sub-heading  text-center pt-5">Why choose us</h2>
@@ -108,7 +93,8 @@
                                 <path
                                     d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                     fill="#004B2A" />
-                            </svg> At Omansh, we prioritize your well-being and aim to provide holistic support throughout your pregnancy journey.</li>
+                            </svg> At Omansh, we prioritize your well-being and aim to provide holistic support
+                            throughout your pregnancy journey.</li>
                         <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -120,8 +106,7 @@
                     </ul>
                     <div class="whychoose-btn text-center">
                         <button
-                            class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-4 text-center">SIGNUP
-                            NOW ₹199</button>
+                            class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-4 text-center">Sign up now at ₹199</button>
                     </div>
                 </div>
             </div>
@@ -151,23 +136,15 @@
                             <div class="review-content">
                                 <div class="review-stars">
                                     <span>⭐⭐⭐⭐⭐</span>
-                                </div>
-                                <p>
-                                    Yoga during pregnancy helped me in many ways. I joined Omansh after my 6th month.
-                                    Dr.
-                                    Garima kept me motivated, gave suggestions/guidance at every step of my pregnancy.
-                                    The
-                                    theory class on labour helped us a lot, specially in understanding what exactly
-                                    labour
-                                    is and what we should do at the time of contractions. Exercises during the classes
-                                    helped in improving leg and arm strength. It has also helped me in normal delivery
-                                    of my
-                                    baby. Contractions during the labour time were unbearable and exercises taught by
-                                    Dr.
-                                    Garima helped me relax. I would like to thank Omansh team and specially Dr. Garima
-                                    for
-                                    all the support and help.
-                                <p>
+                                </div><p>
+                                Yoga during pregnancy helped me in many ways. I joined Omansh after my 6th month. Dr.
+                                Garima kept me motivated, gave suggestions/guidance at every step of my pregnancy. The
+                                theory class on labour helped us a lot, specially in understanding what exactly labour
+                                is and what we should do at the time of contractions. Exercises during the classes
+                                helped in improving leg and arm strength. It has also helped me in normal delivery of my
+                                baby. Contractions during the labour time were unbearable and exercises taught by Dr.
+                                Garima helped me relax. I would like to thank Omansh team and specially Dr. Garima for
+                                all the support and help.<p>
                                 </p>
                             </div>
                         </div>
@@ -208,8 +185,7 @@
                     <div class="item">
                         <div class="review-card">
                             <div class="review-header">
-                                <img src="{{ asset('img/webinar/gopika-vyas.png') }}" alt="User Image"
-                                    class="review-avatar">
+                                <img src="{{ asset('img/webinar/gopika-vyas.png') }}" alt="User Image" class="review-avatar">
                                 <div class="review-details">
                                     <h4>Gopika Vyas</h4>
                                     <span class="review-time">4 months ago</span>
@@ -220,11 +196,7 @@
                                     <span>⭐⭐⭐⭐⭐</span>
                                 </div>
                                 <p>
-                                    She has been a great support and guided me throughout my pregnancy. My labour was
-                                    short and I had a very smooth normal delivery. I would strongly recommend Dr. Garima
-                                    and Omansh for prenatal yoga. Just join her and you will get a feeling that it was
-                                    the “Best decision ever”! Good luck Garima, I shall see you soon for post-natal
-                                    training ! Love and Light !❤️✨
+                                She has been a great support and guided me throughout my pregnancy. My labour was short and I had a very smooth normal delivery. I would strongly recommend Dr. Garima and Omansh for prenatal yoga. Just join her and you will get a feeling that it was the “Best decision ever”! Good luck Garima, I shall see you soon for post-natal training ! Love and Light !❤️✨
                                 </p>
                             </div>
                         </div>
@@ -233,37 +205,31 @@
             </div>
         </div>
         <div class="text-center">
-            <button class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-5 text-center">SIGNUP
-                NOW ₹199</button>
+            <button class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-5 text-center">Sign up now at ₹199</button>
         </div>
     </div>
-
+  
     <div class="container">
         <div class="video-webinar-section pb-5">
             <div class="row">
-                <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0"> <a
-                        href="https://www.youtube.com/embed/aPtzvIxzgdU" data-toggle="lightbox" data-type="iframe"
-                        class=" h-100 position-relative">
-                        <img src="{{ asset('img/webinar/istimage.png') }}" class="img-fluid">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-                <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0"> <a
-                        href="https://youtube.com/embed/wus_-JT68Kg" data-toggle="lightbox" data-type="iframe"
-                        class="position-relative">
-                        <img src="{{ asset('img/webinar/secondimage.png') }}" class="img-fluid">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a></div>
-                <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0">
-                    <a href="https://www.youtube.com/watch?v=bb7phQ6CjkA" data-toggle="lightbox" data-type="iframe"
-                        class="position-relative">
-                        <img src="{{ asset('img/webinar/third.png') }}" class="img-fluid">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
+         <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0"> <a href="https://www.youtube.com/embed/aPtzvIxzgdU" data-toggle="lightbox" data-type="iframe" class=" h-100 position-relative">
+                    <img src="{{ asset('img/webinar/istimage.png') }}" class="img-fluid">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+</div>
+         <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0"> <a href="https://youtube.com/embed/wus_-JT68Kg" data-toggle="lightbox"  data-type="iframe" class="position-relative" >
+		<img src="{{ asset('img/webinar/secondimage.png') }}" class="img-fluid">
+        <i class="fa-brands fa-youtube"></i>
+	</a></div>
+         <div class="col-md-4 mt-3 mt-sm-3 mt-xs-3 mt-md-0 mt-xl-0 mt-lg-0">
+         <a href="https://www.youtube.com/watch?v=bb7phQ6CjkA" data-toggle="lightbox"  data-type="iframe" class="position-relative">
+		<img src="{{ asset('img/webinar/third.png') }}" class="img-fluid">
+        <i class="fa-brands fa-youtube"></i>
+	</a>
+         </div>
             </div>
-        </div>
-    </div>
+</div>
+</div>
     <div class="main-header section-bg">
         <div class="container">
             <div class="row">
@@ -285,14 +251,15 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <h5 class="top-heading m-0 py-0 py-lg-4 py-xl-4 py-md-4 py-xs-4 py-sm-4 text-white text-center">
-                            Whether you are a first time mom or experienced, our webinar covers from understanding labor
-                            signs to effective Breathing Techniques, Pain Management, Empowering you with all knowledge
-                            you need for a confident Birth Experience</h5>
+                            Whether you are a first time mom or
+                            experienced. our webinar cover from understanding labor signs to effective Breathing
+                            Techniques, pain management, Empowering you with all knowledge you need for a confident
+                            Birth Experience</h5>
                     </div>
                     <div class="whychoose-btn text-center">
                         <button
-                            class="webinar-btn webinar-btn2 shadow-none border-0 rounded text-white py-2 px-3 mt-4 text-center">SIGNUP
-                            NOW ₹199</button>
+                            class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-4 text-center">Sign up
+                                now at ₹199</button>
                     </div>
 
                 </div>
@@ -322,8 +289,8 @@
                             </div>
                             <div class="whychoose-btn text-center">
                                 <button
-                                    class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 my-4 text-center">SIGNUP
-                                    NOW ₹199</button>
+                                    class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 my-4 text-center">Sign up
+                                now at ₹199</button>
                             </div>
                         </div>
                     </div>
@@ -339,20 +306,20 @@
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> How can I manage my pain without epidural?</li>
+                                    </svg> How can I manage my pain without Epidural?</li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> How to dilate cervix faster?
+                                    </svg> How to dilate Cervix faster?
                                 </li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> What is the best position for delivery?
+                                    </svg> What is the best position for Delivery?
                                 </li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,8 +355,8 @@
                         </div>
                         <div class="whychoose-btn text-center pt-4">
                             <button
-                                class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3  text-center">SIGNUP
-                                NOW ₹199</button>
+                                class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3  text-center">Sign up
+                                now at ₹199</button>
                         </div>
                     </div>
                 </div>
@@ -408,353 +375,346 @@
         </div>
 
     </div>
-    <div class="section-bg">
-        <div class="container text-center">
-            <div class="row justify-content-center align-items-center py-4">
-                <div class="col-12 col-xl-2 col-md-2 col-lg-2 col-sm-12 col-xs-12">
-                    <div class="timer-title-custom text-white">Offer Expires in</div>
-                </div>
-                <div class="col-12 col-xl-7 col-md-7 col-lg-7 col-sm-12 col-xs-12 d-flex time-box">
-                    <div id="days-custom" class="timer-section-custom timer-box-custom">
-                        <div class="text-white">00</div>
-                        <span class="text-white">Days</span>
-                    </div>
-                    <div id="hours-custom" class="timer-section-custom timer-box-custom">
-                        <div class="text-white">00</div>
-                        <span class="text-white">Hours</span>
-                    </div>
-                    <div id="minutes-custom" class="timer-section-custom timer-box-custom">
-                        <div class="text-white">00</div>
-                        <span class="text-white">Minutes</span>
-                    </div>
-                    <div id="seconds-custom" class="timer-section-custom timer-box-custom">
-                        <div class="text-white">00</div>
-                        <span class="text-white">Seconds</span>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-2 col-md-2 col-lg-2 col-sm-12 col-xs-12">
-                    <button
-                        class="webinar-btn webinar-btn2 shadow-none border-0 rounded text-white py-2 px-3 mt-3 mt-sm-0 mt-xs-0 mt-md-3 mt-lg-0 mt-xl-0  text-center">SIGNUP
-                        NOW ₹199</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--<div class="section-bg">-->
+    <!--    <div class="container text-center">-->
+    <!--        <div class="row justify-content-center align-items-center py-4">-->
+    <!--            <div class="col-12 col-xl-2 col-md-2 col-lg-2 col-sm-12 col-xs-12">-->
+    <!--                <div class="timer-title-custom text-white">Offer Expires in</div>-->
+    <!--            </div>-->
+    <!--            <div class="col-12 col-xl-7 col-md-7 col-lg-7 col-sm-12 col-xs-12 d-flex time-box">-->
+    <!--                <div id="days-custom" class="timer-section-custom timer-box-custom">-->
+    <!--                    <div class="text-white">00</div>-->
+    <!--                    <span class="text-white">Days</span>-->
+    <!--                </div>-->
+    <!--                <div id="hours-custom" class="timer-section-custom timer-box-custom">-->
+    <!--                    <div class="text-white">00</div>-->
+    <!--                    <span class="text-white">Hours</span>-->
+    <!--                </div>-->
+    <!--                <div id="minutes-custom" class="timer-section-custom timer-box-custom">-->
+    <!--                    <div class="text-white">00</div>-->
+    <!--                    <span class="text-white">Minutes</span>-->
+    <!--                </div>-->
+    <!--                <div id="seconds-custom" class="timer-section-custom timer-box-custom">-->
+    <!--                    <div class="text-white">00</div>-->
+    <!--                    <span class="text-white">Seconds</span>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-12 col-xl-2 col-md-2 col-lg-2 col-sm-12 col-xs-12">-->
+    <!--                <button-->
+    <!--                    class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-3 mt-sm-0 mt-xs-0 mt-md-3 mt-lg-0 mt-xl-0  text-center">Sign up-->
+    <!--                            now at ₹199</button>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
 
-    <!-- Signup Modal -->
-    <div class="modal booking-form fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+  <!-- Signup Modal -->
+  <div class="modal booking-form fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
 
-            <div class="modal-content webinar-modal inner-appointment-box ">
-                <div class="feedback-heading px-3 d-flex justify-content-center align-items-center">
-                    <img src="/img/aboutus_top_shape 2.png">
-                    <h2 class="text-white px-3 text-center">Registration Form</h2>
-                    <img src="/img/aboutus_top_shape 2.png">
-                </div>
+      <div class="modal-content webinar-modal inner-appointment-box ">
+          <div class="feedback-heading px-3 d-flex justify-content-center align-items-center">
+              <img src="/img/aboutus_top_shape 2.png">
+              <h2 class="text-white px-3 text-center">Registration Form</h2>
+              <img src="/img/aboutus_top_shape 2.png">
+          </div>
 
-                <div class="modal-body p-5">
-                    <form id="signupForm">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="whatsappNumber" class="form-label w-100">Phone Number</label>
-                            <input id="phone" name="whatsapp_number" type="tel" id="whatsappNumber" class="form-control w-100" placeholder="Enter Mobile Number"
+          <div class="modal-body p-5">
+              <form id="signupForm">
+                  @csrf
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="whatsappNumber" class="form-label">Phone Number</label>
+                     <input id="phone" name="whatsapp_number" type="tel" id="whatsappNumber" class="form-control w-100" placeholder="Enter Mobile Number"
                             pattern="[0-9]*" maxlength="10" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="age" class="form-label">Age</label>
-                            <input type="text" class="form-control" id="age" name="age" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="emergencyContactNumber" class="form-label">Emergency Contact Number</label>
-                            <input type="text" class="form-control" id="emergencyContactNumber"
-                                name="emergency_contact_number" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="pregnancyInformation" class="form-label">Pregnancy Information</label>
-                            <textarea rows="3" name="pregnancy_information" id="pregnancyInformation"
-                                class="form-control" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="estimatedDueDate" class="form-label">Estimated Due Date (EDD)</label>
-                            <input type="text" class="form-control datepicker" name="estimated_due_date"
-                                id="estimatedDueDate" autocomplete="off" required />
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Current trimester</label>
-                            <div class="checkbox-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="current_trimester"
-                                        id="trimesterOne" value="First Trimester"
-                                        {{ old('current_trimester') == 'First Trimester' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="trimester1">
-                                        First Trimester (0-13 Weeks)
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="current_trimester"
-                                        id="trimesterSecond" value="Second Trimester"
-                                        {{ old('current_trimester') == 'Second Trimester' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="trimester2">
-                                        Second Trimester (14-27 Weeks)
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="current_trimester"
-                                        id="trimesterThird" value="Third Trimester"
-                                        {{ old('current_trimester') == 'Third Trimester' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="trimester3">
-                                        Third Trimester (27+ Weeks)
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Is This your first pregnancy</label>
-                            <div class="checkbox-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="first_pregnancy" id="yes"
-                                        value="Yes" {{ old('current_trimester') == 'Yes' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="yes">
-                                        Yes
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="first_pregnancy" id="no"
-                                        value="No" {{ old('current_trimester') == 'No' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="no">
-                                        No
-                                    </label>
-                                </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="age" class="form-label">Age</label>
+                      <input type="text" class="form-control" id="age" name="age" required>
+                  </div>
+                  
+                  <div class="mb-3">
+                      <label for="estimatedDueDate" class="form-label">Estimated Due Date (EDD)</label>
+                      <input type="text" class="form-control datepicker" name="estimated_due_date"
+                          id="estimatedDueDate" autocomplete="off" required />
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Current trimester</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="current_trimester"
+                                  id="trimesterOne" value="First Trimester"
+                                  {{ old('current_trimester') == 'First Trimester' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="trimester1">
+                                  First Trimester (0-13 Weeks)
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="current_trimester"
+                                  id="trimesterSecond" value="Second Trimester"
+                                  {{ old('current_trimester') == 'Second Trimester' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="trimester2">
+                                  Second Trimester (14-27 Weeks)
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="current_trimester"
+                                  id="trimesterThird" value="Third Trimester"
+                                  {{ old('current_trimester') == 'Third Trimester' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="trimester3">
+                                  Third Trimester (27+ Weeks)
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Is this your first pregnancy</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="first_pregnancy"
+                                  id="yes" value="Yes"
+                                  {{ old('current_trimester') == 'Yes' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="yes">
+                                  Yes
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="first_pregnancy"
+                                  id="no" value="No"
+                                  {{ old('current_trimester') == 'No' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="no">
+                                  No
+                              </label>
+                          </div>
 
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="previousPregnancies" class="form-label">If no, how many previous pregnancies
-                                have you had?</label>
-                            <textarea rows="3" name="previous_pregnancy" id="previous_pregnancy"
-                                class="form-control"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="pregnancyComplications" class="form-label">Have you experienced any pregnancy
-                                complications so far?</label>
-                            <textarea rows="3" name="experience_pregnancy_complications" id="pregnancyComplications"
-                                class="form-control" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="typeOfDelivery" class="form-label">Are you planning a specific type of
-                                delivery ( e.g., natural birth, water birth, C-section)?</label>
-                            <textarea rows="3" name="type_of_delivery" id="typeOfDelivery" class="form-control"
-                                required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="specialMedicalConditions" class="form-label">Are you receiving any special
-                                care or have any medical conditions we should be aware of?</label>
-                            <textarea rows="3" name="medical_conditions" id="specialMedicalConditions"
-                                class="form-control" required></textarea>
-                        </div>
-                        <h5 class="pb-3 pb-3">Your Birth Preferences</h5>
-                        <div class="mb-3">
-                            <label class="form-label">What are your primary goal for this class?</label>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="previousPregnancies" class="form-label">If no, how many previous pregnancies
+                          have you had?</label>
+                      <textarea rows="3" name="previous_pregnancy" id="previous_pregnancy" class="form-control" ></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="pregnancyComplications" class="form-label">Have you experienced any pregnancy
+                          complications so far?</label>
+                      <textarea rows="3" name="experience_pregnancy_complications" id="pregnancyComplications" class="form-control" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="typeOfDelivery" class="form-label">Are you planning a specific type of
+                          delivery ( e.g., natural birth, water birth, C-section)?</label>
+                      <textarea rows="3" name="type_of_delivery" id="typeOfDelivery" class="form-control" required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label for="specialMedicalConditions" class="form-label">Are you receiving any special
+                          care or have any medical conditions we should be aware of?</label>
+                      <textarea rows="3" name="medical_conditions" id="specialMedicalConditions" class="form-control"
+                          required></textarea>
+                  </div>
+                  <h5><strong>Your Birth Preferences</strong></h5>
+                  <div class="mb-3">
+                        <label class="form-label">What are your primary goals for this class?</label>
                             <div class="checkbox-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="primary_goal"
-                                        id="learningPainManagementTechniques"
-                                        value="Learning pain management techniques"
-                                        {{ old('current_trimester') == 'Learning pain management techniques' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="learningPainManagementTechniques">
-                                        Learning pain management techniques
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="primary_goal"
-                                        id="understandingLaborStages" value="Understanding labor stages"
-                                        {{ old('current_trimester') == 'Understanding labor stages' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="understandingLaborStages">
-                                        Understanding labor stages
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="primary_goal"
-                                        id="preparingForNaturalBirth" value="Preparing for natural birth"
-                                        {{ old('current_trimester') == 'Preparing for natural birth' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="preparingForNaturalBirth">
-                                        Preparing for natural birth
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="primary_goal"
-                                        id="partnerInvolvementAndSupport" value="partnerInvolvementAndSupport"
-                                        {{ old('current_trimester') == 'Partner involvement and support' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="partnerInvolvementAndSupport">
-                                        Partner involvement and support
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="primary_goal"
-                                        id="postpartrumRecovery" value="Postpartrum recovery"
-                                        {{ old('current_trimester') == 'Postpartrum recovery' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="postpartrumRecovery">
-                                        Postpartrum recovery
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="primary_goal" id="other"
-                                        value="Other" {{ old('current_trimester') == 'Other' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="other">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="questionsAboutChildBirth" class="form-label">Do you have any specific concerns
-                                or questions about childbirth ?</label>
-                            <textarea rows="3" name="concerns_about_childbirth" id="questionsAboutChildBirth"
-                                class="form-control" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">How did you hear about this class?</label>
-                            <div class="checkbox-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="hear_about_us" id="socialMedia"
-                                        value="Social media ( Instagram, Facebook, etc.)"
-                                        {{ old('current_trimester') == 'Social media ( Instagram, Facebook, etc.)' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="socialMedia">
-                                        Social media ( Instagram, Facebook, etc.)
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="hear_about_us" id="Website"
-                                        value="Website" {{ old('current_trimester') == 'Website' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="Website">
-                                        Website
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="hear_about_us" id="referral"
-                                        value="Friend/Referral"
-                                        {{ old('current_trimester') == 'Friend/Referral' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="preparingForNaturalBirth">
-                                        Friend/Referral
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="hear_about_us" id="doctor"
-                                        value="Doctor" {{ old('current_trimester') == 'Doctor' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="doctor">
-                                        Doctor/Midwife
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="hear_about_us" id="other"
-                                        value="Other" {{ old('current_trimester') == 'Other' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="other">
-                                        Other
-                                    </label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="primary_goal[]"
+                                            id="learningPainManagementTechniques"
+                                            value="Learning pain management techniques"
+                                            {{ in_array('Learning pain management techniques', old('primary_goal', [])) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="learningPainManagementTechniques">
+                                            Learning pain management techniques
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="primary_goal[]"
+                                            id="understandingLaborStages" value="Understanding labor stages"
+                                            {{ in_array('Understanding labor stages', old('primary_goal', [])) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="understandingLaborStages">
+                                            Understanding labor stages
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="primary_goal[]"
+                                            id="preparingForNaturalBirth" value="Preparing for natural birth"
+                                            {{ in_array('Preparing for natural birth', old('primary_goal', [])) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="preparingForNaturalBirth">
+                                            Preparing for natural birth
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="primary_goal[]"
+                                            id="partnerInvolvementAndSupport" value="Partner involvement and support"
+                                            {{ in_array('Partner involvement and support', old('primary_goal', [])) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="partnerInvolvementAndSupport">
+                                            Partner involvement and support
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="primary_goal[]"
+                                            id="postpartumRecovery" value="Postpartum recovery"
+                                            {{ in_array('Postpartum recovery', old('primary_goal', [])) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="postpartumRecovery">
+                                            Postpartum recovery
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="primary_goal[]"
+                                            id="other" value="Other"
+                                            {{ in_array('Other', old('primary_goal', [])) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="other">
+                                            Other
+                                        </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Would you like to receive updates and tips about pregnancy and
-                                childbirth?</label>
-                            <div class="checkbox-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="like_receive_updates" id="yes"
-                                        value="Yes" {{ old('current_trimester') == 'Yes' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="updates_regarding_childbirth">
-                                        Yes
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="like_receive_updates" id="no"
-                                        value="No" {{ old('current_trimester') == 'No' ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="updates_regarding_childbirth">
-                                        No
-                                    </label>
-                                </div>
+                  <div class="mb-3">
+                      <label for="questionsAboutChildBirth" class="form-label">Do you have any specific concerns
+                          or questions about childbirth ?</label>
+                      <textarea rows="3" name="concerns_about_childbirth" id="questionsAboutChildBirth" class="form-control"
+                          required></textarea>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">How did you hear about this class?</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us"
+                                  id="socialMedia" value="Social media ( Instagram, Facebook, etc.)"
+                                  {{ old('current_trimester') == 'Social media ( Instagram, Facebook, etc.)' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="socialMedia">
+                                  Social media ( Instagram, Facebook, etc.)
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="Website"
+                                  value="Website" {{ old('current_trimester') == 'Website' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="Website">
+                                  Website
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="referral"
+                                  value="Friend/Referral"
+                                  {{ old('current_trimester') == 'Friend/Referral' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="preparingForNaturalBirth">
+                                  Friend/Referral
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="doctor"
+                                  value="Doctor" {{ old('current_trimester') == 'Doctor' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="doctor">
+                                  Doctor/Midwife
+                              </label>
+                          </div>
 
-                            </div>
-                        </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="hear_about_us" id="other"
+                                  value="Other" {{ old('current_trimester') == 'Other' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="other">
+                                  Other
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Would you like to receive updates and tips about pregnancy and
+                          childbirth?</label>
+                      <div class="checkbox-group">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="like_receive_updates"
+                                  id="yes" value="Yes"
+                                  {{ old('current_trimester') == 'Yes' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="updates_regarding_childbirth">
+                                  Yes
+                              </label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="like_receive_updates"
+                                  id="no" value="No"
+                                  {{ old('current_trimester') == 'No' ? 'checked' : '' }}>
+                              <label class="form-check-label" for="updates_regarding_childbirth">
+                                  No
+                              </label>
+                          </div>
 
-                        <div class="text-center">
+                      </div>
+                  </div>
+
+                    <div class="text-center">
                             <button type="submit" class="mt-3 border-0 get_started_btn appointment-btn">Submit And
-                                Pay</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                                Pay</button></div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
 
-    <!-- Success Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="successModalLabel">Payment Successful</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Your payment was successful. Thank you for registering for the webinar!</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Payment Successful</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Your payment was successful. Thank you for registering for the webinar!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
     </div>
+</div>
+</div>
 
-    <!-- Unsuccessful Modal -->
-    <div class="modal fade" id="unsuccessfulModal" tabindex="-1" aria-labelledby="unsuccessfulModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="unsuccessfulModalLabel">Payment Unsuccessful</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>We're sorry, but your payment was unsuccessful. Please try again or contact support if the issue
-                        persists.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="retryPayment()">Try Again</button>
-                </div>
-            </div>
+<!-- Unsuccessful Modal -->
+<div class="modal fade" id="unsuccessfulModal" tabindex="-1" aria-labelledby="unsuccessfulModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="unsuccessfulModalLabel">Payment Unsuccessful</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>We're sorry, but your payment was unsuccessful. Please try again or contact support if the issue
+                persists.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="retryPayment()">Try Again</button>
         </div>
     </div>
+</div>
+</div>
 
 
     <!-- video -->
-    <!-- modal for testimonal -->
-    <div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
-        aria-labelledby="deleteLineItemModal" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content mt-4 bg-transparent border-0">
-                <div class="modal-header bg-transparent border-0">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
-                        aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body edit-content pt-2">
-                    <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
-                </div>
+     <!-- modal for testimonal -->
+<div class="modal videoModal fade" id="deleteLineItemModal" tabindex="-1" role="dialog"
+    aria-labelledby="deleteLineItemModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content mt-4 bg-transparent border-0">
+            <div class="modal-header bg-transparent border-0">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close me-0 pe-0 border-0 bg-transparent" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body edit-content pt-2">
+                <iframe id="lineitem" class="embed-responsive-item" src="" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+</div>
 </main>
 <script>
 function countdownTimerCustom() {
@@ -846,28 +806,36 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get form data
         var formData = new FormData(this);
 
-        // Get form data
-        var formData = new FormData(this);
-        if (!validateForm()) {
-            alert(
-                "Please ensure all required fields are filled and at least one option is selected where applicable."
-            );
-            return;
-        }
-
-        function validateForm() {
-            // Check radio button groups
-            var radioGroups = ['current_trimester', 'first_pregnancy', 'primary_goal',
-                'hear_about_us', 'like_receive_updates'
-            ];
-            for (var group of radioGroups) {
-                if (!document.querySelector(`input[name="${group}"]:checked`)) {
-                    return false;
+          // Get form data
+          var formData = new FormData(this);
+                if (!validateForm()) {
+                    alert(
+                        "Please ensure all required fields are filled and at least one option is selected where applicable."
+                    );
+                    return;
                 }
-            }
-            return true;
+                
+                if (!validatePrimaryGoal()) {
+                    alert("Please select at least one primary goal.");
+                }
 
-        }
+                function validateForm() {
+                    // Check radio button groups
+                    var radioGroups = ['current_trimester', 'first_pregnancy','hear_about_us','like_receive_updates'
+                    ];
+                    for (var group of radioGroups) {
+                        if (!document.querySelector(`input[name="${group}"]:checked`)) {
+                            return false;
+                        }
+                    }
+                    return true;
+
+                }
+                
+                 function validatePrimaryGoal() {
+                    var selectedGoals = $('input[name="primary_goal[]"]:checked').length;
+                    return selectedGoals > 0;
+                }
 
 
         // Send POST request to the route
@@ -881,7 +849,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => response.json())
             .then(data => {
-                console.log('Success:', data);
+               
 
                 $('#signupModal').modal().hide();
                 setTimeout(() => {
@@ -921,13 +889,15 @@ document.addEventListener('DOMContentLoaded', function() {
                                 .then(response => response.json())
                                 .then(data => {
                                     if (data.success) {
-                                        alert(
-                                            'Payment successful'
-                                        );
+                                        var successModal = new bootstrap.Modal(
+                                                    document.getElementById(
+                                                        'successModal'));
+                                                successModal.show();
                                     } else {
-                                        alert(
-                                            'Payment unsuccessful'
-                                        );
+                                        var unsuccessfulModal = new bootstrap.Modal(
+                                                    document.getElementById(
+                                                        'unsuccessfulModal'));
+                                                unsuccessfulModal.show();
                                     }
                                 });
                         },
@@ -954,16 +924,33 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 });
+ // Function to retry payment
+        function retryPayment() {
+            // Close the unsuccessful modal
+            var unsuccessfulModal = bootstrap.Modal.getInstance(document.getElementById('unsuccessfulModal'));
+            unsuccessfulModal.hide();
+
+            // Reopen the Razorpay payment window
+            rzp1.open();
+        }
+
+        // Close button for signup modal
+        document.getElementById('clse').addEventListener('click', function() {
+            $('#signupModal').modal('hide');
+            setTimeout(() => {
+                $('.modal-backdrop').remove();
+            }, 200);
+        });
 </script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script>
-$(function() {
-    $("#estimatedDueDate").datepicker({
-        dateFormat: 'yyyy-mm-dd' // Adjust format as needed
-    });
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+       <script>
+          $(function() {
+    $("#estimatedDueDate").datepicker();
 });
-</script>
+        </script>
+
 @endsection

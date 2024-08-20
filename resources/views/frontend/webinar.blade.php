@@ -23,9 +23,7 @@
                     <div class="col-12 text-center py-5">
                         <h2 class="sub-heading-text text-uppercase text-white"> Worried about Labor pain and
                             complications?</h2>
-                        <p class="desc-sec text-white pb-4">(Join our child birth Education class to Prepare for your
-                            big day
-                            with confidence)</p>
+                        <p class="desc-sec text-white pb-4">(Join our child birth education class to prepare for your big day with confidence)</p>
                         <span class="zoom-webinar text-center text-white text-uppercase px-3 py-2 rounded">Zoom
                             webinar</span>
                     </div>
@@ -270,8 +268,8 @@
     <section class="why-choose-us-sec py-5">
         <div class="container">
             <div class="why-choose-us-sec">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                         <h2
                             class="sub-heading  text-center mb-0 mb-xs-0 pt-0 pt-sm-0 pt-xs-0 pt-md-2 pt-xl-5 pt-lg-5 mb-sm-0 mb-md-3 mb-xl-4 mb-lg-4">
                             Meet Our Expert</h2>
@@ -306,27 +304,27 @@
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> How can I manage my pain without Epidural?</li>
+                                    </svg> How can I manage my pain without epidural?</li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> How to dilate Cervix faster?
+                                    </svg> How to dilate cervix faster?
                                 </li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> What is the best position for Delivery?
+                                    </svg>What is the best position for delivery?
                                 </li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M37.75 19C37.75 8.645 29.355 0.25 19 0.249999C8.645 0.249999 0.25 8.645 0.249999 19C0.249999 29.355 8.645 37.75 19 37.75C29.355 37.75 37.75 29.355 37.75 19ZM20.0594 22.2144L8.375 22.2144L8.375 15.7856L20.0594 15.7856L20.0594 9L29.625 19L20.0594 29L20.0594 22.2144Z"
                                             fill="#004B2A" />
-                                    </svg> What is the best way of pushing?
+                                    </svg>What is the best way of pushing?
                                 </li>
                                 <li class="list-group-item border-0"><svg width="25" height="38" viewBox="0 0 38 38"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">

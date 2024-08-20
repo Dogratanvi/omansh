@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up">Events</h1>
+                            <h1 data-aos="fade-up">Upcoming Events</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
                             <p class="text-center" data-aos="fade-right">Transform Your Body and Mind: Attend Our Health and Fitness Events.</p>   </div>
@@ -44,9 +44,13 @@
         <!--<p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud-->
         <!--    exercitation</p>-->
         <div class="row pt-3">
+            @if(count($upcomingEvents) != 0)
+           
              @foreach ($upcomingEvents as $event)
+
+             
             <div class="col-md-4">
-                <div class="card upcoming-card border-0 shadow">
+                <div class="card upcoming-card border-0 shadow h-100">
                     <img src="{{ secure_asset($event->featured_image) }}">
                     <div class="date">
                         <h4>14<br><span class="fw-normal">July</span></h4>
@@ -62,7 +66,11 @@
                     </div>
                 </div>
             </div>
+          
             @endforeach
+            @else
+            <h3 class="text-center inner-text">No Events</h3>
+            @endif
         </div>
     </div>
  

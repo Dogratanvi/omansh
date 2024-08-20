@@ -44,9 +44,10 @@
         <h2 class="text-center">Upcoming Events</h2>
         <p class="text-center">Align body, mind, and spirit, join us for serenity in motion!</p>
        <div class="row pt-3">
+       @if(count($upcomingEvents) != 0)
              @foreach ($upcomingEvents as $event)
             <div class="col-md-4">
-                <div class="card upcoming-card border-0 shadow">
+                <div class="card upcoming-card border-0 shadow h-100">
                     <img src="{{ secure_asset($event->featured_image) }}">
                     <div class="date">
                         <h4>14<br><span class="fw-normal">July</span></h4>
@@ -63,6 +64,10 @@
                 </div>
             </div>
             @endforeach
+            @else
+            <h3 class="text-center inner-text">No Events</h3>
+        
+            @endif
         </div>
     </div>
     <div class="btn_wrapper d-flex justify-content-center mt-5">
@@ -77,9 +82,10 @@
         <h2 class="text-center">Past Events</h2>
         <p class="text-center">Relive the serenity, dive into past yoga events</p>
        <div class="row pt-3">
+       @if(count($pastEvents) != 0)
              @foreach ($pastEvents as $event)
             <div class="col-md-4">
-                <div class="card upcoming-card border-0 shadow">
+                <div class="card upcoming-card border-0 shadow h-100">
                     <img src="{{ secure_asset($event->featured_image) }}">
                     <div class="date">
                         <h4>14<br><span class="fw-normal">July</span></h4>
@@ -96,6 +102,10 @@
                 </div>
             </div>
             @endforeach
+            @else
+            <h3 class="text-center inner-text">No Events</h3>
+        
+            @endif
         </div>
     </div>
     <div class="btn_wrapper d-flex justify-content-center mt-5">

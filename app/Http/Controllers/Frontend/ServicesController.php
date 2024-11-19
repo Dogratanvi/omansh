@@ -47,5 +47,63 @@ class ServicesController extends Controller
      return view('frontend.services.yoga', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
     }
+    public function pelvicFloor()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+     return view('frontend.services.womenhealth.pelvic-floor-dysfunctions', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
     
+    }
+    public function pregnancyPostpartum()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+     return view('frontend.services.womenhealth.pregnancy-and-postpartum', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+    }
+    public function programsPilates()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.womenhealth.exercise-programs-and-pilates', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+    }
+
+    public function bowelProlapse()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.womenhealth.bowel-issues-and-prolapse', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+      
+    }
+    public function bladderDysfunction()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.womenhealth.bladder-dysfunction', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+      
+    }
 }

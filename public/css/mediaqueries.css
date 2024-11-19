@@ -1647,6 +1647,9 @@
   .sub-banner-section .banner-section {
     padding: 250px 0 70px;
   }
+  .sub-banner-section.women-banner.women-service-text .banner-section {
+    padding: 80px 0 70px;
+  }
   .sub-banner-section {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1999,7 +2002,7 @@
 }
 h1{
  
-  line-height: 40px !important;
+  line-height: 56px !important;
   font-weight: 700 !important;
   color: var(--e-global-color-white) !important;
 }
@@ -2019,6 +2022,9 @@ h1{
 }
 .home-insta-section {
   padding: 0px 0 384px;
+}
+.sub-banner-section.women-banner.women-service-text {
+  margin-top: 121px;
 }
 }
 
@@ -2564,6 +2570,12 @@ h1{
   .sub-banner-section .banner-section {
     padding: 50px 0 60px;
   }
+  .sub-banner-section.women-banner.women-service-text .banner-section {
+    padding: 50px 0 60px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
   .sub-banner-section .banner-section h1 {
     margin-bottom: 5px;
   }
@@ -2598,7 +2610,9 @@ h1{
   .sub-banner-section .banner-section .banner_right_bottom_shape img {
     width: 48px;
   }
-
+  .sub-banner-section.women-banner.women-service-text {
+    margin-top: 121px;
+}
   .aboutpage_aboutus_section {
     padding: 65px 0 45px;
   }
@@ -2880,6 +2894,9 @@ h1{
     position: relative !important;
     top: 0px;
     left: 0px;
+  }
+  .banner-section-content.service-banner-text {
+    padding-top: 0% !important;
   }
   h2 {
     font-size: 32px;
@@ -3360,7 +3377,12 @@ figure.video_img {
   .sub-banner-section .banner-section .banner_right_top_shape {
     display: none;
   }
-
+  .sub-banner-section.women-banner.women-service-text .banner-section {
+    padding: 50px 0 60px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
   .aboutpage_aboutus_section .aboutus_top_shape {
     display: none;
   }
@@ -3553,6 +3575,15 @@ figure.video_img {
   }
   .banner-section-content {
     padding-top: 53%;
+  }
+  .sub-banner-section.women-banner.women-service-text .banner-section-content{
+    padding-top: 2%;
+  }
+  .banner-section-content.service-banner-text {
+    padding-top: 0% !important;
+  }
+  .sub-banner-section.women-banner.women-service-text{
+    margin-top: 121px;
   }
   .women-health h2 {
     text-align: left !important;

@@ -26,16 +26,16 @@
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_left_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_top_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_bottom_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid">
                 </figure>
             </div>
         </section>
@@ -142,7 +142,7 @@
                         <div class="box box_padding d-flex align-items-center">
                             <div class="box_image_content">
                                 <figure class="mb-0">
-                                    <img src="{{ asset('images/contact_location.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('images/contact_location.png') }}" alt="location" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="box_wrapper">
@@ -158,7 +158,7 @@
                         <div class="box d-flex align-items-center">
                             <div class="box_image_content">
                                 <figure class="mb-0">
-                                    <img src="{{ asset('images/contact_phone.png ') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('images/contact_phone.png ') }}" alt="contact-phone" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="box_wrapper">
@@ -173,7 +173,7 @@
                         <div class="box mb-0 d-flex align-items-center">
                             <div class="box_image_content">
                                 <figure class="mb-0">
-                                    <img src="{{ asset('images/contact_mail.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('images/contact_mail.png') }}" alt="email" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="box_wrapper">

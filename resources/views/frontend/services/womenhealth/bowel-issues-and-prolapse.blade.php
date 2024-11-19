@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section women-banner women-service-text">
+    <div class="sub-banner-section female-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -32,16 +32,20 @@
                         </div>
                     </div>
                     <figure class="banner_left_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="banner_left_top_shape"
+                            class="img-fluid">
                     </figure>
                     <figure class="banner_left_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="banner_left_bottom_shape"
+                            class="img-fluid">
                     </figure>
                     <figure class="banner_right_top_shape right_shape mb-0">
-                        <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="banner_right_top_shape"
+                            class="img-fluid">
                     </figure>
                     <figure class="banner_right_bottom_shape right_shape mb-0">
-                        <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="banner_right_bottom_shape"
+                            class="img-fluid">
                     </figure>
                 </div>
             </section>
@@ -114,16 +118,17 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/Bowel-Issues-and-Prolapse-1.webp') }}"
+                                alt="Bowel-Issues-and-Prolapse-1" class="img-fluid">
                         </figure>
 
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                     </figure>
                     <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape"
+                            class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
@@ -206,16 +211,17 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/Bowel-Issues-and-Prolapse-2.webp') }}"
+                                alt="Bowel-Issues-and-Prolapse-2" class="img-fluid">
                         </figure>
 
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                     </figure>
                     <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape"
+                            class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -228,7 +234,6 @@
         <div class="container">
             <div class="row">
                 <div class="service_page_aboutus_content">
-
                     <h2 class="text-center">FAQ</h2>
                     <div class="accordion pt-4" id="accordionExample">
                         <div class="accordion-item">
@@ -264,9 +269,6 @@
                                 <div class="accordion-body">
                                     <p> Staying hydrated and eating high-fiber foods can help. Pelvic exercises may also
                                         improve regularity.
-
-
-
                                     </p>
 
                                 </div>
@@ -326,13 +328,13 @@
 
                                         <li> Vaginal pain</li>
 
-                                            <li> Painful interaction</li>
+                                        <li> Painful interaction</li>
 
-                                                <li> Pelvic pulling feeling</li>
+                                        <li> Pelvic pulling feeling</li>
 
-                                                    <li> Fullness, pressure, or pain in the pelvis</li>
+                                        <li> Fullness, pressure, or pain in the pelvis</li>
 
-                                                        <li>A soft vaginal bulging</li>
+                                        <li>A soft vaginal bulging</li>
 
                                     </p>
 

@@ -23,16 +23,16 @@
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="banner_left_top_shape" class="img-fluid">
                 </figure>
                 <figure class="banner_left_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="banner_left_bottom_shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_top_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="banner_right_top_shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_bottom_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="banner_right_bottom_shape" class="img-fluid">
                 </figure>
             </div>
     </div>
@@ -41,7 +41,7 @@
 <!-- upcoming events -->
 <section class=" single-event py-5">
     <div class="container">
-        <img src="{{asset($event->featured_image) }}" alt="" class="h-75 pt-5 img-fluid">
+        <img src="{{asset($event->featured_image) }}" alt="featured-event-image" class="h-75 pt-5 img-fluid">
         <h2 class="pt-3">{{ $event->name }}</h2>
         <p class="pt-1">{!! $event->content !!}</p>
         <div class="row pt-3">

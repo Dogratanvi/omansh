@@ -23,16 +23,16 @@
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_left_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_top_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_bottom_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid">
                 </figure>
             </div>
         </section>
@@ -60,7 +60,7 @@
                 <div class="services_box_content">
                     <div class="services_box_upper_portion">
 
-                        <figure class="mb-0"><img src="{{asset($service->featured_image)}}" alt=""
+                        <figure class="mb-0"><img src="{{asset($service->featured_image)}}" alt="service-featured"
                                 class="img-fluid w-100"></figure>
                     </div>
                     <div class="services_box_lower_portion pt-2">
@@ -93,7 +93,7 @@
 
         </div>
         <figure class="services_left_shape left_shape mb-0">
-            <img src="{{ asset('images/services_left_shape.png') }}" alt="" class="img-fluid w-100">
+            <img src="{{ asset('images/services_left_shape.png') }}" alt="services_left_shape" class="img-fluid w-100">
         </figure>
     </div>
 </section>
@@ -171,14 +171,14 @@
                         href="https://previews.customer.envatousercontent.com/6720474d-ddc3-4b86-acf1-8d093cb37b6d/watermarked_preview/watermarked_preview.mp4">
                         <figure class="video_img mb-0">
                             <img class="thumb img-fluid" style="cursor: pointer"
-                                src="{{ asset('img/play-icon.png') }}" alt="">
+                                src="{{ asset('img/play-icon.png') }}" alt="play-icon">
                         </figure>
                     </a>
                 </div>
             </div>
         </div>
         <figure class="get_in_touch_shape left_shape mb-0">
-            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/get_in_touch_shape.png') }}" alt="get_in_touch_shape" class="img-fluid">
         </figure>
     </div>
 </section>
@@ -215,13 +215,13 @@
                         <p class="specialties_paragraph">Blend of physiotherapy and medical therapeutic yoga to enhance your healing experience.</p>
                     </div>
                     <figure class="specialties_left_line mb-0">
-                        <img src="{{ asset('images/specialties_left_line.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/specialties_left_line.png') }}" alt="specialties-left-line" class="img-fluid">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
                 <figure class="specialties_image mb-0">
-                    <img src="{{ asset('images/specialties_image.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/specialties_image.png') }}" alt="specialties" class="img-fluid">
                 </figure>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
@@ -246,13 +246,13 @@
                             valued.</p>
                     </div>
                     <figure class="specialties_right_line mb-0">
-                        <img src="{{ asset('images/specialties_right_line.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/specialties_right_line.png') }}" alt="right_shape" class="img-fluid">
                     </figure>
                 </div>
             </div>
         </div>
         <figure class="our_specialties_right_shape right_shape mb-0">
-            <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="right_shape" class="img-fluid">
         </figure>
     </div>
 </section>
@@ -272,7 +272,7 @@
                                     exercita ionem ullam corporis suscitnis officiis debitis aut rerum necessitatibus
                                     saepe
                                     evenietut aer voluptates”</p>
-                                <figure><img src="{{ asset('images/testimonial_image.png') }}" alt="" class="img-fluid">
+                                <figure><img src="{{ asset('images/testimonial_image.png') }}" alt="testimonial" class="img-fluid">
                                 </figure>
                                 <p class="testimonial_person_name">Himala Joerge</p>
                                 <span>Happy client</span>
@@ -287,7 +287,7 @@
                                     exercita ionem ullam corporis suscitnis officiis debitis aut rerum necessitatibus
                                     saepe
                                     evenietut aer voluptates”</p>
-                                <figure><img src="{{ asset('images/testimonial_image.png') }}" alt="" class="img-fluid">
+                                <figure><img src="{{ asset('images/testimonial_image.png') }}" alt="testimonial" class="img-fluid">
                                 </figure>
                                 <p class="testimonial_person_name">Himala Joerge</p>
                                 <span>Happy client</span>
@@ -306,10 +306,10 @@
             </div>
         </div>
         <figure class="testimonial_left_shape left_shape mb-0">
-            <img src="{{ asset('images/testimonial_left_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/testimonial_left_shape.png') }}" alt="left-shape" class="img-fluid">
         </figure>
         <figure class="testimonial_right_shape right_shape mb-0">
-            <img src="{{ asset('images/testimonial_right_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/testimonial_right_shape.png') }}" alt="right-shape" class="img-fluid">
         </figure>
     </div>
 </div>
@@ -328,7 +328,7 @@
         <div class="row" data-aos="fade-up">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="blog_posts_image position-relative">
-                    <figure class="mb-0"><img src="{{ asset('images/blog_posts_1.png') }}" alt="" class="img-fluid">
+                    <figure class="mb-0"><img src="{{ asset('images/blog_posts_1.png') }}" alt="yoga-health" class="img-fluid">
                     </figure>
                     <div class="blog_posts_image_content">
                         <span>YOGA</span>
@@ -342,7 +342,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="blog_posts_image position-relative">
-                    <figure class="mb-0"><img src="{{ asset('images/blog_posts_2.png') }}" alt="" class="img-fluid">
+                    <figure class="mb-0"><img src="{{ asset('images/blog_posts_2.png') }}" alt="blog-post" class="img-fluid">
                     </figure>
                     <div class="blog_posts_image_content">
                         <span>FITNESS</span>
@@ -359,10 +359,10 @@
             <a href="./single-post.html" class="text-decoration-none view_blog">View All Blogs</a>
         </div>
         <figure class="blog_posts_left_shape left_shape mb-0">
-            <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="left-shape" class="img-fluid">
         </figure>
         <figure class="blog_posts_right_shape right_shape mb-0">
-            <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="right-shape" class="img-fluid">
         </figure>
     </div>
 </section>

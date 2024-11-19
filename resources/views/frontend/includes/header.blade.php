@@ -3,7 +3,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="{{ route('frontend.index') }}">
-                    <figure class="mb-0 img-fluid logo"><img src="{{ asset('img/logo.png') }}" alt=""></figure>
+                    <figure class="mb-0 img-fluid logo"><img src="{{ asset('img/logo.png') }}" alt="logo"></figure>
                 </a>
 
                 <div class="collapse d-flex justify-content-end navbar-collapse d-none d-lg-block d-xl-block d-md-none d-sm-none d-xs-none"

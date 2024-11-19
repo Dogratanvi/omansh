@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section women-banner women-service-text">
+    <div class="sub-banner-section postpartum-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -29,16 +29,16 @@
                         </div>
                     </div>
                     <figure class="banner_left_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="banner_left_top_shape" class="img-fluid">
                     </figure>
                     <figure class="banner_left_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="banner_left_bottom_shape" class="img-fluid">
                     </figure>
                     <figure class="banner_right_top_shape right_shape mb-0">
-                        <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="banner_right_top_shape" class="img-fluid">
                     </figure>
                     <figure class="banner_right_bottom_shape right_shape mb-0">
-                        <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="banner_right_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
             </section>
@@ -57,10 +57,10 @@
 
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                     </figure>
                     <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
@@ -146,10 +146,10 @@
             </div>
 
             <figure class="blog_posts_left_shape left_shape mb-0">
-                <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
+                <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="blog_posts_left_shape" class="img-fluid">
             </figure>
             <figure class="blog_posts_right_shape right_shape mb-0">
-                <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
+                <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="blog_posts_right_shape" class="img-fluid">
             </figure>
         </div>
     </section>
@@ -229,10 +229,10 @@
             </div>
 
             <figure class="blog_posts_left_shape left_shape mb-0">
-                <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
+                <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="blog_posts_left_shape" class="img-fluid">
             </figure>
             <figure class="blog_posts_right_shape right_shape mb-0">
-                <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
+                <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="blog_posts_right_shape" class="img-fluid">
             </figure>
         </div>
     </section>
@@ -249,10 +249,10 @@
 
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                     </figure>
                     <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
@@ -300,10 +300,10 @@
 
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                     </figure>
                     <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
             </div>

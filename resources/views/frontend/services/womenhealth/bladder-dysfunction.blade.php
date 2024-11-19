@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section women-banner women-service-text">
+    <div class="sub-banner-section bladder-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -32,16 +32,16 @@
                         </div>
                     </div>
                     <figure class="banner_left_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="banner_left_top_shape" class="img-fluid">
                     </figure>
                     <figure class="banner_left_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="banner_left_bottom_shape" class="img-fluid">
                     </figure>
                     <figure class="banner_right_top_shape right_shape mb-0">
-                        <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="banner_right_top_shape" class="img-fluid">
                     </figure>
                     <figure class="banner_right_bottom_shape right_shape mb-0">
-                        <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="banner_right_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
             </section>
@@ -94,21 +94,21 @@
 
 
     <!-- Our Approach to Pelvic floor Pain Care -->
-    <section class="aboutpage_aboutus_section   pt-3">
+    <section class="aboutpage_aboutus_section   pt-0 pb-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/bladderdysfunction.webp') }}"
+                                alt="bladderdysfunction" class="img-fluid">
                         </figure>
 
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                     </figure>
                     <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
@@ -139,7 +139,7 @@
 
         </div>
     </section>
-    <section class="aboutpage_aboutus_section   pt-3">
+    <section class="pt-5 pb-0">
         <div class="container">
             <div class="row">
 
@@ -163,17 +163,12 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/bladderdysfunction_2.webp') }}"
+                                alt="bladderdysfunction_2" class="img-fluid">
                         </figure>
 
                     </div>
-                    <figure class="aboutus_top_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
-                    </figure>
-                    <figure class="aboutus_bottom_shape left_shape mb-0">
-                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
-                    </figure>
+                 
                 </div>
             </div>
 
@@ -181,7 +176,7 @@
         </div>
     </section>
 
-    <section class="aboutpage_aboutus_section ">
+    <section class="aboutpage_aboutus_section  pt-5">
         <div class="container">
             <div class="row justify-content-center">
 

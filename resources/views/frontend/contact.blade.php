@@ -42,7 +42,7 @@
     </div>
 </div>
 <!-- MESSAGE SECTION -->
-<section class="message_section contact">
+<section class="message_section contact ">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
@@ -80,7 +80,7 @@
                                         placeholder="Last Name" required>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6 form-input-btn">
                                 <div class="form-group mb-0">
                                     <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone"
                                         required>

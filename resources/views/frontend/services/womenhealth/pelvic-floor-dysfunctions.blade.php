@@ -51,7 +51,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                        <img src="{{ asset('img/services/women/floor-dysfunctions.webp') }}" alt="floor-dysfunctions">
                         <div class="card-content">
                             <h2 class="fs-4 lh-sm">Types of Pelvic floor Dysfunctions</h2>
                             <p class="margin_bottom"><b> Issues related to pelvic floor dysfunction include:</b></p>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Bowel_Issues.png') }}" alt="bowel">
+                        <img src="{{ asset('img/services/women/common-symptoms-pelvic-floor.webp') }}" alt="common-symptoms-pelvic-floor">
                         <div class="card-content">
                             <h2 class="fs-4 lh-sm">Common Symptoms of Pelvic floor Dysfunctions</h2>
                             <p class="margin_bottom"> Symptoms of <b>pelvic floor dysfunctions</b> vary depending on the
@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Pain_Dysfunctions.png') }}" alt="Pain Dysfunctions">
+                        <img src="{{ asset('img/services/women/causes-of-pelvic-floor.webp') }}" alt="causes-of-pelvic-floor">
                         <div class="card-content">
                             <h2 class="fs-4 lh-sm">Causes of <b>Pelvic floor Dysfunctions</b></h2>
                             <p class="margin_bottom">Pelvic pain dysfunction can stem from multiple factors, including:
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Postpartum.png') }}" alt="Postpartum">
+                        <img src="{{ asset('img/services/women/list-of-pelvic-floor-dysfunction.webp') }}" alt="list-of-pelvic-floor-dysfunction">
                         <div class="card-content">
                             <h2 class="fs-4 lh-sm">List of Pelvic Floor Dysfunction Types</h2>
                             <p class="margin_bottom">Problems with muscular coordination and control are pelvic floor
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Excercise_Programs.png') }}" alt="Excercise Programs">
+                        <img src="{{ asset('img/services/women/diagnosis-of-pelvic-floor-dysfunction.webp') }}" alt="diagnosis-of-pelvic-floor-dysfunction">
                         <div class="card-content">
                             <h2 class="fs-4 lh-sm">Diagnosis of Pelvic floor Dysfunction</h2>
                             <h3 class="fs-5">Diagnostic Process</h3>
@@ -175,7 +175,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Excercise_Programs.png') }}" alt="Excercise Programs">
+                        <img src="{{ asset('img/services/women/treatment-options.webp') }}" alt="treatment-options">
                         <div class="card-content">
                             <h2 class="fs-4 lh-sm">Pelvic floor dysfunction treatment options</h2>
                             <h3 class="fs-5">1. Non-Surgical Interventions</h3>
@@ -218,8 +218,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/Pelvic-floor-pain.webp') }}"
+                                alt="Pelvic-floor-pain" class="img-fluid">
                         </figure>
 
                     </div>

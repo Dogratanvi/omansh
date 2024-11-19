@@ -51,8 +51,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/Care-essential.webp') }}"
+                                alt="Care-essential" class="img-fluid">
                         </figure>
 
                     </div>
@@ -88,7 +88,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                        <img src="{{ asset('img/services/women/Prenatal-support.webp') }}" alt="Prenatal-support">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Prenatal Support</h3>
                             <p class="margin_bottom"> Proper prenatal care reduces pregnancy pain and prepares for
@@ -108,7 +108,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Bowel_Issues.png') }}" alt="bowel">
+                        <img src="{{ asset('img/services/women/Nutritional-guidance.webp') }}" alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Nutritional Guidance</h3>
 
@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Pain_Dysfunctions.png') }}" alt="Pain Dysfunctions">
+                        <img src="{{ asset('img/services/women/Supporting-Mental-Health.webp') }}" alt="Supporting-Mental-Health">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Supporting Mental Health </h3>
 
@@ -168,7 +168,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/bladder.png') }}" alt="bladder">
+                        <img src="{{ asset('img/services/women/Physical-Recovery.webp') }}" alt="Physical-Recovery">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Physical Recovery</h3>
 
@@ -193,7 +193,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Bowel_Issues.png') }}" alt="bowel">
+                        <img src="{{ asset('img/services/women/Emotional-Health.webp') }}" alt="bowel">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Support for Mental and Emotional Health</h3>
 
@@ -210,7 +210,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/Pain_Dysfunctions.png') }}" alt="Pain Dysfunctions">
+                        <img src="{{ asset('img/services/women/Supporting-Lactation.webp') }}" alt="Supporting Lactation">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Supporting Lactation </h3>
 
@@ -243,8 +243,8 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/Common-Conditions-Treated.webp') }}"
+                                alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
                     </div>
@@ -294,8 +294,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/service_women_health.png') }}"
-                                alt="service_women_health.png" class="img-fluid">
+                        <figure class="mb-0"><img src="{{ asset('img/services/women/Personalized-Care-Plans.webp') }}"
+                                alt="Personalized Care Plans" class="img-fluid">
                         </figure>
 
                     </div>

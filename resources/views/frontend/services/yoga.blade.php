@@ -59,10 +59,10 @@
 
                 </div>
                 <figure class="aboutus_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
                 </figure>
                 <figure class="aboutus_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">

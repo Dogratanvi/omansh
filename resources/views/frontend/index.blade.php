@@ -13,13 +13,13 @@
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-md-left text-center">
                     <div class="banner-section-content">
                         <h5
-                            class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
+                            class="text-center text-white text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
                             WELCOME TO</h5>
-                        <h1 class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-up">OMANSH <br></h1>
-                        <h2
-                            class="inner-text text-center text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">
-                            Women Health, Physiotherapy & Yoga</h2>
+                        <h2 class="text-center fs-1 text-white text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                            data-aos="fade-up">OMANSH <br></h2>
+                        <h1
+                            class="inner-text color-text fs-1 text-center text-white text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">
+                           Health & Fitness</h1>
                         <!-- <span class="ityped"></span> -->
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's

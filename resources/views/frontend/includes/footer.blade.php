@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                     <figure class="subscribe_image mb-0">
-                        <img src="{{ asset('images/subscribe_image.png') }}" alt="">
+                        <img src="{{ asset('images/subscribe_image.png') }}" alt="logo">
                     </figure>
                 </div>
             </div>

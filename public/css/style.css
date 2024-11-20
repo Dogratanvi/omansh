@@ -98,7 +98,17 @@ li{
     
  
 }
-
+.faq-section h3 button.accordion-button{
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+}
+a.women-health-link{
+    color:#CAA983;
+}
+a.women-health-link:hover{
+    color:#000;
+}
 .main-blog{
     margin-bottom: 324px;
 }
@@ -121,10 +131,29 @@ li{
 color: #fff;
 }
 /* Home Page Header Section Style */
+
 header {
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
 }
+
+header.scrolled {
+    background-color: #004B2A; /* Change to desired background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    padding: 10px 0; /* Adjust padding for a compact look */
+}
+
+.main_header {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
 li.nav-item:focus-visible {
     outline: none !important;
     box-shadow: none !important;
@@ -1611,7 +1640,22 @@ a.all-event {
     bottom: 2px;
     right: 0px;
 }
+.whatsapp-ico{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
 
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
 /* feedback form */
 .feedback-form-box {
     border-top-left-radius: 120px;
@@ -3059,9 +3103,7 @@ a.contact_us:hover {
         background-image: url('../img/blog.png');
    
 }
-.main-blog .post-item-description p {
-    height: 141px;
-}
+
 .blog-posts {
     padding: 120px 0 130px;
 }
@@ -3076,6 +3118,8 @@ a.contact_us:hover {
 .upcoming-card img {
     border-top-left-radius: 80px;
     border-bottom-right-radius: 80px;
+    height: 300px;
+    object-fit: cover;
 }
 .event-content {
     padding: 20px 15px;
@@ -3105,7 +3149,7 @@ img#image-gallery-image {
    
 }
 .service-gallary{
-    margin-bottom: 474px !important;
+    margin-bottom: 380px !important;
 }
 .banner-section-content .btn_wrapper a:hover {
 color: #CAA983 !important;

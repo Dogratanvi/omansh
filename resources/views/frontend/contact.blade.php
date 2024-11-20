@@ -26,23 +26,23 @@
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_left_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_top_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_bottom_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid">
                 </figure>
             </div>
         </section>
     </div>
 </div>
 <!-- MESSAGE SECTION -->
-<section class="message_section contact">
+<section class="message_section contact ">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
@@ -80,7 +80,7 @@
                                         placeholder="Last Name" required>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6 form-input-btn">
                                 <div class="form-group mb-0">
                                     <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone"
                                         required>
@@ -142,7 +142,7 @@
                         <div class="box box_padding d-flex align-items-center">
                             <div class="box_image_content">
                                 <figure class="mb-0">
-                                    <img src="{{ asset('images/contact_location.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('images/contact_location.png') }}" alt="location" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="box_wrapper">
@@ -158,7 +158,7 @@
                         <div class="box d-flex align-items-center">
                             <div class="box_image_content">
                                 <figure class="mb-0">
-                                    <img src="{{ asset('images/contact_phone.png ') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('images/contact_phone.png ') }}" alt="contact-phone" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="box_wrapper">
@@ -173,7 +173,7 @@
                         <div class="box mb-0 d-flex align-items-center">
                             <div class="box_image_content">
                                 <figure class="mb-0">
-                                    <img src="{{ asset('images/contact_mail.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('images/contact_mail.png') }}" alt="email" class="img-fluid">
                                 </figure>
                             </div>
                             <div class="box_wrapper">

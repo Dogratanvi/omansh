@@ -26,16 +26,16 @@
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_left_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="left-bottom-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_top_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="right-shape" class="img-fluid">
                 </figure>
                 <figure class="banner_right_bottom_shape right_shape mb-0">
-                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="right-shape" class="img-fluid">
                 </figure>
             </div>
     </div>
@@ -115,10 +115,10 @@
                     </div>
                 </div>
                 <figure class="aboutus_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
                 <figure class="aboutus_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="" class="img-fluid">
+                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="top-shape" class="img-fluid">
                 </figure>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " data-aos="fade-right">
@@ -172,7 +172,7 @@
             </div>
         </div>
         <figure class="mission_right_shape right_shape mb-0">
-            <img src="{{ asset('images/our_mission_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/our_mission_shape.png') }}" alt="our-mission" class="img-fluid">
         </figure>
     </div>
 </section>
@@ -204,7 +204,7 @@
             </div>
         </div>
         <figure class="vision_left_shape left_shape mb-0">
-            <img src="{{ asset('images/our_vision_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/our_vision_shape.png') }}" alt="vision" class="img-fluid">
         </figure>
     </div>
 </section>
@@ -278,10 +278,10 @@
 </section>
 
 <figure class="blog_posts_left_shape left_shape mb-0">
-    <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
+    <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="left-shape" class="img-fluid">
 </figure>
 <figure class="blog_posts_right_shape right_shape mb-0">
-    <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
+    <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="right-shape" class="img-fluid">
 </figure>
 
 <!-- modal -->

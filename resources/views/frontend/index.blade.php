@@ -13,13 +13,13 @@
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-md-left text-center">
                     <div class="banner-section-content">
                         <h5
-                            class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
+                            class="text-center text-white text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
                             WELCOME TO</h5>
-                        <h1 class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-up">OMANSH <br></h1>
-                        <h2
-                            class="inner-text text-center text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">
-                            Women Health, Physiotherapy & Yoga</h2>
+                        <h2 class="text-center fs-1 text-white text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
+                            data-aos="fade-up">OMANSH <br></h2>
+                        <h1
+                            class="inner-text color-text fs-1 text-center text-white text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">
+                           Health & Fitness</h1>
                         <!-- <span class="ityped"></span> -->
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
                             data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's
@@ -36,29 +36,29 @@
                         </a> -->
                         <figure
                             class="banner_left_top_shape_inner left_shape mb-0 text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start">
-                            <img src="{{ asset('img/aboutus_top_shape.png') }}" alt="" class="img-fluid" loading="lazy">
+                            <img src="{{ asset('img/aboutus_top_shape.png') }}" alt="top-shape" class="img-fluid" loading="lazy">
                         </figure>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <div class="banner-section-image">
                         <figure class=" mb-0 text-end">
-                            <img class="w-100" src="{{ asset('images/banner_right_image.png') }}" loading="lazy" alt="">
+                            <img class="w-100" src="{{ asset('images/banner_right_image.png') }}" loading="lazy" alt="banner-right">
                         </figure>
                     </div>
                 </div>
             </div>
             <figure class="banner_left_top_shape left_shape mb-0">
-                <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="top-shape" class="img-fluid" loading="lazy">
             </figure>
             <figure class="banner_left_bottom_shape left_shape mb-0">
-                <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid" loading="lazy">
             </figure>
             <figure class="banner_right_top_shape right_shape mb-0">
-                <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="top-shape" class="img-fluid" loading="lazy">
             </figure>
             <figure class="banner_right_bottom_shape right_shape mb-0">
-                <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="bottom-shape" class="img-fluid" loading="lazy">
             </figure>
         </div>
     </section>
@@ -68,23 +68,23 @@
             <ul class="list-unstyled p-0 m-0">
                 <li>
                     <a href="{{$settings[2]->value}}" target="_blank"> <img src="{{ asset('img/social/facebook.png') }}"
-                            loading="lazy" alt="" class="img-fluid w-75"></a>
+                            loading="lazy" alt="facebook" class="img-fluid w-75"></a>
                 </li>
                 <li>
                     <a href="{{$settings[9]->value}}" target="_blank"><img src="{{ asset('img/social/instagram.png') }}"
-                            loading="lazy" alt="" class="img-fluid w-75"></a>
+                            loading="lazy" alt="instagram" class="img-fluid w-75"></a>
                 </li>
                 <li>
                     <a href="{{$settings[4]->value}}" target="_blank"><img src="{{ asset('img/social/linkedin.png') }}"
-                            loading="lazy" alt="" class="img-fluid w-75"></a>
+                            loading="lazy" alt="linkedin" class="img-fluid w-75"></a>
                 </li>
                 <li>
                     <a href="{{$settings[10]->value}}" target="_blank"><img src="{{ asset('img/social/google.png') }}"
-                            loading="lazy" alt="" class="img-fluid w-75"></a>
+                            loading="lazy" alt="google" class="img-fluid w-75"></a>
                 </li>
                 <li>
                     <a href="{{$settings[5]->value}}" target="_blank"><img src="{{ asset('img/social/youtube.png') }}"
-                            loading="lazy" alt="" class="img-fluid w-75"></a>
+                            loading="lazy" alt="youtube" class="img-fluid w-75"></a>
                 </li>
 
             </ul>
@@ -110,7 +110,7 @@
                 <div class="services_box_content">
                     <div class="services_box_upper_portion">
 
-                        <figure class="mb-0"><img src="{{asset($service->featured_image)}}" loading="lazy" alt=""
+                        <figure class="mb-0"><img src="{{asset($service->featured_image)}}" loading="lazy" alt="service"
                                 class="img-fluid w-100"></figure>
                     </div>
                     <div class="services_box_lower_portion pt-2">
@@ -138,7 +138,7 @@
 
         </div>
         <figure class="services_left_shape left_shape mb-0">
-            <img src="{{ asset('images/services_left_shape.png') }}" loading="lazy" alt="" class="img-fluid w-100">
+            <img src="{{ asset('images/services_left_shape.png') }}" loading="lazy" alt="service-left-shape" class="img-fluid w-100">
         </figure>
     </div>
 </section>
@@ -150,14 +150,14 @@
                 <div class="aboutus_image">
                     <figure
                         class="mb-0 text-sm-center text-xs-center text-lg-start text-xl-start text-md-start text-center">
-                        <img src="{{ asset('img/better-life.png') }}" alt="" class="img-fluid">
+                        <img src="{{ asset('img/better-life.png') }}" alt="better-life" class="img-fluid">
                     </figure>
                 </div>
                 <figure class="aboutus_top_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_top_shape.png') }}" loading="lazy" alt="" class="img-fluid">
+                    <img src="{{ asset('images/aboutus_top_shape.png') }}" loading="lazy" alt="shape" class="img-fluid">
                 </figure>
                 <figure class="aboutus_bottom_shape left_shape mb-0">
-                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" loading="lazy" alt="" class="img-fluid">
+                    <img src="{{ asset('images/aboutus_bottom_shape.png') }}" loading="lazy" alt="shape" class="img-fluid">
                 </figure>
             </div>
             <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12" data-aos="fade-right">
@@ -221,14 +221,14 @@
                             your healing experience.</p>
                     </div>
                     <figure class="specialties_left_line mb-0">
-                        <img src="{{ asset('images/specialties_left_line.png') }}" loading="lazy" alt=""
+                        <img src="{{ asset('images/specialties_left_line.png') }}" loading="lazy" alt="specialties-left-line"
                             class="img-fluid">
                     </figure>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
                 <figure class=" mt-lg-5 mt-xl-5 mt-md-3 mt-3 mb-0">
-                    <img src="{{ asset('img/why-choose.webp') }}" loading="lazy" alt="" class="img-fluid">
+                    <img src="{{ asset('img/why-choose.webp') }}" loading="lazy" alt="why-choose" class="img-fluid">
                 </figure>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
@@ -254,14 +254,14 @@
                             valued.</p>
                     </div>
                     <figure class="specialties_right_line mb-0">
-                        <img src="{{ asset('images/specialties_right_line.png') }}" loading="lazy" alt=""
+                        <img src="{{ asset('images/specialties_right_line.png') }}" loading="lazy" alt="right-line"
                             class="img-fluid">
                     </figure>
                 </div>
             </div>
         </div>
         <figure class="our_specialties_right_shape right_shape mb-0">
-            <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="right-shape" class="img-fluid">
         </figure>
     </div>
 </section>
@@ -538,7 +538,7 @@
             @foreach ($blogs as $blog)
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
                 <div class="blog_posts_image position-relative">
-                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" loading="lazy" alt=""
+                    <figure class="mb-0"><img src="{{asset($blog->featured_image)}}" loading="lazy" alt="feature-image"
                             class="img-fluid">
                         <div class="blog-overlay">
                     </figure>
@@ -561,10 +561,10 @@
             <a href="/blog" class="text-decoration-none view_blog">View All Blogs</a>
         </div>
         <figure class="blog_posts_left_shape left_shape mb-0">
-            <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/blog_posts_left_shape.png') }}" alt="left-shape" class="img-fluid">
         </figure>
         <figure class="blog_posts_right_shape right_shape mb-0">
-            <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="right-shape" class="img-fluid">
         </figure>
     </div>
 </section>

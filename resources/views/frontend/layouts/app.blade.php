@@ -42,6 +42,7 @@
     <link href="{{ asset('css/gallary.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/webinar.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/mediaqueries.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/service.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 

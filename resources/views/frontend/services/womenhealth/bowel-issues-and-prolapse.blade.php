@@ -22,11 +22,14 @@
                                     </div>
                                 </div>
                                 <div class="btn_wrapper">
-                                    <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
+                                  
+                                        <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i> <span
                                         class="sub_home_span"><a>Services
                                         </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
-                                        class="sub_span">Women Health</span>
+                                        class="sub_span pe-2"><a href="/services/womenhealth">Women Health</a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
+                                        class="sub_span"><a>Female Bowel Issues and Prolapse
+                                        </a></span>
                                 </div>
                             </div>
                         </div>

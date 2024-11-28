@@ -106,4 +106,17 @@ class ServicesController extends Controller
 
       
     }
+
+    public function orthopedic()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.physiotheraphy.orthopedic-physiotheraphy', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+      
+    }
 }

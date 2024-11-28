@@ -66,6 +66,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/womenhealth/bowel-issues-and-prolapse', 'ServicesController@bowelProlapse')->name('services.womenhealth.bowel-issues-and-prolapse');
     Route::get('services/womenhealth/bladder-dysfunction', 'ServicesController@bladderDysfunction')->name('services.womenhealth.bladder-dysfunction');
 
+    // physiotheraphy
+    Route::get('services/physiotheraphy/orthopedic-physiotheraphy', 'ServicesController@orthopedic')->name('services.physiotheraphy.orthopedic-physiotheraphy');
 
     Route::post('comments', 'CommentController@store')->name('comments');
     Route::get('comments/{id}', 'CommentController@index');

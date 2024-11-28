@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section postpartum-banner women-service-text">
+    <div class="sub-banner-section orthopedic-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -27,7 +27,6 @@
                                         class="sub_span pe-2"><a href="/services/physiotherapy">Physiotherapy</a></span><i
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Orthopedic Physiotherapy
-
                                         </a></span>
                                 </div>
                             </div>
@@ -60,10 +59,9 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/services/women/Care-essential.webp') }}"
+                        <figure class="mb-0"><img src="{{ asset('img/services/physoitheraphy/Benefits-of-orthopedic.webp') }}"
                                 alt="Care-essential" class="img-fluid">
                         </figure>
-
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
                         <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape" class="img-fluid">
@@ -75,7 +73,6 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
-
                         <h2>What is Orthopedic Physiotherapy?</h2>
                         <p class="margin_bottom">Orthopedic physiotherapy treats bones, muscles, ligaments, tendons, and
                             joints. It can help with arthritis, fractures, and sports injuries.
@@ -84,21 +81,17 @@
                         </h4>
                         <p><b>There are different benefits of Orthopaedic Physiotherapy:</b>
                         </p>
-
                         <ul>
                             <li>Orthopaedic physiotherapy reduces chronic pain and inflammation. </li>
                             <li>Aids surgery and injury healing.</li>
                             <li>Builds strength, mobility, and balance.</li>
                             <li>Fixing prevents damage.</li>
-
                         </ul>
                         <p>Orthopedic treatment can improve mobility following surgery or chronic disease.
                         </p>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
     <!-- Types of Orthopedic Physical Therapy Available in Ghaziabad -->
@@ -108,7 +101,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/services/women/Prenatal-support.webp') }}" alt="Prenatal-support">
+                        <img src="{{ asset('img/services/physoitheraphy/Manual-therapy-in-orthopedic.webp') }}" alt="Prenatal-support">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Manual Therapy</h3>
                             <ul>
@@ -120,37 +113,31 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/women/Nutritional-guidance.webp') }}" alt="Nutritional-guidance">
+                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}" alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Exercise Therapy</h3>
-
                             <ul>
                                 <li>Customized strength, flexibility, and endurance programs.
-
                                 </li>
-
                             </ul>
-
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/women/Supporting-Mental-Health.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Rehab-after-surgery-in-orthopedic.webp') }}"
                             alt="Supporting-Mental-Health">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Rehab after surgery</h3>
-
                             <ul>
                                 <li>Rehabilitation regimens for joint replacement and ligament repair.</li>
-
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/women/Supporting-Mental-Health.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Pain-management-options-in-orthopedic.webp') }}"
                             alt="Supporting-Mental-Health">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Pain Management Options</h3>
@@ -214,7 +201,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/women/Common-Conditions-Treated.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -277,7 +264,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
-                        <figure class="mb-0"><img src="{{ asset('img/services/women/Personalized-Care-Plans.webp') }}"
+                        <figure class="mb-0"><img src="{{ asset('img/services/physoitheraphy/Orthopedic-physiotherapy-services-in-ghaziabad.webp') }}"
                                 alt="Personalized Care Plans" class="img-fluid">
                         </figure>
 

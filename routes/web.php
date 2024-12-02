@@ -68,6 +68,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
 
     // physiotheraphy
     Route::get('services/physiotheraphy/orthopedic-physiotheraphy', 'ServicesController@orthopedic')->name('services.physiotheraphy.orthopedic-physiotheraphy');
+    Route::get('services/physiotheraphy/neuro-physiotherapy', 'ServicesController@neuro')->name('services.physiotheraphy.neuro-physiotherapy');
 
     Route::post('comments', 'CommentController@store')->name('comments');
     Route::get('comments/{id}', 'CommentController@index');

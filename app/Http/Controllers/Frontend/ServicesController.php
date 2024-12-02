@@ -106,7 +106,7 @@ class ServicesController extends Controller
 
       
     }
-
+    
     public function orthopedic()
     {
 
@@ -116,6 +116,18 @@ class ServicesController extends Controller
         $services = Service::all();
         $settings = Setting::all();
       return view('frontend.services.physiotheraphy.orthopedic-physiotheraphy', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+      
+    }
+    public function neuro()
+    {
+
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.physiotheraphy.neuro-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
       
     }

@@ -131,4 +131,37 @@ class ServicesController extends Controller
 
       
     }
+    public function sport()
+    {
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.physiotheraphy.sport-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+  
+    }
+    public function geriatric()
+    {
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.physiotheraphy.geriatric-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+  
+    }
+    public function pediatric()
+    {
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.physiotheraphy.pediatric-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+  
+    }
 }

@@ -9,11 +9,13 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Neuro Physiotherapy</h1>
+                                <h1 data-aos="fade-up">Sport Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Neuro-physiotherapy treats neurological disorders. It aids
-                                            nervous system recovery, enhancing movement, coordination, and well-being.
+                                        <p data-aos="fade-right">Omansh Sports Physiotherapy in Ghaziabad helps athletes
+                                            avoid injuries, recover from setbacks, and improve performance. Amateur and
+                                            professional athletes receive excellent sports physiotherapy in Ghaziabad from
+                                            Omansh. Our sports-specific programs optimize performance and prevent damage.
                                         </p>
                                     </div>
                                 </div>
@@ -24,7 +26,7 @@
                                         </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span pe-2"><a href="/services/physiotherapy">Physiotherapy</a></span><i
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
-                                        class="sub_span"><a>Neuro Physiotherapy
+                                        class="sub_span"><a>Sport Physiotherapy
                                         </a></span>
                                 </div>
                             </div>
@@ -72,12 +74,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
-                        <h2>Neuro-Physiotherapy in Ghaziabad
+                        <h2>Sports Physiotherapy in Ghaziabad
                         </h2>
                         <ul>
-                            <li>Omansh Neuro Physiotherapy Clinic in Ghaziabad gives quality neurological care. With the
-                                increased need for neurological rehabilitation, we offer personalized programs to help
-                                patients recover and improve their quality of life.</li>
+                            <li>Sports physiotherapy diagnoses, treats, and prevents injuries. It improves athlete strength,
+                                mobility, and performance. Omansh's Ghaziabad physiotherapists tailor athlete treatment for
+                                best recovery and performance. We assist athletes recover from ligament tears and train to
+                                avoid injury.
+                            </li>
                         </ul>
 
                     </div>
@@ -85,29 +89,31 @@
             </div>
         </div>
     </section>
-    {{-- Conditions Treated with Neuro-Physiotherapy     --}}
+    {{-- Conditions Treated with Sports Physiotherapy    --}}
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
 
-                        <h2>Conditions Treated with Neuro-Physiotherapy</h2>
-                        <p class="pt-2">Our facility treats neurological diseases:
+                        <h2>Conditions Treated with Sports Physiotherapy</h2>
+                        <p class="pt-2">Our Ghaziabad clinic addresses sports injuries and ailments like:
 
                         </p>
                         <ul class="ps-5">
-                            <li> Stroke Rehabilitation: Restoring independence and motor skills after stroke.
+                            <li> Muscle Sprains and Ligament Strains
+
                             </li>
-                            <li>Parkinson’s Disease: Customised workouts for Parkinson's disease mobility and symptoms.</li>
-                            <li>Multiple Sclerosis Support: Reduced muscle weakness and coordination.  </li>
-                            <li>   Spinal Cord Injuries: Complete spinal cord injury mobility programs.
+                            <li>Tennis elbow and Achilles tendinitis are examples of tendonitis.
                             </li>
+                            <li>Dislocations, breaks
+                            </li>
+                            <li> Rotator Cuff Injury</li>
+                            <li> Rehabilitating joint replacement after surgery </li>
                         </ul>
 
-                        <p class="pt-2"> Neuropathies and Motor Neuron Diseases: Illness strengthening exercises for
-                            nerve-related problems. </p>
-                        <p class="pt-2"> We offer advanced, compassionate care to all ages.</p>
+                        <p class="pt-2">Overuse issues are addressed to assist athletes return to their sport stronger.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
@@ -132,20 +138,33 @@
 
         </div>
     </section>
-    <!-- Types of Neuro-Physiotherapy Services
-                         -->
+    <!-- Our Sports Physiotherapy Services in Ghaziabad
+                                 -->
     <section class="aboutpage_aboutus_section  blog_posts_section pt-3">
         <div class="container">
-            <h2 class="text-center">Types of Neuro-Physiotherapy Services</h2>
+            <h2 class="text-center">Our Sports Physiotherapy Services in Ghaziabad</h2>
+            <p class="pt-2">We offer many services to meet athletes' needs: </p>
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
                         <img src="{{ asset('img/services/physoitheraphy/Manual-therapy-in-orthopedic.webp') }}"
                             alt="Prenatal-support">
                         <div class="card-content">
-                            <h3 class="fs-4 lh-sm">Balance and Coordination Therapy :</h3>
+                            <h3 class="fs-4 lh-sm">Injury-Prevention Programs :</h3>
                             <ul>
-                                <li>Great for vertigo and stroke therapy.
+                                <li> Sports injury prevention through training and education.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card health-card  border-0">
+                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                            alt="Nutritional-guidance">
+                        <div class="card-content">
+                            <h3 class="fs-4 lh-sm"> Manage Acute Injury: </h3>
+                            <ul>
+                                <li>Sports injuries require rapid pain management and recovery.
                                 </li>
                             </ul>
                         </div>
@@ -156,34 +175,36 @@
                         <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
-                            <h3 class="fs-4 lh-sm"> Gait Training: </h3>
+                            <h3 class="fs-4 lh-sm"> Sports-Specific: </h3>
                             <ul>
-                                <li>Helping patients walk freely. </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
-                            alt="Nutritional-guidance">
-                        <div class="card-content">
-                            <h3 class="fs-4 lh-sm"> Neuromuscular Stimulation and Electrotherapy:</h3>
-                            <ul>
-                                <li>Increases nerves and muscle functionality. </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                    <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
-                            alt="Nutritional-guidance">
-                        <div class="card-content">
-                            <h3 class="fs-4 lh-sm"> Postural Control and Strengthening Exercises: </h3>
-                            <ul>
-                                <li> These are needed for spinal injuries and degenerative illnesses.
+                                <li>Rehabilitation Plans for Sports Sport-specific recovery programs.
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card health-card  border-0">
+                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                            alt="Nutritional-guidance">
+                        <div class="card-content">
+                            <h3 class="fs-4 lh-sm">Performance Improvement Training: </h3>
+                            <ul>
+                                <li> It improves sports performance by increasing strength, flexibility, and agility.
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <div class="card health-card  border-0">
+                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                            alt="Nutritional-guidance">
+                        <div class="card-content">
+                            <h3 class="fs-4 lh-sm">Manual Therapy Methods: </h3>
+                            <ul>
+                                <li> Advanced joint and soft tissue manipulation for mobility and discomfort. </li>
                             </ul>
                         </div>
                     </div>
@@ -197,7 +218,7 @@
                 <img src="{{ asset('images/blog_posts_right_shape.png') }}" alt="blog_posts_right_shape"
                     class="img-fluid">
             </figure>
-            <p class="pt-5"> These therapies are customized for optimal recovery.</p>
+
         </div>
     </section>
 
@@ -206,31 +227,27 @@
             <div class="row">
                 <div class="col-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
-                        <h2>Neurological Physiotherapy Exercises
+                        <h2>Specialized Sports Training and Rehabilitation Programs
                         </h2>
-                        <p class="pt-2">Neural physiotherapy uses exercises. Among our programs:</p>
+                        <p class="pt-2">We personalise athlete training: </p>
                         <ul class="ps-5">
-                            <li>Stretching for flexibility. </li>
-                            <li>Joint and muscle strengthening exercises. </li>
-                            <li> Train coordination to improve motor skills.</li>
-                            <li> Neurological respiratory breathing techniques.</li>
+                            <li>Team sports: Football, cricket, basketball
+                            </li>
+                            <li> Individual sports: Tennis, golf, swimming
+                            </li>
+                            <li>Endurance Events: Marathon, track and field endurance
+                            </li>
                         </ul>
-                        <p class="pt-2">2. Explain the importance of timely neuro-physiotherapy for faster recovery.</p>
-                        <h2 class="pt-4">Neuro-Physiotherapy Rehabilitation in Ghaziabad</h2>
-                        <p class="pt-2">Omansh Clinic offers:
+                        <p class="pt-2">From pre-season conditioning to post-season recuperation, our programs cover it
+                            all.
                         </p>
-                        <ul class="ps-5">
-                            <li>Acute Care: Speeds recovery after surgery or injury.</li>
-                            <li>Chronic care: Neurodegenerative illness chronic care.</li>
-                            <li> Home-Based Programs: Patients who cannot attend clinics can use home-based programs.</li>
-                        </ul>
-                        <p class="pt-2">Early neuro-physiotherapy improves recovery and quality of life.</p>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Orthopedic Physical -->
+    <!-- Advanced Equipment and Techniques -->
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
@@ -254,19 +271,17 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
 
-                        <h2>Why Choose Our Neuro-Physiotherapy Services in Ghaziabad?</h2>
+                        <h2>Advanced Equipment and Techniques</h2>
+                        <p class="pt-2">Omansh employs cutting-edge equipment and strategies to heal quickly and avoid
+                            injuries: </p>
                         <ul>
-                            <li>Professionals Team: Our neuro physiotherapists address neurological problems.
-
+                            <li> <b>Electrotherapy: </b>Ultrasound and TENS muscle stimulation and pain relief. </li>
+                            <li><b>Cupping and Dry Needling: </b>Reduce muscle tension and increase circulation.</li>
+                            <li> <b>Kinesiology Taping and Bracing: </b>To support injury and enhance movement.</li>
+                            <li><b>Durability and Resistance Training Tools: </b>For building strength and stamina.
                             </li>
-                            <li>Advanced facilities: Modern diagnostic and treatment equipment for sophisticated facilities.
-                            </li>
-                            <li> Patient-Centered: Customised treatments focusing on holistic treatment.
-                            </li>
-                            <li>Convenient Location: Close to Ghaziabad and other areas.</li>
                         </ul>
 
-                        <p class="pt-2">We are trusted in neuro-physiotherapy for our quality. </p>
                     </div>
                 </div>
             </div>
@@ -274,8 +289,92 @@
 
         </div>
     </section>
+    <!-- Benefits of Choosing Sports Physiotherapy in Ghaziabad -->
+    <section class="aboutpage_aboutus_section   pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                    <div class="service_page_aboutus_content">
+
+                        <h2>Benefits of Choosing Sports Physiotherapy in Ghaziabad</h2>
+                        <p class="pt-2">Omansh sports physiotherapy helps athletes in many ways:
+                        </p>
+                        <ul>
+                            <li> Less recuperation time</li>
+                            <li> Improved muscle and joint function</li>
+                            <li> Improved balance, strength, and flexibility to prevent recurring injuries.
+                            </li>
+                            <li>Improved mental and athletic resilience
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
+                    <div class="servicepage_aboutus_image">
+                        <figure class="mb-0"><img
+                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                alt="Common Conditions Treated" class="img-fluid">
+                        </figure>
+
+                    </div>
+                    <figure class="aboutus_top_shape left_shape mb-0">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape"
+                            class="img-fluid">
+                    </figure>
+                    <figure class="aboutus_bottom_shape left_shape mb-0">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape"
+                            class="img-fluid">
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Sports Physiotherapy Services in Ghaziabad? -->
+    <section class="aboutpage_aboutus_section   pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
+                    <div class="servicepage_aboutus_image">
+                        <figure class="mb-0"><img
+                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                alt="Common Conditions Treated" class="img-fluid">
+                        </figure>
+
+                    </div>
+                    <figure class="aboutus_top_shape left_shape mb-0">
+                        <img src="{{ asset('images/aboutus_top_shape.png') }}" alt="aboutus_top_shape"
+                            class="img-fluid">
+                    </figure>
+                    <figure class="aboutus_bottom_shape left_shape mb-0">
+                        <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape"
+                            class="img-fluid">
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                    <div class="service_page_aboutus_content">
+
+                        <h2>Why Choose Our Sports Physiotherapy Services in Ghaziabad?</h2>
+                        <p class="pt-2">Sports physiotherapy in Oman is reliable because:
+                        </p>
+                        <ul>
+                            <li> <b>Experienced Physiotherapists:</b> Experts with sports rehab and performance enhancing
+                                experience</li>
+                            <li><b> Athlete-Focused Treatment Plans:</b> Customised athlete-focused therapy.</li>
+                            <li><b>State of the Art Facility:</b> Technologically improved facilities optimize treatment.</li>
+                            <li><b>Proven Track Records:</b> Verified Performance: Ghaziabad athletes and fans approve. </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
 
 
+        </div>
+    </section>
 
     {{-- faq --}}
     <section class="aboutpage_aboutus_section service-gallary faq-section pt-3">
@@ -289,12 +388,14 @@
                             <h3 class="accordion-header" id="headingOne">
                                 <button class="collapsed accordion-button p-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    1. What does a neurophysiotherapist do?</button>
+                                    1. What do physiotherapists do in sports?
+                                </button>
                             </h3>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p> They assist neurological patients to walk, balance, and strengthen.</p>
+                                    <p> Rehabilitation, injury prevention, and performance optimization are assessed,
+                                        diagnosed, and treated following sports injuries.</p>
                                 </div>
                             </div>
                         </div>
@@ -302,13 +403,14 @@
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="collapsed accordion-button p-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    2. What is the work of neurotherapy?</button>
+                                    2. What is sports physiotherapy called?</button>
                             </h3>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Neurotreatment restores nervous system function manages symptoms, and improves
-                                        mobility.</p>
+                                    <p>Physiotherapy and sports science repair injuries and increase performance in sports
+                                        therapy.
+                                    </p>
 
                                 </div>
                             </div>
@@ -317,14 +419,13 @@
                             <h3 class="accordion-header" id="headingThree">
                                 <button class="collapsed accordion-button p-3" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    3. Is neuro therapy safe?
-
-                                </button>
+                                    3. What is sports therapy?</button>
                             </h3>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Neurotherapy is safe and effective when administered by competent professionals. </p>
+                                    <p>Common terminology includes athletic training and sports rehabilitation.
+                                    </p>
 
                                 </div>
                             </div>
@@ -334,30 +435,20 @@
                             <h3 class="accordion-header" id="headingFour">
                                 <button class="collapsed accordion-button p-3" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    4. Who can benefit from neuro-physiotherapy?</button>
+                                    4. How to become a sports Physiotherapy?
+                                </button>
                             </h3>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Stroke, Parkinson's, and spinal cord injury patients.
+                                    <p>Physiotherapists must graduate and then specialise in sports physiotherapy through
+                                        advanced study or qualifications.
+
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
-                            <h3 class="accordion-header" id="headingFive">
-                                <button class="collapsed accordion-button p-3" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    5.  How is neuro-physiotherapy rehabilitation conducted in Ghaziabad?
-                                </button>
-                            </h3>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">Our in-clinic and home-based programs are tailored to patient needs and rehabilitation goals.
-                                </p>
-                                </div>
-                            </div>
-                        </div>
+                     
                     </div>
 
 

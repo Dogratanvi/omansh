@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section orthopedic-banner women-service-text">
+    <div class="sub-banner-section sports-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -60,7 +60,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Benefits-of-orthopedic.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Sports-physiotherapy-in-ghaziabad.webp') }}"
                                 alt="Care-essential" class="img-fluid">
                         </figure>
                     </div>
@@ -119,7 +119,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Sports-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -147,7 +147,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Manual-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Sports-injury-prevention.webp   ') }}"
                             alt="Prenatal-support">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Injury-Prevention Programs :</h3>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Sports-acute-injury.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Manage Acute Injury: </h3>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Sports-specific-injury.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Sports-Specific: </h3>
@@ -185,7 +185,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Performance-improvement-training.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Performance Improvement Training: </h3>
@@ -199,7 +199,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Manual-therapy-method.webp  ') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Manual Therapy Methods: </h3>
@@ -254,7 +254,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Advanced-equipment-training.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -314,7 +314,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Benefits-of-sports-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -340,7 +340,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Whychoosing-sports-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 

@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section orthopedic-banner women-service-text">
+    <div class="sub-banner-section geriatric-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -58,7 +58,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Benefits-of-orthopedic.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-ghaziabad.webp') }}"
                                 alt="Care-essential" class="img-fluid">
                         </figure>
                     </div>
@@ -118,7 +118,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -147,7 +147,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Manual-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Arthritis.webp') }}"
                             alt="Prenatal-support">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Treat arthritis, osteoporosis, and neurological problems.
@@ -158,7 +158,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-improves-balance.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Improve strength, balance, and flexibility to avoid falls.
@@ -169,7 +169,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-sports.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Sports-Specific: </h3>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-improves-post-surgery.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Improve post-surgery or injury recovery.
@@ -192,7 +192,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-promotes-respiratory.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Promote respiratory and general health.
@@ -248,7 +248,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Services-offered-in-Geriatric-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -307,7 +307,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Benefits-of-Geriatric-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -333,7 +333,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Why-choosee-Geriatric-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 

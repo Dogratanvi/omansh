@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section orthopedic-banner women-service-text">
+    <div class="sub-banner-section neuro-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -58,7 +58,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Benefits-of-orthopedic.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Neuro-physiotherapy-in-ghaziabad.webp') }}"
                                 alt="Care-essential" class="img-fluid">
                         </figure>
                     </div>
@@ -113,7 +113,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Neurological-disorders.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -140,7 +140,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Manual-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Balance-&-corditnation-therapy.webp') }}"
                             alt="Prenatal-support">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm">Balance and Coordination Therapy :</h3>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Gait-training.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Gait Training: </h3>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Neuromuscular.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Neuromuscular Stimulation and Electrotherapy:</h3>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Exercise-therapy-in-orthopedic.webp') }}"
+                        <img src="{{ asset('img/services/physoitheraphy/Postural-exercise.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Postural Control and Strengthening Exercises: </h3>
@@ -237,7 +237,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Orthopedic-physical-therapy-services.webp') }}"
+                                src="{{ asset('img/services/physoitheraphy/Why-choose-neuro-physiotherapy.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -274,9 +274,6 @@
 
         </div>
     </section>
-
-
-
     {{-- faq --}}
     <section class="aboutpage_aboutus_section service-gallary faq-section pt-3">
         <div class="container">

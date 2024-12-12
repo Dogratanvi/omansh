@@ -77,12 +77,12 @@
                         @foreach ($services as $service)
                             <div>{!! $services[0]->content !!}</div>
                             <!-- <p class="margin_bottom">A vast discipline and a science in itself which aimed at integrating mind,
-                                        body and spirit through the practice of asana, pranayama, mudra, bandha, shat-karma and
-                                        meditation to achieve a reach a stage of enlightenment or self-realization
+                                            body and spirit through the practice of asana, pranayama, mudra, bandha, shat-karma and
+                                            meditation to achieve a reach a stage of enlightenment or self-realization
 
-                                        We offer Physio-Yoga Therapy which is an innovative approach to physical rehabilitation which
-                                        combines Physiotherapy and Medical Therapeutic Yoga (MTY). What results is a healing experience
-                                        that blends the latest in medical science and the time-tested traditions of Yoga.</p>
+                                            We offer Physio-Yoga Therapy which is an innovative approach to physical rehabilitation which
+                                            combines Physiotherapy and Medical Therapeutic Yoga (MTY). What results is a healing experience
+                                            that blends the latest in medical science and the time-tested traditions of Yoga.</p>
     @endforeach  -->
 
                             <div class="btn_wrapper mt-3">
@@ -177,7 +177,12 @@
                             <li> Musculoskeletal Pain
                             </li>
 
+                            <div class="btn_wrapper ">
+                                <a href="/services/physiotheraphy/orthopedic-physiotheraphy"
+                                    class="item-link women-health-link">Read More <i
+                                        class="fa fa-arrow-right"></i></a>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,7 +201,12 @@
                             <li>Fascial Palsy</li>
                             <li>Balance and Coordination Training</li>
 
+                            <div class="btn_wrapper ">
+                                <a href="/physiotheraphy/neuro-physiotherapy"
+                                    class="item-link women-health-link">Read More <i
+                                        class="fa fa-arrow-right"></i></a>
 
+                            </div>
 
                         </div>
                     </div>
@@ -221,7 +231,12 @@
                             <li> Bursitis</li>
                             <li> Wrist Fracture</li>
 
+                            <div class="btn_wrapper ">
+                                <a href="/services/physiotheraphy/sport-physiotherapy"
+                                    class="item-link women-health-link">Read More <i
+                                        class="fa fa-arrow-right"></i></a>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,7 +252,12 @@
                             <li>Pain Management</li>
                             <li>Restore Mobility</li>
                             <li>Prevention Of Bed Rest</li>
+                            <div class="btn_wrapper ">
+                                <a href="/services/physiotheraphy/geriatric-physiotherapy"
+                                    class="item-link women-health-link">Read More <i
+                                        class="fa fa-arrow-right"></i></a>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,7 +271,12 @@
                             </li>
                             <li>Torticolis
                             </li>
+                            <div class="btn_wrapper ">
+                                <a href="/services/physiotheraphy/pediatric-physiotherapy"
+                                    class="item-link women-health-link">Read More <i
+                                        class="fa fa-arrow-right"></i></a>
 
+                            </div>  
                         </div>
                     </div>
                 </div>

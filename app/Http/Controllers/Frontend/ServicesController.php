@@ -163,5 +163,59 @@ class ServicesController extends Controller
       return view('frontend.services.physiotheraphy.pediatric-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
   
+    } 
+    public function corporate()
+    {
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.yoga.corporate-yoga', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+  
     }
+    public function pregnancy()
+    {
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.yoga.pregnancy-yoga', compact('services', 'settings', 'galleryImages','meta_page_type'));
+
+  
+    } 
+    public function medical()
+    {
+        $meta_page_type = 'yoga';
+        $galleries = Gallery::where('category','yoga')->first();
+        $galleryImages = $galleries->featured_image;
+        $services = Service::all();
+        $settings = Setting::all();
+      return view('frontend.services.yoga.medical-yoga', compact('services', 'settings', 'galleryImages','meta_page_type'));
+    }
+   
+      public function pilates()
+      {
+          $meta_page_type = 'yoga';
+          $galleries = Gallery::where('category','yoga')->first();
+          $galleryImages = $galleries->featured_image;
+          $services = Service::all();
+          $settings = Setting::all();
+        return view('frontend.services.yoga.general-yoga-and-pilates', compact('services', 'settings', 'galleryImages','meta_page_type'));
+  
+    
+      }
+      public function aerial()
+      {
+          $meta_page_type = 'yoga';
+          $galleries = Gallery::where('category','yoga')->first();
+          $galleryImages = $galleries->featured_image;
+          $services = Service::all();
+          $settings = Setting::all();
+        return view('frontend.services.yoga.aerial-yoga', compact('services', 'settings', 'galleryImages','meta_page_type'));
+  
+    
+      }
 }

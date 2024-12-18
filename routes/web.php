@@ -73,6 +73,18 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/physiotheraphy/geriatric-physiotherapy', 'ServicesController@geriatric')->name('services.physiotheraphy.geriatric-physiotherapy');
     Route::get('services/physiotheraphy/pediatric-physiotherapy', 'ServicesController@pediatric')->name('services.physiotheraphy.pediatric-physiotherapy');
 
+
+    // yoga    
+    Route::get('services/yoga/corporate-yoga', 'ServicesController@corporate')->name('services.yoga.corporate-yoga');
+    Route::get('services/yoga/pregnancy-yoga', 'ServicesController@pregnancy')->name('services.yoga.pregnancy-yoga');
+    Route::get('services/yoga/medical-yoga', 'ServicesController@medical')->name('services.yoga.medical-yoga');
+    Route::get('services/yoga/general-yoga-and-pilates', 'ServicesController@pilates')->name('services.yoga.general-yoga-and-pilates');
+    Route::get('services/yoga/aerial-yoga', 'ServicesController@aerial')->name('services.yoga.aerial-yoga');
+
+
+
+
+
     Route::post('comments', 'CommentController@store')->name('comments');
     Route::get('comments/{id}', 'CommentController@index');
    

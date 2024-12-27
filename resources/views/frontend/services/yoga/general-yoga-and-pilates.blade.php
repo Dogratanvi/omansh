@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section geriatric-banner women-service-text">
+    <div class="sub-banner-section general-yoga-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -60,7 +60,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-ghaziabad.webp') }}"
+                                src="{{ asset('img/services/yoga/General-yoga.webp') }}"
                                 alt="Care-essential" class="img-fluid">
                         </figure>
                     </div>
@@ -132,7 +132,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy.webp') }}"
+                                src="{{ asset('img/services/yoga/General-yoga-and-pilates.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 
@@ -163,7 +163,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Arthritis.webp') }}" alt="Prenatal-support">
+                        <img src="{{ asset('img/services/yoga/General-yoga-for-beginner.webp') }}" alt="/General-yoga-for-beginner">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Beginners:
                             </h3>
@@ -177,8 +177,8 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-improves-balance.webp') }}"
-                            alt="Nutritional-guidance">
+                        <img src="{{ asset('img/services/yoga/General-yoga-for-active-individuals.webp') }}"
+                            alt="General-yoga-for-active-individuals">
                         <div class="card-content">
 
                             <h3 class="fs-4 lh-sm"> Active Individuals:</h3>
@@ -194,8 +194,8 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-sports.webp') }}"
-                            alt="Nutritional-guidance">
+                        <img src="{{ asset('img/services/yoga/Generalyogasupport-mental-health.webp') }}"
+                            alt="Support for Mental Health">
                         <div class="card-content">
 
                             <h3 class="fs-4 lh-sm">Support for Mental Health:</h3>
@@ -209,8 +209,8 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-sports.webp') }}"
-                            alt="Nutritional-guidance">
+                        <img src="{{ asset('img/services/yoga/General-yoga-for-stress-relief-seekers.webp') }}"
+                            alt="Stress Relief Seekers">
                         <div class="card-content">
 
                             <h3 class="fs-4 lh-sm">Stress Relief Seekers: </h3>
@@ -224,7 +224,7 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-sports.webp') }}"
+                        <img src="{{ asset('img/services/yoga/General-yoga-for-postural-issues.webp') }}"
                             alt="Nutritional-guidance">
                         <div class="card-content">
 
@@ -310,7 +310,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy.webp') }}"
+                                src="{{ asset('img/services/yoga/Why-choose-general-yoga-and-pilates.webp') }}"
                                 alt="Common Conditions Treated" class="img-fluid">
                         </figure>
 

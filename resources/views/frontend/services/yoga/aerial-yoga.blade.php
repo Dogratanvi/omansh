@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-    <div class="sub-banner-section geriatric-banner women-service-text">
+    <div class="sub-banner-section aerial-banner women-service-text">
         <div class="image-overlay">
             <!-- SUB BANNER SECTION -->
             <section class="banner-section">
@@ -60,8 +60,8 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-in-ghaziabad.webp') }}"
-                                alt="Care-essential" class="img-fluid">
+                                src="{{ asset('img/services/yoga/Aerial-yoga.webp') }}"
+                                alt="Aerial-yoga" class="img-fluid">
                         </figure>
                     </div>
                     <figure class="aboutus_top_shape left_shape mb-0">
@@ -144,8 +144,8 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy.webp') }}"
-                                alt="Common Conditions Treated" class="img-fluid">
+                                src="{{ asset('img/services/yoga/Benefits-of-aerial-yoga.webp') }}"
+                                alt="Benefits-of-aerial-yoga" class="img-fluid">
                         </figure>
 
                     </div>
@@ -173,7 +173,7 @@
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
                     <div class="card health-card border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Arthritis.webp') }}" alt="Prenatal-support">
+                        <img src="{{ asset('img/services/yoga/Aerial-yoga-for-beginner.webp') }}" alt="PAerial-yoga-for-beginner">
                         <div class="card-content">
                             <h3 class="fs-4 lh-sm"> Beginner-Friendly Poses:
                             </h3>
@@ -188,8 +188,8 @@
                 </div>
                 <div class="col-md-4 mt-4">
                     <div class="card health-card  border-0">
-                        <img src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy-improves-balance.webp') }}"
-                            alt="Nutritional-guidance">
+                        <img src="{{ asset('img/services/yoga/Aerial-yoga-advanced-pose.webp') }}"
+                            alt="Aerial-yoga-advanced-pose">
                         <div class="card-content">
 
                             <h3 class="fs-4 lh-sm"> Advanced Pose:</h3>
@@ -277,8 +277,8 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy.webp') }}"
-                                alt="Common Conditions Treated" class="img-fluid">
+                                src="{{ asset('img/services/yoga/Tips-for-aerial-yoga.webp') }}"
+                                alt="Tips-for-aerial-yoga" class="img-fluid">
                         </figure>
 
                     </div>
@@ -303,8 +303,8 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center">
                     <div class="servicepage_aboutus_image">
                         <figure class="mb-0"><img
-                                src="{{ asset('img/services/physoitheraphy/Geriatric-physiotherapy.webp') }}"
-                                alt="Common Conditions Treated" class="img-fluid">
+                                src="{{ asset('img/services/yoga/Improve-fitness-with-aerial-yoga.webp') }}"
+                                alt="Improve-fitness-with-aerial-yoga" class="img-fluid">
                         </figure>
 
                     </div>

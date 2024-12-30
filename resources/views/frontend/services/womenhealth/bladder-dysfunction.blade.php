@@ -57,7 +57,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
 
-                        <p class="" data-aos=" fade-right">Urinary incontinence, or bladder dysfunction, is common and
+                        <p class="" data-aos=" fade-right"> <a href="/blog/13/what-is-urinary-incontinence-types-causes-and-symptoms"> Urinary incontinence,</a> or bladder dysfunction, is common and
                             can impact daily life. Due to stigma and embarrassment, it is rarely mentioned despite its
                             prevalence. If the bladder can't contain urine, it leaks unintentionally. It can affect men and
                             women at any age, but older folks are more susceptible.

@@ -1039,6 +1039,19 @@
   .blog-posts {
     padding: 100px 0 75px;
   }
+  .sub-banner-section .banner-section {
+    padding: 50px 0 60px;
+    margin-top: 134px;
+    height: 100%;
+  }
+  .sub-banner-section .banner-section .container{
+    height: 100%;
+  }
+  .sub-banner-section .banner-section .container .row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1161,9 +1174,7 @@
   .banner-section-outer .banner-section {
     padding: 200px 30px 70px;
   }
-  .banner-section-outer .banner-section .banner-section-content {
-    padding-top: 100px;
-  }
+ 
   .banner-section-outer .banner-section .banner-section-image figure {
     position: absolute;
     top: 95px;
@@ -2026,6 +2037,19 @@ h1{
 .sub-banner-section.women-banner.women-service-text {
   margin-top: 121px;
 }
+.sub-banner-section .banner-section {
+  padding: 50px 0 60px;
+  margin-top: 131px;
+  height: 100%;
+}
+.sub-banner-section .banner-section .container{
+  height: 100%;
+}
+.sub-banner-section .banner-section .container .row{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -2569,6 +2593,16 @@ h1{
 
   .sub-banner-section .banner-section {
     padding: 50px 0 60px;
+    margin-top: 131px;
+    height: 100%;
+  }
+  .sub-banner-section .banner-section .container{
+    height: 100%;
+  }
+  .sub-banner-section .banner-section .container .row{
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   .sub-banner-section.women-banner.women-service-text .banner-section {
     padding: 50px 0 60px;
@@ -3572,9 +3606,6 @@ figure.video_img {
   }
   .achievement_section {
     padding: 55px 0 60px;
-  }
-  .banner-section-content {
-    padding-top: 53%;
   }
   .sub-banner-section.women-banner.women-service-text .banner-section-content{
     padding-top: 2%;

@@ -122,7 +122,12 @@
                         <li>Muscle Strengthening</li>
                         <li>Ergonomics</li>
 
+                        <div class="btn_wrapper ">
+                            <a href="/services/yoga/corporate-yoga"
+                                class="item-link women-health-link">Read More <i
+                                    class="fa fa-arrow-right"></i></a>
 
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -136,7 +141,12 @@
                         <li>During Pregnancy Session</li>
                         <li>Post Pregnancy Session</li>
 
+                        <div class="btn_wrapper ">
+                            <a href="/services/yoga/pregnancy-yoga"
+                                class="item-link women-health-link">Read More <i
+                                    class="fa fa-arrow-right"></i></a>
 
+                        </div> 
 
                     </div>
                 </div>
@@ -152,7 +162,12 @@
                         <li>Thyroid</li>
                         <li>Weight Loss</li>
                         <li> Disease Specific</li>
+                        <div class="btn_wrapper ">
+                            <a href="/services/yoga/medical-yoga"
+                                class="item-link women-health-link">Read More <i
+                                    class="fa fa-arrow-right"></i></a>
 
+                        </div> 
                         </ul>
                     </div>
                 </div>
@@ -166,7 +181,12 @@
                         <li>Ergonomics</li>
                         <li>Face Yoga</li>
                         <li>Posture Analysis</li>
+                        <div class="btn_wrapper ">
+                            <a href="/services/yoga/general-yoga-and-pilates"
+                                class="item-link women-health-link">Read More <i
+                                    class="fa fa-arrow-right"></i></a>
 
+                        </div> 
                         </ul>
                     </div>
                 </div>
@@ -183,6 +203,12 @@
                         <li>Mind-Body Connection</li>
                         <li>Fun and Creativity</li>
                         </ul>
+                        <div class="btn_wrapper ">
+                            <a href="/services/yoga/aerial-yoga"
+                                class="item-link women-health-link">Read More <i
+                                    class="fa fa-arrow-right"></i></a>
+
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -196,92 +222,13 @@
     </div>
 </section>
 
-<section class="women-health">
-    <div class="container">
-        <h2 class="text-center"> Types of Yoga</h2>
-        <p class="text-center">Explore the diverse world of yoga, where each style offers a unique path to balance,
-            strength, and inner peace.</p>
-
-        <div class="row pt-sm-0 pt-lg-2 pt-0 pt-xl-2 pt-md-2 pt-xs-0">
-            <div class="col-md-4 mt-4">
-                <div class="card health-card border-0">
-                    <img src="{{ asset('img/services/yoga/corporate-yoga.png') }}" alt="corporate-yoga">
-                    <div class="card-content">
-                        <h4>Corporate Yoga</h4>
-
-                        <li>Stress Management </li>
-                        <li>Meditation</li>
-                        <li>Chair Yoga</li>
-                        <li>Posture Analysis</li>
-                        <li>Muscle Strengthening</li>
-                        <li>Ergonomics</li>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4">
-                <div class="card health-card  border-0">
-                    <img src="{{ asset('img/services/yoga/pregnency-yoga.png') }}" alt="pregnency-yoga">
-                    <div class="card-content">
-                        <h4>Pregnancy Yoga</h4>
-
-                        <li>Pre Pregnancy Sessions </li>
-                        <li>During Pregnancy Session</li>
-                        <li>Post Pregnancy Session</li>
-
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4">
-                <div class="card health-card  border-0">
-                    <img src="{{ asset('img/services/yoga/medical-yoga.png') }}" alt="medical-yoga">
-                    <div class="card-content">
-                        <h4>Medical Yoga</h4>
-
-                        <li>Hormonal Imbalance</li>
-                        <li>Infertility </li>
-                        <li>Thyroid</li>
-                        <li>Weight Loss</li>
-                        <li> Disease Specific</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4">
-                <div class="card health-card  border-0">
-                    <img src="{{ asset('img/services/yoga/general-yoga.png') }}" alt="general-yoga">
-                    <div class="card-content">
-                        <h4>General Yoga & Pilates</h4>
-                        <li>Body Toning </li>
-                        <li>Ergonomics</li>
-                        <li>Face Yoga</li>
-                        <li>Posture Analysis</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="d-flex justify-content-center mt-lg-5 mt-xl-5 mt-md-4 mt-sm-3 mt-xs-3 mt-3 mt-xxl-5">
-
-            @include("frontend.bookingform")
-
-        </div>
-    </div>
-</section>
 <!-- aerial yoga -->
 <section class="aerial-yoga pt-0 aboutpage_aboutus_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="servicepage_aboutus_image">
-                    <figure class="mb-0"><img src="{{ asset('public/img/services/aerial-yoga.png') }}"
+                    <figure class="mb-0"><img src="{{ asset('img/services/aerial-yoga.png') }}"
                             alt="service_women_health.png" class="img-fluid">
                     </figure>
 

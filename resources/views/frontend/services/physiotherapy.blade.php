@@ -178,7 +178,7 @@
                             </li>
 
                             <div class="btn_wrapper ">
-                                <a href="/services/physiotheraphy/orthopedic-physiotheraphy"
+                                <a href="/services/orthopedic-physiotheraphy"
                                     class="item-link women-health-link">Read More <i
                                         class="fa fa-arrow-right"></i></a>
 
@@ -202,7 +202,7 @@
                             <li>Balance and Coordination Training</li>
 
                             <div class="btn_wrapper ">
-                                <a href="/physiotheraphy/neuro-physiotherapy"
+                                <a href="/services/neuro-physiotherapy"
                                     class="item-link women-health-link">Read More <i
                                         class="fa fa-arrow-right"></i></a>
 
@@ -232,7 +232,7 @@
                             <li> Wrist Fracture</li>
 
                             <div class="btn_wrapper ">
-                                <a href="/services/physiotheraphy/sport-physiotherapy"
+                                <a href="/services/sport-physiotherapy"
                                     class="item-link women-health-link">Read More <i
                                         class="fa fa-arrow-right"></i></a>
 
@@ -253,7 +253,7 @@
                             <li>Restore Mobility</li>
                             <li>Prevention Of Bed Rest</li>
                             <div class="btn_wrapper ">
-                                <a href="/services/physiotheraphy/geriatric-physiotherapy"
+                                <a href="/services/geriatric-physiotherapy"
                                     class="item-link women-health-link">Read More <i
                                         class="fa fa-arrow-right"></i></a>
 
@@ -272,7 +272,7 @@
                             <li>Torticolis
                             </li>
                             <div class="btn_wrapper ">
-                                <a href="/services/physiotheraphy/pediatric-physiotherapy"
+                                <a href="/services/pediatric-physiotherapy"
                                     class="item-link women-health-link">Read More <i
                                         class="fa fa-arrow-right"></i></a>
 

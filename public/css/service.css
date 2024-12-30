@@ -31,3 +31,23 @@
 .pediatric-banner{
     background-image: url(../img/services/physoitheraphy/Pediatric-physiotherapy-banner.webp); 
 }
+/* yoga service banner */
+.sports-banner{
+    background-image: url(../img/services/physoitheraphy/Sports-physiotherapy-banner.webp); 
+}
+.corporate-banner{
+    background-image: url(../img/services/yoga/Corporate-yoga-banner.webp); 
+
+}
+.pregnancy-banner{
+    background-image: url(../img/services/yoga/Pregnancy-yoga-banner.webp); 
+}
+.medical-banner{
+    background-image: url(../img/services/yoga/Medical-yoga-banner.webp); 
+}
+.general-yoga-banner{
+    background-image: url(../img/services/yoga/General-yoga-and-pilates-banner.webp);
+}
+.aerial-banner{
+    background-image: url(../img/services/yoga/Aerialyoga-banner.webp);
+}

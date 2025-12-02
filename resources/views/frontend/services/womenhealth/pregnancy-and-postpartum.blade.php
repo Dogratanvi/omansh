@@ -1,4 +1,7 @@
 @extends('frontend.layouts.app')
+@php
+$meta_page_type='pregnancyPostpartum';
+@endphp
 
 @section('content')
     <div class="sub-banner-section postpartum-banner women-service-text">
@@ -9,6 +12,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
+                                 <div>
                                 <h1 data-aos="fade-up">Pregnancy and Postpartum</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -27,7 +31,7 @@
                                     class="sub_span"><a>Pregnancy & Postpartum
 
                                     </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -69,14 +73,18 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
                     <div class="service_page_aboutus_content">
 
-                        <h2>Why Pregnancy & Postpartum Care isEssential</h2>
-                        <p class="margin_bottom">Mothers' bodies, minds, and health change during pregnancy and childbirth.
+                        <h2>Why Pregnancy & Postpartum Care is Essential</h2>
+                        <p class="margin_bottom">Mothers' bodies, minds, and health change during pregnancy and <a href="https://omansh.org/blog/9/healthy-natural-childbirth-10-simple-strategies-and-tips" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">childbirth</a>.
                             Back pain and swelling are common throughout pregnancy. Hormonal changes, anticipation, and life
                             changes associated with parenthood can also cause emotional effects. Getting ready for
                             childbirth and promoting a healthy recovery can help new mothers. Specialist care handles these
                             distinct issues, from physical discomfort to mental changes, making the experience smoother and
                             healthier.
                         </p>
+                        <div class="btn_wrapper mt-3">
+                                <a target="_blank" href="https://omansh.org/document/Omansh_C_Section_Recovery_Plan.pdf"
+                                    class="text-decoration-none get_started_btn">1-Week C-Section Recovery Plan</a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -162,8 +170,8 @@
             <h2 class="text-center">Postpartum Care Services</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <p class="margin_bottom text-center">Recovery and adaptability occur after childbirth. <b>Postpartum
-                            care service</b> in
+                    <p class="margin_bottom text-center">Recovery and adaptability occur after childbirth. <a href="https://omansh.org/blog/8/top-postpartum-mistakes-to-avoid-essential-tips-for-a-healthy-recovery" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer"><b>Postpartum
+                            care service</b></a> in
                         Omansh helps new mothers recover, manage physical changes, and feel better.</b>
                 </div>
             </div>
@@ -177,7 +185,7 @@
 
 
                             <ul>
-                                <li><b>Pelvic Floor Rehabilitation:</b> These exercises strengthen and stabilize the pelvic
+                                <li><a href="https://omansh.org/blog/14/pelvic-floor-rehabilitation" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer"><b>Pelvic Floor Rehabilitation:</b></a> These exercises strengthen and stabilize the pelvic
                                     floor muscles after pregnancy and childbirth.
                                 </li>
                                 <li> <b> Core Strengthening:</b> For women to rebuild strength without harm, core
@@ -218,7 +226,7 @@
                             <h3 class="fs-4 lh-sm"> Supporting Lactation </h3>
 
                             <ul>
-                                <li>New mothers may struggle with breastfeeding. Omansh provides lactation support to help
+                                <li>New mothers may struggle with <a href="https://omansh.org/blog/4/top-10-breastfeeding-mistakes-new-mothers-should-avoid" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">breastfeeding</a>. Omansh provides lactation support to help
                                     mothers feel confident and comfortable breastfeeding.
 
                                 </li>
@@ -290,7 +298,7 @@
                     <div class="service_page_aboutus_content">
 
                         <h2>Personalized Care Plans</h2>
-                        <p class="margin_bottom">Omansh knows every mother's path is different. The team customizes care plans for each client based on her needs, goals, and preferences. Omansh empowers moms during pregnancy and postpartum recovery by addressing physical, mental, and emotional wellness holistically.
+                        <p class="margin_bottom">Omansh knows every mother's path is different. The team customizes care plans for each client based on her needs, goals, and preferences. Omansh empowers moms during <a href="https://omansh.org/blog/3/exercise-and-physical-activity-for-pregnant-women-enhancing-health-and-well-being" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">pregnancy</a> and postpartum recovery by addressing physical, mental, and emotional wellness holistically.
                         </b>
 
                     </div>
@@ -379,4 +387,65 @@
             </div>
         </div>
     </section>
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "When should I begin prenatal care?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Prenatal care should start as soon as possible, usually following confirmation, to ensure constant support and monitoring throughout each trimester."
+    }
+  },{
+    "@type": "Question",
+    "name": "How soon may I start postpartum care?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Postpartum care often starts from days after childbirth, and commonly begins with gentle rehabilitation activities within days. Should always consult your doctor for personalized advice."
+    }
+  },{
+    "@type": "Question",
+    "name": "What to expect throughout a session?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For safe and effective treatment, sessions include examinations, personalized advice, and exercises customized to your pregnancy or postpartum recovery."
+    }
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://omansh.org/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Services",
+    "item": "https://omansh.org/services"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Women Health",
+    "item": "https://omansh.org/services/womenhealth"
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Pregnancy and Postpartum",
+    "item": "https://omansh.org/services/womenhealth/pregnancy-and-postpartum"
+  }]
+}
+</script>
 @endsection

@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-
+@php
+$meta_page_type='bowel';
+@endphp
 @section('content')
     <div class="sub-banner-section female-banner women-service-text">
         <div class="image-overlay">
@@ -9,10 +11,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Female Bowel Issues and Prolapse</h1>
+                                 <div>
+                                <h1 >Female Bowel Issues and Prolapse</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        {{-- <p data-aos="fade-right">Guided exercise programs and Pilates improve health,
+                                        {{-- <p >Guided exercise programs and Pilates improve health,
                                             discomfort, and flexibility, according to Omansh. We use these successful
                                             movement therapies to create customized wellness programs to assist people reach
                                             their health goals. Omansh helps individuals at any fitness level improve their
@@ -30,7 +33,7 @@
                                         class="sub_span pe-2"><a href="/services/womenhealth">Women Health</a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Female Bowel Issues and Prolapse
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -60,23 +63,23 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
-                        <p class="" data-aos=" fade-right">Female bowel issues and prolapse, including enterocele
+                        <p class="" >Female <a href="" href="https://omansh.org/blog/18/inflammatory-bowel-disease-ibd" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">bowel issues</a> and prolapse, including enterocele
                             prolapse, involve
                             pelvic organ (Enterocele prolapse) descent and can cause discomfort and functional challenges.
                             Enterocele, or small bowel prolapse, occurs when the small intestine slips into the pelvis,
                             bulging the vaginal area. Women who have had children and postmenopausal women may have bowel
                             difficulties and prolapse. However, with the right female prolapsed bowel treatment and
                             prolapsed bowel exercises, women can manage symptoms and regain comfort and functionality.
-                        <p class="" data-aos="fade-right">
-                            Explore our related services for Women’s Health by learning about interconnected pelvic
+                        <p class="" >
+                            Explore our related services for <a href="https://omansh.org/services/womenhealth" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">Women’s Health</a> by learning about interconnected pelvic
                             conditions here.
 
                         </p>
                         <h2 class="pt-3">Female Prolapsed Bowel (Enterocele) Symptoms</h2>
-                        <p class="" data-aos="fade-right">
+                        <p class="" >
                             Female prolapsed bowel symptoms often vary, but the most common signs of enterocele prolapse
                             include:
 
@@ -98,7 +101,7 @@
                             </li>
 
                         </ul>
-                        <p class="" data-aos="fade-right">
+                        <p class="" >
                             Other forms of prolapse, such as the prolapse of the uterus or bladder, may result in additional
                             discomfort. Female prolapsed bowel (enterocele) symptoms often overlap with other pelvic organ
                             prolapse conditions. For more information on how we address pelvic health comprehensively,
@@ -134,7 +137,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">
@@ -142,7 +145,7 @@
 
 
                             </h2>
-                            <p class="" data-aos="fade-right">Effective female prolapsed bowel treatments include
+                            <p class="" >Effective female prolapsed bowel treatments include
                                 lifestyle changes, exercises, and therapy:
 
                             </p>
@@ -176,7 +179,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">Prolapsed Bowel (Enterocele) Exercises
@@ -351,4 +354,73 @@
             </div>
         </div>
     </section>
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://omansh.org/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Services",
+    "item": "https://omansh.org/services"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Women Health",
+    "item": "https://omansh.org/services/womenhealth"
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Bowel Issues and Prolapse",
+    "item": "https://omansh.org/services/womenhealth/bowel-issues-and-prolapse"
+  }]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Is bladder dysfunction curable?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, bladder dysfunction can be treated or cured with exercises, drugs, or surgery."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are Bladder problems signs?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Frequent, painful, bloody, and difficult bladder emptying are symptoms."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I detect bladder weakness?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A weak bladder causes pee leaks during activities and a feeling of being full."
+    }
+  },{
+    "@type": "Question",
+    "name": "How to check bladder health?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Check for pain, frequent urination, and trouble emptying. See a doctor if problems emerge.
+Some bladder dysfunction types include vaginal childbirth, aging, weight increase, pelvic organ prolapse, chronic constipation, and others. Consult a specialist if you have these Bladder Dysfunction symptoms."
+    }
+  }]
+}
+</script>
 @endsection

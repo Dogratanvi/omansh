@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Pediatric Physiotherapy</h1>
+                                 <div>
+                                <h1 >Pediatric Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Pediatric physiotherapy is a specialized branch of
+                                        <p >Pediatric physiotherapy is a specialized branch of
                                             physiotherapy designed to address the unique physical and developmental needs of
                                             children. At Omansh, we provide expert pediatric physiotherapy services in
                                             Ghaziabad, helping children recover from injuries, manage chronic conditions,
@@ -29,7 +30,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Pediatric Physiotherapy
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -73,7 +74,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Pediatric Physiotherapy in Ghaziabad
                         </h2>
@@ -103,7 +104,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Conditions Treated with Pediatric Physiotherapy in Ghaziabad</h2>
@@ -118,7 +119,7 @@
                             </li>
                             <li><b>Torticollis: </b>Relieving neck stiffness and promoting proper posture. </li>
                             <li><b>Scoliosis: </b>Managing spinal curvature and improving posture. </li>
-                            <li><b>Post-Surgical Recovery: </b>Rehabilitation after orthopedic surgeries.</li>
+                            <li><b>Post-Surgical Recovery: </b>Rehabilitation after <a href="https://omansh.org/services/orthopedic-physiotheraphy" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">orthopedic</a> surgeries.</li>
                             <li><b>Sports Injuries: </b>Treating injuries sustained during physical activities.
                             </li>
                             <li><b>Flat Feet and Hypermobility: </b>Strengthening joints and improving foot posture.</li>
@@ -261,7 +262,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Tailored Treatment Plans for Children in Ghaziabad
                         </h2>
@@ -316,7 +317,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Benefits of Pediatric Physiotherapy in Ghaziabad</h2>
@@ -346,7 +347,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Why Choose Our Pediatric Physiotherapy Services in Ghaziabad?</h2>
@@ -466,5 +467,10 @@
         </div>
     </section>
 
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

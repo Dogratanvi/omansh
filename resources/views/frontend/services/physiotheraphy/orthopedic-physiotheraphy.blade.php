@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-
+@php
+$meta_page_type='orthopedic';
+@endphp
 @section('content')
     <div class="sub-banner-section orthopedic-banner women-service-text">
         <div class="image-overlay">
@@ -9,10 +11,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Orthopedic Physiotherapy</h1>
+                                 <div>
+                                <h1 >Orthopedic Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Orthopedic physiotherapy diagnoses manages, and treats
+                                        <p >Orthopedic physiotherapy diagnoses manages, and treats
                                             musculoskeletal disorders. It also helps with pain, movement, and recuperation
                                             after surgery and injuries. Omansh offers customized orthopedic physiotherapy in
                                             Ghaziabad. Discover how orthopedic physical treatments can enhance your life.
@@ -28,7 +31,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Orthopedic Physiotherapy
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -71,18 +74,18 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>What is Orthopedic Physiotherapy?</h2>
                         <p class="margin_bottom">Orthopedic physiotherapy treats bones, muscles, ligaments, tendons, and
                             joints. It can help with arthritis, fractures, and sports injuries.
                         </p>
-                        <h4> Benefits of Orthopaedic Physiotherapy:
+                        <h4> <a href="https://omansh.org/blog/10/benefits-of-orthopaedic-physical-therapy" style="color:#0a58ca;" target="_blank" rel="noopener noreferrer">Benefits of Orthopaedic Physiotherapy:</a>
                         </h4>
                         <p><b>There are different benefits of Orthopaedic Physiotherapy:</b>
                         </p>
                         <ul>
-                            <li>Orthopaedic physiotherapy reduces chronic pain and inflammation. </li>
+                            <li>Orthopaedic physiotherapy reduces <a href="https://omansh.org/blog/19/crohns-disease" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">chronic pain</a> and inflammation. </li>
                             <li>Aids surgery and injury healing.</li>
                             <li>Builds strength, mobility, and balance.</li>
                             <li>Fixing prevents damage.</li>
@@ -167,12 +170,12 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Conditions Treated by Orthopedic Physiotherapy</h2>
                         <p class="pt-2">Orthopedic physiotherapy treats several musculoskeletal issues. Common orthopedic
-                            physiotherapy conditions:
+                           <a href="https://omansh.org/services/physiotherapy" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">physiotherapy conditions:</a>
                         </p>
                         <ul>
                             <li>Arthritis: Reducing arthritis pain.</li>
@@ -215,7 +218,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Orthopedic Physical Therapy Services We Offer</h2>
@@ -244,7 +247,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Why Choose Us for Orthopedic Physiotherapy in Ghaziabad</h2>
@@ -366,4 +369,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

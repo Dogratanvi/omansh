@@ -7,12 +7,21 @@ use Illuminate\Http\Request;
 use App\Models\Webinar;
 use App\Models\Setting;
 use Exception;
-use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 use Razorpay\Api\Api;
-use Session;
+use Illuminate\Support\Facades\Log;
 
 class WebinarController extends Controller
 {
+    protected $razorpayKey;
+    protected $razorpaySecret;
+
+    public function __construct()
+    {
+        $this->razorpayKey = config('razorpay.key');
+        $this->razorpaySecret = config('razorpay.secret');
+    }
+
     public function index()
     {
         $settings = Setting::all();
@@ -21,91 +30,62 @@ class WebinarController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'whatsapp_number' => 'required|string|max:20',
-            'age' => 'required',
-            'emergency_contact_number' => 'required|string|max:20',
-            'pregnancy_information' => 'required|string',
-            'estimated_due_date' => 'required',
-            'current_trimester' => 'required|string',
-            'first_pregnancy' => 'required|string',
-            'previous_pregnancy' => 'nullable',
-            'experience_pregnancy_complications' => 'required|string',
-            'type_of_delivery' => 'required|string',
-            'medical_conditions' => 'required|string',
-            'primary_goal' => 'required|string',
-            'concerns_about_childbirth' => 'required',
-            'hear_about_us' => 'required',
-            'like_receive_updates' => 'required',
-
+            'age' => 'required|numeric|min:18|max:50',
+            'estimated_due_date' => 'required|date|after:today',
+            'current_trimester' => 'required|in:First Trimester,Second Trimester,Third Trimester',
+            'first_pregnancy' => 'required|in:Yes,No',
+            'previous_pregnancy' => 'nullable|string|max:500',
+            'experience_pregnancy_complications' => 'required|string|max:1000',
+            'primary_goal' => 'nullable|array',
+            'primary_goal.*' => 'in:Learning pain management techniques,Understanding labor stages,Preparing for natural birth,Partner involvement and support,Postpartum recovery,Other',
+            'concerns_about_childbirth' => 'required|string|max:1000',
+            'like_receive_updates' => 'required|in:Yes,No',
         ]);
 
-    $name = $request->name;
-    $whatsapp_number = $request->whatsapp_number;
-    $email = $request->email;
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
 
-    $api = new Api('rzp_live_cKTuo7fj9oQFjL', '6SUWepgqpDUQRU0HxXx5OoJH');
+        $api = new Api($this->razorpayKey, $this->razorpaySecret);
 
-    $totalAmount = 199;
+        try {
+            $order = $api->order->create([
+                'amount' => 49900,  // 199 rupees
+                'currency' => 'INR',
+                'receipt' => 'order_' . uniqid(),
+                'payment_capture' => 1
+            ]);
 
-    $order = $api->order->create([
-        'amount' => $totalAmount,
-        'currency' => 'INR',
-        'receipt' => 'order_' . time(),
-        'payment_capture' => 1 // Auto capture
+            $validated = $validator->validated();
+       $validated['primary_goal'] = json_encode($request->input('primary_goal', []));
+      
+           $webinar = Webinar::create(array_merge($validated, [
+    'order_id' => $order['id'],
+    'amount' => 499,
+    'currency' => 'INR',
+    'status' => 'pending'
+]));
 
-    ]);
-
-
-    try {
-
-        // Store the user details and order information in your database
-        Webinar::create([
-            'name' => $validated['name'],
-            'email' => $validated['email'],
-            'whatsapp_number' => $validated['whatsapp_number'],
-            'order_id' => $order['id'],
-            'currency' => 'INR',
-            'age' =>  $validated['age'],
-            'emergency_contact_number' => $validated['emergency_contact_number'],
-            'pregnancy_information' => $validated['pregnancy_information'],
-            'estimated_due_date' => $validated['estimated_due_date'],
-            'current_trimester' => $validated['current_trimester'],
-            'first_pregnancy' => $validated['first_pregnancy'],
-            'previous_pregnancy' => $validated['previous_pregnancy'],
-            'experience_pregnancy_complications' => $validated['experience_pregnancy_complications'],
-            'type_of_delivery' => $validated['type_of_delivery'],
-            'medical_conditions' => $validated['medical_conditions'],
-            'primary_goal' => $validated['primary_goal'],
-            'concerns_about_childbirth' => $validated['concerns_about_childbirth'],
-            'hear_about_us' => $validated['hear_about_us'],
-            'like_receive_updates' => $validated['like_receive_updates'],
-            'status' => 'pending'
-        ]);
-            //
             return response()->json([
                 'order_id' => $order['id'],
-                'razorpay_key' => 'rzp_live_cKTuo7fj9oQFjL',
-                'amount' => 19900
+                'razorpay_key' => $this->razorpayKey,
+                'amount' => 49900
             ]);
         } catch (Exception $e) {
-            return $e->getMessage();
-            Session::put('error', $e->getMessage());
-            return redirect()->back();
+            Log::error('Webinar Registration Error: ' . $e->getMessage());
+            return response()->json(['error' =>  $e->getMessage()], 500);
         }
     }
 
-
     public function verify(Request $request)
     {
-
-
-        $api = new Api(config('razorpay.key'), config('razorpay.secret'));
+        $api = new Api($this->razorpayKey, $this->razorpaySecret);
 
         try {
-
             $attributes = [
                 'razorpay_order_id' => $request->razorpay_order_id,
                 'razorpay_payment_id' => $request->razorpay_payment_id,
@@ -114,25 +94,21 @@ class WebinarController extends Controller
 
             $api->utility->verifyPaymentSignature($attributes);
 
-            // Payment successful, update the database
             $registration = Webinar::where('order_id', $request->razorpay_order_id)->first();
-            if ($registration) {
-                $registration->status = 'paid';
-                $registration->r_payment_id = $request->razorpay_payment_id;
-                $registration->save();
+            
+            if (!$registration) {
+                return response()->json(['success' => false, 'message' => 'Registration not found'], 404);
             }
 
-            $name = $registration->name;
-            $email = $registration->email;
-            $order = $registration->order_id;
-            $payment = $registration->r_payment_id;
-
+            $registration->update([
+                'status' => 'paid',
+                'r_payment_id' => $request->razorpay_payment_id
+            ]);
 
             return response()->json(['success' => true]);
-        } catch (\Exception $e) {
-            // Payment failed
-            return response()->json(['success' => false]);
+        } catch (Exception $e) {
+            Log::error('Payment Verification Error: ' . $e->getMessage());
+            return response()->json(['success' => false, 'message' => 'Payment verification failed'], 400);
         }
     }
-
 }

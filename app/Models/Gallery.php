@@ -75,6 +75,7 @@ class Gallery extends Model
                             'yoga' => 'Yoga',
                             'corporate-training' => 'Corporate Training',
                             'yoga-training' => 'Yoga Training',
+                            'gallery' => 'Gallery'
                         ])
                         ->required(),
                     TextInput::make('order')

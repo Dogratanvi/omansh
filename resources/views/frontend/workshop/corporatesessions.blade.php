@@ -1,5 +1,7 @@
 @extends('frontend.layouts.app')
-
+@php
+$meta_page_type="corporateTraining";
+@endphp
 @section('content')
 
 
@@ -11,6 +13,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
+                             <div>
                             <h1 data-aos="fade-up">Corporate Sessions</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -24,7 +27,7 @@
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
                                     Corporate Sessions</span>
-                            </div>
+                            </div> </div>
                         </div>
                     </div>
                 </div>
@@ -44,6 +47,8 @@
     </div>
     </section>
 </div>
+
+
 <!-- ABOUT US SECTION -->
 <section class="aboutpage_aboutus_section">
     <div class="container">
@@ -81,6 +86,153 @@
     </div>
 </section>
 
+<!-- MESSAGE SECTION -->
+<section class="message_section contact ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up">
+                <div class="message_content">
+                    <h5>Get in Touch.</h5>
+                    <h2>Send us a Message</h2>
+                    <p>Your health is our priority. Don't hesitate to contact us.</p>
+
+                    @if(session('message'))
+                    <div class="alert-message alert-{{ session('status') }} alert-dismissible fade show mb-3  mt-3 d-flex"
+                        role="alert">
+                        <strong>{{ session('message') }}</strong>
+                        <button type="button" class="btn-close-contact border-0" data-bs-dismiss="alert"><i
+                                class="fas fa-times"></i></button>
+                    </div>
+                    @endif
+                    <form id="contactPage" name="contactpage" method="POST" action="{{ url('contact') }}"
+                        enctype="multipart/form-data">
+                        @csrf
+                        <div class="row">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="first_name" id="first_name"
+                                        class="@error('first_name') is-invalid @enderror form-control"
+                                        placeholder="First Name" required>
+                                    @error('first_name')
+                                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="last_name" id="last_name" class="form-control form_style"
+                                        placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 form-input-btn">
+                                <div class="form-group mb-0">
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="email" name="email" id="email"
+                                        class="@error('email') is-invalid @enderror form-control form_style"
+                                        placeholder="Email">
+                                    @error('email')
+                                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mb-0">
+
+                                    <select name="service" id="service" class="form-select" required>
+                                        <option selected disabled>Services</option>
+
+                                        <option value="women_health">Women Health</option>
+                                        <option value="physiotherapy">Physiotherapy</option>
+                                        <option value="yoga">Yoga</option>
+                                        <option value="yoga">Corporate Training</option>
+                                        <option value="yoga">Yoga Training</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class=" form-group mb-0">
+                                    <textarea rows="3" name="message" id="message" class="form-control"
+                                        placeholder="Message" required></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="g-token" id="recaptchaToken" required>
+                        <div class="g-recaptcha mt-4 mb-4" data-sitekey={{ config('services.recaptcha.key') }}></div>
+                        <span class="text-danger">{{ $errors->first('Click to verify') }}</span>
+
+                        <div class="btn_wrapper mb-3">
+                            <button type="submit" class="border-0" id="started">Submit</button>
+                        </div>
+                        <!-- <h6 style="mt-3 color:var(--primary-green);"><span class="text-danger mt-4 pb-4 mb-4">*</span>All the fields are required.</h6> -->
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right">
+                <div class="row pt-5" data-aos="fade-up">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box box_padding d-flex align-items-center">
+                            <div class="box_image_content">
+                                <figure class="mb-0">
+                                    <img src="{{ asset('images/contact_location.png') }}" alt="location" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="box_wrapper">
+                                <h3>Location</h3>
+                                <p class="mb-0 pt-2"> Shop NO- 290,<br> Basement Shop, 1, opposite Ramprastha Green Road, Sector 4, Vaishali, Ghaziabad, Uttar Pradesh 201010</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box d-flex align-items-center">
+                            <div class="box_image_content">
+                                <figure class="mb-0">
+                                    <img src="{{ asset('images/contact_phone.png ') }}" alt="contact-phone" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="box_wrapper">
+                                <h3>Phone</h3>
+                                <p class="pt-2"><a href="tel:+91 85270 45759" class="text-decoration-none">+91 85270
+                                        45759</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box mb-0 d-flex align-items-center">
+                            <div class="box_image_content">
+                                <figure class="mb-0">
+                                    <img src="{{ asset('images/contact_mail.png') }}" alt="email" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="box_wrapper">
+                                <h3>Email</h3>
+                                <p class="pt-2"><a href="mailto:garimabiswas09@gmail.com"
+                                        class="text-decoration-none">garimabiswas09@gmail.com</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- why it is important -->
 <section class="why-it-is-important py-4">
     <div class="container">
@@ -354,4 +506,65 @@
         </div>
     </div>
 </div>
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+<script async src="https://www.google.com/recaptcha/api.js"></script>
+{{-- @push ('after-scripts')
+    <script type="text/javascript">
+   
+    $('#contactpage').on('submit', function(e) {
+        e.preventDefault();
+        var email = $("#email").val();
+        var first_name = $("#first_name").val();
+        var last_name = $("#last_name").val();
+        var phone  = $("#phone").val();
+        var service = $("#service").val(); 
+        var message = $("#message").val(); 
+        var g-recaptcha-response = $('#recaptchaToken').val();
+        $.ajaxSetup({
+            headers: {'X-CSRF-TOKEN': $('input[name="_token"]').val()}
+        });
+     
+    $.ajax({
+     type: "POST",
+     url: "{{url('contact')}}",
+data: {
+'email': email,
+'first_name':first_name,
+"last_name":last_name,
+"phone":phone,
+"service":service,
+"message":message,
+"g-recaptcha-response":g-recaptcha-response
+},
+success: function()
+{
+console.log(data);
+$('.flash-message-mba').html("Contact Submit Successfully");
+$('.flash-message-mba').fadeOut(5000);
+setTimeout(() => {
+element.reset();
+}, 5500);
+},
+error:function(){
+console.log(data);
+$('.flash-message-mba').html("Contact Not Submit Successfully");
+$('.flash-message-mba').fadeOut(5000);
+setTimeout(() => {
+grecaptcha.reset();
+
+element.reset();
+}, 5500);
+}
+});
+
+
+});
+</script>
+@endpush --}}
+
 @endsection

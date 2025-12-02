@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Aerial Yoga</h1>
+                                 <div>
+                                <h1 >Aerial Yoga</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p class="pb-0" data-aos="fade-right">Yoga has always been about balance,
+                                        <p class="pb-0" >Yoga has always been about balance,
                                             strength, and mindfulness. Aerial yoga has actually uplifted this ancient
                                             practice. Aerial yoga combines yoga poses with hammocks or silks for a new
                                             fitness and relaxing experience.
@@ -28,7 +29,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>General Yoga & Pilates
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -72,7 +73,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>What is Aerial Yoga?
                         </h2>
@@ -93,7 +94,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Benefits of Aerial Yoga
@@ -220,7 +221,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>How to Get Started </h2>
                         <p class="pt-2">Aerial yoga is easy to start with proper training.
@@ -247,7 +248,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Precautions and Safety Tips</h2>
@@ -317,7 +318,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Improve Fitness with Aerial Yoga</h2>
@@ -438,4 +439,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

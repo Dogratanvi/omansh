@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Medical Yoga</h1>
+                                 <div>
+                                <h1 >Medical Yoga</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p class="pb-0" data-aos="fade-right">In today's fast-paced society, stress and
+                                        <p class="pb-0" >In today's fast-paced society, stress and
                                             chronic illness are frequent. Medical yoga, also known as therapeutic yoga,
                                             combines traditional yoga and modern medicine for holistic healing. This yoga is
                                             suited to a variety of health issues, from chronic pain to mental health.
@@ -33,7 +34,7 @@
                                         class="sub_span"><a>Medical Yoga
                                         </a></span>
                                 </div>
-                            </div>
+                            </div> </div>
                         </div>
                     </div>
                     <figure class="banner_left_top_shape left_shape mb-0">
@@ -76,7 +77,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Introduction to Medical Yoga
                         </h2>
@@ -99,7 +100,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Benefits of Medical Yoga in Ghaziabad</h2>
@@ -238,7 +239,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Why Choose Us for Medical Yoga in Ghaziabad?
                         </h2>
@@ -351,4 +352,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

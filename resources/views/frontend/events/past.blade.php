@@ -9,6 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
+                             <div>
                             <h1 data-aos="fade-up">Past Events</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -17,7 +18,7 @@
                             <div class="btn_wrapper">
                                 <a href="/"><span class="sub_home_span">Home </span></a><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Events</span>
-                            </div>
+                            </div> </div>
                         </div>
                     </div>
                 </div>
@@ -38,12 +39,12 @@
     </section>
 </div>
 <!-- upcoming events -->
-<section class="upcoming-events py-5">
+<section class="upcoming-events services_section">
     <div class="container">
         <h2 class="text-center">Past Events</h2>
         <!--<p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud-->
         <!--    exercitation</p>-->
-        <div class="row pt-3">
+        <div class="row pt-3 g-4">
         @if(count($pastEvents) != 0)
              @foreach ($pastEvents as $event)
             <div class="col-md-4">
@@ -75,6 +76,20 @@
 
 
 
-
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+<style>
+.event-content-img img {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding: 10px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+</style>
 @endsection

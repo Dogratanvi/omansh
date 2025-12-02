@@ -107,6 +107,7 @@ class ServicesController extends Controller
       
     }
     
+    
     public function orthopedic()
     {
 
@@ -119,6 +120,7 @@ class ServicesController extends Controller
 
       
     }
+    
     public function neuro()
     {
 
@@ -129,7 +131,7 @@ class ServicesController extends Controller
         $settings = Setting::all();
       return view('frontend.services.physiotheraphy.neuro-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
-      
+
     }
     public function sport()
     {
@@ -140,7 +142,7 @@ class ServicesController extends Controller
         $settings = Setting::all();
       return view('frontend.services.physiotheraphy.sport-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
-  
+
     }
     public function geriatric()
     {
@@ -151,8 +153,9 @@ class ServicesController extends Controller
         $settings = Setting::all();
       return view('frontend.services.physiotheraphy.geriatric-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
-  
+
     }
+    
     public function pediatric()
     {
         $meta_page_type = 'yoga';
@@ -162,9 +165,10 @@ class ServicesController extends Controller
         $settings = Setting::all();
       return view('frontend.services.physiotheraphy.pediatric-physiotherapy', compact('services', 'settings', 'galleryImages','meta_page_type'));
 
-  
-    } 
-    public function corporate()
+
+    }
+    
+     public function corporate()
     {
         $meta_page_type = 'yoga';
         $galleries = Gallery::where('category','yoga')->first();
@@ -207,6 +211,7 @@ class ServicesController extends Controller
   
     
       }
+      
       public function aerial()
       {
           $meta_page_type = 'yoga';

@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Neuro Physiotherapy</h1>
+                                 <div>
+                                <h1 >Neuro Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Neuro-physiotherapy treats neurological disorders. It aids
+                                        <p >Neuro-physiotherapy treats neurological disorders. It aids
                                             nervous system recovery, enhancing movement, coordination, and well-being.
                                         </p>
                                     </div>
@@ -26,7 +27,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Neuro Physiotherapy
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -70,7 +71,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Neuro-Physiotherapy in Ghaziabad
                         </h2>
@@ -89,7 +90,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Conditions Treated with Neuro-Physiotherapy</h2>
@@ -204,7 +205,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Neurological Physiotherapy Exercises
                         </h2>
@@ -215,7 +216,7 @@
                             <li> Train coordination to improve motor skills.</li>
                             <li> Neurological respiratory breathing techniques.</li>
                         </ul>
-                        <p class="pt-2">2. Explain the importance of timely neuro-physiotherapy for faster recovery.</p>
+                        <p class="pt-2">2. Explain the importance of timely <a href="https://omansh.org/blog/11/what-is-neurophysiotherapy-role-technique-and-benefits" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">neuro-physiotherapy</a> for faster recovery.</p>
                         <h2 class="pt-4">Neuro-Physiotherapy Rehabilitation in Ghaziabad</h2>
                         <p class="pt-2">Omansh Clinic offers:
                         </p>
@@ -251,7 +252,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Why Choose Our Neuro-Physiotherapy Services in Ghaziabad?</h2>
@@ -362,4 +363,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

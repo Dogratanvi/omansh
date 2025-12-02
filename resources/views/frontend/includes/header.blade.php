@@ -9,9 +9,7 @@
                 <div class="collapse d-flex justify-content-end navbar-collapse d-none d-lg-block d-xl-block d-md-none d-sm-none d-xs-none"
                     id="navbarSupportedContent">
                     <ul class="navbar-nav ">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ route('frontend.index') }}">Home</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                         </li>
@@ -42,6 +40,9 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('frontend.gallery') }}">Gallery</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="{{ route('frontend.blog.index') }}"> Blog </a>
                         </li>
@@ -61,6 +62,11 @@
                                         <a class="dropdown-item nav-link"
                                             href="{{ route('frontend.workshop.corporatesessions') }}">CORPORATE
                                             SESSIONS</a>
+                                    </li>
+                                      <li class="nav-item">
+                                        <a class="dropdown-item nav-link"
+                                            href="{{ route('frontend.workshop.antenatal-and-postnatal-physiotherapy') }}">Antenatal & Postnatal Physiotherapy
+</a>
                                     </li>
                                 </ul>
                             </div>
@@ -102,9 +108,7 @@
                     </div>
                     <div class="offcanvas-body p-0">
                         <ul class="navbar-nav pt-4 ">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ route('frontend.index') }}">Home</a>
-                            </li>
+                         
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('frontend.about') }}">About Us</a>
                             </li>
@@ -132,6 +136,9 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="{{ route('frontend.gallery') }}">Gallery</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="{{ route('frontend.blog.index') }}"> Blog </a>

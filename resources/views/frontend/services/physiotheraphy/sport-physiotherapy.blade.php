@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Sport Physiotherapy</h1>
+                                 <div>
+                                <h1 >Sport Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Omansh Sports Physiotherapy in Ghaziabad helps athletes
+                                        <p><a href="https://omansh.org/blog/12/what-is-sports-physiotherapy-role-benefits-and-techniques" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">Omansh Sports Physiotherapy</a> in Ghaziabad helps athletes
                                             avoid injuries, recover from setbacks, and improve performance. Amateur and
                                             professional athletes receive excellent sports physiotherapy in Ghaziabad from
                                             Omansh. Our sports-specific programs optimize performance and prevent damage.
@@ -28,7 +29,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Sport Physiotherapy
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -72,7 +73,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center ">
                     <div class="service_page_aboutus_content">
                         <h2>Sports Physiotherapy in Ghaziabad
                         </h2>
@@ -93,7 +94,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center ">
                     <div class="service_page_aboutus_content">
 
                         <h2>Conditions Treated with Sports Physiotherapy</h2>
@@ -225,7 +226,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center ">
                     <div class="service_page_aboutus_content">
                         <h2>Specialized Sports Training and Rehabilitation Programs
                         </h2>
@@ -268,7 +269,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center ">
                     <div class="service_page_aboutus_content">
 
                         <h2>Advanced Equipment and Techniques</h2>
@@ -293,7 +294,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center ">
                     <div class="service_page_aboutus_content">
 
                         <h2>Benefits of Choosing Sports Physiotherapy in Ghaziabad</h2>
@@ -354,7 +355,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center ">
                     <div class="service_page_aboutus_content">
 
                         <h2>Why Choose Our Sports Physiotherapy Services in Ghaziabad?</h2>
@@ -456,4 +457,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

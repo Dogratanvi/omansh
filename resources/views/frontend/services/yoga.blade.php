@@ -9,11 +9,12 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up"> Yoga</h1>
+                             <div>
+                            <h1 > Yoga</h1>
                             <div class="row justify-content-center ">
 
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                    <p data-aos="fade-right">A journey of transformation and harmony, connecting body,
+                                    <p >A journey of transformation and harmony, connecting body,
                                         mind, and
                                         spirit for holistic well-being.</p>
                                 </div>
@@ -26,6 +27,7 @@
                                     </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span">Yoga</span>
                             </div>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" >
                 <div class="service_page_aboutus_content ">
 
 
@@ -240,7 +242,7 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" >
                 <div class="service_page_aboutus_content ">
 
 
@@ -322,7 +324,12 @@
             </div>
         </div>
 </section>
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 <div class="modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"
     aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog galleryDialog">

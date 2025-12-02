@@ -11,10 +11,13 @@ use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Repeater; // ✅ add this
+
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 
 class Blog extends Model
 {
@@ -29,6 +32,7 @@ class Blog extends Model
         'id' => 'integer',
         'published_at' => 'timestamp',
         'deleted_at' => 'datetime',
+        'faqs' => 'array',
     ];
 
     public function setFeaturedImageAttribute($value)
@@ -89,10 +93,14 @@ class Blog extends Model
                     TextInput::make('intro')
                         ->columnSpanFull()
                         ->maxLength(255),
-                    RichEditor::make('content')
+                   TinyEditor::make('content')
+                   ->profile('full')
+                     ->fileAttachmentsDisk('public')
+                        ->fileAttachmentsDirectory('uploads')
                         ->maxLength(65535)
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')
+                      ->preserveFilenames()
                         ->columnSpanFull()
                         ->image(),
                     DateTimePicker::make('published_at'),
@@ -100,6 +108,26 @@ class Blog extends Model
                         ->maxLength(255),
 
                 ]),
+                 Section::make('FAQs') // ✅ new section
+            ->columns(1)
+            ->collapsible()
+            ->description('Add frequently asked questions for this blog.')
+            ->icon('heroicon-o-question-mark-circle')
+            ->schema([
+                Repeater::make('faqs')
+                    ->label('FAQs')
+                    ->schema([
+                        TextInput::make('question')
+                            ->label('Question')
+                            ->required(),
+                        Textarea::make('answer')
+                            ->label('Answer')
+                            ->required(),
+                    ])
+                    ->default([])
+                    ->collapsed()
+                    ->createItemButtonLabel('Add FAQ'),
+            ]),
             Section::make('Meta Details')
                 ->columns(2)
                 ->collapsible()
@@ -118,11 +146,13 @@ class Blog extends Model
                     TextInput::make('meta_og_url')
                         ->maxLength(255),
                 ]),
+                
             Fieldset::make('Status')
                 ->schema([
                     Toggle::make('status')
                         ->required(),
                 ])
+                
         ];
     }
 }

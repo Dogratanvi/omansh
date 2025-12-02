@@ -133,12 +133,12 @@ return
     ],
 
     'physiotherapy'=>[
-        'title' => "Physiotherapy Services at Omansh Health & Fitness",
-        'description' =>"Discover a range of specialized physiotherapy services orthopedic, neuro, sports, geriatric, and pediatric physiotherapy at Omansh Health & Fitness.",
+        'title' => "Physiotherapy Services in Ghaziabad | Omansh",
+        'description' =>"Explore top physiotherapy services in Ghaziabad. Learn about treatments, and types of care, and connect with skilled physiotherapists for personalized recovery plans.",
         'keywords' => '',
         'facebook' => [
-            'title' => "Physiotherapy Services at Omansh Health & Fitness",
-            'description' =>"Discover a range of specialized physiotherapy services orthopedic, neuro, sports, geriatric, and pediatric physiotherapy at Omansh Health & Fitness.",
+            'title' => "Physiotherapy Services in Ghaziabad | Omansh",
+            'description' =>"Explore top physiotherapy services in Ghaziabad. Learn about treatments, and types of care, and connect with skilled physiotherapists for personalized recovery plans.",
             'site_name' => 'https://www.omansh.com/',
             'image_name' => 'https://omansh.org/img/logo.png',
             // Add more Facebook meta data specific to the home page if needed
@@ -157,5 +157,82 @@ return
             // Add more Facebook meta data specific to the home page if needed
         ],
     ],
+    
+     'pelvicPain'=>[
+        'title' => "Women Pelvic Floor Dysfunction Treatment Services | Omansh",
+        'description' =>"Understand pelvic floor dysfunctions, their causes, types, symptoms, and treatment options to manage discomfort and improve daily life.",
+        'keywords' => '',
+        'facebook' => [
+            'title' => "Women Pelvic Floor Dysfunction Treatment Services | Omansh",
+            'description' =>"Understand pelvic floor dysfunctions, their causes, types, symptoms, and treatment options to manage discomfort and improve daily life.",
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+    ],
+     'pregnancyPostpartum'=>[
+        'title' => "Pregnancy and Postpartum Care Services | Omansh",
+        'description' =>"We expert care for pregnancy and postpartum health. We offer tailored solutions for a smooth journey, including fitness, recovery, and emotional support.",
+        'keywords' => '',
+        'facebook' => [
+            'title' => "Pregnancy and Postpartum Care Services | Omansh",
+            'description' =>"We expert care for pregnancy and postpartum health. We offer tailored solutions for a smooth journey, including fitness, recovery, and emotional support.",
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+    ],
+    'exerciseProgramPilate'=>[
+        'title' => "Exercise Programs & Pilates | Strength and Wellness | Omansh",
+        'description' =>"Enhance your strength and flexibility with tailored exercise programs and Pilates. Achieve fitness goals with expert guidance and safe, effective routines.",
+        'keywords' => '',
+        'facebook' => [
+            'title' => "Exercise Programs & Pilates | Strength and Wellness | Omansh",
+            'description' =>"Enhance your strength and flexibility with tailored exercise programs and Pilates. Achieve fitness goals with expert guidance and safe, effective routines.",
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+    ],
+    'bowel'=>[
+        'title' => "Female Bowel Issues and Prolapse Treatment Services | Omansh",
+        'description' =>"Learn about female bowel issues and prolapse (enterocele), including causes, symptoms, and effective treatment options and exercise pictures for relief.",
+        'keywords' => ' female bowel Issues and prolapse, female prolapsed bowel, female prolapsed bowel symptoms, female prolapsed bowel treatment, prolapsed bowel exercises, female prolapsed bowel pictures, enterocele prolapse
+',
+        'facebook' => [
+            'title' => "Female Bowel Issues and Prolapse Treatment Services | Omansh",
+            'description' =>"Learn about female bowel issues and prolapse (enterocele), including causes, symptoms, and effective treatment options and exercise pictures for relief.",
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+    ],
+    'bladderDysfunction'=>[
+        'title' => "Women  Bladder Dysfunction Treatment Services | Omansh",
+        'description' =>" Expert treatment for women's bladder dysfunction with personalized care to relieve symptoms,  types, and treatment to improve bladder control",
+        'keywords' => 'Bladder Dysfunction, bladder dysfunction types, Bladder dysfunction symptoms, Bladder dysfunction treatment',
+        'facebook' => [
+           'title' => "Women  Bladder Dysfunction Treatment Services | Omansh",
+        'description' =>" Expert treatment for women's bladder dysfunction with personalized care to relieve symptoms,  types, and treatment to improve bladder control",
+      
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+    ],
+    'orthopedic'=>[
+        'title' => "Orthopedic Physiotherapy Services in Ghaziabad - Omansh",
+        'description' =>"Explore expert orthopedic physiotherapy services in Ghaziabad. Treat various conditions with personalized care. Learn about types of orthopedic physical therapy",
+        'keywords' => 'orthopedic physiotherapy,orthopedic physical therapy services,orthopedic physical therapy services in Ghaziabad,types of orthopedic physical therapy, orthopedic physiotherapy conditions',
+        'facebook' => [
+           'title' => "Orthopedic Physiotherapy Services in Ghaziabad - Omansh",
+        'description' =>"Explore expert orthopedic physiotherapy services in Ghaziabad. Treat various conditions with personalized care. Learn about types of orthopedic physical therapy",
+      
+            'site_name' => 'https://www.omansh.com/',
+            'image_name' => 'https://omansh.org/img/logo.png',
+            // Add more Facebook meta data specific to the home page if needed
+        ],
+    ],
+    
 
 ];

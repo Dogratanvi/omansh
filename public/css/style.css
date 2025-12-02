@@ -33,7 +33,7 @@ body {
     --e-global-color-accent: #fff;
 	--e-global-color-white: #ffffff;
     --e-global-color-soft-orange: #CAA983;
-    --e-global-color-desaturated-magenta: #004B2A ;
+    --e-global-color-desaturated-magenta: #004B2A ;.footer-text a
     --e-global-color-very-dark-desaturated-magenta: #262f2b61;
     --e-global-color-mostly-desaturated-magenta: #004B2A;
     --e-global-color-pale-blue: #f4f7ff;
@@ -98,6 +98,15 @@ li{
     
  
 }
+img.footer-left {
+    border-bottom-right-radius: 50px;
+}
+img.footer-left {
+    border-bottom-right-radius: 50px;
+    height: 553px;
+    object-fit: cover;
+}
+
 .faq-section h3 button.accordion-button{
     font-size: 22px;
     line-height: 33px;
@@ -118,9 +127,7 @@ a.women-health-link:hover{
 .main-blog .post-item-wrap{
     height: 100% !important;
 } 
-.single-post{
-    margin-bottom: 324px;
-}
+
 /* Home Page Style */
 /* mobule hameburger color */
 .custom-close i{
@@ -169,7 +176,20 @@ button:focus {
     box-shadow: none !important;
     border: none !important;
 }
-
+p a{
+    color:#0a58ca !important;
+}
+.footer-text a{
+    color: #CAA983 !important;
+    text-decoration: none;
+}
+.footer-text a:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+.women-health li a{
+     color:#0a58ca !important;
+}
 /* service-btn */
 
 
@@ -370,9 +390,8 @@ button:focus {
     object-fit: cover;
 
 }
-.main-testimonial{
-    margin-bottom: 400px;
-}
+
+
 /* Home Page Social Icons Style */
 
 
@@ -522,9 +541,7 @@ button:focus {
     top: 61px;
     left: -20px;
 }
-section.feedback-section {
-    margin-bottom: 479px;
-}
+
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -1052,7 +1069,11 @@ button.custom-btn{
     height: 100%;
     top: 0;
     left: 0;
+    z-index:1;
     position: absolute;
+}
+.contact-form-section {
+    z-index:3 !important;
 }
 .get_in_touch_section::after {
     background: url(../img/Get_in_touch.png);
@@ -1320,9 +1341,9 @@ a.all-event {
     font-weight: 700;
     color: #004B2A;
 }
-.past-events {
-    margin-bottom: 400px;
-}
+/*.past-events {*/
+/*    margin-bottom: 400px;*/
+/*}*/
 .single-post .btn_wrapper a {
     color: #000;
 }
@@ -1330,12 +1351,16 @@ a.all-event {
     color: #004B2A;
 }
 .post-image img {
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-.blog-posts img{
-    height: 300px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    height: 680px !important;
     object-fit: cover;
+}
+.main-blog img {
+    height: 377px !important;
+    object-fit: cover !important;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
 .post-item span.post-meta-category {
     color: #000 !important;
@@ -1430,7 +1455,7 @@ a.all-event {
     position: relative;
 }
 .home-insta-section{
-    padding: 0px 0 480px;
+    padding: 0px 0 80px;
 }
 .eapps-instagram-feed-posts-grid-load-more-text{
     font-size: 16px !important;
@@ -1542,7 +1567,7 @@ a.all-event {
 /* privacy */
 .privacy-content{
     padding-top: 80px;
-    padding-bottom: 450px;
+    padding-bottom: 90px;
 }
 .privacy-content p a{
     color: #004B2A;
@@ -1754,14 +1779,7 @@ color: #CAA983;
     padding: 308px 0 0px;
     margin-top: -218px;
 }
-.footer-text a{
-    color: #CAA983;
-    text-decoration: none;
-}
-.footer-text a:hover{
-    color: #fff;
-    text-decoration: none;
-}
+
 .middle-portion {
     margin-bottom: 92px;
 }
@@ -2017,7 +2035,7 @@ button.close {
 .aboutpage_aboutus_section .aboutus_top_shape {
     position: absolute;
     top: 6px;
-    left: -36px;
+        left: -111px;
     z-index: -1;
 }
 .aboutpage_aboutus_section .aboutus_bottom_shape {
@@ -3007,11 +3025,17 @@ a.contact_us:hover {
 .yogatraning-banner{
     background-image: url('../img/workshop/yoga-workshop-banner.png'); 
 }
+.antenatal-banner{
+    background-image: url('../img/workshop/Omansh-Physiotherapy.webp'); 
+}
 .doctortraning-banner{
     background-image: url('../img/workshop/doctor_banner.png'); 
 }
 .corporatetraning-banner{
     background-image: url('../img/workshop/corporate-banner.png'); 
+}
+.bg-section{
+    background-color:#f4f7ff !important;
 }
  .btn_wrapper.main-btn .read_more_btn{
     font-size: 16px;
@@ -3092,9 +3116,9 @@ a.contact_us:hover {
 
 /* Contact Page Contact Subscribe Section Style */
 
-.contact_subscribe_section{
-    margin-top: -360px;
-}
+/*.contact_subscribe_section{*/
+/*    margin-top: -360px;*/
+/*}*/
 
 /* Blog Posts Page Style */
 
@@ -3134,12 +3158,8 @@ a.contact_us:hover {
     border-top-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
-.discount-section {
-    margin-bottom: 474px;
-}
-.contact_map_section{
-    margin-bottom: 474px;
-}
+
+
 img#image-gallery-image {
     height: 350px;
     object-fit: cover;
@@ -3148,21 +3168,18 @@ img#image-gallery-image {
     height: auto;
    
 }
-.service-gallary{
-    margin-bottom: 380px !important;
-}
+
 .banner-section-content .btn_wrapper a:hover {
 color: #CAA983 !important;
 text-decoration: none;
 }
-.upcoming-events {
-    margin-bottom: 410px !important;
-}
+
 .videoCard img {
     border-top-left-radius: 80px !important;
     border-bottom-right-radius: 80px;
     height: 350px;
     object-fit: cover;
+    object-position:top;
 }
 .modal-backdrop.show{
     opacity: 0.1 !important;
@@ -3239,6 +3256,66 @@ span.sub_home_span a {
     width: 35px !important;
 
 }
+.service_page_aboutus_content ul li a {
+    color:#0a58ca !important; 
+}
+.service_page_aboutus_content ul li a b{
+    color:#0a58ca !important; 
+}
+.card-content ul li a{
+    color:#0a58ca !important;
+}
+.card-content h3 a{
+       color:#0a58ca !important; 
+}
+h2 a{
+      color:#0a58ca !important;  
+}
+.faq-section h3 button.accordion-button a{
+       color:#0a58ca !important; 
+}
+figure.blog_posts_right_shape {
+    position: absolute !important;
+    right: 0px !important;
+}
+figure.blog_posts_left_shape {
+    position: absolute !important;
+    left: 0px !important; 
+}
+.event-content-img img {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+        padding: 10px;
+}
+.gallery-anne img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px 0px 50px 0px;
+}
+.image-round-side img {
+    border-radius: 50px 0px;
+}
+.videoModal .modal-header {
+    padding: 0px 5px 0px 10px !important;
+    justify-content: end;
+}
+.videoModal button.close {
+    font-size: 31px;
+    color: #000 !important;
+    background: #fff !important;
+    border-radius: 25px !important;
+    height: 30px;
+    width: 30px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.videoModal .modal-content{
+top:174px;
+}
 @media screen and (max-width: 5100px) {
     .container{
         max-width: 1200px !important;
@@ -3258,145 +3335,5 @@ span.sub_home_span a {
 @media screen and (max-width: 1024px) {
 .container{
     max-width: 100% !important;
-}
-}
-@media screen and (max-width: 764px) {
-    .our_specialties_section .nav-pills {
-        width: 100%;
-        margin: auto;
-        justify-content: center !important;
-    }
-    .our_specialties_section .nav-item{
-        margin: 10px 0px;
-    }
-    .container{
-        max-width: 100% !important;
-    }
-    .logo-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 20px;
-    }
-    .main-section-box {
-width: 100%;
-    }
-    .grid-box {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 20px;
-    }  
-.sub-banner-section{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-}
-
-h1{
-    font-size: 44px !important;
-    line-height: 60px !important;
-}
-.feedback-form {
-    padding: 60px 10px;
-}
-.feedback-form h3 {
-    font-size: 25px;
-    width: 100%;
-}
-.feedback-form table h3 {
-    font-size: 25px;
-    width: 300px;
-}
-section.feedback-section {
-    margin-bottom: 431px;
-}
-.feedback-form h4 {
-    font-size: 20px;
-    width: 150px;
-    padding-top: 6px;
-}
-.feedback-form tbody  {
-    display: block;
-    overflow-x: auto;
-    width: 300px;
-}
-tbody .form-check-input {
-    position: relative !important;
-}
-.feedback-heading img{
-    display: none;
-}
-.message_content select {
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 25px;
-    background-color: var(--e-global-color-white);
-    color: var(--e-global-color-text);
-    border-radius: 0;
-    padding: 18px 10px;
-    width: 100%;
-    outline: none;
-    resize: none;
-    margin-bottom: 20px;
-    border: none;
-    box-shadow: 1px 1px 50px rgb(0 0 0 / 5%);
-}
-.btn{
-    margin-top: 15px;
-}
-
-.single-blog-page .banner-section-content p {
-    padding-left: 10px !important;
-}
-#blog .post-item .post-item-description h2{
-    line-height: 40px !important;
-}
-.main-blog {
-    margin-bottom: 360px;
-}
-.single-post{
-    margin-bottom: 420px;
-}
-
-.single-blog-page.sub-banner-section .banner-section {
-    padding: 10px 0 120px !important;
-    position: relative;
-}
-.contact .message_content input{
-    width: 100% !important;
-  
-}
-.services_section{
-    overflow: hidden;
-}
-.banner-section-content h1 span{
-    font-size: 40px;
-    text-align: center;
-}
-.main-blog .post-item-description p {
-    height: auto;
-}
-.alert-message{
-    width: 75%;
-}
-.service-text p {
-    height: auto;
-}
-.mission_image img {
-    border-radius: 80px 0 80px 0;
-}
-.vision_image img {
-    border-radius: 80px 0 80px 0;
-}
-.vision_content{
-    padding-top: 30px;
-}
-.upcoming-events {
-    margin-bottom: 450px !important;
-}
-.single-event img {
-    border-top-left-radius: 156px;
-    border-bottom-right-radius: 120px;
 }
 }

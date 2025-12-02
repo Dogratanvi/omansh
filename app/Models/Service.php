@@ -12,6 +12,7 @@ use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 
 class Service extends Model
 {
@@ -60,7 +61,10 @@ class Service extends Model
                     RichEditor::make('intro')
                         ->maxLength(65535)
                         ->columnSpanFull(),
-                    RichEditor::make('content')
+                    TinyEditor::make('content')
+                   ->profile('full')
+                   ->fileAttachmentsDisk('/')
+                        ->fileAttachmentsDirectory('uploads')
                         ->maxLength(65535)
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')

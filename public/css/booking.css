@@ -79,6 +79,23 @@
     background-color: var(--e-global-color-soft-orange);
 	transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
 }
+
+.booking-form .modal-content {
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    height: 800px !important;
+    overflow-y: auto !important
+}
+
 .booking-form{
     overflow-y: hidden !important;
     top: -20px !important;

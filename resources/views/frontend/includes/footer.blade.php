@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
                     <figure class="subscribe_image mb-0">
-                        <img src="{{ asset('images/subscribe_image.png') }}" alt="logo">
+                        <img src="{{ asset('images/Get-the-Latest.png') }}"  class="footer-left" alt="logo">
                     </figure>
                 </div>
             </div>
@@ -112,6 +112,11 @@
                                 <a href="{{ route('frontend.workshop.corporatesessions') }}">Corporate Sessions
                                 </a>
                             </li>
+                            <li >
+                                        <a 
+                                            href="{{ route('frontend.workshop.antenatal-and-postnatal-physiotherapy') }}">Antenatal & Postnatal Physiotherapy
+</a>
+                                    </li>
                             <li>
                                 <a href="{{ route('frontend.blog.index') }}">Blog<a>
                             </li>
@@ -160,7 +165,7 @@
                 <div class="col-md-4 copyright">
                     <p
                         class=" text-white text-lg-start text-sm-start text-start text-md-start text-xl-start text-xs-start">
-                        Copyright 2024 | Omansh.org
+                        Copyright {{ now()->year }} | Omansh.org
                     </p>
                 </div>
                 <div class="col-md-4  copyright">

@@ -10,6 +10,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
+                             <div>
                             <h1 data-aos="fade-up">Contact Us</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -21,7 +22,7 @@
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a> </span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
                                     Contact</span>
-                            </div>
+                            </div> </div>
                         </div>
                     </div>
                 </div>
@@ -147,10 +148,7 @@
                             </div>
                             <div class="box_wrapper">
                                 <h3>Location</h3>
-                                <p class="mb-0 pt-2">Plot No-290, Gate No.1
-                                    Sector-4, Vaishali
-                                    (Landmark: In front of Ramprastha Green)
-                                    Ghaziabad, 201010, Uttar Pradesh, India</p>
+                                <p class="mb-0 pt-2"> Shop NO- 290,<br> Basement Shop, 1, opposite Ramprastha Green Road, Sector 4, Vaishali, Ghaziabad, Uttar Pradesh 201010</p>
                             </div>
                         </div>
                     </div>
@@ -205,7 +203,7 @@
 </section>
 <!-- CONTACT MAP SECTION -->
 
-<div class="contact_map_section">
+<div class="contact_map_section pt-0 services_section">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <iframe
@@ -215,7 +213,12 @@
         </div>
     </div>
 </div>
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 
 <script async src="https://www.google.com/recaptcha/api.js"></script>
 {{-- @push ('after-scripts')

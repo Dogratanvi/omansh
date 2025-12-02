@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content">
-                                <h1 data-aos="fade-up"> Physiotherapy</h1>
+                                 <div>
+                                <h1> Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Modern healthcare relies on physiotherapy to improve
+                                        <p >Modern healthcare relies on physiotherapy to improve
                                             mobility, control pain, and speed recovery. Physical disabilities from injuries,
                                             surgeries, or chronic diseases benefit most from it. We feel happy to provide
                                             Ghaziabad's best physiotherapy services tailored to each individual.</p>
@@ -25,6 +26,7 @@
                                         </a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span">Physiotherapy </span>
                                 </div>
+                                 </div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +71,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center" >
                     <div class="service_page_aboutus_content ">
 
                         <h2>What Is Physiotheraphy ?</h2>
@@ -103,7 +105,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">What Does a Physical Therapist Treat?</h2>
@@ -115,7 +117,7 @@
                             </li>
                             <li> <b>Neurological Conditions: </b>Multiple sclerosis, Parkinson's, Stroke recovery.
                             </li>
-                            <li> <b> Sports Injuries: </b>Overuse, Muscular strains, Ligament tears.
+                            <li><a href="https://omansh.org/blog/12/what-is-sports-physiotherapy-role-benefits-and-techniques" style="text-decoration: none;" target="_blank" rel="noopener noreferrer"><b> Sports Injuries:</a> </b>Overuse, Muscular strains, Ligament tears.
 
 
                             </li>
@@ -296,7 +298,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">What to Expect from Physiotherapy Treatments?</h2>
@@ -464,6 +466,12 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
     <div class="modal fade modalDialogBox galleryModal" id="image-gallery" tabindex="-1" role="dialog"
         aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog galleryDialog">
@@ -490,4 +498,68 @@
             </div>
         </div>
     </div>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is Physiotherapy?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Personalized exercises and treatments in physiotherapy improve physical function, mobility, and quality of life."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is a physiotherapist used for?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Physiotherapists treat injuries, manage chronic pain, and enable rehabilitation to restore strength and function."
+    }
+  },{
+    "@type": "Question",
+    "name": "What is the goal of physiotherapy?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Physiotherapy aims to improve movement, discomfort, and performance."
+    }
+  },{
+    "@type": "Question",
+    "name": "Which type of physiotherapy is best?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ndividual needs determine the appropriate physiotherapy. Orthopedic physiotherapy is best for joint and muscular disorders, whereas neuroglial is best for stroke or Parkinson's."
+    }
+  },{
+    "@type": "Question",
+    "name": "Why is physiotherapy best?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Physical therapy is one of the greatest healthcare methods since it manages pain, improves mobility, and promotes long-term rehabilitation without drugs. Personalization makes it useful for many conditions."
+    }
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://omansh.org/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Services",
+    "item": "https://omansh.org/services"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Physiotherapy",
+    "item": "https://omansh.org/services/physiotherapy"
+  }]
+}
+</script>
 @endsection

@@ -10,6 +10,8 @@ use App\Models\Setting;
 use App\Models\Workshop;
 use App\Models\Gallery;
 use App\Models\Testimonial;
+use App\Models\Announcement;
+
 class WorkshopController extends Controller
 {
     // Page Title
@@ -88,6 +90,19 @@ class WorkshopController extends Controller
         $settings = Setting::all();
 
          return view('frontend.workshop.corporatesessions', compact('settings', 'workshops', 'testimonials', 'galleryImages','meta_page_type'));
+
+     }
+          public function antenatal()
+     {
+        $meta_page_type = 'antenatal';
+        $workshops = Workshop::all();
+         $announcements = Announcement::where('status', true)->get();
+        $testimonials = Testimonial::all();
+        $galleries = Gallery::where('category','corporate-training')->first();
+        $galleryImages = $galleries->featured_image;
+        $settings = Setting::all();
+
+         return view('frontend.workshop.antenatal-and-postnatal-physiotherapy', compact('settings', 'workshops', 'announcements', 'testimonials', 'galleryImages','meta_page_type'));
 
      }
   

@@ -1,4 +1,7 @@
 @extends('frontend.layouts.app')
+@php
+$meta_page_type='exerciseProgramPilate';
+@endphp
 
 @section('content')
     <div class="sub-banner-section exercise-banner women-service-text">
@@ -9,10 +12,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Exercise Programs & Pilates for Health and Wellness</h1>
+                                 <div>
+                                <h1 >Exercise Programs & Pilates for Health and Wellness</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Guided exercise programs and Pilates improve health,
+                                        <p >Guided exercise programs and Pilates improve health,
                                             discomfort, and flexibility, according to Omansh. We use these successful
                                             movement therapies to create customized wellness programs to assist people reach
                                             their health goals. Omansh helps individuals at any fitness level improve their
@@ -29,7 +33,7 @@
                                     class="sub_span pe-2"><a href="/services/womenhealth">Women Health</a></span><i class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                     class="sub_span"><a>Excercise Programs & Pilates
                                     </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -68,7 +72,7 @@
                         <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">Benefits of Exercise Programs & Pilates</h2>
@@ -243,7 +247,7 @@
                         <img src="{{ asset('images/aboutus_bottom_shape.png') }}" alt="aboutus_bottom_shape" class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">Benefits of Pilates for Specific Conditions</h2>
@@ -274,7 +278,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2 class="pb-3">Who Can Benefit from These Programs?</h2>
@@ -396,4 +400,66 @@
             </div>
         </div>
     </section>
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How frequently should I do Pilates for best results?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pilates should be done 2-3 times a week for best benefits, although this might vary by objective."
+    }
+  },{
+    "@type": "Question",
+    "name": "Is Pilates safe for back and joint pain?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pilates is low-impact and emphasizes core strength, making it ideal for back discomfort and joint health."
+    }
+  },{
+    "@type": "Question",
+    "name": "What to expect in my first session?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "First session: Learn fundamental motions, get comfortable with equipment (if appropriate), and assess your objectives and fitness level with an instructor.
+Omansh's Pilates and exercise programs inspire people of all ages and capacities to live healthier, more balanced lives."
+    }
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://omansh.org/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Services",
+    "item": "https://omansh.org/services"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Women Health",
+    "item": "https://omansh.org/services/womenhealth"
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Exercise Programs & Pilates",
+    "item": "https://omansh.org/services/womenhealth/exercise-programs-and-pilates"
+  }]
+}
+</script>
 @endsection

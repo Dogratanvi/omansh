@@ -9,10 +9,11 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Geriatric Physiotherapy</h1>
+                                 <div>
+                                <h1 >Geriatric Physiotherapy</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p data-aos="fade-right">Physical health and independence are important as people
+                                        <p>Physical health and independence are important as people
                                             age. Senior physiotherapy improves life. Omansh offers specialized geriatric
                                             physiotherapy for Ghaziabad seniors.</p>
                                     </div>
@@ -26,7 +27,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Geriatric Physiotherapy
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -70,7 +71,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Geriatric Physiotherapy in Ghaziabad
                         </h2>
@@ -95,7 +96,7 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Who Can Benefit from Geriatric Physiotherapy in Ghaziabad?</h2>
@@ -216,12 +217,12 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
                         <h2>Services Offered in Geriatric Physiotherapy
                         </h2>
-                        <p class="pt-2">To satisfy the elderly, Omansh offers numerous Ghaziabad geriatric physiotherapy
-                            services:
+                        <p class="pt-2">To satisfy the elderly, Omansh offers numerous Ghaziabad geriatric <a href="https://omansh.org/services/physiotherapy" style="text-decoration: none" target="_blank" rel="noopener noreferrer">physiotherapy
+                            services:</a>
                         </p>
                         <ul class="ps-5">
                             <li>Treatments for chronic joint and muscle pain.
@@ -262,7 +263,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Customized Geriatric Physiotherapy Plans in Ghaziabad</h2>
@@ -288,14 +289,14 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Benefits of Geriatric Physiotherapy for Seniors in Ghaziabad</h2>
                         <p class="pt-2">Our geriatric physiotherapy assists Ghaziabad seniors:
                         </p>
                         <ul>
-                            <li> Reduced chronic pain and improved joint function. </li>
+                            <li> Reduced <a href="https://omansh.org/blog/19/crohns-disease" style="text-decoration: none;" target="_blank" rel="noopener noreferrer">chronic pain</a> and improved joint function. </li>
                             <li>Better strength, flexibility, and mobility. </li>
                             <li> Depend less on others daily.</li>
                             <li>Better mental health and life. </li>
@@ -347,7 +348,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Why Choose Our Geriatric Physiotherapy Services in Ghaziabad?</h2>
@@ -476,7 +477,7 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
                         <h2>Book Ghaziabad Geriatric Physiotherapy
@@ -505,4 +506,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

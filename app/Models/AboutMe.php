@@ -63,6 +63,7 @@ class AboutMe extends Model
                         ->maxLength(65535)
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')
+                         ->preserveFilenames()
                         ->image(),
                     TextInput::make('order')
                         ->maxLength(255),

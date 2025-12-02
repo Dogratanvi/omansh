@@ -248,8 +248,12 @@
         </div>
     </div>
 </section>
-
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 <script async src="https://www.google.com/recaptcha/api.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {

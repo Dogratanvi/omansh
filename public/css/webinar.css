@@ -153,7 +153,7 @@ padding: 15px;
     border: 1px solid #CAA983;
 padding: 20px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-height: 565px;
+height: 100% !important;
 
 }
 .review-slider .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
@@ -164,8 +164,6 @@ display: flex;
 align-items: center;
 margin-bottom: 15px;
 }
-
-
 
 
 

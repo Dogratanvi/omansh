@@ -12,6 +12,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
+                             <div>
                             <h1 data-aos="fade-up">Blog</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -23,6 +24,7 @@
                                     aria-hidden="true"></i><span class="sub_span">Blog</span>
                             </div>
                         </div>
+                         </div>
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
@@ -43,7 +45,7 @@
 </div>
 <!-- MAIN SECTION -->
 <!--End Slider Section-->
-<section class="blog-posts main-blog">
+<section class="blog-posts  main-blog">
     <div class="container">
         <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <div id="blog" class="blogs three-column col-xl-12">
@@ -63,10 +65,10 @@
                                 </div>
                                 <div class="post-item-description">
                                     <span class="post-meta-date">
-                                        <i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blog->created_at)) }}</span>
+                                        <i class="fa fa-calendar-o"></i>{{ date('M d, Y', strtotime($blog->updated_at)) }}</span>
                                  
-                                    <h2>
-                                        <a href="{{ route('frontend.blog.show',  ['id' => $blog->id, 'slug' => $blog->slug]) }}">{{ $blog->title}}
+                                    <h2 class="text-dark">
+                                        <a class="text-dark" href="{{ route('frontend.blog.show',  ['id' => $blog->id, 'slug' => $blog->slug]) }}">{{ $blog->title}}
                                         </a>
                                     </h2>
                                     <p>{{ $blog->intro}}</p>
@@ -89,7 +91,12 @@
         <!--container-->
     </div>
 </section>
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 
 
 @endsection

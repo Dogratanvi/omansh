@@ -9,6 +9,7 @@ use App\Models\Setting;
 use App\Models\Testimonial;
 use App\Models\Blog;
 use App\Models\Slider;
+use App\Models\Gallery;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
@@ -75,6 +76,23 @@ class FrontendController extends Controller
     {
         $settings = Setting::all();
         return view('frontend.privacy-policy', compact('settings'));
+    }
+    
+    public function gallery()
+    {
+
+        $meta_page_type = 'gallery';
+        $galleries = Gallery::where('category','gallery')->first();
+        $galleryImages = $galleries->featured_image;
+         $settings = Setting::all();
+      return view('frontend.gallery', compact('galleryImages','settings','meta_page_type'));
+
+    }
+    
+       public function author()
+    {
+        $settings = Setting::all();
+        return view('frontend.author', compact('settings'));
     }
   
       public function termsCondition()

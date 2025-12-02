@@ -9,6 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
+                            <div>
                             <h1 data-aos="fade-up">About Us</h1>
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -21,6 +22,7 @@
                                 <span class="sub_home_span"><a href="{{ route('frontend.index') }}">Home </a></span><i
                                     class="fa-solid fa-angles-right" aria-hidden="true"></i><span class="sub_span">
                                     About Us</span>
+                            </div>
                             </div>
                         </div>
                     </div>

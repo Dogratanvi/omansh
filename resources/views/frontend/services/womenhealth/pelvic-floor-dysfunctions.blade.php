@@ -1,4 +1,8 @@
 @extends('frontend.layouts.app')
+@php
+$meta_page_type='pelvicPain';
+@endphp
+
 
 @section('content')
     <div class="sub-banner-section pelvic-banner women-service-text">
@@ -9,6 +13,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
+                                 <div>
                                 <h1 data-aos="fade-up">Pelvic pain dysfunction</h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -28,7 +33,7 @@
                                     class="sub_span"><a>Pelvic Pain Dysfunctions
 
                                     </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -60,10 +65,10 @@
                             <p class="margin_bottom"><b> Issues related to pelvic floor dysfunction include:</b></p>
 
                             <ul>
-                                <li>Chronic pelvic or lower abdominal pain. </li>
+                                <li><a href="https://omansh.org/blog/19/crohns-disease" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">Chronic</a> pelvic or lower abdominal pain. </li>
                                 <li>Endometriosis causes pain and inflammation by growing uterine lining outside the uterus.
                                 </li>
-                                <li>Chronic bladder pain from interstitial cystitis.</li>
+                                <li>Chronic  bladder pain from <a href="https://omansh.org/blog/15/interstitial-cystitis-ic-symptoms-causes-treatment" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer">interstitial cystitis.</a></li>
                                 <li>Musculoskeletal dysfunction produces pelvic pain.</li>
                             </ul>
                             <p class="margin_bottom"> Each pelvic pain problem is unique and may require specialised
@@ -110,7 +115,7 @@
 
                             <ul>
                                 <li><b>Muscular:</b> Stress or tension in the pelvic floor muscles. </li>
-                                <li><b>Neurological:</b> Nerve hypersensitivity or dysfunction.
+                                <li><a href="https://omansh.org/services/neuro-physiotherapy" style="text-decoration: none; color: inherit;" target="_blank" rel="noopener noreferrer"><b>Neurological:</b></a> Nerve hypersensitivity or dysfunction.
                                 </li>
                                 <li><b>Psychological:</b> Trauma, stress, or worry can all be factors in chronic pain.
                                 </li>
@@ -281,7 +286,7 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>   Chronic pelvic pain can be caused by several different muscles, nerves, or other health
+                                    <p>  Chronic pelvic pain can be caused by several different muscles, nerves, or other health
                                     conditions.</p>
                                 </div>
                             </div>
@@ -357,4 +362,79 @@
             </div>
         </div>
     </section>
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is Pelvic discomfort dysfunction?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Chronic pelvic pain can be caused by several different muscles, nerves, or other health conditions."
+    }
+  },{
+    "@type": "Question",
+    "name": "How is pelvic dysfunction treated?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Common treatments include medication, surgery, lifestyle modifications, and physical therapy. For customized treatment, consult an expert."
+    }
+  },{
+    "@type": "Question",
+    "name": "Which pelvic floor problems are most common?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pelvic organ prolapse, and urinary, and fecal incontinence are common."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can pelvic pain be cured?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The appropriate treatment can handle many types of pelvic pain dysfunctions, but recovery depends on the origin and severity."
+    }
+  },{
+    "@type": "Question",
+    "name": "What relieves pelvic pain quickly?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Heat, moderate stretches, and relaxation can relieve mild pelvic pain, but persistent complaints require a comprehensive evaluation."
+    }
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://omansh.org/"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Services",
+    "item": "https://omansh.org/services"
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "name": "Women Health",
+    "item": "https://omansh.org/services/womenhealth"
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "name": "Pelvic pain dysfunction",
+    "item": "https://omansh.org/services/womenhealth/pelvic-floor-dysfunctions"
+  }]
+}
+</script>
 @endsection

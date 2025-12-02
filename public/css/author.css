@@ -1,0 +1,32 @@
+/* LinkedIn Button */
+.linkedin-btn {
+    background-color: #2e77b0;
+    border: none;
+    width: 39px;
+    height: 39px;
+    border-radius: 5px;
+}
+
+.linkedin-btn i {
+    color: white;
+    font-size: 21px;
+}
+
+/* Twitter (X) Button */
+.twitter-btn {
+    background-color: black;
+    border: none;
+    width: 39px;
+    height: 39px;
+    border-radius: 5px;
+}
+
+.twitter-btn svg {
+    fill: white;
+
+}
+.underline {
+    width: 1.875rem;
+    height: .3125rem;
+    background-color: #2c40d0;
+}

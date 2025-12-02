@@ -9,12 +9,13 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="banner-section-content service-banner-text">
-                                <h1 data-aos="fade-up">Corporate Yoga</h1>
+                                 <div>
+                                <h1 ><a href="https://omansh.org/blog/22/corporate-yoga">Corporate Yoga</a></h1>
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
-                                        <p class="pb-0" data-aos="fade-right">Stress and sedentary lifestyles can harm
+                                        <p class="pb-0" >Stress and sedentary lifestyles can harm
                                             employee health
-                                            and productivity in fast-paced workplaces. Corporate yoga integrates wellness
+                                            and productivity in fast-paced workplaces. <a href="https://omansh.org/blog/22/corporate-yoga">Corporate yoga</a> integrates wellness
                                             into the workplace, improving physical and mental health.</p>
 
                                         <p class="pt-0">The benefits of employee-tailored yoga, office yoga workshops, and
@@ -30,7 +31,7 @@
                                         class="fa-solid fa-angles-right" aria-hidden="true"></i><span
                                         class="sub_span"><a>Corporate Yoga
                                         </a></span>
-                                </div>
+                                </div> </div>
                             </div>
                         </div>
                     </div>
@@ -74,15 +75,15 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
-                        <h2>Introduction to Corporate Yoga
+                        <h2>Introduction to <a href="https://omansh.org/blog/22/corporate-yoga">Corporate Yoga</a>
                         </h2>
-                        <p>Corporate yoga brings yoga advantages to work. It aids focus, stress management, and well-being
+                        <p><a href="https://omansh.org/blog/22/corporate-yoga">Corporate yoga</a> brings yoga advantages to work. It aids focus, stress management, and well-being
                             in employees.
                         </p>
-                        <p>Our Ghaziabad centre offers corporate yoga sessions. Our in-office and virtual yoga classes make
-                            it fun for employees of all fitness levels. We offer flexible corporate yoga classes and
+                        <p>Our Ghaziabad centre offers <a href="https://omansh.org/workshop/corporatesessions">corporate yoga sessions.</a> Our in-office and virtual yoga classes make
+                            it fun for employees of all fitness levels. We offer flexible <a href="https://omansh.org/blog/22/corporate-yoga">corporate yoga</a> classes and
                             employee yoga.
 
                         </p>
@@ -97,11 +98,11 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
-                        <h2>Benefits of Corporate Yoga</h2>
-                        <p class="pt-2">Promoting corporate yoga has many benefits:
+                        <h2>Benefits of <a href="https://omansh.org/blog/22/corporate-yoga">Corporate Yoga</a></h2>
+                        <p class="pt-2">Promoting <a href="https://omansh.org/blog/22/corporate-yoga">corporate yoga</a> has many benefits:
 
                         </p>
                         <ul class="ps-5">
@@ -153,9 +154,9 @@
                                                          -->
     <section class="aboutpage_aboutus_section  blog_posts_section pt-3">
         <div class="container">
-            <h2 class="text-center">Tailored Corporate Yoga Programs</h2>
+            <h2 class="text-center">Tailored <a href="https://omansh.org/blog/22/corporate-yoga">Corporate Yoga</a> Programs</h2>
             <p class="pt-2 text-center">Every workplace has distinct needs, and we understand that. That's why our Ghaziabad
-                corporate yoga sessions are customisable:
+                <a href="https://omansh.org/workshop/corporatesessions">corporate yoga sessions</a> are customisable:
             </p>
             <div class="row pt-sm-0 pt-lg-5 pt-0 pt-xl-5 pt-md-5 pt-xs-0">
                 <div class="col-md-4 mt-4">
@@ -190,9 +191,9 @@
                             alt="Nutritional-guidance">
                         <div class="card-content">
 
-                            <h3 class="fs-4 lh-sm"> Online Corporate Yoga sessions: </h3>
+                            <h3 class="fs-4 lh-sm"> Online <a href="https://omansh.org/workshop/corporatesessions">Corporate Yoga sessions: </a></h3>
                             <ul>
-                                <li>Our online corporate yoga sessions make health available to remote teams.
+                                <li>Our online <a href="https://omansh.org/workshop/corporatesessions">corporate yoga sessions</a> make health available to remote teams.
                                 </li>
                             </ul>
                         </div>
@@ -230,9 +231,9 @@
     <section class="aboutpage_aboutus_section   pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
-                        <h2>Why Choose Us for Corporate Yoga in Ghaziabad?
+                        <h2>Why Choose Us for <a href="https://omansh.org/blog/22/corporate-yoga">Corporate Yoga</a> in Ghaziabad?
                         </h2>
                         <ul class="pt-4 ps-5">
                             <li>
@@ -272,14 +273,14 @@
                             <h3 class="accordion-header" id="headingOne">
                                 <button class="collapsed accordion-button p-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    1. What is corporate yoga?
+                                    1. What is <a href="https://omansh.org/blog/22/corporate-yoga" class="ps-1"> corporate yoga </a>?
 
                                 </button>
                             </h3>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p> Corporate yoga offers customised programs to improve staff wellbeing and productivity.
+                                    <p> <a href="https://omansh.org/blog/22/corporate-yoga" class="pe-1"> Corporate yoga </a><offers customised programs to improve staff wellbeing and productivity.
                                     </p>
                                 </div>
                             </div>
@@ -288,7 +289,7 @@
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="collapsed accordion-button p-3" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    2. How to offer corporate yoga?
+                                    2. How to offer <a href="https://omansh.org/blog/22/corporate-yoga"  class="ps-1"> corporate yoga? </a>
                                 </button>
                             </h3>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -360,13 +361,13 @@
                             class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " data-aos="fade-right">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center " >
                     <div class="service_page_aboutus_content">
 
-                        <p>Corporate yoga is more than a trend—it's an investment in team health. Wellness in the workplace
+                        <p><a href="https://omansh.org/blog/22/corporate-yoga">Corporate yoga </a>is more than a trend—it's an investment in team health. Wellness in the workplace
                             empowers employees to succeed.
                         </p>
-                        <p class="pt-2">Ready to improve workplace wellness? Contact us about corporate yoga lessons
+                        <p class="pt-2">Ready to improve workplace wellness? Contact us about <a href="https://omansh.org/blog/22/corporate-yoga">corporate yoga</a> lessons
                             today!
 
                         </p>
@@ -390,4 +391,10 @@
             </div>
         </div>
     </section>
+    <figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
 @endsection

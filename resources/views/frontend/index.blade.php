@@ -9,24 +9,24 @@
     <!-- BANNER SECTION -->
     <section class="banner-section">
         <div class="container">
-            <div class="row" data-aos="fade-up">
+            <div class="row" >
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-md-left text-center">
                     <div class="banner-section-content">
                         <h5
                             class="text-center text-white text-lg-start text-sm-center text-xs-center text-md-start text-xl-start ">
                             WELCOME TO</h5>
                         <h2 class="text-center fs-1 text-white text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-up">OMANSH <br></h2>
+                            >OMANSH <br></h2>
                         <h1
                             class="inner-text color-text fs-1 text-center text-white text-lg-start text-md-start text-sm-center text-xs-center text-md-start text-xl-start">
-                           Health & Fitness</h1>
+                         Omansh Physiotherapy & Yoga Center</h1>
                         <!-- <span class="ityped"></span> -->
                         <p class="text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-right">Tailored Solutions for Total Wellness: Your Destination for Women's
+                            >Tailored Solutions for Total Wellness: Your Destination for Women's
                             Health Care,
                             Personalized Physiotherapy, and Yoga ! </p>
                         <div class="btn_wrapper home-btn text-white fw-bolder text-center text-lg-start text-sm-center text-xs-center text-md-start text-xl-start "
-                            data-aos="fade-up">
+                            >
                             <a href="./contact" class="text-decoration-none"><i class="fa-solid fa-arrow-right"
                                     aria-hidden="true"> </i></a>
                         </div>
@@ -43,7 +43,7 @@
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <div class="banner-section-image">
                         <figure class=" mb-0 text-end">
-                            <img class="w-100" src="{{ asset('images/banner_right_image.png') }}" loading="lazy" alt="banner-right">
+                            <img class="w-100" src="{{ asset('images/Omansh-Banner-Image.png') }}" loading="lazy" alt="banner-right">
                         </figure>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         </div>
     </section>
     <!-- SOCIAL ICONS -->
-    <div class="left_icons float-right " data-aos="fade-down">
+    <div class="left_icons float-right " >
         <div class="icon_content d-table-cell align-middle">
             <ul class="list-unstyled p-0 m-0">
                 <li>
@@ -104,7 +104,7 @@
             </div>
 
         </div>
-        <div class="row pt-3" data-aos="fade-up">
+        <div class="row pt-3" >
             @foreach ($services as $service)
             <div class="col-lg-4 col-12 col-xl-4 col-md-6 col-sm-12 col-xs-12">
                 <div class="services_box_content">
@@ -160,15 +160,15 @@
                     <img src="{{ asset('images/aboutus_bottom_shape.png') }}" loading="lazy" alt="shape" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12" >
                 <div class="aboutus_content pt-lg-5 pt-xl-5 pt-md-4 pt-sm-2 pt-xs-2 pt-2">
                     <h5>About us</h5>
                     <h2>Better Life With Optimal Health</h2>
                     <p>Every step towards health at Omansh Health & Fitness is based on care, knowledge, and a strong
                         desire to make people's lives better.</p>
                     <p>Our centre is more than just a health facility. It's a community committed to promoting health
-                        and happiness. It was started by Dr. Garima Biswas, a leader in holistic health and an expert in
-                        Pelvic Floor Rehabilitation. Through her 15+ years of deep knowledge of the human body and their
+                        and happiness. It was started by <a href="https://omansh.org/author/dr-garima-biswas">Dr. Garima Biswas,</a> a leader in holistic health and an expert in
+                        <a href="https://omansh.org/blog/14/pelvic-floor-rehabilitation" style="color:#0a58ca;" class="interlink"  target="_blank" rel="noopener noreferrer">Pelvic Floor Rehabilitation.</a>Through her 15+ years of deep knowledge of the human body and their
                         desire to spread the benefits of good health, we invite you to start a personalised journey to
                         becoming your best self.</p>
                     <p>At Omansh, we think that the best way to get the most out of your body is to combine ancient
@@ -198,7 +198,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" >
                 <div class="specialties_content_wrapper">
                     <div class="specialties_content s1">
                         <p class="specialties_name">Expert Leadership</p>
@@ -231,7 +231,7 @@
                     <img src="{{ asset('img/why-choose.webp') }}" loading="lazy" alt="why-choose" class="img-fluid">
                 </figure>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" data-aos="fade-right">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" >
                 <div class="specialties_content_wrapper">
                     <div class="specialties_content specialties_content2 s5">
                         <p class="specialties_name">Personalized Care Plans</p>
@@ -269,8 +269,8 @@
 <!-- GET IN TOUCH SECTION -->
 <section class="get_in_touch_section">
     <div class="container">
-        <div class="row" data-aos="fade-up">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="row" >
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-form-section">
 
                 <div class="get_in_touch_content message_content home-form">
                     <h5>Get in touch</h5>
@@ -533,7 +533,7 @@
                 </div>
             </div>
         </div>
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
 
             @foreach ($blogs as $blog)
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
@@ -591,7 +591,7 @@
         </div>
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
         <div class="elfsight-app-af74a9e2-7ad5-4fe5-b3bb-147a7376bd59" data-elfsight-app-lazy></div>
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
 
 
 

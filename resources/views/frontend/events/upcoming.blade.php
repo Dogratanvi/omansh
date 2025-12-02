@@ -9,6 +9,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="banner-section-content">
+                             <div>
                             <h1 data-aos="fade-up">Upcoming Events</h1>
                             <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-8 col-xl-8 col-xs-12 col-sm-12 col-12">
@@ -18,7 +19,7 @@
                                 <a href="/"><span class="sub_home_span">Home </span></a><i class="fa-solid fa-angles-right"
                                     aria-hidden="true"></i><span class="sub_span"> Events</span>
                             </div>
-                        </div>
+                        </div> </div>
                     </div>
                 </div>
                 <figure class="banner_left_top_shape left_shape mb-0">
@@ -38,12 +39,12 @@
     </section>
 </div>
 <!-- upcoming events -->
-<section class="upcoming-events py-5">
+<section class="upcoming-events services_section">
     <div class="container">
         <h2 class="text-center">Upcoming Events</h2>
         <!--<p class="text-center">Duis aute irure dolor in reprehenderit in volurate velit cillum nulla pariatur nostrud-->
         <!--    exercitation</p>-->
-        <div class="row pt-3">
+        <div class="row pt-3 g-4">
             @if(count($upcomingEvents) != 0)
            
              @foreach ($upcomingEvents as $event)
@@ -53,12 +54,12 @@
                 <div class="card upcoming-card border-0 shadow h-100">
                     <img src="{{ secure_asset($event->featured_image) }}">
                     <div class="date">
-                        <h4>14<br><span class="fw-normal">July</span></h4>
+                        <h4>{{ date('M d', strtotime($event->date_from)) }}</span></h4>
 
                     </div>
                     <div class="event-content">
                         
-                        <h3>{{$event->name}}</h3>
+                     <h3>{{$event->name}}</h3>
                         <p><i class="fa-regular fa-clock pe-2"></i>{{ date('M d, Y', strtotime($event->date_from)) }}</p>
                           <a href="{{ route('frontend.events.single',  ['id' => $event->id, 'slug' => $event->slug]) }}" class="item-link appointment-btn">Read More <i
                                             class="fa fa-arrow-right"></i></a>
@@ -77,7 +78,22 @@
 </section>
 
 
-
+<figure class="blog_posts_left_shape left_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_left_shape.png" alt="left-shape" class="img-fluid">
+</figure>
+<figure class="blog_posts_right_shape right_shape mb-0">
+    <img src="https://omansh.org/images/blog_posts_right_shape.png" alt="right-shape" class="img-fluid">
+</figure>
+<style>
+.event-content-img img {
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding: 10px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+}
+</style>
 
 
 @endsection

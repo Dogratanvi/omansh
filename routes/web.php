@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 use  App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\EventRegistrationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,15 +23,57 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test-email', function () {
+    try {
+        Mail::raw('Test email from Laravel', function ($message) {
+            $message->to('sushilckatoch@gmail.com')
+                    ->subject('Test Email');
+        });
+        
+        $failures = Mail::failures();
+        if (empty($failures)) {
+            return 'Email sent successfully! Check your inbox.';
+        } else {
+            return 'Email failed: ' . implode(', ', $failures);
+        }
+    } catch (\Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+});
+// routes/web.php
+Route::get('/test-email/{registrationId}', function($registrationId) {
+    $registration = \App\Models\EventRegistration::where('registration_id', $registrationId)->firstOrFail();
+    $event = $registration->event;
+    
+    return view('emails.event-registration-confirmation', [
+        'registration' => $registration,
+        'event' => $event,
+        'participantName' => $registration->full_name,
+        'registrationId' => $registration->registration_id,
+        'eventName' => $event->name,
+        'eventDate' => $event->date_from->format('F j, Y'),
+        'eventTime' => $event->date_from->format('g:i A'),
+        'eventLocation' => $event->location,
+        'eventImage' => $event->featured_image,
+    ]);
+});
+
 
   
 // frontend routes
 Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('about', 'FrontendController@about')->name('about');
+    Route::get('gallery', 'FrontendController@gallery')->name('gallery');
   
+//   redirection
 
-  
+Route::redirect('/services/physiotheraphy/geriatric-physiotherapy', '/services/geriatric-physiotherapy', 301);
+Route::redirect('/services/physiotheraphy/neuro-physiotherapy', '/services/neuro-physiotherapy', 301);
+Route::redirect('/services/physiotheraphy/orthopedic-physiotheraphy', '/services/orthopedic-physiotherapy', 301);
+Route::redirect('/services/physiotheraphy/pediatric-physiotherapy', '/services/pediatric-physiotherapy', 301);
+Route::redirect('/services/physiotheraphy/sport-physiotherapy', '/services/sport-physiotherapy', 301);
+
 
     //workshop
     $module_name = 'workshop';
@@ -36,6 +81,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     // Route::get('workshop/doctortraining', 'WorkshopController@doctortraining')->name('workshop.doctortraining');
     Route::get('workshop/yoga-teacher-training', 'WorkshopController@yogateacherTraining')->name('workshop.yoga-teacher-training');
     Route::get('workshop/corporatesessions', 'WorkshopController@corporatesessions')->name('workshop.corporatesessions');
+    Route::get('workshop/antenatal-and-postnatal-physiotherapy', 'WorkshopController@antenatal')->name('workshop.antenatal-and-postnatal-physiotherapy');
 
     //feedback
      $module_name = 'feedbackform';
@@ -65,8 +111,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/womenhealth/exercise-programs-and-pilates', 'ServicesController@programsPilates')->name('services.womenhealth.exercise-programs-and-pilates');
     Route::get('services/womenhealth/bowel-issues-and-prolapse', 'ServicesController@bowelProlapse')->name('services.womenhealth.bowel-issues-and-prolapse');
     Route::get('services/womenhealth/bladder-dysfunction', 'ServicesController@bladderDysfunction')->name('services.womenhealth.bladder-dysfunction');
-
-    // physiotheraphy 
+    
+        // physiotheraphy 
     Route::get('services/orthopedic-physiotheraphy', 'ServicesController@orthopedic')->name('services.physiotheraphy.orthopedic-physiotheraphy');
     Route::get('services/neuro-physiotherapy', 'ServicesController@neuro')->name('services.physiotheraphy.neuro-physiotherapy');
     Route::get('services/sport-physiotherapy', 'ServicesController@sport')->name('services.physiotheraphy.sport-physiotherapy');
@@ -81,16 +127,14 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('services/yoga/general-yoga-and-pilates', 'ServicesController@pilates')->name('services.yoga.general-yoga-and-pilates');
     Route::get('services/yoga/aerial-yoga', 'ServicesController@aerial')->name('services.yoga.aerial-yoga');
 
-
-
-
-
     Route::post('comments', 'CommentController@store')->name('comments');
     Route::get('comments/{id}', 'CommentController@index');
    
    // footer
     Route::get('includes/footer', 'FrontendController@service')->name('includes.footer');
-    // contact
+    // author
+    Route::get('author/dr-garima-biswas', 'FrontendController@author')->name('author');
+
    
     $controller_name = 'ServicesController';
     Route::get('/contact', [ContactController::class, 'create'])->name('contact.create');
@@ -116,4 +160,26 @@ Route::group(['namespace' => 'App\Http\Controllers\Frontend', 'as' => 'frontend.
     Route::get('webinar', 'WebinarController@index')->name('/webinar');
     Route::post('payment/store','WebinarController@store')->name('payment.store');
     Route::post('/payment/verify', 'WebinarController@verify')->name('payment.verify');
+    
+   
+
+    
+Route::get('/registration/success/{registrationId}', [EventRegistrationController::class, 'show'])
+    ->name('registration.success');
+    
+    // Store event registration
+    Route::post('/registration/store', [EventRegistrationController::class, 'store'])
+        ->name('event-registration.store');
+    
+    // Check registration status
+    Route::post('/registration/check-status', [EventRegistrationController::class, 'checkStatus'])
+        ->name('event-registration.check-status');
+    
+    // Cancel registration
+    Route::post('/registration/cancel', [EventRegistrationController::class, 'cancel'])
+        ->name('event-registration.cancel');
+    
+    // Get available events (AJAX)
+    Route::get('/api/available-events', [EventRegistrationController::class, 'getAvailableEvents'])
+        ->name('event-registration.available-events');
 });

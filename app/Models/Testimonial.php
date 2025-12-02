@@ -39,13 +39,17 @@ class Testimonial extends Model
         });
     }
   
-    public function setFeaturedImageAttribute($value)
-    {
-        if( $value != null)
-        {
-            $this->attributes['featured_image'] = env('APP_URL') . '/' ."uploads/" . $value; // Store the URL
+     public function setFeaturedImageAttribute($value)
+{
+    if ($value != null) {
+        // Check if the value is already a full URL
+        if (filter_var($value, FILTER_VALIDATE_URL)) {
+            $this->attributes['featured_image'] = $value;
+        } else {
+            $this->attributes['featured_image'] = env('APP_URL') . '/uploads/' . ltrim($value, '/');
         }
     }
+}
     
     public static function getForm(): array
     {
@@ -70,6 +74,7 @@ class Testimonial extends Model
                             'physiotherapy' => 'physiotherapy',
                             'yoga' => 'Yoga',
                             'corporate-training' => 'Corporate Training',
+                              'antenatal' => 'Antenatal',
                         ])
                         ->required(),
 

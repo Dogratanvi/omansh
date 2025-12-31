@@ -75,7 +75,7 @@
                             loading="lazy" alt="instagram" class="img-fluid w-75"></a>
                 </li>
                 <li>
-                    <a href="{{$settings[4]->value}}" target="_blank"><img src="{{ asset('img/social/linkedin.png') }}"
+                    <a href="https://www.linkedin.com/in/dr-garima-biswas-aa415b235/" target="_blank"><img src="{{ asset('img/social/linkedin.png') }}"
                             loading="lazy" alt="linkedin" class="img-fluid w-75"></a>
                 </li>
                 <li>

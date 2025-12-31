@@ -72,7 +72,7 @@
                                         aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">
-                                <a href="{{$settings[4]->value}}" target="_blank"><i class="fa-brands fa-linkedin-in"
+                                <a href="https://www.linkedin.com/in/dr-garima-biswas-aa415b235/" target="_blank"><i class="fa-brands fa-linkedin-in"
                                         aria-hidden="true"></i></a>
                             </li>
                             <li class="icons">

@@ -11,3 +11,4 @@ artisan.log  # Optional
 phpunit.xml  # Optional
 draft.yaml
 .blueprint
+.env

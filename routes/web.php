@@ -158,10 +158,11 @@ Route::redirect('/services/physiotheraphy/sport-physiotherapy', '/services/sport
 
     // landing page
     Route::get('webinar', 'WebinarController@index')->name('/webinar');
+ Route::get('/online-rehab-program', 'OnlinerehabController@index')->name('/online-rehab-program');
     Route::post('payment/store','WebinarController@store')->name('payment.store');
     Route::post('/payment/verify', 'WebinarController@verify')->name('payment.verify');
     
-   
+
 
     
 Route::get('/registration/success/{registrationId}', [EventRegistrationController::class, 'show'])

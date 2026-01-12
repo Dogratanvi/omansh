@@ -2,26 +2,20 @@
 
 namespace App\Models;
 
-use App\Traits\SlugTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;
-use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
-use Filament\Forms\Components\Repeater; // ✅ add this
-
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 
-class Blog extends Model
+class Banner extends Model
 {
-    use HasFactory, SlugTrait;
+    use HasFactory;
 
     /**
      * The attributes that should be cast to native types.
@@ -30,10 +24,19 @@ class Blog extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'published_at' => 'timestamp',
+        'order' => 'integer',
         'deleted_at' => 'datetime',
-        'faqs' => 'array',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($about) {
+            $uuid = Uuid::uuid4()->toString();
+            $about->uuid=str_replace('-', '', $uuid);
+        });
+    }
 
     public function setFeaturedImageAttribute($value)
     {
@@ -44,90 +47,30 @@ class Blog extends Model
         }
     }
 
-     /**
-     * Get all of the post's comments.
-     */
-    public function comments()
-    {
-        return $this->hasMany(Comments::class)->whereNull('parent_id')->where('status',1);
-    }  
-
-    protected static function boot()
-    {
-        parent::boot();
-
-        static::creating(function ($blog) {
-            $uuid = Uuid::uuid4()->toString();
-            $blog->uuid=str_replace('-', '', $uuid);
-            $blog->slug = $blog->generateSlug($blog->title);
-        });
-
-        // static::creating(function ($blog) {
-        //     $blog->slug = $blog->generateSlug($blog->title);
-        // });
-    }
 
     public static function getForm(): array
     {
         return [
-            Section::make('Blog Details')
+            Section::make('Banner Details')
                 ->columns(2)
                 ->collapsible()
                 ->description('Provide some basic information.')
                 ->icon('heroicon-o-chevron-right')
                 ->schema([
-                    TextInput::make('title')
+                    TextInput::make('name')
                         ->required()
-                        ->maxLength(191),
+                        ->maxLength(255),
                     TextInput::make('slug')
                         ->maxLength(255),
-                    TextInput::make('author')
-                        ->maxLength(255),
-                    Select::make('category')
-                        ->options([
-                            'WOMEN HEALTH' => 'WOMEN HEALTH',
-                            'PHYSIOTHERAPY' => 'PHYSIOTHERAPY',
-                            'YOGA' => 'YOGA',
-                        ])
-                        ->required(),
-                    TextInput::make('intro')
-                        ->columnSpanFull()
-                        ->maxLength(255),
-                   TinyEditor::make('content')
-                   ->profile('full')
-                     ->fileAttachmentsDisk('public')
-                        ->fileAttachmentsDirectory('uploads')
+                    RichEditor::make('content')
                         ->maxLength(65535)
                         ->columnSpanFull(),
                     FileUpload::make('featured_image')
-                      ->preserveFilenames()
-                        ->columnSpanFull()
                         ->image(),
-                    DateTimePicker::make('published_at'),
                     TextInput::make('order')
                         ->maxLength(255),
-
                 ]),
-                 Section::make('FAQs') // ✅ new section
-            ->columns(1)
-            ->collapsible()
-            ->description('Add frequently asked questions for this blog.')
-            ->icon('heroicon-o-question-mark-circle')
-            ->schema([
-                Repeater::make('faqs')
-                    ->label('FAQs')
-                    ->schema([
-                        TextInput::make('question')
-                            ->label('Question')
-                            ->required(),
-                        Textarea::make('answer')
-                            ->label('Answer')
-                            ->required(),
-                    ])
-                    ->default([])
-                    ->collapsed()
-                    ->createItemButtonLabel('Add FAQ'),
-            ]),
+
             Section::make('Meta Details')
                 ->columns(2)
                 ->collapsible()
@@ -146,13 +89,13 @@ class Blog extends Model
                     TextInput::make('meta_og_url')
                         ->maxLength(255),
                 ]),
-                
+
             Fieldset::make('Status')
-                ->schema([
-                    Toggle::make('status')
-                        ->required(),
-                ])
-                
+            ->schema([
+                Toggle::make('status')
+                ->required(),
+            ])
+           
         ];
     }
 }

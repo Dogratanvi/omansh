@@ -898,7 +898,7 @@
     <div class="price-popup-content p-5">
         <span class="price-popup-close">&times;</span>
 
-        <form action="{{ route('frontend.landing.store') }}" method="POST" enctype="multipart/form-data">
+        <form  method="POST" enctype="multipart/form-data">
             <div class="row g-3">
 
                 <div class="col-md-6 mb-2">

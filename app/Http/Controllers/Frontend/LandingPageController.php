@@ -7,6 +7,7 @@ use App\Models\EventRegistration;
 use Illuminate\Http\Request;
 use App\Models\Landing; // Create this model for DR program registrations
 use App\Models\Setting;
+use App\Services\ResendService;
 use Exception;
 use Illuminate\Support\Facades\Validator;
 use Razorpay\Api\Api;
@@ -17,11 +18,13 @@ class LandingPageController extends Controller
 {
     protected $razorpayKey;
     protected $razorpaySecret;
+    protected $resendService;
 
-    public function __construct()
+    public function __construct(ResendService $resendService)
     {
         $this->razorpayKey = config('razorpay.key');
         $this->razorpaySecret = config('razorpay.secret');
+        $this->resendService = $resendService;
     }
 
      public function index()
@@ -171,6 +174,36 @@ class LandingPageController extends Controller
                 'razorpay_signature' => $request->razorpay_signature,
                 'razorpay_payment_id' => $request->razorpay_payment_id
             ]);
+
+             try {
+                $emailHtml = view('emails.registration-confirmation', [
+                    'registration' => $registration,
+                    'customerName' => $registration->full_name,
+                    'registrationId' => $registration->registration_id,
+                    'amount' => $registration->amount,
+                    'programName' => $registration->landing_page_name,
+                    'orderId' => $registration->razorpay_order_id,
+                    'paymentId' => $registration->razorpay_payment_id
+                ])->render();
+
+                $emailResult = $this->resendService->sendEmail(
+                    $registration->email,
+                    'Registration Confirmation -  Online Rehab Program',
+                    $emailHtml
+                );
+
+                if (!$emailResult['success']) {
+                    Log::warning('Email sending failed but registration succeeded', [
+                        'registration_id' => $registration->registration_id,
+                        'error' => $emailResult['error'] ?? 'Unknown error'
+                    ]);
+                }
+
+            } catch (\Exception $e) {
+                Log::error('Email sending exception: ' . $e->getMessage(), [
+                    'registration_id' => $registration->registration_id
+                ]);
+            }
 
             return response()->json([
                 'success' => true,

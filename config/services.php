@@ -34,6 +34,11 @@ return [
     'recaptcha' => [
         'key' => env('RECAPTCHA_SITE_KEY'),
         'secret' => env('RECAPTCHA_SITE_SECRET'),
-    ]
+    ],
+    'resend' => [
+    'api_key' => env('RESEND_API_KEY'),
+    'from_email' => env('RESEND_FROM_EMAIL', 'noreply@yourdomain.com'),
+    'from_name' => env('RESEND_FROM_NAME', 'Omansh Health and Fitness'),
+],
 
 ];

@@ -43,6 +43,10 @@ class EventRegistration extends Model
         'event_date_from',
         'event_date_to',
         'registration_status',
+        'razorpay_order_id',
+        'razorpay_payment_id',
+        'razorpay_signature',
+        'order_id'
     ];
 
     protected $casts = [

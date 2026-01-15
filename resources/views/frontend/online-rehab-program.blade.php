@@ -971,6 +971,49 @@
         height: 1rem;
         border-width: 0.2em;
     }
+
+    /* Custom Modal Styles */
+#messageModal .modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+#messageModal .modal-header {
+    padding: 20px 30px;
+    border-bottom: none;
+}
+
+#messageModal .modal-body {
+    font-size: 16px;
+    color: #333;
+    padding: 30px;
+}
+
+#messageModal .modal-footer {
+    padding: 15px 30px 30px;
+    justify-content: center;
+}
+
+#messageModal .btn {
+    min-width: 120px;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Animation for modal */
+#messageModal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+#messageModal.show .modal-dialog {
+    transform: scale(1);
+}
 </style>
 
 {{-- Replace the form inside the popup with this --}}
@@ -1078,8 +1121,8 @@
                 <div class="col-md-12 mb-3">
                     <select name="payment" id="paymentSelect" class="form-control" required>
                         <option value="">Select Payment *</option>
-                        <option value="499">₹499</option>
-                        <option value="3500">₹3500</option>
+                        <option value="1">₹1</option>
+                        <option value="2">₹2</option>
                     </select>
                     <div class="error-message" id="error-payment"></div>
                 </div>
@@ -1259,6 +1302,49 @@ document.addEventListener("DOMContentLoaded", function() {
         return isValid;
     }
 
+    // Show Bootstrap Modal
+    function showModal(title, message, type = 'info') {
+        const modalHtml = `
+            <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 ${type === 'success' ? 'bg-success' : type === 'error' ? 'bg-danger' : 'bg-info'} text-white">
+                            <h5 class="modal-title" id="messageModalLabel">
+                                <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-times-circle' : 'fa-info-circle'} me-2"></i>
+                                ${title}
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center py-4">
+                            <p class="mb-0">${message}</p>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="button" class="btn ${type === 'success' ? 'btn-success' : type === 'error' ? 'btn-danger' : 'btn-primary'}" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Remove existing modal if any
+        const existingModal = document.getElementById('messageModal');
+        if (existingModal) {
+            existingModal.remove();
+        }
+        
+        // Add modal to body
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+        
+        // Show modal
+        const modal = new bootstrap.Modal(document.getElementById('messageModal'));
+        modal.show();
+        
+        // Remove modal from DOM after hidden
+        document.getElementById('messageModal').addEventListener('hidden.bs.modal', function() {
+            this.remove();
+        });
+    }
+
     // Initialize Razorpay Payment
     function initiateRazorpayPayment(orderData) {
         const options = {
@@ -1281,7 +1367,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             modal: {
                 ondismiss: function() {
-                    alert('Payment cancelled. Please try again.');
+                    showModal('Payment Cancelled', 'Payment was cancelled. Please try again if you wish to complete the registration.', 'error');
                     resetSubmitButton();
                 }
             }
@@ -1289,7 +1375,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const razorpay = new Razorpay(options);
         razorpay.on('payment.failed', function(response) {
-            alert('Payment failed: ' + response.error.description);
+            showModal('Payment Failed', response.error.description || 'Payment failed. Please try again.', 'error');
             resetSubmitButton();
         });
         razorpay.open();
@@ -1518,7 +1604,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
-
 
 @endsection

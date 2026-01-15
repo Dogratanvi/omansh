@@ -1,6 +1,9 @@
 @extends('frontend.layouts.app')
 
-
+@php
+     $settings = App\Models\Setting::all();
+        $meta_page_type = 'online-rehab-program';
+@endphp
 @section('content')
 <div class="container py-5">
     <div class="row justify-content-center">

@@ -106,6 +106,8 @@ class LandingPageController extends Controller
                 $profilePicturePath = $request->file('profile_picture')->store('profile_pictures', 'public');
             }
 
+            dd($profilePicturePath);
+
             // Create registration record
             $landing = EventRegistration::create([
                 'aadhaar_number' => $validated['aadhaar_number'],

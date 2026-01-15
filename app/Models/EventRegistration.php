@@ -20,8 +20,9 @@ class EventRegistration extends Model
    
     protected $fillable = [
         'registration_id',
-        'event_id',
+        'landing_page_name',
         'aadhaar_number',
+        'payment',
         'first_name',
         'last_name',
         'email',
@@ -170,13 +171,10 @@ class EventRegistration extends Model
                 ->description('Select the event for this registration.')
                 ->icon('heroicon-o-calendar')
                 ->schema([
-                    Select::make('event_id')
-                        ->label('Event')
-                        ->relationship('event', 'name')
+                    TextInput::make('landing_page_name')
+                        ->label('Landing Page Name')
                         ->required()
-                        ->searchable()
-                        ->preload()
-                        ->columnSpanFull(),
+                        ->maxLength(255),
                     
                     TextInput::make('registration_id')
                         ->label('Registration ID')

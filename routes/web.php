@@ -158,11 +158,28 @@ Route::redirect('/services/physiotheraphy/sport-physiotherapy', '/services/sport
 
     // landing page
     Route::get('webinar', 'WebinarController@index')->name('/webinar');
- Route::get('/online-rehab-program', 'OnlinerehabController@index')->name('/online-rehab-program');
+
     Route::post('payment/store','WebinarController@store')->name('payment.store');
     Route::post('/payment/verify', 'WebinarController@verify')->name('payment.verify');
     
+Route::get('/online-rehab-program', [LandingPageController::class, 'index'])
+    ->name('online-rehab-program');
 
+// Registration form submission (AJAX)
+Route::post('/online-rehab-program/register', [LandingPageController::class, 'store'])
+    ->name('frontend.landing.store');
+
+// Payment verification (AJAX)
+Route::post('/online-rehab-program/payment/verify', [LandingPageController::class, 'verify'])
+    ->name('frontend.landing.verify');
+
+// Success page after payment
+Route::get('/online-rehab-program/success', [LandingPageController::class, 'success'])
+    ->name('frontend.landing.success');
+
+// Payment failure page
+Route::get('/online-rehab-program/failed', [LandingPageController::class, 'failed'])
+    ->name('frontend.landing.failed');
 
     
 Route::get('/registration/success/{registrationId}', [EventRegistrationController::class, 'show'])

@@ -1,5 +1,6 @@
 @extends('frontend.layouts.app')
 
+
 @section('content')
 <div class="container py-5">
     <div class="row justify-content-center">
@@ -11,7 +12,7 @@
                     <p class="lead">Thank you for registering for the Diastasis Recti Online Rehab Program.</p>
                     <p>You will receive a confirmation email shortly with program details.</p>
                     <hr class="my-4">
-                    <a href="{{ route('frontend.index') }}" class="btn btn-primary btn-lg">Go to Homepage</a>
+                    <a href="/ class="btn btn-primary btn-lg">Go to Homepage</a>
                 </div>
             </div>
         </div>

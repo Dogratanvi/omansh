@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+   'default' => env('MAIL_MAILER', 'resend'),
+
 
     /*
     |--------------------------------------------------------------------------
@@ -86,6 +87,10 @@ return [
                 'log',
             ],
         ],
+
+        'resend' => [
+    'transport' => 'resend',
+],
 
         'roundrobin' => [
             'transport' => 'roundrobin',

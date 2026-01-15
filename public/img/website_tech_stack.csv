@@ -1,0 +1,23 @@
+Category,Technology / Library,Version,Purpose,Where Used
+Backend Framework,Laravel,10.x,Backend MVC framework,"Routes, Controllers, Blade"
+Templating Engine,Blade,Built-in,Server-side rendering,.blade.php files
+Programming Language,PHP,8.x,Backend language,Entire backend
+Routing,Laravel Router,Built-in,URL mapping,web.php
+CSS Framework,Bootstrap,5.3.8,Responsive UI,Layout & components
+Icons,Font Awesome,6.5.0,Icons,UI elements
+Icons,Bootstrap Icons,1.11.1,Icons,Footer & social
+Fonts,Google Fonts (Sora),Latest,Typography,Head
+Fonts,Google Fonts (Poppins),Latest,Typography,Head
+JS Library,AOS,2.3.1,Scroll animations,data-aos
+JS Library,Swiper.js,11,Sliders,Carousels
+JS Library,GLightbox,Latest,Image lightbox,Gallery
+JS Library,tsParticles,2.x,Particle effects,Background visuals
+JS Utility,jQuery,3.7.1,DOM manipulation,Plugins
+Build Tool,Vite,Latest,Asset bundling,CSS & JS build
+SEO,Meta Tags,-,SEO metadata,Head
+SEO,Open Graph,-,Social sharing,Head
+SEO,Schema.org JSON-LD,-,Structured data,Head
+Analytics,Google Analytics GA4,G-D081QWQ083,Traffic tracking,gtag.js
+Accessibility,UX4G Widget,Latest,Accessibility tools,Frontend
+Laravel Package,Livewire,Latest,Reactive UI,Notifications
+Laravel Package,Filament,Latest,Admin UI,Admin panel

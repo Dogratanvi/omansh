@@ -47,7 +47,7 @@ class LandingPageController extends Controller
         'address' => 'required|string|max:1000',
         'profile_picture' => 'nullable|image|mimes:jpeg,jpg,png|max:2048',
         'special_requirements' => 'nullable|string|max:500',
-        'payment' => 'required|in:499,3500',
+        // 'payment' => 'required|in:499,3500',
     ]);
 
     if ($validator->fails()) {

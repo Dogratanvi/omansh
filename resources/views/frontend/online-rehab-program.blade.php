@@ -1025,21 +1025,6 @@
             @csrf
             <div class="row g-3">
 
-                {{-- Avatar Upload Section --}}
-                <div class="col-md-12 mb-4">
-                    <div class="avatar-upload">
-                        <div class="avatar-edit">
-                            <input type='file' id="imageUpload" name="profile_picture" accept=".png, .jpg, .jpeg" />
-                            <label for="imageUpload"></label>
-                        </div>
-                        <div class="avatar-preview">
-                            <div id="imagePreview" style="background-image: url('https://via.placeholder.com/192x192.png?text=Upload+Photo');">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="error-message text-center" id="error-profile_picture"></div>
-                </div>
-
                 {{-- Aadhaar Number --}}
                 <div class="col-md-6 mb-2">
                     <input type="text" name="aadhaar_number" id="aadhaar_number" class="form-control" placeholder="Aadhaar Number *" required maxlength="12">
@@ -1121,8 +1106,8 @@
                 <div class="col-md-12 mb-3">
                     <select name="payment" id="paymentSelect" class="form-control" required>
                         <option value="">Select Payment *</option>
-                        <option value="1">₹1</option>
-                        <option value="2">₹2</option>
+                        <option value="499">₹499</option>
+                        <option value="3500">₹3500</option>
                     </select>
                     <div class="error-message" id="error-payment"></div>
                 </div>
@@ -1155,10 +1140,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    document.getElementById("imageUpload").addEventListener('change', function() {
-        readURL(this);
-        clearError('profile_picture');
-    });
+    
 
     const form = document.getElementById('landingForm');
     const submitBtn = document.getElementById('submitBtn');

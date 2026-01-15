@@ -48,9 +48,8 @@ class LandingPageController extends Controller
         'pincode' => 'required|string|size:6|regex:/^[0-9]{6}$/',
         'country' => 'required|string|max:255',
         'address' => 'required|string|max:1000',
-        'profile_picture' => 'nullable|image|mimes:jpeg,jpg,png|max:2048',
         'special_requirements' => 'nullable|string|max:500',
-        // 'payment' => 'required|in:499,3500',
+        'payment' => 'required|in:499,3500',
     ]);
 
     if ($validator->fails()) {
@@ -77,10 +76,7 @@ class LandingPageController extends Controller
         $validated = $validator->validated();
 
         // Handle profile picture upload
-        $profilePicturePath = null;
-        if ($request->hasFile('profile_picture')) {
-            $profilePicturePath = $request->file('profile_picture')->store('profile_pictures', 'public');
-        }
+      
 
         // Create registration record
         $landing = EventRegistration::create([
@@ -95,7 +91,6 @@ class LandingPageController extends Controller
             'pincode' => $validated['pincode'],
             'country' => $validated['country'],
             'address' => $validated['address'],
-            'profile_picture' => $profilePicturePath,
             'special_requirements' => $validated['special_requirements'] ?? null,
             'order_id' => $order['id'],
             'amount' => $paymentAmount,

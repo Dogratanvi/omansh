@@ -166,7 +166,7 @@ class LandingPageController extends Controller
             // Update registration status
             $registration->update([
                 'status' => 'paid',
-                'r_payment_id' => $request->razorpay_payment_id
+                'razorpay_payment_id' => $request->razorpay_payment_id
             ]);
 
             return response()->json([

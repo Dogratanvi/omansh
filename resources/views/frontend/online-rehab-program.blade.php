@@ -1106,7 +1106,7 @@
                 <div class="col-md-12 mb-3">
                     <select name="payment" id="paymentSelect" class="form-control" required>
                         <option value="">Select Payment *</option>
-                        <option value="499">₹499</option>
+                        <option value="1">₹1</option>
                         <option value="3500">₹3500</option>
                     </select>
                     <div class="error-message" id="error-payment"></div>

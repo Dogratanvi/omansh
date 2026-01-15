@@ -49,7 +49,7 @@ class LandingPageController extends Controller
         'country' => 'required|string|max:255',
         'address' => 'required|string|max:1000',
         'special_requirements' => 'nullable|string|max:500',
-        'payment' => 'required|in:499,3500',
+        // 'payment' => 'required|in:499,3500',
     ]);
 
     if ($validator->fails()) {

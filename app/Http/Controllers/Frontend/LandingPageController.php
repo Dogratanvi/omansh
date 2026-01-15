@@ -33,6 +33,8 @@ class LandingPageController extends Controller
 
     public function store(Request $request)
     {
+
+        dd($request->all());
         $validator = Validator::make($request->all(), [
             'aadhaar_number' => 'required|string|size:12|regex:/^[0-9]{12}$/',
             'first_name' => 'required|string|min:2|max:255',

@@ -1098,6 +1098,7 @@
 </div>
 
 {{-- Add this JavaScript at the bottom of your page, before closing </body> tag --}}
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     // Avatar Upload Preview
@@ -1116,7 +1117,6 @@ document.addEventListener("DOMContentLoaded", function() {
         clearError('profile_picture');
     });
 
-    // Form Validation
     const form = document.getElementById('landingForm');
     const submitBtn = document.getElementById('submitBtn');
     
@@ -1259,6 +1259,86 @@ document.addEventListener("DOMContentLoaded", function() {
         return isValid;
     }
 
+    // Initialize Razorpay Payment
+    function initiateRazorpayPayment(orderData) {
+        const options = {
+            key: orderData.razorpay_key,
+            amount: orderData.amount,
+            currency: "INR",
+            name: "Omansh Health and Fitness",
+            description: "Diastasis Recti Online Rehab Program",
+            order_id: orderData.order_id,
+            prefill: {
+                name: orderData.customer_name,
+                email: orderData.customer_email,
+                contact: orderData.customer_contact
+            },
+            theme: {
+                color: "#004B2A"
+            },
+            handler: function(response) {
+                verifyPayment(response);
+            },
+            modal: {
+                ondismiss: function() {
+                    alert('Payment cancelled. Please try again.');
+                    resetSubmitButton();
+                }
+            }
+        };
+
+        const razorpay = new Razorpay(options);
+        razorpay.on('payment.failed', function(response) {
+            alert('Payment failed: ' + response.error.description);
+            resetSubmitButton();
+        });
+        razorpay.open();
+    }
+
+    // Verify Payment
+    function verifyPayment(paymentResponse) {
+        fetch('{{ route("frontend.landing.verify") }}', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                razorpay_order_id: paymentResponse.razorpay_order_id,
+                razorpay_payment_id: paymentResponse.razorpay_payment_id,
+                razorpay_signature: paymentResponse.razorpay_signature
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert(data.message);
+                // Redirect to success page
+                if (data.redirect) {
+                    window.location.href = data.redirect;
+                } else {
+                    window.location.href = '{{ route("frontend.landing.success") }}';
+                }
+            } else {
+                alert(data.message || 'Payment verification failed');
+                resetSubmitButton();
+            }
+        })
+        .catch(error => {
+            console.error('Verification Error:', error);
+            alert('Payment verification failed. Please contact support.');
+            resetSubmitButton();
+        });
+    }
+
+    // Reset Submit Button
+    function resetSubmitButton() {
+        submitBtn.disabled = false;
+        submitBtn.querySelector('.btn-text').textContent = 'Submit';
+        submitBtn.querySelector('.spinner-border').classList.add('d-none');
+    }
+
     // AJAX Form Submission
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -1273,7 +1353,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Disable button and show loading
         submitBtn.disabled = true;
-        btnText.textContent = 'Submitting...';
+        btnText.textContent = 'Processing...';
         spinner.classList.remove('d-none');
 
         fetch(form.action, {
@@ -1284,41 +1364,40 @@ document.addEventListener("DOMContentLoaded", function() {
                 'Accept': 'application/json'
             }
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                return response.json().then(err => Promise.reject(err));
+            }
+            return response.json();
+        })
         .then(data => {
-            if (data.success) {
-                // Success
-                alert(data.message || 'Registration successful!');
-                form.reset();
-                document.getElementById('imagePreview').style.backgroundImage = 'url(https://via.placeholder.com/192x192.png?text=Upload+Photo)';
-                
-                // Close popup
-                document.getElementById('imagePopup').classList.remove('active');
-                
-                // Redirect if URL provided
-                if (data.redirect) {
-                    window.location.href = data.redirect;
-                }
-            } else {
+            if (data.success && data.order_id) {
+                // Registration successful, initiate Razorpay payment
+                btnText.textContent = 'Opening Payment Gateway...';
+                initiateRazorpayPayment(data);
+            } else if (data.errors) {
                 // Validation errors
-                if (data.errors) {
-                    Object.keys(data.errors).forEach(key => {
-                        showError(key, data.errors[key][0]);
-                    });
-                } else {
-                    alert(data.message || 'Something went wrong. Please try again.');
-                }
+                Object.keys(data.errors).forEach(key => {
+                    showError(key, data.errors[key][0]);
+                });
+                resetSubmitButton();
+            } else {
+                alert(data.message || 'Something went wrong. Please try again.');
+                resetSubmitButton();
             }
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('An error occurred. Please try again.');
-        })
-        .finally(() => {
-            // Re-enable button
-            submitBtn.disabled = false;
-            btnText.textContent = 'Submit';
-            spinner.classList.add('d-none');
+            
+            // Handle validation errors
+            if (error.errors) {
+                Object.keys(error.errors).forEach(key => {
+                    showError(key, error.errors[key][0]);
+                });
+            } else {
+                alert(error.message || 'An error occurred. Please try again.');
+            }
+            resetSubmitButton();
         });
     });
 

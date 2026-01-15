@@ -124,6 +124,7 @@ class LandingPageController extends Controller
                 'order_id' => $order['id'],
                 'amount' => $paymentAmount,
                 'currency' => 'INR',
+                'landing_page_name' => 'Online Rehab Program',
                 'status' => 'pending'
             ]);
 

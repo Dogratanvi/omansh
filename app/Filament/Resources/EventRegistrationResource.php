@@ -54,23 +54,8 @@ class EventRegistrationResource extends Resource
                     ->weight('bold')
                     ->icon('heroicon-m-hashtag'),
                 
-                TextColumn::make('event.name')
-                    ->label('Event')
-                    ->searchable()
-                    ->sortable()
-                    ->limit(30)
-                    ->tooltip(function (TextColumn $column): ?string {
-                        $state = $column->getState();
-                        if (strlen($state) <= 30) {
-                            return null;
-                        }
-                        return $state;
-                    }),
-                
-                ImageColumn::make('profile_picture')
-                    ->label('Photo')
-                    ->circular()
-                    ->defaultImageUrl(url('/images/default-avatar.png')),
+               
+               
                 
                 TextColumn::make('full_name')
                     ->label('Participant Name')

@@ -100,13 +100,15 @@ class LandingPageController extends Controller
 
             $validated = $validator->validated();
 
+            dd($request->hasFile('profile_picture'));
+
             // Handle profile picture upload
             $profilePicturePath = null;
             if ($request->hasFile('profile_picture')) {
                 $profilePicturePath = $request->file('profile_picture')->store('profile_pictures', 'public');
             }
 
-            dd($profilePicturePath);
+          
 
             // Create registration record
             $landing = EventRegistration::create([

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use  App\Http\Controllers\Frontend\ContactController;
+use App\Http\Controllers\Frontend\LandingPageController;
 use App\Http\Controllers\Frontend\EventRegistrationController;
 
 

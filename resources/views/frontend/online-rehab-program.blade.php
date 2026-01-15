@@ -898,7 +898,7 @@
     <div class="price-popup-content p-5">
         <span class="price-popup-close">&times;</span>
 
-        <form method="POST" enctype="multipart/form-data">
+        <form action="{{ route('frontend.landing.store') }}" method="POST" enctype="multipart/form-data">
             <div class="row g-3">
 
                 <div class="col-md-6 mb-2">
@@ -921,9 +921,6 @@
                     <input type="text" name="phone" class="form-control" placeholder="Phone">
                 </div>
 
-                <div class="col-md-6 mb-2">
-                    <input type="date" name="date_of_birth" class="form-control">
-                </div>
 
                 <div class="col-md-6 mb-2">
                     <select name="gender" class="form-control">
@@ -962,36 +959,7 @@
                     <input type="text" name="special_requirements" class="form-control" placeholder="Special Requirements">
                 </div>
 
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="emergency_contact_name" class="form-control" placeholder="Emergency Contact Name">
-                </div>
-
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="emergency_contact_phone" class="form-control" placeholder="Emergency Contact Phone">
-                </div>
-
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="event_name" class="form-control" placeholder="Event Name">
-                </div>
-
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="event_location" class="form-control" placeholder="Event Location">
-                </div>
-
-                <div class="col-md-6 mb-2">
-                    <input type="date" name="event_date_from" class="form-control">
-                </div>
-
-                <div class="col-md-6 mb-2">
-                    <input type="date" name="event_date_to" class="form-control">
-                </div>
-
-                <div class="col-md-6 mb-2">
-                    <select name="registration_status" class="form-control">
-                        <option value="pending">Pending</option>
-                        <option value="confirmed">Confirmed</option>
-                    </select>
-                </div>
+               
 
                 <div class="col-md-6 mb-3">
                     <select name="payment" id="paymentSelect" class="form-control">

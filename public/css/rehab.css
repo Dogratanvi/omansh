@@ -217,6 +217,37 @@
      background-color: #CAA983;
   color: #0b4f2a;
 }
+.price-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-popup.active {
+    display: flex;
+}
+
+.price-popup-content {
+    background: #fff;
+    padding: 20px;
+    width: 800px;
+    max-width: 90%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.price-popup-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
 .cust-border{

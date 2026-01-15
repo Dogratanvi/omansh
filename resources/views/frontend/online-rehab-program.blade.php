@@ -3,8 +3,9 @@
 <main class="landing-page rehab-page">
 
     <section class="rehab-banner position-relative z-2">
-        <img src="{{ asset('img/rehab-banner.webp') }}" class="position-absolute w-100 h-100 z-1 top-0 start-0 object-fit-cover"
-            alt="banner image" style="object-fit: cover;">
+        <img src="{{ asset('img/rehab-banner.webp') }}"
+            class="position-absolute w-100 h-100 z-1 top-0 start-0 object-fit-cover" alt="banner image"
+            style="object-fit: cover;">
         <div class="position-relative z-2">
             <div class="box-wrapper p-5 position-reltaive">
                 <h1 class=" fw-bolder text-uppercase text-white ">
@@ -45,7 +46,7 @@
             <h2 class="top-heading m-0 mb-0 pt-4 text-white text-center">Join Diastasis Recti online Medical Rehab
                 program
             </h2>
-            <button class="signup-btn mb-3 mt-3">
+            <button class="signup-btn open-popup mb-3 mt-3" data-price="3500">
                 SIGNUP NOW: ₹ 3500
             </button>
 
@@ -611,9 +612,12 @@
                 </div>
             </div>
             <div class="text-center">
-                <button class="webinar-btn shadow-none border-0 rounded text-white py-2 px-3 mt-5 text-center">Sign
-                    up
-                    now at ₹499</button>
+                <button
+                    class="signup-btn open-popup text-decoration-none shadow-none border-0 rounded text-white py-2 px-3"
+                    data-price="499">
+                    Sign up now at ₹499
+                </button>
+            
             </div>
         </div>
     </section>
@@ -635,7 +639,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 cust-border">
-                   <div class="p-2 p-sm-2 p-md-5">
+                    <div class="p-2 p-sm-2 p-md-5">
                         <h3 class="text-badge fs-4 mb-3">Advanced / Long-standing DR: 8–12 Weeks</h3>
                         <p class="text-white">Recommended after assessment for old DR, repeated C-sections, persistent
                             belly bulge</p>
@@ -727,133 +731,125 @@
     </section>
     <section>
         <div class="container my-5">
-  <div class="accordion faq-accordion" id="faqAccordion">
+            <div class="accordion faq-accordion" id="faqAccordion">
 
-    <!-- ITEM 1 -->
-    <div class="accordion-item mb-3 border rounded">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq1"
-                aria-expanded="true">
-          Q. Can Diastasis Recti be treated without surgery?
-        </button>
-      </h2>
-      <div id="faq1" class="accordion-collapse collapse show"
-           data-bs-parent="#faqAccordion">
-        <div class="accordion-body pt-0">
-          Yes, in mild to moderate cases of Diastasis Recti, improvement is possible
-          with physiotherapy-based rehabilitation.
+                <!-- ITEM 1 -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true">
+                            Q. Can Diastasis Recti be treated without surgery?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body pt-0">
+                            Yes, in mild to moderate cases of Diastasis Recti, improvement is possible
+                            with physiotherapy-based rehabilitation.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            Q. Is online Diastasis Recti treatment effective?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body pt-0">
+                            Yes, when the program is conducted under the guidance of a qualified MPT (Obs & Gynae)
+                            physiotherapist, it can be highly effective.
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            Q. How long does it take to see improvement in Diastasis Recti?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body pt-0">
+                            Usually, improved core control is felt within 4–6 weeks, while visible changes are seen in
+                            8–12 weeks with consistent practice. </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="accordion-item mb-3 border rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            Q. Is a Diastasis Recti program safe after a C-section?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body pt-0">
+                            Yes, after proper screening, a C-section scar-aware rehabilitation program is safely
+                            followed.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5 -->
+                <div class="accordion-item border rounded">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
+                            Q. Does this program teach exercises for lifelong management?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body pt-0">
+                            Yes, the program teaches you how to safely perform gym workouts, yoga, and daily activities
+                            in the future.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- ITEM 2 -->
-    <div class="accordion-item mb-3 border rounded">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq2">
-          Q. Is online Diastasis Recti treatment effective?
-        </button>
-      </h2>
-      <div id="faq2" class="accordion-collapse collapse"
-           data-bs-parent="#faqAccordion">
-        <div class="accordion-body pt-0">
-Yes, when the program is conducted under the guidance of a qualified MPT (Obs & Gynae) physiotherapist, it can be highly effective.
-
-        </div>
-      </div>
-    </div>
-
-    <!-- ITEM 3 -->
-    <div class="accordion-item mb-3 border rounded">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq3">
-          Q. How long does it take to see improvement in Diastasis Recti?
-        </button>
-      </h2>
-      <div id="faq3" class="accordion-collapse collapse"
-           data-bs-parent="#faqAccordion">
-        <div class="accordion-body pt-0">
-Usually, improved core control is felt within 4–6 weeks, while visible changes are seen in 8–12 weeks with consistent practice.        </div>
-      </div>
-    </div>
-
-    <!-- ITEM 4 -->
-    <div class="accordion-item mb-3 border rounded">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq4">
-          Q. Is a Diastasis Recti program safe after a C-section?
-        </button>
-      </h2>
-      <div id="faq4" class="accordion-collapse collapse"
-           data-bs-parent="#faqAccordion">
-        <div class="accordion-body pt-0">
-         Yes, after proper screening, a C-section scar-aware rehabilitation program is safely followed.
-        </div>
-      </div>
-    </div>
-
-    <!-- ITEM 5 -->
-    <div class="accordion-item border rounded">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq5">
-          Q. Does this program teach exercises for lifelong management?
-        </button>
-      </h2>
-      <div id="faq5" class="accordion-collapse collapse"
-           data-bs-parent="#faqAccordion">
-        <div class="accordion-body pt-0">
-         Yes, the program teaches you how to safely perform gym workouts, yoga, and daily activities in the future.
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
     </section>
     <div class="container text-center py-5 position-relative">
 
-  <!-- Price Badge -->
-<div class="text-center my-4">
-  <a href="#"
-     class="signup-btn text-decoration-none">
-    SIGNUP NOW: ₹ 3500
-  </a>
-</div>
-
-  <!-- Content -->
-  <h2 class="fw-bold mt-4 text-theme">
-    For Videos Related to DR
-  </h2>
-
-  <p class="mb-4 text-dark">
-    Visit to Our Youtube &amp; Instagram
-  </p>
-
-  <!-- Social Icons -->
-  <div class="d-flex justify-content-center gap-4">
-    <a href="https://www.youtube.com/@drgarimabiswas6613" target="_blank"
-       class="social-icon youtube">
+        <!-- Price Badge -->
+        <div class="text-center my-4">
      
-        <img src="{{ asset('img/youtube.svg') }}" class="img-fluid" alt="social icon">
-    </a>
+                <button class="signup-btn open-popup mb-3 mt-3" data-price="3500">
+                SIGNUP NOW: ₹ 3500
+            </button>
+            
+        </div>
 
-    <a href="https://www.instagram.com/omansh_health_fitness/" target="_blank"
-       class="social-icon instagram">
-     <img src="{{ asset('img/instagram.svg') }}" class="img-fluid" alt="social icon">
-    </a>
-  </div>
+        <!-- Content -->
+        <h2 class="fw-bold mt-4 text-theme">
+            For Videos Related to DR
+        </h2>
 
-</div>
+        <p class="mb-4 text-dark">
+            Visit to Our Youtube &amp; Instagram
+        </p>
+
+        <!-- Social Icons -->
+        <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.youtube.com/@drgarimabiswas6613" target="_blank" class="social-icon youtube">
+
+                <img src="{{ asset('img/youtube.svg') }}" class="img-fluid" alt="social icon">
+            </a>
+
+            <a href="https://www.instagram.com/omansh_health_fitness/" target="_blank" class="social-icon instagram">
+                <img src="{{ asset('img/instagram.svg') }}" class="img-fluid" alt="social icon">
+            </a>
+        </div>
+
+    </div>
 
     <div class="bottom-footer section-sub-bg">
         <div class="container">
@@ -891,13 +887,131 @@ Usually, improved core control is felt within 4–6 weeks, while visible changes
                     </div>
                 </div>
                 <div class="col-12 col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                    <button
-                        class="signup-btn text-decoration-none shadow-none border-0 rounded text-white py-2 px-3 mt-3 mt-sm-0 mt-xs-0 mt-md-3 mt-lg-0 mt-xl-0 text-center">Sign
-                        up now at ₹499</button>
+                 <button class="signup-btn open-popup text-decoration-none shadow-none border-0 rounded text-white py-2 px-3" data-price="499">
+                    Sign up now at ₹499
+                </button>
                 </div>
             </div>
         </div>
     </div>
+<div id="imagePopup" class=" price-popup">
+    <div class="price-popup-content p-5">
+        <span class="price-popup-close">&times;</span>
+
+        <form method="POST" enctype="multipart/form-data">
+            <div class="row g-3">
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="aadhaar_number" class="form-control" placeholder="Aadhaar Number">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="phone" class="form-control" placeholder="Phone">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="date" name="date_of_birth" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <select name="gender" class="form-control">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="city" class="form-control" placeholder="City">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="state" class="form-control" placeholder="State">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="pincode" class="form-control" placeholder="Pincode">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="country" class="form-control" placeholder="Country">
+                </div>
+
+                <div class="col-md-12 mb-2">
+                    <textarea name="address" class="form-control" placeholder="Address"></textarea>
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="file" name="profile_picture" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="special_requirements" class="form-control" placeholder="Special Requirements">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="emergency_contact_name" class="form-control" placeholder="Emergency Contact Name">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="emergency_contact_phone" class="form-control" placeholder="Emergency Contact Phone">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="event_name" class="form-control" placeholder="Event Name">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="event_location" class="form-control" placeholder="Event Location">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="date" name="event_date_from" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <input type="date" name="event_date_to" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-2">
+                    <select name="registration_status" class="form-control">
+                        <option value="pending">Pending</option>
+                        <option value="confirmed">Confirmed</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <select name="payment" id="paymentSelect" class="form-control">
+                        <option value="">Select Payment</option>
+                        <option value="499">₹499</option>
+                        <option value="3500">₹3500</option>
+                    </select>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-success px-4">
+                        Submit
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
 </main>
 <script>
 function countdownTimerCustom() {
@@ -959,4 +1073,34 @@ window.onload = function() {
     startTimer();
 };
 </script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const popup = document.getElementById('imagePopup');
+    const closeBtn = document.querySelector('.price-popup-close');
+    const paymentSelect = document.getElementById('paymentSelect');
+
+    document.querySelectorAll('.open-popup').forEach(btn => {
+        btn.addEventListener('click', function() {
+            paymentSelect.value = this.dataset.price;
+            popup.classList.add('active');
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.classList.remove('active');
+    });
+
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.classList.remove('active');
+        }
+    });
+});
+</script>
+
+
+
 @endsection

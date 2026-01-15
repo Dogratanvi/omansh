@@ -5,7 +5,7 @@
         $meta_page_type = 'online-rehab-program';
 @endphp
 @section('content')
-<div class="container py-5 mt-5 ">
+<div class="banner-section-outer">
     <div class="row justify-content-center">
         <div class="col-md-8 text-center">
             <div class="card shadow-lg">

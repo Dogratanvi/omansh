@@ -179,8 +179,8 @@
             <h3 style="color: #004B2A;">Need Help?</h3>
             <p>If you have any questions or concerns, please don't hesitate to contact us:</p>
             <ul style="list-style: none; padding: 0;">
-                <li>📧 Email: info@omanshhealth.com</li>
-                <li>📱 Phone: +91-XXXXXXXXXX</li>
+                <li>📧 Email:  garimabiswas09@gmail.com</li>
+                <li>📱 Phone: +91-8384019745</li>
                 <li>🌐 Website: <a href="{{ route('frontend.index') }}">www.omanshhealth.com</a></li>
             </ul>
 
@@ -197,8 +197,8 @@
             <p>This is an automated email. Please do not reply to this message.</p>
             <p>&copy; {{ date('Y') }} Omansh Health and Fitness. All rights reserved.</p>
             <p>
-                <a href="{{ route('frontend.privacy-policy') }}" style="color: #004B2A; text-decoration: none;">Privacy Policy</a> | 
-                <a href="{{ route('frontend.terms&condition') }}" style="color: #004B2A; text-decoration: none;">Terms & Conditions</a>
+                <a href="/privacy-policy" style="color: #004B2A; text-decoration: none;">Privacy Policy</a> | 
+                <a href="/terms&condition" style="color: #004B2A; text-decoration: none;">Terms & Conditions</a>
             </p>
         </div>
     </div>

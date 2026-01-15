@@ -58,11 +58,11 @@
                                 <p class="text-muted mb-2">Need Help?</p>
                                 <p class="mb-0">
                                     <i class="fas fa-phone text-theme me-2"></i>
-                                    <strong>Contact:</strong> +91-XXXXXXXXXX
+                                    <strong>Contact:</strong> +91-8384019745
                                 </p>
                                 <p class="mb-4">
                                     <i class="fas fa-envelope text-theme me-2"></i>
-                                    <strong>Email:</strong> support@omanshhealth.com
+                                    <strong>Email:</strong>  garimabiswas09@gmail.com
                                 </p>
                             </div>
                             

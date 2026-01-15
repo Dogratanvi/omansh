@@ -168,19 +168,19 @@ Route::get('/online-rehab-program', [LandingPageController::class, 'index'])
 
 // Registration form submission (AJAX)
 Route::post('/online-rehab-program/register', [LandingPageController::class, 'store'])
-    ->name('frontend.landing.store');
+    ->name('landing.store');
 
 // Payment verification (AJAX)
 Route::post('/online-rehab-program/payment/verify', [LandingPageController::class, 'verify'])
-    ->name('frontend.landing.verify');
+    ->name('landing.verify');
 
 // Success page after payment
 Route::get('/online-rehab-program/success', [LandingPageController::class, 'success'])
-    ->name('frontend.landing.success');
+    ->name('landing.success');
 
 // Payment failure page
 Route::get('/online-rehab-program/failed', [LandingPageController::class, 'failed'])
-    ->name('frontend.landing.failed');
+    ->name('landing.failed');
 
     
 Route::get('/registration/success/{registrationId}', [EventRegistrationController::class, 'show'])

@@ -978,7 +978,7 @@
     <div class="price-popup-content p-5">
         <span class="price-popup-close">&times;</span>
 
-        <form id="landingForm" action="/online-rehab-program/register" method="POST" enctype="multipart/form-data">
+        <form id="landingForm"  method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row g-3">
 

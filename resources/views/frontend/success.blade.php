@@ -68,7 +68,7 @@
                             
                             {{-- Action Buttons --}}
                             <div class="d-flex gap-3 justify-content-center">
-                                <a href="/online-rehab-program" class="btn btn-outline-success px-4">
+                                <a href="/" class="btn btn-outline-success px-4">
                                     <i class="fas fa-home me-2"></i>Back to Home
                                 </a>
                                 <a href="https://www.instagram.com/omansh_health_fitness/" target="_blank" class="btn btn-success px-4">

@@ -291,7 +291,12 @@
         height: 800px;
         overflow: scroll;
     }
-
+.mobile-size-img img{
+    width: 30% !important;
+}
+.mobile-size-img small {
+    font-size: 19px !important;
+}
     }
 }
 

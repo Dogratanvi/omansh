@@ -2,11 +2,11 @@
 @section('content')
 <main class="landing-page rehab-page">
 
-    <section class="rehab-banner position-relative z-2">
+    <section class="rehab-banner position-relative z-2 ">
         <img src="{{ asset('img/rehab-banner.webp') }}"
             class="position-absolute w-100 h-100 z-1 top-0 start-0 object-fit-cover" alt="banner image"
             style="object-fit: cover;">
-        <div class="position-relative z-2">
+        <div class="position-relative  z-2 ">
             <div class="box-wrapper p-5 position-reltaive">
                 <h1 class=" fw-bolder text-uppercase text-white ">
                     Diastasis Recti (DR) Online Rehab <br>Program</h1>
@@ -16,9 +16,53 @@
                     <p class="desc-sec fw-bolder mb-0" style="color:#004B2A;">(Starts from 19th January)</p>
                 </div>
             </div>
+        </div>
+        <div class="position-absolute top-0 d-none d-sm-none d-md-block">
+            <figure class="banner_left_top_shape left_shape mb-0">
+                <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="banner_left_top_shape"
+                    class="img-fluid">
+            </figure>
+            <figure class="banner_left_bottom_shape left_shape mb-0">
+                <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="banner_left_bottom_shape"
+                    class="img-fluid">
+            </figure>
+
+        </div>
+        <div class="position-absolute top-0 end-0 bottom-0 d-none d-sm-none d-md-block">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+            <figure class="banner_right_bottom_shape right_shape mb-0">
+                <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="banner_right_bottom_shape"
+                    class="img-fluid">
+            </figure>
+        </div>
+
+
     </section>
     <!-- meet our expert -->
-    <section class="rehab-expert ">
+    <section class="rehab-expert  position-relative">
+                <div class="position-absolute top-0">
+            <figure class="banner_left_top_shape left_shape mb-0">
+                <img src="{{ asset('images/banner_left_top_shape.png') }}" alt="banner_left_top_shape"
+                    class="img-fluid">
+            </figure>
+            <figure class="banner_left_bottom_shape left_shape mb-0">
+                <img src="{{ asset('images/banner_left_bottom_shape.png') }}" alt="banner_left_bottom_shape"
+                    class="img-fluid">
+            </figure>
+
+        </div>
+        <div class="position-absolute top-0 end-0 bottom-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container">
             <div class="row">
 
@@ -28,8 +72,13 @@
                             <h2 class="fw-bolder mb-0" style="color:#004B2A;">Meet Our Expert</h2>
                         </div>
                         <h3 class="fw-bolder mb-3 pt-4 text-theme">Dr. Garima Biswas</h3>
-                        <p class="mb-3 text-dark">MPT (Obs & Gyne)
-                            Consultant Physiotherapist
+                        <p class="mb-3 text-dark d-none d-sm-none d-md-block">MPT (Obs & Gyne)
+                            Consultant Physiotherapist <br>
+                            Founder of OMANSH Health and Fitness<br>
+                            Obstetrics and Pelvic Floor Rehab Therapist<br>
+                            Labor and Child Birth Educator </p>
+                             <p class="mb-3 text-dark d-block d-md-block d-md-none">MPT (Obs & Gyne)
+                            Consultant Physiotherapist 
                             Founder of OMANSH Health and Fitness
                             Obstetrics and Pelvic Floor Rehab Therapist
                             Labor and Child Birth Educator </p>
@@ -47,15 +96,22 @@
                 program
             </h2>
             <button class="signup-btn open-popup mb-3 mt-3" data-price="3500">
-                SIGNUP NOW: ₹ 3500
+                SIGNUP NOW: <del>₹ 7000</del> : <span class="p-1 rounded" style="background-color:#004B2A; color:#fff;">₹ 3500</span>
             </button>
 
         </div>
     </div>
-    <section class="rehab-expert py-5">
+    <section class="rehab-expert py-5 position-relative">
+                       <div class="position-absolute top-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/services_left_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container">
             <div class="row align-items-center">
-
                 <!-- LEFT CONTENT -->
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
                     <div class="mb-4">
@@ -100,7 +156,7 @@
         </div>
     </section>
 
-    <section class="rehab-expert py-5">
+    <section class="rehab-expert py-5 position-relative">
         <div class="container">
             <div class="row align-items-center">
 
@@ -146,12 +202,28 @@
 
             </div>
         </div>
+          <div class="position-absolute top-0 end-0 bottom-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
     </section>
     <div class="mb-0 text-center">
         <span class="section-badge">About the Program</span>
     </div>
 
-    <div class="main-header section-bg d-flex align-items-center justify-content-center py-3">
+    <div class="main-header section-bg d-flex align-items-center justify-content-center py-3 position-relative">
+                     <div class="position-absolute  start-0 top-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/services_left_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container text-center ">
             <h2 class="top-heading m-0 mb-0 pt-4 text-white text-center">Diastasis Recti online Medical Rehab program
             </h2>
@@ -185,7 +257,15 @@
             </div>
         </div>
     </div>
-    <section class="rehab-expert py-5 ">
+    <section class="rehab-expert py-5  position-relative">
+                  <div class="position-absolute top-0 end-0 bottom-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container py-4">
             <div class="mb-5 d-flex justify-content-center">
                 <span class="section-badge">What You Will Learn</span>
@@ -330,7 +410,15 @@
             </div>
         </div>
     </section>
-    <section class="rehab-expert py-5 ">
+    <section class="rehab-expert py-5 position-relative">
+                <div class="position-absolute top-0 end-0 bottom-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container py-4">
             <div class="mb-5 d-flex justify-content-center">
                 <span class="section-badge">Who Can Join This Program</span>
@@ -419,7 +507,15 @@
             </div>
         </div>
     </section>
-    <section class="rehab-expert py-5">
+    <section class="rehab-expert py-5 position-relative">
+                 <div class="position-absolute top-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/services_left_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container">
             <div class="row align-items-center">
 
@@ -466,7 +562,15 @@
             </div>
         </div>
     </section>
-    <section class="rehab-expert py-5">
+    <section class="rehab-expert py-5 position-relative">
+                <div class="position-absolute top-0 end-0 bottom-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/our_specialties_right_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container">
             <div class="mb-4 d-flex justify-content-center">
                 <span class="section-badge">Result You Can Expect</span>
@@ -537,7 +641,15 @@
             </div>
         </div>
     </section>
-    <section class="py-5">
+    <section class="py-5 position-relative">
+                      <div class="position-absolute top-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/services_left_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="mb-4 d-flex justify-content-center">
             <span class="section-badge">Testimonials</span>
         </div>
@@ -614,10 +726,10 @@
             <div class="text-center">
                 <button
                     class="signup-btn open-popup text-decoration-none shadow-none border-0 rounded text-white py-2 px-3"
-                    data-price="499">
-                    Sign up now at ₹499
+                    data-price="3500">
+                    Sign up now at ₹3500
                 </button>
-            
+
             </div>
         </div>
     </section>
@@ -651,11 +763,11 @@
     </div>
     <!-- TOP INFO BAR -->
     <div class="mb-0 mt-5 text-center">
-        <span class="section-badge">Program Fees</span>
+        <span class="section-badge">About the Program</span>
     </div>
     <div class="container-fluid section-bg text-white py-5">
         <div class="container">
-            <div class="row text-center text-md-start align-items-center gy-3">
+            <div class="row text-center text-md-start align-items-center mobile-size-img gy-3">
 
                 <div
                     class="col-6 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start gap-2 border-end border-white">
@@ -699,6 +811,9 @@
 
     <!-- PRICE SECTION -->
     <div class="container text-center py-4 my-5 my-sm-5 my-md-2">
+         <div class="mb-4 mt-5 text-center">
+        <span class="section-badge">Fee for Program</span>
+    </div>
         <h4 class="fw-bold mb-2 text-theme">
             4 WEEKS PROGRAM:
             <span class="text-decoration-line-through  text-danger ms-2">₹ 5500</span>
@@ -718,7 +833,7 @@
 
                 <p class="fw-semibold  text-theme mb-4">Click below to reserve your seat</p>
 
-                <a href="#" class="btn section-bg text-white btn-lg px-5 fw-bold">
+                <a  class="btn section-bg text-white btn-lg px-5 fw-bold open-popup" >
                     JOIN ONLINE REHAB PROGRAM
                 </a>
 
@@ -729,7 +844,15 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="position-relative">
+                      <div class="position-absolute top-0">
+
+            <figure class="banner_right_top_shape right_shape mb-0">
+                <img src="{{ asset('images/services_left_shape.png') }}" alt="banner_right_top_shape"
+                    class="img-fluid">
+            </figure>
+     
+        </div>
         <div class="container my-5">
             <div class="accordion faq-accordion" id="faqAccordion">
 
@@ -821,11 +944,11 @@
 
         <!-- Price Badge -->
         <div class="text-center my-4">
-     
-                <button class="signup-btn open-popup mb-3 mt-3" data-price="3500">
+
+            <button class="signup-btn open-popup mb-3 mt-3" data-price="3500">
                 SIGNUP NOW: ₹ 3500
             </button>
-            
+
         </div>
 
         <!-- Content -->
@@ -886,31 +1009,36 @@
                         <span class="text-white">Seconds</span>
                     </div>
                 </div>
-                <div class="col-12 col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12">
-                 <button class="signup-btn open-popup text-decoration-none shadow-none border-0 rounded text-white py-2 px-3" data-price="499">
-                    Sign up now at ₹499
-                </button>
+                <div class="col-12 col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 mt-4 mt-sm-4 mt-md-0">
+                    <button
+                        class="signup-btn open-popup text-decoration-none shadow-none border-0 rounded text-white py-2 px-3"
+                        data-price="3500">
+                        Sign up now at ₹3500
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-{{-- Add this CSS in your main stylesheet or in a <style> tag in the head --}}
-<style>
+
+    <style>
     .avatar-upload {
         position: relative;
         max-width: 205px;
         margin: 0 auto 30px;
     }
+
     .avatar-upload .avatar-edit {
         position: absolute;
         right: 12px;
         z-index: 1;
         top: 10px;
     }
+
     .avatar-upload .avatar-edit input {
         display: none;
     }
-    .avatar-upload .avatar-edit input + label {
+
+    .avatar-upload .avatar-edit input+label {
         display: inline-block;
         width: 34px;
         height: 34px;
@@ -923,11 +1051,13 @@
         font-weight: normal;
         transition: all 0.2s ease-in-out;
     }
-    .avatar-upload .avatar-edit input + label:hover {
+
+    .avatar-upload .avatar-edit input+label:hover {
         background: #f1f1f1;
         border-color: #d6d6d6;
     }
-    .avatar-upload .avatar-edit input + label:after {
+
+    .avatar-upload .avatar-edit input+label:after {
         content: "\f040";
         font-family: 'FontAwesome';
         color: #757575;
@@ -938,6 +1068,7 @@
         text-align: center;
         margin: auto;
     }
+
     .avatar-upload .avatar-preview {
         width: 192px;
         height: 192px;
@@ -946,7 +1077,8 @@
         border: 6px solid #F8F8F8;
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
     }
-    .avatar-upload .avatar-preview > div {
+
+    .avatar-upload .avatar-preview>div {
         width: 100%;
         height: 100%;
         border-radius: 100%;
@@ -954,18 +1086,22 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
     .error-message {
         color: #dc3545;
         font-size: 0.875em;
         margin-top: 0.25rem;
         display: none;
     }
+
     .form-control.is-invalid {
         border-color: #dc3545;
     }
+
     .form-control.is-valid {
         border-color: #28a745;
     }
+
     .spinner-border-sm {
         width: 1rem;
         height: 1rem;
@@ -973,320 +1109,303 @@
     }
 
     /* Custom Modal Styles */
-#messageModal .modal-content {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-}
+    #messageModal .modal-content {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
 
-#messageModal .modal-header {
-    padding: 20px 30px;
-    border-bottom: none;
-}
+    #messageModal .modal-header {
+        padding: 20px 30px;
+        border-bottom: none;
+    }
 
-#messageModal .modal-body {
-    font-size: 16px;
-    color: #333;
-    padding: 30px;
-}
+    #messageModal .modal-body {
+        font-size: 16px;
+        color: #333;
+        padding: 30px;
+    }
 
-#messageModal .modal-footer {
-    padding: 15px 30px 30px;
-    justify-content: center;
-}
+    #messageModal .modal-footer {
+        padding: 15px 30px 30px;
+        justify-content: center;
+    }
 
-#messageModal .btn {
-    min-width: 120px;
-    padding: 10px 30px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
+    #messageModal .btn {
+        min-width: 120px;
+        padding: 10px 30px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
 
-/* Animation for modal */
-#messageModal.fade .modal-dialog {
-    transform: scale(0.8);
-    transition: transform 0.3s ease-out;
-}
+    /* Animation for modal */
+    #messageModal.fade .modal-dialog {
+        transform: scale(0.8);
+        transition: transform 0.3s ease-out;
+    }
 
-#messageModal.show .modal-dialog {
-    transform: scale(1);
-}
-</style>
+    #messageModal.show .modal-dialog {
+        transform: scale(1);
+    }
+    </style>
 
-{{-- Replace the form inside the popup with this --}}
-<div id="imagePopup" class="price-popup">
-    <div class="price-popup-content p-5">
-        <span class="price-popup-close">&times;</span>
+    {{-- Replace the form inside the popup with this --}}
+    <div id="imagePopup" class="price-popup">
+        <div class="price-popup-content p-5">
+            <span class="price-popup-close">&times;</span>
 
-        <form id="landingForm" action="{{ route('frontend.landing.store') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="row g-3">
+            <form id="landingForm" action="{{ route('frontend.landing.store') }}" method="POST"
+                enctype="multipart/form-data">
+                @csrf
+                <div class="row g-3">
 
-                {{-- Aadhaar Number --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="aadhaar_number" id="aadhaar_number" class="form-control" placeholder="Aadhaar Number *" required maxlength="12">
-                    <div class="error-message" id="error-aadhaar_number"></div>
+                    {{-- Aadhaar Number --}}
+
+
+                    {{-- First Name --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="first_name" id="first_name" class="form-control"
+                            placeholder="First Name *" required>
+                        <div class="error-message" id="error-first_name"></div>
+                    </div>
+
+                    {{-- Last Name --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="last_name" id="last_name" class="form-control"
+                            placeholder="Last Name *" required>
+                        <div class="error-message" id="error-last_name"></div>
+                    </div>
+
+                    {{-- Email --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email *" required>
+                        <div class="error-message" id="error-email"></div>
+                    </div>
+
+                    {{-- Phone --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone *" required
+                            maxlength="10">
+                        <div class="error-message" id="error-phone"></div>
+                    </div>
+
+                    {{-- Gender --}}
+
+
+                    {{-- City --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="city" id="city" class="form-control" placeholder="City *" required>
+                        <div class="error-message" id="error-city"></div>
+                    </div>
+
+                    {{-- State --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="state" id="state" class="form-control" placeholder="State *" required>
+                        <div class="error-message" id="error-state"></div>
+                    </div>
+
+                    {{-- Pincode --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="pincode" id="pincode" class="form-control" placeholder="Pincode *"
+                            required maxlength="6">
+                        <div class="error-message" id="error-pincode"></div>
+                    </div>
+
+                    {{-- Country --}}
+                    <div class="col-md-6 mb-2">
+                        <input type="text" name="country" id="country" class="form-control" placeholder="Country *"
+                            required>
+                        <div class="error-message" id="error-country"></div>
+                    </div>
+
+                    {{-- Address --}}
+                    <div class="col-md-12 mb-2">
+                        <textarea name="address" id="address" class="form-control" placeholder="Address *" rows="3"
+                            required></textarea>
+                        <div class="error-message" id="error-address"></div>
+                    </div>
+
+                    {{-- Special Requirements --}}
+
+
+                    {{-- Payment --}}
+                    <div class="col-md-12 mb-3">
+                        <select name="payment" id="paymentSelect" class="form-control" required>
+                            <option value="">Select Payment *</option>
+                            <option value="499">₹499</option>
+                            <option value="3500">₹3500</option>
+                        </select>
+                        <div class="error-message" id="error-payment"></div>
+                    </div>
+
+                    {{-- Submit Button --}}
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-success px-4" id="submitBtn">
+                            <span class="btn-text">Submit</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                        </button>
+                    </div>
+
                 </div>
-
-                {{-- First Name --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name *" required>
-                    <div class="error-message" id="error-first_name"></div>
-                </div>
-
-                {{-- Last Name --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name *" required>
-                    <div class="error-message" id="error-last_name"></div>
-                </div>
-
-                {{-- Email --}}
-                <div class="col-md-6 mb-2">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email *" required>
-                    <div class="error-message" id="error-email"></div>
-                </div>
-
-                {{-- Phone --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone *" required maxlength="10">
-                    <div class="error-message" id="error-phone"></div>
-                </div>
-
-                {{-- Gender --}}
-                <div class="col-md-6 mb-2">
-                    <select name="gender" id="gender" class="form-control" required>
-                        <option value="">Select Gender *</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <div class="error-message" id="error-gender"></div>
-                </div>
-
-                {{-- City --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="city" id="city" class="form-control" placeholder="City *" required>
-                    <div class="error-message" id="error-city"></div>
-                </div>
-
-                {{-- State --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="state" id="state" class="form-control" placeholder="State *" required>
-                    <div class="error-message" id="error-state"></div>
-                </div>
-
-                {{-- Pincode --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="pincode" id="pincode" class="form-control" placeholder="Pincode *" required maxlength="6">
-                    <div class="error-message" id="error-pincode"></div>
-                </div>
-
-                {{-- Country --}}
-                <div class="col-md-6 mb-2">
-                    <input type="text" name="country" id="country" class="form-control" placeholder="Country *" required>
-                    <div class="error-message" id="error-country"></div>
-                </div>
-
-                {{-- Address --}}
-                <div class="col-md-12 mb-2">
-                    <textarea name="address" id="address" class="form-control" placeholder="Address *" rows="3" required></textarea>
-                    <div class="error-message" id="error-address"></div>
-                </div>
-
-                {{-- Special Requirements --}}
-                <div class="col-md-12 mb-2">
-                    <input type="text" name="special_requirements" id="special_requirements" class="form-control" placeholder="Special Requirements (Optional)">
-                    <div class="error-message" id="error-special_requirements"></div>
-                </div>
-
-                {{-- Payment --}}
-                <div class="col-md-12 mb-3">
-                    <select name="payment" id="paymentSelect" class="form-control" required>
-                        <option value="">Select Payment *</option>
-                        <option value="499">₹499</option>
-                        <option value="3500">₹3500</option>
-                    </select>
-                    <div class="error-message" id="error-payment"></div>
-                </div>
-
-                {{-- Submit Button --}}
-                <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-success px-4" id="submitBtn">
-                        <span class="btn-text">Submit</span>
-                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
-                    </button>
-                </div>
-
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div>
 
-{{-- Add this JavaScript at the bottom of your page, before closing </body> tag --}}
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Avatar Upload Preview
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                document.getElementById('imagePreview').style.backgroundImage = 'url(' + e.target.result + ')';
+    {{-- Add this JavaScript at the bottom of your page, before closing </body> tag --}}
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Avatar Upload Preview
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').style.backgroundImage = 'url(' + e.target
+                        .result + ')';
+                }
+                reader.readAsDataURL(input.files[0]);
             }
-            reader.readAsDataURL(input.files[0]);
         }
-    }
 
-    
 
-    const form = document.getElementById('landingForm');
-    const submitBtn = document.getElementById('submitBtn');
-    
-    // Clear error on input
-    form.querySelectorAll('input, select, textarea').forEach(element => {
-        element.addEventListener('input', function() {
-            clearError(this.name);
+
+        const form = document.getElementById('landingForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // Clear error on input
+        form.querySelectorAll('input, select, textarea').forEach(element => {
+            element.addEventListener('input', function() {
+                clearError(this.name);
+            });
         });
-    });
 
-    // Validation Functions
-    function showError(fieldName, message) {
-        const field = document.getElementById(fieldName) || document.querySelector(`[name="${fieldName}"]`);
-        const errorDiv = document.getElementById(`error-${fieldName}`);
-        
-        if (field) field.classList.add('is-invalid');
-        if (errorDiv) {
-            errorDiv.textContent = message;
-            errorDiv.style.display = 'block';
-        }
-    }
+        // Validation Functions
+        function showError(fieldName, message) {
+            const field = document.getElementById(fieldName) || document.querySelector(`[name="${fieldName}"]`);
+            const errorDiv = document.getElementById(`error-${fieldName}`);
 
-    function clearError(fieldName) {
-        const field = document.getElementById(fieldName) || document.querySelector(`[name="${fieldName}"]`);
-        const errorDiv = document.getElementById(`error-${fieldName}`);
-        
-        if (field) field.classList.remove('is-invalid');
-        if (errorDiv) {
-            errorDiv.textContent = '';
-            errorDiv.style.display = 'none';
-        }
-    }
-
-    function clearAllErrors() {
-        document.querySelectorAll('.error-message').forEach(el => {
-            el.textContent = '';
-            el.style.display = 'none';
-        });
-        document.querySelectorAll('.is-invalid').forEach(el => {
-            el.classList.remove('is-invalid');
-        });
-    }
-
-    function validateForm() {
-        let isValid = true;
-        clearAllErrors();
-
-        // Aadhaar validation
-        const aadhaar = document.getElementById('aadhaar_number').value.trim();
-        if (!aadhaar) {
-            showError('aadhaar_number', 'Aadhaar number is required');
-            isValid = false;
-        } else if (!/^\d{12}$/.test(aadhaar)) {
-            showError('aadhaar_number', 'Aadhaar must be 12 digits');
-            isValid = false;
+            if (field) field.classList.add('is-invalid');
+            if (errorDiv) {
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+            }
         }
 
-        // Name validation
-        const firstName = document.getElementById('first_name').value.trim();
-        if (!firstName) {
-            showError('first_name', 'First name is required');
-            isValid = false;
-        } else if (firstName.length < 2) {
-            showError('first_name', 'First name must be at least 2 characters');
-            isValid = false;
+        function clearError(fieldName) {
+            const field = document.getElementById(fieldName) || document.querySelector(`[name="${fieldName}"]`);
+            const errorDiv = document.getElementById(`error-${fieldName}`);
+
+            if (field) field.classList.remove('is-invalid');
+            if (errorDiv) {
+                errorDiv.textContent = '';
+                errorDiv.style.display = 'none';
+            }
         }
 
-        const lastName = document.getElementById('last_name').value.trim();
-        if (!lastName) {
-            showError('last_name', 'Last name is required');
-            isValid = false;
+        function clearAllErrors() {
+            document.querySelectorAll('.error-message').forEach(el => {
+                el.textContent = '';
+                el.style.display = 'none';
+            });
+            document.querySelectorAll('.is-invalid').forEach(el => {
+                el.classList.remove('is-invalid');
+            });
         }
 
-        // Email validation
-        const email = document.getElementById('email').value.trim();
-        if (!email) {
-            showError('email', 'Email is required');
-            isValid = false;
-        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            showError('email', 'Please enter a valid email');
-            isValid = false;
+        function validateForm() {
+            let isValid = true;
+            clearAllErrors();
+
+
+
+            // Name validation
+            const firstName = document.getElementById('first_name').value.trim();
+            if (!firstName) {
+                showError('first_name', 'First name is required');
+                isValid = false;
+            } else if (firstName.length < 2) {
+                showError('first_name', 'First name must be at least 2 characters');
+                isValid = false;
+            }
+
+            const lastName = document.getElementById('last_name').value.trim();
+            if (!lastName) {
+                showError('last_name', 'Last name is required');
+                isValid = false;
+            }
+
+            // Email validation
+            const email = document.getElementById('email').value.trim();
+            if (!email) {
+                showError('email', 'Email is required');
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showError('email', 'Please enter a valid email');
+                isValid = false;
+            }
+
+            // Phone validation
+            const phone = document.getElementById('phone').value.trim();
+            if (!phone) {
+                showError('phone', 'Phone number is required');
+                isValid = false;
+            } else if (!/^[6-9]\d{9}$/.test(phone)) {
+                showError('phone', 'Please enter a valid 10-digit phone number');
+                isValid = false;
+            }
+
+
+
+            // City validation
+            if (!document.getElementById('city').value.trim()) {
+                showError('city', 'City is required');
+                isValid = false;
+            }
+
+            // State validation
+            if (!document.getElementById('state').value.trim()) {
+                showError('state', 'State is required');
+                isValid = false;
+            }
+
+            // Pincode validation
+            const pincode = document.getElementById('pincode').value.trim();
+            if (!pincode) {
+                showError('pincode', 'Pincode is required');
+                isValid = false;
+            } else if (!/^\d{6}$/.test(pincode)) {
+                showError('pincode', 'Pincode must be 6 digits');
+                isValid = false;
+            }
+
+            // Country validation
+            if (!document.getElementById('country').value.trim()) {
+                showError('country', 'Country is required');
+                isValid = false;
+            }
+
+            // Address validation
+            if (!document.getElementById('address').value.trim()) {
+                showError('address', 'Address is required');
+                isValid = false;
+            }
+
+            // Payment validation
+            if (!document.getElementById('paymentSelect').value) {
+                showError('payment', 'Please select a payment option');
+                isValid = false;
+            }
+
+            return isValid;
         }
 
-        // Phone validation
-        const phone = document.getElementById('phone').value.trim();
-        if (!phone) {
-            showError('phone', 'Phone number is required');
-            isValid = false;
-        } else if (!/^[6-9]\d{9}$/.test(phone)) {
-            showError('phone', 'Please enter a valid 10-digit phone number');
-            isValid = false;
-        }
-
-        // Gender validation
-        if (!document.getElementById('gender').value) {
-            showError('gender', 'Please select gender');
-            isValid = false;
-        }
-
-        // City validation
-        if (!document.getElementById('city').value.trim()) {
-            showError('city', 'City is required');
-            isValid = false;
-        }
-
-        // State validation
-        if (!document.getElementById('state').value.trim()) {
-            showError('state', 'State is required');
-            isValid = false;
-        }
-
-        // Pincode validation
-        const pincode = document.getElementById('pincode').value.trim();
-        if (!pincode) {
-            showError('pincode', 'Pincode is required');
-            isValid = false;
-        } else if (!/^\d{6}$/.test(pincode)) {
-            showError('pincode', 'Pincode must be 6 digits');
-            isValid = false;
-        }
-
-        // Country validation
-        if (!document.getElementById('country').value.trim()) {
-            showError('country', 'Country is required');
-            isValid = false;
-        }
-
-        // Address validation
-        if (!document.getElementById('address').value.trim()) {
-            showError('address', 'Address is required');
-            isValid = false;
-        }
-
-        // Payment validation
-        if (!document.getElementById('paymentSelect').value) {
-            showError('payment', 'Please select a payment option');
-            isValid = false;
-        }
-
-        return isValid;
-    }
-
-    // Show Bootstrap Modal
-    function showModal(title, message, type = 'info') {
-        const modalHtml = `
+        // Show Bootstrap Modal
+        function showModal(title, message, type = 'info') {
+            const modalHtml = `
             <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -1307,197 +1426,202 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
         `;
-        
-        // Remove existing modal if any
-        const existingModal = document.getElementById('messageModal');
-        if (existingModal) {
-            existingModal.remove();
-        }
-        
-        // Add modal to body
-        document.body.insertAdjacentHTML('beforeend', modalHtml);
-        
-        // Show modal
-        const modal = new bootstrap.Modal(document.getElementById('messageModal'));
-        modal.show();
-        
-        // Remove modal from DOM after hidden
-        document.getElementById('messageModal').addEventListener('hidden.bs.modal', function() {
-            this.remove();
-        });
-    }
 
-    // Initialize Razorpay Payment
-    function initiateRazorpayPayment(orderData) {
-        const options = {
-            key: orderData.razorpay_key,
-            amount: orderData.amount,
-            currency: "INR",
-            name: "Omansh Health and Fitness",
-            description: "Diastasis Recti Online Rehab Program",
-            order_id: orderData.order_id,
-            prefill: {
-                name: orderData.customer_name,
-                email: orderData.customer_email,
-                contact: orderData.customer_contact
-            },
-            theme: {
-                color: "#004B2A"
-            },
-            handler: function(response) {
-                verifyPayment(response);
-            },
-            modal: {
-                ondismiss: function() {
-                    showModal('Payment Cancelled', 'Payment was cancelled. Please try again if you wish to complete the registration.', 'error');
+            // Remove existing modal if any
+            const existingModal = document.getElementById('messageModal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            // Add modal to body
+            document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+            // Show modal
+            const modal = new bootstrap.Modal(document.getElementById('messageModal'));
+            modal.show();
+
+            // Remove modal from DOM after hidden
+            document.getElementById('messageModal').addEventListener('hidden.bs.modal', function() {
+                this.remove();
+            });
+        }
+
+        // Initialize Razorpay Payment
+        function initiateRazorpayPayment(orderData) {
+            const options = {
+                key: orderData.razorpay_key,
+                amount: orderData.amount,
+                currency: "INR",
+                name: "Omansh Health and Fitness",
+                description: "Diastasis Recti Online Rehab Program",
+                order_id: orderData.order_id,
+                prefill: {
+                    name: orderData.customer_name,
+                    email: orderData.customer_email,
+                    contact: orderData.customer_contact
+                },
+                theme: {
+                    color: "#004B2A"
+                },
+                handler: function(response) {
+                    verifyPayment(response);
+                },
+                modal: {
+                    ondismiss: function() {
+                        showModal('Payment Cancelled',
+                            'Payment was cancelled. Please try again if you wish to complete the registration.',
+                            'error');
+                        resetSubmitButton();
+                    }
+                }
+            };
+
+            const razorpay = new Razorpay(options);
+            razorpay.on('payment.failed', function(response) {
+                showModal('Payment Failed', response.error.description ||
+                    'Payment failed. Please try again.', 'error');
+                resetSubmitButton();
+            });
+            razorpay.open();
+        }
+
+        // Verify Payment
+        function verifyPayment(paymentResponse) {
+            fetch('{{ route("frontend.landing.verify") }}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        razorpay_order_id: paymentResponse.razorpay_order_id,
+                        razorpay_payment_id: paymentResponse.razorpay_payment_id,
+                        razorpay_signature: paymentResponse.razorpay_signature
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message);
+                        // Redirect to success page
+                        if (data.redirect) {
+                            window.location.href = data.redirect;
+                        } else {
+                            window.location.href = '{{ route("frontend.landing.success") }}';
+                        }
+                    } else {
+                        alert(data.message || 'Payment verification failed');
+                        resetSubmitButton();
+                    }
+                })
+                .catch(error => {
+                    console.error('Verification Error:', error);
+                    alert('Payment verification failed. Please contact support.');
                     resetSubmitButton();
-                }
-            }
-        };
-
-        const razorpay = new Razorpay(options);
-        razorpay.on('payment.failed', function(response) {
-            showModal('Payment Failed', response.error.description || 'Payment failed. Please try again.', 'error');
-            resetSubmitButton();
-        });
-        razorpay.open();
-    }
-
-    // Verify Payment
-    function verifyPayment(paymentResponse) {
-        fetch('{{ route("frontend.landing.verify") }}', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-                razorpay_order_id: paymentResponse.razorpay_order_id,
-                razorpay_payment_id: paymentResponse.razorpay_payment_id,
-                razorpay_signature: paymentResponse.razorpay_signature
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert(data.message);
-                // Redirect to success page
-                if (data.redirect) {
-                    window.location.href = data.redirect;
-                } else {
-                    window.location.href = '{{ route("frontend.landing.success") }}';
-                }
-            } else {
-                alert(data.message || 'Payment verification failed');
-                resetSubmitButton();
-            }
-        })
-        .catch(error => {
-            console.error('Verification Error:', error);
-            alert('Payment verification failed. Please contact support.');
-            resetSubmitButton();
-        });
-    }
-
-    // Reset Submit Button
-    function resetSubmitButton() {
-        submitBtn.disabled = false;
-        submitBtn.querySelector('.btn-text').textContent = 'Submit';
-        submitBtn.querySelector('.spinner-border').classList.add('d-none');
-    }
-
-    // AJAX Form Submission
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        if (!validateForm()) {
-            return;
+                });
         }
 
-        const formData = new FormData(form);
-        const btnText = submitBtn.querySelector('.btn-text');
-        const spinner = submitBtn.querySelector('.spinner-border');
+        // Reset Submit Button
+        function resetSubmitButton() {
+            submitBtn.disabled = false;
+            submitBtn.querySelector('.btn-text').textContent = 'Submit';
+            submitBtn.querySelector('.spinner-border').classList.add('d-none');
+        }
 
-        // Disable button and show loading
-        submitBtn.disabled = true;
-        btnText.textContent = 'Processing...';
-        spinner.classList.remove('d-none');
+        // AJAX Form Submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
 
-        fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest',
-                'Accept': 'application/json'
+            if (!validateForm()) {
+                return;
             }
-        })
-        .then(response => {
-            if (!response.ok) {
-                return response.json().then(err => Promise.reject(err));
-            }
-            return response.json();
-        })
-        .then(data => {
-            if (data.success && data.order_id) {
-                // Registration successful, initiate Razorpay payment
-                btnText.textContent = 'Opening Payment Gateway...';
-                initiateRazorpayPayment(data);
-            } else if (data.errors) {
-                // Validation errors
-                Object.keys(data.errors).forEach(key => {
-                    showError(key, data.errors[key][0]);
+
+            const formData = new FormData(form);
+            const btnText = submitBtn.querySelector('.btn-text');
+            const spinner = submitBtn.querySelector('.spinner-border');
+
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            btnText.textContent = 'Processing...';
+            spinner.classList.remove('d-none');
+
+            fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => Promise.reject(err));
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success && data.order_id) {
+                        // Registration successful, initiate Razorpay payment
+                        btnText.textContent = 'Opening Payment Gateway...';
+                        initiateRazorpayPayment(data);
+                    } else if (data.errors) {
+                        // Validation errors
+                        Object.keys(data.errors).forEach(key => {
+                            showError(key, data.errors[key][0]);
+                        });
+                        resetSubmitButton();
+                    } else {
+                        alert(data.message || 'Something went wrong. Please try again.');
+                        resetSubmitButton();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+
+                    // Handle validation errors
+                    if (error.errors) {
+                        Object.keys(error.errors).forEach(key => {
+                            showError(key, error.errors[key][0]);
+                        });
+                    } else {
+                        alert(error.message || 'An error occurred. Please try again.');
+                    }
+                    resetSubmitButton();
                 });
-                resetSubmitButton();
-            } else {
-                alert(data.message || 'Something went wrong. Please try again.');
-                resetSubmitButton();
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            
-            // Handle validation errors
-            if (error.errors) {
-                Object.keys(error.errors).forEach(key => {
-                    showError(key, error.errors[key][0]);
-                });
-            } else {
-                alert(error.message || 'An error occurred. Please try again.');
-            }
-            resetSubmitButton();
         });
-    });
 
-    // Popup Controls
-    const popup = document.getElementById('imagePopup');
-    const closeBtn = document.querySelector('.price-popup-close');
-    const paymentSelect = document.getElementById('paymentSelect');
+        // Popup Controls
+        const popup = document.getElementById('imagePopup');
+        const closeBtn = document.querySelector('.price-popup-close');
+        const paymentSelect = document.getElementById('paymentSelect');
 
-    document.querySelectorAll('.open-popup').forEach(btn => {
-        btn.addEventListener('click', function() {
-            paymentSelect.value = this.dataset.price;
-            popup.classList.add('active');
+        document.querySelectorAll('.open-popup').forEach(btn => {
+            btn.addEventListener('click', function() {
+                paymentSelect.value = this.dataset.price;
+                popup.classList.add('active');
+            });
         });
-    });
 
-    closeBtn.addEventListener('click', () => {
-        popup.classList.remove('active');
-        form.reset();
-        clearAllErrors();
-        document.getElementById('imagePreview').style.backgroundImage = 'url(https://via.placeholder.com/192x192.png?text=Upload+Photo)';
-    });
-
-    popup.addEventListener('click', (e) => {
-        if (e.target === popup) {
+        closeBtn.addEventListener('click', () => {
             popup.classList.remove('active');
             form.reset();
             clearAllErrors();
-            document.getElementById('imagePreview').style.backgroundImage = 'url(https://via.placeholder.com/192x192.png?text=Upload+Photo)';
-        }
+            document.getElementById('imagePreview').style.backgroundImage =
+                'url(https://via.placeholder.com/192x192.png?text=Upload+Photo)';
+        });
+
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.remove('active');
+                form.reset();
+                clearAllErrors();
+                document.getElementById('imagePreview').style.backgroundImage =
+                    'url(https://via.placeholder.com/192x192.png?text=Upload+Photo)';
+            }
+        });
     });
-});
-</script>
+    </script>
 </main>
 <script>
 function countdownTimerCustom() {

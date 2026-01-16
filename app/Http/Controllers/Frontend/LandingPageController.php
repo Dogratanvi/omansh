@@ -37,18 +37,18 @@ class LandingPageController extends Controller
    public function store(Request $request)
 {
     $validator = Validator::make($request->all(), [
-        'aadhaar_number' => 'required|string|size:12|regex:/^[0-9]{12}$/',
+   
         'first_name' => 'required|string|min:2|max:255',
         'last_name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
         'phone' => 'required|string|size:10|regex:/^[6-9][0-9]{9}$/',
-        'gender' => 'required|in:male,female,other',
+     
         'city' => 'required|string|max:255',
         'state' => 'required|string|max:255',
         'pincode' => 'required|string|size:6|regex:/^[0-9]{6}$/',
         'country' => 'required|string|max:255',
         'address' => 'required|string|max:1000',
-        'special_requirements' => 'nullable|string|max:500',
+   
         // 'payment' => 'required|in:499,3500',
     ]);
 
@@ -80,18 +80,16 @@ class LandingPageController extends Controller
 
         // Create registration record
         $landing = EventRegistration::create([
-            'aadhaar_number' => $validated['aadhaar_number'],
+    
             'first_name' => $validated['first_name'],
             'last_name' => $validated['last_name'],
             'email' => $validated['email'],
             'phone' => $validated['phone'],
-            'gender' => $validated['gender'],
             'city' => $validated['city'],
             'state' => $validated['state'],
             'pincode' => $validated['pincode'],
             'country' => $validated['country'],
             'address' => $validated['address'],
-            'special_requirements' => $validated['special_requirements'] ?? null,
             'order_id' => $order['id'],
             'amount' => $paymentAmount,
             'currency' => 'INR',

@@ -28,17 +28,7 @@
             </figure>
 
         </div>
-        <div class="position-absolute top-0 end-0 bottom-0 d-none d-sm-none d-md-block">
-
-            <figure class="banner_right_top_shape right_shape mb-0">
-                <img src="{{ asset('images/banner_right_top_shape.png') }}" alt="banner_right_top_shape"
-                    class="img-fluid">
-            </figure>
-            <figure class="banner_right_bottom_shape right_shape mb-0">
-                <img src="{{ asset('images/banner_right_bottom_shape.png') }}" alt="banner_right_bottom_shape"
-                    class="img-fluid">
-            </figure>
-        </div>
+ 
 
 
     </section>
@@ -816,7 +806,7 @@
     </div>
         <h4 class="fw-bold mb-2 text-theme">
             4 WEEKS PROGRAM:
-            <span class="text-decoration-line-through  text-danger ms-2">₹ 5500</span>
+            <span class="text-decoration-line-through  text-danger ms-2">₹ 7000</span>
             <span class="section-bg text-white px-3 py-1 rounded ms-2">₹ 3500</span>
         </h4>
         <p class="fst-italic mb-0">(Founding Batch – Limited Seats)</p>

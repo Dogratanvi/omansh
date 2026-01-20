@@ -93,12 +93,13 @@ class Blog extends Model
                     TextInput::make('intro')
                         ->columnSpanFull()
                         ->maxLength(255),
-                   TinyEditor::make('content')
-                   ->profile('full')
-                     ->fileAttachmentsDisk('public')
-                        ->fileAttachmentsDirectory('uploads')
-                        ->maxLength(65535)
-                        ->columnSpanFull(),
+                  TinyEditor::make('content')
+                ->fileAttachmentsDisk('public')
+                ->fileAttachmentsVisibility('public')
+                ->fileAttachmentsDirectory('uploads')
+                ->profile('default') // or 'simple', 'full', 'minimal'
+                ->columnSpan('full')
+                ->required(),
                     FileUpload::make('featured_image')
                       ->preserveFilenames()
                         ->columnSpanFull()

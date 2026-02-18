@@ -135,10 +135,13 @@ class Blog extends Model
 //     ])
 //     ->columnSpanFull()
 //     ->required(),
-                    FileUpload::make('featured_image')
-                      ->preserveFilenames()
-                        ->columnSpanFull()
-                        ->image(),
+                  
+FileUpload::make('featured_image')
+    ->disk('uploads')  // ✅ Use the new uploads disk
+    ->directory('')     // ✅ Save directly in uploads/
+    ->preserveFilenames()
+    ->columnSpanFull()
+    ->image(),
                     DateTimePicker::make('published_at'),
                     TextInput::make('order')
                         ->maxLength(255),

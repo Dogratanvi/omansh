@@ -102,14 +102,24 @@ class Blog extends Model
                 // ->columnSpan('full')
                 // ->required(),
                  
-TiptapEditor::make('content')
-    ->profile('default|simple|minimal|none|custom')
-    ->tools([]) // individual tools to use in the editor, overwrites profile
-    ->disk('string') // optional, defaults to config setting
-    ->directory('string or Closure returning a string') // optional, defaults to config setting
-    ->acceptedFileTypes(['array of file types']) // optional, defaults to config setting
-    ->maxSize('integer in KB') // optional, defaults to config setting
-    ->maxContentWidth('5xl')
+RichEditor::make('content')
+    ->toolbarButtons([
+        'attachFiles',
+        'blockquote',
+        'bold',
+        'bulletList',
+        'codeBlock',
+        'h2',
+        'h3',
+        'italic',
+        'link',
+        'orderedList',
+        'redo',
+        'strike',
+        'underline',
+        'undo',
+    ])
+    ->columnSpanFull()
     ->required(),
                     FileUpload::make('featured_image')
                       ->preserveFilenames()

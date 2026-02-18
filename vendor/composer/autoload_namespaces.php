@@ -8,6 +8,4 @@ $baseDir = dirname($vendorDir);
 return array(
     'Unirest\\' => array($vendorDir . '/mashape/unirest-php/src'),
     'InstagramScraper' => array($vendorDir . '/raiym/instagram-php-scraper/src'),
-    'Highlight\\' => array($vendorDir . '/scrivo/highlight.php'),
-    'HighlightUtilities\\' => array($vendorDir . '/scrivo/highlight.php'),
 );

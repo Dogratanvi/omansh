@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 use App\Traits\SlugTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -17,7 +18,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+
 use FilamentTiptapEditor\TiptapEditor;
 
 class Blog extends Model
@@ -98,7 +99,7 @@ class Blog extends Model
                 ->fileAttachmentsDisk('public')
                 ->fileAttachmentsVisibility('public')
                 ->fileAttachmentsDirectory('uploads')
-                ->profile('default') // or 'simple', 'full', 'minimal'
+                ->profile('full') // or 'simple', 'full', 'minimal'
                 ->columnSpan('full')
                 ->required(),
                  

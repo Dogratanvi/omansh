@@ -94,33 +94,33 @@ class Blog extends Model
                     TextInput::make('intro')
                         ->columnSpanFull()
                         ->maxLength(255),
-                //   TinyEditor::make('content')
-                // ->fileAttachmentsDisk('public')
-                // ->fileAttachmentsVisibility('public')
-                // ->fileAttachmentsDirectory('uploads')
-                // ->profile('default') // or 'simple', 'full', 'minimal'
-                // ->columnSpan('full')
-                // ->required(),
+                  TinyEditor::make('content')
+                ->fileAttachmentsDisk('public')
+                ->fileAttachmentsVisibility('public')
+                ->fileAttachmentsDirectory('uploads')
+                ->profile('default') // or 'simple', 'full', 'minimal'
+                ->columnSpan('full')
+                ->required(),
                  
-RichEditor::make('content')
-    ->toolbarButtons([
-        'attachFiles',
-        'blockquote',
-        'bold',
-        'bulletList',
-        'codeBlock',
-        'h2',
-        'h3',
-        'italic',
-        'link',
-        'orderedList',
-        'redo',
-        'strike',
-        'underline',
-        'undo',
-    ])
-    ->columnSpanFull()
-    ->required(),
+// RichEditor::make('content')
+//     ->toolbarButtons([
+//         'attachFiles',
+//         'blockquote',
+//         'bold',
+//         'bulletList',
+//         'codeBlock',
+//         'h2',
+//         'h3',
+//         'italic',
+//         'link',
+//         'orderedList',
+//         'redo',
+//         'strike',
+//         'underline',
+//         'undo',
+//     ])
+//     ->columnSpanFull()
+//     ->required(),
                     FileUpload::make('featured_image')
                       ->preserveFilenames()
                         ->columnSpanFull()

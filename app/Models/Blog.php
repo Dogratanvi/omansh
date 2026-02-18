@@ -18,6 +18,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+use FilamentTiptapEditor\TiptapEditor;
 
 class Blog extends Model
 {
@@ -93,13 +94,23 @@ class Blog extends Model
                     TextInput::make('intro')
                         ->columnSpanFull()
                         ->maxLength(255),
-                  TinyEditor::make('content')
-                ->fileAttachmentsDisk('public')
-                ->fileAttachmentsVisibility('public')
-                ->fileAttachmentsDirectory('uploads')
-                ->profile('default') // or 'simple', 'full', 'minimal'
-                ->columnSpan('full')
-                ->required(),
+                //   TinyEditor::make('content')
+                // ->fileAttachmentsDisk('public')
+                // ->fileAttachmentsVisibility('public')
+                // ->fileAttachmentsDirectory('uploads')
+                // ->profile('default') // or 'simple', 'full', 'minimal'
+                // ->columnSpan('full')
+                // ->required(),
+                 
+TiptapEditor::make('content')
+    ->profile('default|simple|minimal|none|custom')
+    ->tools([]) // individual tools to use in the editor, overwrites profile
+    ->disk('string') // optional, defaults to config setting
+    ->directory('string or Closure returning a string') // optional, defaults to config setting
+    ->acceptedFileTypes(['array of file types']) // optional, defaults to config setting
+    ->maxSize('integer in KB') // optional, defaults to config setting
+    ->maxContentWidth('5xl')
+    ->required(),
                     FileUpload::make('featured_image')
                       ->preserveFilenames()
                         ->columnSpanFull()

@@ -234,7 +234,7 @@
                                 </a>
                                 <!--post-navigation-->
                             </div>
-                            <div class="comments" id="comments">
+                            {{-- <div class="comments" id="comments">
                                 <div class="comment_number text-uppercase font_weight_600">
                                     Comments <span>({{ $blogs->comments->count()}})</span>
                                     <!--comment_number-->
@@ -256,7 +256,7 @@
                                     </div>
                                 </form>
                                 <!--comments-->
-                            </div>
+                            </div> --}}
 
                             <!--post-item-wrap-->
                         </div>

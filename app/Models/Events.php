@@ -17,6 +17,8 @@ use Filament\Forms;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Malzariey\FilamentLexicalEditor\Enums\ToolbarItem;
+use Malzariey\FilamentLexicalEditor\FilamentLexicalEditor;
 
 class Events extends Model
 {
@@ -154,13 +156,24 @@ TextInput::make('slug')
     // ->label('Is Payment Active')
     // ->default(false),
 
+          FilamentLexicalEditor::make('content')
+    ->enabledToolbars([
+        ToolbarItem::UNDO, ToolbarItem::REDO,ToolbarItem::FONT_FAMILY, ToolbarItem::NORMAL, ToolbarItem::H1, ToolbarItem::H2, ToolbarItem::H3,
+        ToolbarItem::H4, ToolbarItem::H5, ToolbarItem::H6, ToolbarItem::BULLET, ToolbarItem::NUMBERED, ToolbarItem::QUOTE,
+        ToolbarItem::CODE, ToolbarItem::FONT_SIZE, ToolbarItem::BOLD, ToolbarItem::ITALIC, ToolbarItem::UNDERLINE,
+        ToolbarItem::ICODE, ToolbarItem::LINK, ToolbarItem::TEXT_COLOR, ToolbarItem::BACKGROUND_COLOR, ToolbarItem::LOWERCASE,
+        ToolbarItem::UPPERCASE, ToolbarItem::CAPITALIZE, ToolbarItem::STRIKETHROUGH, ToolbarItem::SUBSCRIPT, ToolbarItem::SUPERSCRIPT,
+        ToolbarItem::CLEAR, ToolbarItem::LEFT, ToolbarItem::CENTER, ToolbarItem::RIGHT, ToolbarItem::JUSTIFY, ToolbarItem::START,
+        ToolbarItem::END, ToolbarItem::INDENT, ToolbarItem::OUTDENT, ToolbarItem::HR,ToolbarItem::IMAGE
+    ]),
 
-                    TinyEditor::make('content')
-                   ->profile('full')
-                     ->fileAttachmentsDisk('public')
-                        ->fileAttachmentsDirectory('uploads')
-                        ->maxLength(65535)
-                        ->columnSpanFull(),
+
+                //     TinyEditor::make('content')
+                //    ->profile('full')
+                //      ->fileAttachmentsDisk('public')
+                //         ->fileAttachmentsDirectory('uploads')
+                //         ->maxLength(65535)
+                //         ->columnSpanFull(),
                    
                     FileUpload::make('featured_image')
                       ->preserveFilenames()

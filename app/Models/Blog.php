@@ -20,6 +20,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 
 use FilamentTiptapEditor\TiptapEditor;
+use Malzariey\FilamentLexicalEditor\Enums\ToolbarItem;
+use Malzariey\FilamentLexicalEditor\FilamentLexicalEditor;
 
 class Blog extends Model
 {
@@ -95,13 +97,24 @@ class Blog extends Model
                     TextInput::make('intro')
                         ->columnSpanFull()
                         ->maxLength(255),
-                  TinyEditor::make('content')
-                ->fileAttachmentsDisk('public')
-                ->fileAttachmentsVisibility('public')
-                ->fileAttachmentsDirectory('uploads')
-                ->profile('full') // or 'simple', 'full', 'minimal'
-                ->columnSpan('full')
-                ->required(),
+
+                        FilamentLexicalEditor::make('content')
+    ->enabledToolbars([
+        ToolbarItem::UNDO, ToolbarItem::REDO,ToolbarItem::FONT_FAMILY, ToolbarItem::NORMAL, ToolbarItem::H1, ToolbarItem::H2, ToolbarItem::H3,
+        ToolbarItem::H4, ToolbarItem::H5, ToolbarItem::H6, ToolbarItem::BULLET, ToolbarItem::NUMBERED, ToolbarItem::QUOTE,
+        ToolbarItem::CODE, ToolbarItem::FONT_SIZE, ToolbarItem::BOLD, ToolbarItem::ITALIC, ToolbarItem::UNDERLINE,
+        ToolbarItem::ICODE, ToolbarItem::LINK, ToolbarItem::TEXT_COLOR, ToolbarItem::BACKGROUND_COLOR, ToolbarItem::LOWERCASE,
+        ToolbarItem::UPPERCASE, ToolbarItem::CAPITALIZE, ToolbarItem::STRIKETHROUGH, ToolbarItem::SUBSCRIPT, ToolbarItem::SUPERSCRIPT,
+        ToolbarItem::CLEAR, ToolbarItem::LEFT, ToolbarItem::CENTER, ToolbarItem::RIGHT, ToolbarItem::JUSTIFY, ToolbarItem::START,
+        ToolbarItem::END, ToolbarItem::INDENT, ToolbarItem::OUTDENT, ToolbarItem::HR,ToolbarItem::IMAGE
+    ]),
+                //   TinyEditor::make('content')
+                // ->fileAttachmentsDisk('public')
+                // ->fileAttachmentsVisibility('public')
+                // ->fileAttachmentsDirectory('uploads')
+                // ->profile('full') // or 'simple', 'full', 'minimal'
+                // ->columnSpan('full')
+                // ->required(),
                  
 // RichEditor::make('content')
 //     ->toolbarButtons([

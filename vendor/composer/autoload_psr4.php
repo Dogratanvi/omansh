@@ -89,6 +89,7 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Mockery\\' => array($vendorDir . '/mockery/mockery/library/Mockery'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
+    'Malzariey\\FilamentLexicalEditor\\' => array($vendorDir . '/malzariey/filament-lexical-editor/src'),
     'Livewire\\' => array($vendorDir . '/livewire/livewire/src'),
     'Leandrocfe\\FilamentApexCharts\\' => array($vendorDir . '/leandrocfe/filament-apex-charts/src'),
     'League\\Uri\\' => array($vendorDir . '/league/uri', $vendorDir . '/league/uri-interfaces'),

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 use App\Traits\SlugTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -17,7 +18,10 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+
+use FilamentTiptapEditor\TiptapEditor;
+use Malzariey\FilamentLexicalEditor\Enums\ToolbarItem;
+use Malzariey\FilamentLexicalEditor\FilamentLexicalEditor;
 
 class Blog extends Model
 {
@@ -93,17 +97,51 @@ class Blog extends Model
                     TextInput::make('intro')
                         ->columnSpanFull()
                         ->maxLength(255),
-                  TinyEditor::make('content')
-                ->fileAttachmentsDisk('public')
-                ->fileAttachmentsVisibility('public')
-                ->fileAttachmentsDirectory('uploads')
-                ->profile('default') // or 'simple', 'full', 'minimal'
-                ->columnSpan('full')
-                ->required(),
-                    FileUpload::make('featured_image')
-                      ->preserveFilenames()
-                        ->columnSpanFull()
-                        ->image(),
+
+                        FilamentLexicalEditor::make('content')
+    ->enabledToolbars([
+        ToolbarItem::UNDO, ToolbarItem::REDO,ToolbarItem::FONT_FAMILY, ToolbarItem::NORMAL, ToolbarItem::H1, ToolbarItem::H2, ToolbarItem::H3,
+        ToolbarItem::H4, ToolbarItem::H5, ToolbarItem::H6, ToolbarItem::BULLET, ToolbarItem::NUMBERED, ToolbarItem::QUOTE,
+        ToolbarItem::CODE, ToolbarItem::FONT_SIZE, ToolbarItem::BOLD, ToolbarItem::ITALIC, ToolbarItem::UNDERLINE,
+        ToolbarItem::ICODE, ToolbarItem::LINK, ToolbarItem::TEXT_COLOR, ToolbarItem::BACKGROUND_COLOR, ToolbarItem::LOWERCASE,
+        ToolbarItem::UPPERCASE, ToolbarItem::CAPITALIZE, ToolbarItem::STRIKETHROUGH, ToolbarItem::SUBSCRIPT, ToolbarItem::SUPERSCRIPT,
+        ToolbarItem::CLEAR, ToolbarItem::LEFT, ToolbarItem::CENTER, ToolbarItem::RIGHT, ToolbarItem::JUSTIFY, ToolbarItem::START,
+        ToolbarItem::END, ToolbarItem::INDENT, ToolbarItem::OUTDENT, ToolbarItem::HR,ToolbarItem::IMAGE
+    ]),
+                //   TinyEditor::make('content')
+                // ->fileAttachmentsDisk('public')
+                // ->fileAttachmentsVisibility('public')
+                // ->fileAttachmentsDirectory('uploads')
+                // ->profile('full') // or 'simple', 'full', 'minimal'
+                // ->columnSpan('full')
+                // ->required(),
+                 
+// RichEditor::make('content')
+//     ->toolbarButtons([
+//         'attachFiles',
+//         'blockquote',
+//         'bold',
+//         'bulletList',
+//         'codeBlock',
+//         'h2',
+//         'h3',
+//         'italic',
+//         'link',
+//         'orderedList',
+//         'redo',
+//         'strike',
+//         'underline',
+//         'undo',
+//     ])
+//     ->columnSpanFull()
+//     ->required(),
+                  
+FileUpload::make('featured_image')
+    ->disk('uploads')  // ✅ Use the new uploads disk
+    ->directory('')     // ✅ Save directly in uploads/
+    ->preserveFilenames()
+    ->columnSpanFull()
+    ->image(),
                     DateTimePicker::make('published_at'),
                     TextInput::make('order')
                         ->maxLength(255),

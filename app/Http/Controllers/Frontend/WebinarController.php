@@ -3,86 +3,140 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\EventRegistration;
 use Illuminate\Http\Request;
-use App\Models\Webinar;
+use App\Models\Landing; // Create this model for DR program registrations
 use App\Models\Setting;
+use App\Services\ResendService;
 use Exception;
 use Illuminate\Support\Facades\Validator;
 use Razorpay\Api\Api;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class WebinarController extends Controller
 {
     protected $razorpayKey;
     protected $razorpaySecret;
+    protected $resendService;
 
-    public function __construct()
+    public function __construct(ResendService $resendService)
     {
         $this->razorpayKey = config('razorpay.key');
         $this->razorpaySecret = config('razorpay.secret');
+        $this->resendService = $resendService;
     }
 
-    public function index()
+     public function index()
     {
         $settings = Setting::all();
-        return view('frontend.webinar', compact('settings'));
+        $meta_page_type = 'webinar';
+        return view('frontend.webinar', compact( 'settings', 'meta_page_type'));
     }
 
-    public function store(Request $request)
-    {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'whatsapp_number' => 'required|string|max:20',
-            'age' => 'required|numeric|min:18|max:50',
-            'estimated_due_date' => 'required|date|after:today',
-            'current_trimester' => 'required|in:First Trimester,Second Trimester,Third Trimester',
-            'first_pregnancy' => 'required|in:Yes,No',
-            'previous_pregnancy' => 'nullable|string|max:500',
-            'experience_pregnancy_complications' => 'required|string|max:1000',
-            'primary_goal' => 'nullable|array',
-            'primary_goal.*' => 'in:Learning pain management techniques,Understanding labor stages,Preparing for natural birth,Partner involvement and support,Postpartum recovery,Other',
-            'concerns_about_childbirth' => 'required|string|max:1000',
-            'like_receive_updates' => 'required|in:Yes,No',
+   public function store(Request $request)
+{
+    $validator = Validator::make($request->all(), [
+   
+        'first_name' => 'required|string|min:2|max:255',
+        'last_name' => 'required|string|max:255',
+        'email' => 'required|email|max:255',
+        'phone' => 'required|string|size:10|regex:/^[6-9][0-9]{9}$/',
+     
+        'city' => 'required|string|max:255',
+        'state' => 'required|string|max:255',
+        'pincode' => 'required|string|size:6|regex:/^[0-9]{6}$/',
+        'country' => 'required|string|max:255',
+        'address' => 'required|string|max:1000',
+   
+        // 'payment' => 'required|in:499,3500',
+    ]);
+
+    if ($validator->fails()) {
+        return response()->json([
+            'success' => false,
+            'errors' => $validator->errors()
+        ], 422);
+    }
+
+    try {
+        $api = new Api($this->razorpayKey, $this->razorpaySecret);
+        
+        $paymentAmount = (int)$request->payment;
+        $amountInPaise = $paymentAmount * 100;
+
+        // Create Razorpay order
+        $order = $api->order->create([
+            'amount' => $amountInPaise,
+            'currency' => 'INR',
+            'receipt' => 'order_dr_' . uniqid(),
+            'payment_capture' => 1
         ]);
 
-        if ($validator->fails()) {
-            return response()->json(['errors' => $validator->errors()], 422);
-        }
+        $validated = $validator->validated();
 
-        $api = new Api($this->razorpayKey, $this->razorpaySecret);
-
-        try {
-            $order = $api->order->create([
-                'amount' => 49900,  // 199 rupees
-                'currency' => 'INR',
-                'receipt' => 'order_' . uniqid(),
-                'payment_capture' => 1
-            ]);
-
-            $validated = $validator->validated();
-       $validated['primary_goal'] = json_encode($request->input('primary_goal', []));
+        // Handle profile picture upload
       
-           $webinar = Webinar::create(array_merge($validated, [
-    'order_id' => $order['id'],
-    'amount' => 499,
-    'currency' => 'INR',
-    'status' => 'pending'
-]));
 
-            return response()->json([
-                'order_id' => $order['id'],
-                'razorpay_key' => $this->razorpayKey,
-                'amount' => 49900
-            ]);
-        } catch (Exception $e) {
-            Log::error('Webinar Registration Error: ' . $e->getMessage());
-            return response()->json(['error' =>  $e->getMessage()], 500);
-        }
+        // Create registration record
+        $landing = EventRegistration::create([
+    
+            'first_name' => $validated['first_name'],
+            'last_name' => $validated['last_name'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'],
+            'city' => $validated['city'],
+            'state' => $validated['state'],
+            'pincode' => $validated['pincode'],
+            'country' => $validated['country'],
+            'address' => $validated['address'],
+            'order_id' => $order['id'],
+            'amount' => $paymentAmount,
+            'currency' => 'INR',
+            'landing_page_name' => 'Online Rehab Program',
+            'status' => 'pending'
+        ]);
+
+        return response()->json([
+            'success' => true,
+            'order_id' => $order['id'],
+            'razorpay_key' => $this->razorpayKey,
+            'amount' => $amountInPaise,
+            'customer_name' => $validated['first_name'] . ' ' . $validated['last_name'],
+            'customer_email' => $validated['email'],
+            'customer_contact' => $validated['phone']
+        ]);
+
+    } catch (\Razorpay\Api\Errors\Error $e) {
+        Log::error('Razorpay API Error: ' . $e->getMessage());
+        return response()->json([
+            'success' => false,
+            'message' => 'Payment gateway error. Please try again later.'
+        ], 500);
+    } catch (Exception $e) {
+        Log::error('DR Program Registration Error: ' . $e->getMessage());
+        return response()->json([
+            'success' => false,
+            'message' => 'Registration failed. Please try again.'
+        ], 500);
     }
+}
 
     public function verify(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+            'razorpay_order_id' => 'required|string',
+            'razorpay_payment_id' => 'required|string',
+            'razorpay_signature' => 'required|string'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Invalid payment details'
+            ], 422);
+        }
+
         $api = new Api($this->razorpayKey, $this->razorpaySecret);
 
         try {
@@ -92,23 +146,83 @@ class WebinarController extends Controller
                 'razorpay_signature' => $request->razorpay_signature
             ];
 
+            // Verify payment signature
             $api->utility->verifyPaymentSignature($attributes);
 
-            $registration = Webinar::where('order_id', $request->razorpay_order_id)->first();
-            
+            // Find registration by order_id
+            $registration = EventRegistration::where('order_id', $request->razorpay_order_id)->first();
+
             if (!$registration) {
-                return response()->json(['success' => false, 'message' => 'Registration not found'], 404);
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Registration not found'
+                ], 404);
             }
 
+            // Update registration status
             $registration->update([
                 'status' => 'paid',
-                'r_payment_id' => $request->razorpay_payment_id
+                'registration_status' => 'confirmed',
+                'razorpay_order_id' => $request->razorpay_order_id,
+                'razorpay_signature' => $request->razorpay_signature,
+                'razorpay_payment_id' => $request->razorpay_payment_id
             ]);
 
-            return response()->json(['success' => true]);
+             try {
+                $emailHtml = view('emails.registration-confirmation', [
+                    'registration' => $registration,
+                    'customerName' => $registration->full_name,
+                    'registrationId' => $registration->registration_id,
+                    'amount' => $registration->amount,
+                    'programName' => $registration->landing_page_name,
+                    'orderId' => $registration->razorpay_order_id,
+                    'paymentId' => $registration->razorpay_payment_id
+                ])->render();
+
+                $emailResult = $this->resendService->sendEmail(
+                    $registration->email,
+                    'Registration Confirmation -  Online Rehab Program',
+                    $emailHtml
+                );
+
+                if (!$emailResult['success']) {
+                    Log::warning('Email sending failed but registration succeeded', [
+                        'registration_id' => $registration->registration_id,
+                        'error' => $emailResult['error'] ?? 'Unknown error'
+                    ]);
+                }
+
+            } catch (\Exception $e) {
+                Log::error('Email sending exception: ' . $e->getMessage(), [
+                    'registration_id' => $registration->registration_id
+                ]);
+            }
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Payment verified successfully! Registration confirmed.',
+                'redirect' => route('frontend.landing.success') // Optional: redirect to success page
+            ]);
+
         } catch (Exception $e) {
             Log::error('Payment Verification Error: ' . $e->getMessage());
-            return response()->json(['success' => false, 'message' => 'Payment verification failed'], 400);
+            
+            // Update registration as failed
+            if (isset($registration)) {
+                $registration->update([
+                    'status' => 'failed'
+                ]);
+            }
+
+            return response()->json([
+                'success' => false,
+                'message' => 'Payment verification failed. Please contact support.'
+            ], 400);
         }
+    }
+
+    public function success()
+    {
+        return view('frontend.success');
     }
 }

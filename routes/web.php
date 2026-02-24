@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Mail;
 use  App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\LandingPageController;
 use App\Http\Controllers\Frontend\EventRegistrationController;
-
+use App\Http\Controllers\Frontend\WebinarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -157,15 +157,17 @@ Route::redirect('/services/physiotheraphy/sport-physiotherapy', '/services/sport
     Route::get('bookingform', 'BookingsController@index')->name('bookingform');
     Route::post('bookingform', 'BookingsController@store')->name('bookingform.store');
 
-    // landing page
-    Route::get('webinar', 'WebinarController@index')->name('/webinar');
+    // // landing page
+    // Route::get('webinar', 'WebinarController@index')->name('/webinar');
 
-    Route::post('payment/store','WebinarController@store')->name('payment.store');
-    Route::post('/payment/verify', 'WebinarController@verify')->name('payment.verify');
+    // Route::post('payment/store','WebinarController@store')->name('payment.store');
+    // Route::post('/payment/verify', 'WebinarController@verify')->name('payment.verify');
     
 Route::get('/online-rehab-program', [LandingPageController::class, 'index'])
     ->name('online-rehab-program');
 
+    Route::get('/webinar', [WebinarController::class, 'index'])
+    ->name('webinar');
 // Registration form submission (AJAX)
 Route::post('/online-rehab-program/register', [LandingPageController::class, 'store'])
     ->name('landing.store');
